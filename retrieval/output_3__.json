@@ -1,0 +1,1946 @@
+[
+  {
+    "query": "What is the difference between wrongful gain and wrongful loss with example?",
+    "phase8": {
+      "query": "What is the difference between wrongful gain and wrongful loss with example?",
+      "intent": {
+        "primary": "comparison",
+        "secondary": [
+          "definition"
+        ]
+      },
+      "concepts": [
+        "wrongful gain",
+        "wrongful loss",
+        "examples"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true
+      },
+      "decomposition": {
+        "needed": true,
+        "sub_queries": [
+          {
+            "query": "What is the definition of wrongful gain?",
+            "intent": {
+              "primary": "comparison",
+              "secondary": []
+            },
+            "targets": [],
+            "concepts": [
+              "wrongful gain"
+            ],
+            "query_features": {
+              "is_multi_hop": false,
+              "requires_reasoning": false
+            },
+            "decomposition": {
+              "needed": false,
+              "sub_queries": []
+            },
+            "method": "llm_subquery",
+            "notes": []
+          },
+          {
+            "query": "What is the definition of wrongful loss?",
+            "intent": {
+              "primary": "comparison",
+              "secondary": []
+            },
+            "targets": [],
+            "concepts": [
+              "wrongful loss"
+            ],
+            "query_features": {
+              "is_multi_hop": false,
+              "requires_reasoning": false
+            },
+            "decomposition": {
+              "needed": false,
+              "sub_queries": []
+            },
+            "method": "llm_subquery",
+            "notes": []
+          },
+          {
+            "query": "Can you provide an example of wrongful gain?",
+            "intent": {
+              "primary": "comparison",
+              "secondary": []
+            },
+            "targets": [],
+            "concepts": [
+              "wrongful gain"
+            ],
+            "query_features": {
+              "is_multi_hop": false,
+              "requires_reasoning": false
+            },
+            "decomposition": {
+              "needed": false,
+              "sub_queries": []
+            },
+            "method": "llm_subquery",
+            "notes": []
+          },
+          {
+            "query": "Can you provide an example of wrongful loss?",
+            "intent": {
+              "primary": "comparison",
+              "secondary": []
+            },
+            "targets": [],
+            "concepts": [
+              "wrongful loss"
+            ],
+            "query_features": {
+              "is_multi_hop": false,
+              "requires_reasoning": false
+            },
+            "decomposition": {
+              "needed": false,
+              "sub_queries": []
+            },
+            "method": "llm_subquery",
+            "notes": []
+          }
+        ]
+      },
+      "confidence": {
+        "hint_relevance": 0.379,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.6,
+        "structure_validity": 1.0,
+        "overall": 0.6716
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is the difference between wrongful gain and wrongful loss with example?",
+          "targets": [],
+          "concepts": [
+            "wrongful gain",
+            "wrongful loss",
+            "examples"
+          ]
+        },
+        {
+          "name": "sub_query_1",
+          "source": "decomposed",
+          "weight": 0.9,
+          "query": "What is the definition of wrongful gain?",
+          "targets": [],
+          "concepts": [
+            "wrongful gain"
+          ]
+        },
+        {
+          "name": "sub_query_2",
+          "source": "decomposed",
+          "weight": 0.9,
+          "query": "What is the definition of wrongful loss?",
+          "targets": [],
+          "concepts": [
+            "wrongful loss"
+          ]
+        },
+        {
+          "name": "sub_query_3",
+          "source": "decomposed",
+          "weight": 0.9,
+          "query": "Can you provide an example of wrongful gain?",
+          "targets": [],
+          "concepts": [
+            "wrongful gain"
+          ]
+        },
+        {
+          "name": "sub_query_4",
+          "source": "decomposed",
+          "weight": 0.9,
+          "query": "Can you provide an example of wrongful loss?",
+          "targets": [],
+          "concepts": [
+            "wrongful loss"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S2_N38",
+            "score": 0.777243,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“gaining wrongfully” and “losing wrongfully”.—A person is said to gain wrongfully when such person retains wrongfully, as well as when such person acquires wrongfully. A person is said to lose wrongfully when such person is wrongfully kept out of any property, as well as when such person is wrongfully deprived of property; and",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“gaining wrongfully” and “losing wrongfully”.—A person is said to gain wrongfully when such person retains wrongfully, as well as when such person acquires wrongfully. A person is said to lose wrongfully when such person is wrongfully kept out of any property, as well as when such person is wrongfully deprived of property; and",
+            "keywords": [
+              "wrongfully",
+              "said",
+              "well",
+              "property",
+              "gaining",
+              "losing",
+              "gain",
+              "retains",
+              "acquires",
+              "lose",
+              "wrongful gain",
+              "wrongful loss"
+            ],
+            "legal_concepts": [
+              "gaining wrongfully",
+              "losing wrongfully"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7033438086509705
+            },
+            "query_scores": {
+              "original": 0.7033438086509705
+            },
+            "reasons": [
+              "faiss:original",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S2_N36",
+            "score": 0.619331,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“wrongful gain” means gain by unlawful means of property to which the person gaining is not legally entitled;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“wrongful gain” means gain by unlawful means of property to which the person gaining is not legally entitled;",
+            "keywords": [
+              "gain",
+              "means",
+              "wrongful",
+              "unlawful",
+              "property",
+              "gaining",
+              "legally",
+              "entitled",
+              "definitions",
+              "preliminary"
+            ],
+            "legal_concepts": [
+              "wrongful gain",
+              "unlawful means"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "wrongful gain"
+              ]
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.6949467198639133
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S2_N37",
+            "score": 0.457063,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;",
+            "keywords": [
+              "loss",
+              "means",
+              "wrongful",
+              "unlawful",
+              "property",
+              "losing",
+              "legally",
+              "entitled",
+              "definitions",
+              "preliminary"
+            ],
+            "legal_concepts": [
+              "wrongful loss",
+              "unlawful means"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "wrongful loss"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7550655603408813,
+              "bm25": 0.49040231476060286
+            },
+            "query_scores": {
+              "original": 0.7550655603408813
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S2_N7",
+            "score": 0.288351,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“dishonestly” means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“dishonestly” means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person;",
+            "keywords": [
+              "wrongful",
+              "dishonestly",
+              "means",
+              "doing",
+              "anything",
+              "intention",
+              "causing",
+              "gain",
+              "loss",
+              "definitions"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "bm25": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S324_N1_ILL1_A",
+            "score": 0.263037,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 324,
+            "citation": "Section 324",
+            "text": "A voluntarily burns a valuable security belonging to Z intending to cause wrongful loss to Z. A has committed mischief.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 324: Mischief.\nWhoever with intent to cause, or knowing that he is likely to cause, wrongful loss or damage to the public or to any person, causes the destruction of any property, or any such change in any property or in the situation thereof as destroys or diminishes its value or utility, or affects it injuriously, commits mischief.\nA voluntarily burns a valuable security belonging to Z intending to cause wrongful loss to Z. A has committed mischief.",
+            "keywords": [
+              "mischief",
+              "voluntarily",
+              "burns",
+              "valuable",
+              "security",
+              "belonging",
+              "intending",
+              "cause",
+              "wrongful",
+              "loss",
+              "property damage"
+            ],
+            "legal_concepts": [
+              "destruction of property",
+              "wrongful loss"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "wrongful loss"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.623114824295044,
+              "bm25": 0.3869195872108777
+            },
+            "query_scores": {
+              "original": 0.623114824295044
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "rerank"
+            ]
+          }
+        ],
+        "sub_query_1": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S2_N36",
+            "score": 1.0,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“wrongful gain” means gain by unlawful means of property to which the person gaining is not legally entitled;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“wrongful gain” means gain by unlawful means of property to which the person gaining is not legally entitled;",
+            "keywords": [
+              "gain",
+              "means",
+              "wrongful",
+              "unlawful",
+              "property",
+              "gaining",
+              "legally",
+              "entitled",
+              "definitions",
+              "preliminary"
+            ],
+            "legal_concepts": [
+              "wrongful gain",
+              "unlawful means"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "wrongful gain"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.9,
+              "bm25": 0.9
+            },
+            "query_scores": {
+              "sub_query_1": 0.9
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "bm25:sub_query_1",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S2_N38",
+            "score": 0.75479,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“gaining wrongfully” and “losing wrongfully”.—A person is said to gain wrongfully when such person retains wrongfully, as well as when such person acquires wrongfully. A person is said to lose wrongfully when such person is wrongfully kept out of any property, as well as when such person is wrongfully deprived of property; and",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“gaining wrongfully” and “losing wrongfully”.—A person is said to gain wrongfully when such person retains wrongfully, as well as when such person acquires wrongfully. A person is said to lose wrongfully when such person is wrongfully kept out of any property, as well as when such person is wrongfully deprived of property; and",
+            "keywords": [
+              "wrongfully",
+              "said",
+              "well",
+              "property",
+              "gaining",
+              "losing",
+              "gain",
+              "retains",
+              "acquires",
+              "lose",
+              "wrongful gain",
+              "wrongful loss"
+            ],
+            "legal_concepts": [
+              "gaining wrongfully",
+              "losing wrongfully"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6672664403915406,
+              "bm25": 0.225
+            },
+            "query_scores": {
+              "sub_query_1": 0.6672664403915406
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "bm25:sub_query_1",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S2_N7",
+            "score": 0.571959,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“dishonestly” means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“dishonestly” means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person;",
+            "keywords": [
+              "wrongful",
+              "dishonestly",
+              "means",
+              "doing",
+              "anything",
+              "intention",
+              "causing",
+              "gain",
+              "loss",
+              "definitions"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6106002688407898,
+              "bm25": 0.806102501371264
+            },
+            "query_scores": {
+              "sub_query_1": 0.806102501371264
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "bm25:sub_query_1",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S2_N37",
+            "score": 0.183898,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;",
+            "keywords": [
+              "loss",
+              "means",
+              "wrongful",
+              "unlawful",
+              "property",
+              "losing",
+              "legally",
+              "entitled",
+              "definitions",
+              "preliminary"
+            ],
+            "legal_concepts": [
+              "wrongful loss",
+              "unlawful means"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "wrongful loss"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6924758791923523,
+              "bm25": 0.1125
+            },
+            "query_scores": {
+              "sub_query_1": 0.6924758791923523
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "bm25:sub_query_1",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S246_BODY",
+            "score": 0.155197,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 246,
+            "citation": "Section 246",
+            "text": "Whoever fraudulently or dishonestly, or with intent to injure or annoy any person, makes in a Court any claim which he knows to be false, shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine. Fraudulently obtaining decree for sum not due.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 246: Dishonestly making false claim in Court.\nWhoever fraudulently or dishonestly, or with intent to injure or annoy any person, makes in a Court any claim which he knows to be false, shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine. Fraudulently obtaining decree for sum not due.",
+            "keywords": [
+              "false",
+              "fraudulently",
+              "dishonestly",
+              "court",
+              "claim",
+              "whoever",
+              "intent",
+              "injure",
+              "annoy",
+              "makes",
+              "false claim",
+              "offence"
+            ],
+            "legal_concepts": [
+              "dishonestly making false claim in court",
+              "fraudulent claim in court"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.559851747751236
+            },
+            "query_scores": {
+              "sub_query_1": 0.559851747751236
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          }
+        ],
+        "sub_query_2": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S2_N37",
+            "score": 1.0,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;",
+            "keywords": [
+              "loss",
+              "means",
+              "wrongful",
+              "unlawful",
+              "property",
+              "losing",
+              "legally",
+              "entitled",
+              "definitions",
+              "preliminary"
+            ],
+            "legal_concepts": [
+              "wrongful loss",
+              "unlawful means"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "wrongful loss"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.9,
+              "bm25": 0.9
+            },
+            "query_scores": {
+              "sub_query_2": 0.9
+            },
+            "reasons": [
+              "faiss:sub_query_2",
+              "bm25:sub_query_2",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S2_N38",
+            "score": 0.672495,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“gaining wrongfully” and “losing wrongfully”.—A person is said to gain wrongfully when such person retains wrongfully, as well as when such person acquires wrongfully. A person is said to lose wrongfully when such person is wrongfully kept out of any property, as well as when such person is wrongfully deprived of property; and",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“gaining wrongfully” and “losing wrongfully”.—A person is said to gain wrongfully when such person retains wrongfully, as well as when such person acquires wrongfully. A person is said to lose wrongfully when such person is wrongfully kept out of any property, as well as when such person is wrongfully deprived of property; and",
+            "keywords": [
+              "wrongfully",
+              "said",
+              "well",
+              "property",
+              "gaining",
+              "losing",
+              "gain",
+              "retains",
+              "acquires",
+              "lose",
+              "wrongful gain",
+              "wrongful loss"
+            ],
+            "legal_concepts": [
+              "gaining wrongfully",
+              "losing wrongfully"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6440533697605133
+            },
+            "query_scores": {
+              "sub_query_2": 0.6440533697605133
+            },
+            "reasons": [
+              "faiss:sub_query_2",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__section__BNS_S324",
+            "score": 0.589177,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 324,
+            "citation": "Section 324",
+            "text": "(1) Whoever with intent to cause, or knowing that he is likely\nto cause, wrongful loss or damage to the public or to any person, causes\nthe destruction of any property, or any such change in any property or in\nthe situation thereof as destroys or diminishes its value or utility, or affects\nit injuriously, commits mischief.\nExplanation 1.—It is not essential to the offence of mischief that the\noffender should intend to cause loss or damage to the owner of the property\ninjured or destroyed. It is sufficient if he intends to cause, or knows that\nhe is likely to cause, wrongful loss or damage to any person by injuring any\nproperty, whether it belongs to that person or not.\nExplanation 2.—Mischief may be committed by an act affecting\nproperty belonging to the person who commits the act, or to that person\nand others jointly.\nIllustrations.\n(a) A voluntarily burns a valuable security belonging to Z intending\nto cause wrongful loss to Z. A has committed mischief.\n(b) A introduces water into an ice-house belonging to Z and thus\ncauses the ice to melt, intending wrongful loss to Z. A has committed\nmischief.\n(c) A voluntarily throws into a river a ring belonging to Z, with the\nintention of thereby causing wrongful loss to Z. A has committed mischief.\n(d) A, knowing that his effects are about to be taken in execution in\norder to satisfy a debt due from him to Z, destroys those effects, with the\nintention of thereby preventing Z from obtaining satisfaction of the debt,\nand of thus causing damage to Z. A has committed mischief.\n(e) A having insured a ship, voluntarily causes the same to be cast\naway, with the intention of causing damage to the underwriters. A has\ncommitted mischief.\n(f) A causes a ship to be cast away, intending thereby to cause\ndamage to Z who has lent money on bottomry on the ship. A has committed\nmischief.\n(g) A, having joint property with Z in a horse, shoots the horse,\nintending thereby to cause wrongful loss to Z. A has committed mischief.\n(h) A causes cattle to enter upon a field belonging to Z, intending to\ncause and knowing that he is likely to cause damage to Z’s crop. A has\ncommitted mischief.\n(2) Whoever commits mischief shall be punished with imprisonment\nof either description for a term which may extend to six months, or with\nfine, or with both.\n(3) Whoever commits mischief and thereby causes loss or damage to\nany property including the property of Government or Local Authority shall\nbe punished with imprisonment of either description for a term which may\nextend to one year, or with fine, or with both.\n(4) Whoever commits mischief and thereby causes loss or damage to\nthe amount of twenty thousand rupees and more but less than one lakh\nrupees shall be punished with imprisonment of either description for a term\nwhich may extend to two years, or with fine, or with both.\n(5) Whoever commits mischief and thereby causes loss or damage to\nthe amount of one lakh rupees or upwards, shall be punished with\nimprisonment of either description for a term which may extend to five\nyears, or with fine, or with both.\n(6) Whoever commits mischief, having made preparation for causing\nto any person death, or hurt, or wrongful restraint, or fear of death, or of\nhurt, or of wrongful restraint, shall be punished with imprisonment of either\ndescription for a term which may extend to five years, and shall also be\nliable to fine.\nMischief by killing or maiming animal.",
+            "derived_context": "",
+            "keywords": [
+              "property damage",
+              "intentional harm"
+            ],
+            "legal_concepts": [
+              "mischief",
+              "property damage"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "anchor": 0.6247077998098455
+            },
+            "query_scores": {
+              "anchor": 0.6247077998098455
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S324_N1_ILL1_A",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S324_N1_ILL1_A",
+            "score": 0.388884,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 324,
+            "citation": "Section 324",
+            "text": "A voluntarily burns a valuable security belonging to Z intending to cause wrongful loss to Z. A has committed mischief.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 324: Mischief.\nWhoever with intent to cause, or knowing that he is likely to cause, wrongful loss or damage to the public or to any person, causes the destruction of any property, or any such change in any property or in the situation thereof as destroys or diminishes its value or utility, or affects it injuriously, commits mischief.\nA voluntarily burns a valuable security belonging to Z intending to cause wrongful loss to Z. A has committed mischief.",
+            "keywords": [
+              "mischief",
+              "voluntarily",
+              "burns",
+              "valuable",
+              "security",
+              "belonging",
+              "intending",
+              "cause",
+              "wrongful",
+              "loss",
+              "property damage"
+            ],
+            "legal_concepts": [
+              "destruction of property",
+              "wrongful loss"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "wrongful loss"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.5674375176429749,
+              "bm25": 0.6971696005866719
+            },
+            "query_scores": {
+              "sub_query_2": 0.6971696005866719
+            },
+            "reasons": [
+              "faiss:sub_query_2",
+              "bm25:sub_query_2",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S2_N7",
+            "score": 0.360789,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“dishonestly” means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“dishonestly” means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person;",
+            "keywords": [
+              "wrongful",
+              "dishonestly",
+              "means",
+              "doing",
+              "anything",
+              "intention",
+              "causing",
+              "gain",
+              "loss",
+              "definitions"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.5741449177265168,
+              "bm25": 0.8608171629530578
+            },
+            "query_scores": {
+              "sub_query_2": 0.8608171629530578
+            },
+            "reasons": [
+              "faiss:sub_query_2",
+              "bm25:sub_query_2",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          }
+        ],
+        "sub_query_3": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S2_N36",
+            "score": 1.0,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“wrongful gain” means gain by unlawful means of property to which the person gaining is not legally entitled;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“wrongful gain” means gain by unlawful means of property to which the person gaining is not legally entitled;",
+            "keywords": [
+              "gain",
+              "means",
+              "wrongful",
+              "unlawful",
+              "property",
+              "gaining",
+              "legally",
+              "entitled",
+              "definitions",
+              "preliminary"
+            ],
+            "legal_concepts": [
+              "wrongful gain",
+              "unlawful means"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "wrongful gain"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.9,
+              "bm25": 0.9
+            },
+            "query_scores": {
+              "sub_query_3": 0.9
+            },
+            "reasons": [
+              "faiss:sub_query_3",
+              "bm25:sub_query_3",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S2_N38",
+            "score": 0.563537,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“gaining wrongfully” and “losing wrongfully”.—A person is said to gain wrongfully when such person retains wrongfully, as well as when such person acquires wrongfully. A person is said to lose wrongfully when such person is wrongfully kept out of any property, as well as when such person is wrongfully deprived of property; and",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“gaining wrongfully” and “losing wrongfully”.—A person is said to gain wrongfully when such person retains wrongfully, as well as when such person acquires wrongfully. A person is said to lose wrongfully when such person is wrongfully kept out of any property, as well as when such person is wrongfully deprived of property; and",
+            "keywords": [
+              "wrongfully",
+              "said",
+              "well",
+              "property",
+              "gaining",
+              "losing",
+              "gain",
+              "retains",
+              "acquires",
+              "lose",
+              "wrongful gain",
+              "wrongful loss"
+            ],
+            "legal_concepts": [
+              "gaining wrongfully",
+              "losing wrongfully"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.5925550103187561,
+              "bm25": 0.225
+            },
+            "query_scores": {
+              "sub_query_3": 0.5925550103187561
+            },
+            "reasons": [
+              "faiss:sub_query_3",
+              "bm25:sub_query_3",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S2_N7",
+            "score": 0.277141,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“dishonestly” means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“dishonestly” means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person;",
+            "keywords": [
+              "wrongful",
+              "dishonestly",
+              "means",
+              "doing",
+              "anything",
+              "intention",
+              "causing",
+              "gain",
+              "loss",
+              "definitions"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "bm25": 0.8067758381867536
+            },
+            "query_scores": {
+              "sub_query_3": 0.8067758381867536
+            },
+            "reasons": [
+              "bm25:sub_query_3",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S2_N37",
+            "score": 0.153713,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;",
+            "keywords": [
+              "loss",
+              "means",
+              "wrongful",
+              "unlawful",
+              "property",
+              "losing",
+              "legally",
+              "entitled",
+              "definitions",
+              "preliminary"
+            ],
+            "legal_concepts": [
+              "wrongful loss",
+              "unlawful means"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "wrongful loss"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6095313549041749,
+              "bm25": 0.12857142857142856
+            },
+            "query_scores": {
+              "sub_query_3": 0.6095313549041749
+            },
+            "reasons": [
+              "faiss:sub_query_3",
+              "bm25:sub_query_3",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S323_BODY",
+            "score": 0.152802,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 323,
+            "citation": "Section 323",
+            "text": "Whoever dishonestly or fraudulently conceals or removes any property of himself or any other person, or dishonestly or fraudulently assists in the concealment or removal thereof, or dishonestly releases any demand or claim to which he is entitled, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both. Of mischief Mischief. [OF MISCHIEF]",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 323: Dishonest or fraudulent removal or concealment of property.\nWhoever dishonestly or fraudulently conceals or removes any property of himself or any other person, or dishonestly or fraudulently assists in the concealment or removal thereof, or dishonestly releases any demand or claim to which he is entitled, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both. Of mischief Mischief. [OF MISCHIEF]",
+            "keywords": [
+              "dishonestly",
+              "property",
+              "mischief",
+              "fraudulently",
+              "concealment",
+              "removal",
+              "whoever",
+              "conceals",
+              "removes",
+              "himself",
+              "dishonest removal",
+              "fraudulent concealment"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "punishment for mischief"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.5512294113636017
+            },
+            "query_scores": {
+              "sub_query_3": 0.5512294113636017
+            },
+            "reasons": [
+              "faiss:sub_query_3",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          }
+        ],
+        "sub_query_4": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S2_N37",
+            "score": 0.911937,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;",
+            "keywords": [
+              "loss",
+              "means",
+              "wrongful",
+              "unlawful",
+              "property",
+              "losing",
+              "legally",
+              "entitled",
+              "definitions",
+              "preliminary"
+            ],
+            "legal_concepts": [
+              "wrongful loss",
+              "unlawful means"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "wrongful loss"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.9,
+              "bm25": 0.9
+            },
+            "query_scores": {
+              "sub_query_4": 0.9
+            },
+            "reasons": [
+              "faiss:sub_query_4",
+              "bm25:sub_query_4",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__section__BNS_S324",
+            "score": 0.85088,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 324,
+            "citation": "Section 324",
+            "text": "(1) Whoever with intent to cause, or knowing that he is likely\nto cause, wrongful loss or damage to the public or to any person, causes\nthe destruction of any property, or any such change in any property or in\nthe situation thereof as destroys or diminishes its value or utility, or affects\nit injuriously, commits mischief.\nExplanation 1.—It is not essential to the offence of mischief that the\noffender should intend to cause loss or damage to the owner of the property\ninjured or destroyed. It is sufficient if he intends to cause, or knows that\nhe is likely to cause, wrongful loss or damage to any person by injuring any\nproperty, whether it belongs to that person or not.\nExplanation 2.—Mischief may be committed by an act affecting\nproperty belonging to the person who commits the act, or to that person\nand others jointly.\nIllustrations.\n(a) A voluntarily burns a valuable security belonging to Z intending\nto cause wrongful loss to Z. A has committed mischief.\n(b) A introduces water into an ice-house belonging to Z and thus\ncauses the ice to melt, intending wrongful loss to Z. A has committed\nmischief.\n(c) A voluntarily throws into a river a ring belonging to Z, with the\nintention of thereby causing wrongful loss to Z. A has committed mischief.\n(d) A, knowing that his effects are about to be taken in execution in\norder to satisfy a debt due from him to Z, destroys those effects, with the\nintention of thereby preventing Z from obtaining satisfaction of the debt,\nand of thus causing damage to Z. A has committed mischief.\n(e) A having insured a ship, voluntarily causes the same to be cast\naway, with the intention of causing damage to the underwriters. A has\ncommitted mischief.\n(f) A causes a ship to be cast away, intending thereby to cause\ndamage to Z who has lent money on bottomry on the ship. A has committed\nmischief.\n(g) A, having joint property with Z in a horse, shoots the horse,\nintending thereby to cause wrongful loss to Z. A has committed mischief.\n(h) A causes cattle to enter upon a field belonging to Z, intending to\ncause and knowing that he is likely to cause damage to Z’s crop. A has\ncommitted mischief.\n(2) Whoever commits mischief shall be punished with imprisonment\nof either description for a term which may extend to six months, or with\nfine, or with both.\n(3) Whoever commits mischief and thereby causes loss or damage to\nany property including the property of Government or Local Authority shall\nbe punished with imprisonment of either description for a term which may\nextend to one year, or with fine, or with both.\n(4) Whoever commits mischief and thereby causes loss or damage to\nthe amount of twenty thousand rupees and more but less than one lakh\nrupees shall be punished with imprisonment of either description for a term\nwhich may extend to two years, or with fine, or with both.\n(5) Whoever commits mischief and thereby causes loss or damage to\nthe amount of one lakh rupees or upwards, shall be punished with\nimprisonment of either description for a term which may extend to five\nyears, or with fine, or with both.\n(6) Whoever commits mischief, having made preparation for causing\nto any person death, or hurt, or wrongful restraint, or fear of death, or of\nhurt, or of wrongful restraint, shall be punished with imprisonment of either\ndescription for a term which may extend to five years, and shall also be\nliable to fine.\nMischief by killing or maiming animal.",
+            "derived_context": "",
+            "keywords": [
+              "property damage",
+              "intentional harm"
+            ],
+            "legal_concepts": [
+              "mischief",
+              "property damage"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "anchor": 0.6271994258264308
+            },
+            "query_scores": {
+              "anchor": 0.6271994258264308
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S324_N1_ILL1_A",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S324_N1_ILL1_A",
+            "score": 0.354223,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 324,
+            "citation": "Section 324",
+            "text": "A voluntarily burns a valuable security belonging to Z intending to cause wrongful loss to Z. A has committed mischief.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 324: Mischief.\nWhoever with intent to cause, or knowing that he is likely to cause, wrongful loss or damage to the public or to any person, causes the destruction of any property, or any such change in any property or in the situation thereof as destroys or diminishes its value or utility, or affects it injuriously, commits mischief.\nA voluntarily burns a valuable security belonging to Z intending to cause wrongful loss to Z. A has committed mischief.",
+            "keywords": [
+              "mischief",
+              "voluntarily",
+              "burns",
+              "valuable",
+              "security",
+              "belonging",
+              "intending",
+              "cause",
+              "wrongful",
+              "loss",
+              "property damage"
+            ],
+            "legal_concepts": [
+              "destruction of property",
+              "wrongful loss"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "wrongful loss"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.5500661373138428,
+              "bm25": 0.6995665472115735
+            },
+            "query_scores": {
+              "sub_query_4": 0.6995665472115735
+            },
+            "reasons": [
+              "faiss:sub_query_4",
+              "bm25:sub_query_4",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S2_N7",
+            "score": 0.240009,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“dishonestly” means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“dishonestly” means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person;",
+            "keywords": [
+              "wrongful",
+              "dishonestly",
+              "means",
+              "doing",
+              "anything",
+              "intention",
+              "causing",
+              "gain",
+              "loss",
+              "definitions"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "bm25": 0.861280205816876
+            },
+            "query_scores": {
+              "sub_query_4": 0.861280205816876
+            },
+            "reasons": [
+              "bm25:sub_query_4",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S324_N1_ILL1_G",
+            "score": 0.239222,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 324,
+            "citation": "Section 324",
+            "text": "A, having joint property with Z in a horse, shoots the horse, intending thereby to cause wrongful loss to Z. A has committed mischief.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 324: Mischief.\nWhoever with intent to cause, or knowing that he is likely to cause, wrongful loss or damage to the public or to any person, causes the destruction of any property, or any such change in any property or in the situation thereof as destroys or diminishes its value or utility, or affects it injuriously, commits mischief.\nA, having joint property with Z in a horse, shoots the horse, intending thereby to cause wrongful loss to Z. A has committed mischief.",
+            "keywords": [
+              "property",
+              "horse",
+              "mischief",
+              "having",
+              "joint",
+              "shoots",
+              "intending",
+              "thereby",
+              "cause",
+              "wrongful",
+              "property damage",
+              "wrongful loss"
+            ],
+            "legal_concepts": [
+              "mischief",
+              "property destruction"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "bm25": 0.65309260423375
+            },
+            "query_scores": {
+              "sub_query_4": 0.65309260423375
+            },
+            "reasons": [
+              "bm25:sub_query_4",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "rerank"
+            ]
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S2_N36",
+          "score": 1.0,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "“wrongful gain” means gain by unlawful means of property to which the person gaining is not legally entitled;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“wrongful gain” means gain by unlawful means of property to which the person gaining is not legally entitled;",
+          "keywords": [
+            "gain",
+            "means",
+            "wrongful",
+            "unlawful",
+            "property",
+            "gaining",
+            "legally",
+            "entitled",
+            "definitions",
+            "preliminary"
+          ],
+          "legal_concepts": [
+            "wrongful gain",
+            "unlawful means"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "wrongful gain"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.6949467198639133,
+            "sub_query_1:faiss": 0.9,
+            "sub_query_1:bm25": 0.9,
+            "sub_query_3:faiss": 0.9,
+            "sub_query_3:bm25": 0.9
+          },
+          "query_scores": {
+            "original": 0.6193313837344541,
+            "sub_query_1": 1.0,
+            "sub_query_3": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:1",
+            "general_clause_boost",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "faiss:sub_query_3",
+            "bm25:sub_query_3",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S2_N37",
+          "score": 1.0,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "“wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;",
+          "keywords": [
+            "loss",
+            "means",
+            "wrongful",
+            "unlawful",
+            "property",
+            "losing",
+            "legally",
+            "entitled",
+            "definitions",
+            "preliminary"
+          ],
+          "legal_concepts": [
+            "wrongful loss",
+            "unlawful means"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "wrongful loss"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7550655603408813,
+            "original:bm25": 0.49040231476060286,
+            "sub_query_1:faiss": 0.6924758791923523,
+            "sub_query_1:bm25": 0.1125,
+            "sub_query_2:faiss": 0.9,
+            "sub_query_2:bm25": 0.9,
+            "sub_query_3:faiss": 0.6095313549041749,
+            "sub_query_3:bm25": 0.12857142857142856,
+            "sub_query_4:faiss": 0.9,
+            "sub_query_4:bm25": 0.9
+          },
+          "query_scores": {
+            "original": 0.4570630172937938,
+            "sub_query_1": 0.18389831719215008,
+            "sub_query_2": 1.0,
+            "sub_query_3": 0.15371272850983547,
+            "sub_query_4": 0.9119368019005399
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:1",
+            "general_clause_boost",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "zero_concept_overlap_penalty",
+            "faiss:sub_query_2",
+            "bm25:sub_query_2",
+            "faiss:sub_query_3",
+            "bm25:sub_query_3",
+            "faiss:sub_query_4",
+            "bm25:sub_query_4",
+            "multi_query_support:5"
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__section__BNS_S324",
+          "score": 0.935968,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 324,
+          "citation": "Section 324",
+          "text": "(1) Whoever with intent to cause, or knowing that he is likely\nto cause, wrongful loss or damage to the public or to any person, causes\nthe destruction of any property, or any such change in any property or in\nthe situation thereof as destroys or diminishes its value or utility, or affects\nit injuriously, commits mischief.\nExplanation 1.—It is not essential to the offence of mischief that the\noffender should intend to cause loss or damage to the owner of the property\ninjured or destroyed. It is sufficient if he intends to cause, or knows that\nhe is likely to cause, wrongful loss or damage to any person by injuring any\nproperty, whether it belongs to that person or not.\nExplanation 2.—Mischief may be committed by an act affecting\nproperty belonging to the person who commits the act, or to that person\nand others jointly.\nIllustrations.\n(a) A voluntarily burns a valuable security belonging to Z intending\nto cause wrongful loss to Z. A has committed mischief.\n(b) A introduces water into an ice-house belonging to Z and thus\ncauses the ice to melt, intending wrongful loss to Z. A has committed\nmischief.\n(c) A voluntarily throws into a river a ring belonging to Z, with the\nintention of thereby causing wrongful loss to Z. A has committed mischief.\n(d) A, knowing that his effects are about to be taken in execution in\norder to satisfy a debt due from him to Z, destroys those effects, with the\nintention of thereby preventing Z from obtaining satisfaction of the debt,\nand of thus causing damage to Z. A has committed mischief.\n(e) A having insured a ship, voluntarily causes the same to be cast\naway, with the intention of causing damage to the underwriters. A has\ncommitted mischief.\n(f) A causes a ship to be cast away, intending thereby to cause\ndamage to Z who has lent money on bottomry on the ship. A has committed\nmischief.\n(g) A, having joint property with Z in a horse, shoots the horse,\nintending thereby to cause wrongful loss to Z. A has committed mischief.\n(h) A causes cattle to enter upon a field belonging to Z, intending to\ncause and knowing that he is likely to cause damage to Z’s crop. A has\ncommitted mischief.\n(2) Whoever commits mischief shall be punished with imprisonment\nof either description for a term which may extend to six months, or with\nfine, or with both.\n(3) Whoever commits mischief and thereby causes loss or damage to\nany property including the property of Government or Local Authority shall\nbe punished with imprisonment of either description for a term which may\nextend to one year, or with fine, or with both.\n(4) Whoever commits mischief and thereby causes loss or damage to\nthe amount of twenty thousand rupees and more but less than one lakh\nrupees shall be punished with imprisonment of either description for a term\nwhich may extend to two years, or with fine, or with both.\n(5) Whoever commits mischief and thereby causes loss or damage to\nthe amount of one lakh rupees or upwards, shall be punished with\nimprisonment of either description for a term which may extend to five\nyears, or with fine, or with both.\n(6) Whoever commits mischief, having made preparation for causing\nto any person death, or hurt, or wrongful restraint, or fear of death, or of\nhurt, or of wrongful restraint, shall be punished with imprisonment of either\ndescription for a term which may extend to five years, and shall also be\nliable to fine.\nMischief by killing or maiming animal.",
+          "derived_context": "",
+          "keywords": [
+            "property damage",
+            "intentional harm"
+          ],
+          "legal_concepts": [
+            "mischief",
+            "property damage"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "sub_query_2:anchor": 0.6247077998098455,
+            "sub_query_4:anchor": 0.6271994258264308
+          },
+          "query_scores": {
+            "sub_query_2": 0.5891774138983463,
+            "sub_query_4": 0.8508797703305724
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S324_N1_ILL1_A",
+            "rerank",
+            "multi_query_support:2"
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S2_N38",
+          "score": 0.854967,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "“gaining wrongfully” and “losing wrongfully”.—A person is said to gain wrongfully when such person retains wrongfully, as well as when such person acquires wrongfully. A person is said to lose wrongfully when such person is wrongfully kept out of any property, as well as when such person is wrongfully deprived of property; and",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“gaining wrongfully” and “losing wrongfully”.—A person is said to gain wrongfully when such person retains wrongfully, as well as when such person acquires wrongfully. A person is said to lose wrongfully when such person is wrongfully kept out of any property, as well as when such person is wrongfully deprived of property; and",
+          "keywords": [
+            "wrongfully",
+            "said",
+            "well",
+            "property",
+            "gaining",
+            "losing",
+            "gain",
+            "retains",
+            "acquires",
+            "lose",
+            "wrongful gain",
+            "wrongful loss"
+          ],
+          "legal_concepts": [
+            "gaining wrongfully",
+            "losing wrongfully"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7033438086509705,
+            "sub_query_1:faiss": 0.6672664403915406,
+            "sub_query_1:bm25": 0.225,
+            "sub_query_2:faiss": 0.6440533697605133,
+            "sub_query_3:faiss": 0.5925550103187561,
+            "sub_query_3:bm25": 0.225
+          },
+          "query_scores": {
+            "original": 0.7772426397800445,
+            "sub_query_1": 0.7547897689383778,
+            "sub_query_2": 0.6724953609119811,
+            "sub_query_3": 0.5635368445983409
+          },
+          "reasons": [
+            "faiss:original",
+            "zero_concept_overlap_penalty",
+            "general_clause_boost",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "faiss:sub_query_2",
+            "faiss:sub_query_3",
+            "bm25:sub_query_3",
+            "multi_query_support:4"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S2_N7",
+          "score": 0.629155,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "“dishonestly” means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“dishonestly” means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person;",
+          "keywords": [
+            "wrongful",
+            "dishonestly",
+            "means",
+            "doing",
+            "anything",
+            "intention",
+            "causing",
+            "gain",
+            "loss",
+            "definitions"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 1.0,
+            "sub_query_1:faiss": 0.6106002688407898,
+            "sub_query_1:bm25": 0.806102501371264,
+            "sub_query_2:faiss": 0.5741449177265168,
+            "sub_query_2:bm25": 0.8608171629530578,
+            "sub_query_3:bm25": 0.8067758381867536,
+            "sub_query_4:bm25": 0.861280205816876
+          },
+          "query_scores": {
+            "original": 0.2883508465199399,
+            "sub_query_1": 0.5719588466259706,
+            "sub_query_2": 0.3607885309048565,
+            "sub_query_3": 0.27714076634116447,
+            "sub_query_4": 0.2400091228341583
+          },
+          "reasons": [
+            "bm25:original",
+            "zero_concept_overlap_penalty",
+            "general_clause_boost",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "faiss:sub_query_2",
+            "bm25:sub_query_2",
+            "bm25:sub_query_3",
+            "bm25:sub_query_4",
+            "multi_query_support:5"
+          ]
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S2_N38",
+          "score": 0.941987,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "“gaining wrongfully” and “losing wrongfully”.—A person is said to gain wrongfully when such person retains wrongfully, as well as when such person acquires wrongfully. A person is said to lose wrongfully when such person is wrongfully kept out of any property, as well as when such person is wrongfully deprived of property; and",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“gaining wrongfully” and “losing wrongfully”.—A person is said to gain wrongfully when such person retains wrongfully, as well as when such person acquires wrongfully. A person is said to lose wrongfully when such person is wrongfully kept out of any property, as well as when such person is wrongfully deprived of property; and",
+          "keywords": [
+            "wrongfully",
+            "said",
+            "well",
+            "property",
+            "gaining",
+            "losing",
+            "gain",
+            "retains",
+            "acquires",
+            "lose",
+            "wrongful gain",
+            "wrongful loss"
+          ],
+          "legal_concepts": [
+            "gaining wrongfully",
+            "losing wrongfully"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7033438086509705,
+            "sub_query_1:faiss": 0.6672664403915406,
+            "sub_query_1:bm25": 0.225,
+            "sub_query_2:faiss": 0.6440533697605133,
+            "sub_query_3:faiss": 0.5925550103187561,
+            "sub_query_3:bm25": 0.225
+          },
+          "query_scores": {
+            "original": 0.7772426397800445,
+            "sub_query_1": 0.7547897689383778,
+            "sub_query_2": 0.6724953609119811,
+            "sub_query_3": 0.5635368445983409
+          },
+          "reasons": [
+            "faiss:original",
+            "zero_concept_overlap_penalty",
+            "general_clause_boost",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "faiss:sub_query_2",
+            "faiss:sub_query_3",
+            "bm25:sub_query_3",
+            "multi_query_support:4"
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S2_N36",
+          "score": 0.619331,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "“wrongful gain” means gain by unlawful means of property to which the person gaining is not legally entitled;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“wrongful gain” means gain by unlawful means of property to which the person gaining is not legally entitled;",
+          "keywords": [
+            "gain",
+            "means",
+            "wrongful",
+            "unlawful",
+            "property",
+            "gaining",
+            "legally",
+            "entitled",
+            "definitions",
+            "preliminary"
+          ],
+          "legal_concepts": [
+            "wrongful gain",
+            "unlawful means"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "wrongful gain"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.6949467198639133,
+            "sub_query_1:faiss": 0.9,
+            "sub_query_1:bm25": 0.9,
+            "sub_query_3:faiss": 0.9,
+            "sub_query_3:bm25": 0.9
+          },
+          "query_scores": {
+            "original": 0.6193313837344541,
+            "sub_query_1": 1.0,
+            "sub_query_3": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:1",
+            "general_clause_boost",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "faiss:sub_query_3",
+            "bm25:sub_query_3",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S2_N37",
+          "score": 0.508223,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "“wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“wrongful loss” means the loss by unlawful means of property to which the person losing it is legally entitled;",
+          "keywords": [
+            "loss",
+            "means",
+            "wrongful",
+            "unlawful",
+            "property",
+            "losing",
+            "legally",
+            "entitled",
+            "definitions",
+            "preliminary"
+          ],
+          "legal_concepts": [
+            "wrongful loss",
+            "unlawful means"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "wrongful loss"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7550655603408813,
+            "original:bm25": 0.49040231476060286,
+            "sub_query_1:faiss": 0.6924758791923523,
+            "sub_query_1:bm25": 0.1125,
+            "sub_query_2:faiss": 0.9,
+            "sub_query_2:bm25": 0.9,
+            "sub_query_3:faiss": 0.6095313549041749,
+            "sub_query_3:bm25": 0.12857142857142856,
+            "sub_query_4:faiss": 0.9,
+            "sub_query_4:bm25": 0.9
+          },
+          "query_scores": {
+            "original": 0.4570630172937938,
+            "sub_query_1": 0.18389831719215008,
+            "sub_query_2": 1.0,
+            "sub_query_3": 0.15371272850983547,
+            "sub_query_4": 0.9119368019005399
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:1",
+            "general_clause_boost",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "zero_concept_overlap_penalty",
+            "faiss:sub_query_2",
+            "bm25:sub_query_2",
+            "faiss:sub_query_3",
+            "bm25:sub_query_3",
+            "faiss:sub_query_4",
+            "bm25:sub_query_4",
+            "multi_query_support:5"
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__section__BNS_S324",
+          "score": 0.415872,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 324,
+          "citation": "Section 324",
+          "text": "(1) Whoever with intent to cause, or knowing that he is likely\nto cause, wrongful loss or damage to the public or to any person, causes\nthe destruction of any property, or any such change in any property or in\nthe situation thereof as destroys or diminishes its value or utility, or affects\nit injuriously, commits mischief.\nExplanation 1.—It is not essential to the offence of mischief that the\noffender should intend to cause loss or damage to the owner of the property\ninjured or destroyed. It is sufficient if he intends to cause, or knows that\nhe is likely to cause, wrongful loss or damage to any person by injuring any\nproperty, whether it belongs to that person or not.\nExplanation 2.—Mischief may be committed by an act affecting\nproperty belonging to the person who commits the act, or to that person\nand others jointly.\nIllustrations.\n(a) A voluntarily burns a valuable security belonging to Z intending\nto cause wrongful loss to Z. A has committed mischief.\n(b) A introduces water into an ice-house belonging to Z and thus\ncauses the ice to melt, intending wrongful loss to Z. A has committed\nmischief.\n(c) A voluntarily throws into a river a ring belonging to Z, with the\nintention of thereby causing wrongful loss to Z. A has committed mischief.\n(d) A, knowing that his effects are about to be taken in execution in\norder to satisfy a debt due from him to Z, destroys those effects, with the\nintention of thereby preventing Z from obtaining satisfaction of the debt,\nand of thus causing damage to Z. A has committed mischief.\n(e) A having insured a ship, voluntarily causes the same to be cast\naway, with the intention of causing damage to the underwriters. A has\ncommitted mischief.\n(f) A causes a ship to be cast away, intending thereby to cause\ndamage to Z who has lent money on bottomry on the ship. A has committed\nmischief.\n(g) A, having joint property with Z in a horse, shoots the horse,\nintending thereby to cause wrongful loss to Z. A has committed mischief.\n(h) A causes cattle to enter upon a field belonging to Z, intending to\ncause and knowing that he is likely to cause damage to Z’s crop. A has\ncommitted mischief.\n(2) Whoever commits mischief shall be punished with imprisonment\nof either description for a term which may extend to six months, or with\nfine, or with both.\n(3) Whoever commits mischief and thereby causes loss or damage to\nany property including the property of Government or Local Authority shall\nbe punished with imprisonment of either description for a term which may\nextend to one year, or with fine, or with both.\n(4) Whoever commits mischief and thereby causes loss or damage to\nthe amount of twenty thousand rupees and more but less than one lakh\nrupees shall be punished with imprisonment of either description for a term\nwhich may extend to two years, or with fine, or with both.\n(5) Whoever commits mischief and thereby causes loss or damage to\nthe amount of one lakh rupees or upwards, shall be punished with\nimprisonment of either description for a term which may extend to five\nyears, or with fine, or with both.\n(6) Whoever commits mischief, having made preparation for causing\nto any person death, or hurt, or wrongful restraint, or fear of death, or of\nhurt, or of wrongful restraint, shall be punished with imprisonment of either\ndescription for a term which may extend to five years, and shall also be\nliable to fine.\nMischief by killing or maiming animal.",
+          "derived_context": "",
+          "keywords": [
+            "property damage",
+            "intentional harm"
+          ],
+          "legal_concepts": [
+            "mischief",
+            "property damage"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "sub_query_2:anchor": 0.6247077998098455,
+            "sub_query_4:anchor": 0.6271994258264308
+          },
+          "query_scores": {
+            "sub_query_2": 0.5891774138983463,
+            "sub_query_4": 0.8508797703305724
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S324_N1_ILL1_A",
+            "rerank",
+            "multi_query_support:2"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__section__BNS_S2",
+          "score": 0.412048,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "In this Sanhita, unless the context otherwise requires, ––\n(1) “act” denotes as well a series of acts as a single act;\n(2) “animal” means any living creature, other than a human\nbeing;\n(3) “child” means any person below the age of eighteen years;\n(4) “counterfeit”.–A person is said to “counterfeit” who causes\none thing to resemble another thing, intending by means of that\nresemblance to practise deception, or knowing it to be likely that\ndeception will thereby be practised.\nExplanation 1.—It is not essential to counterfeiting that the\nimitation should be exact.\nExplanation 2.—When a person causes one thing to resemble\nanother thing, and the resemblance is such that a person might be\ndeceived thereby, it shall be presumed, until the contrary is proved,\nthat the person so causing the one thing to resemble the other thing\nintended by means of that resemblance to practise deception or knew\nit to be likely that deception would thereby be practised;\n(5) “Court” means a Judge who is empowered by law to act\njudicially alone, or a body of Judges which is empowered by law to\nact judicially as a body, when such Judge or body of Judges is acting\njudicially;\n(6) “death” means the death of a human being unless the\ncontrary appears from the context;\n(7) “dishonestly” means doing anything with the intention of\ncausing wrongful gain to one person or wrongful loss to another\nperson;\n(8) “document” means any matter expressed or described upon\nany substance by means of letters, figures or marks, or by more than\none of those means, and includes electronic and digital record,\nintended to be used, or which may be used, as evidence of that\nmatter.\nExplanation 1.—It is immaterial by what means or upon what\nsubstance the letters, figures or marks are formed, or whether the evidence\nis intended for, or may be used in a Court or not.\nIllustrations.\n(a) A writing expressing the terms of a contract, which may be used\nas evidence of the contract, is a document.\n(b) A cheque upon a banker is a document.\n(c) A power-of-attorney is a document.\n(d) A map or plan which is intended to be used or which may be used\nas evidence, is a document.\n(e) A writing containing directions or instructions is a document.\nExplanation 2.—Whatever is expressed by means of letters, figures\nor marks as explained by mercantile or other usage, shall be deemed to be\nexpressed by such letters, figures or marks within the meaning of this\nsection, although the same may not be actually expressed.\nIllustration.\nA writes his name on the back of a bill of exchange payable to his order.\nThe meaning of the endorsement, as explained by mercantile usage, is that\nthe bill is to be paid to the holder. The endorsement is a document, and\nshall be construed in the same manner as if the words “pay to the holder”\nor words to that effect had been written over the signature;\n(9) “fraudulently” means doing anything with the intention to defraud\nbut not otherwise;\n(10) “gender”. —The pronoun “he” and its derivatives are used of any\nperson, whether male, female or transgender.\nExplanation.– “transgender” shall have the meaning assigned to it in\nclause (k) of section 2 of the Transgender Persons (Protection of Rights)\nAct, 2019;\n(11) “good faith”.—Nothing is said to be done or believed in “good\nfaith” which is done or believed without due care and attention;\n(12) “Government” means the Central Government or a State\nGovernment;\n(13) “harbour” includes supplying a person with shelter, food, drink,\nmoney, clothes, arms, ammunition or means of conveyance, or the\nassisting a person by any means, whether of the same kind as those\nenumerated in this clause or not, to evade apprehension;\n(14) “injury” means any harm whatever illegally caused to any\nperson, in body, mind, reputation or property;\n(15) “illegal” and “legally bound to do”.—The word “illegal” is\napplicable to everything which is an offence or which is prohibited by law,\nor which furnishes ground for a civil action; and a person is said to be\n“legally bound to do” whatever it is illegal in him to omit;\n(16) “Judge” means a person who is officially designated as a Judge\nand includes a person,–\n(i) who is empowered by law to give, in any legal proceeding,\ncivil or criminal, a definitive judgment, or a judgment which, if not\nappealed against, would be definitive, or a judgment which, if\nconfirmed by some other authority, would be definitive; or\n(ii) who is one of a body or persons, which body of persons is\nempowered by law to give such a judgment.\nIllustration.\nA Magistrate exercising jurisdiction in respect of a charge on which\nhe has power to sentence to fine or imprisonment, with or without appeal,\nis a Judge;\n(17) “life” means the life of a human being, unless the contrary\nappears from the context;\n(18) “local law” means a law applicable only to a particular part of\nIndia;\n(19) “man” means male human being of any age;\n(20) “month” and “year”.–Wherever the word “month” or the word\n“year” is used, it is to be understood that the month or the year is to be\nreckoned according to the Gregorian calendar;\n(21) “movable property” includes property of every description,\nexcept land and things attached to the earth or permanently fastened to\nanything which is attached to the earth;\n(22) “number”.—Unless the contrary appears from the context,\nwords importing the singular number include the plural number, and words\nimporting the plural number include the singular number;\n(23) “oath” includes a solemn affirmation substituted by law for an\noath, and any declaration required or authorised by law to be made before\na public servant or to be used for the purpose of proof, whether in a Court\nor not;\n(24) “offence”.—Except in the Chapters and sections mentioned in\nsub-clauses (a) and (b), the word “offence” means a thing made punishable\nby this Sanhita, but––\n(a) in Chapter III and in the following sections, namely, sub-sections\n(2), (3), (4) and (5) of section 8, sections 9, 49, 50, 52, 54, 55, 56, 57,\n58, 59, 60, 61, 119, 120, 123, sub-sections (7) and (8) of section 127,\n222, 230, 231, 240, 248, 250, 251, 259, 260, 261, 262, 263, sub-sections\n(6) and (7) of section 308 and sub-section (2) of section 330, the word\n“offence” means a thing punishable under this Sanhita, or under any special\nlaw or local law; and\n(b) in sub-section (1) of section 189, sections 211, 212, 238, 239,\n249, 253 and sub-section (1) of section 329, the word “offence” shall have\nthe same meaning when the act punishable under the special law or local\nlaw is punishable under such law with imprisonment for a term of six\nmonths or more, whether with or without fine;\n(25) “omission” denotes as well as a series of omissions as a single\nomission;\n(26) “person” includes any company or association or body of\npersons, whether incorporated or not;\n(27) “public” includes any class of the public or any community;\n(28) “public servant” means a person falling under any of the\ndescriptions, namely:—\n(a) every commissioned officer in the Army, Navy or Air Force;\n(b) every Judge including any person empowered by law to\ndischarge, whether by himself or as a member of any body of\npersons, any adjudicatory functions;\n(c) every officer of a Court including a liquidator, receiver or\ncommissioner whose duty it is, as such officer, to investigate or report\non any matter of law or fact, or to make, authenticate, or keep any\ndocument, or to take charge or dispose of any property, or to execute\nany judicial process, or to administer any oath, or to interpret, or to\npreserve order in the Court, and every person specially authorised by\na Court to perform any of such duties;\n(d) every assessor or member of a panchayat assisting a Court\nor public servant;\n(e) every arbitrator or other person to whom any cause or\nmatter has been referred for decision or report by any Court, or by\nany other competent public authority;\n(f) every person who holds any office by virtue of which he is\nempowered to place or keep any person in confinement;\n(g) every officer of the Government whose duty it is, as such\nofficer, to prevent offences, to give information of offences, to bring\noffenders to justice, or to protect the public health, safety or\nconvenience;\n(h) every officer whose duty it is, as such officer, to take,\nreceive, keep or expend any property on behalf of the Government,\nor to make any survey, assessment or contract on behalf of the\nGovernment, or to execute any revenue-process, or to investigate,\nor to report, on any matter affecting the pecuniary interests of the\nGovernment, or to make, authenticate or keep any document relating\nto the pecuniary interests of the Government, or to prevent the\ninfraction of any law for the protection of the pecuniary interests of\nthe Government;\n(i) every officer whose duty it is, as such officer, to take,\nreceive, keep or expend any property, to make any survey or\nassessment or to levy any rate or tax for any secular common\npurpose of any village, town or district, or to make, authenticate or\nkeep any document for the ascertaining of the rights of the people of\nany village, town or district;\n(j) every person who holds any office by virtue of which he is\nempowered to prepare, publish, maintain or revise an electoral roll\nor to conduct an election or part of an election;\n(k) every person—\n(i) in the service or pay of the Government or\nremunerated by fees or commission for the performance of any\npublic duty by the Government;\n(ii) in the service or pay of a local authority as defined in\nclause (31) of section 3 of the General Clauses Act, 1897, a\ncorporation established by or under a Central or State Act or a\nGovernment company as defined in clause (45) of section 2 of\nthe Companies Act, 2013.\nExplanation.—\n(a) persons falling under any of the descriptions made in this\nclause are public servants, whether appointed by the Government or\nnot;\n(b) every person who is in actual possession of the situation of\na public servant, whatever legal defect there may be in his right to\nhold that situation is a public servant;\n(c) “election” means an election for the purpose of selecting\nmembers of any legislative, municipal or other public authority, of\nwhatever character, the method of selection to which is by, or under\nany law for the time being in force.\nIllustration.\nA Municipal Commissioner is a public servant;\n(29) “reason to believe”.—A person is said to have “reason to believe”\na thing, if he has sufficient cause to believe that thing but not otherwise;\n(30) “special law” means a law applicable to a particular subject;\n(31) “valuable security” means a document which is, or purports to\nbe, a document whereby any legal right is created, extended, transferred,\nrestricted, extinguished or released, or whereby any person acknowledges\nthat he lies under legal liability, or has not a certain legal right.\nIllustration.\nA writes his name on the back of a bill of exchange. As the effect of\nthis endorsement is to transfer the right to the bill to any person who may\nbecome the lawful holder of it, the endorsement is a “valuable security”;\n(32) “vessel” means anything made for the conveyance by water of\nhuman beings or of property;\n(33) “voluntarily”.—A person is said to cause an effect “voluntarily”\nwhen he causes it by means whereby he intended to cause it, or by means\nwhich, at the time of employing those means, he knew or had reason to\nbelieve to be likely to cause it.\nIllustration.\nA sets fire, by night, to an inhabited house in a large town, for the\npurpose of facilitating a robbery and thus causes the death of a person.\nHere, A may not have intended to cause death; and may even be sorry that\ndeath has been caused by his act; yet, if he knew that he was likely to\ncause death, he has caused death voluntarily;\n(34) “will” means any testamentary document;\n(35) “woman” means a female human being of any age;\n(36) “wrongful gain” means gain by unlawful means of property to\nwhich the person gaining is not legally entitled;\n(37) “wrongful loss” means the loss by unlawful means of property\nto which the person losing it is legally entitled;\n(38) “gaining wrongfully” and “losing wrongfully”.—A person is said\nto gain wrongfully when such person retains wrongfully, as well as when\nsuch person acquires wrongfully. A person is said to lose wrongfully when\nsuch person is wrongfully kept out of any property, as well as when such\nperson is wrongfully deprived of property; and\n(39) words and expressions used but not defined in this Sanhita but\ndefined in the Information Technology Act, 2000 and the Bharatiya Nagarik\nSuraksha Sanhita, 2023 shall have the meanings respectively assigned to\nthem in that Act and Sanhita.\nGeneral explanations.",
+          "derived_context": "",
+          "keywords": [],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "graph": 0.49199999999999994
+          },
+          "query_scores": {
+            "graph": 0.49199999999999994
+          },
+          "reasons": [
+            "graph_from:chunk__node__BNS_S2_N36",
+            "zero_concept_overlap_penalty",
+            "rerank"
+          ]
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "final_k": 5
+      }
+    }
+  }
+]

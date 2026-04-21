@@ -1,0 +1,2947 @@
+[
+  {
+    "id": 1,
+    "query": "Does Indian law apply if a crime is done on an Indian aircraft abroad?",
+    "result": {
+      "query": "Does Indian law apply if a crime is done on an Indian aircraft abroad?",
+      "intent": {
+        "primary": "legal_scope",
+        "secondary": []
+      },
+      "targets": [],
+      "concepts": [
+        "jurisdiction",
+        "aircraft"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.48,
+        "llm": 0.48,
+        "agreement": 1.0,
+        "overall": 0.61
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "rules",
+        "reason": "The query involves two distinct legal issues: territorial scope of BNS and punishment applicability outside India.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What is the scope and applicability of territorial scope of BNS under BNS?",
+          "intent": {
+            "primary": "legal_scope",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "jurisdiction"
+            }
+          ],
+          "concepts": [
+            "jurisdiction"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.48,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: territorial scope of BNS.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        },
+        {
+          "query": "What punishment applies for punishment applicability outside India under BNS?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "punishment"
+            }
+          ],
+          "concepts": [
+            "punishment"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.48,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: punishment applicability outside India.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 2.79,
+    "status": "success"
+  },
+  {
+    "id": 0,
+    "query": "If I commit a crime outside India, can I still be punished under BNS?",
+    "result": {
+      "query": "If I commit a crime outside India, can I still be punished under BNS?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "reasoning"
+        ]
+      },
+      "targets": [
+        {
+          "type": "act",
+          "value": "BNS"
+        }
+      ],
+      "concepts": [
+        "jurisdiction"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.59,
+        "llm": 0.59,
+        "agreement": 1.0,
+        "overall": 0.69
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "rules",
+        "reason": "The query involves two distinct legal issues: territorial scope of BNS and punishment applicability outside India.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What is the scope and applicability of territorial scope of BNS under BNS?",
+          "intent": {
+            "primary": "legal_scope",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "jurisdiction"
+            }
+          ],
+          "concepts": [
+            "jurisdiction"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.59,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: territorial scope of BNS.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        },
+        {
+          "query": "What punishment applies for punishment applicability outside India under BNS?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "punishment"
+            }
+          ],
+          "concepts": [
+            "punishment"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.59,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: punishment applicability outside India.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 3.66,
+    "status": "success"
+  },
+  {
+    "id": 2,
+    "query": "What does 'dishonestly' actually mean in simple terms in BNS?",
+    "result": {
+      "query": "What does 'dishonestly' actually mean in simple terms in BNS?",
+      "intent": {
+        "primary": "definition",
+        "secondary": []
+      },
+      "targets": [
+        {
+          "type": "act",
+          "value": "BNS"
+        }
+      ],
+      "concepts": [
+        "dishonest",
+        "dishonestly"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false,
+        "requires_exact_match": true
+      },
+      "confidence": {
+        "rule_based": 0.61,
+        "llm": 0.61,
+        "agreement": 1.0,
+        "overall": 0.71
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single concept query",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 3.22,
+    "status": "success"
+  },
+  {
+    "id": 3,
+    "query": "Is a WhatsApp message or digital file considered a document legally?",
+    "result": {
+      "query": "Is a WhatsApp message or digital file considered a document legally?",
+      "intent": {
+        "primary": "definition",
+        "secondary": []
+      },
+      "targets": [
+        {
+          "type": "definition",
+          "value": "document"
+        }
+      ],
+      "concepts": [
+        "document"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.46,
+        "llm": 0.7,
+        "agreement": 0.5,
+        "overall": 0.58
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal concept inquiry",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 2.72,
+    "status": "success"
+  },
+  {
+    "id": 8,
+    "query": "Can the government reduce or change a punishment without asking the criminal?",
+    "result": {
+      "query": "Can the government reduce or change a punishment without asking the criminal?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "reasoning"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "punishment",
+        "commutation of sentence",
+        "assault"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.6,
+        "llm": 0.6,
+        "agreement": 0.83,
+        "overall": 0.66
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding government authority over punishment.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.61,
+    "status": "success"
+  },
+  {
+    "id": 5,
+    "query": "Who all are treated as public servants under BNS?",
+    "result": {
+      "query": "Who all are treated as public servants under BNS?",
+      "intent": {
+        "primary": "explanation",
+        "secondary": []
+      },
+      "targets": [
+        {
+          "type": "act",
+          "value": "BNS"
+        }
+      ],
+      "concepts": [
+        "public servants",
+        "public servant",
+        "public_servant",
+        "servant",
+        "public servant disobeying direction under"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.43,
+        "llm": 0.43,
+        "agreement": 1.0,
+        "overall": 0.57
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal concept query",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 5.52,
+    "status": "success"
+  },
+  {
+    "id": 7,
+    "query": "What kinds of punishments can a person get under BNS?",
+    "result": {
+      "query": "What kinds of punishments can a person get under BNS?",
+      "intent": {
+        "primary": "explanation",
+        "secondary": []
+      },
+      "targets": [
+        {
+          "type": "act",
+          "value": "BNS"
+        }
+      ],
+      "concepts": [
+        "punishment"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.39,
+        "llm": 0.39,
+        "agreement": 1.0,
+        "overall": 0.54
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single retrieval angle",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.92,
+    "status": "success"
+  },
+  {
+    "id": 4,
+    "query": "What does 'good faith' mean in law, like how careful do I need to be?",
+    "result": {
+      "query": "What does 'good faith' mean in law, like how careful do I need to be?",
+      "intent": {
+        "primary": "definition",
+        "secondary": []
+      },
+      "targets": [],
+      "concepts": [
+        "good faith",
+        "good_faith",
+        "good",
+        "faith"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": true
+      },
+      "confidence": {
+        "rule_based": 0.6,
+        "llm": 0.6,
+        "agreement": 0.75,
+        "overall": 0.63
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query has two angles: definition of 'good faith' and the level of care required.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What does 'good faith' mean in law?",
+          "intent": {
+            "primary": "definition",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "good faith",
+            "good_faith"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": true
+          },
+          "confidence": 0.6,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal concept being queried.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "How careful do I need to be regarding good faith?",
+          "intent": {
+            "primary": "legal_condition",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "good faith"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.6,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Focused on the level of care required.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 9.01,
+    "status": "success"
+  },
+  {
+    "id": 11,
+    "query": "How long can someone be jailed for not paying a fine?",
+    "result": {
+      "query": "How long can someone be jailed for not paying a fine?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "case_application"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "punishment",
+        "fine"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.48,
+        "llm": 0.48,
+        "agreement": 1.0,
+        "overall": 0.61
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding punishment for not paying a fine.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.54,
+    "status": "success"
+  },
+  {
+    "id": 10,
+    "query": "What happens if someone cannot pay the fine ordered by court?",
+    "result": {
+      "query": "What happens if someone cannot pay the fine ordered by court?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "case_application"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "punishment",
+        "pay the fine",
+        "fine"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.6,
+        "llm": 0.6,
+        "agreement": 1.0,
+        "overall": 0.7
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "rules",
+        "reason": "The query involves two distinct legal issues: default in payment of fine and imprisonment for non-payment of fine.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What are the consequences of default in payment of fine under BNS?",
+          "intent": {
+            "primary": "consequence",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "default in payment of fine"
+            }
+          ],
+          "concepts": [],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.6,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: default in payment of fine.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        },
+        {
+          "query": "What punishment applies for imprisonment for non-payment of fine under BNS?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "imprisonment"
+            }
+          ],
+          "concepts": [
+            "imprisonment"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.6,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: imprisonment for non-payment of fine.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 4.8,
+    "status": "success"
+  },
+  {
+    "id": 9,
+    "query": "Is life imprisonment always for whole life or fixed years under BNS?",
+    "result": {
+      "query": "Is life imprisonment always for whole life or fixed years under BNS?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": []
+      },
+      "targets": [
+        {
+          "type": "act",
+          "value": "BNS"
+        }
+      ],
+      "concepts": [
+        "punishment",
+        "life imprisonment",
+        "imprisonment",
+        "life",
+        "imprisonment for life"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.53,
+        "llm": 0.53,
+        "agreement": 1.0,
+        "overall": 0.65
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal penalty query",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 5.49,
+    "status": "success"
+  },
+  {
+    "id": 12,
+    "query": "If one act breaks multiple laws, will the person be punished multiple times?",
+    "result": {
+      "query": "If one act breaks multiple laws, will the person be punished multiple times?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "reasoning"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "single act multiple offences"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.46,
+        "llm": 0.46,
+        "agreement": 1.0,
+        "overall": 0.59
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal penalty query without multiple angles.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.57,
+    "status": "success"
+  },
+  {
+    "id": 6,
+    "query": "What is the difference between wrongful gain and wrongful loss with example?",
+    "result": {
+      "query": "What is the difference between wrongful gain and wrongful loss with example?",
+      "intent": {
+        "primary": "comparison",
+        "secondary": [
+          "reasoning"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "wrongful gain",
+        "wrongful loss",
+        "wrongful",
+        "loss",
+        "gain",
+        "wrongful restraint",
+        "wrongful confinement"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.8,
+        "llm": 0.8,
+        "agreement": 0.62,
+        "overall": 0.74
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves two distinct concepts that require separate explanations.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What is wrongful gain?",
+          "intent": {
+            "primary": "definition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "definition",
+              "value": "wrongful gain"
+            }
+          ],
+          "concepts": [
+            "wrongful gain"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "narrow"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": true
+          },
+          "confidence": 0.9,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single concept query.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What is wrongful loss?",
+          "intent": {
+            "primary": "definition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "definition",
+              "value": "wrongful loss"
+            }
+          ],
+          "concepts": [
+            "wrongful loss"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "narrow"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": true
+          },
+          "confidence": 0.9,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single concept query.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 11.29,
+    "status": "success"
+  },
+  {
+    "id": 13,
+    "query": "What if the court is not sure which exact offence I committed?",
+    "result": {
+      "query": "What if the court is not sure which exact offence I committed?",
+      "intent": {
+        "primary": "explanation",
+        "secondary": []
+      },
+      "targets": [],
+      "concepts": [
+        "offence"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.34,
+        "llm": 0.34,
+        "agreement": 0.5,
+        "overall": 0.38
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding uncertainty of offence",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.71,
+    "status": "success"
+  },
+  {
+    "id": 14,
+    "query": "What are the rules for solitary confinement in prison?",
+    "result": {
+      "query": "What are the rules for solitary confinement in prison?",
+      "intent": {
+        "primary": "explanation",
+        "secondary": []
+      },
+      "targets": [],
+      "concepts": [
+        "solitary confinement",
+        "confinement",
+        "solitary",
+        "fine"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.4,
+        "llm": 0.4,
+        "agreement": 0.88,
+        "overall": 0.52
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding rules for solitary confinement.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.71,
+    "status": "success"
+  },
+  {
+    "id": 17,
+    "query": "If I did something thinking it was legal, will I still be punished?",
+    "result": {
+      "query": "If I did something thinking it was legal, will I still be punished?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "reasoning"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "punishment",
+        "good faith"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.44,
+        "llm": 0.5,
+        "agreement": 0.5,
+        "overall": 0.48
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding punishment based on belief of legality.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 5.4,
+    "status": "success"
+  },
+  {
+    "id": 16,
+    "query": "What are general exceptions in BNS in simple words?",
+    "result": {
+      "query": "What are general exceptions in BNS in simple words?",
+      "intent": {
+        "primary": "legal_exception",
+        "secondary": []
+      },
+      "targets": [
+        {
+          "type": "act",
+          "value": "BNS"
+        }
+      ],
+      "concepts": [
+        "general_exception",
+        "general exception"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.51,
+        "llm": 0.51,
+        "agreement": 1.0,
+        "overall": 0.63
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal concept query",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 5.62,
+    "status": "success"
+  },
+  {
+    "id": 18,
+    "query": "Can a judge be punished for decisions taken in court?",
+    "result": {
+      "query": "Can a judge be punished for decisions taken in court?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "reasoning"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "judicial act",
+        "judge"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.5,
+        "llm": 0.5,
+        "agreement": 0.83,
+        "overall": 0.58
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding punishment of a judge.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.9,
+    "status": "success"
+  },
+  {
+    "id": 19,
+    "query": "If I follow a court order and it turns out wrong, am I liable?",
+    "result": {
+      "query": "If I follow a court order and it turns out wrong, am I liable?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": []
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "judicial act"
+        }
+      ],
+      "concepts": [
+        "judicial act",
+        "liable"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.36,
+        "llm": 0.5,
+        "agreement": 0.25,
+        "overall": 0.4
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding liability for following a court order.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 5.38,
+    "status": "success"
+  },
+  {
+    "id": 20,
+    "query": "If something bad happens accidentally, is it still a crime?",
+    "result": {
+      "query": "If something bad happens accidentally, is it still a crime?",
+      "intent": {
+        "primary": "explanation",
+        "secondary": []
+      },
+      "targets": [],
+      "concepts": [
+        "accident"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.36,
+        "llm": 0.36,
+        "agreement": 1.0,
+        "overall": 0.52
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding accidental actions.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.66,
+    "status": "success"
+  },
+  {
+    "id": 21,
+    "query": "Can causing harm ever be allowed to prevent a bigger harm?",
+    "result": {
+      "query": "Can causing harm ever be allowed to prevent a bigger harm?",
+      "intent": {
+        "primary": "explanation",
+        "secondary": []
+      },
+      "targets": [],
+      "concepts": [
+        "causing harm",
+        "prevent other harm"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.34,
+        "llm": 0.34,
+        "agreement": 0.5,
+        "overall": 0.38
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal concept addressed",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.85,
+    "status": "success"
+  },
+  {
+    "id": 15,
+    "query": "If someone commits a crime again after conviction, what happens?",
+    "result": {
+      "query": "If someone commits a crime again after conviction, what happens?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "case_application"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "punishment for subsequent offences",
+        "conviction",
+        "gain"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.43,
+        "llm": 0.5,
+        "agreement": 0.5,
+        "overall": 0.47
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves consequences of committing a crime after a previous conviction, requiring separate legal penalty and case application considerations.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What is the punishment for committing a crime after conviction?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "punishment for subsequent offences"
+            }
+          ],
+          "concepts": [
+            "punishment for subsequent offences"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.6,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue focused on punishment.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "Does the law apply to someone who commits a crime again after conviction?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "conviction"
+            }
+          ],
+          "concepts": [
+            "conviction"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue focused on application of law.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 13.59,
+    "status": "success"
+  },
+  {
+    "id": 22,
+    "query": "Can a child below 7 years be punished for any crime?",
+    "result": {
+      "query": "Can a child below 7 years be punished for any crime?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "reasoning"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "child"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.46,
+        "llm": 0.46,
+        "agreement": 1.0,
+        "overall": 0.59
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding punishment of a child under 7 years.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 5.17,
+    "status": "success"
+  },
+  {
+    "id": 23,
+    "query": "What about children between 7 and 12 years, are they criminally liable?",
+    "result": {
+      "query": "What about children between 7 and 12 years, are they criminally liable?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "child"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.32,
+        "llm": 0.32,
+        "agreement": 1.0,
+        "overall": 0.49
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding criminal liability of children.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.96,
+    "status": "success"
+  },
+  {
+    "id": 24,
+    "query": "If a person is mentally ill, can they be punished for a crime?",
+    "result": {
+      "query": "If a person is mentally ill, can they be punished for a crime?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "case_application"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "mental",
+        "punishment for crime"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.44,
+        "llm": 0.5,
+        "agreement": 0.5,
+        "overall": 0.48
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding punishment and mental illness.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 5.14,
+    "status": "success"
+  },
+  {
+    "id": 25,
+    "query": "If someone commits a crime while drunk, are they responsible?",
+    "result": {
+      "query": "If someone commits a crime while drunk, are they responsible?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "intoxication"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.32,
+        "llm": 0.32,
+        "agreement": 1.0,
+        "overall": 0.49
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding responsibility under intoxication.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 5.17,
+    "status": "success"
+  },
+  {
+    "id": 26,
+    "query": "If both people agree and harm happens, is it still an offence?",
+    "result": {
+      "query": "If both people agree and harm happens, is it still an offence?",
+      "intent": {
+        "primary": "explanation",
+        "secondary": []
+      },
+      "targets": [],
+      "concepts": [
+        "consent",
+        "harm",
+        "offence"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.36,
+        "llm": 0.36,
+        "agreement": 0.67,
+        "overall": 0.44
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding consent and harm.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 5.82,
+    "status": "success"
+  },
+  {
+    "id": 27,
+    "query": "When is consent not considered valid under law?",
+    "result": {
+      "query": "When is consent not considered valid under law?",
+      "intent": {
+        "primary": "explanation",
+        "secondary": []
+      },
+      "targets": [],
+      "concepts": [
+        "consent"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.36,
+        "llm": 0.36,
+        "agreement": 1.0,
+        "overall": 0.52
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal concept query",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 5.65,
+    "status": "success"
+  },
+  {
+    "id": 28,
+    "query": "Can a doctor operate without consent in emergency situations legally?",
+    "result": {
+      "query": "Can a doctor operate without consent in emergency situations legally?",
+      "intent": {
+        "primary": "legal_scope",
+        "secondary": []
+      },
+      "targets": [],
+      "concepts": [
+        "consent",
+        "without consent"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.38,
+        "llm": 0.5,
+        "agreement": 0.5,
+        "overall": 0.46
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding consent in emergencies.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 5.64,
+    "status": "success"
+  },
+  {
+    "id": 29,
+    "query": "If someone forces me to commit a crime, will I still be punished?",
+    "result": {
+      "query": "If someone forces me to commit a crime, will I still be punished?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "case_application"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "force",
+        "crime",
+        "theft"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.46,
+        "llm": 0.5,
+        "agreement": 0.5,
+        "overall": 0.49
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding punishment for forced crime",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 3.35,
+    "status": "success"
+  },
+  {
+    "id": 31,
+    "query": "Can I kill someone in self defence legally under BNS?",
+    "result": {
+      "query": "Can I kill someone in self defence legally under BNS?",
+      "intent": {
+        "primary": "eligibility",
+        "secondary": [
+          "case_application"
+        ]
+      },
+      "targets": [
+        {
+          "type": "act",
+          "value": "BNS"
+        }
+      ],
+      "concepts": [
+        "private defence",
+        "self-defence",
+        "defence",
+        "things done in private defence"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.53,
+        "llm": 0.53,
+        "agreement": 1.0,
+        "overall": 0.65
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "rules",
+        "reason": "The query involves two distinct legal issues: private defence and when death can be caused in private defence.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What are the conditions and limits of private defence under BNS?",
+          "intent": {
+            "primary": "legal_condition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "private defence"
+            }
+          ],
+          "concepts": [
+            "private defence"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.53,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: private defence.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        },
+        {
+          "query": "What are the conditions and limits of when death can be caused in private defence under BNS?",
+          "intent": {
+            "primary": "legal_condition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "private defence"
+            }
+          ],
+          "concepts": [
+            "private defence"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.53,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: when death can be caused in private defence.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 2.46,
+    "status": "success"
+  },
+  {
+    "id": 32,
+    "query": "What are the limits of private defence, like how much force is allowed?",
+    "result": {
+      "query": "What are the limits of private defence, like how much force is allowed?",
+      "intent": {
+        "primary": "legal_condition",
+        "secondary": []
+      },
+      "targets": [],
+      "concepts": [
+        "private defence",
+        "limits",
+        "force",
+        "private_defence",
+        "private",
+        "defence"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.5,
+        "llm": 0.5,
+        "agreement": 0.57,
+        "overall": 0.52
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "rules",
+        "reason": "The query involves two distinct legal issues: private defence and limits of private defence.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What are the conditions and limits of private defence under BNS?",
+          "intent": {
+            "primary": "legal_condition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "private defence"
+            }
+          ],
+          "concepts": [
+            "private defence"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: private defence.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        },
+        {
+          "query": "What are the conditions and limits of limits of private defence under BNS?",
+          "intent": {
+            "primary": "legal_condition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "private defence"
+            }
+          ],
+          "concepts": [
+            "private defence"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: limits of private defence.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 2.12,
+    "status": "success"
+  },
+  {
+    "id": 34,
+    "query": "Can I claim self defence against a police officer?",
+    "result": {
+      "query": "Can I claim self defence against a police officer?",
+      "intent": {
+        "primary": "eligibility",
+        "secondary": []
+      },
+      "targets": [],
+      "concepts": [
+        "self-defence",
+        "private defence",
+        "defence"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.5,
+        "llm": 0.5,
+        "agreement": 1.0,
+        "overall": 0.62
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "rules",
+        "reason": "The query involves two distinct legal issues: private defence and private defence against police officer.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What are the conditions and limits of private defence under BNS?",
+          "intent": {
+            "primary": "legal_condition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "private defence"
+            }
+          ],
+          "concepts": [
+            "private defence"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: private defence.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        },
+        {
+          "query": "Who is eligible to claim private defence against police officer under BNS?",
+          "intent": {
+            "primary": "eligibility",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "private defence"
+            }
+          ],
+          "concepts": [
+            "private defence"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: private defence against police officer.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 3.93,
+    "status": "success"
+  },
+  {
+    "id": 35,
+    "query": "What exactly counts as abetment in criminal law?",
+    "result": {
+      "query": "What exactly counts as abetment in criminal law?",
+      "intent": {
+        "primary": "definition",
+        "secondary": []
+      },
+      "targets": [
+        {
+          "type": "definition",
+          "value": "abetment"
+        }
+      ],
+      "concepts": [
+        "abetment",
+        "criminal conspiracy",
+        "assault",
+        "theft"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.4,
+        "llm": 0.6,
+        "agreement": 0.12,
+        "overall": 0.42
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "rules",
+        "reason": "The query involves two distinct legal issues: theft and hurt or assault.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "How does theft apply in this situation under BNS?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "theft"
+            }
+          ],
+          "concepts": [
+            "theft"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.4,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: theft.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        },
+        {
+          "query": "How does hurt or assault apply in this situation under BNS?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "assault"
+            }
+          ],
+          "concepts": [
+            "assault"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.4,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: hurt or assault.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 5.09,
+    "status": "success"
+  },
+  {
+    "id": 36,
+    "query": "If I only encouraged someone but they didn’t commit the crime, am I guilty?",
+    "result": {
+      "query": "If I only encouraged someone but they didn’t commit the crime, am I guilty?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "abetment"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.32,
+        "llm": 0.32,
+        "agreement": 1.0,
+        "overall": 0.49
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "rules",
+        "reason": "The query involves two distinct legal issues: abetment definition and punishment for abetment.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What is the legal definition of abetment definition under BNS?",
+          "intent": {
+            "primary": "definition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "abetment"
+            }
+          ],
+          "concepts": [
+            "abetment"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": true
+          },
+          "confidence": 0.32,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: abetment definition.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        },
+        {
+          "query": "What punishment applies for punishment for abetment under BNS?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "abetment"
+            }
+          ],
+          "concepts": [
+            "abetment"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.32,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: punishment for abetment.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 5.05,
+    "status": "success"
+  },
+  {
+    "id": 30,
+    "query": "What is the right of private defence and when can I use it?",
+    "result": {
+      "query": "What is the right of private defence and when can I use it?",
+      "intent": {
+        "primary": "definition",
+        "secondary": [
+          "legal_condition"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "private defence",
+        "right of private defence",
+        "private_defence",
+        "private",
+        "defence"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.7,
+        "llm": 0.0,
+        "agreement": 0.2,
+        "overall": 0.25
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query has two distinct angles: definition of the right of private defence and conditions for its use.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What is the right of private defence?",
+          "intent": {
+            "primary": "definition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "definition",
+              "value": "right of private defence"
+            }
+          ],
+          "concepts": [
+            "private defence",
+            "right of private defence"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": true
+          },
+          "confidence": 0.8,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue focused on definition.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "When can I use the right of private defence?",
+          "intent": {
+            "primary": "legal_condition",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "private defence"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.7,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue focused on conditions.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 10.73,
+    "status": "success"
+  },
+  {
+    "id": 33,
+    "query": "When does the right of private defence start and stop?",
+    "result": {
+      "query": "When does the right of private defence start and stop?",
+      "intent": {
+        "primary": "legal_condition",
+        "secondary": []
+      },
+      "targets": [],
+      "concepts": [
+        "right of private defence",
+        "private defence",
+        "private_defence",
+        "private",
+        "defence"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.4,
+        "llm": 0.5,
+        "agreement": 0.2,
+        "overall": 0.38
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves two different aspects of the right of private defence: when it starts and when it stops.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "When does the right of private defence start?",
+          "intent": {
+            "primary": "legal_condition",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "right of private defence"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single aspect of the right of private defence.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "When does the right of private defence stop?",
+          "intent": {
+            "primary": "legal_condition",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "right of private defence"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single aspect of the right of private defence.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 8.78,
+    "status": "success"
+  },
+  {
+    "id": 38,
+    "query": "Can I be punished in India for helping someone commit a crime abroad?",
+    "result": {
+      "query": "Can I be punished in India for helping someone commit a crime abroad?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "case_application"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "abetment",
+        "jurisdiction"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.58,
+        "llm": 0.58,
+        "agreement": 1.0,
+        "overall": 0.69
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "rules",
+        "reason": "The query involves multiple legal issues: abetment definition, punishment for abetment, and territorial scope of BNS.",
+        "count": 4
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What is the legal definition of abetment definition under BNS?",
+          "intent": {
+            "primary": "definition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "abetment"
+            }
+          ],
+          "concepts": [
+            "abetment"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": true
+          },
+          "confidence": 0.58,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: abetment definition.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        },
+        {
+          "query": "What punishment applies for punishment for abetment under BNS?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "abetment"
+            }
+          ],
+          "concepts": [
+            "abetment"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.58,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: punishment for abetment.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        },
+        {
+          "query": "What is the scope and applicability of territorial scope of BNS under BNS?",
+          "intent": {
+            "primary": "legal_scope",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "jurisdiction"
+            }
+          ],
+          "concepts": [
+            "jurisdiction"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.58,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: territorial scope of BNS.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        },
+        {
+          "query": "What punishment applies for punishment applicability outside India under BNS?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "punishment"
+            }
+          ],
+          "concepts": [
+            "punishment"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.58,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue: punishment applicability outside India.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 3.97,
+    "status": "success"
+  },
+  {
+    "id": 37,
+    "query": "What happens if I instigate a crime but a different crime happens?",
+    "result": {
+      "query": "What happens if I instigate a crime but a different crime happens?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "reasoning"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "abetment",
+        "instigate"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.48,
+        "llm": 0.0,
+        "agreement": 1.0,
+        "overall": 0.38
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "Different crimes are involved requiring separate legal considerations.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What is the legal consequence of instigating a crime?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "abetment"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.0,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What happens if a different crime occurs instead of the one instigated?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "different intention"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.0,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 10.44,
+    "status": "success"
+  },
+  {
+    "id": 39,
+    "query": "What if I help in planning a crime but don’t directly do anything?",
+    "result": {
+      "query": "What if I help in planning a crime but don’t directly do anything?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": []
+      },
+      "targets": [],
+      "concepts": [
+        "abetment",
+        "crime",
+        "theft"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.36,
+        "llm": 0.0,
+        "agreement": 0.0,
+        "overall": 0.11
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding abetment.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 6.91,
+    "status": "success"
+  }
+]

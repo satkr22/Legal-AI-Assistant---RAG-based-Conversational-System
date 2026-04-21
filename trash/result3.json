@@ -1,0 +1,147 @@
+{
+  "query": "thief took my mobile and I tried to stop but he hit me badly what happens to him",
+  "intent": {
+    "primary": "legal_penalty",
+    "secondary": [
+      "case_application",
+      "reasoning"
+    ]
+  },
+  "targets": [],
+  "concepts": [
+    "theft",
+    "assault",
+    "movable property"
+  ],
+  "constraints": {
+    "jurisdiction": null,
+    "time": null,
+    "specificity": "broad"
+  },
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true,
+    "requires_exact_match": false
+  },
+  "confidence": {
+    "rule_based": 0.5,
+    "llm": 0.7,
+    "agreement": 0.75,
+    "overall": 0.65
+  },
+  "decomposition": {
+    "needed": true,
+    "strategy": "rules",
+    "reason": "The query involves multiple legal issues: theft, hurt or assault, and private defence.",
+    "count": 3
+  },
+  "method": "llm_guided",
+  "sub_queries": [
+    {
+      "query": "What punishment applies for theft?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": []
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "theft"
+        }
+      ],
+      "concepts": [
+        "theft"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": 0.5,
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue focused on theft.",
+        "count": 0
+      },
+      "method": "llm_subquery",
+      "notes": []
+    },
+    {
+      "query": "What punishment applies for assault?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": []
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "assault"
+        }
+      ],
+      "concepts": [
+        "assault"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": 0.5,
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue focused on hurt or assault.",
+        "count": 0
+      },
+      "method": "llm_subquery",
+      "notes": []
+    },
+    {
+      "query": "How does private defence apply in this situation?",
+      "intent": {
+        "primary": "legal_condition",
+        "secondary": []
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "private defence"
+        }
+      ],
+      "concepts": [
+        "private defence"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": 0.5,
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue focused on private defence.",
+        "count": 0
+      },
+      "method": "llm_subquery",
+      "notes": []
+    }
+  ],
+  "notes": []
+}

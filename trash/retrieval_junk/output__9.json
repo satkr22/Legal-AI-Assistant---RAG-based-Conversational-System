@@ -1,0 +1,1201 @@
+[
+  {
+    "query": "My phone was stolen in a bus and I also got injured while trying to stop the thief, punsishments for these crimes?",
+    "phase8": {
+      "query": "My phone was stolen in a bus and I also got injured while trying to stop the thief, punsishments for these crimes?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "hurt",
+        "private defence",
+        "murder"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.36,
+        "llm": 0.36,
+        "agreement": 0.8,
+        "overall": 0.46
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "Single legal issue regarding theft and injury.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What are the punishments for theft?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "theft"
+            }
+          ],
+          "concepts": [
+            "theft",
+            "punishment"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Focused on theft punishment.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What are the legal consequences for injury while attempting to stop a thief?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "hurt"
+            }
+          ],
+          "concepts": [
+            "hurt",
+            "private defence"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Focused on injury consequences.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "My phone was stolen in a bus and I also got injured while trying to stop the thief, punsishments for these crimes?",
+          "targets": [],
+          "concepts": [
+            "theft",
+            "hurt",
+            "private defence",
+            "murder"
+          ]
+        },
+        {
+          "name": "sub_query_1",
+          "source": "decomposed",
+          "weight": 0.9,
+          "query": "What are the punishments for theft?",
+          "targets": [
+            "theft"
+          ],
+          "concepts": [
+            "theft",
+            "punishment"
+          ]
+        },
+        {
+          "name": "sub_query_2",
+          "source": "decomposed",
+          "weight": 0.9,
+          "query": "What are the legal consequences for injury while attempting to stop a thief?",
+          "targets": [
+            "hurt"
+          ],
+          "concepts": [
+            "hurt",
+            "private defence"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S303_N2",
+            "score": 0.85309,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 303,
+            "citation": "Section 303",
+            "text": "Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine: Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service. Snatching.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine: Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service. Snatching.",
+            "keywords": [
+              "property",
+              "theft",
+              "punished",
+              "imprisonment",
+              "term",
+              "extend",
+              "years",
+              "fine",
+              "five",
+              "value",
+              "theft punishment",
+              "imprisonment fine"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "punishment for theft"
+            ],
+            "source_scores": {
+              "faiss": 0.6327242851257324,
+              "bm25": 0.05555555555555555
+            },
+            "query_scores": {
+              "original": 0.6327242851257324
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S134_BODY",
+            "score": 0.433181,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 134,
+            "citation": "Section 134",
+            "text": "Whoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 134: Assault or criminal force in attempt to commit theft of property carried by a person.\nWhoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+            "keywords": [
+              "criminal",
+              "force",
+              "commit",
+              "theft",
+              "property",
+              "assault",
+              "attempt",
+              "body",
+              "whoever",
+              "assaults",
+              "criminal force"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "attempted theft"
+            ],
+            "source_scores": {
+              "faiss": 0.6466759443283081
+            },
+            "query_scores": {
+              "original": 0.6466759443283081
+            },
+            "reasons": [
+              "faiss:original",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S305_B",
+            "score": 0.419808,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 305,
+            "citation": "Section 305",
+            "text": "of any means of transport used for the transport of goods or passengers; or",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 305: Theft in a dwelling house, or means of transportation or place of worship, etc.\nof any means of transport used for the transport of goods or passengers; or",
+            "keywords": [
+              "means",
+              "transport",
+              "used",
+              "goods",
+              "passengers",
+              "theft",
+              "dwelling",
+              "house",
+              "transportation",
+              "place"
+            ],
+            "legal_concepts": [
+              "theft",
+              "offence"
+            ],
+            "source_scores": {
+              "faiss": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S41_D",
+            "score": 0.410162,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 41,
+            "citation": "Section 41",
+            "text": "theft, mischief, or house-trespass, under such circumstances as may reasonably cause apprehension that death or grievous hurt will be the consequence, if such right of private defence is not exercised. When such right extends to causing any harm other than death.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 41: When right of private defence of property extends to causing death.\ntheft, mischief, or house-trespass, under such circumstances as may reasonably cause apprehension that death or grievous hurt will be the consequence, if such right of private defence is not exercised. When such right extends to causing any harm other than death.",
+            "keywords": [
+              "death",
+              "right",
+              "private",
+              "defence",
+              "extends",
+              "causing",
+              "theft",
+              "mischief",
+              "house-trespass",
+              "circumstances"
+            ],
+            "legal_concepts": [],
+            "source_scores": {
+              "bm25": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S309_N6",
+            "score": 0.408672,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 309,
+            "citation": "Section 309",
+            "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+            "keywords": [
+              "robbery",
+              "committing",
+              "attempting",
+              "commit",
+              "imprisonment",
+              "voluntarily",
+              "causes",
+              "hurt",
+              "jointly",
+              "concerned",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "robbery"
+            ],
+            "source_scores": {
+              "faiss": 0.6354228258132935
+            },
+            "query_scores": {
+              "original": 0.6354228258132935
+            },
+            "reasons": [
+              "faiss:original",
+              "rerank"
+            ]
+          }
+        ],
+        "sub_query_1": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S303_N2",
+            "score": 0.96,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 303,
+            "citation": "Section 303",
+            "text": "Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine: Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service. Snatching.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine: Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service. Snatching.",
+            "keywords": [
+              "property",
+              "theft",
+              "punished",
+              "imprisonment",
+              "term",
+              "extend",
+              "years",
+              "fine",
+              "five",
+              "value",
+              "theft punishment",
+              "imprisonment fine"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "punishment for theft"
+            ],
+            "source_scores": {
+              "faiss": 0.9
+            },
+            "query_scores": {
+              "sub_query_1": 0.9
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S307_BODY",
+            "score": 0.441104,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 307,
+            "citation": "Section 307",
+            "text": "Whoever commits theft, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining of property taken by such theft, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 307: Theft after preparation made for causing death, hurt or restraint in order to committing of\nWhoever commits theft, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining of property taken by such theft, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+            "keywords": [
+              "theft",
+              "order",
+              "death",
+              "hurt",
+              "restraint",
+              "committing",
+              "made",
+              "preparation",
+              "causing",
+              "after",
+              "harm",
+              "escape",
+              "retain"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "theft with preparation for causing harm"
+            ],
+            "source_scores": {
+              "faiss": 0.6139167666435242,
+              "bm25": 0.052941176470588235
+            },
+            "query_scores": {
+              "sub_query_1": 0.6139167666435242
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "bm25:sub_query_1",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S304_N2",
+            "score": 0.373073,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 304,
+            "citation": "Section 304",
+            "text": "Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Theft in a dwelling house, or means of transportation or place of worship, etc.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 304: Snatching.\nWhoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Theft in a dwelling house, or means of transportation or place of worship, etc.",
+            "keywords": [
+              "snatching",
+              "whoever",
+              "commits",
+              "punished",
+              "imprisonment",
+              "either",
+              "description",
+              "term",
+              "extend",
+              "three",
+              "punishable"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "imprisonment for term"
+            ],
+            "source_scores": {
+              "faiss": 0.6226806163787842
+            },
+            "query_scores": {
+              "sub_query_1": 0.6226806163787842
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S4_BODY",
+            "score": 0.362601,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF PUNISHMENTS",
+            "section_number": 4,
+            "citation": "Section 4",
+            "text": "The punishments to which offenders are liable under the provisions of this Sanhita are -",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nThe punishments to which offenders are liable under the provisions of this Sanhita are -",
+            "keywords": [
+              "punishments",
+              "offenders",
+              "liable",
+              "body",
+              "punishment",
+              "offender"
+            ],
+            "legal_concepts": [
+              "liable punishment"
+            ],
+            "source_scores": {
+              "bm25": 0.9
+            },
+            "query_scores": {
+              "sub_query_1": 0.9
+            },
+            "reasons": [
+              "bm25:sub_query_1",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S305_E",
+            "score": 0.335971,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 305,
+            "citation": "Section 305",
+            "text": "of any property of the Government or of a local authority, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Theft by clerk or servant of property in possession of master.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 305: Theft in a dwelling house, or means of transportation or place of worship, etc.\nof any property of the Government or of a local authority, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Theft by clerk or servant of property in possession of master.",
+            "keywords": [
+              "property",
+              "theft",
+              "government",
+              "local",
+              "authority",
+              "punished",
+              "imprisonment",
+              "either",
+              "description",
+              "term",
+              "local authority"
+            ],
+            "legal_concepts": [
+              "theft of public property",
+              "imprisonment as punishment"
+            ],
+            "source_scores": {
+              "faiss": 0.6147907912731171
+            },
+            "query_scores": {
+              "sub_query_1": 0.6147907912731171
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "rerank"
+            ]
+          }
+        ],
+        "sub_query_2": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S309_N6",
+            "score": 0.96,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 309,
+            "citation": "Section 309",
+            "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+            "keywords": [
+              "robbery",
+              "committing",
+              "attempting",
+              "commit",
+              "imprisonment",
+              "voluntarily",
+              "causes",
+              "hurt",
+              "jointly",
+              "concerned",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "robbery"
+            ],
+            "source_scores": {
+              "faiss": 0.9
+            },
+            "query_scores": {
+              "sub_query_2": 0.9
+            },
+            "reasons": [
+              "faiss:sub_query_2",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S346_BODY",
+            "score": 0.660465,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+            "section_number": 346,
+            "citation": "Section 346",
+            "text": "Whoever removes, destroys, defaces or adds to any property mark, intending or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both. Counterfeiting a property mark.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 18: OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS\nSection 346: Tampering with property mark with intent to cause injury.\nWhoever removes, destroys, defaces or adds to any property mark, intending or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both. Counterfeiting a property mark.",
+            "keywords": [
+              "property",
+              "mark",
+              "cause",
+              "injury",
+              "whoever",
+              "removes",
+              "destroys",
+              "defaces",
+              "adds",
+              "intending",
+              "marks",
+              "offence"
+            ],
+            "legal_concepts": [
+              "tampering",
+              "property marks",
+              "offence"
+            ],
+            "source_scores": {
+              "faiss": 0.5973600268363953
+            },
+            "query_scores": {
+              "sub_query_2": 0.5973600268363953
+            },
+            "reasons": [
+              "faiss:sub_query_2",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S134_BODY",
+            "score": 0.60892,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 134,
+            "citation": "Section 134",
+            "text": "Whoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 134: Assault or criminal force in attempt to commit theft of property carried by a person.\nWhoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+            "keywords": [
+              "criminal",
+              "force",
+              "commit",
+              "theft",
+              "property",
+              "assault",
+              "attempt",
+              "body",
+              "whoever",
+              "assaults",
+              "criminal force"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "attempted theft"
+            ],
+            "source_scores": {
+              "faiss": 0.6096299529075623
+            },
+            "query_scores": {
+              "sub_query_2": 0.6096299529075623
+            },
+            "reasons": [
+              "faiss:sub_query_2",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S62_ILL1_A",
+            "score": 0.433471,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 62,
+            "citation": "Section 62",
+            "text": "A makes an attempt to steal some jewels by breaking open a box, and finds after so opening the box, that there is no jewel in it. He has done an act towards the commission of theft, and therefore is guilty under this section.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 62: Punishment for attempting to commit offences punishable with imprisonment for life or other\nA makes an attempt to steal some jewels by breaking open a box, and finds after so opening the box, that there is no jewel in it. He has done an act towards the commission of theft, and therefore is guilty under this section.",
+            "keywords": [
+              "attempt",
+              "makes",
+              "steal",
+              "some",
+              "jewels",
+              "breaking",
+              "open",
+              "finds",
+              "after",
+              "opening",
+              "attempting to steal",
+              "act towards commission"
+            ],
+            "legal_concepts": [
+              "attempt",
+              "theft"
+            ],
+            "source_scores": {
+              "faiss": 0.6042909622192383
+            },
+            "query_scores": {
+              "sub_query_2": 0.6042909622192383
+            },
+            "reasons": [
+              "faiss:sub_query_2",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S41_BODY",
+            "score": 0.390583,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 41,
+            "citation": "Section 41",
+            "text": "The right of private defence of property extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the wrong-doer, if the offence, the committing of which, or the attempting to commit which, occasions the exercise of the right, be an offence of any of the descriptions hereinafter enumerated, namely:—",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 41: When right of private defence of property extends to causing death.\nThe right of private defence of property extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the wrong-doer, if the offence, the committing of which, or the attempting to commit which, occasions the exercise of the right, be an offence of any of the descriptions hereinafter enumerated, namely:—",
+            "keywords": [
+              "right",
+              "private",
+              "defence",
+              "property",
+              "extends",
+              "causing",
+              "death",
+              "offence",
+              "restrictions",
+              "specified",
+              "private defence",
+              "property rights"
+            ],
+            "legal_concepts": [
+              "right of private defence",
+              "causing death"
+            ],
+            "source_scores": {
+              "bm25": 0.9
+            },
+            "query_scores": {
+              "sub_query_2": 0.9
+            },
+            "reasons": [
+              "bm25:sub_query_2",
+              "rerank"
+            ]
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S303_N2",
+          "score": 1.0,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine: Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service. Snatching.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine: Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service. Snatching.",
+          "keywords": [
+            "property",
+            "theft",
+            "punished",
+            "imprisonment",
+            "term",
+            "extend",
+            "years",
+            "fine",
+            "five",
+            "value",
+            "theft punishment",
+            "imprisonment fine"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishment for theft"
+          ],
+          "source_scores": {
+            "original:faiss": 0.6327242851257324,
+            "original:bm25": 0.05555555555555555,
+            "sub_query_1:faiss": 0.9
+          },
+          "query_scores": {
+            "original": 0.8530897140502929,
+            "sub_query_1": 0.96
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "rerank",
+            "faiss:sub_query_1",
+            "multi_query_support"
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S309_N6",
+          "score": 1.0,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "keywords": [
+            "robbery",
+            "committing",
+            "attempting",
+            "commit",
+            "imprisonment",
+            "voluntarily",
+            "causes",
+            "hurt",
+            "jointly",
+            "concerned",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "robbery"
+          ],
+          "source_scores": {
+            "original:faiss": 0.6354228258132935,
+            "sub_query_2:faiss": 0.9
+          },
+          "query_scores": {
+            "original": 0.40867245625358334,
+            "sub_query_2": 0.96
+          },
+          "reasons": [
+            "faiss:original",
+            "rerank",
+            "faiss:sub_query_2",
+            "multi_query_support"
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S346_BODY",
+          "score": 0.660465,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+          "section_number": 346,
+          "citation": "Section 346",
+          "text": "Whoever removes, destroys, defaces or adds to any property mark, intending or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both. Counterfeiting a property mark.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 18: OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS\nSection 346: Tampering with property mark with intent to cause injury.\nWhoever removes, destroys, defaces or adds to any property mark, intending or knowing it to be likely that he may thereby cause injury to any person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both. Counterfeiting a property mark.",
+          "keywords": [
+            "property",
+            "mark",
+            "cause",
+            "injury",
+            "whoever",
+            "removes",
+            "destroys",
+            "defaces",
+            "adds",
+            "intending",
+            "marks",
+            "offence"
+          ],
+          "legal_concepts": [
+            "tampering",
+            "property marks",
+            "offence"
+          ],
+          "source_scores": {
+            "sub_query_2:faiss": 0.5973600268363953
+          },
+          "query_scores": {
+            "sub_query_2": 0.6604651132888245
+          },
+          "reasons": [
+            "faiss:sub_query_2",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S134_BODY",
+          "score": 0.64892,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 134,
+          "citation": "Section 134",
+          "text": "Whoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 134: Assault or criminal force in attempt to commit theft of property carried by a person.\nWhoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+          "keywords": [
+            "criminal",
+            "force",
+            "commit",
+            "theft",
+            "property",
+            "assault",
+            "attempt",
+            "body",
+            "whoever",
+            "assaults",
+            "criminal force"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "attempted theft"
+          ],
+          "source_scores": {
+            "original:faiss": 0.6466759443283081,
+            "sub_query_2:faiss": 0.6096299529075623
+          },
+          "query_scores": {
+            "original": 0.43318101088458927,
+            "sub_query_2": 0.608919636292751
+          },
+          "reasons": [
+            "faiss:original",
+            "rerank",
+            "faiss:sub_query_2",
+            "multi_query_support"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S307_BODY",
+          "score": 0.441104,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 307,
+          "citation": "Section 307",
+          "text": "Whoever commits theft, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining of property taken by such theft, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 307: Theft after preparation made for causing death, hurt or restraint in order to committing of\nWhoever commits theft, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining of property taken by such theft, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "keywords": [
+            "theft",
+            "order",
+            "death",
+            "hurt",
+            "restraint",
+            "committing",
+            "made",
+            "preparation",
+            "causing",
+            "after",
+            "harm",
+            "escape",
+            "retain"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "theft with preparation for causing harm"
+          ],
+          "source_scores": {
+            "sub_query_1:faiss": 0.6139167666435242,
+            "sub_query_1:bm25": 0.052941176470588235
+          },
+          "query_scores": {
+            "sub_query_1": 0.4411044152358192
+          },
+          "reasons": [
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "rerank"
+          ]
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S303_N2",
+          "score": 1.0,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine: Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service. Snatching.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine: Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service. Snatching.",
+          "keywords": [
+            "property",
+            "theft",
+            "punished",
+            "imprisonment",
+            "term",
+            "extend",
+            "years",
+            "fine",
+            "five",
+            "value",
+            "theft punishment",
+            "imprisonment fine"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishment for theft"
+          ],
+          "source_scores": {
+            "original:faiss": 0.6327242851257324,
+            "original:bm25": 0.05555555555555555,
+            "sub_query_1:faiss": 0.9
+          },
+          "query_scores": {
+            "original": 0.8530897140502929,
+            "sub_query_1": 0.96
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "rerank",
+            "faiss:sub_query_1",
+            "multi_query_support"
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S309_N6",
+          "score": 0.553001,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "keywords": [
+            "robbery",
+            "committing",
+            "attempting",
+            "commit",
+            "imprisonment",
+            "voluntarily",
+            "causes",
+            "hurt",
+            "jointly",
+            "concerned",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "robbery"
+          ],
+          "source_scores": {
+            "original:faiss": 0.6354228258132935,
+            "sub_query_2:faiss": 0.9
+          },
+          "query_scores": {
+            "original": 0.40867245625358334,
+            "sub_query_2": 0.96
+          },
+          "reasons": [
+            "faiss:original",
+            "rerank",
+            "faiss:sub_query_2",
+            "multi_query_support"
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S304_N2",
+          "score": 0.5316,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 304,
+          "citation": "Section 304",
+          "text": "Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Theft in a dwelling house, or means of transportation or place of worship, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 304: Snatching.\nWhoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Theft in a dwelling house, or means of transportation or place of worship, etc.",
+          "keywords": [
+            "snatching",
+            "whoever",
+            "commits",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "extend",
+            "three",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "imprisonment for term"
+          ],
+          "source_scores": {
+            "sub_query_1:faiss": 0.6226806163787842
+          },
+          "query_scores": {
+            "sub_query_1": 0.37307261096149935
+          },
+          "reasons": [
+            "faiss:sub_query_1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S307_BODY",
+          "score": 0.438843,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 307,
+          "citation": "Section 307",
+          "text": "Whoever commits theft, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining of property taken by such theft, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 307: Theft after preparation made for causing death, hurt or restraint in order to committing of\nWhoever commits theft, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining of property taken by such theft, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "keywords": [
+            "theft",
+            "order",
+            "death",
+            "hurt",
+            "restraint",
+            "committing",
+            "made",
+            "preparation",
+            "causing",
+            "after",
+            "harm",
+            "escape",
+            "retain"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "theft with preparation for causing harm"
+          ],
+          "source_scores": {
+            "sub_query_1:faiss": 0.6139167666435242,
+            "sub_query_1:bm25": 0.052941176470588235
+          },
+          "query_scores": {
+            "sub_query_1": 0.4411044152358192
+          },
+          "reasons": [
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S134_BODY",
+          "score": 0.432645,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 134,
+          "citation": "Section 134",
+          "text": "Whoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 134: Assault or criminal force in attempt to commit theft of property carried by a person.\nWhoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+          "keywords": [
+            "criminal",
+            "force",
+            "commit",
+            "theft",
+            "property",
+            "assault",
+            "attempt",
+            "body",
+            "whoever",
+            "assaults",
+            "criminal force"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "attempted theft"
+          ],
+          "source_scores": {
+            "original:faiss": 0.6466759443283081,
+            "sub_query_2:faiss": 0.6096299529075623
+          },
+          "query_scores": {
+            "original": 0.43318101088458927,
+            "sub_query_2": 0.608919636292751
+          },
+          "reasons": [
+            "faiss:original",
+            "rerank",
+            "faiss:sub_query_2",
+            "multi_query_support"
+          ]
+        }
+      ],
+      "settings": {
+        "graph_enabled": false,
+        "rerank_enabled": true,
+        "final_k": 5
+      }
+    }
+  }
+]

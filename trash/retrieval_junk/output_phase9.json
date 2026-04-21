@@ -1,0 +1,466 @@
+[
+  {
+    "query": "My phone was stolen in a bus and I also got injured while trying to stop the thief, what can I do?",
+    "phase8": {
+      "query": "My phone was stolen in a bus and I also got injured while trying to stop the thief, what can I do?",
+      "intent": {
+        "primary": "procedure",
+        "secondary": [
+          "case_application"
+        ]
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "stolen"
+        },
+        {
+          "type": "concept",
+          "value": "injure"
+        }
+      ],
+      "concepts": [
+        "theft",
+        "injury",
+        "legal remedy",
+        "property"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.5,
+        "llm": 0.7,
+        "agreement": 0.1,
+        "overall": 0.48
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves two distinct legal issues: theft of property and personal injury.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What legal steps can I take after my phone was stolen?",
+          "intent": {
+            "primary": "procedure",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "stolen"
+            }
+          ],
+          "concepts": [
+            "theft",
+            "legal remedy"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.8,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue focused on theft.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What can I do if I got injured while trying to stop a thief?",
+          "intent": {
+            "primary": "procedure",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "injure"
+            }
+          ],
+          "concepts": [
+            "injury",
+            "legal remedy"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.8,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue focused on injury.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "My phone was stolen in a bus and I also got injured while trying to stop the thief, what can I do?",
+          "intent": {
+            "primary": "procedure",
+            "secondary": [
+              "case_application"
+            ]
+          },
+          "concepts": [
+            "theft",
+            "injury",
+            "legal remedy",
+            "property"
+          ],
+          "targets": [
+            {
+              "type": "concept",
+              "value": "stolen"
+            },
+            {
+              "type": "concept",
+              "value": "injure"
+            }
+          ]
+        },
+        {
+          "name": "sub_query_1",
+          "source": "decomposed",
+          "weight": 0.85,
+          "query": "What legal steps can I take after my phone was stolen?",
+          "intent": {
+            "primary": "procedure",
+            "secondary": []
+          },
+          "concepts": [
+            "theft",
+            "legal remedy"
+          ],
+          "targets": [
+            {
+              "type": "concept",
+              "value": "stolen"
+            }
+          ]
+        },
+        {
+          "name": "sub_query_2",
+          "source": "decomposed",
+          "weight": 0.85,
+          "query": "What can I do if I got injured while trying to stop a thief?",
+          "intent": {
+            "primary": "procedure",
+            "secondary": []
+          },
+          "concepts": [
+            "injury",
+            "legal remedy"
+          ],
+          "targets": [
+            {
+              "type": "concept",
+              "value": "injure"
+            }
+          ]
+        },
+        {
+          "name": "concepts",
+          "source": "concepts",
+          "weight": 0.7,
+          "query": "theft injury legal remedy property",
+          "intent": {
+            "primary": "procedure"
+          },
+          "concepts": [
+            "theft",
+            "injury",
+            "legal remedy",
+            "property"
+          ],
+          "targets": [
+            {
+              "type": "concept",
+              "value": "stolen"
+            },
+            {
+              "type": "concept",
+              "value": "injure"
+            }
+          ]
+        },
+        {
+          "name": "targets",
+          "source": "targets",
+          "weight": 0.8,
+          "query": "stolen injure",
+          "intent": {
+            "primary": "procedure"
+          },
+          "concepts": [
+            "stolen",
+            "injure"
+          ],
+          "targets": [
+            {
+              "type": "concept",
+              "value": "stolen"
+            },
+            {
+              "type": "concept",
+              "value": "injure"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S101_C",
+          "score": 0.823075,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 101,
+          "citation": "Section 101",
+          "text": "if the act by which the death is caused is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 101: Murder.\nif the act by which the death is caused is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death; or",
+          "keywords": [
+            "death",
+            "bodily",
+            "injury",
+            "caused",
+            "done",
+            "intention",
+            "causing",
+            "intended",
+            "inflicted",
+            "sufficient",
+            "causing death",
+            "bodily injury"
+          ],
+          "legal_concepts": [
+            "murder",
+            "intentional act"
+          ],
+          "source_scores": {
+            "sub_query_2:faiss": 0.85,
+            "targets:faiss": 0.4
+          },
+          "query_scores": {
+            "sub_query_2": 0.7625,
+            "targets": 0.42500000000000004
+          },
+          "reasons": [
+            "faiss:sub_query_2",
+            "phase8_boost",
+            "faiss:targets",
+            "multi_variant_match",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__section__BNS_S101",
+          "score": 0.799496,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 101,
+          "citation": "Section 101",
+          "text": "Except in the cases hereinafter excepted, culpable homicide is\nmurder,–\n(a) if the act by which the death is caused is done with the\nintention of causing death; or\n(b) if the act by which the death is caused is done with the\nintention of causing such bodily injury as the offender knows to be\nlikely to cause the death of the person to whom the harm is caused;\nor\n(c) if the act by which the death is caused is done with the\nintention of causing bodily injury to any person and the bodily injury\nintended to be inflicted is sufficient in the ordinary course of nature\nto cause death; or\n(d) if the person committing the act by which the death is\ncaused, knows that it is so imminently dangerous that it must, in all\nprobability, cause death, or such bodily injury as is likely to cause\ndeath, and commits such act without any excuse for incurring the risk\nof causing death or such injury as aforesaid.\nIllustrations.\n(a) A shoots Z with the intention of killing him. Z dies in consequence.\nA commits murder.\n(b) A, knowing that Z is labouring under such a disease that a blow\nis likely to cause his death, strikes him with the intention of causing bodily\ninjury. Z dies in consequence of the blow. A is guilty of murder, although\nthe blow might not have been sufficient in the ordinary course of nature to\ncause the death of a person in a sound state of health. But if A, not knowing\nthat Z is labouring under any disease, gives him such a blow as would not\nin the ordinary course of nature kill a person in a sound state of health,\nhere A, although he may intend to cause bodily injury, is not guilty of\nmurder, if he did not intend to cause death, or such bodily injury as in the\nordinary course of nature would cause death.\n(c) A intentionally gives Z a sword-cut or club-wound sufficient to\ncause the death of a man in the ordinary course of nature. Z dies in\nconsequence. Here A is guilty of murder, although he may not have\nintended to cause Z’s death.\n(d) A without any excuse fires a loaded cannon into a crowd of\npersons and kills one of them. A is guilty of murder, although he may not\nhave had a premeditated design to kill any particular individual.\nException 1.—Culpable homicide is not murder if the offender, whilst\ndeprived of the power of self-control by grave and sudden provocation,\ncauses the death of the person who gave the provocation or causes the\ndeath of any other person by mistake or accident:\nProvided that the provocation is not,-\n(a) sought or voluntarily provoked by the offender as an excuse\nfor killing or doing harm to any person;\n(b) given by anything done in obedience to the law, or by a\npublic servant in the lawful exercise of the powers of such public\nservant;\n(c) given by anything done in the lawful exercise of the right of\nprivate defence.\nExplanation.—Whether the provocation was grave and sudden\nenough to prevent the offence from amounting to murder is a question of\nfact.\nIllustrations.\n(a) A, under the influence of passion excited by a provocation given\nby Z, intentionally kills Y, Z’s child. This is murder, in as much as the\nprovocation was not given by the child, and the death of the child was not\ncaused by accident or misfortune in doing an act caused by the provocation.\n(b) Y gives grave and sudden provocation to A. A, on this provocation,\nfires a pistol at Y, neither intending nor knowing himself to be likely to kill\nZ, who is near him, but out of sight. A kills Z. Here A has not committed\nmurder, but merely culpable homicide.\n(c) A is lawfully arrested by Z, a bailiff. A is excited to sudden and\nviolent passion by the arrest, and kills Z. This is murder, in as much as the\nprovocation was given by a thing done by a public servant in the exercise\nof his powers.\n(d) A appears as a witness before Z, a Magistrate. Z says that he\ndoes not believe a word of A’s deposition, and that A has perjured himself.\nA is moved to sudden passion by these words, and kills Z. This is murder.\n(e) A attempts to pull Z’s nose. Z, in the exercise of the right of\nprivate defence, lays hold of A to prevent him from doing so. A is moved to\nsudden and violent passion in consequence, and kills Z. This is murder, in\nas much as the provocation was giving by a thing done in the exercise of\nthe right of private defence.\n(f) Z strikes B. B is by this provocation excited to violent rage. A, a\nbystander, intending to take advantage of B’s rage, and to cause him to kill\nZ, puts a knife into B’s hand for that purpose. B kills Z with the knife. Here\nB may have committed only culpable homicide, but A is guilty of murder.\nException 2.—Culpable homicide is not murder if the offender in the\nexercise in good faith of the right of private defence of person or property,\nexceeds the power given to him by law and causes the death of the person\nagainst whom he is exercising such right of defence without premeditation,\nand without any intention of doing more harm than is necessary for the\npurpose of such defence.\nIllustration.\nZ attempts to horsewhip A, not in such a manner as to cause grievous\nhurt to A. A draws out a pistol. Z persists in the assault. A believing in good\nfaith that he can by no other means prevent himself from being\nhorsewhipped, shoots Z dead. A has not committed murder, but only\nculpable homicide.\nException 3.—Culpable homicide is not murder if the offender, being\na public servant or aiding a public servant acting for the advancement of\npublic justice, exceeds the powers given to him by law, and causes death\nby doing an act which he, in good faith, believes to be lawful and necessary\nfor the due discharge of his duty as such public servant and without ill-will\ntowards the person whose death is caused.\nException 4.—Culpable homicide is not murder if it is committed\nwithout premeditation in a sudden fight in the heat of passion upon a\nsudden quarrel and without the offender’s having taken undue advantage\nor acted in a cruel or unusual manner.\nExplanation.—It is immaterial in such cases which party offers the\nprovocation or commits the first assault.\nException 5.—Culpable homicide is not murder when the person\nwhose death is caused, being above the age of eighteen years, suffers\ndeath or takes the risk of death with his own consent.\nIllustration.\nA, by instigation, voluntarily causes Z, a child to commit suicide.\nHere, on account of Z’s youth, he was incapable of giving consent to his\nown death; A has therefore abetted murder.\nCulpable homicide by causing death of person other than person\nwhose death was intended.",
+          "derived_context": "",
+          "keywords": [
+            "culpable homicide",
+            "intentional killing"
+          ],
+          "legal_concepts": [
+            "murder",
+            "culpable homicide"
+          ],
+          "source_scores": {
+            "anchor": 0.7910000000000001
+          },
+          "query_scores": {
+            "anchor": 0.7910000000000001
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S101_ILL1_A",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__section__BNS_S231",
+          "score": 0.738028,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 231,
+          "citation": "Section 231",
+          "text": "Whoever gives or fabricates false evidence intending thereby to\ncause, or knowing it to be likely that he will thereby cause, any person to\nbe convicted of an offence which by the law for the time being in force in\nIndia is not capital, but punishable with imprisonment for life, or\nimprisonment for a term of seven years or upwards, shall be punished as a\nperson convicted of that offence would be liable to be punished.\nIllustration.\nA gives false evidence before a Court, intending thereby to cause Z\nto be convicted of a dacoity. The punishment of dacoity is imprisonment for\nlife, or rigorous imprisonment for a term which may extend to ten years,\nwith or without fine. A, therefore, is liable to imprisonment for life or\nimprisonment, with or without fine.\nThreatening any person to give false evidence.",
+          "derived_context": "",
+          "keywords": [
+            "false_evidence",
+            "offence_punishable"
+          ],
+          "legal_concepts": [
+            "giving false evidence",
+            "offences against public justice"
+          ],
+          "source_scores": {
+            "original:faiss": 0.07142857142857142,
+            "original:bm25": 1.0,
+            "sub_query_1:bm25": 0.8485741099185153,
+            "concepts:faiss": 0.049999999999999996,
+            "concepts:bm25": 0.7,
+            "targets:bm25": 0.5933444154345177
+          },
+          "query_scores": {
+            "original": 1.0,
+            "sub_query_1": 0.7614305824388865,
+            "concepts": 0.7749999999999999,
+            "targets": 0.5700083115758883
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "phase8_boost",
+            "bm25:sub_query_1",
+            "faiss:concepts",
+            "bm25:concepts",
+            "bm25:targets",
+            "multi_variant_match",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__section__BNS_S232",
+          "score": 0.695124,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 232,
+          "citation": "Section 232",
+          "text": "(1) Whoever threatens another with any injury to his person,\nreputation or property or to the person or reputation of any one in whom\nthat person is interested, with intent to cause that person to give false\nevidence shall be punished with imprisonment of either description for a\nterm which may extend to seven years, or with fine, or with both.\n(2) If innocent person is convicted and sentenced in consequence of\nfalse evidence referred to in sub-section (1), with death or imprisonment\nfor more than seven years, the person who threatens shall be punished\nwith the same punishment and sentence in the same manner and to the\nsame extent such innocent person is punished and sentenced.\nUsing evidence known to be false.",
+          "derived_context": "",
+          "keywords": [
+            "false_evidence",
+            "threats"
+          ],
+          "legal_concepts": [
+            "offence_against_public_justice",
+            "punishment_for_false_evidence"
+          ],
+          "source_scores": {
+            "original:bm25": 0.7781038670489496,
+            "sub_query_1:bm25": 0.5321555981363394,
+            "targets:bm25": 0.588530041137742
+          },
+          "query_scores": {
+            "original": 0.7085779002867122,
+            "sub_query_1": 0.5241166986022545,
+            "targets": 0.5663975308533065
+          },
+          "reasons": [
+            "bm25:original",
+            "phase8_boost",
+            "bm25:sub_query_1",
+            "bm25:targets",
+            "multi_variant_match",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S231_BODY",
+          "score": 0.692725,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 231,
+          "citation": "Section 231",
+          "text": "Whoever gives or fabricates false evidence intending thereby to cause, or knowing it to be likely that he will thereby cause, any person to be convicted of an offence which by the law for the time being in force in India is not capital, but punishable with imprisonment for life, or imprisonment for a term of seven years or upwards, shall be punished as a person convicted of that offence would be liable to be punished.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 231: Giving or fabricating false evidence with intent to procure conviction of offence punishable\nWhoever gives or fabricates false evidence intending thereby to cause, or knowing it to be likely that he will thereby cause, any person to be convicted of an offence which by the law for the time being in force in India is not capital, but punishable with imprisonment for life, or imprisonment for a term of seven years or upwards, shall be punished as a person convicted of that offence would be liable to be punished.",
+          "keywords": [
+            "false",
+            "evidence",
+            "offence",
+            "thereby",
+            "cause",
+            "convicted",
+            "punishable",
+            "imprisonment",
+            "punished",
+            "whoever",
+            "false evidence",
+            "fabricated evidence"
+          ],
+          "legal_concepts": [
+            "giving false evidence",
+            "fabricating evidence"
+          ],
+          "source_scores": {
+            "original:bm25": 0.8661524921235891,
+            "sub_query_1:bm25": 0.85,
+            "concepts:bm25": 0.1313105690552144,
+            "targets:bm25": 0.8
+          },
+          "query_scores": {
+            "original": 0.7746143690926919,
+            "sub_query_1": 0.7625,
+            "concepts": 0.2234829267914108,
+            "targets": 0.7250000000000001
+          },
+          "reasons": [
+            "bm25:original",
+            "phase8_boost",
+            "bm25:sub_query_1",
+            "bm25:concepts",
+            "bm25:targets",
+            "multi_variant_match",
+            "rerank"
+          ]
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "final_k": 5
+      }
+    }
+  }
+]

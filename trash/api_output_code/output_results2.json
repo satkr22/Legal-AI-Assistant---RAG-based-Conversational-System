@@ -1,0 +1,3131 @@
+[
+  {
+    "id": 2,
+    "query": "A person threatened me with a knife, what offence is committed?",
+    "result": {
+      "query": "A person threatened me with a knife, what offence is committed?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "threatened"
+        }
+      ],
+      "concepts": [
+        "threat",
+        "knife",
+        "offence"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.3,
+        "llm": 0.5,
+        "agreement": 0.5,
+        "overall": 0.44
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue identified.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 7.44,
+    "status": "success"
+  },
+  {
+    "id": 3,
+    "query": "Someone snatched my phone while I was walking, what law applies?",
+    "result": {
+      "query": "Someone snatched my phone while I was walking, what law applies?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "snatching",
+        "movable property"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.34,
+        "llm": 0.34,
+        "agreement": 1.0,
+        "overall": 0.51
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding the act of snatching.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 6.91,
+    "status": "success"
+  },
+  {
+    "id": 7,
+    "query": "A person tried to steal my bag but I caught him, what offence applies?",
+    "result": {
+      "query": "A person tried to steal my bag but I caught him, what offence applies?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "theft"
+        }
+      ],
+      "concepts": [
+        "theft"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.32,
+        "llm": 0.32,
+        "agreement": 1.0,
+        "overall": 0.49
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue identified.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.18,
+    "status": "success"
+  },
+  {
+    "id": 4,
+    "query": "A person entered my house without permission, what offence is this?",
+    "result": {
+      "query": "A person entered my house without permission, what offence is this?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "property without permission is considered"
+        }
+      ],
+      "concepts": [
+        "consent",
+        "property",
+        "offence"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.32,
+        "llm": 0.32,
+        "agreement": 0.67,
+        "overall": 0.41
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue identified.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.86,
+    "status": "success"
+  },
+  {
+    "id": 5,
+    "query": "My wallet was stolen from my bag in a crowded train, what offence is this?",
+    "result": {
+      "query": "My wallet was stolen from my bag in a crowded train, what offence is this?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.32,
+        "llm": 0.32,
+        "agreement": 1.0,
+        "overall": 0.49
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue identified.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 5.09,
+    "status": "success"
+  },
+  {
+    "id": 1,
+    "query": "Someone hit me during an argument, what crime is this and what is the punishment?",
+    "result": {
+      "query": "Someone hit me during an argument, what crime is this and what is the punishment?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "assault"
+        },
+        {
+          "type": "concept",
+          "value": "punishment"
+        }
+      ],
+      "concepts": [
+        "assault",
+        "punishment"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.78,
+        "llm": 0.8,
+        "agreement": 0.5,
+        "overall": 0.72
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding assault and its punishment.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 7.95,
+    "status": "success"
+  },
+  {
+    "id": 0,
+    "query": "My bike was stolen from outside my house, what punishment can the thief get?",
+    "result": {
+      "query": "My bike was stolen from outside my house, what punishment can the thief get?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "case_application"
+        ]
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "theft"
+        },
+        {
+          "type": "concept",
+          "value": "punishment"
+        }
+      ],
+      "concepts": [
+        "theft",
+        "punishment"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.58,
+        "llm": 0.58,
+        "agreement": 1.0,
+        "overall": 0.69
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding punishment for theft.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 8.27,
+    "status": "success"
+  },
+  {
+    "id": 6,
+    "query": "Someone stole my phone and later sold it, what crimes are involved?",
+    "result": {
+      "query": "Someone stole my phone and later sold it, what crimes are involved?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "selling stolen property"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.31,
+        "llm": 0.31,
+        "agreement": 0.67,
+        "overall": 0.39
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "Two distinct legal issues: theft and selling stolen property.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What are the legal implications of someone stealing my phone?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "theft"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding theft.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What are the legal implications of selling a stolen phone?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "selling stolen property"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding selling stolen property.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 9.22,
+    "status": "success"
+  },
+  {
+    "id": 10,
+    "query": "My phone was stolen and I was injured while trying to stop the thief, what punishment applies?",
+    "result": {
+      "query": "My phone was stolen and I was injured while trying to stop the thief, what punishment applies?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "case_application",
+          "reasoning"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "punishment",
+        "private defence"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.6,
+        "llm": 0.6,
+        "agreement": 0.88,
+        "overall": 0.67
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding theft and injury while attempting to stop it.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.55,
+    "status": "success"
+  },
+  {
+    "id": 16,
+    "query": "I injured someone who was trying to steal my belongings, what law applies?",
+    "result": {
+      "query": "I injured someone who was trying to steal my belongings, what law applies?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "theft"
+        }
+      ],
+      "concepts": [
+        "theft",
+        "injury",
+        "private defence"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.32,
+        "llm": 0.32,
+        "agreement": 0.67,
+        "overall": 0.41
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding injury during theft attempt.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 1.6,
+    "status": "success"
+  },
+  {
+    "id": 9,
+    "query": "A thief stole my bike and caused damage while escaping, what sections apply?",
+    "result": {
+      "query": "A thief stole my bike and caused damage while escaping, what sections apply?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "property damage"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.31,
+        "llm": 0.31,
+        "agreement": 1.0,
+        "overall": 0.47
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves two distinct legal issues: theft and property damage.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What sections apply to the theft of my bike?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "theft"
+            }
+          ],
+          "concepts": [
+            "theft"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding theft.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What sections apply to the damage caused while escaping?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "property damage"
+            }
+          ],
+          "concepts": [
+            "property damage"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding property damage.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 8.97,
+    "status": "success"
+  },
+  {
+    "id": 8,
+    "query": "My laptop was stolen and I later found someone using it knowingly, what crime is this?",
+    "result": {
+      "query": "My laptop was stolen and I later found someone using it knowingly, what crime is this?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "stolen property"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.31,
+        "llm": 0.31,
+        "agreement": 1.0,
+        "overall": 0.47
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves two distinct legal issues: the theft of the laptop and the subsequent use of the stolen property.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What crime is committed when my laptop is stolen?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "theft"
+            }
+          ],
+          "concepts": [
+            "theft"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding theft.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What crime is committed when someone knowingly uses my stolen laptop?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "stolen property"
+            }
+          ],
+          "concepts": [
+            "stolen property"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding the use of stolen property.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 9.61,
+    "status": "success"
+  },
+  {
+    "id": 12,
+    "query": "Someone robbed me and caused injuries, what legal sections apply?",
+    "result": {
+      "query": "Someone robbed me and caused injuries, what legal sections apply?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "robbery",
+        "hurt"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.31,
+        "llm": 0.31,
+        "agreement": 1.0,
+        "overall": 0.47
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "Multiple legal issues: robbery and causing injuries.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What legal sections apply to robbery?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "robbery"
+            }
+          ],
+          "concepts": [
+            "robbery"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What legal sections apply to causing injuries?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "hurt"
+            }
+          ],
+          "concepts": [
+            "hurt"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 8.63,
+    "status": "success"
+  },
+  {
+    "id": 13,
+    "query": "A person snatched my chain and pushed me to the ground, what offence is this?",
+    "result": {
+      "query": "A person snatched my chain and pushed me to the ground, what offence is this?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "snatching",
+        "assault"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.31,
+        "llm": 0.31,
+        "agreement": 1.0,
+        "overall": 0.47
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves two distinct legal issues: snatching and assault.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What is the offence for snatching a chain?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "snatching"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding snatching.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What is the offence for pushing someone to the ground?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "assault"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding assault.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 8.89,
+    "status": "success"
+  },
+  {
+    "id": 17,
+    "query": "Can I use force to stop a thief, what does law say?",
+    "result": {
+      "query": "Can I use force to stop a thief, what does law say?",
+      "intent": {
+        "primary": "eligibility",
+        "secondary": []
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "private defence"
+        }
+      ],
+      "concepts": [
+        "theft",
+        "private defence"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.48,
+        "llm": 0.48,
+        "agreement": 1.0,
+        "overall": 0.61
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding the use of force in theft prevention.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.88,
+    "status": "success"
+  },
+  {
+    "id": 11,
+    "query": "A thief attacked me when I tried to stop him from stealing, what crime is this?",
+    "result": {
+      "query": "A thief attacked me when I tried to stop him from stealing, what crime is this?",
+      "intent": {
+        "primary": "hypothetical",
+        "secondary": [
+          "case_application"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "assault",
+        "private defence"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.3,
+        "llm": 0.3,
+        "agreement": 1.0,
+        "overall": 0.46
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves both theft and assault, requiring separate analysis.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What crime is theft when someone tries to steal?",
+          "intent": {
+            "primary": "definition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "theft"
+            }
+          ],
+          "concepts": [
+            "theft"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "narrow"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": true
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding theft.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What crime is assault when someone attacks another person?",
+          "intent": {
+            "primary": "definition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "assault"
+            }
+          ],
+          "concepts": [
+            "assault"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "narrow"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": true
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding assault.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 9.81,
+    "status": "success"
+  },
+  {
+    "id": 15,
+    "query": "I hit a thief while trying to stop him, is it a crime?",
+    "result": {
+      "query": "I hit a thief while trying to stop him, is it a crime?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "assault"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.31,
+        "llm": 0.31,
+        "agreement": 1.0,
+        "overall": 0.47
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves both the act of hitting (potential assault) and the context of theft (theft prevention), which are distinct legal issues.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "Is hitting a thief while trying to stop him considered assault?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "assault"
+            }
+          ],
+          "concepts": [
+            "assault"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "narrow"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue focused on assault.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "Can I legally hit a thief while trying to stop him from stealing?",
+          "intent": {
+            "primary": "legal_condition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "theft"
+            }
+          ],
+          "concepts": [
+            "theft",
+            "private defence"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "narrow"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue focused on the legality of hitting a thief.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 7.31,
+    "status": "success"
+  },
+  {
+    "id": 14,
+    "query": "During a theft, the offender hit me and ran away, what punishment applies?",
+    "result": {
+      "query": "During a theft, the offender hit me and ran away, what punishment applies?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "case_application"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "assault",
+        "punishment"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.57,
+        "llm": 0.57,
+        "agreement": 1.0,
+        "overall": 0.67
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves two distinct legal issues: the theft and the assault.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What is the punishment for theft?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "theft punishment"
+            }
+          ],
+          "concepts": [
+            "theft",
+            "punishment"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.6,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding theft punishment.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What is the punishment for assault?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "assault"
+            }
+          ],
+          "concepts": [
+            "assault",
+            "punishment"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.6,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding assault punishment.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 9.76,
+    "status": "success"
+  },
+  {
+    "id": 19,
+    "query": "While protecting my property, I hurt the offender, is it legal?",
+    "result": {
+      "query": "While protecting my property, I hurt the offender, is it legal?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "hurt",
+        "property",
+        "grievous hurt"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.36,
+        "llm": 0.36,
+        "agreement": 1.0,
+        "overall": 0.52
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding the legality of causing hurt while protecting property.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.49,
+    "status": "success"
+  },
+  {
+    "id": 22,
+    "query": "A thief injured me and my friend while escaping, what sections apply?",
+    "result": {
+      "query": "A thief injured me and my friend while escaping, what sections apply?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "injury"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.32,
+        "llm": 0.32,
+        "agreement": 0.75,
+        "overall": 0.43
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding injury during theft.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.13,
+    "status": "success"
+  },
+  {
+    "id": 25,
+    "query": "Someone found my lost phone and kept it without returning, what crime is this?",
+    "result": {
+      "query": "Someone found my lost phone and kept it without returning, what crime is this?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "movable property",
+        "theft"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.32,
+        "llm": 0.32,
+        "agreement": 0.75,
+        "overall": 0.43
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding the crime of keeping found property.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.21,
+    "status": "success"
+  },
+  {
+    "id": 26,
+    "query": "A person accidentally took my bag thinking it was theirs, is it a crime?",
+    "result": {
+      "query": "A person accidentally took my bag thinking it was theirs, is it a crime?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.32,
+        "llm": 0.32,
+        "agreement": 1.0,
+        "overall": 0.49
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding theft.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 3.94,
+    "status": "success"
+  },
+  {
+    "id": 18,
+    "query": "I attacked a person in self-defence during a robbery, what are the consequences?",
+    "result": {
+      "query": "I attacked a person in self-defence during a robbery, what are the consequences?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "robbery",
+        "assault",
+        "self-defence",
+        "defence"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.33,
+        "llm": 0.33,
+        "agreement": 1.0,
+        "overall": 0.49
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves both the act of self-defence and the context of robbery, which may lead to different legal consequences.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What are the consequences of attacking someone in self-defence during a robbery?",
+          "intent": {
+            "primary": "consequence",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "robbery",
+            "self-defence",
+            "consequence"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue focused on consequences.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What legal penalties apply for assault in the context of self-defence during a robbery?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "assault",
+            "self-defence",
+            "legal_penalty"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue focused on penalties.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 9.36,
+    "status": "success"
+  },
+  {
+    "id": 27,
+    "query": "Someone borrowed my phone and never returned it, what offence is this?",
+    "result": {
+      "query": "Someone borrowed my phone and never returned it, what offence is this?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "movable property",
+        "theft"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.32,
+        "llm": 0.32,
+        "agreement": 0.75,
+        "overall": 0.43
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue regarding the offence of not returning borrowed property.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.17,
+    "status": "success"
+  },
+  {
+    "id": 23,
+    "query": "A person tried to steal from me and when I resisted, he attacked me, what laws apply?",
+    "result": {
+      "query": "A person tried to steal from me and when I resisted, he attacked me, what laws apply?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "hypothetical"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "assault"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.28,
+        "llm": 0.28,
+        "agreement": 0.5,
+        "overall": 0.33
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves two distinct legal issues: attempted theft and assault.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "A person tried to steal from me, what laws apply?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "theft"
+            }
+          ],
+          "concepts": [
+            "theft"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding theft.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "When I resisted, he attacked me, what laws apply?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "assault"
+            }
+          ],
+          "concepts": [
+            "assault"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding assault.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 9.53,
+    "status": "success"
+  },
+  {
+    "id": 28,
+    "query": "A person picked up my dropped wallet and used the money, what law applies?",
+    "result": {
+      "query": "A person picked up my dropped wallet and used the money, what law applies?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "theft"
+        }
+      ],
+      "concepts": [
+        "theft",
+        "money",
+        "wallet"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.3,
+        "llm": 0.5,
+        "agreement": 0.5,
+        "overall": 0.44
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue identified.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.78,
+    "status": "success"
+  },
+  {
+    "id": 21,
+    "query": "Someone robbed me and then sold my belongings, what crimes are involved?",
+    "result": {
+      "query": "Someone robbed me and then sold my belongings, what crimes are involved?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "robbery"
+        },
+        {
+          "type": "concept",
+          "value": "theft"
+        }
+      ],
+      "concepts": [
+        "robbery",
+        "theft"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.32,
+        "llm": 0.5,
+        "agreement": 0.75,
+        "overall": 0.5
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves two distinct legal issues: robbery and the subsequent sale of stolen property.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What is the crime of robbery?",
+          "intent": {
+            "primary": "definition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "definition",
+              "value": "robbery"
+            }
+          ],
+          "concepts": [
+            "robbery"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "narrow"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": true
+          },
+          "confidence": 0.7,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue focused on the definition of robbery.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What is the crime involved in selling stolen belongings?",
+          "intent": {
+            "primary": "definition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "definition",
+              "value": "theft"
+            }
+          ],
+          "concepts": [
+            "theft"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "narrow"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": true
+          },
+          "confidence": 0.7,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue focused on the definition of theft.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 10.11,
+    "status": "success"
+  },
+  {
+    "id": 20,
+    "query": "A person stole my phone and later threatened me when I confronted him, what offences apply?",
+    "result": {
+      "query": "A person stole my phone and later threatened me when I confronted him, what offences apply?",
+      "intent": {
+        "primary": "hypothetical",
+        "secondary": [
+          "case_application"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "threat",
+        "movable property"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.28,
+        "llm": 0.28,
+        "agreement": 0.83,
+        "overall": 0.41
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves two distinct offences: theft and threat.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "A person stole my phone, what offences apply?",
+          "intent": {
+            "primary": "hypothetical",
+            "secondary": [
+              "case_application"
+            ]
+          },
+          "targets": [],
+          "concepts": [
+            "theft",
+            "movable property"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding theft.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "A person threatened me when I confronted him, what offences apply?",
+          "intent": {
+            "primary": "hypothetical",
+            "secondary": [
+              "case_application"
+            ]
+          },
+          "targets": [],
+          "concepts": [
+            "threat"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding threat.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 11.16,
+    "status": "success"
+  },
+  {
+    "id": 29,
+    "query": "My friend took my laptop without asking and refuses to return it, what offence is this?",
+    "result": {
+      "query": "My friend took my laptop without asking and refuses to return it, what offence is this?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.32,
+        "llm": 0.32,
+        "agreement": 1.0,
+        "overall": 0.49
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue identified.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.46,
+    "status": "success"
+  },
+  {
+    "id": 24,
+    "query": "Someone stole my bag and I later found another person knowingly using it, what offences apply?",
+    "result": {
+      "query": "Someone stole my bag and I later found another person knowingly using it, what offences apply?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "using stolen property"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.29,
+        "llm": 0.29,
+        "agreement": 0.75,
+        "overall": 0.4
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "Two distinct legal issues: theft of the bag and knowingly using stolen property.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What are the offences related to the theft of my bag?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "theft"
+            }
+          ],
+          "concepts": [
+            "theft"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding theft.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What are the offences related to knowingly using my stolen bag?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "using stolen property"
+            }
+          ],
+          "concepts": [
+            "using stolen property"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding using stolen property.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 11.48,
+    "status": "success"
+  },
+  {
+    "id": 31,
+    "query": "I was walking and one guy came and snatched my chain and I fell down what law applies",
+    "result": {
+      "query": "I was walking and one guy came and snatched my chain and I fell down what law applies",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "snatching"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.32,
+        "llm": 0.32,
+        "agreement": 1.0,
+        "overall": 0.49
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue identified.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.44,
+    "status": "success"
+  },
+  {
+    "id": 36,
+    "query": "A person helps a thief by hiding stolen items, what offence applies?",
+    "result": {
+      "query": "A person helps a thief by hiding stolen items, what offence applies?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "theft"
+        }
+      ],
+      "concepts": [
+        "theft",
+        "hiding stolen items",
+        "offence against property"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.32,
+        "llm": 0.32,
+        "agreement": 0.67,
+        "overall": 0.41
+      },
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue identified.",
+        "count": 0
+      },
+      "method": "llm_guided",
+      "sub_queries": [],
+      "notes": []
+    },
+    "time_sec": 4.83,
+    "status": "success"
+  },
+  {
+    "id": 30,
+    "query": "Bro someone just stole my phone in bus and pushed me what can I do and what punishment he gets",
+    "result": {
+      "query": "Bro someone just stole my phone in bus and pushed me what can I do and what punishment he gets",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "case_application"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "assault",
+        "punishment",
+        "movable property"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.67,
+        "llm": 0.67,
+        "agreement": 1.0,
+        "overall": 0.73
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves two distinct legal issues: theft of the phone and the assault from being pushed.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What can I do if someone stole my phone?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "theft",
+            "movable property"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.7,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding theft.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What punishment does someone get for pushing me?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "assault",
+            "punishment"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.7,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding assault.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": [
+        "Normalized remedy-style phrasing toward BNS application scope."
+      ]
+    },
+    "time_sec": 12.52,
+    "status": "success"
+  },
+  {
+    "id": 32,
+    "query": "thief took my mobile and I tried to stop but he hit me badly what happens to him",
+    "result": {
+      "query": "thief took my mobile and I tried to stop but he hit me badly what happens to him",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "reasoning",
+          "case_application"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "assault",
+        "movable property"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.47,
+        "llm": 0.47,
+        "agreement": 1.0,
+        "overall": 0.59
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "Two distinct legal issues: theft of mobile and assault on the individual.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "what are the penalties for theft of my mobile?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "theft",
+            "movable property"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding theft.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "what are the consequences for the assault on me?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "assault"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding assault.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 10.22,
+    "status": "success"
+  },
+  {
+    "id": 34,
+    "query": "someone attacked me when I resisted theft what sections apply",
+    "result": {
+      "query": "someone attacked me when I resisted theft what sections apply",
+      "intent": {
+        "primary": "hypothetical",
+        "secondary": [
+          "case_application"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "assault"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.28,
+        "llm": 0.28,
+        "agreement": 1.0,
+        "overall": 0.45
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves both an attack and the act of resisting theft, indicating multiple legal issues.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "what are the legal implications of resisting theft?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "theft"
+            }
+          ],
+          "concepts": [
+            "theft"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding theft resistance.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "what are the legal consequences of being attacked?",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "assault"
+            }
+          ],
+          "concepts": [
+            "assault"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding the consequences of an attack.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 10.42,
+    "status": "success"
+  },
+  {
+    "id": 33,
+    "query": "my bag got stolen and later I saw someone else using it knowingly what crime is this",
+    "result": {
+      "query": "my bag got stolen and later I saw someone else using it knowingly what crime is this",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "stolen property"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.31,
+        "llm": 0.31,
+        "agreement": 1.0,
+        "overall": 0.47
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves two distinct legal issues: the theft of the bag and the subsequent use of the stolen property by another person.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "my bag got stolen what crime is this",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "theft"
+            }
+          ],
+          "concepts": [
+            "theft"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding theft.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "I saw someone else using my stolen bag knowingly what crime is this",
+          "intent": {
+            "primary": "case_application",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "stolen property"
+            }
+          ],
+          "concepts": [
+            "stolen property"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "Single legal issue regarding the use of stolen property.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 11.11,
+    "status": "success"
+  },
+  {
+    "id": 35,
+    "query": "Someone received stolen goods from a thief, what crime is this?",
+    "result": {
+      "query": "Someone received stolen goods from a thief, what crime is this?",
+      "intent": {
+        "primary": "case_application",
+        "secondary": [
+          "legal_penalty"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "stolen property"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.31,
+        "llm": 0.31,
+        "agreement": 1.0,
+        "overall": 0.47
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves the act of receiving stolen goods and the associated crime.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What crime is committed by receiving stolen goods?",
+          "intent": {
+            "primary": "definition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "theft"
+            }
+          ],
+          "concepts": [
+            "theft",
+            "stolen property"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "This sub-query focuses on defining the crime of receiving stolen goods.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What are the legal penalties for receiving stolen goods?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [],
+          "concepts": [
+            "theft",
+            "stolen property"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "This sub-query focuses on the penalties associated with the crime.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 10.86,
+    "status": "success"
+  },
+  {
+    "id": 37,
+    "query": "Someone knowingly bought stolen property, what punishment applies?",
+    "result": {
+      "query": "Someone knowingly bought stolen property, what punishment applies?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": [
+          "reasoning",
+          "case_application"
+        ]
+      },
+      "targets": [],
+      "concepts": [
+        "theft",
+        "punishment",
+        "stolen property",
+        "stolen_property",
+        "property"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true,
+        "requires_exact_match": false
+      },
+      "confidence": {
+        "rule_based": 0.57,
+        "llm": 0.57,
+        "agreement": 1.0,
+        "overall": 0.67
+      },
+      "decomposition": {
+        "needed": true,
+        "strategy": "llm",
+        "reason": "The query involves the act of knowingly buying stolen property and the associated punishment, indicating multiple legal issues.",
+        "count": 2
+      },
+      "method": "llm_guided",
+      "sub_queries": [
+        {
+          "query": "What is the punishment for knowingly buying stolen property?",
+          "intent": {
+            "primary": "legal_penalty",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "punishment"
+            }
+          ],
+          "concepts": [
+            "punishment",
+            "stolen property"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": false,
+            "requires_exact_match": false
+          },
+          "confidence": 0.6,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "This sub-query focuses solely on the punishment aspect.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        },
+        {
+          "query": "What constitutes knowingly buying stolen property?",
+          "intent": {
+            "primary": "definition",
+            "secondary": []
+          },
+          "targets": [
+            {
+              "type": "concept",
+              "value": "stolen_property"
+            }
+          ],
+          "concepts": [
+            "stolen_property",
+            "theft"
+          ],
+          "constraints": {
+            "jurisdiction": null,
+            "time": null,
+            "specificity": "broad"
+          },
+          "query_features": {
+            "is_multi_hop": false,
+            "requires_reasoning": true,
+            "requires_exact_match": false
+          },
+          "confidence": 0.5,
+          "decomposition": {
+            "needed": false,
+            "strategy": "none",
+            "reason": "This sub-query seeks to clarify the definition of the act in question.",
+            "count": 0
+          },
+          "method": "llm_subquery",
+          "sub_queries": [],
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    "time_sec": 12.06,
+    "status": "success"
+  }
+]

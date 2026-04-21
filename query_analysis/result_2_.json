@@ -1,0 +1,76 @@
+{
+  "query": "Someone hit me during an argument, what crime is this and what is the punishment?",
+  "intent": {
+    "primary": "case application",
+    "secondary": [
+      "lookup",
+      "legal penalty"
+    ]
+  },
+  "concepts": [
+    "assault",
+    "punishment",
+    "Bharatiya Nyaya Sanhita"
+  ],
+  "targets": [],
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true
+  },
+  "decomposition": {
+    "needed": true,
+    "sub_queries": [
+      {
+        "query": "What crime is committed when someone hits another person during an argument?",
+        "intent": {
+          "primary": "case application",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "assault",
+          "Bharatiya Nyaya Sanhita"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      },
+      {
+        "query": "What is the punishment for hitting someone during an argument under the Bharatiya Nyaya Sanhita, 2023?",
+        "intent": {
+          "primary": "case application",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "punishment",
+          "Bharatiya Nyaya Sanhita"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      }
+    ]
+  },
+  "confidence": {
+    "hint_relevance": 0.5225,
+    "llm_consistency": 1.0,
+    "rule_strength": 0.6,
+    "structure_validity": 1.0,
+    "overall": 0.729
+  }
+}

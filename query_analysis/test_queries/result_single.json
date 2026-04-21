@@ -1,0 +1,112 @@
+{
+  "query": "Someone hit me during an argument, what crime is this and what is the punishment?",
+  "intent": {
+    "primary": "case_application",
+    "secondary": [
+      "legal_penalty"
+    ]
+  },
+  "targets": [],
+  "concepts": [
+    "assault",
+    "punishment"
+  ],
+  "constraints": {
+    "jurisdiction": null,
+    "time": null,
+    "specificity": "broad"
+  },
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true,
+    "requires_exact_match": false
+  },
+  "confidence": {
+    "rule_based": 0.78,
+    "llm": 0.0,
+    "agreement": 0.17,
+    "overall": 0.27
+  },
+  "decomposition": {
+    "needed": true,
+    "strategy": "llm",
+    "reason": "The query involves identifying the crime of assault and the associated punishment.",
+    "count": 2
+  },
+  "method": "llm_guided",
+  "sub_queries": [
+    {
+      "query": "What crime is hitting someone during an argument?",
+      "intent": {
+        "primary": "definition",
+        "secondary": []
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "assault"
+        }
+      ],
+      "concepts": [
+        "assault"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false,
+        "requires_exact_match": true
+      },
+      "confidence": 0.0,
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue identified.",
+        "count": 0
+      },
+      "method": "llm_subquery",
+      "sub_queries": [],
+      "notes": []
+    },
+    {
+      "query": "What is the punishment for assault?",
+      "intent": {
+        "primary": "legal_penalty",
+        "secondary": []
+      },
+      "targets": [
+        {
+          "type": "concept",
+          "value": "punishment"
+        }
+      ],
+      "concepts": [
+        "punishment"
+      ],
+      "constraints": {
+        "jurisdiction": null,
+        "time": null,
+        "specificity": "broad"
+      },
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false,
+        "requires_exact_match": true
+      },
+      "confidence": 0.0,
+      "decomposition": {
+        "needed": false,
+        "strategy": "none",
+        "reason": "Single legal issue identified.",
+        "count": 0
+      },
+      "method": "llm_subquery",
+      "sub_queries": [],
+      "notes": []
+    }
+  ],
+  "notes": []
+}

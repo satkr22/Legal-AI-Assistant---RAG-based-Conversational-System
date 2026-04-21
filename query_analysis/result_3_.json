@@ -1,0 +1,115 @@
+{
+  "query": "What is the difference between wrongful gain and wrongful loss with example?",
+  "intent": {
+    "primary": "comparison",
+    "secondary": [
+      "definition"
+    ]
+  },
+  "concepts": [
+    "wrongful gain",
+    "wrongful loss",
+    "examples"
+  ],
+  "targets": [],
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true
+  },
+  "decomposition": {
+    "needed": true,
+    "sub_queries": [
+      {
+        "query": "What is the definition of wrongful gain?",
+        "intent": {
+          "primary": "comparison",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "wrongful gain"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      },
+      {
+        "query": "What is the definition of wrongful loss?",
+        "intent": {
+          "primary": "comparison",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "wrongful loss"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      },
+      {
+        "query": "Can you provide an example of wrongful gain?",
+        "intent": {
+          "primary": "comparison",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "wrongful gain"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      },
+      {
+        "query": "Can you provide an example of wrongful loss?",
+        "intent": {
+          "primary": "comparison",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "wrongful loss"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      }
+    ]
+  },
+  "confidence": {
+    "hint_relevance": 0.379,
+    "llm_consistency": 1.0,
+    "rule_strength": 0.6,
+    "structure_validity": 1.0,
+    "overall": 0.6716
+  }
+}
