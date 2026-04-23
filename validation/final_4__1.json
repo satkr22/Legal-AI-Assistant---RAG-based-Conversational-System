@@ -1,0 +1,44 @@
+[
+  {
+    "answer": "Applying structured reasoning over the retrieved evidence, Section 28 (Consent known to be given under fear or misconception.) is the condition-matched applicable provision. Act: Bharatiya Nyaya Sanhita, 2023 Chapter 3: GENERAL EXCEPTIONS Section 28: Consent known to be given under fear or misconception. if the consent is given by a person under fear of injury, or under a misconception of fact, and if the person doing the act knows, or has reason to believe, that the consent was given in consequence of such fear or misconception; or Supporting detail: Nothing is an offence by reason of any harm which it may cause to a person for whose benefit it is done in good faith, even without that person’s consent, if the circumstances are such that it is impossible for that person to signify consent, or if that... Condition-based reasoning selected a different section than the highest-scored retrieval hit. Medium uncertainty applies until factual conditions are confirmed. (Condition-based reasoning selected Section 28 over the highest-scored retrieval hit.)",
+    "summary_answer": "Yes, a doctor can operate without consent in emergency situations legally if it is impossible to obtain consent.",
+    "detailed_answer": "Under Section 30 of the Bharatiya Nyaya Sanhita, 2023, a medical procedure can be performed without consent if it is done in good faith for the benefit of a person, and if circumstances make it impossible for that person to signify consent. This includes situations where the person is incapable of giving consent or there is no guardian available to provide consent in time. Additionally, Section 28 addresses situations where consent may be given under fear or misconception, which can also apply in emergency contexts. However, there is medium uncertainty regarding the specific conditions that must be met in each case.",
+    "final_answer": "Applying structured reasoning over the retrieved evidence, Section 28 (Consent known to be given under fear or misconception.) is the condition-matched applicable provision. Act: Bharatiya Nyaya Sanhita, 2023 Chapter 3: GENERAL EXCEPTIONS Section 28: Consent known to be given under fear or misconception. if the consent is given by a person under fear of injury, or under a misconception of fact, and if the person doing the act knows, or has reason to believe, that the consent was given in consequence of such fear or misconception; or Supporting detail: Nothing is an offence by reason of any harm which it may cause to a person for whose benefit it is done in good faith, even without that person’s consent, if the circumstances are such that it is impossible for that person to signify consent, or if that... Condition-based reasoning selected a different section than the highest-scored retrieval hit. Medium uncertainty applies until factual conditions are confirmed. (Condition-based reasoning selected Section 28 over the highest-scored retrieval hit.)",
+    "display_answer_type": "final",
+    "citations": [
+      "Section 28(a), Bharatiya Nyaya Sanhita, 2023",
+      "Section 30: Act done in good faith for benefit of a person without consent.",
+      "Section 30 Illustration(3), Bharatiya Nyaya Sanhita, 2023",
+      "Section 63 Exception, Bharatiya Nyaya Sanhita, 2023",
+      "Section 27 Illustration, Bharatiya Nyaya Sanhita, 2023"
+    ],
+    "confidence": {
+      "retrieval": 0.9462,
+      "reranker": 0.9462,
+      "citation": 1.0,
+      "reasoning": 0.7,
+      "score": 0.9323,
+      "label": "high",
+      "formula": "0.4*retrieval + 0.3*reranker + 0.2*citation + 0.1*reasoning",
+      "terms": {
+        "retrieval": "Top score from Phase 9/10 retrieval list",
+        "reranker": "Top score from results_with_global_rerank (Phase 10)",
+        "citation": "Grounding strength from Phase 11 citations + validation",
+        "reasoning": "Phase 11 structured reasoning uncertainty mapped to a score"
+      },
+      "explanation": "Confidence is a weighted blend of retrieval strength, reranker score, citation grounding, and structured reasoning certainty."
+    },
+    "risk_level": "low",
+    "risk_reason": "Evidence, citations, and reasoning are aligned well enough for the final answer view.",
+    "validation": {
+      "answer_verified": true,
+      "completeness": "complete",
+      "warnings": [
+        "Structured reasoning selected Section 28 over the highest-scored retrieval hit. Reason: Condition-based reasoning selected a different section than the highest-scored retrieval hit. Medium uncertainty applies until factual conditions are confirmed.",
+        "Reasoning uncertainty: medium. Condition-based reasoning selected a different section than the highest-scored retrieval hit. Medium uncertainty applies until factual conditions are confirmed."
+      ],
+      "verification_issues": [],
+      "should_show": true
+    }
+  }
+]

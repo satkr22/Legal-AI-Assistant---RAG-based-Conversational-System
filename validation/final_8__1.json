@@ -1,0 +1,47 @@
+[
+  {
+    "answer": "Section 375 is not present in the indexed corpus.",
+    "summary_answer": "",
+    "detailed_answer": "",
+    "final_answer": "",
+    "display_answer_type": "warning",
+    "citations": [],
+    "confidence": {
+      "retrieval": 0.9514,
+      "reranker": 0.9514,
+      "citation": 0.35,
+      "reasoning": 0.7,
+      "score": 0.806,
+      "label": "high",
+      "formula": "0.4*retrieval + 0.3*reranker + 0.2*citation + 0.1*reasoning",
+      "terms": {
+        "retrieval": "Top score from Phase 9/10 retrieval list",
+        "reranker": "Top score from results_with_global_rerank (Phase 10)",
+        "citation": "Grounding strength from Phase 11 citations + validation",
+        "reasoning": "Phase 11 structured reasoning uncertainty mapped to a score"
+      },
+      "explanation": "Confidence is a weighted blend of retrieval strength, reranker score, citation grounding, and structured reasoning certainty."
+    },
+    "risk_level": "high",
+    "risk_reason": "Requested section is missing from the corpus, so no substantive answer is shown.",
+    "validation": {
+      "answer_verified": true,
+      "completeness": "unsafe",
+      "warnings": [
+        "Section 375 is not present in the indexed corpus."
+      ],
+      "verification_issues": [
+        "phase11 marked the answer unsafe",
+        "requested section not present in corpus"
+      ],
+      "should_show": false
+    },
+    "selected_chunk_ids": [
+      "chunk__node__BNS_S357_BODY",
+      "chunk__node__BNS_S38_B",
+      "chunk__node__BNS_S3_N1",
+      "chunk__node__BNS_S199_C",
+      "chunk__node__BNS_S35_BODY"
+    ]
+  }
+]

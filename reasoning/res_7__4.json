@@ -1,0 +1,3048 @@
+[
+  {
+    "query": "Someone hit me during an argument, but I had provoked them—what is the legal outcome?",
+    "phase8": {
+      "query": "Someone hit me during an argument, but I had provoked them—what is the legal outcome?",
+      "intent": {
+        "primary": "consequence",
+        "secondary": []
+      },
+      "concepts": [
+        "assault",
+        "criminal force",
+        "provocation",
+        "punishment"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true
+      },
+      "decomposition": {
+        "needed": true,
+        "sub_queries": [
+          {
+            "query": "What is the legal definition of assault in the context of provocation?",
+            "intent": {
+              "primary": "consequence",
+              "secondary": []
+            },
+            "targets": [],
+            "concepts": [
+              "assault",
+              "provocation"
+            ],
+            "query_features": {
+              "is_multi_hop": false,
+              "requires_reasoning": false
+            },
+            "decomposition": {
+              "needed": false,
+              "sub_queries": []
+            },
+            "method": "llm_subquery",
+            "notes": []
+          },
+          {
+            "query": "What are the legal consequences of provoking someone to commit assault?",
+            "intent": {
+              "primary": "consequence",
+              "secondary": []
+            },
+            "targets": [],
+            "concepts": [
+              "provocation",
+              "punishment"
+            ],
+            "query_features": {
+              "is_multi_hop": false,
+              "requires_reasoning": false
+            },
+            "decomposition": {
+              "needed": false,
+              "sub_queries": []
+            },
+            "method": "llm_subquery",
+            "notes": []
+          }
+        ]
+      },
+      "confidence": {
+        "hint_relevance": 0.7564,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.6,
+        "structure_validity": 1.0,
+        "overall": 0.8226
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "Someone hit me during an argument, but I had provoked them—what is the legal outcome?",
+          "targets": [],
+          "concepts": [
+            "assault",
+            "criminal force",
+            "provocation",
+            "punishment"
+          ]
+        },
+        {
+          "name": "sub_query_1",
+          "source": "decomposed",
+          "weight": 0.9,
+          "query": "What is the legal definition of assault in the context of provocation?",
+          "targets": [],
+          "concepts": [
+            "assault",
+            "provocation"
+          ]
+        },
+        {
+          "name": "sub_query_2",
+          "source": "decomposed",
+          "weight": 0.9,
+          "query": "What are the legal consequences of provoking someone to commit assault?",
+          "targets": [],
+          "concepts": [
+            "provocation",
+            "punishment"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__section__BNS_S131",
+            "score": 0.96,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 131,
+            "citation": "Section 131",
+            "text": "Whoever assaults or uses criminal force to any person otherwise\nthan on grave and sudden provocation given by that person, shall be\npunished with imprisonment of either description for a term which may\nextend to three months, or with fine which may extend to one thousand\nrupees, or with both.\nExplanation 1.—Grave and sudden provocation will not mitigate the\npunishment for an offence under this section,—\n(a) if the provocation is sought or voluntarily provoked by the\noffender as an excuse for the offence; or\n(b) if the provocation is given by anything done in obedience to the\nlaw, or by a public servant, in the lawful exercise of the powers of such\npublic servant; or\n(c) if the provocation is given by anything done in the lawful exercise\nof the right of private defence.\nExplanation 2.—Whether the provocation was grave and sudden\nenough to mitigate the offence, is a question of fact.\nAssault or criminal force to deter public servant from discharge of\nhis duty.",
+            "derived_context": "",
+            "keywords": [
+              "assault",
+              "criminal_force",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal_force",
+              "punishment_for_assault"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 1,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "assault"
+              ]
+            },
+            "source_scores": {
+              "anchor": 0.9
+            },
+            "query_scores": {
+              "anchor": 0.9
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S131_EXP2",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S133_BODY",
+            "score": 0.571431,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 133,
+            "citation": "Section 133",
+            "text": "Whoever assaults or uses criminal force to any person, intending thereby to dishonour that person, otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to commit theft of property carried by a person.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 133: Assault or criminal force with intent to dishonour person, otherwise than on grave\nWhoever assaults or uses criminal force to any person, intending thereby to dishonour that person, otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to commit theft of property carried by a person.",
+            "keywords": [
+              "criminal",
+              "force",
+              "dishonour",
+              "grave",
+              "assault",
+              "body",
+              "whoever",
+              "assaults",
+              "uses",
+              "intending",
+              "criminal force"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "intent to dishonour"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7141844034194946,
+              "bm25": 0.3025606628891131
+            },
+            "query_scores": {
+              "original": 0.7141844034194946
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "concept_overlap:2",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S135_BODY",
+            "score": 0.558435,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 135,
+            "citation": "Section 135",
+            "text": "Whoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 135: Assault or criminal force in attempt to wrongfully confine a person.\nWhoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+            "keywords": [
+              "criminal",
+              "force",
+              "wrongfully",
+              "confine",
+              "extend",
+              "assault",
+              "body",
+              "whoever",
+              "assaults",
+              "uses",
+              "criminal force",
+              "wrongful confinement"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "wrongful confinement"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7249171733856201,
+              "bm25": 0.3581661638716418
+            },
+            "query_scores": {
+              "original": 0.7249171733856201
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "concept_overlap:2",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S131_EXP2",
+            "score": 0.50798,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 131,
+            "citation": "Section 131",
+            "text": "Whether the provocation was grave and sudden enough to mitigate the offence, is a question of fact. Assault or criminal force to deter public servant from discharge of his duty.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nWhether the provocation was grave and sudden enough to mitigate the offence, is a question of fact. Assault or criminal force to deter public servant from discharge of his duty.",
+            "keywords": [
+              "provocation",
+              "grave",
+              "assault",
+              "criminal",
+              "force",
+              "whether",
+              "sudden",
+              "enough",
+              "mitigate",
+              "offence"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "public servant"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.6364942629061767
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "concept_overlap:2",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S132_BODY",
+            "score": 0.501546,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 132,
+            "citation": "Section 132",
+            "text": "Whoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 132: Assault or criminal force to deter public servant from discharge of his duty.\nWhoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+            "keywords": [
+              "public",
+              "servant",
+              "duty",
+              "criminal",
+              "force",
+              "intent",
+              "deter",
+              "done",
+              "discharge",
+              "assault",
+              "criminal force",
+              "public servant"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "public servant"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6958029270172119,
+              "bm25": 0.17335094870025058
+            },
+            "query_scores": {
+              "original": 0.6958029270172119
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "concept_overlap:2",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S136_BODY",
+            "score": 0.494309,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 136,
+            "citation": "Section 136",
+            "text": "Whoever assaults or uses criminal force to any person on grave and sudden provocation given by that person, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 136: Assault or criminal force on grave provocation.\nWhoever assaults or uses criminal force to any person on grave and sudden provocation given by that person, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both.",
+            "keywords": [
+              "criminal",
+              "force",
+              "grave",
+              "provocation",
+              "extend",
+              "body",
+              "whoever",
+              "assaults",
+              "uses",
+              "sudden",
+              "assault",
+              "criminal force",
+              "grave provocation"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "provocation"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 3,
+              "coverage_ratio": 0.75,
+              "matched_concepts": [
+                "assault",
+                "criminal force",
+                "provocation"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6911002993583679,
+              "bm25": 0.3562430346196459
+            },
+            "query_scores": {
+              "original": 0.6911002993583679
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "concept_overlap:3",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S134_BODY",
+            "score": 0.476884,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 134,
+            "citation": "Section 134",
+            "text": "Whoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 134: Assault or criminal force in attempt to commit theft of property carried by a person.\nWhoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+            "keywords": [
+              "criminal",
+              "force",
+              "commit",
+              "theft",
+              "property",
+              "assault",
+              "attempt",
+              "body",
+              "whoever",
+              "assaults",
+              "criminal force"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "attempted theft"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6991903781890869,
+              "bm25": 0.11961231974152002
+            },
+            "query_scores": {
+              "original": 0.6991903781890869
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "concept_overlap:2",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S131_BODY",
+            "score": 0.473123,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 131,
+            "citation": "Section 131",
+            "text": "Whoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nWhoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+            "keywords": [
+              "criminal",
+              "force",
+              "grave",
+              "provocation",
+              "extend",
+              "body",
+              "whoever",
+              "assaults",
+              "uses",
+              "sudden",
+              "assault",
+              "criminal force",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "punishment for assault"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7144068479537964,
+              "bm25": 0.4340238947416309
+            },
+            "query_scores": {
+              "original": 0.7144068479537964
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "concept_overlap:2",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__section__BNS_S130",
+            "score": 0.443018,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 130,
+            "citation": "Section 130",
+            "text": "Whoever makes any gesture, or any preparation intending or\nknowing it to be likely that such gesture or preparation will cause any\nperson present to apprehend that he who makes that gesture or\npreparation is about to use criminal force to that person, is said to commit\nan assault.\nExplanation.—Mere words do not amount to an assault. But the words\nwhich a person uses may give to his gestures or preparation such a\nmeaning as may make those gestures or preparations amount to an\nassault.\nIllustrations.\n(a) A shakes his fist at Z, intending or knowing it to be likely that he\nmay thereby cause Z to believe that A is about to strike Z. A has committed\nan assault.\n(b) A begins to unloose the muzzle of a ferocious dog, intending or\nknowing it to be likely that he may thereby cause Z to believe that he is\nabout to cause the dog to attack Z. A has committed an assault upon Z.\n(c) A takes up a stick, saying to Z, “I will give you a beating”. Here,\nthough the words used by A could in no case amount to an assault, and\nthough the mere gesture, unaccompanied by any other circumstances,\nmight not amount to an assault, the gesture explained by the words may\namount to an assault.\nPunishment for assault or criminal force otherwise than on grave\nprovocation.",
+            "derived_context": "",
+            "keywords": [
+              "assault",
+              "threatening gestures"
+            ],
+            "legal_concepts": [
+              "criminal force",
+              "assault"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "criminal force",
+                "assault"
+              ]
+            },
+            "source_scores": {
+              "anchor": 0.7268304796218872
+            },
+            "query_scores": {
+              "anchor": 0.7268304796218872
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S130_ILL1_C",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S130_ILL1_C",
+            "score": 0.433189,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 130,
+            "citation": "Section 130",
+            "text": "A takes up a stick, saying to Z, “I will give you a beating”. Here, though the words used by A could in no case amount to an assault, and though the mere gesture, unaccompanied by any other circumstances, might not amount to an assault, the gesture explained by the words may amount to an assault. Punishment for assault or criminal force otherwise than on grave provocation.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 130: Assault.\nA takes up a stick, saying to Z, “I will give you a beating”. Here, though the words used by A could in no case amount to an assault, and though the mere gesture, unaccompanied by any other circumstances, might not amount to an assault, the gesture explained by the words may amount to an assault. Punishment for assault or criminal force otherwise than on grave provocation.",
+            "keywords": [
+              "assault",
+              "amount",
+              "though",
+              "words",
+              "gesture",
+              "takes",
+              "stick",
+              "saying",
+              "give",
+              "beating"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7291274070739746,
+              "bm25": 0.3588088696937792
+            },
+            "query_scores": {
+              "original": 0.7291274070739746
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "concept_overlap:2",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "rerank"
+            ]
+          }
+        ],
+        "sub_query_1": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S135_BODY",
+            "score": 0.902112,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 135,
+            "citation": "Section 135",
+            "text": "Whoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 135: Assault or criminal force in attempt to wrongfully confine a person.\nWhoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+            "keywords": [
+              "criminal",
+              "force",
+              "wrongfully",
+              "confine",
+              "extend",
+              "assault",
+              "body",
+              "whoever",
+              "assaults",
+              "uses",
+              "criminal force",
+              "wrongful confinement"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "wrongful confinement"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.5944737553596496,
+              "bm25": 0.36141621271773755
+            },
+            "query_scores": {
+              "sub_query_1": 0.5944737553596496
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "bm25:sub_query_1",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S131_EXP2",
+            "score": 0.768677,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 131,
+            "citation": "Section 131",
+            "text": "Whether the provocation was grave and sudden enough to mitigate the offence, is a question of fact. Assault or criminal force to deter public servant from discharge of his duty.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nWhether the provocation was grave and sudden enough to mitigate the offence, is a question of fact. Assault or criminal force to deter public servant from discharge of his duty.",
+            "keywords": [
+              "provocation",
+              "grave",
+              "assault",
+              "criminal",
+              "force",
+              "whether",
+              "sudden",
+              "enough",
+              "mitigate",
+              "offence"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "public servant"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.9,
+              "bm25": 0.9
+            },
+            "query_scores": {
+              "sub_query_1": 0.9
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "bm25:sub_query_1",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__section__BNS_S130",
+            "score": 0.627014,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 130,
+            "citation": "Section 130",
+            "text": "Whoever makes any gesture, or any preparation intending or\nknowing it to be likely that such gesture or preparation will cause any\nperson present to apprehend that he who makes that gesture or\npreparation is about to use criminal force to that person, is said to commit\nan assault.\nExplanation.—Mere words do not amount to an assault. But the words\nwhich a person uses may give to his gestures or preparation such a\nmeaning as may make those gestures or preparations amount to an\nassault.\nIllustrations.\n(a) A shakes his fist at Z, intending or knowing it to be likely that he\nmay thereby cause Z to believe that A is about to strike Z. A has committed\nan assault.\n(b) A begins to unloose the muzzle of a ferocious dog, intending or\nknowing it to be likely that he may thereby cause Z to believe that he is\nabout to cause the dog to attack Z. A has committed an assault upon Z.\n(c) A takes up a stick, saying to Z, “I will give you a beating”. Here,\nthough the words used by A could in no case amount to an assault, and\nthough the mere gesture, unaccompanied by any other circumstances,\nmight not amount to an assault, the gesture explained by the words may\namount to an assault.\nPunishment for assault or criminal force otherwise than on grave\nprovocation.",
+            "derived_context": "",
+            "keywords": [
+              "assault",
+              "threatening gestures"
+            ],
+            "legal_concepts": [
+              "criminal force",
+              "assault"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "criminal force",
+                "assault"
+              ]
+            },
+            "source_scores": {
+              "anchor": 0.5791628038138154
+            },
+            "query_scores": {
+              "anchor": 0.5791628038138154
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S130_ILL1_C",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S136_BODY",
+            "score": 0.601662,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 136,
+            "citation": "Section 136",
+            "text": "Whoever assaults or uses criminal force to any person on grave and sudden provocation given by that person, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 136: Assault or criminal force on grave provocation.\nWhoever assaults or uses criminal force to any person on grave and sudden provocation given by that person, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both.",
+            "keywords": [
+              "criminal",
+              "force",
+              "grave",
+              "provocation",
+              "extend",
+              "body",
+              "whoever",
+              "assaults",
+              "uses",
+              "sudden",
+              "assault",
+              "criminal force",
+              "grave provocation"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "provocation"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 3,
+              "coverage_ratio": 0.75,
+              "matched_concepts": [
+                "assault",
+                "criminal force",
+                "provocation"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.5989805102348328,
+              "bm25": 0.5066329984405974
+            },
+            "query_scores": {
+              "sub_query_1": 0.5989805102348328
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "bm25:sub_query_1",
+              "concept_overlap:2",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S131_BODY",
+            "score": 0.542379,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 131,
+            "citation": "Section 131",
+            "text": "Whoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nWhoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+            "keywords": [
+              "criminal",
+              "force",
+              "grave",
+              "provocation",
+              "extend",
+              "body",
+              "whoever",
+              "assaults",
+              "uses",
+              "sudden",
+              "assault",
+              "criminal force",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "punishment for assault"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6041080355644226,
+              "bm25": 0.4260898006041639
+            },
+            "query_scores": {
+              "sub_query_1": 0.6041080355644226
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "bm25:sub_query_1",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S130_ILL1_C",
+            "score": 0.523474,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 130,
+            "citation": "Section 130",
+            "text": "A takes up a stick, saying to Z, “I will give you a beating”. Here, though the words used by A could in no case amount to an assault, and though the mere gesture, unaccompanied by any other circumstances, might not amount to an assault, the gesture explained by the words may amount to an assault. Punishment for assault or criminal force otherwise than on grave provocation.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 130: Assault.\nA takes up a stick, saying to Z, “I will give you a beating”. Here, though the words used by A could in no case amount to an assault, and though the mere gesture, unaccompanied by any other circumstances, might not amount to an assault, the gesture explained by the words may amount to an assault. Punishment for assault or criminal force otherwise than on grave provocation.",
+            "keywords": [
+              "assault",
+              "amount",
+              "though",
+              "words",
+              "gesture",
+              "takes",
+              "stick",
+              "saying",
+              "give",
+              "beating"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6533552706241608,
+              "bm25": 0.6458547784567995
+            },
+            "query_scores": {
+              "sub_query_1": 0.6533552706241608
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "bm25:sub_query_1",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S131_C",
+            "score": 0.521758,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 131,
+            "citation": "Section 131",
+            "text": "if the provocation is given by anything done in the lawful exercise of the right of private defence.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nif the provocation is given by anything done in the lawful exercise of the right of private defence.",
+            "keywords": [
+              "provocation",
+              "given",
+              "anything",
+              "done",
+              "lawful",
+              "exercise",
+              "right",
+              "private",
+              "defence",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "punishment for assault or criminal force otherwise than on grave provocation"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6403428018093109,
+              "bm25": 0.805868612282101
+            },
+            "query_scores": {
+              "sub_query_1": 0.805868612282101
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "bm25:sub_query_1",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__section__BNS_S131",
+            "score": 0.505617,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 131,
+            "citation": "Section 131",
+            "text": "Whoever assaults or uses criminal force to any person otherwise\nthan on grave and sudden provocation given by that person, shall be\npunished with imprisonment of either description for a term which may\nextend to three months, or with fine which may extend to one thousand\nrupees, or with both.\nExplanation 1.—Grave and sudden provocation will not mitigate the\npunishment for an offence under this section,—\n(a) if the provocation is sought or voluntarily provoked by the\noffender as an excuse for the offence; or\n(b) if the provocation is given by anything done in obedience to the\nlaw, or by a public servant, in the lawful exercise of the powers of such\npublic servant; or\n(c) if the provocation is given by anything done in the lawful exercise\nof the right of private defence.\nExplanation 2.—Whether the provocation was grave and sudden\nenough to mitigate the offence, is a question of fact.\nAssault or criminal force to deter public servant from discharge of\nhis duty.",
+            "derived_context": "",
+            "keywords": [
+              "assault",
+              "criminal_force",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal_force",
+              "punishment_for_assault"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 1,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "assault"
+              ]
+            },
+            "source_scores": {
+              "anchor": 0.9
+            },
+            "query_scores": {
+              "anchor": 0.9
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S131_EXP2",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S131_A",
+            "score": 0.485438,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 131,
+            "citation": "Section 131",
+            "text": "if the provocation is sought or voluntarily provoked by the offender as an excuse for the offence; or",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nif the provocation is sought or voluntarily provoked by the offender as an excuse for the offence; or",
+            "keywords": [
+              "provocation",
+              "sought",
+              "voluntarily",
+              "provoked",
+              "offender",
+              "excuse",
+              "offence",
+              "punishment",
+              "assault",
+              "criminal",
+              "criminal force"
+            ],
+            "legal_concepts": [
+              "punishment for assault",
+              "punishment for criminal force"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.643860948085785,
+              "bm25": 0.805868612282101
+            },
+            "query_scores": {
+              "sub_query_1": 0.805868612282101
+            },
+            "reasons": [
+              "faiss:sub_query_1",
+              "bm25:sub_query_1",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S133_BODY",
+            "score": 0.464137,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 133,
+            "citation": "Section 133",
+            "text": "Whoever assaults or uses criminal force to any person, intending thereby to dishonour that person, otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to commit theft of property carried by a person.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 133: Assault or criminal force with intent to dishonour person, otherwise than on grave\nWhoever assaults or uses criminal force to any person, intending thereby to dishonour that person, otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to commit theft of property carried by a person.",
+            "keywords": [
+              "criminal",
+              "force",
+              "dishonour",
+              "grave",
+              "assault",
+              "body",
+              "whoever",
+              "assaults",
+              "uses",
+              "intending",
+              "criminal force"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "intent to dishonour"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "bm25": 0.2500220246836295
+            },
+            "query_scores": {
+              "sub_query_1": 0.2500220246836295
+            },
+            "reasons": [
+              "bm25:sub_query_1",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          }
+        ],
+        "sub_query_2": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S136_BODY",
+            "score": 0.826179,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 136,
+            "citation": "Section 136",
+            "text": "Whoever assaults or uses criminal force to any person on grave and sudden provocation given by that person, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 136: Assault or criminal force on grave provocation.\nWhoever assaults or uses criminal force to any person on grave and sudden provocation given by that person, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both.",
+            "keywords": [
+              "criminal",
+              "force",
+              "grave",
+              "provocation",
+              "extend",
+              "body",
+              "whoever",
+              "assaults",
+              "uses",
+              "sudden",
+              "assault",
+              "criminal force",
+              "grave provocation"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "provocation"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 3,
+              "coverage_ratio": 0.75,
+              "matched_concepts": [
+                "assault",
+                "criminal force",
+                "provocation"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6470099687576294,
+              "bm25": 0.3030167947849476
+            },
+            "query_scores": {
+              "sub_query_2": 0.6470099687576294
+            },
+            "reasons": [
+              "faiss:sub_query_2",
+              "bm25:sub_query_2",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__section__BNS_S131",
+            "score": 0.762677,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 131,
+            "citation": "Section 131",
+            "text": "Whoever assaults or uses criminal force to any person otherwise\nthan on grave and sudden provocation given by that person, shall be\npunished with imprisonment of either description for a term which may\nextend to three months, or with fine which may extend to one thousand\nrupees, or with both.\nExplanation 1.—Grave and sudden provocation will not mitigate the\npunishment for an offence under this section,—\n(a) if the provocation is sought or voluntarily provoked by the\noffender as an excuse for the offence; or\n(b) if the provocation is given by anything done in obedience to the\nlaw, or by a public servant, in the lawful exercise of the powers of such\npublic servant; or\n(c) if the provocation is given by anything done in the lawful exercise\nof the right of private defence.\nExplanation 2.—Whether the provocation was grave and sudden\nenough to mitigate the offence, is a question of fact.\nAssault or criminal force to deter public servant from discharge of\nhis duty.",
+            "derived_context": "",
+            "keywords": [
+              "assault",
+              "criminal_force",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal_force",
+              "punishment_for_assault"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 1,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "assault"
+              ]
+            },
+            "source_scores": {
+              "anchor": 0.4066933517488459
+            },
+            "query_scores": {
+              "anchor": 0.4066933517488459
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S131_EXP2",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S352_BODY",
+            "score": 0.679833,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+            "section_number": 352,
+            "citation": "Section 352",
+            "text": "Whoever intentionally insults in any manner, and thereby gives provocation to any person, intending or knowing it to be likely that such provocation will cause him to break the public peace, or to commit any other offence, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Statements conducing to public mischief.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 352: Intentional insult with intent to provoke breach of peace.\nWhoever intentionally insults in any manner, and thereby gives provocation to any person, intending or knowing it to be likely that such provocation will cause him to break the public peace, or to commit any other offence, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Statements conducing to public mischief.",
+            "keywords": [
+              "provocation",
+              "public",
+              "peace",
+              "insult",
+              "whoever",
+              "intentionally",
+              "insults",
+              "manner",
+              "thereby",
+              "gives",
+              "intentional insult",
+              "public peace"
+            ],
+            "legal_concepts": [
+              "offence",
+              "punishment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 1,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "punishment"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6030477046966553,
+              "bm25": 0.09245729018923601
+            },
+            "query_scores": {
+              "sub_query_2": 0.6030477046966553
+            },
+            "reasons": [
+              "faiss:sub_query_2",
+              "bm25:sub_query_2",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S131_BODY",
+            "score": 0.661782,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 131,
+            "citation": "Section 131",
+            "text": "Whoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nWhoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+            "keywords": [
+              "criminal",
+              "force",
+              "grave",
+              "provocation",
+              "extend",
+              "body",
+              "whoever",
+              "assaults",
+              "uses",
+              "sudden",
+              "assault",
+              "criminal force",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "punishment for assault"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6667797803878784,
+              "bm25": 0.4898291350314032
+            },
+            "query_scores": {
+              "sub_query_2": 0.6667797803878784
+            },
+            "reasons": [
+              "faiss:sub_query_2",
+              "bm25:sub_query_2",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S135_BODY",
+            "score": 0.575456,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 135,
+            "citation": "Section 135",
+            "text": "Whoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 135: Assault or criminal force in attempt to wrongfully confine a person.\nWhoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+            "keywords": [
+              "criminal",
+              "force",
+              "wrongfully",
+              "confine",
+              "extend",
+              "assault",
+              "body",
+              "whoever",
+              "assaults",
+              "uses",
+              "criminal force",
+              "wrongful confinement"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "wrongful confinement"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6318572580814362,
+              "bm25": 0.21775297358329548
+            },
+            "query_scores": {
+              "sub_query_2": 0.6318572580814362
+            },
+            "reasons": [
+              "faiss:sub_query_2",
+              "bm25:sub_query_2",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S133_BODY",
+            "score": 0.571657,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 133,
+            "citation": "Section 133",
+            "text": "Whoever assaults or uses criminal force to any person, intending thereby to dishonour that person, otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to commit theft of property carried by a person.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 133: Assault or criminal force with intent to dishonour person, otherwise than on grave\nWhoever assaults or uses criminal force to any person, intending thereby to dishonour that person, otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to commit theft of property carried by a person.",
+            "keywords": [
+              "criminal",
+              "force",
+              "dishonour",
+              "grave",
+              "assault",
+              "body",
+              "whoever",
+              "assaults",
+              "uses",
+              "intending",
+              "criminal force"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "intent to dishonour"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "bm25": 0.3912502120145442
+            },
+            "query_scores": {
+              "sub_query_2": 0.3912502120145442
+            },
+            "reasons": [
+              "bm25:sub_query_2",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S192_BODY",
+            "score": 0.468935,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY",
+            "section_number": 192,
+            "citation": "Section 192",
+            "text": "Whoever malignantly, or wantonly by doing anything which is illegal, gives provocation to any person intending or knowing it to be likely that such provocation will cause the offence of rioting to be committed, shall, if the offence of rioting be committed in consequence of such provocation, be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both; and if the offence of rioting be not committed, with imprisonment of either description for a term which may extend to six months, or with fine, or with both. Liability of owner, occupier, etc., of land on which an unlawful assembly or riot takes place.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 11: OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY\nSection 192: Wantonly giving provocation with intent to cause riot-if rioting be committed; if not\nWhoever malignantly, or wantonly by doing anything which is illegal, gives provocation to any person intending or knowing it to be likely that such provocation will cause the offence of rioting to be committed, shall, if the offence of rioting be committed in consequence of such provocation, be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both; and if the offence of rioting be not committed, with imprisonment of either description for a term which may extend to six months, or with fine, or with both. Liability of owner, occupier, etc., of land on which an unlawful assembly or riot takes place.",
+            "keywords": [
+              "provocation",
+              "rioting",
+              "committed",
+              "offence",
+              "wantonly",
+              "cause",
+              "imprisonment",
+              "either",
+              "description",
+              "term",
+              "riot"
+            ],
+            "legal_concepts": [
+              "offences against public tranquillity",
+              "rioting"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6453324615955353
+            },
+            "query_scores": {
+              "sub_query_2": 0.6453324615955353
+            },
+            "reasons": [
+              "faiss:sub_query_2",
+              "zero_concept_overlap_penalty",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S131_EXP1",
+            "score": 0.459307,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 131,
+            "citation": "Section 131",
+            "text": "Grave and sudden provocation will not mitigate the punishment for an offence under this section,—",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nGrave and sudden provocation will not mitigate the punishment for an offence under this section,—",
+            "keywords": [
+              "grave",
+              "provocation",
+              "punishment",
+              "sudden",
+              "mitigate",
+              "offence",
+              "assault",
+              "criminal",
+              "force",
+              "offences"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6604692935943604,
+              "bm25": 0.9
+            },
+            "query_scores": {
+              "sub_query_2": 0.9
+            },
+            "reasons": [
+              "faiss:sub_query_2",
+              "bm25:sub_query_2",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S131_EXP2",
+            "score": 0.429938,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 131,
+            "citation": "Section 131",
+            "text": "Whether the provocation was grave and sudden enough to mitigate the offence, is a question of fact. Assault or criminal force to deter public servant from discharge of his duty.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nWhether the provocation was grave and sudden enough to mitigate the offence, is a question of fact. Assault or criminal force to deter public servant from discharge of his duty.",
+            "keywords": [
+              "provocation",
+              "grave",
+              "assault",
+              "criminal",
+              "force",
+              "whether",
+              "sudden",
+              "enough",
+              "mitigate",
+              "offence"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "public servant"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "assault",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6698487639427185,
+              "bm25": 0.8042751615061046
+            },
+            "query_scores": {
+              "sub_query_2": 0.8042751615061046
+            },
+            "reasons": [
+              "faiss:sub_query_2",
+              "bm25:sub_query_2",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__section__BNS_S130",
+            "score": 0.400607,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 130,
+            "citation": "Section 130",
+            "text": "Whoever makes any gesture, or any preparation intending or\nknowing it to be likely that such gesture or preparation will cause any\nperson present to apprehend that he who makes that gesture or\npreparation is about to use criminal force to that person, is said to commit\nan assault.\nExplanation.—Mere words do not amount to an assault. But the words\nwhich a person uses may give to his gestures or preparation such a\nmeaning as may make those gestures or preparations amount to an\nassault.\nIllustrations.\n(a) A shakes his fist at Z, intending or knowing it to be likely that he\nmay thereby cause Z to believe that A is about to strike Z. A has committed\nan assault.\n(b) A begins to unloose the muzzle of a ferocious dog, intending or\nknowing it to be likely that he may thereby cause Z to believe that he is\nabout to cause the dog to attack Z. A has committed an assault upon Z.\n(c) A takes up a stick, saying to Z, “I will give you a beating”. Here,\nthough the words used by A could in no case amount to an assault, and\nthough the mere gesture, unaccompanied by any other circumstances,\nmight not amount to an assault, the gesture explained by the words may\namount to an assault.\nPunishment for assault or criminal force otherwise than on grave\nprovocation.",
+            "derived_context": "",
+            "keywords": [
+              "assault",
+              "threatening gestures"
+            ],
+            "legal_concepts": [
+              "criminal force",
+              "assault"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "criminal force",
+                "assault"
+              ]
+            },
+            "source_scores": {
+              "anchor": 0.26477782297432423
+            },
+            "query_scores": {
+              "anchor": 0.26477782297432423
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S130_ILL1_C",
+              "rerank"
+            ]
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__section__BNS_S131",
+          "score": 1.0,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 131,
+          "citation": "Section 131",
+          "text": "Whoever assaults or uses criminal force to any person otherwise\nthan on grave and sudden provocation given by that person, shall be\npunished with imprisonment of either description for a term which may\nextend to three months, or with fine which may extend to one thousand\nrupees, or with both.\nExplanation 1.—Grave and sudden provocation will not mitigate the\npunishment for an offence under this section,—\n(a) if the provocation is sought or voluntarily provoked by the\noffender as an excuse for the offence; or\n(b) if the provocation is given by anything done in obedience to the\nlaw, or by a public servant, in the lawful exercise of the powers of such\npublic servant; or\n(c) if the provocation is given by anything done in the lawful exercise\nof the right of private defence.\nExplanation 2.—Whether the provocation was grave and sudden\nenough to mitigate the offence, is a question of fact.\nAssault or criminal force to deter public servant from discharge of\nhis duty.",
+          "derived_context": "",
+          "keywords": [
+            "assault",
+            "criminal_force",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal_force",
+            "punishment_for_assault"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "assault"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.9,
+            "sub_query_1:anchor": 0.9,
+            "sub_query_2:anchor": 0.4066933517488459
+          },
+          "query_scores": {
+            "original": 0.96,
+            "sub_query_1": 0.5056173239690678,
+            "sub_query_2": 0.7626773406995384
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S131_EXP2",
+            "rerank",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S135_BODY",
+          "score": 0.992323,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 135,
+          "citation": "Section 135",
+          "text": "Whoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 135: Assault or criminal force in attempt to wrongfully confine a person.\nWhoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+          "keywords": [
+            "criminal",
+            "force",
+            "wrongfully",
+            "confine",
+            "extend",
+            "assault",
+            "body",
+            "whoever",
+            "assaults",
+            "uses",
+            "criminal force",
+            "wrongful confinement"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "wrongful confinement"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "assault",
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7249171733856201,
+            "original:bm25": 0.3581661638716418,
+            "sub_query_1:faiss": 0.5944737553596496,
+            "sub_query_1:bm25": 0.36141621271773755,
+            "sub_query_2:faiss": 0.6318572580814362,
+            "sub_query_2:bm25": 0.21775297358329548
+          },
+          "query_scores": {
+            "original": 0.5584350311261291,
+            "sub_query_1": 0.902111562473774,
+            "sub_query_2": 0.5754563118669698
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:2",
+            "general_clause_boost",
+            "content_type_boost",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "concept_overlap:1",
+            "faiss:sub_query_2",
+            "bm25:sub_query_2",
+            "zero_concept_overlap_penalty",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S136_BODY",
+          "score": 0.908797,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 136,
+          "citation": "Section 136",
+          "text": "Whoever assaults or uses criminal force to any person on grave and sudden provocation given by that person, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 136: Assault or criminal force on grave provocation.\nWhoever assaults or uses criminal force to any person on grave and sudden provocation given by that person, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both.",
+          "keywords": [
+            "criminal",
+            "force",
+            "grave",
+            "provocation",
+            "extend",
+            "body",
+            "whoever",
+            "assaults",
+            "uses",
+            "sudden",
+            "assault",
+            "criminal force",
+            "grave provocation"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "provocation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 3,
+            "coverage_ratio": 0.75,
+            "matched_concepts": [
+              "assault",
+              "criminal force",
+              "provocation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6911002993583679,
+            "original:bm25": 0.3562430346196459,
+            "sub_query_1:faiss": 0.5989805102348328,
+            "sub_query_1:bm25": 0.5066329984405974,
+            "sub_query_2:faiss": 0.6470099687576294,
+            "sub_query_2:bm25": 0.3030167947849476
+          },
+          "query_scores": {
+            "original": 0.49430862576280166,
+            "sub_query_1": 0.601662121212893,
+            "sub_query_2": 0.8261787267244156
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:3",
+            "general_clause_boost",
+            "content_type_boost",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "concept_overlap:2",
+            "faiss:sub_query_2",
+            "bm25:sub_query_2",
+            "concept_overlap:1",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S131_EXP2",
+          "score": 0.845544,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 131,
+          "citation": "Section 131",
+          "text": "Whether the provocation was grave and sudden enough to mitigate the offence, is a question of fact. Assault or criminal force to deter public servant from discharge of his duty.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nWhether the provocation was grave and sudden enough to mitigate the offence, is a question of fact. Assault or criminal force to deter public servant from discharge of his duty.",
+          "keywords": [
+            "provocation",
+            "grave",
+            "assault",
+            "criminal",
+            "force",
+            "whether",
+            "sudden",
+            "enough",
+            "mitigate",
+            "offence"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "assault",
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.6364942629061767,
+            "sub_query_1:faiss": 0.9,
+            "sub_query_1:bm25": 0.9,
+            "sub_query_2:faiss": 0.6698487639427185,
+            "sub_query_2:bm25": 0.8042751615061046
+          },
+          "query_scores": {
+            "original": 0.5079800928782001,
+            "sub_query_1": 0.7686767946570195,
+            "sub_query_2": 0.42993838055397354
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:2",
+            "general_clause_boost",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "concept_overlap:1",
+            "faiss:sub_query_2",
+            "bm25:sub_query_2",
+            "zero_concept_overlap_penalty",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S131_BODY",
+          "score": 0.727961,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 131,
+          "citation": "Section 131",
+          "text": "Whoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nWhoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+          "keywords": [
+            "criminal",
+            "force",
+            "grave",
+            "provocation",
+            "extend",
+            "body",
+            "whoever",
+            "assaults",
+            "uses",
+            "sudden",
+            "assault",
+            "criminal force",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "punishment for assault"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "assault",
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7144068479537964,
+            "original:bm25": 0.4340238947416309,
+            "sub_query_1:faiss": 0.6041080355644226,
+            "sub_query_1:bm25": 0.4260898006041639,
+            "sub_query_2:faiss": 0.6667797803878784,
+            "sub_query_2:bm25": 0.4898291350314032
+          },
+          "query_scores": {
+            "original": 0.4731226162701166,
+            "sub_query_1": 0.5423793105832707,
+            "sub_query_2": 0.6617824677300341
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:2",
+            "general_clause_boost",
+            "content_type_boost",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "concept_overlap:1",
+            "faiss:sub_query_2",
+            "bm25:sub_query_2",
+            "zero_concept_overlap_penalty",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__section__BNS_S130",
+          "score": 0.689715,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 130,
+          "citation": "Section 130",
+          "text": "Whoever makes any gesture, or any preparation intending or\nknowing it to be likely that such gesture or preparation will cause any\nperson present to apprehend that he who makes that gesture or\npreparation is about to use criminal force to that person, is said to commit\nan assault.\nExplanation.—Mere words do not amount to an assault. But the words\nwhich a person uses may give to his gestures or preparation such a\nmeaning as may make those gestures or preparations amount to an\nassault.\nIllustrations.\n(a) A shakes his fist at Z, intending or knowing it to be likely that he\nmay thereby cause Z to believe that A is about to strike Z. A has committed\nan assault.\n(b) A begins to unloose the muzzle of a ferocious dog, intending or\nknowing it to be likely that he may thereby cause Z to believe that he is\nabout to cause the dog to attack Z. A has committed an assault upon Z.\n(c) A takes up a stick, saying to Z, “I will give you a beating”. Here,\nthough the words used by A could in no case amount to an assault, and\nthough the mere gesture, unaccompanied by any other circumstances,\nmight not amount to an assault, the gesture explained by the words may\namount to an assault.\nPunishment for assault or criminal force otherwise than on grave\nprovocation.",
+          "derived_context": "",
+          "keywords": [
+            "assault",
+            "threatening gestures"
+          ],
+          "legal_concepts": [
+            "criminal force",
+            "assault"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "criminal force",
+              "assault"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.7268304796218872,
+            "sub_query_1:anchor": 0.5791628038138154,
+            "sub_query_2:anchor": 0.26477782297432423
+          },
+          "query_scores": {
+            "original": 0.44301753373375286,
+            "sub_query_1": 0.6270136447649483,
+            "sub_query_2": 0.4006066486263734
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S130_ILL1_C",
+            "rerank",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S352_BODY",
+          "score": 0.679833,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 352,
+          "citation": "Section 352",
+          "text": "Whoever intentionally insults in any manner, and thereby gives provocation to any person, intending or knowing it to be likely that such provocation will cause him to break the public peace, or to commit any other offence, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Statements conducing to public mischief.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 352: Intentional insult with intent to provoke breach of peace.\nWhoever intentionally insults in any manner, and thereby gives provocation to any person, intending or knowing it to be likely that such provocation will cause him to break the public peace, or to commit any other offence, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Statements conducing to public mischief.",
+          "keywords": [
+            "provocation",
+            "public",
+            "peace",
+            "insult",
+            "whoever",
+            "intentionally",
+            "insults",
+            "manner",
+            "thereby",
+            "gives",
+            "intentional insult",
+            "public peace"
+          ],
+          "legal_concepts": [
+            "offence",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "punishment"
+            ]
+          },
+          "source_scores": {
+            "sub_query_2:faiss": 0.6030477046966553,
+            "sub_query_2:bm25": 0.09245729018923601
+          },
+          "query_scores": {
+            "sub_query_2": 0.6798334685265625
+          },
+          "reasons": [
+            "faiss:sub_query_2",
+            "bm25:sub_query_2",
+            "concept_overlap:1",
+            "general_clause_boost",
+            "content_type_boost",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S133_BODY",
+          "score": 0.628823,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 133,
+          "citation": "Section 133",
+          "text": "Whoever assaults or uses criminal force to any person, intending thereby to dishonour that person, otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to commit theft of property carried by a person.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 133: Assault or criminal force with intent to dishonour person, otherwise than on grave\nWhoever assaults or uses criminal force to any person, intending thereby to dishonour that person, otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to commit theft of property carried by a person.",
+          "keywords": [
+            "criminal",
+            "force",
+            "dishonour",
+            "grave",
+            "assault",
+            "body",
+            "whoever",
+            "assaults",
+            "uses",
+            "intending",
+            "criminal force"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "intent to dishonour"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "assault",
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7141844034194946,
+            "original:bm25": 0.3025606628891131,
+            "sub_query_1:bm25": 0.2500220246836295,
+            "sub_query_2:bm25": 0.3912502120145442
+          },
+          "query_scores": {
+            "original": 0.5714307706929985,
+            "sub_query_1": 0.46413715703143976,
+            "sub_query_2": 0.5716571104930442
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:2",
+            "general_clause_boost",
+            "content_type_boost",
+            "rerank",
+            "bm25:sub_query_1",
+            "concept_overlap:1",
+            "bm25:sub_query_2",
+            "zero_concept_overlap_penalty",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S130_ILL1_C",
+          "score": 0.575821,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 130,
+          "citation": "Section 130",
+          "text": "A takes up a stick, saying to Z, “I will give you a beating”. Here, though the words used by A could in no case amount to an assault, and though the mere gesture, unaccompanied by any other circumstances, might not amount to an assault, the gesture explained by the words may amount to an assault. Punishment for assault or criminal force otherwise than on grave provocation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 130: Assault.\nA takes up a stick, saying to Z, “I will give you a beating”. Here, though the words used by A could in no case amount to an assault, and though the mere gesture, unaccompanied by any other circumstances, might not amount to an assault, the gesture explained by the words may amount to an assault. Punishment for assault or criminal force otherwise than on grave provocation.",
+          "keywords": [
+            "assault",
+            "amount",
+            "though",
+            "words",
+            "gesture",
+            "takes",
+            "stick",
+            "saying",
+            "give",
+            "beating"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "assault",
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7291274070739746,
+            "original:bm25": 0.3588088696937792,
+            "sub_query_1:faiss": 0.6533552706241608,
+            "sub_query_1:bm25": 0.6458547784567995
+          },
+          "query_scores": {
+            "original": 0.43318850703678413,
+            "sub_query_1": 0.5234739746130785
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:2",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "concept_overlap:1",
+            "multi_query_support:2"
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S131_C",
+          "score": 0.521758,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 131,
+          "citation": "Section 131",
+          "text": "if the provocation is given by anything done in the lawful exercise of the right of private defence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nif the provocation is given by anything done in the lawful exercise of the right of private defence.",
+          "keywords": [
+            "provocation",
+            "given",
+            "anything",
+            "done",
+            "lawful",
+            "exercise",
+            "right",
+            "private",
+            "defence",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "punishment for assault or criminal force otherwise than on grave provocation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "sub_query_1:faiss": 0.6403428018093109,
+            "sub_query_1:bm25": 0.805868612282101
+          },
+          "query_scores": {
+            "sub_query_1": 0.521757602519003
+          },
+          "reasons": [
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "zero_concept_overlap_penalty",
+            "general_clause_boost",
+            "rerank"
+          ]
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__section__BNS_S131",
+          "score": 1.0,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 131,
+          "citation": "Section 131",
+          "text": "Whoever assaults or uses criminal force to any person otherwise\nthan on grave and sudden provocation given by that person, shall be\npunished with imprisonment of either description for a term which may\nextend to three months, or with fine which may extend to one thousand\nrupees, or with both.\nExplanation 1.—Grave and sudden provocation will not mitigate the\npunishment for an offence under this section,—\n(a) if the provocation is sought or voluntarily provoked by the\noffender as an excuse for the offence; or\n(b) if the provocation is given by anything done in obedience to the\nlaw, or by a public servant, in the lawful exercise of the powers of such\npublic servant; or\n(c) if the provocation is given by anything done in the lawful exercise\nof the right of private defence.\nExplanation 2.—Whether the provocation was grave and sudden\nenough to mitigate the offence, is a question of fact.\nAssault or criminal force to deter public servant from discharge of\nhis duty.",
+          "derived_context": "",
+          "keywords": [
+            "assault",
+            "criminal_force",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal_force",
+            "punishment_for_assault"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "assault"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.9,
+            "sub_query_1:anchor": 0.9,
+            "sub_query_2:anchor": 0.4066933517488459
+          },
+          "query_scores": {
+            "original": 0.96,
+            "sub_query_1": 0.5056173239690678,
+            "sub_query_2": 0.7626773406995384
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S131_EXP2",
+            "rerank",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S135_BODY",
+          "score": 0.554365,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 135,
+          "citation": "Section 135",
+          "text": "Whoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 135: Assault or criminal force in attempt to wrongfully confine a person.\nWhoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+          "keywords": [
+            "criminal",
+            "force",
+            "wrongfully",
+            "confine",
+            "extend",
+            "assault",
+            "body",
+            "whoever",
+            "assaults",
+            "uses",
+            "criminal force",
+            "wrongful confinement"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "wrongful confinement"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "assault",
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7249171733856201,
+            "original:bm25": 0.3581661638716418,
+            "sub_query_1:faiss": 0.5944737553596496,
+            "sub_query_1:bm25": 0.36141621271773755,
+            "sub_query_2:faiss": 0.6318572580814362,
+            "sub_query_2:bm25": 0.21775297358329548
+          },
+          "query_scores": {
+            "original": 0.5584350311261291,
+            "sub_query_1": 0.902111562473774,
+            "sub_query_2": 0.5754563118669698
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:2",
+            "general_clause_boost",
+            "content_type_boost",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "concept_overlap:1",
+            "faiss:sub_query_2",
+            "bm25:sub_query_2",
+            "zero_concept_overlap_penalty",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S136_BODY",
+          "score": 0.456683,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 136,
+          "citation": "Section 136",
+          "text": "Whoever assaults or uses criminal force to any person on grave and sudden provocation given by that person, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 136: Assault or criminal force on grave provocation.\nWhoever assaults or uses criminal force to any person on grave and sudden provocation given by that person, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both.",
+          "keywords": [
+            "criminal",
+            "force",
+            "grave",
+            "provocation",
+            "extend",
+            "body",
+            "whoever",
+            "assaults",
+            "uses",
+            "sudden",
+            "assault",
+            "criminal force",
+            "grave provocation"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "provocation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 3,
+            "coverage_ratio": 0.75,
+            "matched_concepts": [
+              "assault",
+              "criminal force",
+              "provocation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6911002993583679,
+            "original:bm25": 0.3562430346196459,
+            "sub_query_1:faiss": 0.5989805102348328,
+            "sub_query_1:bm25": 0.5066329984405974,
+            "sub_query_2:faiss": 0.6470099687576294,
+            "sub_query_2:bm25": 0.3030167947849476
+          },
+          "query_scores": {
+            "original": 0.49430862576280166,
+            "sub_query_1": 0.601662121212893,
+            "sub_query_2": 0.8261787267244156
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:3",
+            "general_clause_boost",
+            "content_type_boost",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "concept_overlap:2",
+            "faiss:sub_query_2",
+            "bm25:sub_query_2",
+            "concept_overlap:1",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S131_EXP2",
+          "score": 0.445084,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 131,
+          "citation": "Section 131",
+          "text": "Whether the provocation was grave and sudden enough to mitigate the offence, is a question of fact. Assault or criminal force to deter public servant from discharge of his duty.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nWhether the provocation was grave and sudden enough to mitigate the offence, is a question of fact. Assault or criminal force to deter public servant from discharge of his duty.",
+          "keywords": [
+            "provocation",
+            "grave",
+            "assault",
+            "criminal",
+            "force",
+            "whether",
+            "sudden",
+            "enough",
+            "mitigate",
+            "offence"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "assault",
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.6364942629061767,
+            "sub_query_1:faiss": 0.9,
+            "sub_query_1:bm25": 0.9,
+            "sub_query_2:faiss": 0.6698487639427185,
+            "sub_query_2:bm25": 0.8042751615061046
+          },
+          "query_scores": {
+            "original": 0.5079800928782001,
+            "sub_query_1": 0.7686767946570195,
+            "sub_query_2": 0.42993838055397354
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:2",
+            "general_clause_boost",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "concept_overlap:1",
+            "faiss:sub_query_2",
+            "bm25:sub_query_2",
+            "zero_concept_overlap_penalty",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__section__BNS_S130",
+          "score": 0.427158,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 130,
+          "citation": "Section 130",
+          "text": "Whoever makes any gesture, or any preparation intending or\nknowing it to be likely that such gesture or preparation will cause any\nperson present to apprehend that he who makes that gesture or\npreparation is about to use criminal force to that person, is said to commit\nan assault.\nExplanation.—Mere words do not amount to an assault. But the words\nwhich a person uses may give to his gestures or preparation such a\nmeaning as may make those gestures or preparations amount to an\nassault.\nIllustrations.\n(a) A shakes his fist at Z, intending or knowing it to be likely that he\nmay thereby cause Z to believe that A is about to strike Z. A has committed\nan assault.\n(b) A begins to unloose the muzzle of a ferocious dog, intending or\nknowing it to be likely that he may thereby cause Z to believe that he is\nabout to cause the dog to attack Z. A has committed an assault upon Z.\n(c) A takes up a stick, saying to Z, “I will give you a beating”. Here,\nthough the words used by A could in no case amount to an assault, and\nthough the mere gesture, unaccompanied by any other circumstances,\nmight not amount to an assault, the gesture explained by the words may\namount to an assault.\nPunishment for assault or criminal force otherwise than on grave\nprovocation.",
+          "derived_context": "",
+          "keywords": [
+            "assault",
+            "threatening gestures"
+          ],
+          "legal_concepts": [
+            "criminal force",
+            "assault"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "criminal force",
+              "assault"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.7268304796218872,
+            "sub_query_1:anchor": 0.5791628038138154,
+            "sub_query_2:anchor": 0.26477782297432423
+          },
+          "query_scores": {
+            "original": 0.44301753373375286,
+            "sub_query_1": 0.6270136447649483,
+            "sub_query_2": 0.4006066486263734
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S130_ILL1_C",
+            "rerank",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S133_BODY",
+          "score": 0.426056,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 133,
+          "citation": "Section 133",
+          "text": "Whoever assaults or uses criminal force to any person, intending thereby to dishonour that person, otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to commit theft of property carried by a person.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 133: Assault or criminal force with intent to dishonour person, otherwise than on grave\nWhoever assaults or uses criminal force to any person, intending thereby to dishonour that person, otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to commit theft of property carried by a person.",
+          "keywords": [
+            "criminal",
+            "force",
+            "dishonour",
+            "grave",
+            "assault",
+            "body",
+            "whoever",
+            "assaults",
+            "uses",
+            "intending",
+            "criminal force"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "intent to dishonour"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "assault",
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7141844034194946,
+            "original:bm25": 0.3025606628891131,
+            "sub_query_1:bm25": 0.2500220246836295,
+            "sub_query_2:bm25": 0.3912502120145442
+          },
+          "query_scores": {
+            "original": 0.5714307706929985,
+            "sub_query_1": 0.46413715703143976,
+            "sub_query_2": 0.5716571104930442
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:2",
+            "general_clause_boost",
+            "content_type_boost",
+            "rerank",
+            "bm25:sub_query_1",
+            "concept_overlap:1",
+            "bm25:sub_query_2",
+            "zero_concept_overlap_penalty",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S131_C",
+          "score": 0.379381,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 131,
+          "citation": "Section 131",
+          "text": "if the provocation is given by anything done in the lawful exercise of the right of private defence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nif the provocation is given by anything done in the lawful exercise of the right of private defence.",
+          "keywords": [
+            "provocation",
+            "given",
+            "anything",
+            "done",
+            "lawful",
+            "exercise",
+            "right",
+            "private",
+            "defence",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "punishment for assault or criminal force otherwise than on grave provocation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "sub_query_1:faiss": 0.6403428018093109,
+            "sub_query_1:bm25": 0.805868612282101
+          },
+          "query_scores": {
+            "sub_query_1": 0.521757602519003
+          },
+          "reasons": [
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "zero_concept_overlap_penalty",
+            "general_clause_boost",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S131_BODY",
+          "score": 0.367055,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 131,
+          "citation": "Section 131",
+          "text": "Whoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nWhoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+          "keywords": [
+            "criminal",
+            "force",
+            "grave",
+            "provocation",
+            "extend",
+            "body",
+            "whoever",
+            "assaults",
+            "uses",
+            "sudden",
+            "assault",
+            "criminal force",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "punishment for assault"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "assault",
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7144068479537964,
+            "original:bm25": 0.4340238947416309,
+            "sub_query_1:faiss": 0.6041080355644226,
+            "sub_query_1:bm25": 0.4260898006041639,
+            "sub_query_2:faiss": 0.6667797803878784,
+            "sub_query_2:bm25": 0.4898291350314032
+          },
+          "query_scores": {
+            "original": 0.4731226162701166,
+            "sub_query_1": 0.5423793105832707,
+            "sub_query_2": 0.6617824677300341
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:2",
+            "general_clause_boost",
+            "content_type_boost",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "concept_overlap:1",
+            "faiss:sub_query_2",
+            "bm25:sub_query_2",
+            "zero_concept_overlap_penalty",
+            "multi_query_support:3"
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S132_BODY",
+          "score": 0.333726,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 132,
+          "citation": "Section 132",
+          "text": "Whoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 132: Assault or criminal force to deter public servant from discharge of his duty.\nWhoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+          "keywords": [
+            "public",
+            "servant",
+            "duty",
+            "criminal",
+            "force",
+            "intent",
+            "deter",
+            "done",
+            "discharge",
+            "assault",
+            "criminal force",
+            "public servant"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "assault",
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6958029270172119,
+            "original:bm25": 0.17335094870025058
+          },
+          "query_scores": {
+            "original": 0.5015462914688172
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:2",
+            "content_type_boost",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S130_ILL1_C",
+          "score": 0.331658,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 130,
+          "citation": "Section 130",
+          "text": "A takes up a stick, saying to Z, “I will give you a beating”. Here, though the words used by A could in no case amount to an assault, and though the mere gesture, unaccompanied by any other circumstances, might not amount to an assault, the gesture explained by the words may amount to an assault. Punishment for assault or criminal force otherwise than on grave provocation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 130: Assault.\nA takes up a stick, saying to Z, “I will give you a beating”. Here, though the words used by A could in no case amount to an assault, and though the mere gesture, unaccompanied by any other circumstances, might not amount to an assault, the gesture explained by the words may amount to an assault. Punishment for assault or criminal force otherwise than on grave provocation.",
+          "keywords": [
+            "assault",
+            "amount",
+            "though",
+            "words",
+            "gesture",
+            "takes",
+            "stick",
+            "saying",
+            "give",
+            "beating"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "assault",
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7291274070739746,
+            "original:bm25": 0.3588088696937792,
+            "sub_query_1:faiss": 0.6533552706241608,
+            "sub_query_1:bm25": 0.6458547784567995
+          },
+          "query_scores": {
+            "original": 0.43318850703678413,
+            "sub_query_1": 0.5234739746130785
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:2",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "rerank",
+            "faiss:sub_query_1",
+            "bm25:sub_query_1",
+            "concept_overlap:1",
+            "multi_query_support:2"
+          ]
+        }
+      ],
+      "settings": {
+        "graph_enabled": false,
+        "rerank_enabled": true,
+        "final_k": 10
+      }
+    },
+    "phase11": {
+      "answer_type": "consequence",
+      "support_status": "supported",
+      "confidence": {
+        "score": 0.9361,
+        "label": "high"
+      },
+      "final_answer": "Applying structured reasoning over the retrieved evidence, Section 136 (Assault or criminal force on grave provocation.) is the condition-matched applicable provision. Act: Bharatiya Nyaya Sanhita, 2023 Chapter 6: OF OFFENCES AFFECTING THE HUMAN BODY Section 136: Assault or criminal force on grave provocation. Whoever assaults or uses criminal force to any person on grave and sudden provocation given by that person, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both. Supporting detail: Whoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees... Condition-based reasoning selected a different section than the highest-scored retrieval hit. Medium uncertainty applies until factual conditions are confirmed. (Condition-based reasoning selected Section 136 over the highest-scored retrieval hit.)",
+      "summary_answer": "If you provoked the person who hit you, they may be able to claim 'grave and sudden provocation' under Section 136, which could mitigate their punishment.",
+      "detailed_answer": "According to Section 136 of the Bharatiya Nyaya Sanhita, 2023, if someone assaults or uses criminal force against another person due to 'grave and sudden provocation' given by that person, they may face a punishment of simple imprisonment for up to one month, or a fine of up to one thousand rupees, or both. Since you provoked the individual, this section may apply, potentially reducing their liability. However, the determination of whether the provocation was indeed 'grave and sudden' is a question of fact that would need to be established in court.",
+      "citations": [
+        "Section 136 Body, Bharatiya Nyaya Sanhita, 2023",
+        "Section 135 Body, Bharatiya Nyaya Sanhita, 2023",
+        "Section 131 Explanation 2, Bharatiya Nyaya Sanhita, 2023",
+        "Section 130: Assault.",
+        "Section 133 Body, Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "matched_sections": [
+        "Section 136",
+        "Section 135",
+        "Section 131",
+        "Section 130",
+        "Section 133"
+      ],
+      "missing_sections": [],
+      "selected_chunk_ids": [
+        "chunk__node__BNS_S136_BODY",
+        "chunk__node__BNS_S135_BODY",
+        "chunk__node__BNS_S131_EXP2",
+        "chunk__section__BNS_S130",
+        "chunk__node__BNS_S133_BODY"
+      ],
+      "warnings": [
+        "Structured reasoning selected Section 136 over the highest-scored retrieval hit. Reason: Condition-based reasoning selected a different section than the highest-scored retrieval hit. Medium uncertainty applies until factual conditions are confirmed.",
+        "Reasoning uncertainty: medium. Condition-based reasoning selected a different section than the highest-scored retrieval hit. Medium uncertainty applies until factual conditions are confirmed."
+      ],
+      "structured_reasoning": {
+        "base_concept": "assault",
+        "selected_section": "Section 136",
+        "selection_reason": "Selected Section 136 by condition-match score (0.57) over retrieval score (0.4567). Role: conditional_variant. Condition: Whoever assaults or uses criminal force to any person on grave and sudden provocation given by that person, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both. Concept overlap with query: assault, criminal force, provocation. This overrides the score-based selection of Section 131.",
+        "overrides_score_selection": true,
+        "uncertainty": "medium",
+        "uncertainty_reason": "Condition-based reasoning selected a different section than the highest-scored retrieval hit. Medium uncertainty applies until factual conditions are confirmed.",
+        "alternative_sections": [
+          "Section 135 (role=conditional_variant, condition_match=0.36)",
+          "Section 130 (role=conditional_variant, condition_match=0.12)",
+          "Section 131 (role=conditional_variant, condition_match=0.06)",
+          "Section 133 (role=conditional_variant, condition_match=0.06)",
+          "Section 132 (role=conditional_variant, condition_match=0.06)"
+        ],
+        "sections_analyzed": [
+          {
+            "section": "Section 131",
+            "role": "conditional_variant",
+            "condition_summary": "Whoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+            "condition_match_score": 0.06,
+            "concept_overlap": [
+              "assault",
+              "criminal force"
+            ],
+            "raw_retrieval_score": 1.0,
+            "hit_count": 4,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 135",
+            "role": "conditional_variant",
+            "condition_summary": "Whoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both.",
+            "condition_match_score": 0.36,
+            "concept_overlap": [
+              "assault",
+              "criminal force"
+            ],
+            "raw_retrieval_score": 0.554365,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 136",
+            "role": "conditional_variant",
+            "condition_summary": "Whoever assaults or uses criminal force to any person on grave and sudden provocation given by that person, shall be punished with simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both.",
+            "condition_match_score": 0.57,
+            "concept_overlap": [
+              "assault",
+              "criminal force",
+              "provocation"
+            ],
+            "raw_retrieval_score": 0.456683,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 130",
+            "role": "conditional_variant",
+            "condition_summary": "A has committed an assault upon Z.",
+            "condition_match_score": 0.12,
+            "concept_overlap": [
+              "assault",
+              "criminal force"
+            ],
+            "raw_retrieval_score": 0.427158,
+            "hit_count": 2,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 133",
+            "role": "conditional_variant",
+            "condition_summary": "Whoever assaults or uses criminal force to any person, intending thereby to dishonour that person, otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
+            "condition_match_score": 0.06,
+            "concept_overlap": [
+              "assault",
+              "criminal force"
+            ],
+            "raw_retrieval_score": 0.426056,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 132",
+            "role": "conditional_variant",
+            "condition_summary": "Whoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public...",
+            "condition_match_score": 0.06,
+            "concept_overlap": [
+              "assault",
+              "criminal force"
+            ],
+            "raw_retrieval_score": 0.333726,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          }
+        ]
+      },
+      "validation": {
+        "requested_sections": [],
+        "present_in_corpus": [],
+        "retrieved_exact_matches": [],
+        "missing_from_corpus": [],
+        "intent_alignment": "strong",
+        "intent_notes": [
+          "Explanatory intent has both rule text and supporting material."
+        ],
+        "answer_verified": true,
+        "verification_issues": [],
+        "llm_answer_verified": true,
+        "llm_verification_issues": [],
+        "completeness": "complete"
+      },
+      "evidence": {
+        "primary_chunk_id": "chunk__node__BNS_S136_BODY",
+        "primary_chunk_type": "content",
+        "primary_section": "Section 136",
+        "primary_section_title": "Assault or criminal force on grave provocation.",
+        "related_chunk_ids": [
+          "chunk__node__BNS_S135_BODY",
+          "chunk__node__BNS_S131_EXP2",
+          "chunk__section__BNS_S130",
+          "chunk__node__BNS_S133_BODY"
+        ],
+        "top_sections": [
+          {
+            "section": "Section 131",
+            "section_title": "Punishment for assault or criminal force otherwise than on grave provocation.",
+            "hit_count": 4,
+            "best_score": 1.0,
+            "chunk_types": {
+              "section": 1,
+              "explanation": 1,
+              "clause": 1,
+              "content": 1
+            },
+            "concept_coverage": 0.5
+          },
+          {
+            "section": "Section 135",
+            "section_title": "Assault or criminal force in attempt to wrongfully confine a person.",
+            "hit_count": 1,
+            "best_score": 0.554365,
+            "chunk_types": {
+              "content": 1
+            },
+            "concept_coverage": 0.5
+          },
+          {
+            "section": "Section 136",
+            "section_title": "Assault or criminal force on grave provocation.",
+            "hit_count": 1,
+            "best_score": 0.456683,
+            "chunk_types": {
+              "content": 1
+            },
+            "concept_coverage": 0.75
+          },
+          {
+            "section": "Section 130",
+            "section_title": "Assault.",
+            "hit_count": 2,
+            "best_score": 0.427158,
+            "chunk_types": {
+              "section": 1,
+              "illustration": 1
+            },
+            "concept_coverage": 0.5
+          },
+          {
+            "section": "Section 133",
+            "section_title": "Assault or criminal force with intent to dishonour person, otherwise than on grave",
+            "hit_count": 1,
+            "best_score": 0.426056,
+            "chunk_types": {
+              "content": 1
+            },
+            "concept_coverage": 0.5
+          }
+        ]
+      },
+      "llm_generation": {
+        "enabled": true,
+        "used": true,
+        "model": "gpt-4o-mini",
+        "reasoning_trace": [
+          "base concept: assault",
+          "condition match: provocation was given by the person who was assaulted",
+          "section selected: Section 136",
+          "why: Selected Section 136 by condition-match score over retrieval score, as it directly addresses the scenario of assault following provocation."
+        ],
+        "caution_notes": [
+          "Medium uncertainty exists as the specific facts of the provocation and the incident are not fully confirmed.",
+          "Legal outcomes can vary based on the specific circumstances and evidence presented in court."
+        ],
+        "error": null
+      }
+    }
+  }
+]
