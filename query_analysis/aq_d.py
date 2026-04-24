@@ -430,12 +430,15 @@ class ChunkHintRecord:
     legal_concepts: Tuple[str, ...]
     semantic_summary: str
     embedding_text: str
+    # subheading: str
 
     @classmethod
     def from_chunk(cls, chunk: Dict[str, Any]) -> "ChunkHintRecord":
         section = chunk.get("section", {}) or {}
+        
         summary = _normalize_space(str(chunk.get("semantic_summary", "") or ""))
         section_title = _normalize_space(str(section.get("section_title", "") or ""))
+        # subheading = _normalize_space(str(section.get("subheading", "") or ""))
         keywords = tuple(
             _normalize_space(str(item).lower())
             for item in (chunk.get("keywords") or [])
@@ -451,6 +454,7 @@ class ChunkHintRecord:
             chunk_type=str(chunk.get("chunk_type", "") or ""),
             section_number=_normalize_section_number(section.get("section_number")),
             section_title=section_title,
+            # subheading=subheading,
             keywords=keywords,
             legal_concepts=legal_concepts,
             semantic_summary=summary or section_title,
@@ -1282,4 +1286,11 @@ if __name__ == "__main__":
 
 # python query_analysis/aq_d.py --chunks data/processed/artifacts2/chunks.json     --query "Can a doctor operate without consent in emergency situations legally?"     --output query_analysis/result_3.json
 
-# python query_analysis/aq_d.py --chunks data/processed/artifacts2/chunks.json     --query "What is section 375?"     --output query_analysis/result_4.json
+# python query_analysis/aq_d.py --chunks data/processed/artifacts2/chunks.json     --query "What is section 303?"     --output query_analysis/result_5_.json
+
+
+# python query_analysis/aq_d.py --chunks data/processed/artifacts2/chunks.json     --query "What is the punishment for robbery?"     --output query_analysis/result_6_.json
+
+# python query_analysis/aq_d.py --chunks data/processed/artifacts2/chunks.json     --query "Someone hit me during an argument, but I had provoked them—what is the legal outcome?"     --output query_analysis/result_7_.json
+
+# python query_analysis/aq_d.py --chunks data/processed/artifacts2/chunks.json     --query "Explain section 375."     --output query_analysis/result_8_.json

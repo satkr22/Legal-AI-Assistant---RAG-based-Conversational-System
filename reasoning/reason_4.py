@@ -430,6 +430,10 @@ class Phase11OpenAIClient:
         )
         return _safe_json_loads(response.choices[0].message.content or "{}")
 
+    def embed(self, texts: Sequence[str], model: str = "text-embedding-3-small") -> List[List[float]]:
+        response = self.client.embeddings.create(model=model, input=list(texts))
+        return [list(item.embedding) for item in response.data]
+
 
 # ---------------------------------------------------------------------------
 # Structured Legal Reasoning Engine (Phase 11-SR)
@@ -954,10 +958,10 @@ class Phase11Reasoner:
     def __init__(
         self,
         corpus_index: CorpusIndex,
-        top_support_hits: int = 4,
+        top_support_hits: int = 5,
         llm_client: Optional[Phase11OpenAIClient] = None,
         llm_model: str = "gpt-4o-mini",
-        enable_llm: bool = False,
+        enable_llm: bool = True,
     ):
         self.corpus_index = corpus_index
         self.top_support_hits = max(1, int(top_support_hits))
@@ -965,6 +969,10 @@ class Phase11Reasoner:
         self.llm_model = llm_model
         self.enable_llm = bool(enable_llm and llm_client is not None)
         self._sr = StructuredLegalReasoner()
+        
+        
+        
+    
 
     def _extract_requested_targets(self, query: str, phase8: Dict[str, Any]) -> List[str]:
         phase8_targets = phase8.get("targets", []) or []

@@ -685,7 +685,7 @@ class Phase9HybridRetriever:
         final_k: int = 5,
         graph_depth: int = 1,
         graph_max_extra: int = 4,
-        enable_graph: bool = True,
+        enable_graph: bool = False,
         enable_rerank: bool = True,
     ) -> None:
         self.base_dir = Path(base_dir)
@@ -1701,6 +1701,6 @@ if __name__ == "__main__":
 
 '''
 
-python retrieval/rq.py --phase8 query_analysis/result_2_.json  --base-dir data/processed/artifacts2  --k 5  --output retrieval/output_2__1.json  --no-graph
+python retrieval/rq.py --phase8 query_analysis/result_8_.json  --base-dir data/processed/artifacts2  --k 5  --output retrieval/output_8__.json  --no-graph
 
 '''
