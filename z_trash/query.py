@@ -832,6 +832,3 @@ if __name__ == "__main__":
 
 
 
-# API_KEY = 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 
-
-# export OPENAI_API_KEY="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"
