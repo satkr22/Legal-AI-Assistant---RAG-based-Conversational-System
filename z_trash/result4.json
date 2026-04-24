@@ -1,0 +1,41 @@
+{
+  "query": "A car hit my bike and ran away but i didn't notice its number plate and my bike broke and my hand got fractured, what can i do now??",
+  "intent": {
+    "primary": "procedure",
+    "secondary": [
+      "case_application"
+    ]
+  },
+  "targets": [],
+  "concepts": [
+    "accident",
+    "property damage",
+    "legal remedy",
+    "fracture"
+  ],
+  "constraints": {
+    "jurisdiction": null,
+    "time": null,
+    "specificity": "broad"
+  },
+  "query_features": {
+    "is_multi_hop": false,
+    "requires_reasoning": true,
+    "requires_exact_match": false
+  },
+  "confidence": {
+    "rule_based": 0.5,
+    "llm": 0.6,
+    "agreement": 0.2,
+    "overall": 0.47
+  },
+  "decomposition": {
+    "needed": false,
+    "strategy": "llm",
+    "reason": "Single legal issue regarding the aftermath of an accident.",
+    "count": 1
+  },
+  "method": "llm_guided",
+  "sub_queries": [],
+  "notes": []
+}

@@ -1,0 +1,809 @@
+[
+  {
+    "query": "What is the punishment for robbery?",
+    "phase8": {
+      "query": "What is the punishment for robbery?",
+      "intent": {
+        "primary": "legal penalty",
+        "secondary": []
+      },
+      "concepts": [
+        "robbery",
+        "punishment",
+        "imprisonment"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.7881,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.25,
+        "structure_validity": 1.0,
+        "overall": 0.7652
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is the punishment for robbery?",
+          "targets": [],
+          "concepts": [
+            "robbery",
+            "punishment",
+            "imprisonment"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S309_N6",
+            "score": 0.932664,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 309,
+            "citation": "Section 309",
+            "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+            "keywords": [
+              "robbery",
+              "committing",
+              "attempting",
+              "commit",
+              "imprisonment",
+              "voluntarily",
+              "causes",
+              "hurt",
+              "jointly",
+              "concerned",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "robbery"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "robbery"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.736599326133728,
+              "bm25": 0.5978636498762492
+            },
+            "query_scores": {
+              "original": 0.736599326133728
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S309_N5",
+            "score": 0.852,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 309,
+            "citation": "Section 309",
+            "text": "Whoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nWhoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+            "keywords": [
+              "robbery",
+              "whoever",
+              "attempts",
+              "commit",
+              "punished",
+              "rigorous",
+              "imprisonment",
+              "term",
+              "extend",
+              "seven"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.6104071972196355
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S309_N4",
+            "score": 0.763473,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 309,
+            "citation": "Section 309",
+            "text": "Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nWhoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
+            "keywords": [
+              "robbery",
+              "imprisonment",
+              "years",
+              "whoever",
+              "commits",
+              "punished",
+              "rigorous",
+              "term",
+              "extend",
+              "liable",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "punishable offence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7319158911705017,
+              "bm25": 0.7122075089890233
+            },
+            "query_scores": {
+              "original": 0.7319158911705017
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S311_BODY",
+            "score": 0.713109,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 311,
+            "citation": "Section 311",
+            "text": "If, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 311: Robbery, or dacoity, with attempt to cause death or grievous hurt.\nIf, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+            "keywords": [
+              "robbery",
+              "dacoity",
+              "grievous",
+              "hurt",
+              "offender",
+              "deadly",
+              "weapon",
+              "cause",
+              "death",
+              "attempt",
+              "deadly weapon",
+              "grievous hurt"
+            ],
+            "legal_concepts": [
+              "robbery",
+              "dacoity",
+              "attempt to cause death"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "robbery"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7027324438095093,
+              "bm25": 0.41613331950526594
+            },
+            "query_scores": {
+              "original": 0.7027324438095093
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "concept_overlap:1",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S312_BODY",
+            "score": 0.685185,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 312,
+            "citation": "Section 312",
+            "text": "If, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 312: Attempt to commit robbery or dacoity when armed with deadly weapon.\nIf, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+            "keywords": [
+              "commit",
+              "robbery",
+              "dacoity",
+              "offender",
+              "armed",
+              "deadly",
+              "weapon",
+              "time",
+              "attempting",
+              "imprisonment",
+              "deadly weapon"
+            ],
+            "legal_concepts": [
+              "attempt to commit robbery",
+              "dacoity with deadly weapon"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6928969621658325,
+              "bm25": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "zero_concept_overlap_penalty",
+              "general_clause_boost",
+              "content_type_boost",
+              "rerank"
+            ]
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S309_N6",
+          "score": 0.932664,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "keywords": [
+            "robbery",
+            "committing",
+            "attempting",
+            "commit",
+            "imprisonment",
+            "voluntarily",
+            "causes",
+            "hurt",
+            "jointly",
+            "concerned",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "robbery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "robbery"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.736599326133728,
+            "original:bm25": 0.5978636498762492
+          },
+          "query_scores": {
+            "original": 0.9326642880258388
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:1",
+            "general_clause_boost",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S309_N5",
+          "score": 0.852,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "Whoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nWhoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "robbery",
+            "whoever",
+            "attempts",
+            "commit",
+            "punished",
+            "rigorous",
+            "imprisonment",
+            "term",
+            "extend",
+            "seven"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.6104071972196355
+          },
+          "query_scores": {
+            "original": 0.852
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "zero_concept_overlap_penalty",
+            "general_clause_boost",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S309_N4",
+          "score": 0.763473,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nWhoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
+          "keywords": [
+            "robbery",
+            "imprisonment",
+            "years",
+            "whoever",
+            "commits",
+            "punished",
+            "rigorous",
+            "term",
+            "extend",
+            "liable",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishable offence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7319158911705017,
+            "original:bm25": 0.7122075089890233
+          },
+          "query_scores": {
+            "original": 0.763473158145988
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "zero_concept_overlap_penalty",
+            "general_clause_boost",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S311_BODY",
+          "score": 0.713109,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 311,
+          "citation": "Section 311",
+          "text": "If, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 311: Robbery, or dacoity, with attempt to cause death or grievous hurt.\nIf, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+          "keywords": [
+            "robbery",
+            "dacoity",
+            "grievous",
+            "hurt",
+            "offender",
+            "deadly",
+            "weapon",
+            "cause",
+            "death",
+            "attempt",
+            "deadly weapon",
+            "grievous hurt"
+          ],
+          "legal_concepts": [
+            "robbery",
+            "dacoity",
+            "attempt to cause death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "robbery"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7027324438095093,
+            "original:bm25": 0.41613331950526594
+          },
+          "query_scores": {
+            "original": 0.7131090139149665
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:1",
+            "general_clause_boost",
+            "content_type_boost",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S312_BODY",
+          "score": 0.685185,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 312,
+          "citation": "Section 312",
+          "text": "If, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 312: Attempt to commit robbery or dacoity when armed with deadly weapon.\nIf, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+          "keywords": [
+            "commit",
+            "robbery",
+            "dacoity",
+            "offender",
+            "armed",
+            "deadly",
+            "weapon",
+            "time",
+            "attempting",
+            "imprisonment",
+            "deadly weapon"
+          ],
+          "legal_concepts": [
+            "attempt to commit robbery",
+            "dacoity with deadly weapon"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6928969621658325,
+            "original:bm25": 1.0
+          },
+          "query_scores": {
+            "original": 0.6851845612066841
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "zero_concept_overlap_penalty",
+            "general_clause_boost",
+            "content_type_boost",
+            "rerank"
+          ]
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S309_N6",
+          "score": 0.954269,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "keywords": [
+            "robbery",
+            "committing",
+            "attempting",
+            "commit",
+            "imprisonment",
+            "voluntarily",
+            "causes",
+            "hurt",
+            "jointly",
+            "concerned",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "robbery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "robbery"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.736599326133728,
+            "original:bm25": 0.5978636498762492
+          },
+          "query_scores": {
+            "original": 0.9326642880258388
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:1",
+            "general_clause_boost",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S309_N5",
+          "score": 0.9408,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "Whoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nWhoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "robbery",
+            "whoever",
+            "attempts",
+            "commit",
+            "punished",
+            "rigorous",
+            "imprisonment",
+            "term",
+            "extend",
+            "seven"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.6104071972196355
+          },
+          "query_scores": {
+            "original": 0.852
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "zero_concept_overlap_penalty",
+            "general_clause_boost",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S309_N4",
+          "score": 0.853828,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nWhoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
+          "keywords": [
+            "robbery",
+            "imprisonment",
+            "years",
+            "whoever",
+            "commits",
+            "punished",
+            "rigorous",
+            "term",
+            "extend",
+            "liable",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishable offence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7319158911705017,
+            "original:bm25": 0.7122075089890233
+          },
+          "query_scores": {
+            "original": 0.763473158145988
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "zero_concept_overlap_penalty",
+            "general_clause_boost",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S312_BODY",
+          "score": 0.401939,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 312,
+          "citation": "Section 312",
+          "text": "If, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 312: Attempt to commit robbery or dacoity when armed with deadly weapon.\nIf, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+          "keywords": [
+            "commit",
+            "robbery",
+            "dacoity",
+            "offender",
+            "armed",
+            "deadly",
+            "weapon",
+            "time",
+            "attempting",
+            "imprisonment",
+            "deadly weapon"
+          ],
+          "legal_concepts": [
+            "attempt to commit robbery",
+            "dacoity with deadly weapon"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6928969621658325,
+            "original:bm25": 1.0
+          },
+          "query_scores": {
+            "original": 0.6851845612066841
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "zero_concept_overlap_penalty",
+            "general_clause_boost",
+            "content_type_boost",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S311_BODY",
+          "score": 0.285244,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 311,
+          "citation": "Section 311",
+          "text": "If, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 311: Robbery, or dacoity, with attempt to cause death or grievous hurt.\nIf, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+          "keywords": [
+            "robbery",
+            "dacoity",
+            "grievous",
+            "hurt",
+            "offender",
+            "deadly",
+            "weapon",
+            "cause",
+            "death",
+            "attempt",
+            "deadly weapon",
+            "grievous hurt"
+          ],
+          "legal_concepts": [
+            "robbery",
+            "dacoity",
+            "attempt to cause death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "robbery"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7027324438095093,
+            "original:bm25": 0.41613331950526594
+          },
+          "query_scores": {
+            "original": 0.7131090139149665
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "concept_overlap:1",
+            "general_clause_boost",
+            "content_type_boost",
+            "rerank"
+          ]
+        }
+      ],
+      "settings": {
+        "graph_enabled": false,
+        "rerank_enabled": true,
+        "final_k": 5
+      }
+    }
+  }
+]
