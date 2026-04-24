@@ -1,0 +1,33 @@
+{
+  "query": "Can a doctor operate without consent in emergency situations legally?",
+  "intent": {
+    "primary": "procedure",
+    "secondary": [
+      "legal condition"
+    ]
+  },
+  "concepts": [
+    "consent",
+    "emergency situations",
+    "medical procedure"
+  ],
+  "targets": [],
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true
+  },
+  "decomposition": {
+    "needed": true,
+    "sub_queries": [
+      "What are the legal conditions for a doctor to operate without consent in emergency situations under BNS, 2023?",
+      "What constitutes an emergency situation in medical practice under BNS, 2023?"
+    ]
+  },
+  "confidence": {
+    "hint_relevance": 0.2848,
+    "llm_consistency": 1.0,
+    "rule_strength": 0.35,
+    "structure_validity": 1.0,
+    "overall": 0.5839
+  }
+}
