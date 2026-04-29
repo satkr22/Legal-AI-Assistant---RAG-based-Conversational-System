@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal AI Chat</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="authView" class="auth-view">
+    <section class="auth-panel" aria-labelledby="authTitle">
+      <div class="brand-mark">LA</div>
+      <h1 id="authTitle">Legal AI Chat</h1>
+      <p>Sign in to continue your legal research conversations.</p>
+
+      <form id="authForm" class="auth-form">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Your password" required />
+
+        <div class="auth-actions">
+          <button id="loginBtn" class="primary-btn" type="submit">Log in</button>
+          <button id="signupBtn" class="secondary-btn" type="button">Sign up</button>
+        </div>
+      </form>
+
+      <p id="authStatus" class="status-text" role="status"></p>
+    </section>
+  </main>
+
+  <main id="chatView" class="chat-view hidden">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div>
+          <p class="eyebrow">Workspace</p>
+          <h2>Legal AI</h2>
+        </div>
+        <button id="logoutBtn" class="icon-btn" type="button" title="Log out" aria-label="Log out">↗</button>
+      </div>
+
+      <button id="newChatBtn" class="new-chat-btn" type="button">
+        <span>+</span>
+        New chat
+      </button>
+
+      <div class="history-header">Chat history</div>
+      <nav id="sessionList" class="session-list" aria-label="Chat history"></nav>
+    </aside>
+
+    <section class="chat-shell">
+      <header class="chat-header">
+        <div>
+          <p class="eyebrow">Authenticated research assistant</p>
+          <h1 id="chatTitle">New chat</h1>
+        </div>
+      </header>
+
+      <div id="chat" class="chat-log" aria-live="polite"></div>
+
+      <form id="messageForm" class="composer">
+        <textarea id="query" rows="1" placeholder="Ask a legal question..." required></textarea>
+        <button id="sendBtn" class="send-btn" type="submit" title="Send" aria-label="Send">↑</button>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
