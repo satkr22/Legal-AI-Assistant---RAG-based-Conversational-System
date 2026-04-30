@@ -100,7 +100,7 @@ Authentication:
 ---
 
 ## Project Structure
-
+```
 Legal_Assistant_v1/
 │
 ├── frontend/
@@ -124,7 +124,7 @@ Legal_Assistant_v1/
 │   ├── .gitignore                  
 │   ├── app.py            
 │   └── main.py              
-     
+```    
 ---
 
 ## Setup Instructions
