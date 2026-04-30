@@ -112,18 +112,18 @@ Legal_Assistant_v1/
 │   ├── package.json           
 │
 ├── backend/               
-│   ├── data/        
-│   ├── embedding/             
-│   ├── ingestion/            
-│   ├── query_analysis/             
-│   ├── validation/            
-│   ├── reasoning/             
-│   ├── retrieval/            
-│   ├── supabase/             
-│   ├── .env            
-│   ├── .gitignore                  
-│   ├── app.py            
-│   └── main.py              
+    ├── data/        
+    ├── embedding/             
+    ├── ingestion/            
+    ├── query_analysis/             
+    ├── validation/            
+    ├── reasoning/             
+    ├── retrieval/            
+    ├── supabase/             
+    ├── .env            
+    ├── .gitignore                  
+    ├── app.py            
+    └── main.py              
 ```    
 ---
 
