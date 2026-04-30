@@ -36,6 +36,12 @@ The system is designed to present answers in a transparent format, including evi
 
 ## User Interface
 
+### Login/Signup Interface
+
+![Login/Signup UI](./screenshots/login_signup.png)
+
+
+
 ### Main Chat Interface
 
 ![Chat UI](./screenshots/chat_ui.png)
