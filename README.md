@@ -11,7 +11,7 @@ The system is designed to present answers in a transparent format, including evi
 
 ## Badges
 
-![Frontend](https://img.shields.io/badge/Frontend-Vite-blue)
+![Frontend](https://img.shields.io/badge/Frontend-JS-blue)
 ![Backend](https://img.shields.io/badge/Backend-LLM%20Pipeline-black)
 ![Auth](https://img.shields.io/badge/Auth-Supabase-green)
 ![Domain](https://img.shields.io/badge/Domain-BNS--23-important)
