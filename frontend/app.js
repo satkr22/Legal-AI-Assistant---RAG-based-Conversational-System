@@ -7,27 +7,37 @@ const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 
 let accessToken = null
+let currentUser = null
 let currentSessionId = null
 let sessions = []
 const chunkCache = new Map()
+const ACTIVE_SESSION_STORAGE_KEY = "legal-ai-active-session"
+const QUERY_DRAFT_STORAGE_KEY = "legal-ai-query-draft"
 
 const authView = document.getElementById("authView")
 const chatView = document.getElementById("chatView")
 const authForm = document.getElementById("authForm")
 const signupBtn = document.getElementById("signupBtn")
+const googleLoginBtn = document.getElementById("googleLoginBtn")
 const logoutBtn = document.getElementById("logoutBtn")
 const authStatus = document.getElementById("authStatus")
 const sessionList = document.getElementById("sessionList")
 const chat = document.getElementById("chat")
-const chatTitle = document.getElementById("chatTitle")
+const sidebarScroll = document.querySelector(".sidebar-scroll")
 const messageForm = document.getElementById("messageForm")
 const queryInput = document.getElementById("query")
 const sendBtn = document.getElementById("sendBtn")
 const newChatBtn = document.getElementById("newChatBtn")
+const accountBtn = document.getElementById("accountBtn")
+const accountPanel = document.getElementById("accountPanel")
+const accountInitial = document.getElementById("accountInitial")
+const accountEmailShort = document.getElementById("accountEmailShort")
+const accountEmail = document.getElementById("accountEmail")
+const accountProvider = document.getElementById("accountProvider")
 
 function setAuthStatus(message, isError = false) {
   authStatus.textContent = message || ""
-  authStatus.style.color = isError ? "#b42318" : ""
+  authStatus.style.color = isError ? "var(--danger)" : ""
 }
 
 function authHeaders() {
@@ -35,6 +45,65 @@ function authHeaders() {
     "Content-Type": "application/json",
     "Authorization": `Bearer ${accessToken}`,
   }
+}
+
+function setSession(session) {
+  accessToken = session?.access_token || null
+  currentUser = session?.user || null
+  updateAccountDetails()
+}
+
+function updateAccountDetails() {
+  const email = currentUser?.email || "Not available"
+  const provider = currentUser?.app_metadata?.provider || currentUser?.identities?.[0]?.provider || "email"
+  const initial = email && email !== "Not available" ? email[0].toUpperCase() : "A"
+
+  accountInitial.textContent = initial
+  accountEmailShort.textContent = email
+  accountEmail.textContent = email
+  accountProvider.textContent = provider.charAt(0).toUpperCase() + provider.slice(1)
+}
+
+function userStorageKey(key) {
+  return `${key}:${currentUser?.id || "anonymous"}`
+}
+
+function getStoredValue(key) {
+  try {
+    return window.localStorage.getItem(userStorageKey(key))
+  } catch {
+    return null
+  }
+}
+
+function setStoredValue(key, value) {
+  try {
+    if (value) {
+      window.localStorage.setItem(userStorageKey(key), value)
+      return
+    }
+    window.localStorage.removeItem(userStorageKey(key))
+  } catch {
+    // Storage can be unavailable in private browsing or restricted contexts.
+  }
+}
+
+function rememberCurrentSession() {
+  setStoredValue(ACTIVE_SESSION_STORAGE_KEY, currentSessionId)
+}
+
+function rememberQueryDraft() {
+  setStoredValue(QUERY_DRAFT_STORAGE_KEY, queryInput.value)
+}
+
+function restoreQueryDraft() {
+  queryInput.value = getStoredValue(QUERY_DRAFT_STORAGE_KEY) || ""
+  resizeComposer()
+}
+
+function closeAccountPanel() {
+  accountPanel.classList.add("hidden")
+  accountBtn.setAttribute("aria-expanded", "false")
 }
 
 async function apiFetch(path, options = {}) {
@@ -61,16 +130,26 @@ function showAuth() {
 async function showChat() {
   authView.classList.add("hidden")
   chatView.classList.remove("hidden")
+  closeAccountPanel()
   renderEmptyChat()
   try {
     await loadSessions()
+    restoreQueryDraft()
+    const storedSessionId = getStoredValue(ACTIVE_SESSION_STORAGE_KEY)
+    const hasStoredSession = storedSessionId && sessions.some((session) => session.id === storedSessionId)
+    if (hasStoredSession) {
+      await loadHistory(storedSessionId)
+    } else {
+      currentSessionId = null
+      rememberCurrentSession()
+      renderSessions()
+    }
   } catch (error) {
     appendError(`Could not load chat history: ${error.message}`)
   }
 }
 
 function renderEmptyChat() {
-  chatTitle.textContent = "New chat"
   chat.innerHTML = ""
   const empty = document.createElement("div")
   empty.className = "empty-state"
@@ -342,9 +421,8 @@ function renderSessions() {
 
 async function loadHistory(sessionId) {
   currentSessionId = sessionId
+  rememberCurrentSession()
   renderSessions()
-  const session = sessions.find((item) => item.id === sessionId)
-  chatTitle.textContent = session?.title || "Saved chat"
   chat.innerHTML = ""
 
   try {
@@ -386,6 +464,7 @@ async function sendMessage() {
 
   appendUserMessage(query)
   queryInput.value = ""
+  rememberQueryDraft()
   resizeComposer()
   sendBtn.disabled = true
   const typing = appendTyping()
@@ -400,7 +479,7 @@ async function sendMessage() {
     })
 
     currentSessionId = data.session_id
-    chatTitle.textContent = titleFromQuery(query)
+    rememberCurrentSession()
     removeTyping(typing)
     appendAssistantMessage(data.result)
     loadSessions().catch((error) => appendError(`Could not refresh chat history: ${error.message}`))
@@ -413,21 +492,33 @@ async function sendMessage() {
   }
 }
 
-function titleFromQuery(query) {
-  return query.length > 60 ? `${query.slice(0, 57)}...` : query
-}
-
 function startNewChat() {
   currentSessionId = null
+  rememberCurrentSession()
   renderSessions()
   renderEmptyChat()
   queryInput.value = ""
+  rememberQueryDraft()
+  resizeComposer()
   queryInput.focus()
 }
 
 function resizeComposer() {
   queryInput.style.height = "auto"
-  queryInput.style.height = `${Math.min(queryInput.scrollHeight, 160)}px`
+  queryInput.style.height = `${Math.min(queryInput.scrollHeight, 150)}px`
+}
+
+function revealScrollbarWhileScrolling(element) {
+  if (!element) return
+
+  let timeoutId
+  element.addEventListener("scroll", () => {
+    element.classList.add("is-scrolling")
+    window.clearTimeout(timeoutId)
+    timeoutId = window.setTimeout(() => {
+      element.classList.remove("is-scrolling")
+    }, 900)
+  }, { passive: true })
 }
 
 async function login(email, password) {
@@ -438,7 +529,7 @@ async function login(email, password) {
     return
   }
 
-  accessToken = data.session.access_token
+  setSession(data.session)
   setAuthStatus("")
   await showChat()
 }
@@ -452,7 +543,7 @@ async function signup(email, password) {
   }
 
   if (data.session?.access_token) {
-    accessToken = data.session.access_token
+    setSession(data.session)
     setAuthStatus("")
     await showChat()
     return
@@ -461,9 +552,24 @@ async function signup(email, password) {
   setAuthStatus("Signup successful. Check your email if confirmation is enabled, then log in.")
 }
 
+async function loginWithGoogle() {
+  setAuthStatus("Opening Google sign in...")
+  const redirectTo = `${window.location.origin}${window.location.pathname}`
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: "google",
+    options: {
+      redirectTo,
+    },
+  })
+
+  if (error) {
+    setAuthStatus(error.message, true)
+  }
+}
+
 async function logout() {
   await supabase.auth.signOut()
-  accessToken = null
+  setSession(null)
   currentSessionId = null
   sessions = []
   chunkCache.clear()
@@ -483,14 +589,22 @@ signupBtn.addEventListener("click", async () => {
   await signup(email, password)
 })
 
+googleLoginBtn.addEventListener("click", loginWithGoogle)
 logoutBtn.addEventListener("click", logout)
 newChatBtn.addEventListener("click", startNewChat)
+accountBtn.addEventListener("click", () => {
+  const isOpening = accountPanel.classList.contains("hidden")
+  accountPanel.classList.toggle("hidden", !isOpening)
+  accountBtn.setAttribute("aria-expanded", String(isOpening))
+})
+
 messageForm.addEventListener("submit", async (event) => {
   event.preventDefault()
   await sendMessage()
 })
 
 queryInput.addEventListener("input", resizeComposer)
+queryInput.addEventListener("input", rememberQueryDraft)
 queryInput.addEventListener("keydown", async (event) => {
   if (event.key === "Enter" && !event.shiftKey) {
     event.preventDefault()
@@ -498,14 +612,28 @@ queryInput.addEventListener("keydown", async (event) => {
   }
 })
 
-supabase.auth.onAuthStateChange((_event, session) => {
-  accessToken = session?.access_token || accessToken
+revealScrollbarWhileScrolling(chat)
+revealScrollbarWhileScrolling(sidebarScroll)
+revealScrollbarWhileScrolling(queryInput)
+
+supabase.auth.onAuthStateChange(async (event, session) => {
+  setSession(session)
+  if (event === "SIGNED_IN" && chatView.classList.contains("hidden")) {
+    setAuthStatus("")
+    await showChat()
+    return
+  }
+
+  if (event === "SIGNED_OUT") {
+    showAuth()
+  }
 })
 
 const { data } = await supabase.auth.getSession()
 if (data.session?.access_token) {
-  accessToken = data.session.access_token
+  setSession(data.session)
   await showChat()
 } else {
+  setSession(null)
   showAuth()
 }
