@@ -87,7 +87,7 @@ Output includes:
 ## Tech Stack
 
 Frontend:
-- Vite  
+- React js  
 - HTML, CSS, JavaScript  
 
 Backend:
@@ -104,25 +104,26 @@ Authentication:
 Legal_Assistant_v1/
 │
 ├── frontend/
-|      ├── assets/        
-|      ├── node_modules/             
-|      ├── app.js/            
-|      ├── index.html           
-|      ├── style.css           
-|      ├── package.json           
+│   ├── assets/        
+│   ├── node_modules/             
+│   ├── app.js            
+│   ├── index.html           
+│   ├── style.css           
+│   ├── package.json           
+│
 ├── backend/               
-      ├── data/        
-      ├── embedding/             
-      ├── ingestion/            
-      ├── query_analysis/             
-      ├── validation/            
-      ├── reasoning/             
-      ├── retrieval/            
-      ├── supabase/             
-      ├── .env            
-      ├── .gitignore                  
-      ├── app.py            
-      ├── main.py                  
+│   ├── data/        
+│   ├── embedding/             
+│   ├── ingestion/            
+│   ├── query_analysis/             
+│   ├── validation/            
+│   ├── reasoning/             
+│   ├── retrieval/            
+│   ├── supabase/             
+│   ├── .env            
+│   ├── .gitignore                  
+│   ├── app.py            
+│   └── main.py              
      
 ---
 
