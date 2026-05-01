@@ -38,7 +38,7 @@ The system is designed to present answers in a transparent format, including evi
 
 ### Login/Signup Interface
 
-![Login/Signup UI](./screenshots/login_signup.png)
+![Login/Signup UI](./screenshots/login__signup.png)
 
 
 
