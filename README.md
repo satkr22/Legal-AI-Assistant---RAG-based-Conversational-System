@@ -132,7 +132,7 @@ Legal_Assistant_v1/
 Clone repository:
 ```
 git clone https://github.com/satkr22/Legal-AI-Assistant---RAG-based-Conversational-System.git  
-cd Legal_Assistant_v1  
+cd Legal-AI-Assistant---RAG-based-Conversational-System  
 ```
 
 Frontend setup:
