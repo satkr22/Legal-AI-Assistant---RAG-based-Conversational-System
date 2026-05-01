@@ -130,25 +130,25 @@ Legal_Assistant_v1/
 ## Setup Instructions
 
 Clone repository:
-
-git clone <your-repo-url>  
+```
+git clone https://github.com/satkr22/Legal-AI-Assistant---RAG-based-Conversational-System.git  
 cd Legal_Assistant_v1  
+```
 
 Frontend setup:
-
+```
 cd frontend  
-npm install  
-npm run dev  
-
+python -m http.server 5173
+```
 App runs at:
 http://localhost:5173  
 
 
 Backend setup:
-
+```
 cd backend
 uvicorn app:app --reload
-
+```
 ---
 
 ## Output Format
