@@ -93,6 +93,7 @@ Frontend:
 Backend:
 - LLM-based reasoning pipeline  
 - Retrieval-based context system  
+- FastAPI
 
 Authentication:
 - Supabase  
