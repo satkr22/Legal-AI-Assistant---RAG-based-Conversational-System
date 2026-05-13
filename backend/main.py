@@ -59,8 +59,7 @@ class LegalRAGPipeline:
         )
 
         self.hint_retriever = HintRetriever(
-            self.chunks,
-            llm_client=self.llm_client
+            self.chunks
         )
         
         self.retriever = Phase9HybridRetriever(
