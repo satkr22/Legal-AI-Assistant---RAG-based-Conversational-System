@@ -1,8 +1,11 @@
 import { createClient } from 'https://esm.sh/@supabase/supabase-js'
 
 const config = window.LEGAL_AI_CONFIG || {}
+const configuredApiBase = config.API_BASE && !config.API_BASE.includes("REPLACE_WITH_RAILWAY_DOMAIN")
+  ? config.API_BASE
+  : ""
 const API_BASE = (
-  config.API_BASE ||
+  configuredApiBase ||
   (["localhost", "127.0.0.1"].includes(window.location.hostname)
     ? "http://127.0.0.1:8000"
     : "")
