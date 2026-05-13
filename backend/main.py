@@ -11,24 +11,41 @@ from retrieval.rq import _normalize_phase8_items, Phase9HybridRetriever
 from reasoning.reason_4 import _normalize_phase9_items, CorpusIndex, Phase11OpenAIClient, Phase11Reasoner
 from validation.validate_1 import process_json, _save_json
 
-PATH_ARTIFACTS = "data/processed/artifacts2"
-PATH_CHUNKS = PATH_ARTIFACTS + "/chunks.json"
-OUTPUT = "output/"
+BACKEND_DIR = Path(__file__).resolve().parent
+load_dotenv(BACKEND_DIR / ".env")
 
-EMBED_MODEL = "BAAI/bge-large-en-v1.5"
-RERANK_MODEL = "BAAI/bge-reranker-large"
-LLM_MODEL = "gpt-4o-mini"
+
+def _env_flag(name: str, default: bool = False) -> bool:
+    value = os.getenv(name)
+    if value is None:
+        return default
+    return value.strip().lower() in {"1", "true", "yes", "on"}
+
+
+def _backend_path(value: str | Path) -> Path:
+    path = Path(value)
+    return path if path.is_absolute() else BACKEND_DIR / path
+
+
+PATH_ARTIFACTS = _backend_path(os.getenv("ARTIFACTS_DIR", "data/processed/artifacts2"))
+PATH_CHUNKS = _backend_path(os.getenv("CHUNKS_PATH", "data/processed/artifacts2/chunks.json"))
+OUTPUT = _backend_path("output")
+
+EMBED_MODEL = os.getenv("EMBED_MODEL", "BAAI/bge-large-en-v1.5")
+RERANK_MODEL = os.getenv("RERANK_MODEL", "BAAI/bge-reranker-large")
+LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o-mini")
 
 ENABLE_GRAPH = False
+ENABLE_RERANK = _env_flag("ENABLE_RERANK", default=False)
 
 class LegalRAGPipeline:
     def __init__(self):
-        load_dotenv()
+        load_dotenv(BACKEND_DIR / ".env")
         
         print("Loading pipeline components...")
         
         # initialize ONCE
-        self.chunks = load_chunks(PATH_CHUNKS)
+        self.chunks = load_chunks(str(PATH_CHUNKS))
         
         self.llm_client = Phase11OpenAIClient(
             api_key=os.getenv("OPENAI_API_KEY", "")
@@ -36,24 +53,25 @@ class LegalRAGPipeline:
         
         
         self.analyzer = build_analyzer(
-            chunks_path=PATH_CHUNKS,
+            chunks_path=str(PATH_CHUNKS),
             model=LLM_MODEL,
             enable_llm=True
         )
 
         self.hint_retriever = HintRetriever(
             self.chunks,
-            embedding_provider=self.llm_client.embed if self.llm_client else None
+            llm_client=self.llm_client
         )
         
         self.retriever = Phase9HybridRetriever(
             base_dir=PATH_ARTIFACTS,
             embed_model_name=EMBED_MODEL,
             rerank_model_name=RERANK_MODEL,
-            enable_graph=ENABLE_GRAPH
+            enable_graph=ENABLE_GRAPH,
+            enable_rerank=ENABLE_RERANK
         )
 
-        self.corpus_index = CorpusIndex(PATH_CHUNKS)
+        self.corpus_index = CorpusIndex(str(PATH_CHUNKS))
 
         
 

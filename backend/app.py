@@ -10,19 +10,29 @@ import requests
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request, Header
 from fastapi.middleware.cors import CORSMiddleware
+
 from pydantic import BaseModel, Field
 from supabase import create_client, Client
 
 from main import LegalRAGPipeline
 
 
+BACKEND_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = BACKEND_DIR.parent
+FRONTEND_DIR = PROJECT_ROOT / "frontend"
 
 
+load_dotenv(BACKEND_DIR / ".env")
 
 
+def _backend_path(value: str | Path) -> Path:
+    path = Path(value)
+    return path if path.is_absolute() else BACKEND_DIR / path
 
 
-load_dotenv()
+def _split_env_list(name: str, default: str = "") -> list[str]:
+    raw = os.getenv(name, default)
+    return [item.strip().rstrip("/") for item in raw.split(",") if item.strip()]
 
 SUPABASE_URL = os.getenv("SUPABASE_URL", "").strip()
 SUPABASE_KEY = os.getenv("SUPABASE_KEY", "").strip()
@@ -37,7 +47,12 @@ ALLOW_ANONYMOUS_CHATS = os.getenv("ALLOW_ANONYMOUS_CHATS", "true").lower() in (
 )
 
 LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o-mini")
-CHUNKS_PATH = Path(os.getenv("CHUNKS_PATH", "data/processed/artifacts2/chunks.json"))
+CHUNKS_PATH = _backend_path(os.getenv("CHUNKS_PATH", "data/processed/artifacts2/chunks.json"))
+FRONTEND_ORIGINS = _split_env_list(
+    "FRONTEND_ORIGINS",
+    "http://localhost:5173,http://127.0.0.1:5173",
+)
+FRONTEND_ORIGIN_REGEX = os.getenv("FRONTEND_ORIGIN_REGEX", r"https://.*\.vercel\.app").strip() or None
 
 
 class ChatRequest(BaseModel):
@@ -72,11 +87,10 @@ def _chat_title(query: str) -> str:
 
 
 def load_chunk_lookup() -> Dict[str, Dict[str, Any]]:
-    chunks_file = CHUNKS_PATH if CHUNKS_PATH.is_absolute() else Path(__file__).parent / CHUNKS_PATH
-    if not chunks_file.exists():
-        raise RuntimeError(f"Chunks file is missing: {chunks_file}")
+    if not CHUNKS_PATH.exists():
+        raise RuntimeError(f"Chunks file is missing: {CHUNKS_PATH}")
 
-    with chunks_file.open("r", encoding="utf-8") as f:
+    with CHUNKS_PATH.open("r", encoding="utf-8") as f:
         payload = json.load(f)
 
     chunks = payload.get("chunks", payload if isinstance(payload, list) else [])
@@ -198,7 +212,8 @@ app = FastAPI(title="Legal RAG API", version="1.1.0", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # for development
+    allow_origins=FRONTEND_ORIGINS,
+    allow_origin_regex=FRONTEND_ORIGIN_REGEX,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -208,6 +223,16 @@ app.add_middleware(
 @app.get("/health")
 def health() -> Dict[str, str]:
     return {"status": "ok"}
+
+
+@app.get("/")
+def root() -> Dict[str, str]:
+    return {
+        "name": "Legal RAG API",
+        "status": "ok",
+        "docs": "/docs",
+        "health": "/health",
+    }
 
 
 def create_session(supabase: Client, user_id: Optional[str], title: str = "New chat") -> str:

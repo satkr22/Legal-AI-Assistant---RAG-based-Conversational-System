@@ -1,8 +1,15 @@
 import { createClient } from 'https://esm.sh/@supabase/supabase-js'
 
-const API_BASE = "http://127.0.0.1:8000"
-const SUPABASE_URL = "https://ucbbyzxhwjtkkwwefxah.supabase.co"
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVjYmJ5enhod2p0a2t3d2VmeGFoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyMDQ4ODgsImV4cCI6MjA5Mjc4MDg4OH0.sL3rV-Q1bkUAWtjidSl1VlocQ9ADQhakQ64s8w8s2_A"
+const config = window.LEGAL_AI_CONFIG || {}
+const API_BASE = (
+  config.API_BASE ||
+  (["localhost", "127.0.0.1"].includes(window.location.hostname)
+    ? "http://127.0.0.1:8000"
+    : "")
+).replace(/\/+$/, "")
+
+const SUPABASE_URL = config.SUPABASE_URL
+const SUPABASE_ANON_KEY = config.SUPABASE_ANON_KEY
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 
@@ -107,6 +114,10 @@ function closeAccountPanel() {
 }
 
 async function apiFetch(path, options = {}) {
+  if (!API_BASE || API_BASE.includes("REPLACE_WITH_RAILWAY_DOMAIN")) {
+    throw new Error("Backend API URL is not configured. Update frontend/config.js with your Railway public URL.")
+  }
+
   const res = await fetch(`${API_BASE}${path}`, {
     ...options,
     headers: {
