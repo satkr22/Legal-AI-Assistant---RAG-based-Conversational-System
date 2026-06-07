@@ -1,0 +1,73 @@
+{
+  "answer": "The distinction between hurt and grievous hurt is outlined in the Bharatiya Nyaya Sanhita, 2023. Hurt is a general term for any bodily injury, whereas grievous hurt is defined in Section 116 as a type of hurt that includes specific severe injuries such as emasculation, permanent loss of sight or hearing, and any hurt that endangers life or causes severe bodily pain for at least fifteen days. Additionally, Section 117 specifies that a person is said to voluntarily cause grievous hurt if they intend to cause grievous hurt and actually do so.",
+  "summary_answer": "Hurt refers to any bodily injury, while grievous hurt is a specific category of hurt that endangers life or causes severe pain for an extended period.",
+  "detailed_answer": "The distinction between hurt and grievous hurt is outlined in the Bharatiya Nyaya Sanhita, 2023. Hurt is a general term for any bodily injury, whereas grievous hurt is defined in Section 116 as a type of hurt that includes specific severe injuries such as emasculation, permanent loss of sight or hearing, and any hurt that endangers life or causes severe bodily pain for at least fifteen days. Additionally, Section 117 specifies that a person is said to voluntarily cause grievous hurt if they intend to cause grievous hurt and actually do so.",
+  "final_answer": "Hurt is any bodily injury, while grievous hurt is a specific type of hurt that includes severe injuries and endangers life.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 116(h), Bharatiya Nyaya Sanhita, 2023",
+    "Section 116: Grievous hurt.",
+    "Section 117(1), Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.7601,
+    "reranker": 0.8475,
+    "citation": 1.0,
+    "reasoning": 1.0,
+    "evidence_strength": 0.7601,
+    "reasoning_certainty": 1.0,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.7601,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.7601,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.8475,
+        "avg_selected_semrank_score": 0.9868,
+        "avg_selected_concept_coverage": 0.1667,
+        "selected_chunk_count": 3,
+        "matched_selected_chunk_count": 3,
+        "selected_semrank_count": 2
+      },
+      "reasoning": {
+        "selected_condition_match_score": 1.0,
+        "ambiguity_gap_score": 1.0,
+        "uncertainty_score": 1.0,
+        "gap": 0.2177,
+        "highest_competing_score": 0.7823,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.7601,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [
+      "Several sections are close in relevance; the answer uses the strongest supported section."
+    ],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S116_H",
+    "chunk__section__BNS_S116",
+    "chunk__node__BNS_S117_N1"
+  ]
+}

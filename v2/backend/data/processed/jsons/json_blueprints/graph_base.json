@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "doc_id": "string",
+    "act": "string"
+  },
+
+  "nodes": [
+    {
+      "id": "string",
+
+      "type": "act | chapter | section | node",
+
+      "subtype": "chapter | section | subsection | clause | explanation | illustration | content",
+
+      "text": "string",
+
+      "parent_id": "string | null",
+
+      "chapter_id": "string | null",
+      "section_id": "string | null",
+
+      "order": "number | null"
+    }
+  ],
+
+  "edges": [
+    {
+      "source": "string",
+      "target": "string",
+
+      "type": "PARENT_CHILD | SIBLING | EXPLAINS | ILLUSTRATES | REFERS_TO"
+    }
+  ]
+}

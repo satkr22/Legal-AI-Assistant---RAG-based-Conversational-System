@@ -1,0 +1,5 @@
+window.LEGAL_AI_CONFIG = {
+  API_BASE: "https://REPLACE_WITH_RAILWAY_DOMAIN",
+  SUPABASE_URL: "https://ucbbyzxhwjtkkwwefxah.supabase.co",
+  SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVjYmJ5enhod2p0a2t3d2VmeGFoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyMDQ4ODgsImV4cCI6MjA5Mjc4MDg4OH0.sL3rV-Q1bkUAWtjidSl1VlocQ9ADQhakQ64s8w8s2_A"
+}

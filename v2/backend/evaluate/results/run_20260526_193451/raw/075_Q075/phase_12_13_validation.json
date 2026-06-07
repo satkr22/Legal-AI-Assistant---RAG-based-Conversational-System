@@ -1,0 +1,71 @@
+{
+  "answer": "According to Section 53 of the Bharatiya Nyaya Sanhita, 2023, an abettor is liable for the effect caused by the act they abetted, even if it differs from the intended effect, as long as they knew that the act was likely to cause that effect. Additionally, Section 51 states that if a different act is done as a result of the abetment, the abettor is still liable for that act, provided it was a probable consequence of the abetment and committed under the influence of the instigation. Therefore, liability can arise from unintended consequences of an abetted act if the necessary conditions are met.",
+  "summary_answer": "Yes, a person can be liable if the abetted act causes a different result than intended, provided the abettor knew that the act was likely to cause that effect.",
+  "detailed_answer": "According to Section 53 of the Bharatiya Nyaya Sanhita, 2023, an abettor is liable for the effect caused by the act they abetted, even if it differs from the intended effect, as long as they knew that the act was likely to cause that effect. Additionally, Section 51 states that if a different act is done as a result of the abetment, the abettor is still liable for that act, provided it was a probable consequence of the abetment and committed under the influence of the instigation. Therefore, liability can arise from unintended consequences of an abetted act if the necessary conditions are met.",
+  "final_answer": "Yes, a person can be liable if the abetted act causes a different result than intended, provided the abettor knew that the act was likely to cause that effect.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 53 Body, Bharatiya Nyaya Sanhita, 2023",
+    "Section 51 Body, Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.8657,
+    "reranker": 0.9979,
+    "citation": 1.0,
+    "reasoning": 0.8795,
+    "evidence_strength": 0.8657,
+    "reasoning_certainty": 0.8795,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.7614,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.7614,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.9979,
+        "avg_selected_semrank_score": 1.0,
+        "avg_selected_concept_coverage": 0.3333,
+        "selected_chunk_count": 2,
+        "matched_selected_chunk_count": 2,
+        "selected_semrank_count": 2
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.999,
+        "ambiguity_gap_score": 0.6,
+        "uncertainty_score": 1.0,
+        "gap": 0.002,
+        "highest_competing_score": 0.9969,
+        "ambiguity_mitigated_by_grounding": true
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.7614,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [
+      "Several sections are close in relevance; the answer uses the strongest supported section."
+    ],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S53_BODY",
+    "chunk__node__BNS_S51_BODY"
+  ]
+}

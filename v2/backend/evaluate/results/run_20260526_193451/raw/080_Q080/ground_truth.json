@@ -1,0 +1,51 @@
+{
+  "query_id": "Q080",
+  "query": "What is the difference between murder and culpable homicide?",
+  "query_type": "comparison",
+  "difficulty": "hard",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "100",
+      "subsection": null,
+      "label": "Section 100",
+      "role": "definition of culpable homicide",
+      "required": true,
+      "match_level": "section"
+    },
+    {
+      "act": "BNS",
+      "section": "101",
+      "subsection": null,
+      "label": "Section 101",
+      "role": "definition of murder and exceptions",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "105",
+      "label": "Section 105",
+      "reason": "punishment for culpable homicide not amounting to murder"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 100 defines culpable homicide as causing death with intention to cause death, intention to cause bodily injury likely to cause death, or knowledge that the act is likely to cause death.",
+      "Section 101 provides that culpable homicide is murder if the act is done with intention to cause death; or intention to cause bodily injury that the offender knows to be likely to cause death of that person; or intention to cause bodily injury and such injury is sufficient in the ordinary course of nature to cause death; or with knowledge that the act is imminently dangerous and must in all probability cause death.",
+      "Murder is culpable homicide with the higher degree of intention or knowledge; culpable homicide not amounting to murder involves a lesser degree of intention or falls within exceptions listed in Section 101."
+    ],
+    "optional_points": [
+      "Section 101 lists five exceptions where culpable homicide is not murder."
+    ],
+    "forbidden_points": [
+      "Murder and culpable homicide are the same offence.",
+      "Culpable homicide is always a lesser punishment than murder."
+    ]
+  },
+  "notes": "Comparison query. The distinction is one of degree of intention and knowledge."
+}

@@ -1,0 +1,86 @@
+{
+  "answer": "The retrieved evidence points to Section 244 (Fraudulent claim to property to prevent its seizure as forfeited or in execution.) as the strongest grounded source for this query.",
+  "summary_answer": "The retrieved evidence points to Section 244 (Fraudulent claim to property to prevent its seizure as forfeited or in execution.) as the strongest grounded source for this query.",
+  "detailed_answer": "Section 244: Whoever fraudulently accepts, receives or claims any property or any interest therein, knowing that he has no right or rightful claim to such property or interest, or practises any deception touching any right to any property or any interest therein, intending thereby to prevent that property or interest therein from being taken as a forfeiture or in... [Section 244 Body, Bharatiya Nyaya Sanhita, 2023] Section 245: Whoever fraudulently causes or suffers a decree or order to be passed against him at the suit of any person for a sum not due or for a larger sum than is due to such person or for any property or interest in property to which such person is not entitled, or fraudulently causes or suffers a decree or order to be executed against him after it has been... [Section 245: Fraudulently suffering decree for sum not due.] Section 243: Whoever fraudulently removes, conceals, transfers or delivers to any person any property or any interest therein, intending thereby to prevent that property or interest therein from being taken as a forfeiture or in satisfaction of a fine, under a sentence which has been pronounced, or which he knows to be likely to be pronounced, by a Court or other... [Section 243 Body, Bharatiya Nyaya Sanhita, 2023] Section 337: Whoever forges a document or an electronic record, purporting to be a record or proceeding of or in a Court or an identity document issued by Government including voter identity card or Aadhaar Card, or a register of birth, marriage or burial, or a register kept by a public servant as such, or a certificate or document purporting to be made by a public... [Section 337: Forgery of record of Court or of public register, etc.] Section 351: A, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B’s house. A is guilty of criminal intimidation. [Section 351(1) Illustration, Bharatiya Nyaya Sanhita, 2023]",
+  "final_answer": "The retrieved evidence points to Section 244 (Fraudulent claim to property to prevent its seizure as forfeited or in execution.) as the strongest grounded source for this query. Section 244: Whoever fraudulently accepts, receives or claims any property or any interest therein, knowing that he has no right or rightful claim to such property or interest, or practises any deception touching any right to any property or any interest therein, intending thereby to prevent that property or interest therein from being taken as a forfeiture or in... [Section 244 Body, Bharatiya Nyaya Sanhita, 2023] Section 245: Whoever fraudulently causes or suffers a decree or order to be passed against him at the suit of any person for a sum not due or for a larger sum than is due to such person or for any property or interest in property to which such person is not entitled, or fraudulently causes or suffers a decree or order to be executed against him after it has been... [Section 245: Fraudulently suffering decree for sum not due.] Section 243: Whoever fraudulently removes, conceals, transfers or delivers to any person any property or any interest therein, intending thereby to prevent that property or interest therein from being taken as a forfeiture or in satisfaction of a fine, under a sentence which has been pronounced, or which he knows to be likely to be pronounced, by a Court or other... [Section 243 Body, Bharatiya Nyaya Sanhita, 2023] Section 337: Whoever forges a document or an electronic record, purporting to be a record or proceeding of or in a Court or an identity document issued by Government including voter identity card or Aadhaar Card, or a register of birth, marriage or burial, or a register kept by a public servant as such, or a certificate or document purporting to be made by a public... [Section 337: Forgery of record of Court or of public register, etc.] Section 351: A, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B’s house. A is guilty of criminal intimidation. [Section 351(1) Illustration, Bharatiya Nyaya Sanhita, 2023]",
+  "display_answer_type": "summary",
+  "citations": [
+    "Section 244 Body, Bharatiya Nyaya Sanhita, 2023",
+    "Section 245: Fraudulently suffering decree for sum not due.",
+    "Section 243 Body, Bharatiya Nyaya Sanhita, 2023",
+    "Section 337: Forgery of record of Court or of public register, etc.",
+    "Section 351(1) Illustration, Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.5646,
+    "reranker": 0.5904,
+    "citation": 1.0,
+    "reasoning": 0.9329,
+    "evidence_strength": 0.5646,
+    "reasoning_certainty": 0.9329,
+    "grounding_certainty": 0.72,
+    "raw_score": 0.3793,
+    "confidence_floor": null,
+    "floor_adjusted_score": 0.3793,
+    "applied_caps": [
+      {
+        "reason": "partial",
+        "max_score": 0.7
+      },
+      {
+        "reason": "fallback",
+        "max_score": 0.65
+      }
+    ],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.5904,
+        "avg_selected_semrank_score": 0.8541,
+        "avg_selected_concept_coverage": 0.0,
+        "selected_chunk_count": 5,
+        "matched_selected_chunk_count": 5,
+        "selected_semrank_count": 3
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.9859,
+        "ambiguity_gap_score": 1.0,
+        "uncertainty_score": 0.7,
+        "gap": 0.4091,
+        "highest_competing_score": 0.5768,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 0.72
+      }
+    },
+    "score": 0.3793,
+    "label": "low",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "high",
+  "risk_reason": "The answer is grounded in retrieved evidence, but deterministic fallback was used after generation did not pass grounding checks.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "partial",
+    "warnings": [
+      "Deterministic fallback was used."
+    ],
+    "verification_issues": [],
+    "should_show": false
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S244_BODY",
+    "chunk__section__BNS_S245",
+    "chunk__node__BNS_S243_BODY",
+    "chunk__section__BNS_S337",
+    "chunk__node__BNS_S351_N1_ILL1"
+  ]
+}

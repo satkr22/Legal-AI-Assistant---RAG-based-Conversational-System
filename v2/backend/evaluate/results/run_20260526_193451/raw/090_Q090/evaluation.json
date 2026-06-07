@@ -1,0 +1,216 @@
+{
+  "query_id": "Q090",
+  "query": "Explain consent under fear with a simple example.",
+  "query_type": "illustration",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "28"
+  ],
+  "acceptable_sections": [],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "28",
+    "28",
+    "27",
+    "27",
+    "129"
+  ],
+  "candidate_sections_at_10": [
+    "28",
+    "28",
+    "27",
+    "27",
+    "129",
+    "303",
+    "63",
+    "308",
+    "63",
+    "129"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "28",
+    "28",
+    "27",
+    "27",
+    "129"
+  ],
+  "cited_sections": [
+    "28"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "28"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "28"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "27",
+      "27",
+      "129"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "28"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "28"
+    ],
+    "support_precision_at_k": 0.1667,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "27",
+      "27",
+      "129",
+      "303",
+      "63",
+      "308",
+      "63",
+      "129"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "28"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "28"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "27",
+      "27",
+      "129"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.5,
+    "required_points_matched": 1,
+    "required_points_total": 2,
+    "answer_completeness_score": 0.5,
+    "soft_answer_score": 0.875,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 1.0,
+    "forbidden_contradiction_skips": [
+      {
+        "point": "Consent given under any pressure is always valid.",
+        "sentence": "According to Section 28(a) of the Bharatiya Nyaya Sanhita, 2023, consent is not valid if it is given under fear of injury or a misconception of fact, especially if the person performing the act knows or has reason to believe that the consent was given due to such fear or misconception.",
+        "overlap": 0.6,
+        "threshold": 0.9,
+        "matched_terms": [
+          "consent",
+          "given",
+          "valid"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      },
+      {
+        "point": "Consent given under any pressure is always valid.",
+        "sentence": "For example, if a person agrees to hand over their belongings to someone threatening them with harm, that consent is not legally valid because it was given under duress.",
+        "overlap": 0.6,
+        "threshold": 0.9,
+        "matched_terms": [
+          "consent",
+          "given",
+          "valid"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      }
+    ],
+    "required_point_details": [
+      {
+        "point": "Section 28 provides that consent given under fear of injury or under a misconception of fact is not valid consent if the person doing the act knows or has reason to believe the consent was given in consequence of such fear or misconception.",
+        "matched": true,
+        "overlap": 0.9286,
+        "matched_terms": [
+          "act",
+          "believe",
+          "consent",
+          "fact",
+          "fear",
+          "given",
+          "has",
+          "injury",
+          "knows",
+          "misconception",
+          "reason",
+          "valid"
+        ]
+      },
+      {
+        "point": "Example: if A tells Z that Z's life is in danger unless Z signs a document, and Z signs out of fear, that consent is not valid under Section 28.",
+        "matched": false,
+        "overlap": 0.3636,
+        "matched_terms": [
+          "consent",
+          "example",
+          "fear",
+          "valid"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "28"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.74,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "low_required_point_coverage"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 9.0623,
+    "phase_9_10": 9.3783,
+    "phase_11": 9.3139,
+    "phase_12_13": 0.0002,
+    "total": 27.7547
+  },
+  "final_answer_preview": "According to Section 28(a) of the Bharatiya Nyaya Sanhita, 2023, consent is not valid if it is given under fear of injury or a misconception of fact, especially if the person performing the act knows or has reason to believe that the consent was given due to such fear or misconception. For example, if a person agrees to hand over their belongings to someone threatening them with harm, that consent is not legally valid because it was given under duress. This principle ensures that consent must be freely given and not coerced by fear.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/090_Q090"
+}

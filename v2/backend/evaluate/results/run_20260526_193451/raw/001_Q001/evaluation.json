@@ -1,0 +1,174 @@
+{
+  "query_id": "Q001",
+  "query": "What is Section 1 of BNS about?",
+  "query_type": "direct_section_lookup",
+  "difficulty": "easy",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "1"
+  ],
+  "acceptable_sections": [],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "1",
+    "1",
+    "1",
+    "1",
+    "1"
+  ],
+  "candidate_sections_at_10": [
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "1",
+    "1",
+    "1"
+  ],
+  "cited_sections": [
+    "1"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "1"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "1"
+    ],
+    "support_precision_at_k": 1.0,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": []
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "1"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "1"
+    ],
+    "support_precision_at_k": 1.0,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": []
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.3333,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "1"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "1"
+    ],
+    "support_precision_at_k": 1.0,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.3333,
+    "required_points_matched": 1,
+    "required_points_total": 3,
+    "answer_completeness_score": 0.3333,
+    "soft_answer_score": 0.8333,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Section 1 gives the short title of the Act as the Bharatiya Nyaya Sanhita, 2023.",
+        "matched": false,
+        "overlap": 0.4,
+        "matched_terms": [
+          "2023",
+          "act"
+        ]
+      },
+      {
+        "point": "It states that every person shall be liable to punishment under this Sanhita for every act or omission guilty within India.",
+        "matched": true,
+        "overlap": 0.8889,
+        "matched_terms": [
+          "act",
+          "every",
+          "india",
+          "liable",
+          "omission",
+          "punishment",
+          "states",
+          "within"
+        ]
+      },
+      {
+        "point": "It extends application to offences committed by any citizen of India in any place outside India, any person on any ship or aircraft registered in India, and any person outside India targeting a computer resource in India.",
+        "matched": false,
+        "overlap": 0.0769,
+        "matched_terms": [
+          "india"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "1"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "low_required_point_coverage"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 0.0552,
+    "phase_9_10": 27.9012,
+    "phase_11": 17.8974,
+    "phase_12_13": 0.0001,
+    "total": 45.854
+  },
+  "final_answer_preview": "Section 1 of the Bharatiya Nyaya Sanhita, 2023, consists of three subsections: (1) It states that the Act may be called the Bharatiya Nyaya Sanhita, 2023 (Section 1(1)). (2) It specifies that the Act shall come into force on a date appointed by the Central Government, which may vary for different provisions (Section 1(2)). (3) It establishes that every person shall be liable to punishment under this Act for any act or omission contrary to its provisions within India (Section 1(3)).",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/001_Q001"
+}

@@ -1,0 +1,3094 @@
+[
+  {
+    "query": "What is the punishment for dacoity?",
+    "phase8": {
+      "query": "What is the punishment for dacoity?",
+      "intent": {
+        "primary": "legal penalty",
+        "secondary": []
+      },
+      "concepts": [
+        "dacoity",
+        "punishment",
+        "legal penalty"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.7825,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.25,
+        "structure_validity": 1.0,
+        "overall": 0.763
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is the punishment for dacoity?",
+          "targets": [],
+          "concepts": [
+            "dacoity",
+            "punishment",
+            "legal penalty"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S231_ILL1",
+            "score": 0.997083,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 231,
+            "citation": "Section 231",
+            "text": "A gives false evidence before a Court, intending thereby to cause Z to be convicted of a dacoity. The punishment of dacoity is imprisonment for life, or rigorous imprisonment for a term which may extend to ten years, with or without fine. A, therefore, is liable to imprisonment for life or imprisonment, with or without fine. Threatening any person to give false evidence.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 231: Giving or fabricating false evidence with intent to procure conviction of offence punishable\nA gives false evidence before a Court, intending thereby to cause Z to be convicted of a dacoity. The punishment of dacoity is imprisonment for life, or rigorous imprisonment for a term which may extend to ten years, with or without fine. A, therefore, is liable to imprisonment for life or imprisonment, with or without fine. Threatening any person to give false evidence.",
+            "keywords": [
+              "false",
+              "evidence",
+              "imprisonment",
+              "dacoity",
+              "life",
+              "fine",
+              "gives",
+              "before",
+              "court",
+              "intending",
+              "false evidence",
+              "dacoity conviction"
+            ],
+            "legal_concepts": [
+              "giving or fabricating false evidence",
+              "dacoity"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "dacoity"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6991127133369446,
+              "bm25": 0.20468388368205606,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "dacoity",
+                "legal penalty",
+                "what is the punishment for dacoity"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "giving or fabricating false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.8118,
+                  "weighted_score": 0.8118
+                },
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity conviction",
+                  "source": "keyword",
+                  "similarity": 0.9531,
+                  "weighted_score": 0.7148
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "court",
+                  "source": "keyword",
+                  "similarity": 0.8756,
+                  "weighted_score": 0.6567
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.8704,
+                  "weighted_score": 0.6528
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "dacoity",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S310_N4",
+            "score": 0.995791,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 310,
+            "citation": "Section 310",
+            "text": "Whoever makes any preparation for committing dacoity, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever makes any preparation for committing dacoity, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+            "keywords": [
+              "dacoity",
+              "whoever",
+              "makes",
+              "preparation",
+              "committing",
+              "punished",
+              "rigorous",
+              "imprisonment",
+              "term",
+              "extend"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "punishment for dacoity"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.750225841999054,
+              "bm25": 0.14461929450063896,
+              "semrank": 0.9811490178108215,
+              "semrank_pre_rerank": 0.9811
+            },
+            "query_scores": {
+              "original": 0.9811490178108215
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9811,
+              "query_concepts": [
+                "dacoity",
+                "legal penalty",
+                "what is the punishment for dacoity"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "what is the punishment for dacoity",
+                  "chunk_concept": "punishment for dacoity",
+                  "source": "legal_concept",
+                  "similarity": 0.9811,
+                  "weighted_score": 0.9811
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.8687,
+                  "weighted_score": 0.8687
+                },
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "term",
+                  "source": "keyword",
+                  "similarity": 0.8722,
+                  "weighted_score": 0.6542
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.8704,
+                  "weighted_score": 0.6528
+                }
+              ],
+              "score": 0.9811,
+              "best_similarity": 0.9811,
+              "best_concept": "punishment for dacoity",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9811,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.996598
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S310_N6",
+            "score": 0.994655,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 310,
+            "citation": "Section 310",
+            "text": "Whoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+            "keywords": [
+              "dacoity",
+              "imprisonment",
+              "whoever",
+              "belongs",
+              "gang",
+              "associated",
+              "purpose",
+              "habitually",
+              "committing",
+              "punished",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "dacoity"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "dacoity"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7179876565933228,
+              "bm25": 0.16125219098284976,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "dacoity",
+                "legal penalty",
+                "what is the punishment for dacoity"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.8687,
+                  "weighted_score": 0.8687
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.8704,
+                  "weighted_score": 0.6528
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "committing",
+                  "source": "keyword",
+                  "similarity": 0.8694,
+                  "weighted_score": 0.652
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "purpose",
+                  "source": "keyword",
+                  "similarity": 0.8631,
+                  "weighted_score": 0.6473
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "dacoity",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S310_N3",
+            "score": 0.988801,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 310,
+            "citation": "Section 310",
+            "text": "If any one of five or more persons, who are conjointly committing dacoity, commits murder in so committing dacoity, every one of those persons shall be punished with death, or imprisonment for life, or rigorous imprisonment for a term which shall not be less than ten years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nIf any one of five or more persons, who are conjointly committing dacoity, commits murder in so committing dacoity, every one of those persons shall be punished with death, or imprisonment for life, or rigorous imprisonment for a term which shall not be less than ten years, and shall also be liable to fine.",
+            "keywords": [
+              "dacoity",
+              "committing",
+              "imprisonment",
+              "five",
+              "conjointly",
+              "commits",
+              "murder",
+              "punished",
+              "death",
+              "life",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "dacoity",
+              "murder",
+              "punishment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 2,
+              "coverage_ratio": 0.6667,
+              "matched_concepts": [
+                "dacoity",
+                "punishment"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7366757988929749,
+              "bm25": 0.15588148303499222,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "dacoity",
+                "legal penalty",
+                "what is the punishment for dacoity"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "murder",
+                  "source": "legal_concept",
+                  "similarity": 0.8333,
+                  "weighted_score": 0.8333
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.8704,
+                  "weighted_score": 0.6528
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "committing",
+                  "source": "keyword",
+                  "similarity": 0.8694,
+                  "weighted_score": 0.652
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "five",
+                  "source": "keyword",
+                  "similarity": 0.8659,
+                  "weighted_score": 0.6494
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "dacoity",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S310_N2",
+            "score": 0.988464,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 310,
+            "citation": "Section 310",
+            "text": "Whoever commits dacoity shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever commits dacoity shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+            "keywords": [
+              "dacoity",
+              "imprisonment",
+              "whoever",
+              "commits",
+              "punished",
+              "life",
+              "rigorous",
+              "term",
+              "extend",
+              "years",
+              "dacoity punishment",
+              "imprisonment for life"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "punishment for crime"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.1367773541611464,
+              "semrank_pre_rerank": 0.8687
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "dacoity",
+                "legal penalty",
+                "what is the punishment for dacoity"
+              ],
+              "score": 0.8687,
+              "best_similarity": 0.8687,
+              "best_concept": "offence against property",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.8687,
+                  "weighted_score": 0.8687
+                },
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "what is the punishment for dacoity",
+                  "chunk_concept": "dacoity punishment",
+                  "source": "keyword",
+                  "similarity": 0.9795,
+                  "weighted_score": 0.7346
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "term",
+                  "source": "keyword",
+                  "similarity": 0.8722,
+                  "weighted_score": 0.6542
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.8704,
+                  "weighted_score": 0.6528
+                }
+              ],
+              "pre_rerank_score": 0.8687,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.976366
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S254_BODY",
+            "score": 0.983137,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 254,
+            "citation": "Section 254",
+            "text": "Whoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 254: Penalty for harbouring robbers or dacoits.\nWhoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+            "keywords": [
+              "them",
+              "robbery",
+              "dacoity",
+              "whoever",
+              "knowing",
+              "having",
+              "reason",
+              "believe",
+              "about",
+              "commit",
+              "harbouring"
+            ],
+            "legal_concepts": [
+              "punishment for harbouring robbers or dacoits"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6516868472099304,
+              "bm25": 1.0,
+              "semrank_pre_rerank": 0.8951
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "dacoity",
+                "legal penalty",
+                "what is the punishment for dacoity"
+              ],
+              "score": 0.8951,
+              "best_similarity": 0.8951,
+              "best_concept": "punishment for harbouring robbers or dacoits",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "what is the punishment for dacoity",
+                  "chunk_concept": "punishment for harbouring robbers or dacoits",
+                  "source": "legal_concept",
+                  "similarity": 0.8951,
+                  "weighted_score": 0.8951
+                },
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "about",
+                  "source": "keyword",
+                  "similarity": 0.8808,
+                  "weighted_score": 0.6606
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "reason",
+                  "source": "keyword",
+                  "similarity": 0.8581,
+                  "weighted_score": 0.6436
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "commit",
+                  "source": "keyword",
+                  "similarity": 0.855,
+                  "weighted_score": 0.6412
+                }
+              ],
+              "pre_rerank_score": 0.8951,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.981118
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__section__BNS_S231",
+            "score": 0.96,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 231,
+            "citation": "Section 231",
+            "text": "Whoever gives or fabricates false evidence intending thereby to\ncause, or knowing it to be likely that he will thereby cause, any person to\nbe convicted of an offence which by the law for the time being in force in\nIndia is not capital, but punishable with imprisonment for life, or\nimprisonment for a term of seven years or upwards, shall be punished as a\nperson convicted of that offence would be liable to be punished.\nIllustration.\nA gives false evidence before a Court, intending thereby to cause Z\nto be convicted of a dacoity. The punishment of dacoity is imprisonment for\nlife, or rigorous imprisonment for a term which may extend to ten years,\nwith or without fine. A, therefore, is liable to imprisonment for life or\nimprisonment, with or without fine.\nThreatening any person to give false evidence.",
+            "derived_context": "",
+            "keywords": [
+              "false_evidence",
+              "offence_punishable"
+            ],
+            "legal_concepts": [
+              "giving false evidence",
+              "offences against public justice"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "anchor": 0.9
+            },
+            "query_scores": {
+              "anchor": 0.9
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S231_ILL1",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S310_N5",
+            "score": 0.956961,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 310,
+            "citation": "Section 310",
+            "text": "Whoever is one of five or more persons assembled for the purpose of committing dacoity, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever is one of five or more persons assembled for the purpose of committing dacoity, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+            "keywords": [
+              "dacoity",
+              "whoever",
+              "five",
+              "assembled",
+              "purpose",
+              "committing",
+              "punished",
+              "rigorous",
+              "imprisonment",
+              "term",
+              "five or more"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "punishment for conspiracy"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7540355920791626,
+              "bm25": 0.08438515323174159,
+              "semrank_pre_rerank": 0.8687
+            },
+            "query_scores": {
+              "original": 0.7540355920791626
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "dacoity",
+                "legal penalty",
+                "what is the punishment for dacoity"
+              ],
+              "score": 0.8687,
+              "best_similarity": 0.8687,
+              "best_concept": "offence against property",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.8687,
+                  "weighted_score": 0.8687
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "punishment for conspiracy",
+                  "source": "legal_concept",
+                  "similarity": 0.8545,
+                  "weighted_score": 0.8545
+                },
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "term",
+                  "source": "keyword",
+                  "similarity": 0.8722,
+                  "weighted_score": 0.6542
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.8704,
+                  "weighted_score": 0.6528
+                }
+              ],
+              "pre_rerank_score": 0.8687,
+              "score_before_pre_rerank": 0.915538,
+              "score_after_pre_rerank": 0.907107
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S317_N3",
+            "score": 0.952201,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 317,
+            "citation": "Section 317",
+            "text": "Whoever dishonestly receives or retains any stolen property, the possession whereof he knows or has reason to believe to have been transferred by the commission of dacoity, or dishonestly receives from a person, whom he knows or has reason to believe to belong or to have belonged to a gang of dacoits, property which he knows or has reason to believe to have been stolen, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 317: Stolen property.\nWhoever dishonestly receives or retains any stolen property, the possession whereof he knows or has reason to believe to have been transferred by the commission of dacoity, or dishonestly receives from a person, whom he knows or has reason to believe to belong or to have belonged to a gang of dacoits, property which he knows or has reason to believe to have been stolen, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+            "keywords": [
+              "property",
+              "stolen",
+              "knows",
+              "reason",
+              "believe",
+              "dishonestly",
+              "receives",
+              "imprisonment",
+              "whoever",
+              "retains",
+              "dishonesty",
+              "stolen property",
+              "dacoity"
+            ],
+            "legal_concepts": [
+              "receiving stolen property",
+              "retaining stolen property",
+              "dacoity"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "dacoity"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "dacoity",
+                "legal penalty",
+                "what is the punishment for dacoity"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "receiving stolen property",
+                  "source": "legal_concept",
+                  "similarity": 0.8456,
+                  "weighted_score": 0.8456
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "retaining stolen property",
+                  "source": "legal_concept",
+                  "similarity": 0.8445,
+                  "weighted_score": 0.8445
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.8704,
+                  "weighted_score": 0.6528
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "stolen",
+                  "source": "keyword",
+                  "similarity": 0.8674,
+                  "weighted_score": 0.6506
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "dacoity",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S249_ILL1",
+            "score": 0.943449,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 249,
+            "citation": "Section 249",
+            "text": "A, knowing that B has committed dacoity, knowingly conceals B in order to screen him from legal punishment. Here, as B is liable to imprisonment for life, A is liable to imprisonment of either description for a term not exceeding three years, and is also liable to fine. Taking gift, etc., to screen an offender from punishment.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 249: Harbouring offender.\nA, knowing that B has committed dacoity, knowingly conceals B in order to screen him from legal punishment. Here, as B is liable to imprisonment for life, A is liable to imprisonment of either description for a term not exceeding three years, and is also liable to fine. Taking gift, etc., to screen an offender from punishment.",
+            "keywords": [
+              "liable",
+              "screen",
+              "punishment",
+              "imprisonment",
+              "offender",
+              "knowing",
+              "committed",
+              "dacoity",
+              "knowingly",
+              "conceals",
+              "harbouring"
+            ],
+            "legal_concepts": [
+              "liable to imprisonment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6592583656311035,
+              "bm25": 0.9177856726439149,
+              "semrank_pre_rerank": 0.8761
+            },
+            "query_scores": {
+              "original": 0.9177856726439149
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "dacoity",
+                "legal penalty",
+                "what is the punishment for dacoity"
+              ],
+              "score": 0.8761,
+              "best_similarity": 0.8761,
+              "best_concept": "liable to imprisonment",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "liable to imprisonment",
+                  "source": "legal_concept",
+                  "similarity": 0.8761,
+                  "weighted_score": 0.8761
+                },
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "liable",
+                  "source": "keyword",
+                  "similarity": 0.8799,
+                  "weighted_score": 0.6599
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "offender",
+                  "source": "keyword",
+                  "similarity": 0.8712,
+                  "weighted_score": 0.6534
+                },
+                {
+                  "query_concept": "legal penalty",
+                  "chunk_concept": "committed",
+                  "source": "keyword",
+                  "similarity": 0.8706,
+                  "weighted_score": 0.653
+                }
+              ],
+              "pre_rerank_score": 0.8761,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.977698
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S231_ILL1",
+          "score": 0.997608,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 231,
+          "citation": "Section 231",
+          "text": "A gives false evidence before a Court, intending thereby to cause Z to be convicted of a dacoity. The punishment of dacoity is imprisonment for life, or rigorous imprisonment for a term which may extend to ten years, with or without fine. A, therefore, is liable to imprisonment for life or imprisonment, with or without fine. Threatening any person to give false evidence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 231: Giving or fabricating false evidence with intent to procure conviction of offence punishable\nA gives false evidence before a Court, intending thereby to cause Z to be convicted of a dacoity. The punishment of dacoity is imprisonment for life, or rigorous imprisonment for a term which may extend to ten years, with or without fine. A, therefore, is liable to imprisonment for life or imprisonment, with or without fine. Threatening any person to give false evidence.",
+          "keywords": [
+            "false",
+            "evidence",
+            "imprisonment",
+            "dacoity",
+            "life",
+            "fine",
+            "gives",
+            "before",
+            "court",
+            "intending",
+            "false evidence",
+            "dacoity conviction"
+          ],
+          "legal_concepts": [
+            "giving or fabricating false evidence",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "dacoity"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6991127133369446,
+            "original:bm25": 0.20468388368205606,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9970833865952695
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "giving or fabricating false evidence",
+                "source": "legal_concept",
+                "similarity": 0.8118,
+                "weighted_score": 0.8118
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity conviction",
+                "source": "keyword",
+                "similarity": 0.9531,
+                "weighted_score": 0.7148
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 0.8756,
+                "weighted_score": 0.6567
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8704,
+                "weighted_score": 0.6528
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.997083,
+            "score_after_pre_rerank": 0.997608
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S310_N6",
+          "score": 0.995617,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "Whoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "keywords": [
+            "dacoity",
+            "imprisonment",
+            "whoever",
+            "belongs",
+            "gang",
+            "associated",
+            "purpose",
+            "habitually",
+            "committing",
+            "punished",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "dacoity"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7179876565933228,
+            "original:bm25": 0.16125219098284976,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9946554163112229
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8687,
+                "weighted_score": 0.8687
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8704,
+                "weighted_score": 0.6528
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "committing",
+                "source": "keyword",
+                "similarity": 0.8694,
+                "weighted_score": 0.652
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "purpose",
+                "source": "keyword",
+                "similarity": 0.8631,
+                "weighted_score": 0.6473
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.994655,
+            "score_after_pre_rerank": 0.995617
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S310_N4",
+          "score": 0.993147,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "Whoever makes any preparation for committing dacoity, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever makes any preparation for committing dacoity, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "keywords": [
+            "dacoity",
+            "whoever",
+            "makes",
+            "preparation",
+            "committing",
+            "punished",
+            "rigorous",
+            "imprisonment",
+            "term",
+            "extend"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishment for dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.750225841999054,
+            "original:bm25": 0.14461929450063896,
+            "original:semrank": 0.9811490178108215,
+            "original:semrank_pre_rerank": 0.9811,
+            "semrank_pre_rerank": 0.9811
+          },
+          "query_scores": {
+            "original": 0.9957908841844195
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9811,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "what is the punishment for dacoity",
+                "chunk_concept": "punishment for dacoity",
+                "source": "legal_concept",
+                "similarity": 0.9811,
+                "weighted_score": 0.9811
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8687,
+                "weighted_score": 0.8687
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8722,
+                "weighted_score": 0.6542
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8704,
+                "weighted_score": 0.6528
+              }
+            ],
+            "score": 0.9811,
+            "best_similarity": 0.9811,
+            "best_concept": "punishment for dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9811,
+            "score_before_pre_rerank": 0.995791,
+            "score_after_pre_rerank": 0.993147
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S310_N3",
+          "score": 0.990817,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "If any one of five or more persons, who are conjointly committing dacoity, commits murder in so committing dacoity, every one of those persons shall be punished with death, or imprisonment for life, or rigorous imprisonment for a term which shall not be less than ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nIf any one of five or more persons, who are conjointly committing dacoity, commits murder in so committing dacoity, every one of those persons shall be punished with death, or imprisonment for life, or rigorous imprisonment for a term which shall not be less than ten years, and shall also be liable to fine.",
+          "keywords": [
+            "dacoity",
+            "committing",
+            "imprisonment",
+            "five",
+            "conjointly",
+            "commits",
+            "murder",
+            "punished",
+            "death",
+            "life",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "dacoity",
+            "murder",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "dacoity",
+              "punishment"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7366757988929749,
+            "original:bm25": 0.15588148303499222,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.98880146595888
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 0.8333,
+                "weighted_score": 0.8333
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8704,
+                "weighted_score": 0.6528
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "committing",
+                "source": "keyword",
+                "similarity": 0.8694,
+                "weighted_score": 0.652
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "five",
+                "source": "keyword",
+                "similarity": 0.8659,
+                "weighted_score": 0.6494
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.988801,
+            "score_after_pre_rerank": 0.990817
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S254_BODY",
+          "score": 0.96729,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 254,
+          "citation": "Section 254",
+          "text": "Whoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 254: Penalty for harbouring robbers or dacoits.\nWhoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "them",
+            "robbery",
+            "dacoity",
+            "whoever",
+            "knowing",
+            "having",
+            "reason",
+            "believe",
+            "about",
+            "commit",
+            "harbouring"
+          ],
+          "legal_concepts": [
+            "punishment for harbouring robbers or dacoits"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6516868472099304,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.8951,
+            "semrank_pre_rerank": 0.8951
+          },
+          "query_scores": {
+            "original": 0.9831370672681696
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "score": 0.8951,
+            "best_similarity": 0.8951,
+            "best_concept": "punishment for harbouring robbers or dacoits",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "what is the punishment for dacoity",
+                "chunk_concept": "punishment for harbouring robbers or dacoits",
+                "source": "legal_concept",
+                "similarity": 0.8951,
+                "weighted_score": 0.8951
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "about",
+                "source": "keyword",
+                "similarity": 0.8808,
+                "weighted_score": 0.6606
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.8581,
+                "weighted_score": 0.6436
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "commit",
+                "source": "keyword",
+                "similarity": 0.855,
+                "weighted_score": 0.6412
+              }
+            ],
+            "pre_rerank_score": 0.8951,
+            "score_before_pre_rerank": 0.983137,
+            "score_after_pre_rerank": 0.96729
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S310_N2",
+          "score": 0.966907,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "Whoever commits dacoity shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever commits dacoity shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "keywords": [
+            "dacoity",
+            "imprisonment",
+            "whoever",
+            "commits",
+            "punished",
+            "life",
+            "rigorous",
+            "term",
+            "extend",
+            "years",
+            "dacoity punishment",
+            "imprisonment for life"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishment for crime"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.1367773541611464,
+            "original:semrank_pre_rerank": 0.8687,
+            "semrank_pre_rerank": 0.8687
+          },
+          "query_scores": {
+            "original": 0.9884644588206654
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "score": 0.8687,
+            "best_similarity": 0.8687,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8687,
+                "weighted_score": 0.8687
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "what is the punishment for dacoity",
+                "chunk_concept": "dacoity punishment",
+                "source": "keyword",
+                "similarity": 0.9795,
+                "weighted_score": 0.7346
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8722,
+                "weighted_score": 0.6542
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8704,
+                "weighted_score": 0.6528
+              }
+            ],
+            "pre_rerank_score": 0.8687,
+            "score_before_pre_rerank": 0.988464,
+            "score_after_pre_rerank": 0.966907
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S317_N3",
+          "score": 0.960805,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 317,
+          "citation": "Section 317",
+          "text": "Whoever dishonestly receives or retains any stolen property, the possession whereof he knows or has reason to believe to have been transferred by the commission of dacoity, or dishonestly receives from a person, whom he knows or has reason to believe to belong or to have belonged to a gang of dacoits, property which he knows or has reason to believe to have been stolen, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 317: Stolen property.\nWhoever dishonestly receives or retains any stolen property, the possession whereof he knows or has reason to believe to have been transferred by the commission of dacoity, or dishonestly receives from a person, whom he knows or has reason to believe to belong or to have belonged to a gang of dacoits, property which he knows or has reason to believe to have been stolen, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "keywords": [
+            "property",
+            "stolen",
+            "knows",
+            "reason",
+            "believe",
+            "dishonestly",
+            "receives",
+            "imprisonment",
+            "whoever",
+            "retains",
+            "dishonesty",
+            "stolen property",
+            "dacoity"
+          ],
+          "legal_concepts": [
+            "receiving stolen property",
+            "retaining stolen property",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "dacoity"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9522014546908583
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "receiving stolen property",
+                "source": "legal_concept",
+                "similarity": 0.8456,
+                "weighted_score": 0.8456
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "retaining stolen property",
+                "source": "legal_concept",
+                "similarity": 0.8445,
+                "weighted_score": 0.8445
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8704,
+                "weighted_score": 0.6528
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "stolen",
+                "source": "keyword",
+                "similarity": 0.8674,
+                "weighted_score": 0.6506
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.952201,
+            "score_after_pre_rerank": 0.960805
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__section__BNS_S231",
+          "score": 0.96,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 231,
+          "citation": "Section 231",
+          "text": "Whoever gives or fabricates false evidence intending thereby to\ncause, or knowing it to be likely that he will thereby cause, any person to\nbe convicted of an offence which by the law for the time being in force in\nIndia is not capital, but punishable with imprisonment for life, or\nimprisonment for a term of seven years or upwards, shall be punished as a\nperson convicted of that offence would be liable to be punished.\nIllustration.\nA gives false evidence before a Court, intending thereby to cause Z\nto be convicted of a dacoity. The punishment of dacoity is imprisonment for\nlife, or rigorous imprisonment for a term which may extend to ten years,\nwith or without fine. A, therefore, is liable to imprisonment for life or\nimprisonment, with or without fine.\nThreatening any person to give false evidence.",
+          "derived_context": "",
+          "keywords": [
+            "false_evidence",
+            "offence_punishable"
+          ],
+          "legal_concepts": [
+            "giving false evidence",
+            "offences against public justice"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.9
+          },
+          "query_scores": {
+            "original": 0.96
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S231_ILL1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S310_N5",
+          "score": 0.941074,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "Whoever is one of five or more persons assembled for the purpose of committing dacoity, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever is one of five or more persons assembled for the purpose of committing dacoity, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "dacoity",
+            "whoever",
+            "five",
+            "assembled",
+            "purpose",
+            "committing",
+            "punished",
+            "rigorous",
+            "imprisonment",
+            "term",
+            "five or more"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishment for conspiracy"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7540355920791626,
+            "original:bm25": 0.08438515323174159,
+            "original:semrank_pre_rerank": 0.8687,
+            "semrank_pre_rerank": 0.8687
+          },
+          "query_scores": {
+            "original": 0.9569611482731205
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "score": 0.8687,
+            "best_similarity": 0.8687,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8687,
+                "weighted_score": 0.8687
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "punishment for conspiracy",
+                "source": "legal_concept",
+                "similarity": 0.8545,
+                "weighted_score": 0.8545
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8722,
+                "weighted_score": 0.6542
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8704,
+                "weighted_score": 0.6528
+              }
+            ],
+            "pre_rerank_score": 0.8687,
+            "score_before_pre_rerank": 0.956961,
+            "score_after_pre_rerank": 0.941074
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S249_ILL1",
+          "score": 0.931326,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 249,
+          "citation": "Section 249",
+          "text": "A, knowing that B has committed dacoity, knowingly conceals B in order to screen him from legal punishment. Here, as B is liable to imprisonment for life, A is liable to imprisonment of either description for a term not exceeding three years, and is also liable to fine. Taking gift, etc., to screen an offender from punishment.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 249: Harbouring offender.\nA, knowing that B has committed dacoity, knowingly conceals B in order to screen him from legal punishment. Here, as B is liable to imprisonment for life, A is liable to imprisonment of either description for a term not exceeding three years, and is also liable to fine. Taking gift, etc., to screen an offender from punishment.",
+          "keywords": [
+            "liable",
+            "screen",
+            "punishment",
+            "imprisonment",
+            "offender",
+            "knowing",
+            "committed",
+            "dacoity",
+            "knowingly",
+            "conceals",
+            "harbouring"
+          ],
+          "legal_concepts": [
+            "liable to imprisonment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6592583656311035,
+            "original:bm25": 0.9177856726439149,
+            "original:semrank_pre_rerank": 0.8761,
+            "semrank_pre_rerank": 0.8761
+          },
+          "query_scores": {
+            "original": 0.943448785695283
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "score": 0.8761,
+            "best_similarity": 0.8761,
+            "best_concept": "liable to imprisonment",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "liable to imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.8761,
+                "weighted_score": 0.8761
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 0.8799,
+                "weighted_score": 0.6599
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "offender",
+                "source": "keyword",
+                "similarity": 0.8712,
+                "weighted_score": 0.6534
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "committed",
+                "source": "keyword",
+                "similarity": 0.8706,
+                "weighted_score": 0.653
+              }
+            ],
+            "pre_rerank_score": 0.8761,
+            "score_before_pre_rerank": 0.943449,
+            "score_after_pre_rerank": 0.931326
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__section__BNS_S231",
+          "score": 0.984,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 231,
+          "citation": "Section 231",
+          "text": "Whoever gives or fabricates false evidence intending thereby to\ncause, or knowing it to be likely that he will thereby cause, any person to\nbe convicted of an offence which by the law for the time being in force in\nIndia is not capital, but punishable with imprisonment for life, or\nimprisonment for a term of seven years or upwards, shall be punished as a\nperson convicted of that offence would be liable to be punished.\nIllustration.\nA gives false evidence before a Court, intending thereby to cause Z\nto be convicted of a dacoity. The punishment of dacoity is imprisonment for\nlife, or rigorous imprisonment for a term which may extend to ten years,\nwith or without fine. A, therefore, is liable to imprisonment for life or\nimprisonment, with or without fine.\nThreatening any person to give false evidence.",
+          "derived_context": "",
+          "keywords": [
+            "false_evidence",
+            "offence_punishable"
+          ],
+          "legal_concepts": [
+            "giving false evidence",
+            "offences against public justice"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.9
+          },
+          "query_scores": {
+            "original": 0.96
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S231_ILL1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S231_ILL1",
+          "score": 0.962432,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 231,
+          "citation": "Section 231",
+          "text": "A gives false evidence before a Court, intending thereby to cause Z to be convicted of a dacoity. The punishment of dacoity is imprisonment for life, or rigorous imprisonment for a term which may extend to ten years, with or without fine. A, therefore, is liable to imprisonment for life or imprisonment, with or without fine. Threatening any person to give false evidence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 231: Giving or fabricating false evidence with intent to procure conviction of offence punishable\nA gives false evidence before a Court, intending thereby to cause Z to be convicted of a dacoity. The punishment of dacoity is imprisonment for life, or rigorous imprisonment for a term which may extend to ten years, with or without fine. A, therefore, is liable to imprisonment for life or imprisonment, with or without fine. Threatening any person to give false evidence.",
+          "keywords": [
+            "false",
+            "evidence",
+            "imprisonment",
+            "dacoity",
+            "life",
+            "fine",
+            "gives",
+            "before",
+            "court",
+            "intending",
+            "false evidence",
+            "dacoity conviction"
+          ],
+          "legal_concepts": [
+            "giving or fabricating false evidence",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "dacoity"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6991127133369446,
+            "original:bm25": 0.20468388368205606,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9970833865952695
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "giving or fabricating false evidence",
+                "source": "legal_concept",
+                "similarity": 0.8118,
+                "weighted_score": 0.8118
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity conviction",
+                "source": "keyword",
+                "similarity": 0.9531,
+                "weighted_score": 0.7148
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 0.8756,
+                "weighted_score": 0.6567
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8704,
+                "weighted_score": 0.6528
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.997083,
+            "score_after_pre_rerank": 0.997608
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S310_N4",
+          "score": 0.961505,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "Whoever makes any preparation for committing dacoity, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever makes any preparation for committing dacoity, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "keywords": [
+            "dacoity",
+            "whoever",
+            "makes",
+            "preparation",
+            "committing",
+            "punished",
+            "rigorous",
+            "imprisonment",
+            "term",
+            "extend"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishment for dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.750225841999054,
+            "original:bm25": 0.14461929450063896,
+            "original:semrank": 0.9811490178108215,
+            "original:semrank_pre_rerank": 0.9811,
+            "semrank_pre_rerank": 0.9811
+          },
+          "query_scores": {
+            "original": 0.9957908841844195
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9811,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "what is the punishment for dacoity",
+                "chunk_concept": "punishment for dacoity",
+                "source": "legal_concept",
+                "similarity": 0.9811,
+                "weighted_score": 0.9811
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8687,
+                "weighted_score": 0.8687
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8722,
+                "weighted_score": 0.6542
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8704,
+                "weighted_score": 0.6528
+              }
+            ],
+            "score": 0.9811,
+            "best_similarity": 0.9811,
+            "best_concept": "punishment for dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9811,
+            "score_before_pre_rerank": 0.995791,
+            "score_after_pre_rerank": 0.993147
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S310_N2",
+          "score": 0.960629,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "Whoever commits dacoity shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever commits dacoity shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "keywords": [
+            "dacoity",
+            "imprisonment",
+            "whoever",
+            "commits",
+            "punished",
+            "life",
+            "rigorous",
+            "term",
+            "extend",
+            "years",
+            "dacoity punishment",
+            "imprisonment for life"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishment for crime"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.1367773541611464,
+            "original:semrank_pre_rerank": 0.8687,
+            "semrank_pre_rerank": 0.8687
+          },
+          "query_scores": {
+            "original": 0.9884644588206654
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "score": 0.8687,
+            "best_similarity": 0.8687,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8687,
+                "weighted_score": 0.8687
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "what is the punishment for dacoity",
+                "chunk_concept": "dacoity punishment",
+                "source": "keyword",
+                "similarity": 0.9795,
+                "weighted_score": 0.7346
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8722,
+                "weighted_score": 0.6542
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8704,
+                "weighted_score": 0.6528
+              }
+            ],
+            "pre_rerank_score": 0.8687,
+            "score_before_pre_rerank": 0.988464,
+            "score_after_pre_rerank": 0.966907
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S310_N6",
+          "score": 0.931158,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "Whoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "keywords": [
+            "dacoity",
+            "imprisonment",
+            "whoever",
+            "belongs",
+            "gang",
+            "associated",
+            "purpose",
+            "habitually",
+            "committing",
+            "punished",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "dacoity"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7179876565933228,
+            "original:bm25": 0.16125219098284976,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9946554163112229
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8687,
+                "weighted_score": 0.8687
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8704,
+                "weighted_score": 0.6528
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "committing",
+                "source": "keyword",
+                "similarity": 0.8694,
+                "weighted_score": 0.652
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "purpose",
+                "source": "keyword",
+                "similarity": 0.8631,
+                "weighted_score": 0.6473
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.994655,
+            "score_after_pre_rerank": 0.995617
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S310_N5",
+          "score": 0.902598,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "Whoever is one of five or more persons assembled for the purpose of committing dacoity, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever is one of five or more persons assembled for the purpose of committing dacoity, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "dacoity",
+            "whoever",
+            "five",
+            "assembled",
+            "purpose",
+            "committing",
+            "punished",
+            "rigorous",
+            "imprisonment",
+            "term",
+            "five or more"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishment for conspiracy"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7540355920791626,
+            "original:bm25": 0.08438515323174159,
+            "original:semrank_pre_rerank": 0.8687,
+            "semrank_pre_rerank": 0.8687
+          },
+          "query_scores": {
+            "original": 0.9569611482731205
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "score": 0.8687,
+            "best_similarity": 0.8687,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8687,
+                "weighted_score": 0.8687
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "punishment for conspiracy",
+                "source": "legal_concept",
+                "similarity": 0.8545,
+                "weighted_score": 0.8545
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8722,
+                "weighted_score": 0.6542
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8704,
+                "weighted_score": 0.6528
+              }
+            ],
+            "pre_rerank_score": 0.8687,
+            "score_before_pre_rerank": 0.956961,
+            "score_after_pre_rerank": 0.941074
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S254_BODY",
+          "score": 0.870049,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 254,
+          "citation": "Section 254",
+          "text": "Whoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 254: Penalty for harbouring robbers or dacoits.\nWhoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "them",
+            "robbery",
+            "dacoity",
+            "whoever",
+            "knowing",
+            "having",
+            "reason",
+            "believe",
+            "about",
+            "commit",
+            "harbouring"
+          ],
+          "legal_concepts": [
+            "punishment for harbouring robbers or dacoits"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6516868472099304,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.8951,
+            "semrank_pre_rerank": 0.8951
+          },
+          "query_scores": {
+            "original": 0.9831370672681696
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "score": 0.8951,
+            "best_similarity": 0.8951,
+            "best_concept": "punishment for harbouring robbers or dacoits",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "what is the punishment for dacoity",
+                "chunk_concept": "punishment for harbouring robbers or dacoits",
+                "source": "legal_concept",
+                "similarity": 0.8951,
+                "weighted_score": 0.8951
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "about",
+                "source": "keyword",
+                "similarity": 0.8808,
+                "weighted_score": 0.6606
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.8581,
+                "weighted_score": 0.6436
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "commit",
+                "source": "keyword",
+                "similarity": 0.855,
+                "weighted_score": 0.6412
+              }
+            ],
+            "pre_rerank_score": 0.8951,
+            "score_before_pre_rerank": 0.983137,
+            "score_after_pre_rerank": 0.96729
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S310_N3",
+          "score": 0.855755,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "If any one of five or more persons, who are conjointly committing dacoity, commits murder in so committing dacoity, every one of those persons shall be punished with death, or imprisonment for life, or rigorous imprisonment for a term which shall not be less than ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nIf any one of five or more persons, who are conjointly committing dacoity, commits murder in so committing dacoity, every one of those persons shall be punished with death, or imprisonment for life, or rigorous imprisonment for a term which shall not be less than ten years, and shall also be liable to fine.",
+          "keywords": [
+            "dacoity",
+            "committing",
+            "imprisonment",
+            "five",
+            "conjointly",
+            "commits",
+            "murder",
+            "punished",
+            "death",
+            "life",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "dacoity",
+            "murder",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "dacoity",
+              "punishment"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7366757988929749,
+            "original:bm25": 0.15588148303499222,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.98880146595888
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 0.8333,
+                "weighted_score": 0.8333
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8704,
+                "weighted_score": 0.6528
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "committing",
+                "source": "keyword",
+                "similarity": 0.8694,
+                "weighted_score": 0.652
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "five",
+                "source": "keyword",
+                "similarity": 0.8659,
+                "weighted_score": 0.6494
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.988801,
+            "score_after_pre_rerank": 0.990817
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S317_N3",
+          "score": 0.384322,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 317,
+          "citation": "Section 317",
+          "text": "Whoever dishonestly receives or retains any stolen property, the possession whereof he knows or has reason to believe to have been transferred by the commission of dacoity, or dishonestly receives from a person, whom he knows or has reason to believe to belong or to have belonged to a gang of dacoits, property which he knows or has reason to believe to have been stolen, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 317: Stolen property.\nWhoever dishonestly receives or retains any stolen property, the possession whereof he knows or has reason to believe to have been transferred by the commission of dacoity, or dishonestly receives from a person, whom he knows or has reason to believe to belong or to have belonged to a gang of dacoits, property which he knows or has reason to believe to have been stolen, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "keywords": [
+            "property",
+            "stolen",
+            "knows",
+            "reason",
+            "believe",
+            "dishonestly",
+            "receives",
+            "imprisonment",
+            "whoever",
+            "retains",
+            "dishonesty",
+            "stolen property",
+            "dacoity"
+          ],
+          "legal_concepts": [
+            "receiving stolen property",
+            "retaining stolen property",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "dacoity"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9522014546908583
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "receiving stolen property",
+                "source": "legal_concept",
+                "similarity": 0.8456,
+                "weighted_score": 0.8456
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "retaining stolen property",
+                "source": "legal_concept",
+                "similarity": 0.8445,
+                "weighted_score": 0.8445
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8704,
+                "weighted_score": 0.6528
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "stolen",
+                "source": "keyword",
+                "similarity": 0.8674,
+                "weighted_score": 0.6506
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.952201,
+            "score_after_pre_rerank": 0.960805
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S249_ILL1",
+          "score": 0.374641,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 249,
+          "citation": "Section 249",
+          "text": "A, knowing that B has committed dacoity, knowingly conceals B in order to screen him from legal punishment. Here, as B is liable to imprisonment for life, A is liable to imprisonment of either description for a term not exceeding three years, and is also liable to fine. Taking gift, etc., to screen an offender from punishment.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 249: Harbouring offender.\nA, knowing that B has committed dacoity, knowingly conceals B in order to screen him from legal punishment. Here, as B is liable to imprisonment for life, A is liable to imprisonment of either description for a term not exceeding three years, and is also liable to fine. Taking gift, etc., to screen an offender from punishment.",
+          "keywords": [
+            "liable",
+            "screen",
+            "punishment",
+            "imprisonment",
+            "offender",
+            "knowing",
+            "committed",
+            "dacoity",
+            "knowingly",
+            "conceals",
+            "harbouring"
+          ],
+          "legal_concepts": [
+            "liable to imprisonment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6592583656311035,
+            "original:bm25": 0.9177856726439149,
+            "original:semrank_pre_rerank": 0.8761,
+            "semrank_pre_rerank": 0.8761
+          },
+          "query_scores": {
+            "original": 0.943448785695283
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "dacoity",
+              "legal penalty",
+              "what is the punishment for dacoity"
+            ],
+            "score": 0.8761,
+            "best_similarity": 0.8761,
+            "best_concept": "liable to imprisonment",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "liable to imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.8761,
+                "weighted_score": 0.8761
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 0.8799,
+                "weighted_score": 0.6599
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "offender",
+                "source": "keyword",
+                "similarity": 0.8712,
+                "weighted_score": 0.6534
+              },
+              {
+                "query_concept": "legal penalty",
+                "chunk_concept": "committed",
+                "source": "keyword",
+                "similarity": 0.8706,
+                "weighted_score": 0.653
+              }
+            ],
+            "pre_rerank_score": 0.8761,
+            "score_before_pre_rerank": 0.943449,
+            "score_after_pre_rerank": 0.931326
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

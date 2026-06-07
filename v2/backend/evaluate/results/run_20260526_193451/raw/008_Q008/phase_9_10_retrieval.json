@@ -1,0 +1,3504 @@
+[
+  {
+    "query": "Explain Section 22 on unsoundness of mind.",
+    "phase8": {
+      "query": "Explain Section 22 on unsoundness of mind.",
+      "intent": {
+        "primary": "lookup",
+        "secondary": []
+      },
+      "concepts": [
+        "actus reus",
+        "mens rea",
+        "act of a person of unsound mind",
+        "incapable of knowing the nature of the act"
+      ],
+      "targets": [
+        "Section 22"
+      ],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 1.0,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.8,
+        "structure_validity": 1.0,
+        "overall": 0.96
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "Explain Section 22 on unsoundness of mind.",
+          "targets": [
+            "Section 22"
+          ],
+          "concepts": [
+            "actus reus",
+            "mens rea",
+            "act of a person of unsound mind",
+            "incapable of knowing the nature of the act"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S22_BODY",
+            "score": 1.0,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 22,
+            "citation": "Section 22",
+            "text": "Nothing is an offence which is done by a person who, at the time of doing it, by reason of unsoundness of mind, is incapable of knowing the nature of the act, or that he is doing what is either wrong or contrary to law. Act of a person incapable of judgment by reason of intoxication caused against his will.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 22: Act of a person of unsound mind.\nNothing is an offence which is done by a person who, at the time of doing it, by reason of unsoundness of mind, is incapable of knowing the nature of the act, or that he is doing what is either wrong or contrary to law. Act of a person incapable of judgment by reason of intoxication caused against his will.",
+            "keywords": [
+              "doing",
+              "reason",
+              "mind",
+              "incapable",
+              "nothing",
+              "offence",
+              "done",
+              "time",
+              "unsoundness",
+              "knowing",
+              "unsoundness of mind",
+              "incapable of judgment"
+            ],
+            "legal_concepts": [
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "act of a person of unsound mind",
+                "incapable of knowing the nature of the act"
+              ]
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 1.0,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "actus reus",
+                "mens rea",
+                "act of a person of unsound mind",
+                "incapable of knowing the nature of the act",
+                "section 22",
+                "explain",
+                "22",
+                "unsoundness"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "act of a person of unsound mind",
+                  "chunk_concept": "act of a person of unsound mind",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "incapable of knowing the nature of the act",
+                  "chunk_concept": "incapable of knowing the nature of the act",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "unsoundness",
+                  "chunk_concept": "unsoundness",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "unsoundness",
+                  "chunk_concept": "unsoundness of mind",
+                  "source": "keyword",
+                  "similarity": 0.9493,
+                  "weighted_score": 0.712
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "reason",
+                  "source": "keyword",
+                  "similarity": 0.933,
+                  "weighted_score": 0.6998
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "act of a person of unsound mind",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S36_BODY",
+            "score": 0.406512,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 36,
+            "citation": "Section 36",
+            "text": "When an act, which would otherwise be a certain offence, is not that offence, by reason of the youth, the want of maturity of understanding, the unsoundness of mind or the intoxication of the person doing that act, or by reason of any misconception on the part of that person, every person has the same right of private defence against that act which he would have if the act were that offence.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 36: Right of private defence against act of a person of unsound mind, etc.\nWhen an act, which would otherwise be a certain offence, is not that offence, by reason of the youth, the want of maturity of understanding, the unsoundness of mind or the intoxication of the person doing that act, or by reason of any misconception on the part of that person, every person has the same right of private defence against that act which he would have if the act were that offence.",
+            "keywords": [
+              "offence",
+              "reason",
+              "mind",
+              "right",
+              "private",
+              "defence",
+              "against",
+              "certain",
+              "youth",
+              "want",
+              "private defence",
+              "unsound mind"
+            ],
+            "legal_concepts": [
+              "right of private defence",
+              "act of unsound mind"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.751447319984436,
+              "bm25": 0.2819287726649161,
+              "semrank": 0.9722942113876343,
+              "semrank_pre_rerank": 0.9723
+            },
+            "query_scores": {
+              "original": 0.9722942113876343
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9723,
+              "query_concepts": [
+                "actus reus",
+                "mens rea",
+                "act of a person of unsound mind",
+                "incapable of knowing the nature of the act",
+                "section 22",
+                "explain",
+                "22",
+                "unsoundness"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "act of a person of unsound mind",
+                  "chunk_concept": "act of unsound mind",
+                  "source": "legal_concept",
+                  "similarity": 0.9723,
+                  "weighted_score": 0.9723
+                },
+                {
+                  "query_concept": "22",
+                  "chunk_concept": "right of private defence",
+                  "source": "legal_concept",
+                  "similarity": 0.8198,
+                  "weighted_score": 0.8198
+                },
+                {
+                  "query_concept": "unsoundness",
+                  "chunk_concept": "unsound mind",
+                  "source": "keyword",
+                  "similarity": 0.9437,
+                  "weighted_score": 0.7078
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "reason",
+                  "source": "keyword",
+                  "similarity": 0.933,
+                  "weighted_score": 0.6998
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "right",
+                  "source": "keyword",
+                  "similarity": 0.9205,
+                  "weighted_score": 0.6904
+                }
+              ],
+              "score": 0.9723,
+              "best_similarity": 0.9723,
+              "best_concept": "act of unsound mind",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9723,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.995014
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S63_V_VII",
+            "score": 0.404964,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 63,
+            "citation": "Section 63",
+            "text": "when she is unable to communicate consent.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\nwith her consent when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent;\nwhen she is unable to communicate consent.",
+            "keywords": [
+              "unable",
+              "communicate",
+              "consent",
+              "rape",
+              "offences",
+              "against",
+              "woman",
+              "child",
+              "intoxication"
+            ],
+            "legal_concepts": [
+              "actus reus",
+              "mens rea"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "actus reus",
+                "mens rea"
+              ]
+            },
+            "source_scores": {
+              "bm25": 0.28744858021916825,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "conditional_clause_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "actus reus",
+                "mens rea",
+                "act of a person of unsound mind",
+                "incapable of knowing the nature of the act",
+                "section 22",
+                "explain",
+                "22",
+                "unsoundness"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "actus reus",
+                  "chunk_concept": "actus reus",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "mens rea",
+                  "chunk_concept": "mens rea",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "communicate",
+                  "source": "keyword",
+                  "similarity": 0.9123,
+                  "weighted_score": 0.6842
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "against",
+                  "source": "keyword",
+                  "similarity": 0.905,
+                  "weighted_score": 0.6788
+                },
+                {
+                  "query_concept": "22",
+                  "chunk_concept": "consent",
+                  "source": "keyword",
+                  "similarity": 0.888,
+                  "weighted_score": 0.666
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "actus reus",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S63_V_VI",
+            "score": 0.403842,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 63,
+            "citation": "Section 63",
+            "text": "with or without her consent, when she is under eighteen years of age;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\nwith her consent when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent;\nwith or without her consent, when she is under eighteen years of age;",
+            "keywords": [
+              "consent",
+              "eighteen",
+              "years",
+              "rape",
+              "offences",
+              "against",
+              "woman",
+              "child",
+              "age"
+            ],
+            "legal_concepts": [
+              "actus reus",
+              "mens rea"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "actus reus",
+                "mens rea"
+              ]
+            },
+            "source_scores": {
+              "bm25": 0.26399419642984495,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "conditional_clause_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "actus reus",
+                "mens rea",
+                "act of a person of unsound mind",
+                "incapable of knowing the nature of the act",
+                "section 22",
+                "explain",
+                "22",
+                "unsoundness"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "actus reus",
+                  "chunk_concept": "actus reus",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "mens rea",
+                  "chunk_concept": "mens rea",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "22",
+                  "chunk_concept": "eighteen",
+                  "source": "keyword",
+                  "similarity": 0.9061,
+                  "weighted_score": 0.6796
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "against",
+                  "source": "keyword",
+                  "similarity": 0.905,
+                  "weighted_score": 0.6788
+                },
+                {
+                  "query_concept": "22",
+                  "chunk_concept": "consent",
+                  "source": "keyword",
+                  "similarity": 0.888,
+                  "weighted_score": 0.666
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "actus reus",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S23_BODY",
+            "score": 0.400202,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 23,
+            "citation": "Section 23",
+            "text": "Nothing is an offence which is done by a person who, at the time of doing it, is, by reason of intoxication, incapable of knowing the nature of the act, or that he is doing what is either wrong, or contrary to law; provided that the thing which intoxicated him was administered to him without his knowledge or against his will. Offence requiring a particular intent or knowledge committed by one who is intoxicated.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 23: Act of a person incapable of judgment by reason of intoxication caused against his will.\nNothing is an offence which is done by a person who, at the time of doing it, is, by reason of intoxication, incapable of knowing the nature of the act, or that he is doing what is either wrong, or contrary to law; provided that the thing which intoxicated him was administered to him without his knowledge or against his will. Offence requiring a particular intent or knowledge committed by one who is intoxicated.",
+            "keywords": [
+              "offence",
+              "doing",
+              "reason",
+              "intoxication",
+              "incapable",
+              "intoxicated",
+              "knowledge",
+              "against",
+              "nothing",
+              "done"
+            ],
+            "legal_concepts": [
+              "actus reus",
+              "mens rea"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "actus reus",
+                "mens rea"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "actus reus",
+                "mens rea",
+                "act of a person of unsound mind",
+                "incapable of knowing the nature of the act",
+                "section 22",
+                "explain",
+                "22",
+                "unsoundness"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "actus reus",
+                  "chunk_concept": "actus reus",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "mens rea",
+                  "chunk_concept": "mens rea",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "reason",
+                  "source": "keyword",
+                  "similarity": 0.933,
+                  "weighted_score": 0.6998
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "knowledge",
+                  "source": "keyword",
+                  "similarity": 0.924,
+                  "weighted_score": 0.693
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "doing",
+                  "source": "keyword",
+                  "similarity": 0.9208,
+                  "weighted_score": 0.6906
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "actus reus",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S3_N6",
+            "score": 0.400069,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 3,
+            "citation": "Section 3",
+            "text": "Whenever an act, which is criminal only by reason of its being done with a criminal knowledge or intention, is done by several persons, each of such persons who joins in the act with such knowledge or intention is liable for the act in the same manner as if the act were done by him alone with that knowledge or intention.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 3: General explanations.\nWhenever an act, which is criminal only by reason of its being done with a criminal knowledge or intention, is done by several persons, each of such persons who joins in the act with such knowledge or intention is liable for the act in the same manner as if the act were done by him alone with that knowledge or intention.",
+            "keywords": [
+              "done",
+              "knowledge",
+              "intention",
+              "criminal",
+              "whenever",
+              "only",
+              "reason",
+              "several",
+              "each",
+              "joins",
+              "criminal liability",
+              "joint action"
+            ],
+            "legal_concepts": [
+              "actus reus",
+              "mens rea"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "actus reus",
+                "mens rea"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "actus reus",
+                "mens rea",
+                "act of a person of unsound mind",
+                "incapable of knowing the nature of the act",
+                "section 22",
+                "explain",
+                "22",
+                "unsoundness"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "actus reus",
+                  "chunk_concept": "actus reus",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "mens rea",
+                  "chunk_concept": "mens rea",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "reason",
+                  "source": "keyword",
+                  "similarity": 0.933,
+                  "weighted_score": 0.6998
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "knowledge",
+                  "source": "keyword",
+                  "similarity": 0.924,
+                  "weighted_score": 0.693
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "several",
+                  "source": "keyword",
+                  "similarity": 0.9179,
+                  "weighted_score": 0.6884
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "actus reus",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S19_BODY",
+            "score": 0.400029,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 19,
+            "citation": "Section 19",
+            "text": "Nothing is an offence merely by reason of its being done with the knowledge that it is likely to cause harm, if it be done without any criminal intention to cause harm, and in good faith for the purpose of preventing or avoiding other harm to person or property.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 19: Act likely to cause harm, but done without criminal intent, and to prevent other harm.\nNothing is an offence merely by reason of its being done with the knowledge that it is likely to cause harm, if it be done without any criminal intention to cause harm, and in good faith for the purpose of preventing or avoiding other harm to person or property.",
+            "keywords": [
+              "harm",
+              "done",
+              "cause",
+              "likely",
+              "criminal",
+              "nothing",
+              "offence",
+              "merely",
+              "reason",
+              "knowledge",
+              "harm prevention",
+              "good faith"
+            ],
+            "legal_concepts": [
+              "actus reus",
+              "mens rea"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "actus reus",
+                "mens rea"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "actus reus",
+                "mens rea",
+                "act of a person of unsound mind",
+                "incapable of knowing the nature of the act",
+                "section 22",
+                "explain",
+                "22",
+                "unsoundness"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "actus reus",
+                  "chunk_concept": "actus reus",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "mens rea",
+                  "chunk_concept": "mens rea",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "reason",
+                  "source": "keyword",
+                  "similarity": 0.933,
+                  "weighted_score": 0.6998
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "knowledge",
+                  "source": "keyword",
+                  "similarity": 0.924,
+                  "weighted_score": 0.693
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "cause",
+                  "source": "keyword",
+                  "similarity": 0.905,
+                  "weighted_score": 0.6788
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "actus reus",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S354_BODY",
+            "score": 0.400022,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+            "section_number": 354,
+            "citation": "Section 354",
+            "text": "Whoever voluntarily causes or attempts to cause any person to do anything which that person is not legally bound to do, or to omit to do anything which he is legally entitled to do, by inducing or attempting to induce that person to believe that he or any person in whom he is interested will become or will be rendered by some act of the offender an object of Divine displeasure if he does not do the thing which it is the object of the offender to cause him to do, or if he does the thing which it is the object of the offender to cause him to omit, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 354: Act caused by inducing person to believe that he will be rendered an object of Divine\nWhoever voluntarily causes or attempts to cause any person to do anything which that person is not legally bound to do, or to omit to do anything which he is legally entitled to do, by inducing or attempting to induce that person to believe that he or any person in whom he is interested will become or will be rendered by some act of the offender an object of Divine displeasure if he does not do the thing which it is the object of the offender to cause him to do, or if he does the thing which it is the object of the offender to cause him to omit, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both.",
+            "keywords": [
+              "object",
+              "cause",
+              "offender",
+              "anything",
+              "legally",
+              "omit",
+              "inducing",
+              "believe",
+              "rendered",
+              "divine",
+              "divine displeasure",
+              "inducement"
+            ],
+            "legal_concepts": [
+              "actus reus",
+              "mens rea"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "actus reus",
+                "mens rea"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "actus reus",
+                "mens rea",
+                "act of a person of unsound mind",
+                "incapable of knowing the nature of the act",
+                "section 22",
+                "explain",
+                "22",
+                "unsoundness"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "actus reus",
+                  "chunk_concept": "actus reus",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "mens rea",
+                  "chunk_concept": "mens rea",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "legally",
+                  "source": "keyword",
+                  "similarity": 0.9411,
+                  "weighted_score": 0.7058
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "cause",
+                  "source": "keyword",
+                  "similarity": 0.905,
+                  "weighted_score": 0.6788
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "object",
+                  "source": "keyword",
+                  "similarity": 0.8998,
+                  "weighted_score": 0.6749
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "actus reus",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S3_N8_ILL1_C",
+            "score": 0.400021,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 3,
+            "citation": "Section 3",
+            "text": "A, a jailor, has the charge of Z, a prisoner. A, intending to cause Z’s death, illegally omits to supply Z with food; in consequence of which Z is much reduced in strength, but the starvation is not sufficient to cause his death. A is dismissed from his office, and B succeeds him. B, without collusion or cooperation with A, illegally omits to supply Z with food, knowing that he is likely thereby to cause Z’s death. Z dies of hunger. B is guilty of murder, but, as A did not cooperate with B. A is guilty only of an attempt to commit murder.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 3: General explanations.\nWhen an offence is committed by means of several acts, whoever intentionally cooperates in the commission of that offence by doing any one of those acts, either singly or jointly with any other person, commits that offence.\nA, a jailor, has the charge of Z, a prisoner. A, intending to cause Z’s death, illegally omits to supply Z with food; in consequence of which Z is much reduced in strength, but the starvation is not sufficient to cause his death. A is dismissed from his office, and B succeeds him. B, without collusion or cooperation with A, illegally omits to supply Z with food, knowing that he is likely thereby to cause Z’s death. Z dies of hunger. B is guilty of murder, but, as A did not cooperate with B. A is guilty only of an attempt to commit murder.",
+            "keywords": [
+              "cause",
+              "death",
+              "illegally",
+              "omits",
+              "supply",
+              "food",
+              "guilty",
+              "murder",
+              "jailor",
+              "charge",
+              "attempted murder",
+              "prisoner"
+            ],
+            "legal_concepts": [
+              "actus reus",
+              "mens rea",
+              "causal link"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "actus reus",
+                "mens rea"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "actus reus",
+                "mens rea",
+                "act of a person of unsound mind",
+                "incapable of knowing the nature of the act",
+                "section 22",
+                "explain",
+                "22",
+                "unsoundness"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "actus reus",
+                  "chunk_concept": "actus reus",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "mens rea",
+                  "chunk_concept": "mens rea",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "causal link",
+                  "source": "legal_concept",
+                  "similarity": 0.8828,
+                  "weighted_score": 0.8828
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "cause",
+                  "source": "keyword",
+                  "similarity": 0.905,
+                  "weighted_score": 0.6788
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "omits",
+                  "source": "keyword",
+                  "similarity": 0.8703,
+                  "weighted_score": 0.6527
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "actus reus",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S25_BODY",
+            "score": 0.400016,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 25,
+            "citation": "Section 25",
+            "text": "Nothing which is not intended to cause death, or grievous hurt, and which is not known by the doer to be likely to cause death or grievous hurt, is an offence by reason of any harm which it may cause, or be intended by the doer to cause, to any person, above eighteen years of age, who has given consent, whether express or implied, to suffer that harm; or by reason of any harm which it may be known by the doer to be likely to cause to any such person who has consented to take the risk of that harm.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 25: Act not intended and not known to be likely to cause death or grievous hurt, done by consent.\nNothing which is not intended to cause death, or grievous hurt, and which is not known by the doer to be likely to cause death or grievous hurt, is an offence by reason of any harm which it may cause, or be intended by the doer to cause, to any person, above eighteen years of age, who has given consent, whether express or implied, to suffer that harm; or by reason of any harm which it may be known by the doer to be likely to cause to any such person who has consented to take the risk of that harm.",
+            "keywords": [
+              "cause",
+              "harm",
+              "intended",
+              "death",
+              "grievous",
+              "hurt",
+              "known",
+              "doer",
+              "likely",
+              "reason",
+              "consent",
+              "offence"
+            ],
+            "legal_concepts": [
+              "actus reus",
+              "mens rea"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "actus reus",
+                "mens rea"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "actus reus",
+                "mens rea",
+                "act of a person of unsound mind",
+                "incapable of knowing the nature of the act",
+                "section 22",
+                "explain",
+                "22",
+                "unsoundness"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "actus reus",
+                  "chunk_concept": "actus reus",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "mens rea",
+                  "chunk_concept": "mens rea",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "reason",
+                  "source": "keyword",
+                  "similarity": 0.933,
+                  "weighted_score": 0.6998
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "known",
+                  "source": "keyword",
+                  "similarity": 0.9071,
+                  "weighted_score": 0.6803
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "intended",
+                  "source": "keyword",
+                  "similarity": 0.9068,
+                  "weighted_score": 0.6801
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "actus reus",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S22_BODY",
+          "score": 1.0,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 22,
+          "citation": "Section 22",
+          "text": "Nothing is an offence which is done by a person who, at the time of doing it, by reason of unsoundness of mind, is incapable of knowing the nature of the act, or that he is doing what is either wrong or contrary to law. Act of a person incapable of judgment by reason of intoxication caused against his will.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 22: Act of a person of unsound mind.\nNothing is an offence which is done by a person who, at the time of doing it, by reason of unsoundness of mind, is incapable of knowing the nature of the act, or that he is doing what is either wrong or contrary to law. Act of a person incapable of judgment by reason of intoxication caused against his will.",
+          "keywords": [
+            "doing",
+            "reason",
+            "mind",
+            "incapable",
+            "nothing",
+            "offence",
+            "done",
+            "time",
+            "unsoundness",
+            "knowing",
+            "unsoundness of mind",
+            "incapable of judgment"
+          ],
+          "legal_concepts": [
+            "act of a person of unsound mind",
+            "incapable of knowing the nature of the act"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "act of a person of unsound mind",
+                "chunk_concept": "act of a person of unsound mind",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "incapable of knowing the nature of the act",
+                "chunk_concept": "incapable of knowing the nature of the act",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "unsoundness",
+                "chunk_concept": "unsoundness",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "unsoundness",
+                "chunk_concept": "unsoundness of mind",
+                "source": "keyword",
+                "similarity": 0.9493,
+                "weighted_score": 0.712
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "act of a person of unsound mind",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S63_V_VII",
+          "score": 0.512071,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 63,
+          "citation": "Section 63",
+          "text": "when she is unable to communicate consent.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\nwith her consent when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent;\nwhen she is unable to communicate consent.",
+          "keywords": [
+            "unable",
+            "communicate",
+            "consent",
+            "rape",
+            "offences",
+            "against",
+            "woman",
+            "child",
+            "intoxication"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.28744858021916825,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40496444636561546
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "conditional_clause_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "communicate",
+                "source": "keyword",
+                "similarity": 0.9123,
+                "weighted_score": 0.6842
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "against",
+                "source": "keyword",
+                "similarity": 0.905,
+                "weighted_score": 0.6788
+              },
+              {
+                "query_concept": "22",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 0.888,
+                "weighted_score": 0.666
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.404964,
+            "score_after_pre_rerank": 0.512071
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S63_V_VI",
+          "score": 0.51115,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 63,
+          "citation": "Section 63",
+          "text": "with or without her consent, when she is under eighteen years of age;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\nwith her consent when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent;\nwith or without her consent, when she is under eighteen years of age;",
+          "keywords": [
+            "consent",
+            "eighteen",
+            "years",
+            "rape",
+            "offences",
+            "against",
+            "woman",
+            "child",
+            "age"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.26399419642984495,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4038415970207188
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "conditional_clause_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "22",
+                "chunk_concept": "eighteen",
+                "source": "keyword",
+                "similarity": 0.9061,
+                "weighted_score": 0.6796
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "against",
+                "source": "keyword",
+                "similarity": 0.905,
+                "weighted_score": 0.6788
+              },
+              {
+                "query_concept": "22",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 0.888,
+                "weighted_score": 0.666
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.403842,
+            "score_after_pre_rerank": 0.51115
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S36_BODY",
+          "score": 0.508353,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 36,
+          "citation": "Section 36",
+          "text": "When an act, which would otherwise be a certain offence, is not that offence, by reason of the youth, the want of maturity of understanding, the unsoundness of mind or the intoxication of the person doing that act, or by reason of any misconception on the part of that person, every person has the same right of private defence against that act which he would have if the act were that offence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 36: Right of private defence against act of a person of unsound mind, etc.\nWhen an act, which would otherwise be a certain offence, is not that offence, by reason of the youth, the want of maturity of understanding, the unsoundness of mind or the intoxication of the person doing that act, or by reason of any misconception on the part of that person, every person has the same right of private defence against that act which he would have if the act were that offence.",
+          "keywords": [
+            "offence",
+            "reason",
+            "mind",
+            "right",
+            "private",
+            "defence",
+            "against",
+            "certain",
+            "youth",
+            "want",
+            "private defence",
+            "unsound mind"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "act of unsound mind"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.751447319984436,
+            "original:bm25": 0.2819287726649161,
+            "original:semrank": 0.9722942113876343,
+            "original:semrank_pre_rerank": 0.9723,
+            "semrank_pre_rerank": 0.9723
+          },
+          "query_scores": {
+            "original": 0.40651156366860897
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9723,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "act of a person of unsound mind",
+                "chunk_concept": "act of unsound mind",
+                "source": "legal_concept",
+                "similarity": 0.9723,
+                "weighted_score": 0.9723
+              },
+              {
+                "query_concept": "22",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 0.8198,
+                "weighted_score": 0.8198
+              },
+              {
+                "query_concept": "unsoundness",
+                "chunk_concept": "unsound mind",
+                "source": "keyword",
+                "similarity": 0.9437,
+                "weighted_score": 0.7078
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "right",
+                "source": "keyword",
+                "similarity": 0.9205,
+                "weighted_score": 0.6904
+              }
+            ],
+            "score": 0.9723,
+            "best_similarity": 0.9723,
+            "best_concept": "act of unsound mind",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9723,
+            "score_before_pre_rerank": 0.406512,
+            "score_after_pre_rerank": 0.508353
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S23_BODY",
+          "score": 0.508165,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 23,
+          "citation": "Section 23",
+          "text": "Nothing is an offence which is done by a person who, at the time of doing it, is, by reason of intoxication, incapable of knowing the nature of the act, or that he is doing what is either wrong, or contrary to law; provided that the thing which intoxicated him was administered to him without his knowledge or against his will. Offence requiring a particular intent or knowledge committed by one who is intoxicated.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 23: Act of a person incapable of judgment by reason of intoxication caused against his will.\nNothing is an offence which is done by a person who, at the time of doing it, is, by reason of intoxication, incapable of knowing the nature of the act, or that he is doing what is either wrong, or contrary to law; provided that the thing which intoxicated him was administered to him without his knowledge or against his will. Offence requiring a particular intent or knowledge committed by one who is intoxicated.",
+          "keywords": [
+            "offence",
+            "doing",
+            "reason",
+            "intoxication",
+            "incapable",
+            "intoxicated",
+            "knowledge",
+            "against",
+            "nothing",
+            "done"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40020170206340017
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "knowledge",
+                "source": "keyword",
+                "similarity": 0.924,
+                "weighted_score": 0.693
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "doing",
+                "source": "keyword",
+                "similarity": 0.9208,
+                "weighted_score": 0.6906
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400202,
+            "score_after_pre_rerank": 0.508165
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S3_N6",
+          "score": 0.508056,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 3,
+          "citation": "Section 3",
+          "text": "Whenever an act, which is criminal only by reason of its being done with a criminal knowledge or intention, is done by several persons, each of such persons who joins in the act with such knowledge or intention is liable for the act in the same manner as if the act were done by him alone with that knowledge or intention.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 3: General explanations.\nWhenever an act, which is criminal only by reason of its being done with a criminal knowledge or intention, is done by several persons, each of such persons who joins in the act with such knowledge or intention is liable for the act in the same manner as if the act were done by him alone with that knowledge or intention.",
+          "keywords": [
+            "done",
+            "knowledge",
+            "intention",
+            "criminal",
+            "whenever",
+            "only",
+            "reason",
+            "several",
+            "each",
+            "joins",
+            "criminal liability",
+            "joint action"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000686487765671
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "knowledge",
+                "source": "keyword",
+                "similarity": 0.924,
+                "weighted_score": 0.693
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "several",
+                "source": "keyword",
+                "similarity": 0.9179,
+                "weighted_score": 0.6884
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400069,
+            "score_after_pre_rerank": 0.508056
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S19_BODY",
+          "score": 0.508024,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 19,
+          "citation": "Section 19",
+          "text": "Nothing is an offence merely by reason of its being done with the knowledge that it is likely to cause harm, if it be done without any criminal intention to cause harm, and in good faith for the purpose of preventing or avoiding other harm to person or property.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 19: Act likely to cause harm, but done without criminal intent, and to prevent other harm.\nNothing is an offence merely by reason of its being done with the knowledge that it is likely to cause harm, if it be done without any criminal intention to cause harm, and in good faith for the purpose of preventing or avoiding other harm to person or property.",
+          "keywords": [
+            "harm",
+            "done",
+            "cause",
+            "likely",
+            "criminal",
+            "nothing",
+            "offence",
+            "merely",
+            "reason",
+            "knowledge",
+            "harm prevention",
+            "good faith"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000287288018636
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "knowledge",
+                "source": "keyword",
+                "similarity": 0.924,
+                "weighted_score": 0.693
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.905,
+                "weighted_score": 0.6788
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400029,
+            "score_after_pre_rerank": 0.508024
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S354_BODY",
+          "score": 0.508018,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 354,
+          "citation": "Section 354",
+          "text": "Whoever voluntarily causes or attempts to cause any person to do anything which that person is not legally bound to do, or to omit to do anything which he is legally entitled to do, by inducing or attempting to induce that person to believe that he or any person in whom he is interested will become or will be rendered by some act of the offender an object of Divine displeasure if he does not do the thing which it is the object of the offender to cause him to do, or if he does the thing which it is the object of the offender to cause him to omit, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 354: Act caused by inducing person to believe that he will be rendered an object of Divine\nWhoever voluntarily causes or attempts to cause any person to do anything which that person is not legally bound to do, or to omit to do anything which he is legally entitled to do, by inducing or attempting to induce that person to believe that he or any person in whom he is interested will become or will be rendered by some act of the offender an object of Divine displeasure if he does not do the thing which it is the object of the offender to cause him to do, or if he does the thing which it is the object of the offender to cause him to omit, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both.",
+          "keywords": [
+            "object",
+            "cause",
+            "offender",
+            "anything",
+            "legally",
+            "omit",
+            "inducing",
+            "believe",
+            "rendered",
+            "divine",
+            "divine displeasure",
+            "inducement"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40002173851013045
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.9411,
+                "weighted_score": 0.7058
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.905,
+                "weighted_score": 0.6788
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "object",
+                "source": "keyword",
+                "similarity": 0.8998,
+                "weighted_score": 0.6749
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400022,
+            "score_after_pre_rerank": 0.508018
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S3_N8_ILL1_C",
+          "score": 0.508017,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 3,
+          "citation": "Section 3",
+          "text": "A, a jailor, has the charge of Z, a prisoner. A, intending to cause Z’s death, illegally omits to supply Z with food; in consequence of which Z is much reduced in strength, but the starvation is not sufficient to cause his death. A is dismissed from his office, and B succeeds him. B, without collusion or cooperation with A, illegally omits to supply Z with food, knowing that he is likely thereby to cause Z’s death. Z dies of hunger. B is guilty of murder, but, as A did not cooperate with B. A is guilty only of an attempt to commit murder.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 3: General explanations.\nWhen an offence is committed by means of several acts, whoever intentionally cooperates in the commission of that offence by doing any one of those acts, either singly or jointly with any other person, commits that offence.\nA, a jailor, has the charge of Z, a prisoner. A, intending to cause Z’s death, illegally omits to supply Z with food; in consequence of which Z is much reduced in strength, but the starvation is not sufficient to cause his death. A is dismissed from his office, and B succeeds him. B, without collusion or cooperation with A, illegally omits to supply Z with food, knowing that he is likely thereby to cause Z’s death. Z dies of hunger. B is guilty of murder, but, as A did not cooperate with B. A is guilty only of an attempt to commit murder.",
+          "keywords": [
+            "cause",
+            "death",
+            "illegally",
+            "omits",
+            "supply",
+            "food",
+            "guilty",
+            "murder",
+            "jailor",
+            "charge",
+            "attempted murder",
+            "prisoner"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea",
+            "causal link"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000205617657318
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "causal link",
+                "source": "legal_concept",
+                "similarity": 0.8828,
+                "weighted_score": 0.8828
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.905,
+                "weighted_score": 0.6788
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "omits",
+                "source": "keyword",
+                "similarity": 0.8703,
+                "weighted_score": 0.6527
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400021,
+            "score_after_pre_rerank": 0.508017
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S25_BODY",
+          "score": 0.508013,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 25,
+          "citation": "Section 25",
+          "text": "Nothing which is not intended to cause death, or grievous hurt, and which is not known by the doer to be likely to cause death or grievous hurt, is an offence by reason of any harm which it may cause, or be intended by the doer to cause, to any person, above eighteen years of age, who has given consent, whether express or implied, to suffer that harm; or by reason of any harm which it may be known by the doer to be likely to cause to any such person who has consented to take the risk of that harm.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 25: Act not intended and not known to be likely to cause death or grievous hurt, done by consent.\nNothing which is not intended to cause death, or grievous hurt, and which is not known by the doer to be likely to cause death or grievous hurt, is an offence by reason of any harm which it may cause, or be intended by the doer to cause, to any person, above eighteen years of age, who has given consent, whether express or implied, to suffer that harm; or by reason of any harm which it may be known by the doer to be likely to cause to any such person who has consented to take the risk of that harm.",
+          "keywords": [
+            "cause",
+            "harm",
+            "intended",
+            "death",
+            "grievous",
+            "hurt",
+            "known",
+            "doer",
+            "likely",
+            "reason",
+            "consent",
+            "offence"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.400015600530933
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "known",
+                "source": "keyword",
+                "similarity": 0.9071,
+                "weighted_score": 0.6803
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "intended",
+                "source": "keyword",
+                "similarity": 0.9068,
+                "weighted_score": 0.6801
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400016,
+            "score_after_pre_rerank": 0.508013
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S22_BODY",
+          "score": 1.0,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 22,
+          "citation": "Section 22",
+          "text": "Nothing is an offence which is done by a person who, at the time of doing it, by reason of unsoundness of mind, is incapable of knowing the nature of the act, or that he is doing what is either wrong or contrary to law. Act of a person incapable of judgment by reason of intoxication caused against his will.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 22: Act of a person of unsound mind.\nNothing is an offence which is done by a person who, at the time of doing it, by reason of unsoundness of mind, is incapable of knowing the nature of the act, or that he is doing what is either wrong or contrary to law. Act of a person incapable of judgment by reason of intoxication caused against his will.",
+          "keywords": [
+            "doing",
+            "reason",
+            "mind",
+            "incapable",
+            "nothing",
+            "offence",
+            "done",
+            "time",
+            "unsoundness",
+            "knowing",
+            "unsoundness of mind",
+            "incapable of judgment"
+          ],
+          "legal_concepts": [
+            "act of a person of unsound mind",
+            "incapable of knowing the nature of the act"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "act of a person of unsound mind",
+                "chunk_concept": "act of a person of unsound mind",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "incapable of knowing the nature of the act",
+                "chunk_concept": "incapable of knowing the nature of the act",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "unsoundness",
+                "chunk_concept": "unsoundness",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "unsoundness",
+                "chunk_concept": "unsoundness of mind",
+                "source": "keyword",
+                "similarity": 0.9493,
+                "weighted_score": 0.712
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "act of a person of unsound mind",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S36_BODY",
+          "score": 0.211832,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 36,
+          "citation": "Section 36",
+          "text": "When an act, which would otherwise be a certain offence, is not that offence, by reason of the youth, the want of maturity of understanding, the unsoundness of mind or the intoxication of the person doing that act, or by reason of any misconception on the part of that person, every person has the same right of private defence against that act which he would have if the act were that offence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 36: Right of private defence against act of a person of unsound mind, etc.\nWhen an act, which would otherwise be a certain offence, is not that offence, by reason of the youth, the want of maturity of understanding, the unsoundness of mind or the intoxication of the person doing that act, or by reason of any misconception on the part of that person, every person has the same right of private defence against that act which he would have if the act were that offence.",
+          "keywords": [
+            "offence",
+            "reason",
+            "mind",
+            "right",
+            "private",
+            "defence",
+            "against",
+            "certain",
+            "youth",
+            "want",
+            "private defence",
+            "unsound mind"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "act of unsound mind"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.751447319984436,
+            "original:bm25": 0.2819287726649161,
+            "original:semrank": 0.9722942113876343,
+            "original:semrank_pre_rerank": 0.9723,
+            "semrank_pre_rerank": 0.9723
+          },
+          "query_scores": {
+            "original": 0.40651156366860897
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9723,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "act of a person of unsound mind",
+                "chunk_concept": "act of unsound mind",
+                "source": "legal_concept",
+                "similarity": 0.9723,
+                "weighted_score": 0.9723
+              },
+              {
+                "query_concept": "22",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 0.8198,
+                "weighted_score": 0.8198
+              },
+              {
+                "query_concept": "unsoundness",
+                "chunk_concept": "unsound mind",
+                "source": "keyword",
+                "similarity": 0.9437,
+                "weighted_score": 0.7078
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "right",
+                "source": "keyword",
+                "similarity": 0.9205,
+                "weighted_score": 0.6904
+              }
+            ],
+            "score": 0.9723,
+            "best_similarity": 0.9723,
+            "best_concept": "act of unsound mind",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9723,
+            "score_before_pre_rerank": 0.406512,
+            "score_after_pre_rerank": 0.508353
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S63_V_VII",
+          "score": 0.209777,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 63,
+          "citation": "Section 63",
+          "text": "when she is unable to communicate consent.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\nwith her consent when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent;\nwhen she is unable to communicate consent.",
+          "keywords": [
+            "unable",
+            "communicate",
+            "consent",
+            "rape",
+            "offences",
+            "against",
+            "woman",
+            "child",
+            "intoxication"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.28744858021916825,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40496444636561546
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "conditional_clause_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "communicate",
+                "source": "keyword",
+                "similarity": 0.9123,
+                "weighted_score": 0.6842
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "against",
+                "source": "keyword",
+                "similarity": 0.905,
+                "weighted_score": 0.6788
+              },
+              {
+                "query_concept": "22",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 0.888,
+                "weighted_score": 0.666
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.404964,
+            "score_after_pre_rerank": 0.512071
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S63_V_VI",
+          "score": 0.208286,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 63,
+          "citation": "Section 63",
+          "text": "with or without her consent, when she is under eighteen years of age;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\nwith her consent when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent;\nwith or without her consent, when she is under eighteen years of age;",
+          "keywords": [
+            "consent",
+            "eighteen",
+            "years",
+            "rape",
+            "offences",
+            "against",
+            "woman",
+            "child",
+            "age"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.26399419642984495,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4038415970207188
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "conditional_clause_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "22",
+                "chunk_concept": "eighteen",
+                "source": "keyword",
+                "similarity": 0.9061,
+                "weighted_score": 0.6796
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "against",
+                "source": "keyword",
+                "similarity": 0.905,
+                "weighted_score": 0.6788
+              },
+              {
+                "query_concept": "22",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 0.888,
+                "weighted_score": 0.666
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.403842,
+            "score_after_pre_rerank": 0.51115
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S23_BODY",
+          "score": 0.203452,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 23,
+          "citation": "Section 23",
+          "text": "Nothing is an offence which is done by a person who, at the time of doing it, is, by reason of intoxication, incapable of knowing the nature of the act, or that he is doing what is either wrong, or contrary to law; provided that the thing which intoxicated him was administered to him without his knowledge or against his will. Offence requiring a particular intent or knowledge committed by one who is intoxicated.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 23: Act of a person incapable of judgment by reason of intoxication caused against his will.\nNothing is an offence which is done by a person who, at the time of doing it, is, by reason of intoxication, incapable of knowing the nature of the act, or that he is doing what is either wrong, or contrary to law; provided that the thing which intoxicated him was administered to him without his knowledge or against his will. Offence requiring a particular intent or knowledge committed by one who is intoxicated.",
+          "keywords": [
+            "offence",
+            "doing",
+            "reason",
+            "intoxication",
+            "incapable",
+            "intoxicated",
+            "knowledge",
+            "against",
+            "nothing",
+            "done"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40020170206340017
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "knowledge",
+                "source": "keyword",
+                "similarity": 0.924,
+                "weighted_score": 0.693
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "doing",
+                "source": "keyword",
+                "similarity": 0.9208,
+                "weighted_score": 0.6906
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400202,
+            "score_after_pre_rerank": 0.508165
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S3_N6",
+          "score": 0.203276,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 3,
+          "citation": "Section 3",
+          "text": "Whenever an act, which is criminal only by reason of its being done with a criminal knowledge or intention, is done by several persons, each of such persons who joins in the act with such knowledge or intention is liable for the act in the same manner as if the act were done by him alone with that knowledge or intention.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 3: General explanations.\nWhenever an act, which is criminal only by reason of its being done with a criminal knowledge or intention, is done by several persons, each of such persons who joins in the act with such knowledge or intention is liable for the act in the same manner as if the act were done by him alone with that knowledge or intention.",
+          "keywords": [
+            "done",
+            "knowledge",
+            "intention",
+            "criminal",
+            "whenever",
+            "only",
+            "reason",
+            "several",
+            "each",
+            "joins",
+            "criminal liability",
+            "joint action"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000686487765671
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "knowledge",
+                "source": "keyword",
+                "similarity": 0.924,
+                "weighted_score": 0.693
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "several",
+                "source": "keyword",
+                "similarity": 0.9179,
+                "weighted_score": 0.6884
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400069,
+            "score_after_pre_rerank": 0.508056
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S19_BODY",
+          "score": 0.203223,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 19,
+          "citation": "Section 19",
+          "text": "Nothing is an offence merely by reason of its being done with the knowledge that it is likely to cause harm, if it be done without any criminal intention to cause harm, and in good faith for the purpose of preventing or avoiding other harm to person or property.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 19: Act likely to cause harm, but done without criminal intent, and to prevent other harm.\nNothing is an offence merely by reason of its being done with the knowledge that it is likely to cause harm, if it be done without any criminal intention to cause harm, and in good faith for the purpose of preventing or avoiding other harm to person or property.",
+          "keywords": [
+            "harm",
+            "done",
+            "cause",
+            "likely",
+            "criminal",
+            "nothing",
+            "offence",
+            "merely",
+            "reason",
+            "knowledge",
+            "harm prevention",
+            "good faith"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000287288018636
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "knowledge",
+                "source": "keyword",
+                "similarity": 0.924,
+                "weighted_score": 0.693
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.905,
+                "weighted_score": 0.6788
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400029,
+            "score_after_pre_rerank": 0.508024
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S354_BODY",
+          "score": 0.203213,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 354,
+          "citation": "Section 354",
+          "text": "Whoever voluntarily causes or attempts to cause any person to do anything which that person is not legally bound to do, or to omit to do anything which he is legally entitled to do, by inducing or attempting to induce that person to believe that he or any person in whom he is interested will become or will be rendered by some act of the offender an object of Divine displeasure if he does not do the thing which it is the object of the offender to cause him to do, or if he does the thing which it is the object of the offender to cause him to omit, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 354: Act caused by inducing person to believe that he will be rendered an object of Divine\nWhoever voluntarily causes or attempts to cause any person to do anything which that person is not legally bound to do, or to omit to do anything which he is legally entitled to do, by inducing or attempting to induce that person to believe that he or any person in whom he is interested will become or will be rendered by some act of the offender an object of Divine displeasure if he does not do the thing which it is the object of the offender to cause him to do, or if he does the thing which it is the object of the offender to cause him to omit, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both.",
+          "keywords": [
+            "object",
+            "cause",
+            "offender",
+            "anything",
+            "legally",
+            "omit",
+            "inducing",
+            "believe",
+            "rendered",
+            "divine",
+            "divine displeasure",
+            "inducement"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40002173851013045
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.9411,
+                "weighted_score": 0.7058
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.905,
+                "weighted_score": 0.6788
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "object",
+                "source": "keyword",
+                "similarity": 0.8998,
+                "weighted_score": 0.6749
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400022,
+            "score_after_pre_rerank": 0.508018
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S3_N8_ILL1_C",
+          "score": 0.203212,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 3,
+          "citation": "Section 3",
+          "text": "A, a jailor, has the charge of Z, a prisoner. A, intending to cause Z’s death, illegally omits to supply Z with food; in consequence of which Z is much reduced in strength, but the starvation is not sufficient to cause his death. A is dismissed from his office, and B succeeds him. B, without collusion or cooperation with A, illegally omits to supply Z with food, knowing that he is likely thereby to cause Z’s death. Z dies of hunger. B is guilty of murder, but, as A did not cooperate with B. A is guilty only of an attempt to commit murder.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 3: General explanations.\nWhen an offence is committed by means of several acts, whoever intentionally cooperates in the commission of that offence by doing any one of those acts, either singly or jointly with any other person, commits that offence.\nA, a jailor, has the charge of Z, a prisoner. A, intending to cause Z’s death, illegally omits to supply Z with food; in consequence of which Z is much reduced in strength, but the starvation is not sufficient to cause his death. A is dismissed from his office, and B succeeds him. B, without collusion or cooperation with A, illegally omits to supply Z with food, knowing that he is likely thereby to cause Z’s death. Z dies of hunger. B is guilty of murder, but, as A did not cooperate with B. A is guilty only of an attempt to commit murder.",
+          "keywords": [
+            "cause",
+            "death",
+            "illegally",
+            "omits",
+            "supply",
+            "food",
+            "guilty",
+            "murder",
+            "jailor",
+            "charge",
+            "attempted murder",
+            "prisoner"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea",
+            "causal link"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000205617657318
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "causal link",
+                "source": "legal_concept",
+                "similarity": 0.8828,
+                "weighted_score": 0.8828
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.905,
+                "weighted_score": 0.6788
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "omits",
+                "source": "keyword",
+                "similarity": 0.8703,
+                "weighted_score": 0.6527
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400021,
+            "score_after_pre_rerank": 0.508017
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S25_BODY",
+          "score": 0.203205,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 25,
+          "citation": "Section 25",
+          "text": "Nothing which is not intended to cause death, or grievous hurt, and which is not known by the doer to be likely to cause death or grievous hurt, is an offence by reason of any harm which it may cause, or be intended by the doer to cause, to any person, above eighteen years of age, who has given consent, whether express or implied, to suffer that harm; or by reason of any harm which it may be known by the doer to be likely to cause to any such person who has consented to take the risk of that harm.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 25: Act not intended and not known to be likely to cause death or grievous hurt, done by consent.\nNothing which is not intended to cause death, or grievous hurt, and which is not known by the doer to be likely to cause death or grievous hurt, is an offence by reason of any harm which it may cause, or be intended by the doer to cause, to any person, above eighteen years of age, who has given consent, whether express or implied, to suffer that harm; or by reason of any harm which it may be known by the doer to be likely to cause to any such person who has consented to take the risk of that harm.",
+          "keywords": [
+            "cause",
+            "harm",
+            "intended",
+            "death",
+            "grievous",
+            "hurt",
+            "known",
+            "doer",
+            "likely",
+            "reason",
+            "consent",
+            "offence"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "actus reus",
+              "mens rea"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.400015600530933
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "actus reus",
+              "mens rea",
+              "act of a person of unsound mind",
+              "incapable of knowing the nature of the act",
+              "section 22",
+              "explain",
+              "22",
+              "unsoundness"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "actus reus",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "mens rea",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "known",
+                "source": "keyword",
+                "similarity": 0.9071,
+                "weighted_score": 0.6803
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "intended",
+                "source": "keyword",
+                "similarity": 0.9068,
+                "weighted_score": 0.6801
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400016,
+            "score_after_pre_rerank": 0.508013
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

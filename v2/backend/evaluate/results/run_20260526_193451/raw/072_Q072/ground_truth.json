@@ -1,0 +1,50 @@
+{
+  "query_id": "Q072",
+  "query": "When does private defence start and when does it end?",
+  "query_type": "multi_hop",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "40",
+      "subsection": null,
+      "label": "Section 40",
+      "role": "commencement and continuance of right of private defence of body",
+      "required": true,
+      "match_level": "section"
+    },
+    {
+      "act": "BNS",
+      "section": "43",
+      "subsection": null,
+      "label": "Section 43",
+      "role": "commencement and continuance of right of private defence of property",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "37",
+      "label": "Section 37",
+      "reason": "restrictions on private defence including when public authority can be approached"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 40 provides that the right of private defence of body commences as soon as a reasonable apprehension of danger to the body arises from an attempt or threat to commit the offence, even though the offence may not have been committed; and continues as long as the apprehension of danger continues.",
+      "Section 43 provides that the right of private defence of property commences when a reasonable apprehension of danger to the property commences; and continues in different ways depending on whether the threat is theft, robbery, or trespass."
+    ],
+    "optional_points": [
+      "The right ends when the apprehension of danger ends or when public authority assistance becomes available."
+    ],
+    "forbidden_points": [
+      "Private defence can only start after the first blow is struck.",
+      "Private defence continues indefinitely after an attack."
+    ]
+  },
+  "notes": "Multi-hop query requiring both Section 40 and Section 43."
+}

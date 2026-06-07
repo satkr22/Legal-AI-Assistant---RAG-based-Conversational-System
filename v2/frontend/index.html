@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal AI</title>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="styles.css?v=thinking-stream-3" />
+</head>
+
+<body>
+  <main id="authView" class="auth-view">
+    <section class="auth-panel" aria-labelledby="authTitle">
+      
+        <img src="/assets/logo.png" alt="Legal AI Logo" class="logo" />
+      
+      <h1 id="authTitle">Legal AI</h1>
+      <p>Sign in to continue your legal research conversations.</p>
+
+      <form id="authForm" class="auth-form">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Your password"
+          required />
+
+        <div class="auth-actions">
+          <button id="loginBtn" class="primary-btn" type="submit">Log in</button>
+          <button id="signupBtn" class="secondary-btn" type="button">Sign up</button>
+        </div>
+      </form>
+
+      <div class="auth-divider"><span>or</span></div>
+      <button id="googleLoginBtn" class="google-btn" type="button">
+        <span class="google-mark" aria-hidden="true">G</span>
+        Continue with Google
+      </button>
+
+      <p id="authStatus" class="status-text" role="status"></p>
+    </section>
+  </main>
+
+  <main id="chatView" class="chat-view hidden">
+    <aside class="sidebar">
+      <div class="sidebar-scroll">
+        <div class="sidebar-top">
+          <div class="sidebar-top">
+            <img src="/assets/logo.png" alt="Legal AI Logo" class="logo" />
+          </div>
+        </div>
+
+        <button id="newChatBtn" class="new-chat-btn" type="button">
+          <span>+</span>
+          New chat
+        </button>
+
+        <div class="history-header">Chat history</div>
+        <nav id="sessionList" class="session-list" aria-label="Chat history"></nav>
+      </div>
+
+      <div class="account-menu">
+        <button id="accountBtn" class="account-btn" type="button" aria-expanded="false" aria-controls="accountPanel">
+          <span id="accountInitial" class="account-initial">A</span>
+          <span>
+            <span class="account-label">Account</span>
+            <span id="accountEmailShort" class="account-email-short">Signed in</span>
+          </span>
+        </button>
+        <section id="accountPanel" class="account-panel hidden" aria-label="Account details">
+          <div>
+            <span>Email</span>
+            <strong id="accountEmail">Not available</strong>
+          </div>
+          <div>
+            <span>Provider</span>
+            <strong id="accountProvider">Supabase</strong>
+          </div>
+          <button id="logoutBtn" class="logout-btn" type="button">Log out</button>
+        </section>
+      </div>
+    </aside>
+
+    <section class="chat-shell">
+      <header class="chat-header">
+        <div>
+          <p class="chat-kicker">Legal AI</p>
+          <p class="chat-disclaimer">Currently using BNS-23. Please ask questions related to BNS-23 only.</p>
+        </div>
+      </header>
+
+      <div id="chat" class="chat-log" aria-live="polite"></div>
+
+      <form id="messageForm" class="composer">
+        <textarea id="query" rows="1" placeholder="Ask a legal question..." required></textarea>
+        <button id="sendBtn" class="send-btn" type="submit" title="Send" aria-label="Send">↑</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="config.js?v=thinking-stream-3"></script>
+  <script type="module" src="app.js?v=thinking-stream-3"></script>
+</body>
+
+</html>

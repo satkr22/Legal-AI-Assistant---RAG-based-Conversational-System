@@ -1,0 +1,3335 @@
+[
+  {
+    "query": "What does Section 6 say about life imprisonment and term calculation?",
+    "phase8": {
+      "query": "What does Section 6 say about life imprisonment and term calculation?",
+      "intent": {
+        "primary": "lookup",
+        "secondary": []
+      },
+      "concepts": [],
+      "targets": [
+        "Section 6"
+      ],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 1.0,
+        "llm_consistency": 1.0,
+        "rule_strength": 1.0,
+        "structure_validity": 1.0,
+        "overall": 1.0
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What does Section 6 say about life imprisonment and term calculation?",
+          "targets": [
+            "Section 6"
+          ],
+          "concepts": []
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S6_BODY",
+            "score": 0.982,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF PUNISHMENTS",
+            "section_number": 6,
+            "citation": "Section 6",
+            "text": "In calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided. Sentences may be (in certain cases of imprisonment) wholly or partly rigorous or simple.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 6: Fractions of terms of punishment.\nIn calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided. Sentences may be (in certain cases of imprisonment) wholly or partly rigorous or simple.",
+            "keywords": [
+              "imprisonment",
+              "fractions",
+              "terms",
+              "punishment",
+              "calculating",
+              "life",
+              "reckoned",
+              "equivalent",
+              "twenty",
+              "years"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 0,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 1.0,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "section 6",
+                "6",
+                "say",
+                "about",
+                "life",
+                "imprisonment",
+                "term",
+                "calculation"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "imprisonment",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "life",
+                  "chunk_concept": "life",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "calculation",
+                  "chunk_concept": "calculating",
+                  "source": "keyword",
+                  "similarity": 0.9918,
+                  "weighted_score": 0.7438
+                },
+                {
+                  "query_concept": "term",
+                  "chunk_concept": "terms",
+                  "source": "keyword",
+                  "similarity": 0.9874,
+                  "weighted_score": 0.7405
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "equivalent",
+                  "source": "keyword",
+                  "similarity": 0.9238,
+                  "weighted_score": 0.6929
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.955
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S143_N6",
+            "score": 0.402302,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 143,
+            "citation": "Section 143",
+            "text": "If a person is convicted of the offence of trafficking of a child on more than one occasion, then such person shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 143: Trafficking of person.\nIf a person is convicted of the offence of trafficking of a child on more than one occasion, then such person shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine.",
+            "keywords": [
+              "trafficking",
+              "imprisonment",
+              "life",
+              "convicted",
+              "offence",
+              "child",
+              "occasion",
+              "punished",
+              "mean",
+              "remainder",
+              "child trafficking",
+              "life sentence"
+            ],
+            "legal_concepts": [
+              "trafficking of person",
+              "imprisonment for life"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 0,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "bm25": 0.9682460528407929,
+              "semrank_pre_rerank": 0.9388
+            },
+            "query_scores": {
+              "original": 0.9682460528407929
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "section 6",
+                "6",
+                "say",
+                "about",
+                "life",
+                "imprisonment",
+                "term",
+                "calculation"
+              ],
+              "score": 0.9388,
+              "best_similarity": 0.9388,
+              "best_concept": "imprisonment for life",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment for life",
+                  "source": "legal_concept",
+                  "similarity": 0.9388,
+                  "weighted_score": 0.9388
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "trafficking of person",
+                  "source": "legal_concept",
+                  "similarity": 0.8618,
+                  "weighted_score": 0.8618
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "life",
+                  "chunk_concept": "life",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "convicted",
+                  "source": "keyword",
+                  "similarity": 0.9328,
+                  "weighted_score": 0.6996
+                }
+              ],
+              "pre_rerank_score": 0.9388,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.988984
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S250_C",
+            "score": 0.40014,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 250,
+            "citation": "Section 250",
+            "text": "if the offence is punishable with imprisonment not extending to ten years, be punished with imprisonment of the description provided for the offence for a term which may extend to one-fourth part of the longest term of imprisonment provided for the offence, or with fine, or with both. Offering gift or restoration of property in consideration of screening offender.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 250: Taking gift, etc., to screen an offender from punishment.\nif the offence is punishable with imprisonment not extending to ten years, be punished with imprisonment of the description provided for the offence for a term which may extend to one-fourth part of the longest term of imprisonment provided for the offence, or with fine, or with both. Offering gift or restoration of property in consideration of screening offender.",
+            "keywords": [
+              "offence",
+              "imprisonment",
+              "provided",
+              "term",
+              "gift",
+              "offender",
+              "punishable",
+              "extending",
+              "years",
+              "punished",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence",
+              "punishable",
+              "term"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 0,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "section 6",
+                "6",
+                "say",
+                "about",
+                "life",
+                "imprisonment",
+                "term",
+                "calculation"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "term",
+                  "chunk_concept": "term",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "punishable",
+                  "source": "legal_concept",
+                  "similarity": 0.889,
+                  "weighted_score": 0.889
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "extending",
+                  "source": "keyword",
+                  "similarity": 0.9508,
+                  "weighted_score": 0.7131
+                },
+                {
+                  "query_concept": "term",
+                  "chunk_concept": "provided",
+                  "source": "keyword",
+                  "similarity": 0.9394,
+                  "weighted_score": 0.7045
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "term",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S309_N6",
+            "score": 0.393302,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 309,
+            "citation": "Section 309",
+            "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+            "keywords": [
+              "robbery",
+              "committing",
+              "attempting",
+              "commit",
+              "imprisonment",
+              "voluntarily",
+              "causes",
+              "hurt",
+              "jointly",
+              "concerned",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "robbery"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 0,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "bm25": 0.8245918373962764,
+              "semrank_pre_rerank": 0.8706
+            },
+            "query_scores": {
+              "original": 0.8245918373962764
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "section 6",
+                "6",
+                "say",
+                "about",
+                "life",
+                "imprisonment",
+                "term",
+                "calculation"
+              ],
+              "score": 0.8706,
+              "best_similarity": 0.8706,
+              "best_concept": "robbery",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "robbery",
+                  "source": "legal_concept",
+                  "similarity": 0.8706,
+                  "weighted_score": 0.8706
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.8662,
+                  "weighted_score": 0.8662
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "jointly",
+                  "source": "keyword",
+                  "similarity": 0.9383,
+                  "weighted_score": 0.7037
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "attempting",
+                  "source": "keyword",
+                  "similarity": 0.9146,
+                  "weighted_score": 0.6859
+                }
+              ],
+              "pre_rerank_score": 0.8706,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.976708
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S104_BODY",
+            "score": 0.392665,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 104,
+            "citation": "Section 104",
+            "text": "Whoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life. Punishment for culpable homicide not amounting to murder.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 104: Punishment for murder by life-convict.\nWhoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life. Punishment for culpable homicide not amounting to murder.",
+            "keywords": [
+              "life",
+              "murder",
+              "imprisonment",
+              "punishment",
+              "body",
+              "whoever",
+              "sentence",
+              "commits",
+              "punished",
+              "death",
+              "life sentence"
+            ],
+            "legal_concepts": [
+              "punishment for murder",
+              "life sentence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 0,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7123872637748718,
+              "semrank_pre_rerank": 0.929
+            },
+            "query_scores": {
+              "original": 0.7123872637748718
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "section 6",
+                "6",
+                "say",
+                "about",
+                "life",
+                "imprisonment",
+                "term",
+                "calculation"
+              ],
+              "score": 0.929,
+              "best_similarity": 0.929,
+              "best_concept": "life sentence",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "life",
+                  "chunk_concept": "life sentence",
+                  "source": "legal_concept",
+                  "similarity": 0.929,
+                  "weighted_score": 0.929
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "punishment for murder",
+                  "source": "legal_concept",
+                  "similarity": 0.8885,
+                  "weighted_score": 0.8885
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "life",
+                  "chunk_concept": "life",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "say",
+                  "chunk_concept": "sentence",
+                  "source": "keyword",
+                  "similarity": 0.9354,
+                  "weighted_score": 0.7015
+                }
+              ],
+              "pre_rerank_score": 0.929,
+              "score_before_pre_rerank": 0.960397,
+              "score_after_pre_rerank": 0.954746
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S310_N6",
+            "score": 0.392438,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 310,
+            "citation": "Section 310",
+            "text": "Whoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+            "keywords": [
+              "dacoity",
+              "imprisonment",
+              "whoever",
+              "belongs",
+              "gang",
+              "associated",
+              "purpose",
+              "habitually",
+              "committing",
+              "punished",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "dacoity"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 0,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "bm25": 0.904803082516396,
+              "semrank_pre_rerank": 0.8662
+            },
+            "query_scores": {
+              "original": 0.904803082516396
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "section 6",
+                "6",
+                "say",
+                "about",
+                "life",
+                "imprisonment",
+                "term",
+                "calculation"
+              ],
+              "score": 0.8662,
+              "best_similarity": 0.8662,
+              "best_concept": "offence against property",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.8662,
+                  "weighted_score": 0.8662
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "dacoity",
+                  "source": "legal_concept",
+                  "similarity": 0.8502,
+                  "weighted_score": 0.8502
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "purpose",
+                  "source": "keyword",
+                  "similarity": 0.9461,
+                  "weighted_score": 0.7096
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "associated",
+                  "source": "keyword",
+                  "similarity": 0.9326,
+                  "weighted_score": 0.6995
+                }
+              ],
+              "pre_rerank_score": 0.8662,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.975916
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S58_BODY",
+            "score": 0.391675,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 58,
+            "citation": "Section 58",
+            "text": "Whoever intending to facilitate or knowing it to be likely that he will thereby facilitate the commission of an offence punishable with death or imprisonment for life, voluntarily conceals by any act or omission, or by the use of encryption or any other information hiding tool, the existence of a design to commit such offence or makes any representation which he knows to be false respecting such design shall,–",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 58: Concealing design to commit offence punishable with death or imprisonment for life.\nWhoever intending to facilitate or knowing it to be likely that he will thereby facilitate the commission of an offence punishable with death or imprisonment for life, voluntarily conceals by any act or omission, or by the use of encryption or any other information hiding tool, the existence of a design to commit such offence or makes any representation which he knows to be false respecting such design shall,–",
+            "keywords": [
+              "offence",
+              "design",
+              "facilitate",
+              "punishable",
+              "death",
+              "imprisonment",
+              "life",
+              "commit",
+              "whoever",
+              "intending",
+              "concealment"
+            ],
+            "legal_concepts": [
+              "concealing design to commit offence punishable with death or imprisonment for life",
+              "offence punishable with death or imprisonment for life"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 0,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.7500000894069672,
+              "semrank_pre_rerank": 0.8833
+            },
+            "query_scores": {
+              "original": 0.7500000894069672
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.75,
+              "query_concepts": [
+                "section 6",
+                "6",
+                "say",
+                "about",
+                "life",
+                "imprisonment",
+                "term",
+                "calculation"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "offence punishable with death or imprisonment for life",
+                  "source": "legal_concept",
+                  "similarity": 0.8833,
+                  "weighted_score": 0.8833
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "life",
+                  "chunk_concept": "life",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "design",
+                  "source": "keyword",
+                  "similarity": 0.942,
+                  "weighted_score": 0.7065
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "intending",
+                  "source": "keyword",
+                  "similarity": 0.9071,
+                  "weighted_score": 0.6803
+                }
+              ],
+              "score": 0.8833,
+              "best_similarity": 0.8833,
+              "best_concept": "offence punishable with death or imprisonment for life",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.8833,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.978994
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S71_BODY",
+            "score": 0.378298,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 71,
+            "citation": "Section 71",
+            "text": "Whoever has been previously convicted of an offence punishable under section 64 or section 65 or section 66 or section 70 and is subsequently convicted of an offence punishable under any of the said sections shall be punished with imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, or with death. Disclosure of identity of victim of certain offences, etc.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 71: Punishment for repeat offenders.\nWhoever has been previously convicted of an offence punishable under section 64 or section 65 or section 66 or section 70 and is subsequently convicted of an offence punishable under any of the said sections shall be punished with imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, or with death. Disclosure of identity of victim of certain offences, etc.",
+            "keywords": [
+              "convicted",
+              "offence",
+              "punishable",
+              "imprisonment",
+              "life",
+              "offences",
+              "whoever",
+              "previously",
+              "subsequently",
+              "said",
+              "repeat offenders",
+              "life imprisonment"
+            ],
+            "legal_concepts": [
+              "punishment for repeat offenders",
+              "imprisonment for life"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 0,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7007894515991211,
+              "semrank_pre_rerank": 0.9388
+            },
+            "query_scores": {
+              "original": 0.7007894515991211
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "section 6",
+                "6",
+                "say",
+                "about",
+                "life",
+                "imprisonment",
+                "term",
+                "calculation"
+              ],
+              "score": 0.9388,
+              "best_similarity": 0.9388,
+              "best_concept": "imprisonment for life",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment for life",
+                  "source": "legal_concept",
+                  "similarity": 0.9388,
+                  "weighted_score": 0.9388
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "punishment for repeat offenders",
+                  "source": "legal_concept",
+                  "similarity": 0.8598,
+                  "weighted_score": 0.8598
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "life",
+                  "chunk_concept": "life",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "say",
+                  "chunk_concept": "said",
+                  "source": "keyword",
+                  "similarity": 0.9619,
+                  "weighted_score": 0.7214
+                }
+              ],
+              "pre_rerank_score": 0.9388,
+              "score_before_pre_rerank": 0.946189,
+              "score_after_pre_rerank": 0.944859
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S103_N1",
+            "score": 0.37814,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 103,
+            "citation": "Section 103",
+            "text": "Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 103: Punishment for murder.\nWhoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine.",
+            "keywords": [
+              "murder",
+              "whoever",
+              "commits",
+              "punished",
+              "death",
+              "imprisonment",
+              "life",
+              "liable",
+              "fine",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "murder",
+              "punishment for murder"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 0,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.675979495048523,
+              "semrank": 0.7500000894069672,
+              "semrank_pre_rerank": 0.8885
+            },
+            "query_scores": {
+              "original": 0.7500000894069672
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.75,
+              "query_concepts": [
+                "section 6",
+                "6",
+                "say",
+                "about",
+                "life",
+                "imprisonment",
+                "term",
+                "calculation"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "punishment for murder",
+                  "source": "legal_concept",
+                  "similarity": 0.8885,
+                  "weighted_score": 0.8885
+                },
+                {
+                  "query_concept": "life",
+                  "chunk_concept": "murder",
+                  "source": "legal_concept",
+                  "similarity": 0.8605,
+                  "weighted_score": 0.8605
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "life",
+                  "chunk_concept": "life",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "say",
+                  "chunk_concept": "fine",
+                  "source": "keyword",
+                  "similarity": 0.9087,
+                  "weighted_score": 0.6815
+                }
+              ],
+              "score": 0.8885,
+              "best_similarity": 0.8885,
+              "best_concept": "punishment for murder",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.8885,
+              "score_before_pre_rerank": 0.913445,
+              "score_after_pre_rerank": 0.908955
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S111_N4",
+            "score": 0.375971,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 111,
+            "citation": "Section 111",
+            "text": "Any person who is a member of an organised crime syndicate shall be punished with imprisonment for a term which shall not be less than five years but which may extend to imprisonment for life, and shall also be liable to fine which shall not be less than five lakh rupees.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 111: Organised crime.\nAny person who is a member of an organised crime syndicate shall be punished with imprisonment for a term which shall not be less than five years but which may extend to imprisonment for life, and shall also be liable to fine which shall not be less than five lakh rupees.",
+            "keywords": [
+              "organised",
+              "crime",
+              "imprisonment",
+              "five",
+              "member",
+              "syndicate",
+              "punished",
+              "term",
+              "years",
+              "extend"
+            ],
+            "legal_concepts": [
+              "punishment for organised crime",
+              "imprisonment term for syndicate members"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 0,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.7500000894069672,
+              "semrank_pre_rerank": 0.8736
+            },
+            "query_scores": {
+              "original": 0.7500000894069672
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.75,
+              "query_concepts": [
+                "section 6",
+                "6",
+                "say",
+                "about",
+                "life",
+                "imprisonment",
+                "term",
+                "calculation"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment term for syndicate members",
+                  "source": "legal_concept",
+                  "similarity": 0.8736,
+                  "weighted_score": 0.8736
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "punishment for organised crime",
+                  "source": "legal_concept",
+                  "similarity": 0.8538,
+                  "weighted_score": 0.8538
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "term",
+                  "chunk_concept": "term",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "five",
+                  "source": "keyword",
+                  "similarity": 0.9233,
+                  "weighted_score": 0.6924
+                }
+              ],
+              "score": 0.8736,
+              "best_similarity": 0.8736,
+              "best_concept": "imprisonment term for syndicate members",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.8736,
+              "score_before_pre_rerank": 0.911333,
+              "score_after_pre_rerank": 0.904541
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S6_BODY",
+          "score": 0.94024,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 6,
+          "citation": "Section 6",
+          "text": "In calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided. Sentences may be (in certain cases of imprisonment) wholly or partly rigorous or simple.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 6: Fractions of terms of punishment.\nIn calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided. Sentences may be (in certain cases of imprisonment) wholly or partly rigorous or simple.",
+          "keywords": [
+            "imprisonment",
+            "fractions",
+            "terms",
+            "punishment",
+            "calculating",
+            "life",
+            "reckoned",
+            "equivalent",
+            "twenty",
+            "years"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.982
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "imprisonment",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "calculation",
+                "chunk_concept": "calculating",
+                "source": "keyword",
+                "similarity": 0.9918,
+                "weighted_score": 0.7438
+              },
+              {
+                "query_concept": "term",
+                "chunk_concept": "terms",
+                "source": "keyword",
+                "similarity": 0.9874,
+                "weighted_score": 0.7405
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "equivalent",
+                "source": "keyword",
+                "similarity": 0.9238,
+                "weighted_score": 0.6929
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.982,
+            "score_after_pre_rerank": 0.94024
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S250_C",
+          "score": 0.508115,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 250,
+          "citation": "Section 250",
+          "text": "if the offence is punishable with imprisonment not extending to ten years, be punished with imprisonment of the description provided for the offence for a term which may extend to one-fourth part of the longest term of imprisonment provided for the offence, or with fine, or with both. Offering gift or restoration of property in consideration of screening offender.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 250: Taking gift, etc., to screen an offender from punishment.\nif the offence is punishable with imprisonment not extending to ten years, be punished with imprisonment of the description provided for the offence for a term which may extend to one-fourth part of the longest term of imprisonment provided for the offence, or with fine, or with both. Offering gift or restoration of property in consideration of screening offender.",
+          "keywords": [
+            "offence",
+            "imprisonment",
+            "provided",
+            "term",
+            "gift",
+            "offender",
+            "punishable",
+            "extending",
+            "years",
+            "punished",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence",
+            "punishable",
+            "term"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4001401707067226
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "term",
+                "chunk_concept": "term",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "punishable",
+                "source": "legal_concept",
+                "similarity": 0.889,
+                "weighted_score": 0.889
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "extending",
+                "source": "keyword",
+                "similarity": 0.9508,
+                "weighted_score": 0.7131
+              },
+              {
+                "query_concept": "term",
+                "chunk_concept": "provided",
+                "source": "keyword",
+                "similarity": 0.9394,
+                "weighted_score": 0.7045
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "term",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.40014,
+            "score_after_pre_rerank": 0.508115
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S143_N6",
+          "score": 0.498871,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 143,
+          "citation": "Section 143",
+          "text": "If a person is convicted of the offence of trafficking of a child on more than one occasion, then such person shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 143: Trafficking of person.\nIf a person is convicted of the offence of trafficking of a child on more than one occasion, then such person shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine.",
+          "keywords": [
+            "trafficking",
+            "imprisonment",
+            "life",
+            "convicted",
+            "offence",
+            "child",
+            "occasion",
+            "punished",
+            "mean",
+            "remainder",
+            "child trafficking",
+            "life sentence"
+          ],
+          "legal_concepts": [
+            "trafficking of person",
+            "imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 0.9682460528407929,
+            "original:semrank_pre_rerank": 0.9388,
+            "semrank_pre_rerank": 0.9388
+          },
+          "query_scores": {
+            "original": 0.40230179319465664
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "score": 0.9388,
+            "best_similarity": 0.9388,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 0.9388,
+                "weighted_score": 0.9388
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "trafficking of person",
+                "source": "legal_concept",
+                "similarity": 0.8618,
+                "weighted_score": 0.8618
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "convicted",
+                "source": "keyword",
+                "similarity": 0.9328,
+                "weighted_score": 0.6996
+              }
+            ],
+            "pre_rerank_score": 0.9388,
+            "score_before_pre_rerank": 0.402302,
+            "score_after_pre_rerank": 0.498871
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S104_BODY",
+          "score": 0.489205,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 104,
+          "citation": "Section 104",
+          "text": "Whoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life. Punishment for culpable homicide not amounting to murder.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 104: Punishment for murder by life-convict.\nWhoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life. Punishment for culpable homicide not amounting to murder.",
+          "keywords": [
+            "life",
+            "murder",
+            "imprisonment",
+            "punishment",
+            "body",
+            "whoever",
+            "sentence",
+            "commits",
+            "punished",
+            "death",
+            "life sentence"
+          ],
+          "legal_concepts": [
+            "punishment for murder",
+            "life sentence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7123872637748718,
+            "original:semrank_pre_rerank": 0.929,
+            "semrank_pre_rerank": 0.929
+          },
+          "query_scores": {
+            "original": 0.3926645129456083
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "score": 0.929,
+            "best_similarity": 0.929,
+            "best_concept": "life sentence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "life",
+                "chunk_concept": "life sentence",
+                "source": "legal_concept",
+                "similarity": 0.929,
+                "weighted_score": 0.929
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "punishment for murder",
+                "source": "legal_concept",
+                "similarity": 0.8885,
+                "weighted_score": 0.8885
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "say",
+                "chunk_concept": "sentence",
+                "source": "keyword",
+                "similarity": 0.9354,
+                "weighted_score": 0.7015
+              }
+            ],
+            "pre_rerank_score": 0.929,
+            "score_before_pre_rerank": 0.392665,
+            "score_after_pre_rerank": 0.489205
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S58_BODY",
+          "score": 0.480167,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 58,
+          "citation": "Section 58",
+          "text": "Whoever intending to facilitate or knowing it to be likely that he will thereby facilitate the commission of an offence punishable with death or imprisonment for life, voluntarily conceals by any act or omission, or by the use of encryption or any other information hiding tool, the existence of a design to commit such offence or makes any representation which he knows to be false respecting such design shall,–",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 58: Concealing design to commit offence punishable with death or imprisonment for life.\nWhoever intending to facilitate or knowing it to be likely that he will thereby facilitate the commission of an offence punishable with death or imprisonment for life, voluntarily conceals by any act or omission, or by the use of encryption or any other information hiding tool, the existence of a design to commit such offence or makes any representation which he knows to be false respecting such design shall,–",
+          "keywords": [
+            "offence",
+            "design",
+            "facilitate",
+            "punishable",
+            "death",
+            "imprisonment",
+            "life",
+            "commit",
+            "whoever",
+            "intending",
+            "concealment"
+          ],
+          "legal_concepts": [
+            "concealing design to commit offence punishable with death or imprisonment for life",
+            "offence punishable with death or imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.7500000894069672,
+            "original:semrank_pre_rerank": 0.8833,
+            "semrank_pre_rerank": 0.8833
+          },
+          "query_scores": {
+            "original": 0.3916747239284613
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "offence punishable with death or imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 0.8833,
+                "weighted_score": 0.8833
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "design",
+                "source": "keyword",
+                "similarity": 0.942,
+                "weighted_score": 0.7065
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "intending",
+                "source": "keyword",
+                "similarity": 0.9071,
+                "weighted_score": 0.6803
+              }
+            ],
+            "score": 0.8833,
+            "best_similarity": 0.8833,
+            "best_concept": "offence punishable with death or imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8833,
+            "score_before_pre_rerank": 0.391675,
+            "score_after_pre_rerank": 0.480167
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S309_N6",
+          "score": 0.479215,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "keywords": [
+            "robbery",
+            "committing",
+            "attempting",
+            "commit",
+            "imprisonment",
+            "voluntarily",
+            "causes",
+            "hurt",
+            "jointly",
+            "concerned",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "robbery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 0.8245918373962764,
+            "original:semrank_pre_rerank": 0.8706,
+            "semrank_pre_rerank": 0.8706
+          },
+          "query_scores": {
+            "original": 0.39330169413084376
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "score": 0.8706,
+            "best_similarity": 0.8706,
+            "best_concept": "robbery",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "robbery",
+                "source": "legal_concept",
+                "similarity": 0.8706,
+                "weighted_score": 0.8706
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8662,
+                "weighted_score": 0.8662
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "jointly",
+                "source": "keyword",
+                "similarity": 0.9383,
+                "weighted_score": 0.7037
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "attempting",
+                "source": "keyword",
+                "similarity": 0.9146,
+                "weighted_score": 0.6859
+              }
+            ],
+            "pre_rerank_score": 0.8706,
+            "score_before_pre_rerank": 0.393302,
+            "score_after_pre_rerank": 0.479215
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S71_BODY",
+          "score": 0.479189,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 71,
+          "citation": "Section 71",
+          "text": "Whoever has been previously convicted of an offence punishable under section 64 or section 65 or section 66 or section 70 and is subsequently convicted of an offence punishable under any of the said sections shall be punished with imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, or with death. Disclosure of identity of victim of certain offences, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 71: Punishment for repeat offenders.\nWhoever has been previously convicted of an offence punishable under section 64 or section 65 or section 66 or section 70 and is subsequently convicted of an offence punishable under any of the said sections shall be punished with imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, or with death. Disclosure of identity of victim of certain offences, etc.",
+          "keywords": [
+            "convicted",
+            "offence",
+            "punishable",
+            "imprisonment",
+            "life",
+            "offences",
+            "whoever",
+            "previously",
+            "subsequently",
+            "said",
+            "repeat offenders",
+            "life imprisonment"
+          ],
+          "legal_concepts": [
+            "punishment for repeat offenders",
+            "imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7007894515991211,
+            "original:semrank_pre_rerank": 0.9388,
+            "semrank_pre_rerank": 0.9388
+          },
+          "query_scores": {
+            "original": 0.37829837653666415
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "score": 0.9388,
+            "best_similarity": 0.9388,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 0.9388,
+                "weighted_score": 0.9388
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "punishment for repeat offenders",
+                "source": "legal_concept",
+                "similarity": 0.8598,
+                "weighted_score": 0.8598
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "say",
+                "chunk_concept": "said",
+                "source": "keyword",
+                "similarity": 0.9619,
+                "weighted_score": 0.7214
+              }
+            ],
+            "pre_rerank_score": 0.9388,
+            "score_before_pre_rerank": 0.378298,
+            "score_after_pre_rerank": 0.479189
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S310_N6",
+          "score": 0.477715,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "Whoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "keywords": [
+            "dacoity",
+            "imprisonment",
+            "whoever",
+            "belongs",
+            "gang",
+            "associated",
+            "purpose",
+            "habitually",
+            "committing",
+            "punished",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 0.904803082516396,
+            "original:semrank_pre_rerank": 0.8662,
+            "semrank_pre_rerank": 0.8662
+          },
+          "query_scores": {
+            "original": 0.3924380755916041
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "score": 0.8662,
+            "best_similarity": 0.8662,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "about",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8662,
+                "weighted_score": 0.8662
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 0.8502,
+                "weighted_score": 0.8502
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "purpose",
+                "source": "keyword",
+                "similarity": 0.9461,
+                "weighted_score": 0.7096
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "associated",
+                "source": "keyword",
+                "similarity": 0.9326,
+                "weighted_score": 0.6995
+              }
+            ],
+            "pre_rerank_score": 0.8662,
+            "score_before_pre_rerank": 0.392438,
+            "score_after_pre_rerank": 0.477715
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S103_N1",
+          "score": 0.470005,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 103,
+          "citation": "Section 103",
+          "text": "Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 103: Punishment for murder.\nWhoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine.",
+          "keywords": [
+            "murder",
+            "whoever",
+            "commits",
+            "punished",
+            "death",
+            "imprisonment",
+            "life",
+            "liable",
+            "fine",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "murder",
+            "punishment for murder"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.675979495048523,
+            "original:semrank": 0.7500000894069672,
+            "original:semrank_pre_rerank": 0.8885,
+            "semrank_pre_rerank": 0.8885
+          },
+          "query_scores": {
+            "original": 0.378140346550574
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "punishment for murder",
+                "source": "legal_concept",
+                "similarity": 0.8885,
+                "weighted_score": 0.8885
+              },
+              {
+                "query_concept": "life",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 0.8605,
+                "weighted_score": 0.8605
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "say",
+                "chunk_concept": "fine",
+                "source": "keyword",
+                "similarity": 0.9087,
+                "weighted_score": 0.6815
+              }
+            ],
+            "score": 0.8885,
+            "best_similarity": 0.8885,
+            "best_concept": "punishment for murder",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8885,
+            "score_before_pre_rerank": 0.37814,
+            "score_after_pre_rerank": 0.470005
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S111_N4",
+          "score": 0.465544,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 111,
+          "citation": "Section 111",
+          "text": "Any person who is a member of an organised crime syndicate shall be punished with imprisonment for a term which shall not be less than five years but which may extend to imprisonment for life, and shall also be liable to fine which shall not be less than five lakh rupees.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 111: Organised crime.\nAny person who is a member of an organised crime syndicate shall be punished with imprisonment for a term which shall not be less than five years but which may extend to imprisonment for life, and shall also be liable to fine which shall not be less than five lakh rupees.",
+          "keywords": [
+            "organised",
+            "crime",
+            "imprisonment",
+            "five",
+            "member",
+            "syndicate",
+            "punished",
+            "term",
+            "years",
+            "extend"
+          ],
+          "legal_concepts": [
+            "punishment for organised crime",
+            "imprisonment term for syndicate members"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.7500000894069672,
+            "original:semrank_pre_rerank": 0.8736,
+            "semrank_pre_rerank": 0.8736
+          },
+          "query_scores": {
+            "original": 0.375971186618494
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment term for syndicate members",
+                "source": "legal_concept",
+                "similarity": 0.8736,
+                "weighted_score": 0.8736
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "punishment for organised crime",
+                "source": "legal_concept",
+                "similarity": 0.8538,
+                "weighted_score": 0.8538
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "term",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "five",
+                "source": "keyword",
+                "similarity": 0.9233,
+                "weighted_score": 0.6924
+              }
+            ],
+            "score": 0.8736,
+            "best_similarity": 0.8736,
+            "best_concept": "imprisonment term for syndicate members",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8736,
+            "score_before_pre_rerank": 0.375971,
+            "score_after_pre_rerank": 0.465544
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S6_BODY",
+          "score": 0.976096,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 6,
+          "citation": "Section 6",
+          "text": "In calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided. Sentences may be (in certain cases of imprisonment) wholly or partly rigorous or simple.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 6: Fractions of terms of punishment.\nIn calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided. Sentences may be (in certain cases of imprisonment) wholly or partly rigorous or simple.",
+          "keywords": [
+            "imprisonment",
+            "fractions",
+            "terms",
+            "punishment",
+            "calculating",
+            "life",
+            "reckoned",
+            "equivalent",
+            "twenty",
+            "years"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.982
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "imprisonment",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "calculation",
+                "chunk_concept": "calculating",
+                "source": "keyword",
+                "similarity": 0.9918,
+                "weighted_score": 0.7438
+              },
+              {
+                "query_concept": "term",
+                "chunk_concept": "terms",
+                "source": "keyword",
+                "similarity": 0.9874,
+                "weighted_score": 0.7405
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "equivalent",
+                "source": "keyword",
+                "similarity": 0.9238,
+                "weighted_score": 0.6929
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.982,
+            "score_after_pre_rerank": 0.94024
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S104_BODY",
+          "score": 0.206373,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 104,
+          "citation": "Section 104",
+          "text": "Whoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life. Punishment for culpable homicide not amounting to murder.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 104: Punishment for murder by life-convict.\nWhoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life. Punishment for culpable homicide not amounting to murder.",
+          "keywords": [
+            "life",
+            "murder",
+            "imprisonment",
+            "punishment",
+            "body",
+            "whoever",
+            "sentence",
+            "commits",
+            "punished",
+            "death",
+            "life sentence"
+          ],
+          "legal_concepts": [
+            "punishment for murder",
+            "life sentence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7123872637748718,
+            "original:semrank_pre_rerank": 0.929,
+            "semrank_pre_rerank": 0.929
+          },
+          "query_scores": {
+            "original": 0.3926645129456083
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "score": 0.929,
+            "best_similarity": 0.929,
+            "best_concept": "life sentence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "life",
+                "chunk_concept": "life sentence",
+                "source": "legal_concept",
+                "similarity": 0.929,
+                "weighted_score": 0.929
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "punishment for murder",
+                "source": "legal_concept",
+                "similarity": 0.8885,
+                "weighted_score": 0.8885
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "say",
+                "chunk_concept": "sentence",
+                "source": "keyword",
+                "similarity": 0.9354,
+                "weighted_score": 0.7015
+              }
+            ],
+            "pre_rerank_score": 0.929,
+            "score_before_pre_rerank": 0.392665,
+            "score_after_pre_rerank": 0.489205
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S143_N6",
+          "score": 0.206181,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 143,
+          "citation": "Section 143",
+          "text": "If a person is convicted of the offence of trafficking of a child on more than one occasion, then such person shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 143: Trafficking of person.\nIf a person is convicted of the offence of trafficking of a child on more than one occasion, then such person shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine.",
+          "keywords": [
+            "trafficking",
+            "imprisonment",
+            "life",
+            "convicted",
+            "offence",
+            "child",
+            "occasion",
+            "punished",
+            "mean",
+            "remainder",
+            "child trafficking",
+            "life sentence"
+          ],
+          "legal_concepts": [
+            "trafficking of person",
+            "imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 0.9682460528407929,
+            "original:semrank_pre_rerank": 0.9388,
+            "semrank_pre_rerank": 0.9388
+          },
+          "query_scores": {
+            "original": 0.40230179319465664
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "score": 0.9388,
+            "best_similarity": 0.9388,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 0.9388,
+                "weighted_score": 0.9388
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "trafficking of person",
+                "source": "legal_concept",
+                "similarity": 0.8618,
+                "weighted_score": 0.8618
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "convicted",
+                "source": "keyword",
+                "similarity": 0.9328,
+                "weighted_score": 0.6996
+              }
+            ],
+            "pre_rerank_score": 0.9388,
+            "score_before_pre_rerank": 0.402302,
+            "score_after_pre_rerank": 0.498871
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S250_C",
+          "score": 0.203309,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 250,
+          "citation": "Section 250",
+          "text": "if the offence is punishable with imprisonment not extending to ten years, be punished with imprisonment of the description provided for the offence for a term which may extend to one-fourth part of the longest term of imprisonment provided for the offence, or with fine, or with both. Offering gift or restoration of property in consideration of screening offender.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 250: Taking gift, etc., to screen an offender from punishment.\nif the offence is punishable with imprisonment not extending to ten years, be punished with imprisonment of the description provided for the offence for a term which may extend to one-fourth part of the longest term of imprisonment provided for the offence, or with fine, or with both. Offering gift or restoration of property in consideration of screening offender.",
+          "keywords": [
+            "offence",
+            "imprisonment",
+            "provided",
+            "term",
+            "gift",
+            "offender",
+            "punishable",
+            "extending",
+            "years",
+            "punished",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence",
+            "punishable",
+            "term"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4001401707067226
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "term",
+                "chunk_concept": "term",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "punishable",
+                "source": "legal_concept",
+                "similarity": 0.889,
+                "weighted_score": 0.889
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "extending",
+                "source": "keyword",
+                "similarity": 0.9508,
+                "weighted_score": 0.7131
+              },
+              {
+                "query_concept": "term",
+                "chunk_concept": "provided",
+                "source": "keyword",
+                "similarity": 0.9394,
+                "weighted_score": 0.7045
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "term",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.40014,
+            "score_after_pre_rerank": 0.508115
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S103_N1",
+          "score": 0.202485,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 103,
+          "citation": "Section 103",
+          "text": "Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 103: Punishment for murder.\nWhoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine.",
+          "keywords": [
+            "murder",
+            "whoever",
+            "commits",
+            "punished",
+            "death",
+            "imprisonment",
+            "life",
+            "liable",
+            "fine",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "murder",
+            "punishment for murder"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.675979495048523,
+            "original:semrank": 0.7500000894069672,
+            "original:semrank_pre_rerank": 0.8885,
+            "semrank_pre_rerank": 0.8885
+          },
+          "query_scores": {
+            "original": 0.378140346550574
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "punishment for murder",
+                "source": "legal_concept",
+                "similarity": 0.8885,
+                "weighted_score": 0.8885
+              },
+              {
+                "query_concept": "life",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 0.8605,
+                "weighted_score": 0.8605
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "say",
+                "chunk_concept": "fine",
+                "source": "keyword",
+                "similarity": 0.9087,
+                "weighted_score": 0.6815
+              }
+            ],
+            "score": 0.8885,
+            "best_similarity": 0.8885,
+            "best_concept": "punishment for murder",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8885,
+            "score_before_pre_rerank": 0.37814,
+            "score_after_pre_rerank": 0.470005
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S111_N4",
+          "score": 0.200297,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 111,
+          "citation": "Section 111",
+          "text": "Any person who is a member of an organised crime syndicate shall be punished with imprisonment for a term which shall not be less than five years but which may extend to imprisonment for life, and shall also be liable to fine which shall not be less than five lakh rupees.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 111: Organised crime.\nAny person who is a member of an organised crime syndicate shall be punished with imprisonment for a term which shall not be less than five years but which may extend to imprisonment for life, and shall also be liable to fine which shall not be less than five lakh rupees.",
+          "keywords": [
+            "organised",
+            "crime",
+            "imprisonment",
+            "five",
+            "member",
+            "syndicate",
+            "punished",
+            "term",
+            "years",
+            "extend"
+          ],
+          "legal_concepts": [
+            "punishment for organised crime",
+            "imprisonment term for syndicate members"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.7500000894069672,
+            "original:semrank_pre_rerank": 0.8736,
+            "semrank_pre_rerank": 0.8736
+          },
+          "query_scores": {
+            "original": 0.375971186618494
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment term for syndicate members",
+                "source": "legal_concept",
+                "similarity": 0.8736,
+                "weighted_score": 0.8736
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "punishment for organised crime",
+                "source": "legal_concept",
+                "similarity": 0.8538,
+                "weighted_score": 0.8538
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "term",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "five",
+                "source": "keyword",
+                "similarity": 0.9233,
+                "weighted_score": 0.6924
+              }
+            ],
+            "score": 0.8736,
+            "best_similarity": 0.8736,
+            "best_concept": "imprisonment term for syndicate members",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8736,
+            "score_before_pre_rerank": 0.375971,
+            "score_after_pre_rerank": 0.465544
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S309_N6",
+          "score": 0.194228,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "keywords": [
+            "robbery",
+            "committing",
+            "attempting",
+            "commit",
+            "imprisonment",
+            "voluntarily",
+            "causes",
+            "hurt",
+            "jointly",
+            "concerned",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "robbery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 0.8245918373962764,
+            "original:semrank_pre_rerank": 0.8706,
+            "semrank_pre_rerank": 0.8706
+          },
+          "query_scores": {
+            "original": 0.39330169413084376
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "score": 0.8706,
+            "best_similarity": 0.8706,
+            "best_concept": "robbery",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "robbery",
+                "source": "legal_concept",
+                "similarity": 0.8706,
+                "weighted_score": 0.8706
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8662,
+                "weighted_score": 0.8662
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "jointly",
+                "source": "keyword",
+                "similarity": 0.9383,
+                "weighted_score": 0.7037
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "attempting",
+                "source": "keyword",
+                "similarity": 0.9146,
+                "weighted_score": 0.6859
+              }
+            ],
+            "pre_rerank_score": 0.8706,
+            "score_before_pre_rerank": 0.393302,
+            "score_after_pre_rerank": 0.479215
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S310_N6",
+          "score": 0.193081,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "Whoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "keywords": [
+            "dacoity",
+            "imprisonment",
+            "whoever",
+            "belongs",
+            "gang",
+            "associated",
+            "purpose",
+            "habitually",
+            "committing",
+            "punished",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 0.904803082516396,
+            "original:semrank_pre_rerank": 0.8662,
+            "semrank_pre_rerank": 0.8662
+          },
+          "query_scores": {
+            "original": 0.3924380755916041
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "score": 0.8662,
+            "best_similarity": 0.8662,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "about",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8662,
+                "weighted_score": 0.8662
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 0.8502,
+                "weighted_score": 0.8502
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "purpose",
+                "source": "keyword",
+                "similarity": 0.9461,
+                "weighted_score": 0.7096
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "associated",
+                "source": "keyword",
+                "similarity": 0.9326,
+                "weighted_score": 0.6995
+              }
+            ],
+            "pre_rerank_score": 0.8662,
+            "score_before_pre_rerank": 0.392438,
+            "score_after_pre_rerank": 0.477715
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S58_BODY",
+          "score": 0.192067,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 58,
+          "citation": "Section 58",
+          "text": "Whoever intending to facilitate or knowing it to be likely that he will thereby facilitate the commission of an offence punishable with death or imprisonment for life, voluntarily conceals by any act or omission, or by the use of encryption or any other information hiding tool, the existence of a design to commit such offence or makes any representation which he knows to be false respecting such design shall,–",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 58: Concealing design to commit offence punishable with death or imprisonment for life.\nWhoever intending to facilitate or knowing it to be likely that he will thereby facilitate the commission of an offence punishable with death or imprisonment for life, voluntarily conceals by any act or omission, or by the use of encryption or any other information hiding tool, the existence of a design to commit such offence or makes any representation which he knows to be false respecting such design shall,–",
+          "keywords": [
+            "offence",
+            "design",
+            "facilitate",
+            "punishable",
+            "death",
+            "imprisonment",
+            "life",
+            "commit",
+            "whoever",
+            "intending",
+            "concealment"
+          ],
+          "legal_concepts": [
+            "concealing design to commit offence punishable with death or imprisonment for life",
+            "offence punishable with death or imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.7500000894069672,
+            "original:semrank_pre_rerank": 0.8833,
+            "semrank_pre_rerank": 0.8833
+          },
+          "query_scores": {
+            "original": 0.3916747239284613
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "offence punishable with death or imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 0.8833,
+                "weighted_score": 0.8833
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "design",
+                "source": "keyword",
+                "similarity": 0.942,
+                "weighted_score": 0.7065
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "intending",
+                "source": "keyword",
+                "similarity": 0.9071,
+                "weighted_score": 0.6803
+              }
+            ],
+            "score": 0.8833,
+            "best_similarity": 0.8833,
+            "best_concept": "offence punishable with death or imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8833,
+            "score_before_pre_rerank": 0.391675,
+            "score_after_pre_rerank": 0.480167
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S71_BODY",
+          "score": 0.191953,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 71,
+          "citation": "Section 71",
+          "text": "Whoever has been previously convicted of an offence punishable under section 64 or section 65 or section 66 or section 70 and is subsequently convicted of an offence punishable under any of the said sections shall be punished with imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, or with death. Disclosure of identity of victim of certain offences, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 71: Punishment for repeat offenders.\nWhoever has been previously convicted of an offence punishable under section 64 or section 65 or section 66 or section 70 and is subsequently convicted of an offence punishable under any of the said sections shall be punished with imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, or with death. Disclosure of identity of victim of certain offences, etc.",
+          "keywords": [
+            "convicted",
+            "offence",
+            "punishable",
+            "imprisonment",
+            "life",
+            "offences",
+            "whoever",
+            "previously",
+            "subsequently",
+            "said",
+            "repeat offenders",
+            "life imprisonment"
+          ],
+          "legal_concepts": [
+            "punishment for repeat offenders",
+            "imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 0,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7007894515991211,
+            "original:semrank_pre_rerank": 0.9388,
+            "semrank_pre_rerank": 0.9388
+          },
+          "query_scores": {
+            "original": 0.37829837653666415
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "section 6",
+              "6",
+              "say",
+              "about",
+              "life",
+              "imprisonment",
+              "term",
+              "calculation"
+            ],
+            "score": 0.9388,
+            "best_similarity": 0.9388,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 0.9388,
+                "weighted_score": 0.9388
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "punishment for repeat offenders",
+                "source": "legal_concept",
+                "similarity": 0.8598,
+                "weighted_score": 0.8598
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "say",
+                "chunk_concept": "said",
+                "source": "keyword",
+                "similarity": 0.9619,
+                "weighted_score": 0.7214
+              }
+            ],
+            "pre_rerank_score": 0.9388,
+            "score_before_pre_rerank": 0.378298,
+            "score_after_pre_rerank": 0.479189
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

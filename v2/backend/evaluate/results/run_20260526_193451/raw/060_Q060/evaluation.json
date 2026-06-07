@@ -1,0 +1,190 @@
+{
+  "query_id": "Q060",
+  "query": "Someone spread a false statement to damage my reputation. What offence may apply?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "356"
+  ],
+  "acceptable_sections": [],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "353",
+    "356",
+    "356",
+    "232",
+    "356"
+  ],
+  "candidate_sections_at_10": [
+    "353",
+    "356",
+    "356",
+    "232",
+    "356",
+    "356",
+    "353",
+    "356",
+    "356",
+    "356"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "353",
+    "353",
+    "356",
+    "356",
+    "232"
+  ],
+  "cited_sections": [
+    "353",
+    "356"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 0.5,
+    "required_hits": [
+      "356"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "356"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "353",
+      "232"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 0.5,
+    "required_hits": [
+      "356"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "356"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "353",
+      "232",
+      "353"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 0.3333,
+    "required_hits": [
+      "356"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "356"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "353",
+      "353",
+      "232"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.6667,
+    "required_points_matched": 2,
+    "required_points_total": 3,
+    "answer_completeness_score": 0.6667,
+    "soft_answer_score": 0.8667,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Section 356 defines defamation as making or publishing any imputation concerning any person intending to harm, or knowing it likely to harm, the reputation of such person.",
+        "matched": true,
+        "overlap": 0.5833,
+        "matched_terms": [
+          "356",
+          "defamation",
+          "harm",
+          "imputation",
+          "making",
+          "publishing",
+          "reputation"
+        ]
+      },
+      {
+        "point": "The imputation must lower the moral or intellectual character of the person in the estimation of others, lower their character in respect of caste or calling, lower their credit, or cause the person's body to be believed in a loathsome state.",
+        "matched": false,
+        "overlap": 0.0625,
+        "matched_terms": [
+          "imputation"
+        ]
+      },
+      {
+        "point": "Spreading a false statement to damage reputation may amount to defamation.",
+        "matched": true,
+        "overlap": 0.8333,
+        "matched_terms": [
+          "defamation",
+          "false",
+          "reputation",
+          "spreading",
+          "statement"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "356"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [
+      "353"
+    ],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": true,
+  "failure_reasons": [],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 7.2708,
+    "phase_9_10": 5.9324,
+    "phase_11": 14.8982,
+    "phase_12_13": 0.0004,
+    "total": 28.1019
+  },
+  "final_answer_preview": "According to Section 353(1) of the Bharatiya Nyaya Sanhita, 2023, making, publishing, or circulating any false statement or information can constitute an offence. If the statement is made with the intent to harm someone's reputation, it may be classified as defamation. However, if the person spreading the statement has reasonable grounds to believe it is true and acts in good faith, it may not amount to an offence as per Section 353(3) Exception. Additionally, Section 356(1) Explanation 3 indicates that certain forms of imputation, even if expressed ironically, can also be considered defamation. Therefore, if the false statement was made without reasonable belief in its truth and with intent to harm, it could lead to legal consequences.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/060_Q060"
+}

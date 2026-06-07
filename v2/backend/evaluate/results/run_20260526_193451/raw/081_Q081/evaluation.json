@@ -1,0 +1,196 @@
+{
+  "query_id": "Q081",
+  "query": "What is the difference between cheating and criminal breach of trust?",
+  "query_type": "comparison",
+  "difficulty": "hard",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "316",
+    "318"
+  ],
+  "acceptable_sections": [],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "316",
+    "316",
+    "316",
+    "316",
+    "316"
+  ],
+  "candidate_sections_at_10": [
+    "316",
+    "316",
+    "316",
+    "316",
+    "316",
+    "316",
+    "316",
+    "315",
+    "318",
+    "318"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "316",
+    "316",
+    "315",
+    "318",
+    "318"
+  ],
+  "cited_sections": [
+    "316",
+    "318"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 0.5,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "316"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "316"
+    ],
+    "support_precision_at_k": 1.0,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": []
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "316",
+      "318"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "316",
+      "318"
+    ],
+    "support_precision_at_k": 0.6667,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "315"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.4,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "316",
+      "318"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "316",
+      "318"
+    ],
+    "support_precision_at_k": 0.6667,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "315"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.6667,
+    "required_points_matched": 2,
+    "required_points_total": 3,
+    "answer_completeness_score": 0.6667,
+    "soft_answer_score": 0.9167,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Section 318 defines cheating as deceiving a person to fraudulently or dishonestly induce delivery of property or causing that person to do or omit something to their detriment.",
+        "matched": false,
+        "overlap": 0.4615,
+        "matched_terms": [
+          "318",
+          "cheating",
+          "deceiving",
+          "dishonestly",
+          "induce",
+          "property"
+        ]
+      },
+      {
+        "point": "Section 316 defines criminal breach of trust as being entrusted with property and dishonestly misappropriating, converting or disposing of it in violation of a direction of law or a legal contract.",
+        "matched": true,
+        "overlap": 0.4667,
+        "matched_terms": [
+          "316",
+          "breach",
+          "criminal",
+          "dishonestly",
+          "entrusted",
+          "property",
+          "trust"
+        ]
+      },
+      {
+        "point": "The key difference is that cheating involves deception to obtain property; criminal breach of trust involves dishonest misuse of property that was lawfully entrusted.",
+        "matched": true,
+        "overlap": 0.6,
+        "matched_terms": [
+          "breach",
+          "cheating",
+          "criminal",
+          "difference",
+          "entrusted",
+          "involves",
+          "key",
+          "property",
+          "trust"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "316",
+      "318"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.7309,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": true,
+  "failure_reasons": [],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 10.0973,
+    "phase_9_10": 10.0759,
+    "phase_11": 22.6668,
+    "phase_12_13": 0.0003,
+    "total": 42.8403
+  },
+  "final_answer_preview": "The key difference between cheating and criminal breach of trust lies in the nature of the act and the relationship to the property involved. Cheating, as defined in Section 318(1), involves deceiving a person to induce them to deliver property or consent to its retention, which results in harm or damage to that person (chunk__node__BNS_S318_N1). An example of cheating is when a person sells property they do not own, thereby deceiving the buyer (chunk__node__BNS_S318_N1_ILL1_I). In contrast, criminal breach of trust, as outlined in Section 316, occurs when a person who is entrusted with property dishonestly misappropriates or converts it for their own use, violating the trust placed in them (chunk__section__BNS_S316). This can occur in various contexts, such as an employer misusing employee contributions (chunk__node__BNS_S316_N1_EXP1).",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/081_Q081"
+}

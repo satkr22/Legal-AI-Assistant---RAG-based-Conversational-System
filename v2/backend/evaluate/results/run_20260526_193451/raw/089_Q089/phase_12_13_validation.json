@@ -1,0 +1,69 @@
+{
+  "answer": "Good faith is characterized by actions performed with honest intentions for the benefit of another person, particularly in situations involving vulnerable individuals. An example from the Bharatiya Nyaya Sanhita illustrates this concept: a parent (A) has their child undergo a surgical procedure, believing it will cure a condition, even though it may likely result in the child's death. A's intention is to benefit the child, thus placing A within the legal exception for good faith actions, as their objective was the child's cure, not harm. This is supported by Section 27 and its illustration in the Bharatiya Nyaya Sanhita, 2023.",
+  "summary_answer": "Good faith refers to actions taken with honest intentions, aiming to benefit others, even if those actions may inadvertently cause harm. For example, a parent may consent to a medical procedure for their child, believing it will help, despite knowing it could be harmful.",
+  "detailed_answer": "Good faith is characterized by actions performed with honest intentions for the benefit of another person, particularly in situations involving vulnerable individuals. An example from the Bharatiya Nyaya Sanhita illustrates this concept: a parent (A) has their child undergo a surgical procedure, believing it will cure a condition, even though it may likely result in the child's death. A's intention is to benefit the child, thus placing A within the legal exception for good faith actions, as their objective was the child's cure, not harm. This is supported by Section 27 and its illustration in the Bharatiya Nyaya Sanhita, 2023.",
+  "final_answer": "Good faith involves acting with honest intentions for the benefit of others, even if harm may result. For instance, a parent consents to a surgery for their child, believing it will help, despite the risk of death. This is illustrated in Section 27 of the Bharatiya Nyaya Sanhita, 2023.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 27: Act done in good faith for benefit of child or person of unsound mind, by, or by consent of",
+    "Section 27 Illustration, Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.628,
+    "reranker": 0.6178,
+    "citation": 1.0,
+    "reasoning": 0.9884,
+    "evidence_strength": 0.628,
+    "reasoning_certainty": 0.9884,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.6207,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.72,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.6178,
+        "avg_selected_semrank_score": 1.0,
+        "avg_selected_concept_coverage": 0.0,
+        "selected_chunk_count": 2,
+        "matched_selected_chunk_count": 2,
+        "selected_semrank_count": 1
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.9768,
+        "ambiguity_gap_score": 1.0,
+        "uncertainty_score": 1.0,
+        "gap": 0.5202,
+        "highest_competing_score": 0.4566,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.72,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__section__BNS_S27",
+    "chunk__node__BNS_S27_ILL1"
+  ]
+}

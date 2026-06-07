@@ -1,0 +1,42 @@
+{
+  "query_id": "Q055",
+  "query": "A group planned to commit an offence but was caught before doing it. What offence may apply?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "61",
+      "subsection": null,
+      "label": "Section 61",
+      "role": "criminal conspiracy - agreement to commit illegal act",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "62",
+      "label": "Section 62",
+      "reason": "attempt provisions may apply if any act towards the offence was done"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 61 defines criminal conspiracy as an agreement between two or more persons to do or cause to be done an illegal act or an act not illegal by illegal means.",
+      "The group may be charged with criminal conspiracy even if the offence was not committed.",
+      "Where the conspiracy is to commit an offence, no overt act beyond the agreement is required."
+    ],
+    "optional_points": [
+      "If any act was done in furtherance of the plan, attempt under Section 62 may also apply."
+    ],
+    "forbidden_points": [
+      "No offence is committed until the planned act is executed.",
+      "Criminal conspiracy requires the offence to be fully committed."
+    ]
+  },
+  "notes": "Scenario query applying Section 61 criminal conspiracy."
+}

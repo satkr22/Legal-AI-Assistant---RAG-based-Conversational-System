@@ -1,0 +1,48 @@
+{
+  "query_id": "Q046",
+  "query": "Someone pointed a knife at me and took my phone. What offence is this?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "309",
+      "subsection": null,
+      "label": "Section 309",
+      "role": "robbery",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "304",
+      "label": "Section 304",
+      "reason": "Snatching may be discussed if facts fit"
+    },
+    {
+      "act": "BNS",
+      "section": "303",
+      "label": "Section 303",
+      "reason": "Theft may be background, but robbery is the stronger issue"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Taking property by putting a person in fear can amount to robbery.",
+      "Pointing a knife is legally relevant because it suggests threat or fear of instant harm.",
+      "The final classification depends on facts proved."
+    ],
+    "optional_points": [
+      "The answer may mention theft as the underlying taking of property."
+    ],
+    "forbidden_points": [
+      "This is only simple theft with no robbery issue.",
+      "The punishment is guaranteed without knowing the full facts."
+    ]
+  },
+  "notes": "Scenario query. Correct answer should be cautious but should identify robbery."
+}

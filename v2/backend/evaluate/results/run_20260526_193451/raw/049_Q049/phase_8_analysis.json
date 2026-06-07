@@ -1,0 +1,75 @@
+{
+  "query": "A person hit me first and I hit back to protect myself. Is it a crime?",
+  "intent": {
+    "primary": "legal exception",
+    "secondary": []
+  },
+  "concepts": [
+    "self-defense",
+    "assault",
+    "criminal force",
+    "grave provocation",
+    "punishment for assault"
+  ],
+  "targets": [],
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true
+  },
+  "decomposition": {
+    "needed": true,
+    "sub_queries": [
+      {
+        "query": "What constitutes self-defense under Bharatiya Nyaya Sanhita, 2023?",
+        "intent": {
+          "primary": "legal exception",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "self-defense"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      },
+      {
+        "query": "What are the legal implications of assault in the context of provocation?",
+        "intent": {
+          "primary": "legal exception",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "assault",
+          "grave provocation",
+          "punishment for assault"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      }
+    ]
+  },
+  "confidence": {
+    "hint_relevance": 0.7362,
+    "llm_consistency": 1.0,
+    "rule_strength": 0.6,
+    "structure_validity": 1.0,
+    "overall": 0.8145
+  }
+}

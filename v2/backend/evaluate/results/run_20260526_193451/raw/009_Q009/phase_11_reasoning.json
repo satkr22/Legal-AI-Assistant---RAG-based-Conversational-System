@@ -1,0 +1,3406 @@
+[
+  {
+    "query": "What does Section 32 say about being forced by threats?",
+    "phase8": {
+      "query": "What does Section 32 say about being forced by threats?",
+      "intent": {
+        "primary": "lookup",
+        "secondary": []
+      },
+      "concepts": [
+        "duress",
+        "imminence_of_harm",
+        "act of compulsion",
+        "threats causing apprehension of instant death"
+      ],
+      "targets": [
+        "Section 32"
+      ],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 1.0,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.8,
+        "structure_validity": 1.0,
+        "overall": 0.96
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What does Section 32 say about being forced by threats?",
+          "targets": [
+            "Section 32"
+          ],
+          "concepts": [
+            "duress",
+            "imminence_of_harm",
+            "act of compulsion",
+            "threats causing apprehension of instant death"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S32_BODY",
+            "score": 1.0,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 32,
+            "citation": "Section 32",
+            "text": "Except murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person will otherwise be the consequence: Provided that the person doing the act did not of his own accord, or from a reasonable apprehension of harm to himself short of instant death, place himself in the situation by which he became subject to such constraint.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 32: Act to which a person is compelled by threats.\nExcept murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person will otherwise be the consequence: Provided that the person doing the act did not of his own accord, or from a reasonable apprehension of harm to himself short of instant death, place himself in the situation by which he became subject to such constraint.",
+            "keywords": [
+              "death",
+              "compelled",
+              "threats",
+              "doing",
+              "apprehension",
+              "instant",
+              "himself",
+              "except",
+              "murder",
+              "offences",
+              "instant death"
+            ],
+            "legal_concepts": [
+              "act of compulsion",
+              "threats causing apprehension of instant death"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "act of compulsion",
+                "threats causing apprehension of instant death"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7409353852272034,
+              "bm25": 0.6959943157496717,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "duress",
+                "imminence_of_harm",
+                "act of compulsion",
+                "threats causing apprehension of instant death",
+                "section 32",
+                "32",
+                "say",
+                "about"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "act of compulsion",
+                  "chunk_concept": "act of compulsion",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "threats causing apprehension of instant death",
+                  "chunk_concept": "threats causing apprehension of instant death",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "doing",
+                  "source": "keyword",
+                  "similarity": 0.9384,
+                  "weighted_score": 0.7038
+                },
+                {
+                  "query_concept": "threats causing apprehension of instant death",
+                  "chunk_concept": "instant death",
+                  "source": "keyword",
+                  "similarity": 0.906,
+                  "weighted_score": 0.6795
+                },
+                {
+                  "query_concept": "act of compulsion",
+                  "chunk_concept": "compelled",
+                  "source": "keyword",
+                  "similarity": 0.8975,
+                  "weighted_score": 0.6731
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "act of compulsion",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S32_EXP2",
+            "score": 0.971406,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 32,
+            "citation": "Section 32",
+            "text": "A person seized by a gang of dacoits, and forced, by threat of instant death, to do a thing which is an offence by law; for example, a smith compelled to take his tools and to force the door of a house for the dacoits to enter and plunder it, is entitled to the benefit of this exception. Act causing slight harm.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 32: Act to which a person is compelled by threats.\nA person seized by a gang of dacoits, and forced, by threat of instant death, to do a thing which is an offence by law; for example, a smith compelled to take his tools and to force the door of a house for the dacoits to enter and plunder it, is entitled to the benefit of this exception. Act causing slight harm.",
+            "keywords": [
+              "dacoits",
+              "compelled",
+              "seized",
+              "gang",
+              "forced",
+              "threat",
+              "instant",
+              "death",
+              "offence"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.739559531211853,
+              "bm25": 1.0,
+              "semrank_pre_rerank": 0.6818
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "duress",
+                "imminence_of_harm",
+                "act of compulsion",
+                "threats causing apprehension of instant death",
+                "section 32",
+                "32",
+                "say",
+                "about"
+              ],
+              "score": 0.6818,
+              "best_similarity": 0.9091,
+              "best_concept": "forced",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "duress",
+                  "chunk_concept": "forced",
+                  "source": "keyword",
+                  "similarity": 0.9091,
+                  "weighted_score": 0.6818
+                },
+                {
+                  "query_concept": "act of compulsion",
+                  "chunk_concept": "compelled",
+                  "source": "keyword",
+                  "similarity": 0.8975,
+                  "weighted_score": 0.6731
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "instant",
+                  "source": "keyword",
+                  "similarity": 0.8928,
+                  "weighted_score": 0.6696
+                },
+                {
+                  "query_concept": "duress",
+                  "chunk_concept": "threat",
+                  "source": "keyword",
+                  "similarity": 0.8911,
+                  "weighted_score": 0.6683
+                },
+                {
+                  "query_concept": "say",
+                  "chunk_concept": "gang",
+                  "source": "keyword",
+                  "similarity": 0.8671,
+                  "weighted_score": 0.6503
+                }
+              ],
+              "pre_rerank_score": 0.6818,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.942724
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S32_EXP1",
+            "score": 0.958092,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 32,
+            "citation": "Section 32",
+            "text": "A person who, of his own accord, or by reason of a threat of being beaten, joins a gang of dacoits, knowing their character, is not entitled to the benefit of this exception, on the ground of his having been compelled by his associates to do anything that is an offence by law.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 32: Act to which a person is compelled by threats.\nA person who, of his own accord, or by reason of a threat of being beaten, joins a gang of dacoits, knowing their character, is not entitled to the benefit of this exception, on the ground of his having been compelled by his associates to do anything that is an offence by law.",
+            "keywords": [
+              "compelled",
+              "accord",
+              "reason",
+              "threat",
+              "beaten",
+              "joins",
+              "gang",
+              "dacoits",
+              "knowing",
+              "their"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.7743735789958182,
+              "semrank_pre_rerank": 0.7031
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "duress",
+                "imminence_of_harm",
+                "act of compulsion",
+                "threats causing apprehension of instant death",
+                "section 32",
+                "32",
+                "say",
+                "about"
+              ],
+              "score": 0.7031,
+              "best_similarity": 0.9375,
+              "best_concept": "knowing",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "knowing",
+                  "source": "keyword",
+                  "similarity": 0.9375,
+                  "weighted_score": 0.7031
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "reason",
+                  "source": "keyword",
+                  "similarity": 0.9153,
+                  "weighted_score": 0.6864
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "accord",
+                  "source": "keyword",
+                  "similarity": 0.9099,
+                  "weighted_score": 0.6824
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "joins",
+                  "source": "keyword",
+                  "similarity": 0.8985,
+                  "weighted_score": 0.6738
+                },
+                {
+                  "query_concept": "act of compulsion",
+                  "chunk_concept": "compelled",
+                  "source": "keyword",
+                  "similarity": 0.8975,
+                  "weighted_score": 0.6731
+                }
+              ],
+              "pre_rerank_score": 0.7031,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.946558
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__section__BNS_S32",
+            "score": 0.58682,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 32,
+            "citation": "Section 32",
+            "text": "Except murder, and offences against the State punishable with\ndeath, nothing is an offence which is done by a person who is compelled to\ndo it by threats, which, at the time of doing it, reasonably cause the\napprehension that instant death to that person will otherwise be the\nconsequence:\nProvided that the person doing the act did not of his own accord, or\nfrom a reasonable apprehension of harm to himself short of instant death,\nplace himself in the situation by which he became subject to such\nconstraint.\nExplanation 1.—A person who, of his own accord, or by reason of a\nthreat of being beaten, joins a gang of dacoits, knowing their character, is\nnot entitled to the benefit of this exception, on the ground of his having\nbeen compelled by his associates to do anything that is an offence by law.\nExplanation 2.—A person seized by a gang of dacoits, and forced, by\nthreat of instant death, to do a thing which is an offence by law; for\nexample, a smith compelled to take his tools and to force the door of a\nhouse for the dacoits to enter and plunder it, is entitled to the benefit of\nthis exception.\nAct causing slight harm.",
+            "derived_context": "",
+            "keywords": [
+              "compelled_by_threats",
+              "instant_death"
+            ],
+            "legal_concepts": [
+              "duress",
+              "imminence_of_harm"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "duress",
+                "imminence_of_harm"
+              ]
+            },
+            "source_scores": {
+              "anchor": 0.846558
+            },
+            "query_scores": {
+              "anchor": 0.846558
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S32_EXP1",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S211_BODY",
+            "score": 0.38843,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+            "section_number": 211,
+            "citation": "Section 211",
+            "text": "Whoever, being legally bound to give any notice or to furnish information on any subject to any public servant, as such, intentionally omits to give such notice or to furnish such information in the manner and at the time required by law,–",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 13: OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS\nSection 211: Omission to give notice or information to public servant by person legally bound to give it.\nWhoever, being legally bound to give any notice or to furnish information on any subject to any public servant, as such, intentionally omits to give such notice or to furnish such information in the manner and at the time required by law,–",
+            "keywords": [
+              "give",
+              "notice",
+              "information",
+              "public",
+              "legally",
+              "bound",
+              "furnish",
+              "servant",
+              "whoever",
+              "subject",
+              "omission"
+            ],
+            "legal_concepts": [
+              "offence",
+              "public servant",
+              "legally bound"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.728286400437355,
+              "semrank_pre_rerank": 0.9249
+            },
+            "query_scores": {
+              "original": 0.728286400437355
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.7283,
+              "query_concepts": [
+                "duress",
+                "imminence_of_harm",
+                "act of compulsion",
+                "threats causing apprehension of instant death",
+                "section 32",
+                "32",
+                "say",
+                "about"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "legally bound",
+                  "source": "legal_concept",
+                  "similarity": 0.9249,
+                  "weighted_score": 0.9249
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "public servant",
+                  "source": "legal_concept",
+                  "similarity": 0.8419,
+                  "weighted_score": 0.8419
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "legally",
+                  "source": "keyword",
+                  "similarity": 0.971,
+                  "weighted_score": 0.7283
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "information",
+                  "source": "keyword",
+                  "similarity": 0.9514,
+                  "weighted_score": 0.7135
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "subject",
+                  "source": "keyword",
+                  "similarity": 0.9267,
+                  "weighted_score": 0.6951
+                }
+              ],
+              "score": 0.9249,
+              "best_similarity": 0.9249,
+              "best_concept": "legally bound",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9249,
+              "score_before_pre_rerank": 0.981211,
+              "score_after_pre_rerank": 0.971075
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S254_BODY",
+            "score": 0.384418,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 254,
+            "citation": "Section 254",
+            "text": "Whoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 254: Penalty for harbouring robbers or dacoits.\nWhoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+            "keywords": [
+              "them",
+              "robbery",
+              "dacoity",
+              "whoever",
+              "knowing",
+              "having",
+              "reason",
+              "believe",
+              "about",
+              "commit",
+              "harbouring"
+            ],
+            "legal_concepts": [
+              "punishment for harbouring robbers or dacoits"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.7499999552965164,
+              "semrank_pre_rerank": 0.8144
+            },
+            "query_scores": {
+              "original": 0.7499999552965164
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.75,
+              "query_concepts": [
+                "duress",
+                "imminence_of_harm",
+                "act of compulsion",
+                "threats causing apprehension of instant death",
+                "section 32",
+                "32",
+                "say",
+                "about"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "duress",
+                  "chunk_concept": "punishment for harbouring robbers or dacoits",
+                  "source": "legal_concept",
+                  "similarity": 0.8144,
+                  "weighted_score": 0.8144
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "about",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "knowing",
+                  "source": "keyword",
+                  "similarity": 0.9375,
+                  "weighted_score": 0.7031
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "reason",
+                  "source": "keyword",
+                  "similarity": 0.9153,
+                  "weighted_score": 0.6864
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "them",
+                  "source": "keyword",
+                  "similarity": 0.9103,
+                  "weighted_score": 0.6827
+                }
+              ],
+              "score": 0.8144,
+              "best_similarity": 0.8144,
+              "best_concept": "punishment for harbouring robbers or dacoits",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.8144,
+              "score_before_pre_rerank": 0.993235,
+              "score_after_pre_rerank": 0.961045
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S264_BODY",
+            "score": 0.383953,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 264,
+            "citation": "Section 264",
+            "text": "Whoever, being a public servant legally bound as such public servant to apprehend, or to keep in confinement, any person in any case not provided for in section 259, section 260 or section 261, or in any other law for the time being in force, omits to apprehend that person or suffers him to escape from confinement, shall be punished—",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 264: Omission to apprehend, or sufferance of escape, on part of public servant, in cases not\nWhoever, being a public servant legally bound as such public servant to apprehend, or to keep in confinement, any person in any case not provided for in section 259, section 260 or section 261, or in any other law for the time being in force, omits to apprehend that person or suffers him to escape from confinement, shall be punished—",
+            "keywords": [
+              "public",
+              "servant",
+              "apprehend",
+              "confinement",
+              "escape",
+              "whoever",
+              "legally",
+              "bound",
+              "keep",
+              "public servant",
+              "apprehension"
+            ],
+            "legal_concepts": [
+              "omission to apprehend",
+              "sufferance of escape"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.728286400437355,
+              "semrank_pre_rerank": 0.8881
+            },
+            "query_scores": {
+              "original": 0.728286400437355
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.7283,
+              "query_concepts": [
+                "duress",
+                "imminence_of_harm",
+                "act of compulsion",
+                "threats causing apprehension of instant death",
+                "section 32",
+                "32",
+                "say",
+                "about"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "duress",
+                  "chunk_concept": "sufferance of escape",
+                  "source": "legal_concept",
+                  "similarity": 0.8881,
+                  "weighted_score": 0.8881
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "omission to apprehend",
+                  "source": "legal_concept",
+                  "similarity": 0.8482,
+                  "weighted_score": 0.8482
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "legally",
+                  "source": "keyword",
+                  "similarity": 0.971,
+                  "weighted_score": 0.7283
+                },
+                {
+                  "query_concept": "say",
+                  "chunk_concept": "apprehend",
+                  "source": "keyword",
+                  "similarity": 0.9127,
+                  "weighted_score": 0.6845
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "bound",
+                  "source": "keyword",
+                  "similarity": 0.9086,
+                  "weighted_score": 0.6814
+                }
+              ],
+              "score": 0.8881,
+              "best_similarity": 0.8881,
+              "best_concept": "sufferance of escape",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.8881,
+              "score_before_pre_rerank": 0.975639,
+              "score_after_pre_rerank": 0.959882
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S210_BODY",
+            "score": 0.380242,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+            "section_number": 210,
+            "citation": "Section 210",
+            "text": "Whoever, being legally bound to produce or deliver up any document or electronic record to any public servant, as such, intentionally omits so to produce or deliver up the same,–",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 13: OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS\nSection 210: Omission to produce document or electronic record to public servant by person legally\nWhoever, being legally bound to produce or deliver up any document or electronic record to any public servant, as such, intentionally omits so to produce or deliver up the same,–",
+            "keywords": [
+              "produce",
+              "public",
+              "legally",
+              "deliver",
+              "electronic",
+              "record",
+              "servant",
+              "whoever",
+              "bound",
+              "omission",
+              "electronic record"
+            ],
+            "legal_concepts": [
+              "contempt of lawful authority",
+              "public servants"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.728286400437355,
+              "semrank_pre_rerank": 0.8576
+            },
+            "query_scores": {
+              "original": 0.728286400437355
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.7283,
+              "query_concepts": [
+                "duress",
+                "imminence_of_harm",
+                "act of compulsion",
+                "threats causing apprehension of instant death",
+                "section 32",
+                "32",
+                "say",
+                "about"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "public servants",
+                  "source": "legal_concept",
+                  "similarity": 0.8576,
+                  "weighted_score": 0.8576
+                },
+                {
+                  "query_concept": "duress",
+                  "chunk_concept": "contempt of lawful authority",
+                  "source": "legal_concept",
+                  "similarity": 0.8435,
+                  "weighted_score": 0.8435
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "legally",
+                  "source": "keyword",
+                  "similarity": 0.971,
+                  "weighted_score": 0.7283
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "record",
+                  "source": "keyword",
+                  "similarity": 0.9291,
+                  "weighted_score": 0.6969
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "electronic",
+                  "source": "keyword",
+                  "similarity": 0.9198,
+                  "weighted_score": 0.6899
+                }
+              ],
+              "score": 0.8576,
+              "best_similarity": 0.8576,
+              "best_concept": "public servants",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.8576,
+              "score_before_pre_rerank": 0.971021,
+              "score_after_pre_rerank": 0.950605
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S261_BODY",
+            "score": 0.380157,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 261,
+            "citation": "Section 261",
+            "text": "Whoever, being a public servant legally bound as such public servant to keep in confinement any person charged with or convicted of any offence or lawfully committed to custody, negligently suffers such person to escape from confinement, shall be punished with simple imprisonment for a term which may extend to two years, or with fine, or with both. Resistance or obstruction by a person to his lawful apprehension.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 261: Escape from confinement or custody negligently suffered by public servant.\nWhoever, being a public servant legally bound as such public servant to keep in confinement any person charged with or convicted of any offence or lawfully committed to custody, negligently suffers such person to escape from confinement, shall be punished with simple imprisonment for a term which may extend to two years, or with fine, or with both. Resistance or obstruction by a person to his lawful apprehension.",
+            "keywords": [
+              "public",
+              "servant",
+              "confinement",
+              "custody",
+              "negligently",
+              "escape",
+              "whoever",
+              "legally",
+              "bound",
+              "keep",
+              "negligent",
+              "public servant"
+            ],
+            "legal_concepts": [
+              "escape from confinement",
+              "negligence of public servant"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.728286400437355,
+              "semrank_pre_rerank": 0.8569
+            },
+            "query_scores": {
+              "original": 0.728286400437355
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.7283,
+              "query_concepts": [
+                "duress",
+                "imminence_of_harm",
+                "act of compulsion",
+                "threats causing apprehension of instant death",
+                "section 32",
+                "32",
+                "say",
+                "about"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "escape from confinement",
+                  "source": "legal_concept",
+                  "similarity": 0.8569,
+                  "weighted_score": 0.8569
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "negligence of public servant",
+                  "source": "legal_concept",
+                  "similarity": 0.8053,
+                  "weighted_score": 0.8053
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "legally",
+                  "source": "keyword",
+                  "similarity": 0.971,
+                  "weighted_score": 0.7283
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "bound",
+                  "source": "keyword",
+                  "similarity": 0.9086,
+                  "weighted_score": 0.6814
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "custody",
+                  "source": "keyword",
+                  "similarity": 0.8966,
+                  "weighted_score": 0.6725
+                }
+              ],
+              "score": 0.8569,
+              "best_similarity": 0.8569,
+              "best_concept": "escape from confinement",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.8569,
+              "score_before_pre_rerank": 0.970915,
+              "score_after_pre_rerank": 0.950392
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S259_BODY",
+            "score": 0.380157,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 259,
+            "citation": "Section 259",
+            "text": "Whoever, being a public servant, legally bound as such public servant to apprehend or to keep in confinement any person charged with or liable to be apprehended for an offence, intentionally omits to apprehend such person, or intentionally suffers such person to escape, or intentionally aids such person in escaping or attempting to escape from such confinement, shall be punished,–",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 259: Intentional omission to apprehend on part of public servant bound to apprehend.\nWhoever, being a public servant, legally bound as such public servant to apprehend or to keep in confinement any person charged with or liable to be apprehended for an offence, intentionally omits to apprehend such person, or intentionally suffers such person to escape, or intentionally aids such person in escaping or attempting to escape from such confinement, shall be punished,–",
+            "keywords": [
+              "public",
+              "apprehend",
+              "servant",
+              "intentionally",
+              "bound",
+              "confinement",
+              "escape",
+              "whoever",
+              "legally",
+              "keep",
+              "public servant",
+              "apprehension"
+            ],
+            "legal_concepts": [
+              "omission to apprehend",
+              "escape from confinement"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.728286400437355,
+              "semrank_pre_rerank": 0.8569
+            },
+            "query_scores": {
+              "original": 0.728286400437355
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.7283,
+              "query_concepts": [
+                "duress",
+                "imminence_of_harm",
+                "act of compulsion",
+                "threats causing apprehension of instant death",
+                "section 32",
+                "32",
+                "say",
+                "about"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "escape from confinement",
+                  "source": "legal_concept",
+                  "similarity": 0.8569,
+                  "weighted_score": 0.8569
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "omission to apprehend",
+                  "source": "legal_concept",
+                  "similarity": 0.8482,
+                  "weighted_score": 0.8482
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "legally",
+                  "source": "keyword",
+                  "similarity": 0.971,
+                  "weighted_score": 0.7283
+                },
+                {
+                  "query_concept": "about",
+                  "chunk_concept": "intentionally",
+                  "source": "keyword",
+                  "similarity": 0.9178,
+                  "weighted_score": 0.6884
+                },
+                {
+                  "query_concept": "say",
+                  "chunk_concept": "apprehend",
+                  "source": "keyword",
+                  "similarity": 0.9127,
+                  "weighted_score": 0.6845
+                }
+              ],
+              "score": 0.8569,
+              "best_similarity": 0.8569,
+              "best_concept": "escape from confinement",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.8569,
+              "score_before_pre_rerank": 0.970915,
+              "score_after_pre_rerank": 0.950392
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S32_BODY",
+          "score": 1.0,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 32,
+          "citation": "Section 32",
+          "text": "Except murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person will otherwise be the consequence: Provided that the person doing the act did not of his own accord, or from a reasonable apprehension of harm to himself short of instant death, place himself in the situation by which he became subject to such constraint.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 32: Act to which a person is compelled by threats.\nExcept murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person will otherwise be the consequence: Provided that the person doing the act did not of his own accord, or from a reasonable apprehension of harm to himself short of instant death, place himself in the situation by which he became subject to such constraint.",
+          "keywords": [
+            "death",
+            "compelled",
+            "threats",
+            "doing",
+            "apprehension",
+            "instant",
+            "himself",
+            "except",
+            "murder",
+            "offences",
+            "instant death"
+          ],
+          "legal_concepts": [
+            "act of compulsion",
+            "threats causing apprehension of instant death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "act of compulsion",
+              "threats causing apprehension of instant death"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7409353852272034,
+            "original:bm25": 0.6959943157496717,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "act of compulsion",
+                "chunk_concept": "act of compulsion",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "threats causing apprehension of instant death",
+                "chunk_concept": "threats causing apprehension of instant death",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "doing",
+                "source": "keyword",
+                "similarity": 0.9384,
+                "weighted_score": 0.7038
+              },
+              {
+                "query_concept": "threats causing apprehension of instant death",
+                "chunk_concept": "instant death",
+                "source": "keyword",
+                "similarity": 0.906,
+                "weighted_score": 0.6795
+              },
+              {
+                "query_concept": "act of compulsion",
+                "chunk_concept": "compelled",
+                "source": "keyword",
+                "similarity": 0.8975,
+                "weighted_score": 0.6731
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "act of compulsion",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S32_EXP2",
+          "score": 0.919277,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 32,
+          "citation": "Section 32",
+          "text": "A person seized by a gang of dacoits, and forced, by threat of instant death, to do a thing which is an offence by law; for example, a smith compelled to take his tools and to force the door of a house for the dacoits to enter and plunder it, is entitled to the benefit of this exception. Act causing slight harm.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 32: Act to which a person is compelled by threats.\nA person seized by a gang of dacoits, and forced, by threat of instant death, to do a thing which is an offence by law; for example, a smith compelled to take his tools and to force the door of a house for the dacoits to enter and plunder it, is entitled to the benefit of this exception. Act causing slight harm.",
+          "keywords": [
+            "dacoits",
+            "compelled",
+            "seized",
+            "gang",
+            "forced",
+            "threat",
+            "instant",
+            "death",
+            "offence"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.739559531211853,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.6818,
+            "semrank_pre_rerank": 0.6818
+          },
+          "query_scores": {
+            "original": 0.9714055858439331
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "score": 0.6818,
+            "best_similarity": 0.9091,
+            "best_concept": "forced",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "duress",
+                "chunk_concept": "forced",
+                "source": "keyword",
+                "similarity": 0.9091,
+                "weighted_score": 0.6818
+              },
+              {
+                "query_concept": "act of compulsion",
+                "chunk_concept": "compelled",
+                "source": "keyword",
+                "similarity": 0.8975,
+                "weighted_score": 0.6731
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "instant",
+                "source": "keyword",
+                "similarity": 0.8928,
+                "weighted_score": 0.6696
+              },
+              {
+                "query_concept": "duress",
+                "chunk_concept": "threat",
+                "source": "keyword",
+                "similarity": 0.8911,
+                "weighted_score": 0.6683
+              },
+              {
+                "query_concept": "say",
+                "chunk_concept": "gang",
+                "source": "keyword",
+                "similarity": 0.8671,
+                "weighted_score": 0.6503
+              }
+            ],
+            "pre_rerank_score": 0.6818,
+            "score_before_pre_rerank": 0.971406,
+            "score_after_pre_rerank": 0.919277
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S32_EXP1",
+          "score": 0.912194,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 32,
+          "citation": "Section 32",
+          "text": "A person who, of his own accord, or by reason of a threat of being beaten, joins a gang of dacoits, knowing their character, is not entitled to the benefit of this exception, on the ground of his having been compelled by his associates to do anything that is an offence by law.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 32: Act to which a person is compelled by threats.\nA person who, of his own accord, or by reason of a threat of being beaten, joins a gang of dacoits, knowing their character, is not entitled to the benefit of this exception, on the ground of his having been compelled by his associates to do anything that is an offence by law.",
+          "keywords": [
+            "compelled",
+            "accord",
+            "reason",
+            "threat",
+            "beaten",
+            "joins",
+            "gang",
+            "dacoits",
+            "knowing",
+            "their"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.7743735789958182,
+            "original:semrank_pre_rerank": 0.7031,
+            "semrank_pre_rerank": 0.7031
+          },
+          "query_scores": {
+            "original": 0.9580921940422965
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "score": 0.7031,
+            "best_similarity": 0.9375,
+            "best_concept": "knowing",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "about",
+                "chunk_concept": "knowing",
+                "source": "keyword",
+                "similarity": 0.9375,
+                "weighted_score": 0.7031
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.9153,
+                "weighted_score": 0.6864
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "accord",
+                "source": "keyword",
+                "similarity": 0.9099,
+                "weighted_score": 0.6824
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "joins",
+                "source": "keyword",
+                "similarity": 0.8985,
+                "weighted_score": 0.6738
+              },
+              {
+                "query_concept": "act of compulsion",
+                "chunk_concept": "compelled",
+                "source": "keyword",
+                "similarity": 0.8975,
+                "weighted_score": 0.6731
+              }
+            ],
+            "pre_rerank_score": 0.7031,
+            "score_before_pre_rerank": 0.958092,
+            "score_after_pre_rerank": 0.912194
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__section__BNS_S32",
+          "score": 0.58682,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 32,
+          "citation": "Section 32",
+          "text": "Except murder, and offences against the State punishable with\ndeath, nothing is an offence which is done by a person who is compelled to\ndo it by threats, which, at the time of doing it, reasonably cause the\napprehension that instant death to that person will otherwise be the\nconsequence:\nProvided that the person doing the act did not of his own accord, or\nfrom a reasonable apprehension of harm to himself short of instant death,\nplace himself in the situation by which he became subject to such\nconstraint.\nExplanation 1.—A person who, of his own accord, or by reason of a\nthreat of being beaten, joins a gang of dacoits, knowing their character, is\nnot entitled to the benefit of this exception, on the ground of his having\nbeen compelled by his associates to do anything that is an offence by law.\nExplanation 2.—A person seized by a gang of dacoits, and forced, by\nthreat of instant death, to do a thing which is an offence by law; for\nexample, a smith compelled to take his tools and to force the door of a\nhouse for the dacoits to enter and plunder it, is entitled to the benefit of\nthis exception.\nAct causing slight harm.",
+          "derived_context": "",
+          "keywords": [
+            "compelled_by_threats",
+            "instant_death"
+          ],
+          "legal_concepts": [
+            "duress",
+            "imminence_of_harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "duress",
+              "imminence_of_harm"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.846558
+          },
+          "query_scores": {
+            "original": 0.5868197811971101
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S32_EXP1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S211_BODY",
+          "score": 0.484995,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+          "section_number": 211,
+          "citation": "Section 211",
+          "text": "Whoever, being legally bound to give any notice or to furnish information on any subject to any public servant, as such, intentionally omits to give such notice or to furnish such information in the manner and at the time required by law,–",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 13: OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS\nSection 211: Omission to give notice or information to public servant by person legally bound to give it.\nWhoever, being legally bound to give any notice or to furnish information on any subject to any public servant, as such, intentionally omits to give such notice or to furnish such information in the manner and at the time required by law,–",
+          "keywords": [
+            "give",
+            "notice",
+            "information",
+            "public",
+            "legally",
+            "bound",
+            "furnish",
+            "servant",
+            "whoever",
+            "subject",
+            "omission"
+          ],
+          "legal_concepts": [
+            "offence",
+            "public servant",
+            "legally bound"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.728286400437355,
+            "original:semrank_pre_rerank": 0.9249,
+            "semrank_pre_rerank": 0.9249
+          },
+          "query_scores": {
+            "original": 0.38842989274272527
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7283,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "about",
+                "chunk_concept": "legally bound",
+                "source": "legal_concept",
+                "similarity": 0.9249,
+                "weighted_score": 0.9249
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 0.8419,
+                "weighted_score": 0.8419
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.971,
+                "weighted_score": 0.7283
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "information",
+                "source": "keyword",
+                "similarity": 0.9514,
+                "weighted_score": 0.7135
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "subject",
+                "source": "keyword",
+                "similarity": 0.9267,
+                "weighted_score": 0.6951
+              }
+            ],
+            "score": 0.9249,
+            "best_similarity": 0.9249,
+            "best_concept": "legally bound",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9249,
+            "score_before_pre_rerank": 0.38843,
+            "score_after_pre_rerank": 0.484995
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S264_BODY",
+          "score": 0.474699,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 264,
+          "citation": "Section 264",
+          "text": "Whoever, being a public servant legally bound as such public servant to apprehend, or to keep in confinement, any person in any case not provided for in section 259, section 260 or section 261, or in any other law for the time being in force, omits to apprehend that person or suffers him to escape from confinement, shall be punished—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 264: Omission to apprehend, or sufferance of escape, on part of public servant, in cases not\nWhoever, being a public servant legally bound as such public servant to apprehend, or to keep in confinement, any person in any case not provided for in section 259, section 260 or section 261, or in any other law for the time being in force, omits to apprehend that person or suffers him to escape from confinement, shall be punished—",
+          "keywords": [
+            "public",
+            "servant",
+            "apprehend",
+            "confinement",
+            "escape",
+            "whoever",
+            "legally",
+            "bound",
+            "keep",
+            "public servant",
+            "apprehension"
+          ],
+          "legal_concepts": [
+            "omission to apprehend",
+            "sufferance of escape"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.728286400437355,
+            "original:semrank_pre_rerank": 0.8881,
+            "semrank_pre_rerank": 0.8881
+          },
+          "query_scores": {
+            "original": 0.38395277009367196
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7283,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "duress",
+                "chunk_concept": "sufferance of escape",
+                "source": "legal_concept",
+                "similarity": 0.8881,
+                "weighted_score": 0.8881
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "omission to apprehend",
+                "source": "legal_concept",
+                "similarity": 0.8482,
+                "weighted_score": 0.8482
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.971,
+                "weighted_score": 0.7283
+              },
+              {
+                "query_concept": "say",
+                "chunk_concept": "apprehend",
+                "source": "keyword",
+                "similarity": 0.9127,
+                "weighted_score": 0.6845
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "bound",
+                "source": "keyword",
+                "similarity": 0.9086,
+                "weighted_score": 0.6814
+              }
+            ],
+            "score": 0.8881,
+            "best_similarity": 0.8881,
+            "best_concept": "sufferance of escape",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8881,
+            "score_before_pre_rerank": 0.383953,
+            "score_after_pre_rerank": 0.474699
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S210_BODY",
+          "score": 0.466166,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+          "section_number": 210,
+          "citation": "Section 210",
+          "text": "Whoever, being legally bound to produce or deliver up any document or electronic record to any public servant, as such, intentionally omits so to produce or deliver up the same,–",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 13: OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS\nSection 210: Omission to produce document or electronic record to public servant by person legally\nWhoever, being legally bound to produce or deliver up any document or electronic record to any public servant, as such, intentionally omits so to produce or deliver up the same,–",
+          "keywords": [
+            "produce",
+            "public",
+            "legally",
+            "deliver",
+            "electronic",
+            "record",
+            "servant",
+            "whoever",
+            "bound",
+            "omission",
+            "electronic record"
+          ],
+          "legal_concepts": [
+            "contempt of lawful authority",
+            "public servants"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.728286400437355,
+            "original:semrank_pre_rerank": 0.8576,
+            "semrank_pre_rerank": 0.8576
+          },
+          "query_scores": {
+            "original": 0.3802419718326861
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7283,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "about",
+                "chunk_concept": "public servants",
+                "source": "legal_concept",
+                "similarity": 0.8576,
+                "weighted_score": 0.8576
+              },
+              {
+                "query_concept": "duress",
+                "chunk_concept": "contempt of lawful authority",
+                "source": "legal_concept",
+                "similarity": 0.8435,
+                "weighted_score": 0.8435
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.971,
+                "weighted_score": 0.7283
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "record",
+                "source": "keyword",
+                "similarity": 0.9291,
+                "weighted_score": 0.6969
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "electronic",
+                "source": "keyword",
+                "similarity": 0.9198,
+                "weighted_score": 0.6899
+              }
+            ],
+            "score": 0.8576,
+            "best_similarity": 0.8576,
+            "best_concept": "public servants",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8576,
+            "score_before_pre_rerank": 0.380242,
+            "score_after_pre_rerank": 0.466166
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S261_BODY",
+          "score": 0.465971,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 261,
+          "citation": "Section 261",
+          "text": "Whoever, being a public servant legally bound as such public servant to keep in confinement any person charged with or convicted of any offence or lawfully committed to custody, negligently suffers such person to escape from confinement, shall be punished with simple imprisonment for a term which may extend to two years, or with fine, or with both. Resistance or obstruction by a person to his lawful apprehension.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 261: Escape from confinement or custody negligently suffered by public servant.\nWhoever, being a public servant legally bound as such public servant to keep in confinement any person charged with or convicted of any offence or lawfully committed to custody, negligently suffers such person to escape from confinement, shall be punished with simple imprisonment for a term which may extend to two years, or with fine, or with both. Resistance or obstruction by a person to his lawful apprehension.",
+          "keywords": [
+            "public",
+            "servant",
+            "confinement",
+            "custody",
+            "negligently",
+            "escape",
+            "whoever",
+            "legally",
+            "bound",
+            "keep",
+            "negligent",
+            "public servant"
+          ],
+          "legal_concepts": [
+            "escape from confinement",
+            "negligence of public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.728286400437355,
+            "original:semrank_pre_rerank": 0.8569,
+            "semrank_pre_rerank": 0.8569
+          },
+          "query_scores": {
+            "original": 0.3801571733903846
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7283,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "about",
+                "chunk_concept": "escape from confinement",
+                "source": "legal_concept",
+                "similarity": 0.8569,
+                "weighted_score": 0.8569
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "negligence of public servant",
+                "source": "legal_concept",
+                "similarity": 0.8053,
+                "weighted_score": 0.8053
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.971,
+                "weighted_score": 0.7283
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "bound",
+                "source": "keyword",
+                "similarity": 0.9086,
+                "weighted_score": 0.6814
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "custody",
+                "source": "keyword",
+                "similarity": 0.8966,
+                "weighted_score": 0.6725
+              }
+            ],
+            "score": 0.8569,
+            "best_similarity": 0.8569,
+            "best_concept": "escape from confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8569,
+            "score_before_pre_rerank": 0.380157,
+            "score_after_pre_rerank": 0.465971
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S259_BODY",
+          "score": 0.465971,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 259,
+          "citation": "Section 259",
+          "text": "Whoever, being a public servant, legally bound as such public servant to apprehend or to keep in confinement any person charged with or liable to be apprehended for an offence, intentionally omits to apprehend such person, or intentionally suffers such person to escape, or intentionally aids such person in escaping or attempting to escape from such confinement, shall be punished,–",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 259: Intentional omission to apprehend on part of public servant bound to apprehend.\nWhoever, being a public servant, legally bound as such public servant to apprehend or to keep in confinement any person charged with or liable to be apprehended for an offence, intentionally omits to apprehend such person, or intentionally suffers such person to escape, or intentionally aids such person in escaping or attempting to escape from such confinement, shall be punished,–",
+          "keywords": [
+            "public",
+            "apprehend",
+            "servant",
+            "intentionally",
+            "bound",
+            "confinement",
+            "escape",
+            "whoever",
+            "legally",
+            "keep",
+            "public servant",
+            "apprehension"
+          ],
+          "legal_concepts": [
+            "omission to apprehend",
+            "escape from confinement"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.728286400437355,
+            "original:semrank_pre_rerank": 0.8569,
+            "semrank_pre_rerank": 0.8569
+          },
+          "query_scores": {
+            "original": 0.38015695951333867
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7283,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "about",
+                "chunk_concept": "escape from confinement",
+                "source": "legal_concept",
+                "similarity": 0.8569,
+                "weighted_score": 0.8569
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "omission to apprehend",
+                "source": "legal_concept",
+                "similarity": 0.8482,
+                "weighted_score": 0.8482
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.971,
+                "weighted_score": 0.7283
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "intentionally",
+                "source": "keyword",
+                "similarity": 0.9178,
+                "weighted_score": 0.6884
+              },
+              {
+                "query_concept": "say",
+                "chunk_concept": "apprehend",
+                "source": "keyword",
+                "similarity": 0.9127,
+                "weighted_score": 0.6845
+              }
+            ],
+            "score": 0.8569,
+            "best_similarity": 0.8569,
+            "best_concept": "escape from confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8569,
+            "score_before_pre_rerank": 0.380157,
+            "score_after_pre_rerank": 0.465971
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S254_BODY",
+          "score": 0.461815,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 254,
+          "citation": "Section 254",
+          "text": "Whoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 254: Penalty for harbouring robbers or dacoits.\nWhoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "them",
+            "robbery",
+            "dacoity",
+            "whoever",
+            "knowing",
+            "having",
+            "reason",
+            "believe",
+            "about",
+            "commit",
+            "harbouring"
+          ],
+          "legal_concepts": [
+            "punishment for harbouring robbers or dacoits"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.7499999552965164,
+            "original:semrank_pre_rerank": 0.8144,
+            "semrank_pre_rerank": 0.8144
+          },
+          "query_scores": {
+            "original": 0.384417975917526
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "duress",
+                "chunk_concept": "punishment for harbouring robbers or dacoits",
+                "source": "legal_concept",
+                "similarity": 0.8144,
+                "weighted_score": 0.8144
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "about",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "knowing",
+                "source": "keyword",
+                "similarity": 0.9375,
+                "weighted_score": 0.7031
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.9153,
+                "weighted_score": 0.6864
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "them",
+                "source": "keyword",
+                "similarity": 0.9103,
+                "weighted_score": 0.6827
+              }
+            ],
+            "score": 0.8144,
+            "best_similarity": 0.8144,
+            "best_concept": "punishment for harbouring robbers or dacoits",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8144,
+            "score_before_pre_rerank": 0.384418,
+            "score_after_pre_rerank": 0.461815
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S32_BODY",
+          "score": 1.0,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 32,
+          "citation": "Section 32",
+          "text": "Except murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person will otherwise be the consequence: Provided that the person doing the act did not of his own accord, or from a reasonable apprehension of harm to himself short of instant death, place himself in the situation by which he became subject to such constraint.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 32: Act to which a person is compelled by threats.\nExcept murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person will otherwise be the consequence: Provided that the person doing the act did not of his own accord, or from a reasonable apprehension of harm to himself short of instant death, place himself in the situation by which he became subject to such constraint.",
+          "keywords": [
+            "death",
+            "compelled",
+            "threats",
+            "doing",
+            "apprehension",
+            "instant",
+            "himself",
+            "except",
+            "murder",
+            "offences",
+            "instant death"
+          ],
+          "legal_concepts": [
+            "act of compulsion",
+            "threats causing apprehension of instant death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "act of compulsion",
+              "threats causing apprehension of instant death"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7409353852272034,
+            "original:bm25": 0.6959943157496717,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "act of compulsion",
+                "chunk_concept": "act of compulsion",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "threats causing apprehension of instant death",
+                "chunk_concept": "threats causing apprehension of instant death",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "doing",
+                "source": "keyword",
+                "similarity": 0.9384,
+                "weighted_score": 0.7038
+              },
+              {
+                "query_concept": "threats causing apprehension of instant death",
+                "chunk_concept": "instant death",
+                "source": "keyword",
+                "similarity": 0.906,
+                "weighted_score": 0.6795
+              },
+              {
+                "query_concept": "act of compulsion",
+                "chunk_concept": "compelled",
+                "source": "keyword",
+                "similarity": 0.8975,
+                "weighted_score": 0.6731
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "act of compulsion",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S32_EXP2",
+          "score": 0.962027,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 32,
+          "citation": "Section 32",
+          "text": "A person seized by a gang of dacoits, and forced, by threat of instant death, to do a thing which is an offence by law; for example, a smith compelled to take his tools and to force the door of a house for the dacoits to enter and plunder it, is entitled to the benefit of this exception. Act causing slight harm.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 32: Act to which a person is compelled by threats.\nA person seized by a gang of dacoits, and forced, by threat of instant death, to do a thing which is an offence by law; for example, a smith compelled to take his tools and to force the door of a house for the dacoits to enter and plunder it, is entitled to the benefit of this exception. Act causing slight harm.",
+          "keywords": [
+            "dacoits",
+            "compelled",
+            "seized",
+            "gang",
+            "forced",
+            "threat",
+            "instant",
+            "death",
+            "offence"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.739559531211853,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.6818,
+            "semrank_pre_rerank": 0.6818
+          },
+          "query_scores": {
+            "original": 0.9714055858439331
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "score": 0.6818,
+            "best_similarity": 0.9091,
+            "best_concept": "forced",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "duress",
+                "chunk_concept": "forced",
+                "source": "keyword",
+                "similarity": 0.9091,
+                "weighted_score": 0.6818
+              },
+              {
+                "query_concept": "act of compulsion",
+                "chunk_concept": "compelled",
+                "source": "keyword",
+                "similarity": 0.8975,
+                "weighted_score": 0.6731
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "instant",
+                "source": "keyword",
+                "similarity": 0.8928,
+                "weighted_score": 0.6696
+              },
+              {
+                "query_concept": "duress",
+                "chunk_concept": "threat",
+                "source": "keyword",
+                "similarity": 0.8911,
+                "weighted_score": 0.6683
+              },
+              {
+                "query_concept": "say",
+                "chunk_concept": "gang",
+                "source": "keyword",
+                "similarity": 0.8671,
+                "weighted_score": 0.6503
+              }
+            ],
+            "pre_rerank_score": 0.6818,
+            "score_before_pre_rerank": 0.971406,
+            "score_after_pre_rerank": 0.919277
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S32_EXP1",
+          "score": 0.944346,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 32,
+          "citation": "Section 32",
+          "text": "A person who, of his own accord, or by reason of a threat of being beaten, joins a gang of dacoits, knowing their character, is not entitled to the benefit of this exception, on the ground of his having been compelled by his associates to do anything that is an offence by law.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 32: Act to which a person is compelled by threats.\nA person who, of his own accord, or by reason of a threat of being beaten, joins a gang of dacoits, knowing their character, is not entitled to the benefit of this exception, on the ground of his having been compelled by his associates to do anything that is an offence by law.",
+          "keywords": [
+            "compelled",
+            "accord",
+            "reason",
+            "threat",
+            "beaten",
+            "joins",
+            "gang",
+            "dacoits",
+            "knowing",
+            "their"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.7743735789958182,
+            "original:semrank_pre_rerank": 0.7031,
+            "semrank_pre_rerank": 0.7031
+          },
+          "query_scores": {
+            "original": 0.9580921940422965
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "score": 0.7031,
+            "best_similarity": 0.9375,
+            "best_concept": "knowing",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "about",
+                "chunk_concept": "knowing",
+                "source": "keyword",
+                "similarity": 0.9375,
+                "weighted_score": 0.7031
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.9153,
+                "weighted_score": 0.6864
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "accord",
+                "source": "keyword",
+                "similarity": 0.9099,
+                "weighted_score": 0.6824
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "joins",
+                "source": "keyword",
+                "similarity": 0.8985,
+                "weighted_score": 0.6738
+              },
+              {
+                "query_concept": "act of compulsion",
+                "chunk_concept": "compelled",
+                "source": "keyword",
+                "similarity": 0.8975,
+                "weighted_score": 0.6731
+              }
+            ],
+            "pre_rerank_score": 0.7031,
+            "score_before_pre_rerank": 0.958092,
+            "score_after_pre_rerank": 0.912194
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__section__BNS_S32",
+          "score": 0.482925,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 32,
+          "citation": "Section 32",
+          "text": "Except murder, and offences against the State punishable with\ndeath, nothing is an offence which is done by a person who is compelled to\ndo it by threats, which, at the time of doing it, reasonably cause the\napprehension that instant death to that person will otherwise be the\nconsequence:\nProvided that the person doing the act did not of his own accord, or\nfrom a reasonable apprehension of harm to himself short of instant death,\nplace himself in the situation by which he became subject to such\nconstraint.\nExplanation 1.—A person who, of his own accord, or by reason of a\nthreat of being beaten, joins a gang of dacoits, knowing their character, is\nnot entitled to the benefit of this exception, on the ground of his having\nbeen compelled by his associates to do anything that is an offence by law.\nExplanation 2.—A person seized by a gang of dacoits, and forced, by\nthreat of instant death, to do a thing which is an offence by law; for\nexample, a smith compelled to take his tools and to force the door of a\nhouse for the dacoits to enter and plunder it, is entitled to the benefit of\nthis exception.\nAct causing slight harm.",
+          "derived_context": "",
+          "keywords": [
+            "compelled_by_threats",
+            "instant_death"
+          ],
+          "legal_concepts": [
+            "duress",
+            "imminence_of_harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "duress",
+              "imminence_of_harm"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.846558
+          },
+          "query_scores": {
+            "original": 0.5868197811971101
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S32_EXP1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S211_BODY",
+          "score": 0.193998,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+          "section_number": 211,
+          "citation": "Section 211",
+          "text": "Whoever, being legally bound to give any notice or to furnish information on any subject to any public servant, as such, intentionally omits to give such notice or to furnish such information in the manner and at the time required by law,–",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 13: OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS\nSection 211: Omission to give notice or information to public servant by person legally bound to give it.\nWhoever, being legally bound to give any notice or to furnish information on any subject to any public servant, as such, intentionally omits to give such notice or to furnish such information in the manner and at the time required by law,–",
+          "keywords": [
+            "give",
+            "notice",
+            "information",
+            "public",
+            "legally",
+            "bound",
+            "furnish",
+            "servant",
+            "whoever",
+            "subject",
+            "omission"
+          ],
+          "legal_concepts": [
+            "offence",
+            "public servant",
+            "legally bound"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.728286400437355,
+            "original:semrank_pre_rerank": 0.9249,
+            "semrank_pre_rerank": 0.9249
+          },
+          "query_scores": {
+            "original": 0.38842989274272527
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7283,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "about",
+                "chunk_concept": "legally bound",
+                "source": "legal_concept",
+                "similarity": 0.9249,
+                "weighted_score": 0.9249
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 0.8419,
+                "weighted_score": 0.8419
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.971,
+                "weighted_score": 0.7283
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "information",
+                "source": "keyword",
+                "similarity": 0.9514,
+                "weighted_score": 0.7135
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "subject",
+                "source": "keyword",
+                "similarity": 0.9267,
+                "weighted_score": 0.6951
+              }
+            ],
+            "score": 0.9249,
+            "best_similarity": 0.9249,
+            "best_concept": "legally bound",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9249,
+            "score_before_pre_rerank": 0.38843,
+            "score_after_pre_rerank": 0.484995
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S264_BODY",
+          "score": 0.18988,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 264,
+          "citation": "Section 264",
+          "text": "Whoever, being a public servant legally bound as such public servant to apprehend, or to keep in confinement, any person in any case not provided for in section 259, section 260 or section 261, or in any other law for the time being in force, omits to apprehend that person or suffers him to escape from confinement, shall be punished—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 264: Omission to apprehend, or sufferance of escape, on part of public servant, in cases not\nWhoever, being a public servant legally bound as such public servant to apprehend, or to keep in confinement, any person in any case not provided for in section 259, section 260 or section 261, or in any other law for the time being in force, omits to apprehend that person or suffers him to escape from confinement, shall be punished—",
+          "keywords": [
+            "public",
+            "servant",
+            "apprehend",
+            "confinement",
+            "escape",
+            "whoever",
+            "legally",
+            "bound",
+            "keep",
+            "public servant",
+            "apprehension"
+          ],
+          "legal_concepts": [
+            "omission to apprehend",
+            "sufferance of escape"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.728286400437355,
+            "original:semrank_pre_rerank": 0.8881,
+            "semrank_pre_rerank": 0.8881
+          },
+          "query_scores": {
+            "original": 0.38395277009367196
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7283,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "duress",
+                "chunk_concept": "sufferance of escape",
+                "source": "legal_concept",
+                "similarity": 0.8881,
+                "weighted_score": 0.8881
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "omission to apprehend",
+                "source": "legal_concept",
+                "similarity": 0.8482,
+                "weighted_score": 0.8482
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.971,
+                "weighted_score": 0.7283
+              },
+              {
+                "query_concept": "say",
+                "chunk_concept": "apprehend",
+                "source": "keyword",
+                "similarity": 0.9127,
+                "weighted_score": 0.6845
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "bound",
+                "source": "keyword",
+                "similarity": 0.9086,
+                "weighted_score": 0.6814
+              }
+            ],
+            "score": 0.8881,
+            "best_similarity": 0.8881,
+            "best_concept": "sufferance of escape",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8881,
+            "score_before_pre_rerank": 0.383953,
+            "score_after_pre_rerank": 0.474699
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S210_BODY",
+          "score": 0.186467,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+          "section_number": 210,
+          "citation": "Section 210",
+          "text": "Whoever, being legally bound to produce or deliver up any document or electronic record to any public servant, as such, intentionally omits so to produce or deliver up the same,–",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 13: OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS\nSection 210: Omission to produce document or electronic record to public servant by person legally\nWhoever, being legally bound to produce or deliver up any document or electronic record to any public servant, as such, intentionally omits so to produce or deliver up the same,–",
+          "keywords": [
+            "produce",
+            "public",
+            "legally",
+            "deliver",
+            "electronic",
+            "record",
+            "servant",
+            "whoever",
+            "bound",
+            "omission",
+            "electronic record"
+          ],
+          "legal_concepts": [
+            "contempt of lawful authority",
+            "public servants"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.728286400437355,
+            "original:semrank_pre_rerank": 0.8576,
+            "semrank_pre_rerank": 0.8576
+          },
+          "query_scores": {
+            "original": 0.3802419718326861
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7283,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "about",
+                "chunk_concept": "public servants",
+                "source": "legal_concept",
+                "similarity": 0.8576,
+                "weighted_score": 0.8576
+              },
+              {
+                "query_concept": "duress",
+                "chunk_concept": "contempt of lawful authority",
+                "source": "legal_concept",
+                "similarity": 0.8435,
+                "weighted_score": 0.8435
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.971,
+                "weighted_score": 0.7283
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "record",
+                "source": "keyword",
+                "similarity": 0.9291,
+                "weighted_score": 0.6969
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "electronic",
+                "source": "keyword",
+                "similarity": 0.9198,
+                "weighted_score": 0.6899
+              }
+            ],
+            "score": 0.8576,
+            "best_similarity": 0.8576,
+            "best_concept": "public servants",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8576,
+            "score_before_pre_rerank": 0.380242,
+            "score_after_pre_rerank": 0.466166
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S261_BODY",
+          "score": 0.186389,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 261,
+          "citation": "Section 261",
+          "text": "Whoever, being a public servant legally bound as such public servant to keep in confinement any person charged with or convicted of any offence or lawfully committed to custody, negligently suffers such person to escape from confinement, shall be punished with simple imprisonment for a term which may extend to two years, or with fine, or with both. Resistance or obstruction by a person to his lawful apprehension.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 261: Escape from confinement or custody negligently suffered by public servant.\nWhoever, being a public servant legally bound as such public servant to keep in confinement any person charged with or convicted of any offence or lawfully committed to custody, negligently suffers such person to escape from confinement, shall be punished with simple imprisonment for a term which may extend to two years, or with fine, or with both. Resistance or obstruction by a person to his lawful apprehension.",
+          "keywords": [
+            "public",
+            "servant",
+            "confinement",
+            "custody",
+            "negligently",
+            "escape",
+            "whoever",
+            "legally",
+            "bound",
+            "keep",
+            "negligent",
+            "public servant"
+          ],
+          "legal_concepts": [
+            "escape from confinement",
+            "negligence of public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.728286400437355,
+            "original:semrank_pre_rerank": 0.8569,
+            "semrank_pre_rerank": 0.8569
+          },
+          "query_scores": {
+            "original": 0.3801571733903846
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7283,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "about",
+                "chunk_concept": "escape from confinement",
+                "source": "legal_concept",
+                "similarity": 0.8569,
+                "weighted_score": 0.8569
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "negligence of public servant",
+                "source": "legal_concept",
+                "similarity": 0.8053,
+                "weighted_score": 0.8053
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.971,
+                "weighted_score": 0.7283
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "bound",
+                "source": "keyword",
+                "similarity": 0.9086,
+                "weighted_score": 0.6814
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "custody",
+                "source": "keyword",
+                "similarity": 0.8966,
+                "weighted_score": 0.6725
+              }
+            ],
+            "score": 0.8569,
+            "best_similarity": 0.8569,
+            "best_concept": "escape from confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8569,
+            "score_before_pre_rerank": 0.380157,
+            "score_after_pre_rerank": 0.465971
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S259_BODY",
+          "score": 0.186388,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 259,
+          "citation": "Section 259",
+          "text": "Whoever, being a public servant, legally bound as such public servant to apprehend or to keep in confinement any person charged with or liable to be apprehended for an offence, intentionally omits to apprehend such person, or intentionally suffers such person to escape, or intentionally aids such person in escaping or attempting to escape from such confinement, shall be punished,–",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 259: Intentional omission to apprehend on part of public servant bound to apprehend.\nWhoever, being a public servant, legally bound as such public servant to apprehend or to keep in confinement any person charged with or liable to be apprehended for an offence, intentionally omits to apprehend such person, or intentionally suffers such person to escape, or intentionally aids such person in escaping or attempting to escape from such confinement, shall be punished,–",
+          "keywords": [
+            "public",
+            "apprehend",
+            "servant",
+            "intentionally",
+            "bound",
+            "confinement",
+            "escape",
+            "whoever",
+            "legally",
+            "keep",
+            "public servant",
+            "apprehension"
+          ],
+          "legal_concepts": [
+            "omission to apprehend",
+            "escape from confinement"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.728286400437355,
+            "original:semrank_pre_rerank": 0.8569,
+            "semrank_pre_rerank": 0.8569
+          },
+          "query_scores": {
+            "original": 0.38015695951333867
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7283,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "about",
+                "chunk_concept": "escape from confinement",
+                "source": "legal_concept",
+                "similarity": 0.8569,
+                "weighted_score": 0.8569
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "omission to apprehend",
+                "source": "legal_concept",
+                "similarity": 0.8482,
+                "weighted_score": 0.8482
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.971,
+                "weighted_score": 0.7283
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "intentionally",
+                "source": "keyword",
+                "similarity": 0.9178,
+                "weighted_score": 0.6884
+              },
+              {
+                "query_concept": "say",
+                "chunk_concept": "apprehend",
+                "source": "keyword",
+                "similarity": 0.9127,
+                "weighted_score": 0.6845
+              }
+            ],
+            "score": 0.8569,
+            "best_similarity": 0.8569,
+            "best_concept": "escape from confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8569,
+            "score_before_pre_rerank": 0.380157,
+            "score_after_pre_rerank": 0.465971
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S254_BODY",
+          "score": 0.184726,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 254,
+          "citation": "Section 254",
+          "text": "Whoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 254: Penalty for harbouring robbers or dacoits.\nWhoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "them",
+            "robbery",
+            "dacoity",
+            "whoever",
+            "knowing",
+            "having",
+            "reason",
+            "believe",
+            "about",
+            "commit",
+            "harbouring"
+          ],
+          "legal_concepts": [
+            "punishment for harbouring robbers or dacoits"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.7499999552965164,
+            "original:semrank_pre_rerank": 0.8144,
+            "semrank_pre_rerank": 0.8144
+          },
+          "query_scores": {
+            "original": 0.384417975917526
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "duress",
+              "imminence_of_harm",
+              "act of compulsion",
+              "threats causing apprehension of instant death",
+              "section 32",
+              "32",
+              "say",
+              "about"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "duress",
+                "chunk_concept": "punishment for harbouring robbers or dacoits",
+                "source": "legal_concept",
+                "similarity": 0.8144,
+                "weighted_score": 0.8144
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "about",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "knowing",
+                "source": "keyword",
+                "similarity": 0.9375,
+                "weighted_score": 0.7031
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.9153,
+                "weighted_score": 0.6864
+              },
+              {
+                "query_concept": "about",
+                "chunk_concept": "them",
+                "source": "keyword",
+                "similarity": 0.9103,
+                "weighted_score": 0.6827
+              }
+            ],
+            "score": 0.8144,
+            "best_similarity": 0.8144,
+            "best_concept": "punishment for harbouring robbers or dacoits",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8144,
+            "score_before_pre_rerank": 0.384418,
+            "score_after_pre_rerank": 0.461815
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    },
+    "phase11": {
+      "answer_type": "lookup",
+      "support_status": "supported",
+      "confidence": {
+        "score": 0.98,
+        "label": "high"
+      },
+      "final_answer": "Section 32 provides that a person compelled by threats causing reasonable apprehension of instant death is not committing an offence, except for murder and certain state offences, provided they did not voluntarily place themselves in that situation.",
+      "summary_answer": "Section 32 states that a person compelled by threats that cause reasonable apprehension of instant death is not committing an offence, except for murder and certain state offences.",
+      "detailed_answer": "According to Section 32 of the Bharatiya Nyaya Sanhita, 2023, a person who is compelled to act by threats that reasonably cause the apprehension of instant death is not committing an offence, with the exception of murder and offences against the State punishable by death. However, this provision does not apply if the person voluntarily placed themselves in a situation where they could be subjected to such threats. For instance, a person who joins a gang of dacoits knowing their character cannot claim this exception, while a person forced by a gang under threat of instant death to commit an offence may be entitled to this exception.",
+      "citations": [
+        "Section 32 Body, Bharatiya Nyaya Sanhita, 2023",
+        "Section 32: Act to which a person is compelled by threats.",
+        "Section 32 Explanation 1, Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "matched_sections": [
+        "Section 32",
+        "Section 211",
+        "Section 264"
+      ],
+      "missing_sections": [],
+      "missing_from_corpus": [],
+      "selected_chunk_ids": [
+        "chunk__node__BNS_S32_BODY",
+        "chunk__section__BNS_S32",
+        "chunk__node__BNS_S32_EXP1"
+      ],
+      "warnings": [],
+      "structured_reasoning": {
+        "base_concept": "",
+        "selected_section": "Section 32",
+        "selection_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "overrides_score_selection": false,
+        "uncertainty": "low",
+        "uncertainty_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "alternative_sections": [
+          "Section 211",
+          "Section 264"
+        ],
+        "sections_analyzed": [
+          {
+            "section": "Section 32",
+            "role": "retrieved_evidence",
+            "condition_summary": "Except murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person...",
+            "condition_match_score": 1.0,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "act of compulsion ~ act of compulsion",
+              "threats causing apprehension of instant death ~ threats causing apprehension of instant death",
+              "about ~ doing",
+              "threats causing apprehension of instant death ~ instant death",
+              "act of compulsion ~ compelled"
+            ],
+            "raw_retrieval_score": 1.0,
+            "hit_count": 3,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 211",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever, being legally bound to give any notice or to furnish information on any subject to any public servant, as such, intentionally omits to give such notice or to furnish such information in the manner and at the time required by law,–",
+            "condition_match_score": 0.193998,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "about ~ legally bound",
+              "about ~ public servant",
+              "about ~ legally",
+              "about ~ information",
+              "about ~ subject"
+            ],
+            "raw_retrieval_score": 0.193998,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 264",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever, being a public servant legally bound as such public servant to apprehend, or to keep in confinement, any person in any case not provided for in section 259, section 260 or section 261, or in any other law for the time being in force, omits to...",
+            "condition_match_score": 0.18988,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "duress ~ sufferance of escape",
+              "about ~ omission to apprehend",
+              "about ~ legally",
+              "say ~ apprehend",
+              "about ~ bound"
+            ],
+            "raw_retrieval_score": 0.18988,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          }
+        ]
+      },
+      "validation": {
+        "requested_sections": [
+          "Section 32"
+        ],
+        "present_in_corpus": [
+          "Section 32"
+        ],
+        "retrieved_exact_matches": [
+          "Section 32"
+        ],
+        "missing_from_corpus": [],
+        "intent_alignment": "strong",
+        "intent_notes": [
+          "Lookup intent is anchored by a direct base legal chunk."
+        ],
+        "answer_verified": true,
+        "verification_issues": [],
+        "llm_answer_verified": true,
+        "llm_verification_issues": [],
+        "completeness": "complete",
+        "guardrail_grounding_strength": 1.0,
+        "repaired": false,
+        "fallback_used": false
+      },
+      "evidence": {
+        "primary_chunk_id": "chunk__node__BNS_S32_BODY",
+        "primary_chunk_type": "content",
+        "primary_section": "Section 32",
+        "primary_section_title": "Act to which a person is compelled by threats.",
+        "related_chunk_ids": [
+          "chunk__section__BNS_S32",
+          "chunk__node__BNS_S32_EXP1"
+        ],
+        "top_sections": [
+          {
+            "section": "Section 32",
+            "section_title": "Act to which a person is compelled by threats.",
+            "hit_count": 3,
+            "best_score": 1.0,
+            "chunk_types": {
+              "content": 1,
+              "section": 1,
+              "explanation": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.5
+          },
+          {
+            "section": "Section 211",
+            "section_title": "Omission to give notice or information to public servant by person legally bound to give it.",
+            "hit_count": 1,
+            "best_score": 0.193998,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 0.9249,
+            "concept_coverage": 0.0
+          },
+          {
+            "section": "Section 264",
+            "section_title": "Omission to apprehend, or sufferance of escape, on part of public servant, in cases not",
+            "hit_count": 1,
+            "best_score": 0.18988,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 0.8881,
+            "concept_coverage": 0.0
+          }
+        ],
+        "llm_evidence": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S32_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": "32",
+            "citation": "Section 32 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "Except murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person will otherwise be the consequence: Provided that the person doing the act did not of his own accord, or from a reasonable apprehension of harm to himself short of instant death, place himself in the situation by which he became subject to such constraint."
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__section__BNS_S32",
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": "32",
+            "citation": "Section 32: Act to which a person is compelled by threats.",
+            "text": "Except murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person will otherwise be the consequence: Provided that the person doing the act did not of his own accord, or from a reasonable apprehension of harm to himself short of instant death, place himself in the situation by which he became subject to such constraint. Explanation 1.—A person who, of his own accord, or by reason of a threat of being beaten, joins a gang of dacoits, knowing their character, is not entitled to the benefit of this exception, on the ground of his having been compelled by his associates to do anything that is an offence by law. Explanation 2.—A person seized by a gang of dacoits, and forced, by threat of instant death, to do a thing which is an offence by law; for example, a smith compelled to take his tools and to force the door of a house for the dacoits to enter and plunder it, is entitled to the benefit of this exception. Act causing slight harm."
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S32_EXP1",
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": "32",
+            "citation": "Section 32 Explanation 1, Bharatiya Nyaya Sanhita, 2023",
+            "text": "A person who, of his own accord, or by reason of a threat of being beaten, joins a gang of dacoits, knowing their character, is not entitled to the benefit of this exception, on the ground of his having been compelled by his associates to do anything that is an offence by law."
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S211_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+            "section_number": "211",
+            "citation": "Section 211 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever, being legally bound to give any notice or to furnish information on any subject to any public servant, as such, intentionally omits to give such notice or to furnish such information in the manner and at the time required by law,–"
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S264_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": "264",
+            "citation": "Section 264 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever, being a public servant legally bound as such public servant to apprehend, or to keep in confinement, any person in any case not provided for in section 259, section 260 or section 261, or in any other law for the time being in force, omits to apprehend that person or suffers him to escape from confinement, shall be punished—"
+          }
+        ]
+      },
+      "llm_generation": {
+        "enabled": true,
+        "used": true,
+        "model": "gpt-4o-mini",
+        "reasoning_trace": [
+          "Identified relevant sections regarding threats and offences.",
+          "Summarized the key points of Section 32.",
+          "Cited specific explanations and exceptions provided in the section."
+        ],
+        "caution_notes": [],
+        "error": null,
+        "repaired": false,
+        "fallback_used": false
+      }
+    }
+  }
+]

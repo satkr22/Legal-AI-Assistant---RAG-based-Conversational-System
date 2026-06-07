@@ -1,0 +1,200 @@
+{
+  "query_id": "Q056",
+  "query": "Someone encouraged another person to commit theft. What offence may apply?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "45"
+  ],
+  "acceptable_sections": [
+    "49",
+    "56"
+  ],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "46",
+    "51",
+    "55",
+    "49",
+    "46"
+  ],
+  "candidate_sections_at_10": [
+    "46",
+    "51",
+    "55",
+    "49",
+    "46",
+    "56",
+    "55",
+    "303",
+    "303",
+    "309"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "46",
+    "46",
+    "51",
+    "55",
+    "49"
+  ],
+  "cited_sections": [
+    "46"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "mrr_at_k": 0.0,
+    "required_hits": [],
+    "acceptable_hits": [
+      "49"
+    ],
+    "required_or_acceptable_hits": [
+      "49"
+    ],
+    "support_precision_at_k": 0.25,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "46",
+      "51",
+      "55",
+      "46"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "mrr_at_k": 0.0,
+    "required_hits": [],
+    "acceptable_hits": [
+      "49",
+      "56"
+    ],
+    "required_or_acceptable_hits": [
+      "49",
+      "56"
+    ],
+    "support_precision_at_k": 0.2857,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "46",
+      "51",
+      "55",
+      "46",
+      "55",
+      "303",
+      "303",
+      "309"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "mrr_at_k": 0.0,
+    "required_hits": [],
+    "acceptable_hits": [
+      "49"
+    ],
+    "required_or_acceptable_hits": [
+      "49"
+    ],
+    "support_precision_at_k": 0.25,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "46",
+      "46",
+      "51",
+      "55"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.3333,
+    "required_points_matched": 1,
+    "required_points_total": 3,
+    "answer_completeness_score": 0.3333,
+    "soft_answer_score": 0.3333,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Section 45 provides that a person who instigates another to do a thing abets that thing.",
+        "matched": true,
+        "overlap": 0.6,
+        "matched_terms": [
+          "another",
+          "instigates",
+          "who"
+        ]
+      },
+      {
+        "point": "Encouraging another person to commit theft amounts to abetment by instigation.",
+        "matched": false,
+        "overlap": 0.4286,
+        "matched_terms": [
+          "another",
+          "commit",
+          "theft"
+        ]
+      },
+      {
+        "point": "If the theft is committed in consequence of the abetment, Section 49 applies and the abettor is liable to the same punishment as for the offence.",
+        "matched": false,
+        "overlap": 0.2222,
+        "matched_terms": [
+          "liable",
+          "theft"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "correct_cited_sections": [],
+    "missing_required_sections": [
+      "45"
+    ],
+    "extra_cited_sections": [
+      "46"
+    ],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.7734,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "missing_required_citation",
+    "low_required_point_coverage"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 9.7843,
+    "phase_9_10": 16.2098,
+    "phase_11": 9.2561,
+    "phase_12_13": 0.0003,
+    "total": 35.2504
+  },
+  "final_answer_preview": "According to Section 46 of the Bharatiya Nyaya Sanhita, 2023, a person who instigates another to commit an offence, such as theft, is guilty of abetting that offence. Specifically, if a person (A) intends to cause theft and encourages another person (B) to take property belonging to someone else, A is guilty of abetting theft, even if B does not commit the theft due to a misunderstanding about the ownership of the property. This is illustrated in Section 46 Illustration(d), where A instigates B to take property, leading to A being liable for abetting theft.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/056_Q056"
+}

@@ -1,0 +1,73 @@
+{
+  "answer": "The key difference between cheating and criminal breach of trust lies in the nature of the act and the relationship to the property involved. Cheating, as defined in Section 318(1), involves deceiving a person to induce them to deliver property or consent to its retention, which results in harm or damage to that person (chunk__node__BNS_S318_N1). An example of cheating is when a person sells property they do not own, thereby deceiving the buyer (chunk__node__BNS_S318_N1_ILL1_I). In contrast, criminal breach of trust, as outlined in Section 316, occurs when a person who is entrusted with property dishonestly misappropriates or converts it for their own use, violating the trust placed in them (chunk__section__BNS_S316). This can occur in various contexts, such as an employer misusing employee contributions (chunk__node__BNS_S316_N1_EXP1).",
+  "summary_answer": "Cheating involves deceiving someone to induce them to part with property, while criminal breach of trust involves dishonestly misappropriating property entrusted to someone.",
+  "detailed_answer": "The key difference between cheating and criminal breach of trust lies in the nature of the act and the relationship to the property involved. Cheating, as defined in Section 318(1), involves deceiving a person to induce them to deliver property or consent to its retention, which results in harm or damage to that person (chunk__node__BNS_S318_N1). An example of cheating is when a person sells property they do not own, thereby deceiving the buyer (chunk__node__BNS_S318_N1_ILL1_I). In contrast, criminal breach of trust, as outlined in Section 316, occurs when a person who is entrusted with property dishonestly misappropriates or converts it for their own use, violating the trust placed in them (chunk__section__BNS_S316). This can occur in various contexts, such as an employer misusing employee contributions (chunk__node__BNS_S316_N1_EXP1).",
+  "final_answer": "Cheating involves deceiving someone to induce them to part with property, while criminal breach of trust involves dishonestly misappropriating property entrusted to someone.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 316: Criminal breach of trust.",
+    "Section 316(1) Explanation 1, Bharatiya Nyaya Sanhita, 2023",
+    "Section 318(1), Bharatiya Nyaya Sanhita, 2023",
+    "Section 318(1) Illustration(i), Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.7368,
+    "reranker": 0.6373,
+    "citation": 1.0,
+    "reasoning": 0.992,
+    "evidence_strength": 0.7368,
+    "reasoning_certainty": 0.992,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.7309,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.7309,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.6373,
+        "avg_selected_semrank_score": 1.0,
+        "avg_selected_concept_coverage": 0.5,
+        "selected_chunk_count": 4,
+        "matched_selected_chunk_count": 4,
+        "selected_semrank_count": 3
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.984,
+        "ambiguity_gap_score": 1.0,
+        "uncertainty_score": 1.0,
+        "gap": 0.4553,
+        "highest_competing_score": 0.5287,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.7309,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__section__BNS_S316",
+    "chunk__node__BNS_S318_N1",
+    "chunk__node__BNS_S318_N1_ILL1_I",
+    "chunk__node__BNS_S316_N1_EXP1"
+  ]
+}

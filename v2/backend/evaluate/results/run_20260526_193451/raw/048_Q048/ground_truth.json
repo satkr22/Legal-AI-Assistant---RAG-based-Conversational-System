@@ -1,0 +1,61 @@
+{
+  "query_id": "Q048",
+  "query": "I accidentally hit a person with my car while reversing. What can happen under BNS?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "125",
+      "subsection": null,
+      "label": "Section 125",
+      "role": "rash or negligent act endangering life or personal safety",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "18",
+      "label": "Section 18",
+      "reason": "accident exception may apply if the act was lawful, careful, and without criminal intention or knowledge"
+    },
+    {
+      "act": "BNS",
+      "section": "106",
+      "label": "Section 106",
+      "reason": "causing death by rash or negligent act applies if death resulted"
+    },
+    {
+      "act": "BNS",
+      "section": "281",
+      "label": "Section 281",
+      "reason": "rash driving or riding on a public way may apply if the reversing happened on a public way"
+    }
+  ],
+  "wrong_references": [
+    {
+      "act": "BNS",
+      "section": "103",
+      "label": "Section 103",
+      "reason": "murder requires intention or knowledge; pure accident does not attract Section 103"
+    }
+  ],
+  "answer_key": {
+    "required_points": [
+      "If no death results but danger or hurt was caused by a rash or negligent act, Section 125 may apply.",
+      "If the act was truly accidental without criminal intention or knowledge, and with proper care and caution, Section 18 (accident exception) may apply."
+    ],
+    "optional_points": [
+      "If death results from a rash or negligent act, Section 106 may apply.",
+      "The final determination depends on whether the act was rash or negligent."
+    ],
+    "forbidden_points": [
+      "This amounts to murder under Section 103.",
+      "An accident always results in no liability."
+    ]
+  },
+  "notes": "Scenario query. Section 125 is primary because death is not stated; Section 106 applies only if death occurs, and Section 18 may apply if truly accidental."
+}

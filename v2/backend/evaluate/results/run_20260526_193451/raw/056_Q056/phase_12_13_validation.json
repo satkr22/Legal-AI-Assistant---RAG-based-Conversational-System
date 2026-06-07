@@ -1,0 +1,69 @@
+{
+  "answer": "According to Section 46 of the Bharatiya Nyaya Sanhita, 2023, a person who instigates another to commit an offence, such as theft, is guilty of abetting that offence. Specifically, if a person (A) intends to cause theft and encourages another person (B) to take property belonging to someone else, A is guilty of abetting theft, even if B does not commit the theft due to a misunderstanding about the ownership of the property. This is illustrated in Section 46 Illustration(d), where A instigates B to take property, leading to A being liable for abetting theft.",
+  "summary_answer": "The offence of abetment applies when someone encourages another to commit theft.",
+  "detailed_answer": "According to Section 46 of the Bharatiya Nyaya Sanhita, 2023, a person who instigates another to commit an offence, such as theft, is guilty of abetting that offence. Specifically, if a person (A) intends to cause theft and encourages another person (B) to take property belonging to someone else, A is guilty of abetting theft, even if B does not commit the theft due to a misunderstanding about the ownership of the property. This is illustrated in Section 46 Illustration(d), where A instigates B to take property, leading to A being liable for abetting theft.",
+  "final_answer": "The offence of abetment applies when someone encourages another to commit theft.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 46: Abettor.",
+    "Section 46 Illustration(d), Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.7796,
+    "reranker": 0.8066,
+    "citation": 1.0,
+    "reasoning": 0.992,
+    "evidence_strength": 0.7796,
+    "reasoning_certainty": 0.992,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.7734,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.7734,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.8066,
+        "avg_selected_semrank_score": 1.0,
+        "avg_selected_concept_coverage": 0.3333,
+        "selected_chunk_count": 2,
+        "matched_selected_chunk_count": 2,
+        "selected_semrank_count": 1
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.984,
+        "ambiguity_gap_score": 1.0,
+        "uncertainty_score": 1.0,
+        "gap": 0.2087,
+        "highest_competing_score": 0.7753,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.7734,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__section__BNS_S46",
+    "chunk__node__BNS_S46_ILL2_2_D"
+  ]
+}

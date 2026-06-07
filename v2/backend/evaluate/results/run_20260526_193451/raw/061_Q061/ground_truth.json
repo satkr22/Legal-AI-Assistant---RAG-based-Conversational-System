@@ -1,0 +1,39 @@
+{
+  "query_id": "Q061",
+  "query": "A person gave false evidence in court. What offence is this?",
+  "query_type": "factual_scenario",
+  "difficulty": "easy",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "227",
+      "subsection": null,
+      "label": "Section 227",
+      "role": "definition of giving false evidence",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "229",
+      "label": "Section 229",
+      "reason": "punishment for giving or fabricating false evidence"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 227 defines giving false evidence as making a false statement while legally bound by oath or express provision of law to state the truth.",
+      "Section 229(1) provides that intentionally giving false evidence in any stage of a judicial proceeding is punishable with imprisonment up to seven years and fine up to ten thousand rupees."
+    ],
+    "optional_points": [],
+    "forbidden_points": [
+      "Giving false evidence in court is not covered by BNS.",
+      "False testimony is only an offence if a conviction results."
+    ]
+  },
+  "notes": "Scenario query. Section 227 is primary because the query asks what offence it is; Section 229 is acceptable for punishment."
+}

@@ -1,0 +1,3229 @@
+[
+  {
+    "query": "What punishments are listed under Section 4 of BNS?",
+    "phase8": {
+      "query": "What punishments are listed under Section 4 of BNS?",
+      "intent": {
+        "primary": "lookup",
+        "secondary": []
+      },
+      "concepts": [
+        "liable",
+        "liable punishment",
+        "punishment",
+        "imprisonment",
+        "punishment for forfeiture",
+        "commutation of sentence"
+      ],
+      "targets": [
+        "Section 4"
+      ],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 1.0,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.8,
+        "structure_validity": 1.0,
+        "overall": 0.96
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What punishments are listed under Section 4 of BNS?",
+          "targets": [
+            "Section 4"
+          ],
+          "concepts": [
+            "liable",
+            "liable punishment",
+            "punishment",
+            "imprisonment",
+            "punishment for forfeiture",
+            "commutation of sentence"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S4_C",
+            "score": 1.0,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF PUNISHMENTS",
+            "section_number": 4,
+            "citation": "Section 4",
+            "text": "Imprisonment, which is of two descriptions, namely:—",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nImprisonment, which is of two descriptions, namely:—",
+            "keywords": [
+              "punishments",
+              "imprisonment",
+              "descriptions",
+              "namely",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "punishment",
+              "imprisonment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 2,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "punishment",
+                "imprisonment"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7200314998626709,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "liable",
+                "liable punishment",
+                "imprisonment",
+                "punishment for forfeiture",
+                "commutation of sentence",
+                "section 4",
+                "punishments",
+                "listed"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "punishments",
+                  "chunk_concept": "punishments",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "section 4",
+                  "chunk_concept": "namely",
+                  "source": "keyword",
+                  "similarity": 0.92,
+                  "weighted_score": 0.69
+                },
+                {
+                  "query_concept": "listed",
+                  "chunk_concept": "descriptions",
+                  "source": "keyword",
+                  "similarity": 0.893,
+                  "weighted_score": 0.6697
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "imprisonment",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S4_A",
+            "score": 0.893149,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF PUNISHMENTS",
+            "section_number": 4,
+            "citation": "Section 4",
+            "text": "Death;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nDeath;",
+            "keywords": [
+              "punishments",
+              "death"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.749510645866394,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.749510645866394
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "liable",
+                "liable punishment",
+                "imprisonment",
+                "punishment for forfeiture",
+                "commutation of sentence",
+                "section 4",
+                "punishments",
+                "listed"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "punishments",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "punishments",
+                  "chunk_concept": "punishments",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "punishments",
+                  "chunk_concept": "death",
+                  "source": "keyword",
+                  "similarity": 0.8544,
+                  "weighted_score": 0.6408
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.893229,
+              "score_after_pre_rerank": 0.867448
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S4_B",
+            "score": 0.866153,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF PUNISHMENTS",
+            "section_number": 4,
+            "citation": "Section 4",
+            "text": "Imprisonment for life;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nImprisonment for life;",
+            "keywords": [
+              "punishments",
+              "imprisonment",
+              "life"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7532514333724976,
+              "bm25": 0.06666666666666667,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.7532514333724976
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "liable",
+                "liable punishment",
+                "imprisonment",
+                "punishment for forfeiture",
+                "commutation of sentence",
+                "section 4",
+                "punishments",
+                "listed"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "punishments",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "punishments",
+                  "chunk_concept": "punishments",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "section 4",
+                  "chunk_concept": "life",
+                  "source": "keyword",
+                  "similarity": 0.8593,
+                  "weighted_score": 0.6445
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.897687,
+              "score_after_pre_rerank": 0.871104
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S4_BODY",
+            "score": 0.849791,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF PUNISHMENTS",
+            "section_number": 4,
+            "citation": "Section 4",
+            "text": "The punishments to which offenders are liable under the provisions of this Sanhita are -",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nThe punishments to which offenders are liable under the provisions of this Sanhita are -",
+            "keywords": [
+              "punishments",
+              "offenders",
+              "liable",
+              "body",
+              "punishment",
+              "offender"
+            ],
+            "legal_concepts": [
+              "liable punishment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 1,
+              "coverage_ratio": 0.1667,
+              "matched_concepts": [
+                "liable punishment"
+              ]
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.4682921078247002,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "liable",
+                "liable punishment",
+                "imprisonment",
+                "punishment for forfeiture",
+                "commutation of sentence",
+                "section 4",
+                "punishments",
+                "listed"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "liable punishment",
+                  "chunk_concept": "liable punishment",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "liable",
+                  "chunk_concept": "liable",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "punishments",
+                  "chunk_concept": "punishments",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "punishments",
+                  "chunk_concept": "offenders",
+                  "source": "keyword",
+                  "similarity": 0.9198,
+                  "weighted_score": 0.6899
+                },
+                {
+                  "query_concept": "punishments",
+                  "chunk_concept": "offender",
+                  "source": "keyword",
+                  "similarity": 0.9041,
+                  "weighted_score": 0.6781
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "liable punishment",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S4_N1",
+            "score": 0.846552,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF PUNISHMENTS",
+            "section_number": 4,
+            "citation": "Section 4",
+            "text": "Rigorous, that is, with hard labour;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nRigorous, that is, with hard labour;",
+            "keywords": [
+              "punishments",
+              "rigorous",
+              "hard",
+              "labour"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6800144910812378,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.6800144910812378
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "liable",
+                "liable punishment",
+                "imprisonment",
+                "punishment for forfeiture",
+                "commutation of sentence",
+                "section 4",
+                "punishments",
+                "listed"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "punishments",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "punishments",
+                  "chunk_concept": "punishments",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "section 4",
+                  "chunk_concept": "rigorous",
+                  "source": "keyword",
+                  "similarity": 0.8807,
+                  "weighted_score": 0.6606
+                },
+                {
+                  "query_concept": "section 4",
+                  "chunk_concept": "hard",
+                  "source": "keyword",
+                  "similarity": 0.8685,
+                  "weighted_score": 0.6514
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "labour",
+                  "source": "keyword",
+                  "similarity": 0.8456,
+                  "weighted_score": 0.6342
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.810407,
+              "score_after_pre_rerank": 0.799534
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S4_N2_D",
+            "score": 0.834428,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF PUNISHMENTS",
+            "section_number": 4,
+            "citation": "Section 4",
+            "text": "Forfeiture of property;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nSimple;\nForfeiture of property;",
+            "keywords": [
+              "punishments",
+              "forfeiture",
+              "property",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "punishment for forfeiture"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 1,
+              "coverage_ratio": 0.1667,
+              "matched_concepts": [
+                "punishment for forfeiture"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6828285455703735,
+              "bm25": 0.5417597828338938,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "liable",
+                "liable punishment",
+                "imprisonment",
+                "punishment for forfeiture",
+                "commutation of sentence",
+                "section 4",
+                "punishments",
+                "listed"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "punishment for forfeiture",
+                  "chunk_concept": "punishment for forfeiture",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "punishments",
+                  "chunk_concept": "punishments",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "punishment for forfeiture",
+                  "chunk_concept": "forfeiture",
+                  "source": "keyword",
+                  "similarity": 0.9612,
+                  "weighted_score": 0.7209
+                },
+                {
+                  "query_concept": "listed",
+                  "chunk_concept": "property",
+                  "source": "keyword",
+                  "similarity": 0.8702,
+                  "weighted_score": 0.6526
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "punishment for forfeiture",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S4_N2_F",
+            "score": 0.577016,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF PUNISHMENTS",
+            "section_number": 4,
+            "citation": "Section 4",
+            "text": "Community Service. Commutation of sentence.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nSimple;\nCommunity Service. Commutation of sentence.",
+            "keywords": [
+              "punishments",
+              "community",
+              "service",
+              "commutation",
+              "sentence",
+              "community service",
+              "sentence commutation"
+            ],
+            "legal_concepts": [
+              "punishment",
+              "commutation of sentence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 2,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "punishment",
+                "commutation of sentence"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6827062964439392,
+              "bm25": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "liable",
+                "liable punishment",
+                "imprisonment",
+                "punishment for forfeiture",
+                "commutation of sentence",
+                "section 4",
+                "punishments",
+                "listed"
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "commutation of sentence",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "commutation of sentence",
+                  "chunk_concept": "commutation of sentence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "punishments",
+                  "chunk_concept": "punishments",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "commutation of sentence",
+                  "chunk_concept": "sentence commutation",
+                  "source": "keyword",
+                  "similarity": 0.9863,
+                  "weighted_score": 0.7398
+                },
+                {
+                  "query_concept": "commutation of sentence",
+                  "chunk_concept": "commutation",
+                  "source": "keyword",
+                  "similarity": 0.9456,
+                  "weighted_score": 0.7092
+                },
+                {
+                  "query_concept": "commutation of sentence",
+                  "chunk_concept": "sentence",
+                  "source": "keyword",
+                  "similarity": 0.9042,
+                  "weighted_score": 0.6782
+                }
+              ],
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S4_N2",
+            "score": 0.516637,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF PUNISHMENTS",
+            "section_number": 4,
+            "citation": "Section 4",
+            "text": "Simple;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nSimple;",
+            "keywords": [
+              "punishments",
+              "simple"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7230021953582764,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.7230021953582764
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "liable",
+                "liable punishment",
+                "imprisonment",
+                "punishment for forfeiture",
+                "commutation of sentence",
+                "section 4",
+                "punishments",
+                "listed"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "punishments",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "punishments",
+                  "chunk_concept": "punishments",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "listed",
+                  "chunk_concept": "simple",
+                  "source": "keyword",
+                  "similarity": 0.894,
+                  "weighted_score": 0.6705
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.861638,
+              "score_after_pre_rerank": 0.841543
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S54_BODY",
+            "score": 0.470291,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 54,
+            "citation": "Section 54",
+            "text": "Whenever any person, who is absent would be liable to be punished as an abettor, is present when the act or offence for which he would be punishable in consequence of the abetment is committed, he shall be deemed to have committed such act or offence. Abetment of offence punishable with death or imprisonment for life.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 54: Abettor present when offence is committed.\nWhenever any person, who is absent would be liable to be punished as an abettor, is present when the act or offence for which he would be punishable in consequence of the abetment is committed, he shall be deemed to have committed such act or offence. Abetment of offence punishable with death or imprisonment for life.",
+            "keywords": [
+              "offence",
+              "abetment",
+              "committed",
+              "abettor",
+              "present",
+              "punishable",
+              "whenever",
+              "absent",
+              "liable",
+              "punished",
+              "abettor presence",
+              "offence commission"
+            ],
+            "legal_concepts": [
+              "abettor",
+              "offence commission"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.7500001788139343,
+              "semrank_pre_rerank": 0.8696
+            },
+            "query_scores": {
+              "original": 0.7500001788139343
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.75,
+              "query_concepts": [
+                "liable",
+                "liable punishment",
+                "imprisonment",
+                "punishment for forfeiture",
+                "commutation of sentence",
+                "section 4",
+                "punishments",
+                "listed"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "punishments",
+                  "chunk_concept": "offence commission",
+                  "source": "legal_concept",
+                  "similarity": 0.8696,
+                  "weighted_score": 0.8696
+                },
+                {
+                  "query_concept": "liable",
+                  "chunk_concept": "abettor",
+                  "source": "legal_concept",
+                  "similarity": 0.8239,
+                  "weighted_score": 0.8239
+                },
+                {
+                  "query_concept": "liable",
+                  "chunk_concept": "liable",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "liable punishment",
+                  "chunk_concept": "punishable",
+                  "source": "keyword",
+                  "similarity": 0.9324,
+                  "weighted_score": 0.6993
+                },
+                {
+                  "query_concept": "listed",
+                  "chunk_concept": "present",
+                  "source": "keyword",
+                  "similarity": 0.8963,
+                  "weighted_score": 0.6722
+                }
+              ],
+              "score": 0.8696,
+              "best_similarity": 0.8696,
+              "best_concept": "offence commission",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.8696,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.976528
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S52_BODY",
+            "score": 0.453661,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 52,
+            "citation": "Section 52",
+            "text": "If the act for which the abettor is liable under section 51 is committed in addition to the act abetted, and constitute a distinct offence, the abettor is liable to punishment for each of the offences.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 52: Abettor when liable to cumulative punishment for act abetted and for act done.\nIf the act for which the abettor is liable under section 51 is committed in addition to the act abetted, and constitute a distinct offence, the abettor is liable to punishment for each of the offences.",
+            "keywords": [
+              "abettor",
+              "liable",
+              "abetted",
+              "punishment",
+              "committed",
+              "addition",
+              "constitute",
+              "distinct",
+              "offence",
+              "each",
+              "cumulative punishment",
+              "distinct offences"
+            ],
+            "legal_concepts": [
+              "abettor liability",
+              "punishment for additional offences"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6673936247825623,
+              "bm25": 0.3343724183615574,
+              "semrank": 0.7500001788139343,
+              "semrank_pre_rerank": 0.937
+            },
+            "query_scores": {
+              "original": 0.7500001788139343
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.75,
+              "query_concepts": [
+                "liable",
+                "liable punishment",
+                "imprisonment",
+                "punishment for forfeiture",
+                "commutation of sentence",
+                "section 4",
+                "punishments",
+                "listed"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "punishments",
+                  "chunk_concept": "punishment for additional offences",
+                  "source": "legal_concept",
+                  "similarity": 0.937,
+                  "weighted_score": 0.937
+                },
+                {
+                  "query_concept": "liable",
+                  "chunk_concept": "abettor liability",
+                  "source": "legal_concept",
+                  "similarity": 0.9118,
+                  "weighted_score": 0.9118
+                },
+                {
+                  "query_concept": "liable",
+                  "chunk_concept": "liable",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "punishments",
+                  "chunk_concept": "cumulative punishment",
+                  "source": "keyword",
+                  "similarity": 0.9113,
+                  "weighted_score": 0.6834
+                },
+                {
+                  "query_concept": "punishments",
+                  "chunk_concept": "distinct offences",
+                  "source": "keyword",
+                  "similarity": 0.8886,
+                  "weighted_score": 0.6664
+                }
+              ],
+              "score": 0.937,
+              "best_similarity": 0.937,
+              "best_concept": "punishment for additional offences",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.937,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.98866
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S4_C",
+          "score": 1.0,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "Imprisonment, which is of two descriptions, namely:—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nImprisonment, which is of two descriptions, namely:—",
+          "keywords": [
+            "punishments",
+            "imprisonment",
+            "descriptions",
+            "namely",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "punishment",
+            "imprisonment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 2,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "punishment",
+              "imprisonment"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7200314998626709,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "section 4",
+                "chunk_concept": "namely",
+                "source": "keyword",
+                "similarity": 0.92,
+                "weighted_score": 0.69
+              },
+              {
+                "query_concept": "listed",
+                "chunk_concept": "descriptions",
+                "source": "keyword",
+                "similarity": 0.893,
+                "weighted_score": 0.6697
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "imprisonment",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S4_BODY",
+          "score": 0.876829,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "The punishments to which offenders are liable under the provisions of this Sanhita are -",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nThe punishments to which offenders are liable under the provisions of this Sanhita are -",
+          "keywords": [
+            "punishments",
+            "offenders",
+            "liable",
+            "body",
+            "punishment",
+            "offender"
+          ],
+          "legal_concepts": [
+            "liable punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "liable punishment"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.4682921078247002,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8497911642071185
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "liable punishment",
+                "chunk_concept": "liable punishment",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "liable",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "offenders",
+                "source": "keyword",
+                "similarity": 0.9198,
+                "weighted_score": 0.6899
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "offender",
+                "source": "keyword",
+                "similarity": 0.9041,
+                "weighted_score": 0.6781
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "liable punishment",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.849791,
+            "score_after_pre_rerank": 0.876829
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S4_A",
+          "score": 0.867382,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "Death;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nDeath;",
+          "keywords": [
+            "punishments",
+            "death"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.749510645866394,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.893148533634549
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "punishments",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.8544,
+                "weighted_score": 0.6408
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.893149,
+            "score_after_pre_rerank": 0.867382
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S4_N2_D",
+          "score": 0.864231,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "Forfeiture of property;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nSimple;\nForfeiture of property;",
+          "keywords": [
+            "punishments",
+            "forfeiture",
+            "property",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "punishment for forfeiture"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "punishment for forfeiture"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6828285455703735,
+            "original:bm25": 0.5417597828338938,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8344276614006986
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "punishment for forfeiture",
+                "chunk_concept": "punishment for forfeiture",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "punishment for forfeiture",
+                "chunk_concept": "forfeiture",
+                "source": "keyword",
+                "similarity": 0.9612,
+                "weighted_score": 0.7209
+              },
+              {
+                "query_concept": "listed",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 0.8702,
+                "weighted_score": 0.6526
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "punishment for forfeiture",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.834428,
+            "score_after_pre_rerank": 0.864231
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S4_B",
+          "score": 0.845245,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "Imprisonment for life;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nImprisonment for life;",
+          "keywords": [
+            "punishments",
+            "imprisonment",
+            "life"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7532514333724976,
+            "original:bm25": 0.06666666666666667,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.8661527411092402
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "punishments",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "section 4",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 0.8593,
+                "weighted_score": 0.6445
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.866153,
+            "score_after_pre_rerank": 0.845245
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S4_N1",
+          "score": 0.829173,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "Rigorous, that is, with hard labour;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nRigorous, that is, with hard labour;",
+          "keywords": [
+            "punishments",
+            "rigorous",
+            "hard",
+            "labour"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6800144910812378,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.8465523551767978
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "punishments",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "section 4",
+                "chunk_concept": "rigorous",
+                "source": "keyword",
+                "similarity": 0.8807,
+                "weighted_score": 0.6606
+              },
+              {
+                "query_concept": "section 4",
+                "chunk_concept": "hard",
+                "source": "keyword",
+                "similarity": 0.8685,
+                "weighted_score": 0.6514
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "labour",
+                "source": "keyword",
+                "similarity": 0.8456,
+                "weighted_score": 0.6342
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.846552,
+            "score_after_pre_rerank": 0.829173
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S4_N2_F",
+          "score": 0.653153,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "Community Service. Commutation of sentence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nSimple;\nCommunity Service. Commutation of sentence.",
+          "keywords": [
+            "punishments",
+            "community",
+            "service",
+            "commutation",
+            "sentence",
+            "community service",
+            "sentence commutation"
+          ],
+          "legal_concepts": [
+            "punishment",
+            "commutation of sentence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 2,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "punishment",
+              "commutation of sentence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6827062964439392,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.5770162538865858
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "commutation of sentence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "commutation of sentence",
+                "chunk_concept": "commutation of sentence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "commutation of sentence",
+                "chunk_concept": "sentence commutation",
+                "source": "keyword",
+                "similarity": 0.9863,
+                "weighted_score": 0.7398
+              },
+              {
+                "query_concept": "commutation of sentence",
+                "chunk_concept": "commutation",
+                "source": "keyword",
+                "similarity": 0.9456,
+                "weighted_score": 0.7092
+              },
+              {
+                "query_concept": "commutation of sentence",
+                "chunk_concept": "sentence",
+                "source": "keyword",
+                "similarity": 0.9042,
+                "weighted_score": 0.6782
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.577016,
+            "score_after_pre_rerank": 0.653153
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S4_N2",
+          "score": 0.558643,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "Simple;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nSimple;",
+          "keywords": [
+            "punishments",
+            "simple"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7230021953582764,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.5166374252319721
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "punishments",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "listed",
+                "chunk_concept": "simple",
+                "source": "keyword",
+                "similarity": 0.894,
+                "weighted_score": 0.6705
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.516637,
+            "score_after_pre_rerank": 0.558643
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S54_BODY",
+          "score": 0.542166,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 54,
+          "citation": "Section 54",
+          "text": "Whenever any person, who is absent would be liable to be punished as an abettor, is present when the act or offence for which he would be punishable in consequence of the abetment is committed, he shall be deemed to have committed such act or offence. Abetment of offence punishable with death or imprisonment for life.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 54: Abettor present when offence is committed.\nWhenever any person, who is absent would be liable to be punished as an abettor, is present when the act or offence for which he would be punishable in consequence of the abetment is committed, he shall be deemed to have committed such act or offence. Abetment of offence punishable with death or imprisonment for life.",
+          "keywords": [
+            "offence",
+            "abetment",
+            "committed",
+            "abettor",
+            "present",
+            "punishable",
+            "whenever",
+            "absent",
+            "liable",
+            "punished",
+            "abettor presence",
+            "offence commission"
+          ],
+          "legal_concepts": [
+            "abettor",
+            "offence commission"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.7500001788139343,
+            "original:semrank_pre_rerank": 0.8696,
+            "semrank_pre_rerank": 0.8696
+          },
+          "query_scores": {
+            "original": 0.4702906018892164
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "offence commission",
+                "source": "legal_concept",
+                "similarity": 0.8696,
+                "weighted_score": 0.8696
+              },
+              {
+                "query_concept": "liable",
+                "chunk_concept": "abettor",
+                "source": "legal_concept",
+                "similarity": 0.8239,
+                "weighted_score": 0.8239
+              },
+              {
+                "query_concept": "liable",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "liable punishment",
+                "chunk_concept": "punishable",
+                "source": "keyword",
+                "similarity": 0.9324,
+                "weighted_score": 0.6993
+              },
+              {
+                "query_concept": "listed",
+                "chunk_concept": "present",
+                "source": "keyword",
+                "similarity": 0.8963,
+                "weighted_score": 0.6722
+              }
+            ],
+            "score": 0.8696,
+            "best_similarity": 0.8696,
+            "best_concept": "offence commission",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8696,
+            "score_before_pre_rerank": 0.470291,
+            "score_after_pre_rerank": 0.542166
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S52_BODY",
+          "score": 0.540662,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 52,
+          "citation": "Section 52",
+          "text": "If the act for which the abettor is liable under section 51 is committed in addition to the act abetted, and constitute a distinct offence, the abettor is liable to punishment for each of the offences.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 52: Abettor when liable to cumulative punishment for act abetted and for act done.\nIf the act for which the abettor is liable under section 51 is committed in addition to the act abetted, and constitute a distinct offence, the abettor is liable to punishment for each of the offences.",
+          "keywords": [
+            "abettor",
+            "liable",
+            "abetted",
+            "punishment",
+            "committed",
+            "addition",
+            "constitute",
+            "distinct",
+            "offence",
+            "each",
+            "cumulative punishment",
+            "distinct offences"
+          ],
+          "legal_concepts": [
+            "abettor liability",
+            "punishment for additional offences"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6673936247825623,
+            "original:bm25": 0.3343724183615574,
+            "original:semrank": 0.7500001788139343,
+            "original:semrank_pre_rerank": 0.937,
+            "semrank_pre_rerank": 0.937
+          },
+          "query_scores": {
+            "original": 0.45366066124333715
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishment for additional offences",
+                "source": "legal_concept",
+                "similarity": 0.937,
+                "weighted_score": 0.937
+              },
+              {
+                "query_concept": "liable",
+                "chunk_concept": "abettor liability",
+                "source": "legal_concept",
+                "similarity": 0.9118,
+                "weighted_score": 0.9118
+              },
+              {
+                "query_concept": "liable",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "cumulative punishment",
+                "source": "keyword",
+                "similarity": 0.9113,
+                "weighted_score": 0.6834
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "distinct offences",
+                "source": "keyword",
+                "similarity": 0.8886,
+                "weighted_score": 0.6664
+              }
+            ],
+            "score": 0.937,
+            "best_similarity": 0.937,
+            "best_concept": "punishment for additional offences",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.937,
+            "score_before_pre_rerank": 0.453661,
+            "score_after_pre_rerank": 0.540662
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S4_C",
+          "score": 1.0,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "Imprisonment, which is of two descriptions, namely:—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nImprisonment, which is of two descriptions, namely:—",
+          "keywords": [
+            "punishments",
+            "imprisonment",
+            "descriptions",
+            "namely",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "punishment",
+            "imprisonment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 2,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "punishment",
+              "imprisonment"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7200314998626709,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "section 4",
+                "chunk_concept": "namely",
+                "source": "keyword",
+                "similarity": 0.92,
+                "weighted_score": 0.69
+              },
+              {
+                "query_concept": "listed",
+                "chunk_concept": "descriptions",
+                "source": "keyword",
+                "similarity": 0.893,
+                "weighted_score": 0.6697
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "imprisonment",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S4_A",
+          "score": 0.88734,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "Death;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nDeath;",
+          "keywords": [
+            "punishments",
+            "death"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.749510645866394,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.893148533634549
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "punishments",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.8544,
+                "weighted_score": 0.6408
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.893149,
+            "score_after_pre_rerank": 0.867382
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S4_N1",
+          "score": 0.85054,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "Rigorous, that is, with hard labour;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nRigorous, that is, with hard labour;",
+          "keywords": [
+            "punishments",
+            "rigorous",
+            "hard",
+            "labour"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6800144910812378,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.8465523551767978
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "punishments",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "section 4",
+                "chunk_concept": "rigorous",
+                "source": "keyword",
+                "similarity": 0.8807,
+                "weighted_score": 0.6606
+              },
+              {
+                "query_concept": "section 4",
+                "chunk_concept": "hard",
+                "source": "keyword",
+                "similarity": 0.8685,
+                "weighted_score": 0.6514
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "labour",
+                "source": "keyword",
+                "similarity": 0.8456,
+                "weighted_score": 0.6342
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.846552,
+            "score_after_pre_rerank": 0.829173
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S4_B",
+          "score": 0.846971,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "Imprisonment for life;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nImprisonment for life;",
+          "keywords": [
+            "punishments",
+            "imprisonment",
+            "life"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7532514333724976,
+            "original:bm25": 0.06666666666666667,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.8661527411092402
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "punishments",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "section 4",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 0.8593,
+                "weighted_score": 0.6445
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.866153,
+            "score_after_pre_rerank": 0.845245
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S4_BODY",
+          "score": 0.784387,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "The punishments to which offenders are liable under the provisions of this Sanhita are -",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nThe punishments to which offenders are liable under the provisions of this Sanhita are -",
+          "keywords": [
+            "punishments",
+            "offenders",
+            "liable",
+            "body",
+            "punishment",
+            "offender"
+          ],
+          "legal_concepts": [
+            "liable punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "liable punishment"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.4682921078247002,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8497911642071185
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "liable punishment",
+                "chunk_concept": "liable punishment",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "liable",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "offenders",
+                "source": "keyword",
+                "similarity": 0.9198,
+                "weighted_score": 0.6899
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "offender",
+                "source": "keyword",
+                "similarity": 0.9041,
+                "weighted_score": 0.6781
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "liable punishment",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.849791,
+            "score_after_pre_rerank": 0.876829
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S4_N2_D",
+          "score": 0.762336,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "Forfeiture of property;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nSimple;\nForfeiture of property;",
+          "keywords": [
+            "punishments",
+            "forfeiture",
+            "property",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "punishment for forfeiture"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "punishment for forfeiture"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6828285455703735,
+            "original:bm25": 0.5417597828338938,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8344276614006986
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "punishment for forfeiture",
+                "chunk_concept": "punishment for forfeiture",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "punishment for forfeiture",
+                "chunk_concept": "forfeiture",
+                "source": "keyword",
+                "similarity": 0.9612,
+                "weighted_score": 0.7209
+              },
+              {
+                "query_concept": "listed",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 0.8702,
+                "weighted_score": 0.6526
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "punishment for forfeiture",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.834428,
+            "score_after_pre_rerank": 0.864231
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S4_N2_F",
+          "score": 0.392842,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "Community Service. Commutation of sentence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nSimple;\nCommunity Service. Commutation of sentence.",
+          "keywords": [
+            "punishments",
+            "community",
+            "service",
+            "commutation",
+            "sentence",
+            "community service",
+            "sentence commutation"
+          ],
+          "legal_concepts": [
+            "punishment",
+            "commutation of sentence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 2,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "punishment",
+              "commutation of sentence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6827062964439392,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.5770162538865858
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "commutation of sentence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "commutation of sentence",
+                "chunk_concept": "commutation of sentence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "commutation of sentence",
+                "chunk_concept": "sentence commutation",
+                "source": "keyword",
+                "similarity": 0.9863,
+                "weighted_score": 0.7398
+              },
+              {
+                "query_concept": "commutation of sentence",
+                "chunk_concept": "commutation",
+                "source": "keyword",
+                "similarity": 0.9456,
+                "weighted_score": 0.7092
+              },
+              {
+                "query_concept": "commutation of sentence",
+                "chunk_concept": "sentence",
+                "source": "keyword",
+                "similarity": 0.9042,
+                "weighted_score": 0.6782
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.577016,
+            "score_after_pre_rerank": 0.653153
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S4_N2",
+          "score": 0.358366,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 4,
+          "citation": "Section 4",
+          "text": "Simple;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 4: Punishments.\nSimple;",
+          "keywords": [
+            "punishments",
+            "simple"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7230021953582764,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.5166374252319721
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "punishments",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishments",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "listed",
+                "chunk_concept": "simple",
+                "source": "keyword",
+                "similarity": 0.894,
+                "weighted_score": 0.6705
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.516637,
+            "score_after_pre_rerank": 0.558643
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S54_BODY",
+          "score": 0.240657,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 54,
+          "citation": "Section 54",
+          "text": "Whenever any person, who is absent would be liable to be punished as an abettor, is present when the act or offence for which he would be punishable in consequence of the abetment is committed, he shall be deemed to have committed such act or offence. Abetment of offence punishable with death or imprisonment for life.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 54: Abettor present when offence is committed.\nWhenever any person, who is absent would be liable to be punished as an abettor, is present when the act or offence for which he would be punishable in consequence of the abetment is committed, he shall be deemed to have committed such act or offence. Abetment of offence punishable with death or imprisonment for life.",
+          "keywords": [
+            "offence",
+            "abetment",
+            "committed",
+            "abettor",
+            "present",
+            "punishable",
+            "whenever",
+            "absent",
+            "liable",
+            "punished",
+            "abettor presence",
+            "offence commission"
+          ],
+          "legal_concepts": [
+            "abettor",
+            "offence commission"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.7500001788139343,
+            "original:semrank_pre_rerank": 0.8696,
+            "semrank_pre_rerank": 0.8696
+          },
+          "query_scores": {
+            "original": 0.4702906018892164
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "offence commission",
+                "source": "legal_concept",
+                "similarity": 0.8696,
+                "weighted_score": 0.8696
+              },
+              {
+                "query_concept": "liable",
+                "chunk_concept": "abettor",
+                "source": "legal_concept",
+                "similarity": 0.8239,
+                "weighted_score": 0.8239
+              },
+              {
+                "query_concept": "liable",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "liable punishment",
+                "chunk_concept": "punishable",
+                "source": "keyword",
+                "similarity": 0.9324,
+                "weighted_score": 0.6993
+              },
+              {
+                "query_concept": "listed",
+                "chunk_concept": "present",
+                "source": "keyword",
+                "similarity": 0.8963,
+                "weighted_score": 0.6722
+              }
+            ],
+            "score": 0.8696,
+            "best_similarity": 0.8696,
+            "best_concept": "offence commission",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8696,
+            "score_before_pre_rerank": 0.470291,
+            "score_after_pre_rerank": 0.542166
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S52_BODY",
+          "score": 0.216265,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 52,
+          "citation": "Section 52",
+          "text": "If the act for which the abettor is liable under section 51 is committed in addition to the act abetted, and constitute a distinct offence, the abettor is liable to punishment for each of the offences.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 52: Abettor when liable to cumulative punishment for act abetted and for act done.\nIf the act for which the abettor is liable under section 51 is committed in addition to the act abetted, and constitute a distinct offence, the abettor is liable to punishment for each of the offences.",
+          "keywords": [
+            "abettor",
+            "liable",
+            "abetted",
+            "punishment",
+            "committed",
+            "addition",
+            "constitute",
+            "distinct",
+            "offence",
+            "each",
+            "cumulative punishment",
+            "distinct offences"
+          ],
+          "legal_concepts": [
+            "abettor liability",
+            "punishment for additional offences"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6673936247825623,
+            "original:bm25": 0.3343724183615574,
+            "original:semrank": 0.7500001788139343,
+            "original:semrank_pre_rerank": 0.937,
+            "semrank_pre_rerank": 0.937
+          },
+          "query_scores": {
+            "original": 0.45366066124333715
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "liable",
+              "liable punishment",
+              "imprisonment",
+              "punishment for forfeiture",
+              "commutation of sentence",
+              "section 4",
+              "punishments",
+              "listed"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "punishment for additional offences",
+                "source": "legal_concept",
+                "similarity": 0.937,
+                "weighted_score": 0.937
+              },
+              {
+                "query_concept": "liable",
+                "chunk_concept": "abettor liability",
+                "source": "legal_concept",
+                "similarity": 0.9118,
+                "weighted_score": 0.9118
+              },
+              {
+                "query_concept": "liable",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "cumulative punishment",
+                "source": "keyword",
+                "similarity": 0.9113,
+                "weighted_score": 0.6834
+              },
+              {
+                "query_concept": "punishments",
+                "chunk_concept": "distinct offences",
+                "source": "keyword",
+                "similarity": 0.8886,
+                "weighted_score": 0.6664
+              }
+            ],
+            "score": 0.937,
+            "best_similarity": 0.937,
+            "best_concept": "punishment for additional offences",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.937,
+            "score_before_pre_rerank": 0.453661,
+            "score_after_pre_rerank": 0.540662
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    },
+    "phase11": {
+      "answer_type": "lookup",
+      "support_status": "supported",
+      "confidence": {
+        "score": 0.98,
+        "label": "high"
+      },
+      "final_answer": "Section 4 of the Bharatiya Nyaya Sanhita lists rigorous punishment with hard labour and simple punishment.",
+      "summary_answer": "Section 4 of the Bharatiya Nyaya Sanhita lists two types of punishments: rigorous punishment with hard labour and simple punishment.",
+      "detailed_answer": "Under Section 4 of the Bharatiya Nyaya Sanhita, 2023, the punishments to which offenders are liable include: 1) Rigorous punishment, which involves hard labour (Section 4(1), Bharatiya Nyaya Sanhita, 2023), and 2) Simple punishment (Section 4(2), Bharatiya Nyaya Sanhita, 2023).",
+      "citations": [
+        "Section 4 Body, Bharatiya Nyaya Sanhita, 2023",
+        "Section 4(1), Bharatiya Nyaya Sanhita, 2023",
+        "Section 4(2), Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "matched_sections": [
+        "Section 4",
+        "Section 54",
+        "Section 52"
+      ],
+      "missing_sections": [],
+      "missing_from_corpus": [],
+      "selected_chunk_ids": [
+        "chunk__node__BNS_S4_BODY",
+        "chunk__node__BNS_S4_N1",
+        "chunk__node__BNS_S4_N2"
+      ],
+      "warnings": [],
+      "structured_reasoning": {
+        "base_concept": "",
+        "selected_section": "Section 4",
+        "selection_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "overrides_score_selection": false,
+        "uncertainty": "low",
+        "uncertainty_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "alternative_sections": [
+          "Section 54",
+          "Section 52"
+        ],
+        "sections_analyzed": [
+          {
+            "section": "Section 4",
+            "role": "retrieved_evidence",
+            "condition_summary": "Rigorous, that is, with hard labour;",
+            "condition_match_score": 0.85054,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "punishments ~ punishments",
+              "section 4 ~ rigorous",
+              "section 4 ~ hard",
+              "imprisonment ~ labour"
+            ],
+            "raw_retrieval_score": 0.85054,
+            "hit_count": 3,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 54",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whenever any person, who is absent would be liable to be punished as an abettor, is present when the act or offence for which he would be punishable in consequence of the abetment is committed, he shall be deemed to have committed such act or offence.",
+            "condition_match_score": 0.240657,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "punishments ~ offence commission",
+              "liable ~ abettor",
+              "liable ~ liable",
+              "liable punishment ~ punishable",
+              "listed ~ present"
+            ],
+            "raw_retrieval_score": 0.240657,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 52",
+            "role": "retrieved_evidence",
+            "condition_summary": "If the act for which the abettor is liable under section 51 is committed in addition to the act abetted, and constitute a distinct offence, the abettor is liable to punishment for each of the offences.",
+            "condition_match_score": 0.216265,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "punishments ~ punishment for additional offences",
+              "liable ~ abettor liability",
+              "liable ~ liable",
+              "punishments ~ cumulative punishment",
+              "punishments ~ distinct offences"
+            ],
+            "raw_retrieval_score": 0.216265,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          }
+        ]
+      },
+      "validation": {
+        "requested_sections": [
+          "Section 4"
+        ],
+        "present_in_corpus": [
+          "Section 4"
+        ],
+        "retrieved_exact_matches": [
+          "Section 4"
+        ],
+        "missing_from_corpus": [],
+        "intent_alignment": "strong",
+        "intent_notes": [
+          "Lookup intent is anchored by a direct base legal chunk."
+        ],
+        "answer_verified": true,
+        "verification_issues": [],
+        "llm_answer_verified": true,
+        "llm_verification_issues": [],
+        "completeness": "complete",
+        "guardrail_grounding_strength": 1.0,
+        "repaired": false,
+        "fallback_used": false
+      },
+      "evidence": {
+        "primary_chunk_id": "chunk__node__BNS_S4_BODY",
+        "primary_chunk_type": "content",
+        "primary_section": "Section 4",
+        "primary_section_title": "Punishments.",
+        "related_chunk_ids": [
+          "chunk__node__BNS_S4_N1",
+          "chunk__node__BNS_S4_N2"
+        ],
+        "top_sections": [
+          {
+            "section": "Section 4",
+            "section_title": "Punishments.",
+            "hit_count": 3,
+            "best_score": 0.85054,
+            "chunk_types": {
+              "content": 1,
+              "subsection": 2
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.1667
+          },
+          {
+            "section": "Section 52",
+            "section_title": "Abettor when liable to cumulative punishment for act abetted and for act done.",
+            "hit_count": 1,
+            "best_score": 0.216265,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 0.937,
+            "concept_coverage": 0.0
+          },
+          {
+            "section": "Section 54",
+            "section_title": "Abettor present when offence is committed.",
+            "hit_count": 1,
+            "best_score": 0.240657,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 0.8696,
+            "concept_coverage": 0.0
+          }
+        ],
+        "llm_evidence": [
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S4_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF PUNISHMENTS",
+            "section_number": "4",
+            "citation": "Section 4 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "The punishments to which offenders are liable under the provisions of this Sanhita are -"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S4_N1",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF PUNISHMENTS",
+            "section_number": "4",
+            "citation": "Section 4(1), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Rigorous, that is, with hard labour;"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S4_N2",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF PUNISHMENTS",
+            "section_number": "4",
+            "citation": "Section 4(2), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Simple;"
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S54_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": "54",
+            "citation": "Section 54 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whenever any person, who is absent would be liable to be punished as an abettor, is present when the act or offence for which he would be punishable in consequence of the abetment is committed, he shall be deemed to have committed such act or offence. Abetment of offence punishable with death or imprisonment for life."
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S52_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": "52",
+            "citation": "Section 52 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "If the act for which the abettor is liable under section 51 is committed in addition to the act abetted, and constitute a distinct offence, the abettor is liable to punishment for each of the offences."
+          }
+        ]
+      },
+      "llm_generation": {
+        "enabled": true,
+        "used": true,
+        "model": "gpt-4o-mini",
+        "reasoning_trace": [],
+        "caution_notes": [],
+        "error": null,
+        "repaired": false,
+        "fallback_used": false
+      }
+    }
+  }
+]

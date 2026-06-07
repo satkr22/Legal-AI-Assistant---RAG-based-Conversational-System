@@ -1,0 +1,209 @@
+{
+  "query_id": "Q036",
+  "query": "What is the punishment for dowry death?",
+  "query_type": "punishment",
+  "difficulty": "easy",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "80"
+  ],
+  "acceptable_sections": [],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "80",
+    "79",
+    "80",
+    "80",
+    "66"
+  ],
+  "candidate_sections_at_10": [
+    "80",
+    "79",
+    "80",
+    "80",
+    "66",
+    "127",
+    "200",
+    "8",
+    "7",
+    "326"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "80",
+    "80",
+    "79",
+    "66",
+    "127"
+  ],
+  "cited_sections": [
+    "80"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "80"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "80"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "79",
+      "66"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "80"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "80"
+    ],
+    "support_precision_at_k": 0.125,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "79",
+      "66",
+      "127",
+      "200",
+      "8",
+      "7",
+      "326"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "80"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "80"
+    ],
+    "support_precision_at_k": 0.25,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "79",
+      "66",
+      "127"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 1.0,
+    "required_points_matched": 2,
+    "required_points_total": 2,
+    "answer_completeness_score": 1.0,
+    "soft_answer_score": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.5,
+    "forbidden_contradiction_skips": [
+      {
+        "point": "Dowry death applies only if the death occurs within one year of marriage.",
+        "sentence": "Additionally, Section 80(1) defines dowry death as the death of a woman caused by burns or bodily injury within seven years of marriage, under circumstances that indicate cruelty or harassment related to dowry demands.",
+        "overlap": 0.5,
+        "threshold": 0.9,
+        "matched_terms": [
+          "death",
+          "dowry",
+          "marriage",
+          "within"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      }
+    ],
+    "required_point_details": [
+      {
+        "point": "Section 80 defines dowry death as the death of a woman caused by burns, bodily injury or other than normal circumstances within seven years of marriage, where it is shown that she was subjected to cruelty or harassment by the husband or his relatives in connection with a demand for dowry.",
+        "matched": true,
+        "overlap": 0.5926,
+        "matched_terms": [
+          "bodily",
+          "burns",
+          "caused",
+          "circumstances",
+          "cruelty",
+          "death",
+          "defines",
+          "dowry",
+          "harassment",
+          "injury",
+          "marriage",
+          "seven"
+        ]
+      },
+      {
+        "point": "Whoever commits dowry death shall be punished with imprisonment for not less than seven years, which may extend to imprisonment for life.",
+        "matched": true,
+        "overlap": 1.0,
+        "matched_terms": [
+          "commits",
+          "death",
+          "dowry",
+          "extend",
+          "imprisonment",
+          "less",
+          "life",
+          "punished",
+          "seven",
+          "than",
+          "whoever",
+          "years"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "80"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 2,
+    "supported_claims": 2,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.7221,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": true,
+  "failure_reasons": [],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 5.3793,
+    "phase_9_10": 135.9288,
+    "phase_11": 10.2789,
+    "phase_12_13": 0.0009,
+    "total": 151.5879
+  },
+  "final_answer_preview": "According to Section 80(2) of the Bharatiya Nyaya Sanhita, 2023, whoever commits dowry death shall be punished with imprisonment for a term which shall not be less than seven years but which may extend to imprisonment for life. Additionally, Section 80(1) defines dowry death as the death of a woman caused by burns or bodily injury within seven years of marriage, under circumstances that indicate cruelty or harassment related to dowry demands.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/036_Q036"
+}

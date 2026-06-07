@@ -1,0 +1,74 @@
+{
+  "query": "Is life imprisonment always for whole life or can it mean fixed years?",
+  "intent": {
+    "primary": "definition",
+    "secondary": [
+      "legal penalty"
+    ]
+  },
+  "concepts": [
+    "life imprisonment",
+    "fixed years",
+    "punishments"
+  ],
+  "targets": [],
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true
+  },
+  "decomposition": {
+    "needed": true,
+    "sub_queries": [
+      {
+        "query": "What is the definition of life imprisonment under Bharatiya Nyaya Sanhita, 2023?",
+        "intent": {
+          "primary": "definition",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "life imprisonment"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      },
+      {
+        "query": "Can life imprisonment be interpreted as a fixed number of years in Bharatiya Nyaya Sanhita, 2023?",
+        "intent": {
+          "primary": "definition",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "fixed years",
+          "punishments"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      }
+    ]
+  },
+  "confidence": {
+    "hint_relevance": 0.5948,
+    "llm_consistency": 1.0,
+    "rule_strength": 0.6,
+    "structure_validity": 1.0,
+    "overall": 0.7579
+  }
+}

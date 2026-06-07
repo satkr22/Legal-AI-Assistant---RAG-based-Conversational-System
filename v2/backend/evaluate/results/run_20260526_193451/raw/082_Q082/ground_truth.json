@@ -1,0 +1,42 @@
+{
+  "query_id": "Q082",
+  "query": "What is the difference between abetment and criminal conspiracy?",
+  "query_type": "comparison",
+  "difficulty": "hard",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "45",
+      "subsection": null,
+      "label": "Section 45",
+      "role": "definition of abetment",
+      "required": true,
+      "match_level": "section"
+    },
+    {
+      "act": "BNS",
+      "section": "61",
+      "subsection": null,
+      "label": "Section 61",
+      "role": "definition of criminal conspiracy",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 45 defines abetment as instigating, engaging in conspiracy for, or intentionally aiding the doing of a thing; it can be by a single person and does not necessarily require an agreement.",
+      "Section 61 defines criminal conspiracy as an agreement between two or more persons to do or cause to be done an illegal act or an act not illegal by illegal means; it requires at least two persons and is the agreement itself that is the offence.",
+      "Abetment is broader; conspiracy is a specific type of abetment involving an agreement between two or more persons. Criminal conspiracy can be charged independently even without any further act in some cases."
+    ],
+    "optional_points": [],
+    "forbidden_points": [
+      "Abetment and criminal conspiracy are the same.",
+      "Criminal conspiracy can be committed by one person."
+    ]
+  },
+  "notes": "Comparison query. Key differences: number of persons and the role of agreement."
+}

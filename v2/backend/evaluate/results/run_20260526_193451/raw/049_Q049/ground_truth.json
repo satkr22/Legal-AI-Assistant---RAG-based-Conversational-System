@@ -1,0 +1,51 @@
+{
+  "query_id": "Q049",
+  "query": "A person hit me first and I hit back to protect myself. Is it a crime?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "34",
+      "subsection": null,
+      "label": "Section 34",
+      "role": "things done in private defence are not offences",
+      "required": true,
+      "match_level": "section"
+    },
+    {
+      "act": "BNS",
+      "section": "35",
+      "subsection": null,
+      "label": "Section 35",
+      "role": "right of private defence of body",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "37",
+      "label": "Section 37",
+      "reason": "restrictions on the right of private defence"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Under Section 34, nothing done in the exercise of the right of private defence is an offence.",
+      "Section 35 provides every person the right to defend their own body against an offence affecting the human body.",
+      "The right is limited; it cannot extend beyond what is necessary for defence, and there must not be time to seek public authority protection (Section 37)."
+    ],
+    "optional_points": [
+      "Whether this specific situation qualifies depends on the nature of the attack, the force used in retaliation, and whether it was necessary."
+    ],
+    "forbidden_points": [
+      "Hitting back to protect oneself is always a crime.",
+      "Private defence permits any degree of force in retaliation."
+    ]
+  },
+  "notes": "Scenario query. Should identify private defence under Section 34/35 with proper caveats."
+}

@@ -1,0 +1,3184 @@
+[
+  {
+    "query": "What is the difference between kidnapping and abduction?",
+    "phase8": {
+      "query": "What is the difference between kidnapping and abduction?",
+      "intent": {
+        "primary": "comparison",
+        "secondary": []
+      },
+      "concepts": [
+        "kidnapping",
+        "abduction",
+        "legal definition"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.607,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.35,
+        "structure_validity": 1.0,
+        "overall": 0.7128
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is the difference between kidnapping and abduction?",
+          "targets": [],
+          "concepts": [
+            "kidnapping",
+            "abduction",
+            "legal definition"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S137_N2",
+            "score": 1.0,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 137,
+            "citation": "Section 137",
+            "text": "Whoever kidnaps any person from India or from lawful guardianship shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Abduction.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 137: Kidnapping.\nWhoever kidnaps any person from India or from lawful guardianship shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Abduction.",
+            "keywords": [
+              "whoever",
+              "kidnaps",
+              "india",
+              "lawful",
+              "guardianship",
+              "punished",
+              "imprisonment",
+              "either",
+              "description",
+              "term",
+              "kidnapping",
+              "offence",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "kidnapping",
+              "imprisonment",
+              "fine"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "kidnapping"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6624057292938232,
+              "bm25": 0.5241951352324314,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "kidnapping",
+                "abduction",
+                "legal definition",
+                "difference",
+                "between"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "kidnapping",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "legal definition",
+                  "chunk_concept": "fine",
+                  "source": "legal_concept",
+                  "similarity": 0.8953,
+                  "weighted_score": 0.8953
+                },
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "imprisonment",
+                  "source": "legal_concept",
+                  "similarity": 0.8878,
+                  "weighted_score": 0.8878
+                },
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "kidnaps",
+                  "source": "keyword",
+                  "similarity": 0.9815,
+                  "weighted_score": 0.7361
+                },
+                {
+                  "query_concept": "legal definition",
+                  "chunk_concept": "description",
+                  "source": "keyword",
+                  "similarity": 0.9649,
+                  "weighted_score": 0.7237
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "kidnapping",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S138_BODY",
+            "score": 0.837733,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 138,
+            "citation": "Section 138",
+            "text": "Whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person. Kidnapping or maiming a child for purposes of begging.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 138: Abduction.\nWhoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person. Kidnapping or maiming a child for purposes of begging.",
+            "keywords": [
+              "body",
+              "whoever",
+              "force",
+              "compels",
+              "deceitful",
+              "means",
+              "induces",
+              "place",
+              "said",
+              "abduct",
+              "abduction",
+              "deceit"
+            ],
+            "legal_concepts": [
+              "abduction by force",
+              "abduction by deceit"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7130260467529297,
+              "bm25": 0.552668813785081,
+              "semrank_pre_rerank": 0.9492
+            },
+            "query_scores": {
+              "original": 0.7130260467529297
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "kidnapping",
+                "abduction",
+                "legal definition",
+                "difference",
+                "between"
+              ],
+              "score": 0.9492,
+              "best_similarity": 0.9492,
+              "best_concept": "abduction by force",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "abduction by force",
+                  "source": "legal_concept",
+                  "similarity": 0.9492,
+                  "weighted_score": 0.9492
+                },
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "abduction by deceit",
+                  "source": "legal_concept",
+                  "similarity": 0.9227,
+                  "weighted_score": 0.9227
+                },
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "abduction",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "abduct",
+                  "source": "keyword",
+                  "similarity": 0.9505,
+                  "weighted_score": 0.7128
+                },
+                {
+                  "query_concept": "legal definition",
+                  "chunk_concept": "said",
+                  "source": "keyword",
+                  "similarity": 0.9202,
+                  "weighted_score": 0.6901
+                }
+              ],
+              "pre_rerank_score": 0.9492,
+              "score_before_pre_rerank": 0.964253,
+              "score_after_pre_rerank": 0.961543
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__section__BNS_S140",
+            "score": 0.754432,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 140,
+            "citation": "Section 140",
+            "text": "(1) Whoever kidnaps or abducts any person in order that such\nperson may be murdered or may be so disposed of as to be put in danger\nof being murdered, shall be punished with imprisonment for life or rigorous\nimprisonment for a term which may extend to ten years, and shall also be\nliable to fine.\nIllustrations.\n(a) A kidnaps Z from India, intending or knowing it to be likely that\nZ may be sacrificed to an idol. A has committed the offence defined in this\nsection.\n(b) A forcibly carries or entices B away from his home in order that B\nmay be murdered. A has committed the offence defined in this section.\n(2) Whoever kidnaps or abducts any person or keeps a person in\ndetention after such kidnapping or abduction, and threatens to cause death\nor hurt to such person, or by his conduct gives rise to a reasonable\napprehension that such person may be put to death or hurt, or causes hurt\nor death to such person in order to compel the Government or any foreign\nState or international inter-governmental organisation or any other person\nto do or abstain from doing any act or to pay a ransom, shall be punishable\nwith death, or imprisonment for life, and shall also be liable to fine.\n(3) Whoever kidnaps or abducts any person with intent to cause that\nperson to be secretly and wrongfully confined, shall be punished with\nimprisonment of either description for a term which may extend to seven\nyears, and shall also be liable to fine.\n(4) Whoever kidnaps or abducts any person in order that such person\nmay be subjected, or may be so disposed of as to be put in danger of being\nsubjected to grievous hurt, or slavery, or to the unnatural lust of any\nperson, or knowing it to be likely that such person will be so subjected or\ndisposed of, shall be punished with imprisonment of either description for\na term which may extend to ten years, and shall also be liable to fine.\nImportation of girl or boy from foreign country.",
+            "derived_context": "",
+            "keywords": [
+              "kidnapping",
+              "abduction",
+              "murder",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence",
+              "punishment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "anchor": 0.8969400000000001
+            },
+            "query_scores": {
+              "anchor": 0.8969400000000001
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S140_N1_ILL1_B",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S140_N1_ILL1_B",
+            "score": 0.563473,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 140,
+            "citation": "Section 140",
+            "text": "A forcibly carries or entices B away from his home in order that B may be murdered. A has committed the offence defined in this section.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 140: Kidnapping or abducting in order to murder or for ransom, etc.\nWhoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.\nA forcibly carries or entices B away from his home in order that B may be murdered. A has committed the offence defined in this section.",
+            "keywords": [
+              "order",
+              "forcibly",
+              "carries",
+              "entices",
+              "away",
+              "home",
+              "murdered",
+              "committed",
+              "offence",
+              "defined",
+              "kidnapping",
+              "abduction",
+              "murder"
+            ],
+            "legal_concepts": [
+              "kidnapping or abduction",
+              "murder"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6948236227035522,
+              "semrank": 0.9830278158187866,
+              "semrank_pre_rerank": 0.983
+            },
+            "query_scores": {
+              "original": 0.9830278158187866
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.983,
+              "query_concepts": [
+                "kidnapping",
+                "abduction",
+                "legal definition",
+                "difference",
+                "between"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "kidnapping or abduction",
+                  "source": "legal_concept",
+                  "similarity": 0.983,
+                  "weighted_score": 0.983
+                },
+                {
+                  "query_concept": "legal definition",
+                  "chunk_concept": "murder",
+                  "source": "legal_concept",
+                  "similarity": 0.8538,
+                  "weighted_score": 0.8538
+                },
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "abduction",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "kidnapping",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "legal definition",
+                  "chunk_concept": "defined",
+                  "source": "keyword",
+                  "similarity": 0.9849,
+                  "weighted_score": 0.7387
+                }
+              ],
+              "score": 0.983,
+              "best_similarity": 0.983,
+              "best_concept": "kidnapping or abduction",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.983,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.99694
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S136_EXP1",
+            "score": 0.527814,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 136,
+            "citation": "Section 136",
+            "text": "This section is subject to the same Explanation as section 131. Of kidnapping, abduction, slavery and forced labour Kidnapping. [OF KIDNAPPING, ABDUCTION, SLAVERY AND FORCED LABOUR]",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 136: Assault or criminal force on grave provocation.\nThis section is subject to the same Explanation as section 131. Of kidnapping, abduction, slavery and forced labour Kidnapping. [OF KIDNAPPING, ABDUCTION, SLAVERY AND FORCED LABOUR]",
+            "keywords": [
+              "kidnapping",
+              "abduction",
+              "slavery",
+              "forced",
+              "labour",
+              "subject",
+              "assault",
+              "criminal",
+              "force",
+              "grave"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6613279581069946,
+              "bm25": 1.0,
+              "semrank": 0.7500001788139343,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.75,
+              "query_concepts": [
+                "kidnapping",
+                "abduction",
+                "legal definition",
+                "difference",
+                "between"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "abduction",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "kidnapping",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "legal definition",
+                  "chunk_concept": "subject",
+                  "source": "keyword",
+                  "similarity": 0.909,
+                  "weighted_score": 0.6818
+                },
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "forced",
+                  "source": "keyword",
+                  "similarity": 0.8872,
+                  "weighted_score": 0.6654
+                },
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "force",
+                  "source": "keyword",
+                  "similarity": 0.8862,
+                  "weighted_score": 0.6646
+                }
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "abduction",
+              "best_concept_source": "keyword",
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.955
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S140_N3",
+            "score": 0.505317,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 140,
+            "citation": "Section 140",
+            "text": "Whoever kidnaps or abducts any person with intent to cause that person to be secretly and wrongfully confined, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 140: Kidnapping or abducting in order to murder or for ransom, etc.\nWhoever kidnaps or abducts any person with intent to cause that person to be secretly and wrongfully confined, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+            "keywords": [
+              "whoever",
+              "kidnaps",
+              "abducts",
+              "intent",
+              "cause",
+              "secretly",
+              "wrongfully",
+              "confined",
+              "punished",
+              "imprisonment",
+              "kidnapping",
+              "abduction",
+              "secret confinement"
+            ],
+            "legal_concepts": [
+              "kidnapping",
+              "abduction",
+              "secret confinement"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 2,
+              "coverage_ratio": 0.6667,
+              "matched_concepts": [
+                "kidnapping",
+                "abduction"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6807335615158081,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "kidnapping",
+                "abduction",
+                "legal definition",
+                "difference",
+                "between"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "abduction",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "kidnapping",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "legal definition",
+                  "chunk_concept": "secret confinement",
+                  "source": "legal_concept",
+                  "similarity": 0.8438,
+                  "weighted_score": 0.8438
+                },
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "kidnaps",
+                  "source": "keyword",
+                  "similarity": 0.9815,
+                  "weighted_score": 0.7361
+                },
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "abducts",
+                  "source": "keyword",
+                  "similarity": 0.9542,
+                  "weighted_score": 0.7156
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "abduction",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S139_N4_IV",
+            "score": 0.49263,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 139,
+            "citation": "Section 139",
+            "text": "using such child as an exhibit for the purpose of soliciting or receiving alms. Kidnapping or abducting in order to murder or for ransom, etc.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 139: Kidnapping or maiming a child for purposes of begging.\nIn this section “begging” means—\nusing such child as an exhibit for the purpose of soliciting or receiving alms. Kidnapping or abducting in order to murder or for ransom, etc.",
+            "keywords": [
+              "child",
+              "kidnapping",
+              "using",
+              "exhibit",
+              "purpose",
+              "soliciting",
+              "receiving",
+              "alms",
+              "abducting",
+              "order",
+              "child kidnapping",
+              "begging"
+            ],
+            "legal_concepts": [
+              "kidnapping",
+              "maiming",
+              "offence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "kidnapping"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6675572991371155,
+              "bm25": 0.058823529411764705,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "kidnapping",
+                "abduction",
+                "legal definition",
+                "difference",
+                "between"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "kidnapping",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "maiming",
+                  "source": "legal_concept",
+                  "similarity": 0.8368,
+                  "weighted_score": 0.8368
+                },
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "child kidnapping",
+                  "source": "keyword",
+                  "similarity": 0.9621,
+                  "weighted_score": 0.7216
+                },
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "abducting",
+                  "source": "keyword",
+                  "similarity": 0.9576,
+                  "weighted_score": 0.7182
+                },
+                {
+                  "query_concept": "legal definition",
+                  "chunk_concept": "using",
+                  "source": "keyword",
+                  "similarity": 0.9553,
+                  "weighted_score": 0.7164
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "kidnapping",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S140_N1",
+            "score": 0.477066,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 140,
+            "citation": "Section 140",
+            "text": "Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 140: Kidnapping or abducting in order to murder or for ransom, etc.\nWhoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+            "keywords": [
+              "order",
+              "murdered",
+              "imprisonment",
+              "whoever",
+              "kidnaps",
+              "abducts",
+              "disposed",
+              "danger",
+              "punished",
+              "life",
+              "kidnapping",
+              "abduction",
+              "murder",
+              "ransom"
+            ],
+            "legal_concepts": [
+              "punishment for kidnapping",
+              "offence against human body"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6663332581520081,
+              "semrank_pre_rerank": 0.9553
+            },
+            "query_scores": {
+              "original": 0.6663332581520081
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "kidnapping",
+                "abduction",
+                "legal definition",
+                "difference",
+                "between"
+              ],
+              "score": 0.9553,
+              "best_similarity": 0.9553,
+              "best_concept": "punishment for kidnapping",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "punishment for kidnapping",
+                  "source": "legal_concept",
+                  "similarity": 0.9553,
+                  "weighted_score": 0.9553
+                },
+                {
+                  "query_concept": "legal definition",
+                  "chunk_concept": "offence against human body",
+                  "source": "legal_concept",
+                  "similarity": 0.8413,
+                  "weighted_score": 0.8413
+                },
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "abduction",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "kidnapping",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "kidnaps",
+                  "source": "keyword",
+                  "similarity": 0.9815,
+                  "weighted_score": 0.7361
+                }
+              ],
+              "pre_rerank_score": 0.9553,
+              "score_before_pre_rerank": 0.819958,
+              "score_after_pre_rerank": 0.844319
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S87_BODY",
+            "score": 0.476785,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 87,
+            "citation": "Section 87",
+            "text": "Whoever kidnaps or abducts any woman with intent that she may be compelled, or knowing it to be likely that she will be compelled, to marry any person against her will, or in order that she may be forced or seduced to illicit intercourse, or knowing it to be likely that she will be forced or seduced to illicit intercourse, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and whoever, by means of criminal intimidation as defined in this Sanhita or of abuse of authority or any other method of compulsion, induces any woman to go from any place with intent that she may be, or knowing that it is likely that she will be, forced or seduced to illicit intercourse with another person shall also be punishable as aforesaid. Of causing miscarriage, etc. Causing miscarriage. [OF CAUSING MISCARRIAGE, ETC.]",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 87: Kidnapping, abducting or inducing woman to compel her marriage, etc.\nWhoever kidnaps or abducts any woman with intent that she may be compelled, or knowing it to be likely that she will be compelled, to marry any person against her will, or in order that she may be forced or seduced to illicit intercourse, or knowing it to be likely that she will be forced or seduced to illicit intercourse, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and whoever, by means of criminal intimidation as defined in this Sanhita or of abuse of authority or any other method of compulsion, induces any woman to go from any place with intent that she may be, or knowing that it is likely that she will be, forced or seduced to illicit intercourse with another person shall also be punishable as aforesaid. Of causing miscarriage, etc. Causing miscarriage. [OF CAUSING MISCARRIAGE, ETC.]",
+            "keywords": [
+              "woman",
+              "knowing",
+              "likely",
+              "forced",
+              "seduced",
+              "illicit",
+              "intercourse",
+              "causing",
+              "miscarriage",
+              "whoever",
+              "kidnapping",
+              "abduction",
+              "forced marriage",
+              "illicit intercourse"
+            ],
+            "legal_concepts": [
+              "kidnapping",
+              "abduction",
+              "forced marriage",
+              "illicit intercourse"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 2,
+              "coverage_ratio": 0.6667,
+              "matched_concepts": [
+                "kidnapping",
+                "abduction"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "kidnapping",
+                "abduction",
+                "legal definition",
+                "difference",
+                "between"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "abduction",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "kidnapping",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "forced marriage",
+                  "source": "legal_concept",
+                  "similarity": 0.8346,
+                  "weighted_score": 0.8346
+                },
+                {
+                  "query_concept": "legal definition",
+                  "chunk_concept": "illicit intercourse",
+                  "source": "legal_concept",
+                  "similarity": 0.8309,
+                  "weighted_score": 0.8309
+                },
+                {
+                  "query_concept": "legal definition",
+                  "chunk_concept": "knowing",
+                  "source": "keyword",
+                  "similarity": 0.9124,
+                  "weighted_score": 0.6843
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "abduction",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S140_N2",
+            "score": 0.462964,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 140,
+            "citation": "Section 140",
+            "text": "Whoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 140: Kidnapping or abducting in order to murder or for ransom, etc.\nWhoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine.",
+            "keywords": [
+              "death",
+              "hurt",
+              "kidnapping",
+              "order",
+              "ransom",
+              "whoever",
+              "kidnaps",
+              "abducts",
+              "keeps",
+              "detention",
+              "abduction",
+              "murder"
+            ],
+            "legal_concepts": [
+              "punishment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6661684513092041,
+              "bm25": 0.23455825105762193,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.6661684513092041
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "kidnapping",
+                "abduction",
+                "legal definition",
+                "difference",
+                "between"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "abduction",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "abduction",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "kidnapping",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "kidnaps",
+                  "source": "keyword",
+                  "similarity": 0.9815,
+                  "weighted_score": 0.7361
+                },
+                {
+                  "query_concept": "abduction",
+                  "chunk_concept": "abducts",
+                  "source": "keyword",
+                  "similarity": 0.9542,
+                  "weighted_score": 0.7156
+                },
+                {
+                  "query_concept": "kidnapping",
+                  "chunk_concept": "ransom",
+                  "source": "keyword",
+                  "similarity": 0.9152,
+                  "weighted_score": 0.6864
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.756101,
+              "score_after_pre_rerank": 0.755003
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S137_N2",
+          "score": 1.0,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 137,
+          "citation": "Section 137",
+          "text": "Whoever kidnaps any person from India or from lawful guardianship shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Abduction.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 137: Kidnapping.\nWhoever kidnaps any person from India or from lawful guardianship shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Abduction.",
+          "keywords": [
+            "whoever",
+            "kidnaps",
+            "india",
+            "lawful",
+            "guardianship",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "kidnapping",
+            "offence",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "kidnapping",
+            "imprisonment",
+            "fine"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "kidnapping"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6624057292938232,
+            "original:bm25": 0.5241951352324314,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "fine",
+                "source": "legal_concept",
+                "similarity": 0.8953,
+                "weighted_score": 0.8953
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.8878,
+                "weighted_score": 0.8878
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnaps",
+                "source": "keyword",
+                "similarity": 0.9815,
+                "weighted_score": 0.7361
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "description",
+                "source": "keyword",
+                "similarity": 0.9649,
+                "weighted_score": 0.7237
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "kidnapping",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S138_BODY",
+          "score": 0.857797,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 138,
+          "citation": "Section 138",
+          "text": "Whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person. Kidnapping or maiming a child for purposes of begging.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 138: Abduction.\nWhoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person. Kidnapping or maiming a child for purposes of begging.",
+          "keywords": [
+            "body",
+            "whoever",
+            "force",
+            "compels",
+            "deceitful",
+            "means",
+            "induces",
+            "place",
+            "said",
+            "abduct",
+            "abduction",
+            "deceit"
+          ],
+          "legal_concepts": [
+            "abduction by force",
+            "abduction by deceit"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7130260467529297,
+            "original:bm25": 0.552668813785081,
+            "original:semrank_pre_rerank": 0.9492,
+            "semrank_pre_rerank": 0.9492
+          },
+          "query_scores": {
+            "original": 0.8377332606973762
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "score": 0.9492,
+            "best_similarity": 0.9492,
+            "best_concept": "abduction by force",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction by force",
+                "source": "legal_concept",
+                "similarity": 0.9492,
+                "weighted_score": 0.9492
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction by deceit",
+                "source": "legal_concept",
+                "similarity": 0.9227,
+                "weighted_score": 0.9227
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduct",
+                "source": "keyword",
+                "similarity": 0.9505,
+                "weighted_score": 0.7128
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "said",
+                "source": "keyword",
+                "similarity": 0.9202,
+                "weighted_score": 0.6901
+              }
+            ],
+            "pre_rerank_score": 0.9492,
+            "score_before_pre_rerank": 0.837733,
+            "score_after_pre_rerank": 0.857797
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__section__BNS_S140",
+          "score": 0.754432,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 140,
+          "citation": "Section 140",
+          "text": "(1) Whoever kidnaps or abducts any person in order that such\nperson may be murdered or may be so disposed of as to be put in danger\nof being murdered, shall be punished with imprisonment for life or rigorous\nimprisonment for a term which may extend to ten years, and shall also be\nliable to fine.\nIllustrations.\n(a) A kidnaps Z from India, intending or knowing it to be likely that\nZ may be sacrificed to an idol. A has committed the offence defined in this\nsection.\n(b) A forcibly carries or entices B away from his home in order that B\nmay be murdered. A has committed the offence defined in this section.\n(2) Whoever kidnaps or abducts any person or keeps a person in\ndetention after such kidnapping or abduction, and threatens to cause death\nor hurt to such person, or by his conduct gives rise to a reasonable\napprehension that such person may be put to death or hurt, or causes hurt\nor death to such person in order to compel the Government or any foreign\nState or international inter-governmental organisation or any other person\nto do or abstain from doing any act or to pay a ransom, shall be punishable\nwith death, or imprisonment for life, and shall also be liable to fine.\n(3) Whoever kidnaps or abducts any person with intent to cause that\nperson to be secretly and wrongfully confined, shall be punished with\nimprisonment of either description for a term which may extend to seven\nyears, and shall also be liable to fine.\n(4) Whoever kidnaps or abducts any person in order that such person\nmay be subjected, or may be so disposed of as to be put in danger of being\nsubjected to grievous hurt, or slavery, or to the unnatural lust of any\nperson, or knowing it to be likely that such person will be so subjected or\ndisposed of, shall be punished with imprisonment of either description for\na term which may extend to ten years, and shall also be liable to fine.\nImportation of girl or boy from foreign country.",
+          "derived_context": "",
+          "keywords": [
+            "kidnapping",
+            "abduction",
+            "murder",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.8969400000000001
+          },
+          "query_scores": {
+            "original": 0.7544317893826327
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S140_N1_ILL1_B",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S140_N1_ILL1_B",
+          "score": 0.638988,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 140,
+          "citation": "Section 140",
+          "text": "A forcibly carries or entices B away from his home in order that B may be murdered. A has committed the offence defined in this section.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 140: Kidnapping or abducting in order to murder or for ransom, etc.\nWhoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.\nA forcibly carries or entices B away from his home in order that B may be murdered. A has committed the offence defined in this section.",
+          "keywords": [
+            "order",
+            "forcibly",
+            "carries",
+            "entices",
+            "away",
+            "home",
+            "murdered",
+            "committed",
+            "offence",
+            "defined",
+            "kidnapping",
+            "abduction",
+            "murder"
+          ],
+          "legal_concepts": [
+            "kidnapping or abduction",
+            "murder"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6948236227035522,
+            "original:semrank": 0.9830278158187866,
+            "original:semrank_pre_rerank": 0.983,
+            "semrank_pre_rerank": 0.983
+          },
+          "query_scores": {
+            "original": 0.5634731098784789
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.983,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping or abduction",
+                "source": "legal_concept",
+                "similarity": 0.983,
+                "weighted_score": 0.983
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 0.8538,
+                "weighted_score": 0.8538
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "defined",
+                "source": "keyword",
+                "similarity": 0.9849,
+                "weighted_score": 0.7387
+              }
+            ],
+            "score": 0.983,
+            "best_similarity": 0.983,
+            "best_concept": "kidnapping or abduction",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.983,
+            "score_before_pre_rerank": 0.563473,
+            "score_after_pre_rerank": 0.638988
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S140_N3",
+          "score": 0.59436,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 140,
+          "citation": "Section 140",
+          "text": "Whoever kidnaps or abducts any person with intent to cause that person to be secretly and wrongfully confined, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 140: Kidnapping or abducting in order to murder or for ransom, etc.\nWhoever kidnaps or abducts any person with intent to cause that person to be secretly and wrongfully confined, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "whoever",
+            "kidnaps",
+            "abducts",
+            "intent",
+            "cause",
+            "secretly",
+            "wrongfully",
+            "confined",
+            "punished",
+            "imprisonment",
+            "kidnapping",
+            "abduction",
+            "secret confinement"
+          ],
+          "legal_concepts": [
+            "kidnapping",
+            "abduction",
+            "secret confinement"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "kidnapping",
+              "abduction"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6807335615158081,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.5053165695409981
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "secret confinement",
+                "source": "legal_concept",
+                "similarity": 0.8438,
+                "weighted_score": 0.8438
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnaps",
+                "source": "keyword",
+                "similarity": 0.9815,
+                "weighted_score": 0.7361
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abducts",
+                "source": "keyword",
+                "similarity": 0.9542,
+                "weighted_score": 0.7156
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "abduction",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.505317,
+            "score_after_pre_rerank": 0.59436
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S139_N4_IV",
+          "score": 0.583956,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 139,
+          "citation": "Section 139",
+          "text": "using such child as an exhibit for the purpose of soliciting or receiving alms. Kidnapping or abducting in order to murder or for ransom, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 139: Kidnapping or maiming a child for purposes of begging.\nIn this section “begging” means—\nusing such child as an exhibit for the purpose of soliciting or receiving alms. Kidnapping or abducting in order to murder or for ransom, etc.",
+          "keywords": [
+            "child",
+            "kidnapping",
+            "using",
+            "exhibit",
+            "purpose",
+            "soliciting",
+            "receiving",
+            "alms",
+            "abducting",
+            "order",
+            "child kidnapping",
+            "begging"
+          ],
+          "legal_concepts": [
+            "kidnapping",
+            "maiming",
+            "offence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "kidnapping"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6675572991371155,
+            "original:bm25": 0.058823529411764705,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4926295945609167
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "maiming",
+                "source": "legal_concept",
+                "similarity": 0.8368,
+                "weighted_score": 0.8368
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "child kidnapping",
+                "source": "keyword",
+                "similarity": 0.9621,
+                "weighted_score": 0.7216
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abducting",
+                "source": "keyword",
+                "similarity": 0.9576,
+                "weighted_score": 0.7182
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "using",
+                "source": "keyword",
+                "similarity": 0.9553,
+                "weighted_score": 0.7164
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "kidnapping",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.49263,
+            "score_after_pre_rerank": 0.583956
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S87_BODY",
+          "score": 0.570963,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 87,
+          "citation": "Section 87",
+          "text": "Whoever kidnaps or abducts any woman with intent that she may be compelled, or knowing it to be likely that she will be compelled, to marry any person against her will, or in order that she may be forced or seduced to illicit intercourse, or knowing it to be likely that she will be forced or seduced to illicit intercourse, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and whoever, by means of criminal intimidation as defined in this Sanhita or of abuse of authority or any other method of compulsion, induces any woman to go from any place with intent that she may be, or knowing that it is likely that she will be, forced or seduced to illicit intercourse with another person shall also be punishable as aforesaid. Of causing miscarriage, etc. Causing miscarriage. [OF CAUSING MISCARRIAGE, ETC.]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 87: Kidnapping, abducting or inducing woman to compel her marriage, etc.\nWhoever kidnaps or abducts any woman with intent that she may be compelled, or knowing it to be likely that she will be compelled, to marry any person against her will, or in order that she may be forced or seduced to illicit intercourse, or knowing it to be likely that she will be forced or seduced to illicit intercourse, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and whoever, by means of criminal intimidation as defined in this Sanhita or of abuse of authority or any other method of compulsion, induces any woman to go from any place with intent that she may be, or knowing that it is likely that she will be, forced or seduced to illicit intercourse with another person shall also be punishable as aforesaid. Of causing miscarriage, etc. Causing miscarriage. [OF CAUSING MISCARRIAGE, ETC.]",
+          "keywords": [
+            "woman",
+            "knowing",
+            "likely",
+            "forced",
+            "seduced",
+            "illicit",
+            "intercourse",
+            "causing",
+            "miscarriage",
+            "whoever",
+            "kidnapping",
+            "abduction",
+            "forced marriage",
+            "illicit intercourse"
+          ],
+          "legal_concepts": [
+            "kidnapping",
+            "abduction",
+            "forced marriage",
+            "illicit intercourse"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "kidnapping",
+              "abduction"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4767845354546771
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "forced marriage",
+                "source": "legal_concept",
+                "similarity": 0.8346,
+                "weighted_score": 0.8346
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "illicit intercourse",
+                "source": "legal_concept",
+                "similarity": 0.8309,
+                "weighted_score": 0.8309
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "knowing",
+                "source": "keyword",
+                "similarity": 0.9124,
+                "weighted_score": 0.6843
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "abduction",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.476785,
+            "score_after_pre_rerank": 0.570963
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S136_EXP1",
+          "score": 0.567807,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 136,
+          "citation": "Section 136",
+          "text": "This section is subject to the same Explanation as section 131. Of kidnapping, abduction, slavery and forced labour Kidnapping. [OF KIDNAPPING, ABDUCTION, SLAVERY AND FORCED LABOUR]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 136: Assault or criminal force on grave provocation.\nThis section is subject to the same Explanation as section 131. Of kidnapping, abduction, slavery and forced labour Kidnapping. [OF KIDNAPPING, ABDUCTION, SLAVERY AND FORCED LABOUR]",
+          "keywords": [
+            "kidnapping",
+            "abduction",
+            "slavery",
+            "forced",
+            "labour",
+            "subject",
+            "assault",
+            "criminal",
+            "force",
+            "grave"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6613279581069946,
+            "original:bm25": 1.0,
+            "original:semrank": 0.7500001788139343,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.5278137630262689
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "subject",
+                "source": "keyword",
+                "similarity": 0.909,
+                "weighted_score": 0.6818
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "forced",
+                "source": "keyword",
+                "similarity": 0.8872,
+                "weighted_score": 0.6654
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 0.8862,
+                "weighted_score": 0.6646
+              }
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "abduction",
+            "best_concept_source": "keyword",
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.527814,
+            "score_after_pre_rerank": 0.567807
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S140_N1",
+          "score": 0.563148,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 140,
+          "citation": "Section 140",
+          "text": "Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 140: Kidnapping or abducting in order to murder or for ransom, etc.\nWhoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "keywords": [
+            "order",
+            "murdered",
+            "imprisonment",
+            "whoever",
+            "kidnaps",
+            "abducts",
+            "disposed",
+            "danger",
+            "punished",
+            "life",
+            "kidnapping",
+            "abduction",
+            "murder",
+            "ransom"
+          ],
+          "legal_concepts": [
+            "punishment for kidnapping",
+            "offence against human body"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6663332581520081,
+            "original:semrank_pre_rerank": 0.9553,
+            "semrank_pre_rerank": 0.9553
+          },
+          "query_scores": {
+            "original": 0.477065660214279
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "score": 0.9553,
+            "best_similarity": 0.9553,
+            "best_concept": "punishment for kidnapping",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "punishment for kidnapping",
+                "source": "legal_concept",
+                "similarity": 0.9553,
+                "weighted_score": 0.9553
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "offence against human body",
+                "source": "legal_concept",
+                "similarity": 0.8413,
+                "weighted_score": 0.8413
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnaps",
+                "source": "keyword",
+                "similarity": 0.9815,
+                "weighted_score": 0.7361
+              }
+            ],
+            "pre_rerank_score": 0.9553,
+            "score_before_pre_rerank": 0.477066,
+            "score_after_pre_rerank": 0.563148
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S140_N2",
+          "score": 0.514631,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 140,
+          "citation": "Section 140",
+          "text": "Whoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 140: Kidnapping or abducting in order to murder or for ransom, etc.\nWhoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine.",
+          "keywords": [
+            "death",
+            "hurt",
+            "kidnapping",
+            "order",
+            "ransom",
+            "whoever",
+            "kidnaps",
+            "abducts",
+            "keeps",
+            "detention",
+            "abduction",
+            "murder"
+          ],
+          "legal_concepts": [
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6661684513092041,
+            "original:bm25": 0.23455825105762193,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.462964348017015
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "abduction",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnaps",
+                "source": "keyword",
+                "similarity": 0.9815,
+                "weighted_score": 0.7361
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abducts",
+                "source": "keyword",
+                "similarity": 0.9542,
+                "weighted_score": 0.7156
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "ransom",
+                "source": "keyword",
+                "similarity": 0.9152,
+                "weighted_score": 0.6864
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.462964,
+            "score_after_pre_rerank": 0.514631
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S137_N2",
+          "score": 1.0,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 137,
+          "citation": "Section 137",
+          "text": "Whoever kidnaps any person from India or from lawful guardianship shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Abduction.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 137: Kidnapping.\nWhoever kidnaps any person from India or from lawful guardianship shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Abduction.",
+          "keywords": [
+            "whoever",
+            "kidnaps",
+            "india",
+            "lawful",
+            "guardianship",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "kidnapping",
+            "offence",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "kidnapping",
+            "imprisonment",
+            "fine"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "kidnapping"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6624057292938232,
+            "original:bm25": 0.5241951352324314,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "fine",
+                "source": "legal_concept",
+                "similarity": 0.8953,
+                "weighted_score": 0.8953
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.8878,
+                "weighted_score": 0.8878
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnaps",
+                "source": "keyword",
+                "similarity": 0.9815,
+                "weighted_score": 0.7361
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "description",
+                "source": "keyword",
+                "similarity": 0.9649,
+                "weighted_score": 0.7237
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "kidnapping",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S138_BODY",
+          "score": 0.774679,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 138,
+          "citation": "Section 138",
+          "text": "Whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person. Kidnapping or maiming a child for purposes of begging.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 138: Abduction.\nWhoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person. Kidnapping or maiming a child for purposes of begging.",
+          "keywords": [
+            "body",
+            "whoever",
+            "force",
+            "compels",
+            "deceitful",
+            "means",
+            "induces",
+            "place",
+            "said",
+            "abduct",
+            "abduction",
+            "deceit"
+          ],
+          "legal_concepts": [
+            "abduction by force",
+            "abduction by deceit"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7130260467529297,
+            "original:bm25": 0.552668813785081,
+            "original:semrank_pre_rerank": 0.9492,
+            "semrank_pre_rerank": 0.9492
+          },
+          "query_scores": {
+            "original": 0.8377332606973762
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "score": 0.9492,
+            "best_similarity": 0.9492,
+            "best_concept": "abduction by force",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction by force",
+                "source": "legal_concept",
+                "similarity": 0.9492,
+                "weighted_score": 0.9492
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction by deceit",
+                "source": "legal_concept",
+                "similarity": 0.9227,
+                "weighted_score": 0.9227
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduct",
+                "source": "keyword",
+                "similarity": 0.9505,
+                "weighted_score": 0.7128
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "said",
+                "source": "keyword",
+                "similarity": 0.9202,
+                "weighted_score": 0.6901
+              }
+            ],
+            "pre_rerank_score": 0.9492,
+            "score_before_pre_rerank": 0.837733,
+            "score_after_pre_rerank": 0.857797
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__section__BNS_S140",
+          "score": 0.667441,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 140,
+          "citation": "Section 140",
+          "text": "(1) Whoever kidnaps or abducts any person in order that such\nperson may be murdered or may be so disposed of as to be put in danger\nof being murdered, shall be punished with imprisonment for life or rigorous\nimprisonment for a term which may extend to ten years, and shall also be\nliable to fine.\nIllustrations.\n(a) A kidnaps Z from India, intending or knowing it to be likely that\nZ may be sacrificed to an idol. A has committed the offence defined in this\nsection.\n(b) A forcibly carries or entices B away from his home in order that B\nmay be murdered. A has committed the offence defined in this section.\n(2) Whoever kidnaps or abducts any person or keeps a person in\ndetention after such kidnapping or abduction, and threatens to cause death\nor hurt to such person, or by his conduct gives rise to a reasonable\napprehension that such person may be put to death or hurt, or causes hurt\nor death to such person in order to compel the Government or any foreign\nState or international inter-governmental organisation or any other person\nto do or abstain from doing any act or to pay a ransom, shall be punishable\nwith death, or imprisonment for life, and shall also be liable to fine.\n(3) Whoever kidnaps or abducts any person with intent to cause that\nperson to be secretly and wrongfully confined, shall be punished with\nimprisonment of either description for a term which may extend to seven\nyears, and shall also be liable to fine.\n(4) Whoever kidnaps or abducts any person in order that such person\nmay be subjected, or may be so disposed of as to be put in danger of being\nsubjected to grievous hurt, or slavery, or to the unnatural lust of any\nperson, or knowing it to be likely that such person will be so subjected or\ndisposed of, shall be punished with imprisonment of either description for\na term which may extend to ten years, and shall also be liable to fine.\nImportation of girl or boy from foreign country.",
+          "derived_context": "",
+          "keywords": [
+            "kidnapping",
+            "abduction",
+            "murder",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.8969400000000001
+          },
+          "query_scores": {
+            "original": 0.7544317893826327
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S140_N1_ILL1_B",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S140_N1_ILL1_B",
+          "score": 0.356409,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 140,
+          "citation": "Section 140",
+          "text": "A forcibly carries or entices B away from his home in order that B may be murdered. A has committed the offence defined in this section.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 140: Kidnapping or abducting in order to murder or for ransom, etc.\nWhoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.\nA forcibly carries or entices B away from his home in order that B may be murdered. A has committed the offence defined in this section.",
+          "keywords": [
+            "order",
+            "forcibly",
+            "carries",
+            "entices",
+            "away",
+            "home",
+            "murdered",
+            "committed",
+            "offence",
+            "defined",
+            "kidnapping",
+            "abduction",
+            "murder"
+          ],
+          "legal_concepts": [
+            "kidnapping or abduction",
+            "murder"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6948236227035522,
+            "original:semrank": 0.9830278158187866,
+            "original:semrank_pre_rerank": 0.983,
+            "semrank_pre_rerank": 0.983
+          },
+          "query_scores": {
+            "original": 0.5634731098784789
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.983,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping or abduction",
+                "source": "legal_concept",
+                "similarity": 0.983,
+                "weighted_score": 0.983
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 0.8538,
+                "weighted_score": 0.8538
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "defined",
+                "source": "keyword",
+                "similarity": 0.9849,
+                "weighted_score": 0.7387
+              }
+            ],
+            "score": 0.983,
+            "best_similarity": 0.983,
+            "best_concept": "kidnapping or abduction",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.983,
+            "score_before_pre_rerank": 0.563473,
+            "score_after_pre_rerank": 0.638988
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S136_EXP1",
+          "score": 0.306282,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 136,
+          "citation": "Section 136",
+          "text": "This section is subject to the same Explanation as section 131. Of kidnapping, abduction, slavery and forced labour Kidnapping. [OF KIDNAPPING, ABDUCTION, SLAVERY AND FORCED LABOUR]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 136: Assault or criminal force on grave provocation.\nThis section is subject to the same Explanation as section 131. Of kidnapping, abduction, slavery and forced labour Kidnapping. [OF KIDNAPPING, ABDUCTION, SLAVERY AND FORCED LABOUR]",
+          "keywords": [
+            "kidnapping",
+            "abduction",
+            "slavery",
+            "forced",
+            "labour",
+            "subject",
+            "assault",
+            "criminal",
+            "force",
+            "grave"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6613279581069946,
+            "original:bm25": 1.0,
+            "original:semrank": 0.7500001788139343,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.5278137630262689
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "subject",
+                "source": "keyword",
+                "similarity": 0.909,
+                "weighted_score": 0.6818
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "forced",
+                "source": "keyword",
+                "similarity": 0.8872,
+                "weighted_score": 0.6654
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 0.8862,
+                "weighted_score": 0.6646
+              }
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "abduction",
+            "best_concept_source": "keyword",
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.527814,
+            "score_after_pre_rerank": 0.567807
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S140_N2",
+          "score": 0.302385,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 140,
+          "citation": "Section 140",
+          "text": "Whoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 140: Kidnapping or abducting in order to murder or for ransom, etc.\nWhoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine.",
+          "keywords": [
+            "death",
+            "hurt",
+            "kidnapping",
+            "order",
+            "ransom",
+            "whoever",
+            "kidnaps",
+            "abducts",
+            "keeps",
+            "detention",
+            "abduction",
+            "murder"
+          ],
+          "legal_concepts": [
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6661684513092041,
+            "original:bm25": 0.23455825105762193,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.462964348017015
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "abduction",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnaps",
+                "source": "keyword",
+                "similarity": 0.9815,
+                "weighted_score": 0.7361
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abducts",
+                "source": "keyword",
+                "similarity": 0.9542,
+                "weighted_score": 0.7156
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "ransom",
+                "source": "keyword",
+                "similarity": 0.9152,
+                "weighted_score": 0.6864
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.462964,
+            "score_after_pre_rerank": 0.514631
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S140_N1",
+          "score": 0.296992,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 140,
+          "citation": "Section 140",
+          "text": "Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 140: Kidnapping or abducting in order to murder or for ransom, etc.\nWhoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "keywords": [
+            "order",
+            "murdered",
+            "imprisonment",
+            "whoever",
+            "kidnaps",
+            "abducts",
+            "disposed",
+            "danger",
+            "punished",
+            "life",
+            "kidnapping",
+            "abduction",
+            "murder",
+            "ransom"
+          ],
+          "legal_concepts": [
+            "punishment for kidnapping",
+            "offence against human body"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6663332581520081,
+            "original:semrank_pre_rerank": 0.9553,
+            "semrank_pre_rerank": 0.9553
+          },
+          "query_scores": {
+            "original": 0.477065660214279
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "score": 0.9553,
+            "best_similarity": 0.9553,
+            "best_concept": "punishment for kidnapping",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "punishment for kidnapping",
+                "source": "legal_concept",
+                "similarity": 0.9553,
+                "weighted_score": 0.9553
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "offence against human body",
+                "source": "legal_concept",
+                "similarity": 0.8413,
+                "weighted_score": 0.8413
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnaps",
+                "source": "keyword",
+                "similarity": 0.9815,
+                "weighted_score": 0.7361
+              }
+            ],
+            "pre_rerank_score": 0.9553,
+            "score_before_pre_rerank": 0.477066,
+            "score_after_pre_rerank": 0.563148
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S140_N3",
+          "score": 0.270463,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 140,
+          "citation": "Section 140",
+          "text": "Whoever kidnaps or abducts any person with intent to cause that person to be secretly and wrongfully confined, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 140: Kidnapping or abducting in order to murder or for ransom, etc.\nWhoever kidnaps or abducts any person with intent to cause that person to be secretly and wrongfully confined, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "whoever",
+            "kidnaps",
+            "abducts",
+            "intent",
+            "cause",
+            "secretly",
+            "wrongfully",
+            "confined",
+            "punished",
+            "imprisonment",
+            "kidnapping",
+            "abduction",
+            "secret confinement"
+          ],
+          "legal_concepts": [
+            "kidnapping",
+            "abduction",
+            "secret confinement"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "kidnapping",
+              "abduction"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6807335615158081,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.5053165695409981
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "secret confinement",
+                "source": "legal_concept",
+                "similarity": 0.8438,
+                "weighted_score": 0.8438
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnaps",
+                "source": "keyword",
+                "similarity": 0.9815,
+                "weighted_score": 0.7361
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abducts",
+                "source": "keyword",
+                "similarity": 0.9542,
+                "weighted_score": 0.7156
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "abduction",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.505317,
+            "score_after_pre_rerank": 0.59436
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S139_N4_IV",
+          "score": 0.251753,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 139,
+          "citation": "Section 139",
+          "text": "using such child as an exhibit for the purpose of soliciting or receiving alms. Kidnapping or abducting in order to murder or for ransom, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 139: Kidnapping or maiming a child for purposes of begging.\nIn this section “begging” means—\nusing such child as an exhibit for the purpose of soliciting or receiving alms. Kidnapping or abducting in order to murder or for ransom, etc.",
+          "keywords": [
+            "child",
+            "kidnapping",
+            "using",
+            "exhibit",
+            "purpose",
+            "soliciting",
+            "receiving",
+            "alms",
+            "abducting",
+            "order",
+            "child kidnapping",
+            "begging"
+          ],
+          "legal_concepts": [
+            "kidnapping",
+            "maiming",
+            "offence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "kidnapping"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6675572991371155,
+            "original:bm25": 0.058823529411764705,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4926295945609167
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "maiming",
+                "source": "legal_concept",
+                "similarity": 0.8368,
+                "weighted_score": 0.8368
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "child kidnapping",
+                "source": "keyword",
+                "similarity": 0.9621,
+                "weighted_score": 0.7216
+              },
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abducting",
+                "source": "keyword",
+                "similarity": 0.9576,
+                "weighted_score": 0.7182
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "using",
+                "source": "keyword",
+                "similarity": 0.9553,
+                "weighted_score": 0.7164
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "kidnapping",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.49263,
+            "score_after_pre_rerank": 0.583956
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S87_BODY",
+          "score": 0.228385,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 87,
+          "citation": "Section 87",
+          "text": "Whoever kidnaps or abducts any woman with intent that she may be compelled, or knowing it to be likely that she will be compelled, to marry any person against her will, or in order that she may be forced or seduced to illicit intercourse, or knowing it to be likely that she will be forced or seduced to illicit intercourse, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and whoever, by means of criminal intimidation as defined in this Sanhita or of abuse of authority or any other method of compulsion, induces any woman to go from any place with intent that she may be, or knowing that it is likely that she will be, forced or seduced to illicit intercourse with another person shall also be punishable as aforesaid. Of causing miscarriage, etc. Causing miscarriage. [OF CAUSING MISCARRIAGE, ETC.]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 87: Kidnapping, abducting or inducing woman to compel her marriage, etc.\nWhoever kidnaps or abducts any woman with intent that she may be compelled, or knowing it to be likely that she will be compelled, to marry any person against her will, or in order that she may be forced or seduced to illicit intercourse, or knowing it to be likely that she will be forced or seduced to illicit intercourse, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and whoever, by means of criminal intimidation as defined in this Sanhita or of abuse of authority or any other method of compulsion, induces any woman to go from any place with intent that she may be, or knowing that it is likely that she will be, forced or seduced to illicit intercourse with another person shall also be punishable as aforesaid. Of causing miscarriage, etc. Causing miscarriage. [OF CAUSING MISCARRIAGE, ETC.]",
+          "keywords": [
+            "woman",
+            "knowing",
+            "likely",
+            "forced",
+            "seduced",
+            "illicit",
+            "intercourse",
+            "causing",
+            "miscarriage",
+            "whoever",
+            "kidnapping",
+            "abduction",
+            "forced marriage",
+            "illicit intercourse"
+          ],
+          "legal_concepts": [
+            "kidnapping",
+            "abduction",
+            "forced marriage",
+            "illicit intercourse"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "kidnapping",
+              "abduction"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4767845354546771
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "kidnapping",
+              "abduction",
+              "legal definition",
+              "difference",
+              "between"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abduction",
+                "chunk_concept": "abduction",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "kidnapping",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "kidnapping",
+                "chunk_concept": "forced marriage",
+                "source": "legal_concept",
+                "similarity": 0.8346,
+                "weighted_score": 0.8346
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "illicit intercourse",
+                "source": "legal_concept",
+                "similarity": 0.8309,
+                "weighted_score": 0.8309
+              },
+              {
+                "query_concept": "legal definition",
+                "chunk_concept": "knowing",
+                "source": "keyword",
+                "similarity": 0.9124,
+                "weighted_score": 0.6843
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "abduction",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.476785,
+            "score_after_pre_rerank": 0.570963
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

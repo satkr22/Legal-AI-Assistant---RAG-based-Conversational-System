@@ -1,0 +1,32 @@
+{
+  "query_id": "Q068",
+  "query": "If an Indian citizen commits an offence outside India, can BNS apply?",
+  "query_type": "multi_hop",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "1",
+      "subsection": "5",
+      "label": "Section 1(5)(a)",
+      "role": "BNS applies to any citizen of India in any place outside India",
+      "required": true,
+      "match_level": "subsection"
+    }
+  ],
+  "acceptable_references": [],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Yes. Section 1(5)(a) provides that the provisions of BNS shall apply to any citizen of India in any place outside India.",
+      "The illustration in Section 1 gives the example that A, a citizen of India who commits murder in any place outside India, can be tried and convicted in India."
+    ],
+    "optional_points": [],
+    "forbidden_points": [
+      "BNS never applies outside India.",
+      "BNS applies outside India only to government employees."
+    ]
+  },
+  "notes": "Multi-hop query. Section 1(5)(a) is the applicable provision."
+}

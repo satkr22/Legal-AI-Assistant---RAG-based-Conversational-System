@@ -1,0 +1,24 @@
+{
+  "query_id": "Q093",
+  "query": "What did the Supreme Court decide in the latest murder case?",
+  "query_type": "out_of_scope",
+  "difficulty": "easy",
+  "expected_behavior": "clarify",
+  "gold_references": [],
+  "acceptable_references": [],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "The system should indicate that Supreme Court decisions are not within its corpus, which is limited to BNS 2023.",
+      "The system should not attempt to fabricate any Supreme Court decision."
+    ],
+    "optional_points": [
+      "The system may suggest consulting legal databases like SCC Online or Manupatra for case law."
+    ],
+    "forbidden_points": [
+      "The system invents or attributes any specific Supreme Court decision on murder.",
+      "The system claims BNS contains judicial decisions."
+    ]
+  },
+  "notes": "Out-of-corpus test. Case law is outside the BNS corpus."
+}

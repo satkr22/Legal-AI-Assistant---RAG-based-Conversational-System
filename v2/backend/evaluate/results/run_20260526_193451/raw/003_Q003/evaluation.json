@@ -1,0 +1,162 @@
+{
+  "query_id": "Q003",
+  "query": "What punishments are listed under Section 4 of BNS?",
+  "query_type": "direct_section_lookup",
+  "difficulty": "easy",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "4"
+  ],
+  "acceptable_sections": [],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "4"
+  ],
+  "candidate_sections_at_10": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "54",
+    "52"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "4",
+    "4",
+    "4",
+    "54",
+    "52"
+  ],
+  "cited_sections": [
+    "4"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "4"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "4"
+    ],
+    "support_precision_at_k": 1.0,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": []
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "4"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "4"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "54",
+      "52"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "4"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "4"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "54",
+      "52"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.0,
+    "required_points_matched": 0,
+    "required_points_total": 1,
+    "answer_completeness_score": 0.0,
+    "soft_answer_score": 0.75,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 3,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Section 4 lists the punishments to which offenders are liable: (a) Death, (b) Imprisonment for life, (c) Imprisonment (rigorous or simple), (d) Forfeiture of property, (e) Fine, (f) Community Service.",
+        "matched": false,
+        "overlap": 0.3571,
+        "matched_terms": [
+          "liable",
+          "offenders",
+          "punishments",
+          "rigorous",
+          "simple"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "4"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 1,
+    "supported_claims": 1,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "low_required_point_coverage"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 0.0609,
+    "phase_9_10": 3.3182,
+    "phase_11": 20.035,
+    "phase_12_13": 0.0002,
+    "total": 23.4143
+  },
+  "final_answer_preview": "Under Section 4 of the Bharatiya Nyaya Sanhita, 2023, the punishments to which offenders are liable include: 1) Rigorous punishment, which involves hard labour (Section 4(1), Bharatiya Nyaya Sanhita, 2023), and 2) Simple punishment (Section 4(2), Bharatiya Nyaya Sanhita, 2023).",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/003_Q003"
+}

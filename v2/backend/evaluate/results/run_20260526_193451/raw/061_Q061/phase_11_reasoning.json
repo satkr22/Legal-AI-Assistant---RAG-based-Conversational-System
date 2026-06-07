@@ -1,0 +1,3644 @@
+[
+  {
+    "query": "A person gave false evidence in court. What offence is this?",
+    "phase8": {
+      "query": "A person gave false evidence in court. What offence is this?",
+      "intent": {
+        "primary": "explanation",
+        "secondary": [
+          "definition"
+        ]
+      },
+      "concepts": [
+        "false evidence",
+        "punishment",
+        "capital offence"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.6152,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.35,
+        "structure_validity": 1.0,
+        "overall": 0.7161
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "A person gave false evidence in court. What offence is this?",
+          "targets": [],
+          "concepts": [
+            "false evidence",
+            "punishment",
+            "capital offence"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S232_N1",
+            "score": 0.99632,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 232,
+            "citation": "Section 232",
+            "text": "Whoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 232: Threatening any person to give false evidence.\nWhoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+            "keywords": [
+              "false",
+              "evidence",
+              "reputation",
+              "give",
+              "whoever",
+              "threatens",
+              "injury",
+              "property",
+              "interested",
+              "intent",
+              "false evidence",
+              "threats"
+            ],
+            "legal_concepts": [
+              "offence against public justice",
+              "false evidence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "false evidence"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7414239645004272,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "false evidence",
+                "capital offence",
+                "gave",
+                "false",
+                "evidence",
+                "court"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "false evidence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "capital offence",
+                  "chunk_concept": "offence against public justice",
+                  "source": "legal_concept",
+                  "similarity": 0.8581,
+                  "weighted_score": 0.8581
+                },
+                {
+                  "query_concept": "evidence",
+                  "chunk_concept": "evidence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false",
+                  "chunk_concept": "false",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "gave",
+                  "chunk_concept": "give",
+                  "source": "keyword",
+                  "similarity": 0.9548,
+                  "weighted_score": 0.7161
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "false evidence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S229_N2_ILL1",
+            "score": 0.993584,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 229,
+            "citation": "Section 229",
+            "text": "A, in an enquiry before a Magistrate for the purpose of ascertaining whether Z ought to be committed for trial, makes on oath a statement which he knows to be false. As this enquiry is a stage of a judicial proceeding, A has given false evidence.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.\nA, in an enquiry before a Magistrate for the purpose of ascertaining whether Z ought to be committed for trial, makes on oath a statement which he knows to be false. As this enquiry is a stage of a judicial proceeding, A has given false evidence.",
+            "keywords": [
+              "false",
+              "evidence",
+              "enquiry",
+              "before",
+              "magistrate",
+              "purpose",
+              "ascertaining",
+              "whether",
+              "ought",
+              "committed",
+              "false evidence",
+              "intentional fabrication"
+            ],
+            "legal_concepts": [
+              "punishment for false evidence",
+              "intentional false evidence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "semrank_pre_rerank": 0.9596
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "false evidence",
+                "capital offence",
+                "gave",
+                "false",
+                "evidence",
+                "court"
+              ],
+              "score": 0.9596,
+              "best_similarity": 0.9596,
+              "best_concept": "intentional false evidence",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "intentional false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.9596,
+                  "weighted_score": 0.9596
+                },
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "punishment for false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.9436,
+                  "weighted_score": 0.9436
+                },
+                {
+                  "query_concept": "evidence",
+                  "chunk_concept": "evidence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false",
+                  "chunk_concept": "false",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "false evidence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "pre_rerank_score": 0.9596,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.992728
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S230_N2",
+            "score": 0.9914,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 230,
+            "citation": "Section 230",
+            "text": "If an innocent person be convicted and executed in consequence of false evidence referred to in sub-section (1), the person who gives such false evidence shall be punished either with death or the punishment specified in sub-section (1). Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 230: Giving or fabricating false evidence with intent to procure conviction of capital offence.\nIf an innocent person be convicted and executed in consequence of false evidence referred to in sub-section (1), the person who gives such false evidence shall be punished either with death or the punishment specified in sub-section (1). Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment.",
+            "keywords": [
+              "false",
+              "evidence",
+              "sub-section",
+              "giving",
+              "fabricating",
+              "intent",
+              "procure",
+              "conviction",
+              "offence",
+              "imprisonment",
+              "false evidence",
+              "capital offence"
+            ],
+            "legal_concepts": [
+              "offence against public justice",
+              "punishment for false evidence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7491673827171326,
+              "bm25": 1.0,
+              "semrank": 0.7500001788139343,
+              "semrank_pre_rerank": 0.9436
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.75,
+              "query_concepts": [
+                "false evidence",
+                "capital offence",
+                "gave",
+                "false",
+                "evidence",
+                "court"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "punishment for false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.9436,
+                  "weighted_score": 0.9436
+                },
+                {
+                  "query_concept": "capital offence",
+                  "chunk_concept": "offence against public justice",
+                  "source": "legal_concept",
+                  "similarity": 0.8581,
+                  "weighted_score": 0.8581
+                },
+                {
+                  "query_concept": "capital offence",
+                  "chunk_concept": "capital offence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "evidence",
+                  "chunk_concept": "evidence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false",
+                  "chunk_concept": "false",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 0.9436,
+              "best_similarity": 0.9436,
+              "best_concept": "punishment for false evidence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9436,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.989848
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S231_BODY",
+            "score": 0.990933,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 231,
+            "citation": "Section 231",
+            "text": "Whoever gives or fabricates false evidence intending thereby to cause, or knowing it to be likely that he will thereby cause, any person to be convicted of an offence which by the law for the time being in force in India is not capital, but punishable with imprisonment for life, or imprisonment for a term of seven years or upwards, shall be punished as a person convicted of that offence would be liable to be punished.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 231: Giving or fabricating false evidence with intent to procure conviction of offence punishable\nWhoever gives or fabricates false evidence intending thereby to cause, or knowing it to be likely that he will thereby cause, any person to be convicted of an offence which by the law for the time being in force in India is not capital, but punishable with imprisonment for life, or imprisonment for a term of seven years or upwards, shall be punished as a person convicted of that offence would be liable to be punished.",
+            "keywords": [
+              "false",
+              "evidence",
+              "offence",
+              "thereby",
+              "cause",
+              "convicted",
+              "punishable",
+              "imprisonment",
+              "punished",
+              "whoever",
+              "false evidence",
+              "fabricated evidence"
+            ],
+            "legal_concepts": [
+              "giving false evidence",
+              "fabricating evidence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7387052774429321,
+              "bm25": 0.08637800777502615,
+              "semrank": 0.7500001788139343,
+              "semrank_pre_rerank": 0.9844
+            },
+            "query_scores": {
+              "original": 0.7500001788139343
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.75,
+              "query_concepts": [
+                "false evidence",
+                "capital offence",
+                "gave",
+                "false",
+                "evidence",
+                "court"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "giving false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.9844,
+                  "weighted_score": 0.9844
+                },
+                {
+                  "query_concept": "evidence",
+                  "chunk_concept": "fabricating evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.921,
+                  "weighted_score": 0.921
+                },
+                {
+                  "query_concept": "evidence",
+                  "chunk_concept": "evidence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false",
+                  "chunk_concept": "false",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "false evidence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 0.9844,
+              "best_similarity": 0.9844,
+              "best_concept": "giving false evidence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9844,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.997192
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S236_BODY",
+            "score": 0.976188,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 236,
+            "citation": "Section 236",
+            "text": "Whoever, in any declaration made or subscribed by him, which declaration any Court or any public servant or other person, is bound or authorised by law to receive as evidence of any fact, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, touching any point material to the object for which the declaration is made or used, shall be punished in the same manner as if he gave false evidence. Using as true such declaration knowing it to be false.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 236: False statement made in declaration which is by law receivable as evidence.\nWhoever, in any declaration made or subscribed by him, which declaration any Court or any public servant or other person, is bound or authorised by law to receive as evidence of any fact, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, touching any point material to the object for which the declaration is made or used, shall be punished in the same manner as if he gave false evidence. Using as true such declaration knowing it to be false.",
+            "keywords": [
+              "false",
+              "declaration",
+              "evidence",
+              "made",
+              "public",
+              "statement",
+              "true",
+              "whoever",
+              "subscribed",
+              "court",
+              "false statements",
+              "declarations"
+            ],
+            "legal_concepts": [
+              "false evidence",
+              "declaration as evidence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "false evidence"
+              ]
+            },
+            "source_scores": {
+              "bm25": 0.4046120726463013,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "false evidence",
+                "capital offence",
+                "gave",
+                "false",
+                "evidence",
+                "court"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "false evidence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "evidence",
+                  "chunk_concept": "declaration as evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.9251,
+                  "weighted_score": 0.9251
+                },
+                {
+                  "query_concept": "court",
+                  "chunk_concept": "court",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "evidence",
+                  "chunk_concept": "evidence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false",
+                  "chunk_concept": "false",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "false evidence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S229_N1",
+            "score": 0.971446,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 229,
+            "citation": "Section 229",
+            "text": "Whoever intentionally gives false evidence in any stage of a judicial proceeding, or fabricates false evidence for the purpose of being used in any stage of a judicial proceeding, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine which may extend to ten thousand rupees.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives false evidence in any stage of a judicial proceeding, or fabricates false evidence for the purpose of being used in any stage of a judicial proceeding, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine which may extend to ten thousand rupees.",
+            "keywords": [
+              "false",
+              "evidence",
+              "stage",
+              "judicial",
+              "proceeding",
+              "extend",
+              "whoever",
+              "intentionally",
+              "gives",
+              "fabricates",
+              "false evidence",
+              "judicial proceeding"
+            ],
+            "legal_concepts": [
+              "punishment for false evidence",
+              "intentional false evidence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7597984075546265,
+              "bm25": 0.11215086378669097,
+              "semrank_pre_rerank": 0.9596
+            },
+            "query_scores": {
+              "original": 0.7597984075546265
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "false evidence",
+                "capital offence",
+                "gave",
+                "false",
+                "evidence",
+                "court"
+              ],
+              "score": 0.9596,
+              "best_similarity": 0.9596,
+              "best_concept": "intentional false evidence",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "intentional false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.9596,
+                  "weighted_score": 0.9596
+                },
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "punishment for false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.9436,
+                  "weighted_score": 0.9436
+                },
+                {
+                  "query_concept": "evidence",
+                  "chunk_concept": "evidence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false",
+                  "chunk_concept": "false",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "false evidence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "pre_rerank_score": 0.9596,
+              "score_before_pre_rerank": 0.935589,
+              "score_after_pre_rerank": 0.939911
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S229_N2_EXP1",
+            "score": 0.965524,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 229,
+            "citation": "Section 229",
+            "text": "A trial before a Court-martial is a judicial proceeding.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.\nA trial before a Court-martial is a judicial proceeding.",
+            "keywords": [
+              "false",
+              "evidence",
+              "trial",
+              "before",
+              "court-martial",
+              "judicial",
+              "proceeding",
+              "punishment",
+              "offences",
+              "against",
+              "false evidence",
+              "intentional fabrication"
+            ],
+            "legal_concepts": [
+              "punishment for false evidence",
+              "intentional false evidence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7480228543281555,
+              "bm25": 0.12801359364485826,
+              "semrank_pre_rerank": 0.9596
+            },
+            "query_scores": {
+              "original": 0.7480228543281555
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "false evidence",
+                "capital offence",
+                "gave",
+                "false",
+                "evidence",
+                "court"
+              ],
+              "score": 0.9596,
+              "best_similarity": 0.9596,
+              "best_concept": "intentional false evidence",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "intentional false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.9596,
+                  "weighted_score": 0.9596
+                },
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "punishment for false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.9436,
+                  "weighted_score": 0.9436
+                },
+                {
+                  "query_concept": "evidence",
+                  "chunk_concept": "evidence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false",
+                  "chunk_concept": "false",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "false evidence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "pre_rerank_score": 0.9596,
+              "score_before_pre_rerank": 0.921089,
+              "score_after_pre_rerank": 0.928021
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S229_N2_ILL2_2",
+            "score": 0.965318,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 229,
+            "citation": "Section 229",
+            "text": "A, in an enquiry before an officer deputed by a Court to ascertain on the spot the boundaries of land, makes on oath a statement which he knows to be false. As this enquiry is a stage of a judicial proceeding, A has given false evidence. Giving or fabricating false evidence with intent to procure conviction of capital offence.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.\nA, in an enquiry before an officer deputed by a Court to ascertain on the spot the boundaries of land, makes on oath a statement which he knows to be false. As this enquiry is a stage of a judicial proceeding, A has given false evidence. Giving or fabricating false evidence with intent to procure conviction of capital offence.",
+            "keywords": [
+              "false",
+              "evidence",
+              "enquiry",
+              "before",
+              "officer",
+              "deputed",
+              "court",
+              "ascertain",
+              "spot",
+              "boundaries",
+              "false evidence",
+              "judicial proceeding"
+            ],
+            "legal_concepts": [
+              "punishment for false evidence",
+              "intentional false evidence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.757390022277832,
+              "bm25": 0.818891019226962,
+              "semrank_pre_rerank": 0.9596
+            },
+            "query_scores": {
+              "original": 0.818891019226962
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "false evidence",
+                "capital offence",
+                "gave",
+                "false",
+                "evidence",
+                "court"
+              ],
+              "score": 0.9596,
+              "best_similarity": 0.9596,
+              "best_concept": "intentional false evidence",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "intentional false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.9596,
+                  "weighted_score": 0.9596
+                },
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "punishment for false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.9436,
+                  "weighted_score": 0.9436
+                },
+                {
+                  "query_concept": "court",
+                  "chunk_concept": "court",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "evidence",
+                  "chunk_concept": "evidence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false",
+                  "chunk_concept": "false",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "pre_rerank_score": 0.9596,
+              "score_before_pre_rerank": 0.907518,
+              "score_after_pre_rerank": 0.916893
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S229_N2_EXP3",
+            "score": 0.962261,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 229,
+            "citation": "Section 229",
+            "text": "An investigation directed by a Court according to law, and conducted under the authority of a Court, is a stage of a judicial proceeding, though that investigation may not take place before a Court.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.\nAn investigation directed by a Court according to law, and conducted under the authority of a Court, is a stage of a judicial proceeding, though that investigation may not take place before a Court.",
+            "keywords": [
+              "court",
+              "investigation",
+              "false",
+              "evidence",
+              "directed",
+              "according",
+              "conducted",
+              "authority",
+              "stage",
+              "judicial",
+              "false evidence",
+              "intentional fabrication"
+            ],
+            "legal_concepts": [
+              "punishment for false evidence",
+              "intentional provision of false evidence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7584618330001831,
+              "bm25": 0.08726645758252467,
+              "semrank": 0.7500001788139343,
+              "semrank_pre_rerank": 0.9436
+            },
+            "query_scores": {
+              "original": 0.7584618330001831
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.75,
+              "query_concepts": [
+                "false evidence",
+                "capital offence",
+                "gave",
+                "false",
+                "evidence",
+                "court"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "punishment for false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.9436,
+                  "weighted_score": 0.9436
+                },
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "intentional provision of false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.943,
+                  "weighted_score": 0.943
+                },
+                {
+                  "query_concept": "court",
+                  "chunk_concept": "court",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "evidence",
+                  "chunk_concept": "evidence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false",
+                  "chunk_concept": "false",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 0.9436,
+              "best_similarity": 0.9436,
+              "best_concept": "punishment for false evidence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9436,
+              "score_before_pre_rerank": 0.931649,
+              "score_after_pre_rerank": 0.9338
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S229_N2",
+            "score": 0.959247,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 229,
+            "citation": "Section 229",
+            "text": "Whoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.",
+            "keywords": [
+              "false",
+              "evidence",
+              "extend",
+              "whoever",
+              "intentionally",
+              "gives",
+              "fabricates",
+              "referred",
+              "sub-section",
+              "false evidence",
+              "intentional fabrication"
+            ],
+            "legal_concepts": [
+              "punishment for false evidence",
+              "intentional provision of false evidence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.748288094997406,
+              "semrank_pre_rerank": 0.9436
+            },
+            "query_scores": {
+              "original": 0.748288094997406
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "false evidence",
+                "capital offence",
+                "gave",
+                "false",
+                "evidence",
+                "court"
+              ],
+              "score": 0.9436,
+              "best_similarity": 0.9436,
+              "best_concept": "punishment for false evidence",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "punishment for false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.9436,
+                  "weighted_score": 0.9436
+                },
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "intentional provision of false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.943,
+                  "weighted_score": 0.943
+                },
+                {
+                  "query_concept": "evidence",
+                  "chunk_concept": "evidence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false",
+                  "chunk_concept": "false",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false evidence",
+                  "chunk_concept": "false evidence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "pre_rerank_score": 0.9436,
+              "score_before_pre_rerank": 0.919152,
+              "score_after_pre_rerank": 0.923553
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S232_N1",
+          "score": 0.996983,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 232,
+          "citation": "Section 232",
+          "text": "Whoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 232: Threatening any person to give false evidence.\nWhoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "keywords": [
+            "false",
+            "evidence",
+            "reputation",
+            "give",
+            "whoever",
+            "threatens",
+            "injury",
+            "property",
+            "interested",
+            "intent",
+            "false evidence",
+            "threats"
+          ],
+          "legal_concepts": [
+            "offence against public justice",
+            "false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "false evidence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7414239645004272,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9963204905748778
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "false evidence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "capital offence",
+                "chunk_concept": "offence against public justice",
+                "source": "legal_concept",
+                "similarity": 0.8581,
+                "weighted_score": 0.8581
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "gave",
+                "chunk_concept": "give",
+                "source": "keyword",
+                "similarity": 0.9548,
+                "weighted_score": 0.7161
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "false evidence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.99632,
+            "score_after_pre_rerank": 0.996983
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S231_BODY",
+          "score": 0.989757,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 231,
+          "citation": "Section 231",
+          "text": "Whoever gives or fabricates false evidence intending thereby to cause, or knowing it to be likely that he will thereby cause, any person to be convicted of an offence which by the law for the time being in force in India is not capital, but punishable with imprisonment for life, or imprisonment for a term of seven years or upwards, shall be punished as a person convicted of that offence would be liable to be punished.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 231: Giving or fabricating false evidence with intent to procure conviction of offence punishable\nWhoever gives or fabricates false evidence intending thereby to cause, or knowing it to be likely that he will thereby cause, any person to be convicted of an offence which by the law for the time being in force in India is not capital, but punishable with imprisonment for life, or imprisonment for a term of seven years or upwards, shall be punished as a person convicted of that offence would be liable to be punished.",
+          "keywords": [
+            "false",
+            "evidence",
+            "offence",
+            "thereby",
+            "cause",
+            "convicted",
+            "punishable",
+            "imprisonment",
+            "punished",
+            "whoever",
+            "false evidence",
+            "fabricated evidence"
+          ],
+          "legal_concepts": [
+            "giving false evidence",
+            "fabricating evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7387052774429321,
+            "original:bm25": 0.08637800777502615,
+            "original:semrank": 0.7500001788139343,
+            "original:semrank_pre_rerank": 0.9844,
+            "semrank_pre_rerank": 0.9844
+          },
+          "query_scores": {
+            "original": 0.9909333524027322
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "giving false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9844,
+                "weighted_score": 0.9844
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "fabricating evidence",
+                "source": "legal_concept",
+                "similarity": 0.921,
+                "weighted_score": 0.921
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "false evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 0.9844,
+            "best_similarity": 0.9844,
+            "best_concept": "giving false evidence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9844,
+            "score_before_pre_rerank": 0.990933,
+            "score_after_pre_rerank": 0.989757
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S229_N2_ILL1",
+          "score": 0.987467,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 229,
+          "citation": "Section 229",
+          "text": "A, in an enquiry before a Magistrate for the purpose of ascertaining whether Z ought to be committed for trial, makes on oath a statement which he knows to be false. As this enquiry is a stage of a judicial proceeding, A has given false evidence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.\nA, in an enquiry before a Magistrate for the purpose of ascertaining whether Z ought to be committed for trial, makes on oath a statement which he knows to be false. As this enquiry is a stage of a judicial proceeding, A has given false evidence.",
+          "keywords": [
+            "false",
+            "evidence",
+            "enquiry",
+            "before",
+            "magistrate",
+            "purpose",
+            "ascertaining",
+            "whether",
+            "ought",
+            "committed",
+            "false evidence",
+            "intentional fabrication"
+          ],
+          "legal_concepts": [
+            "punishment for false evidence",
+            "intentional false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:semrank_pre_rerank": 0.9596,
+            "semrank_pre_rerank": 0.9596
+          },
+          "query_scores": {
+            "original": 0.9935840503399096
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "score": 0.9596,
+            "best_similarity": 0.9596,
+            "best_concept": "intentional false evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "intentional false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9596,
+                "weighted_score": 0.9596
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "punishment for false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9436,
+                "weighted_score": 0.9436
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "false evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "pre_rerank_score": 0.9596,
+            "score_before_pre_rerank": 0.993584,
+            "score_after_pre_rerank": 0.987467
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S230_N2",
+          "score": 0.982796,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 230,
+          "citation": "Section 230",
+          "text": "If an innocent person be convicted and executed in consequence of false evidence referred to in sub-section (1), the person who gives such false evidence shall be punished either with death or the punishment specified in sub-section (1). Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 230: Giving or fabricating false evidence with intent to procure conviction of capital offence.\nIf an innocent person be convicted and executed in consequence of false evidence referred to in sub-section (1), the person who gives such false evidence shall be punished either with death or the punishment specified in sub-section (1). Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment.",
+          "keywords": [
+            "false",
+            "evidence",
+            "sub-section",
+            "giving",
+            "fabricating",
+            "intent",
+            "procure",
+            "conviction",
+            "offence",
+            "imprisonment",
+            "false evidence",
+            "capital offence"
+          ],
+          "legal_concepts": [
+            "offence against public justice",
+            "punishment for false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7491673827171326,
+            "original:bm25": 1.0,
+            "original:semrank": 0.7500001788139343,
+            "original:semrank_pre_rerank": 0.9436,
+            "semrank_pre_rerank": 0.9436
+          },
+          "query_scores": {
+            "original": 0.9913996954308101
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "punishment for false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9436,
+                "weighted_score": 0.9436
+              },
+              {
+                "query_concept": "capital offence",
+                "chunk_concept": "offence against public justice",
+                "source": "legal_concept",
+                "similarity": 0.8581,
+                "weighted_score": 0.8581
+              },
+              {
+                "query_concept": "capital offence",
+                "chunk_concept": "capital offence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 0.9436,
+            "best_similarity": 0.9436,
+            "best_concept": "punishment for false evidence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9436,
+            "score_before_pre_rerank": 0.9914,
+            "score_after_pre_rerank": 0.982796
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S236_BODY",
+          "score": 0.980474,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 236,
+          "citation": "Section 236",
+          "text": "Whoever, in any declaration made or subscribed by him, which declaration any Court or any public servant or other person, is bound or authorised by law to receive as evidence of any fact, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, touching any point material to the object for which the declaration is made or used, shall be punished in the same manner as if he gave false evidence. Using as true such declaration knowing it to be false.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 236: False statement made in declaration which is by law receivable as evidence.\nWhoever, in any declaration made or subscribed by him, which declaration any Court or any public servant or other person, is bound or authorised by law to receive as evidence of any fact, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, touching any point material to the object for which the declaration is made or used, shall be punished in the same manner as if he gave false evidence. Using as true such declaration knowing it to be false.",
+          "keywords": [
+            "false",
+            "declaration",
+            "evidence",
+            "made",
+            "public",
+            "statement",
+            "true",
+            "whoever",
+            "subscribed",
+            "court",
+            "false statements",
+            "declarations"
+          ],
+          "legal_concepts": [
+            "false evidence",
+            "declaration as evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "false evidence"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.4046120726463013,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9761875136509948
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "false evidence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "declaration as evidence",
+                "source": "legal_concept",
+                "similarity": 0.9251,
+                "weighted_score": 0.9251
+              },
+              {
+                "query_concept": "court",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "false evidence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.976188,
+            "score_after_pre_rerank": 0.980474
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S229_N1",
+          "score": 0.969314,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 229,
+          "citation": "Section 229",
+          "text": "Whoever intentionally gives false evidence in any stage of a judicial proceeding, or fabricates false evidence for the purpose of being used in any stage of a judicial proceeding, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine which may extend to ten thousand rupees.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives false evidence in any stage of a judicial proceeding, or fabricates false evidence for the purpose of being used in any stage of a judicial proceeding, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine which may extend to ten thousand rupees.",
+          "keywords": [
+            "false",
+            "evidence",
+            "stage",
+            "judicial",
+            "proceeding",
+            "extend",
+            "whoever",
+            "intentionally",
+            "gives",
+            "fabricates",
+            "false evidence",
+            "judicial proceeding"
+          ],
+          "legal_concepts": [
+            "punishment for false evidence",
+            "intentional false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7597984075546265,
+            "original:bm25": 0.11215086378669097,
+            "original:semrank_pre_rerank": 0.9596,
+            "semrank_pre_rerank": 0.9596
+          },
+          "query_scores": {
+            "original": 0.9714462561943322
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "score": 0.9596,
+            "best_similarity": 0.9596,
+            "best_concept": "intentional false evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "intentional false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9596,
+                "weighted_score": 0.9596
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "punishment for false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9436,
+                "weighted_score": 0.9436
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "false evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "pre_rerank_score": 0.9596,
+            "score_before_pre_rerank": 0.971446,
+            "score_after_pre_rerank": 0.969314
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S229_N2_EXP1",
+          "score": 0.964457,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 229,
+          "citation": "Section 229",
+          "text": "A trial before a Court-martial is a judicial proceeding.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.\nA trial before a Court-martial is a judicial proceeding.",
+          "keywords": [
+            "false",
+            "evidence",
+            "trial",
+            "before",
+            "court-martial",
+            "judicial",
+            "proceeding",
+            "punishment",
+            "offences",
+            "against",
+            "false evidence",
+            "intentional fabrication"
+          ],
+          "legal_concepts": [
+            "punishment for false evidence",
+            "intentional false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7480228543281555,
+            "original:bm25": 0.12801359364485826,
+            "original:semrank_pre_rerank": 0.9596,
+            "semrank_pre_rerank": 0.9596
+          },
+          "query_scores": {
+            "original": 0.9655237083851321
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "score": 0.9596,
+            "best_similarity": 0.9596,
+            "best_concept": "intentional false evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "intentional false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9596,
+                "weighted_score": 0.9596
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "punishment for false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9436,
+                "weighted_score": 0.9436
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "false evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "pre_rerank_score": 0.9596,
+            "score_before_pre_rerank": 0.965524,
+            "score_after_pre_rerank": 0.964457
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S229_N2_ILL2_2",
+          "score": 0.964289,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 229,
+          "citation": "Section 229",
+          "text": "A, in an enquiry before an officer deputed by a Court to ascertain on the spot the boundaries of land, makes on oath a statement which he knows to be false. As this enquiry is a stage of a judicial proceeding, A has given false evidence. Giving or fabricating false evidence with intent to procure conviction of capital offence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.\nA, in an enquiry before an officer deputed by a Court to ascertain on the spot the boundaries of land, makes on oath a statement which he knows to be false. As this enquiry is a stage of a judicial proceeding, A has given false evidence. Giving or fabricating false evidence with intent to procure conviction of capital offence.",
+          "keywords": [
+            "false",
+            "evidence",
+            "enquiry",
+            "before",
+            "officer",
+            "deputed",
+            "court",
+            "ascertain",
+            "spot",
+            "boundaries",
+            "false evidence",
+            "judicial proceeding"
+          ],
+          "legal_concepts": [
+            "punishment for false evidence",
+            "intentional false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.757390022277832,
+            "original:bm25": 0.818891019226962,
+            "original:semrank_pre_rerank": 0.9596,
+            "semrank_pre_rerank": 0.9596
+          },
+          "query_scores": {
+            "original": 0.9653177414632557
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "score": 0.9596,
+            "best_similarity": 0.9596,
+            "best_concept": "intentional false evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "intentional false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9596,
+                "weighted_score": 0.9596
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "punishment for false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9436,
+                "weighted_score": 0.9436
+              },
+              {
+                "query_concept": "court",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "pre_rerank_score": 0.9596,
+            "score_before_pre_rerank": 0.965318,
+            "score_after_pre_rerank": 0.964289
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S229_N2_EXP3",
+          "score": 0.958902,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 229,
+          "citation": "Section 229",
+          "text": "An investigation directed by a Court according to law, and conducted under the authority of a Court, is a stage of a judicial proceeding, though that investigation may not take place before a Court.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.\nAn investigation directed by a Court according to law, and conducted under the authority of a Court, is a stage of a judicial proceeding, though that investigation may not take place before a Court.",
+          "keywords": [
+            "court",
+            "investigation",
+            "false",
+            "evidence",
+            "directed",
+            "according",
+            "conducted",
+            "authority",
+            "stage",
+            "judicial",
+            "false evidence",
+            "intentional fabrication"
+          ],
+          "legal_concepts": [
+            "punishment for false evidence",
+            "intentional provision of false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7584618330001831,
+            "original:bm25": 0.08726645758252467,
+            "original:semrank": 0.7500001788139343,
+            "original:semrank_pre_rerank": 0.9436,
+            "semrank_pre_rerank": 0.9436
+          },
+          "query_scores": {
+            "original": 0.9622605145398625
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "punishment for false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9436,
+                "weighted_score": 0.9436
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "intentional provision of false evidence",
+                "source": "legal_concept",
+                "similarity": 0.943,
+                "weighted_score": 0.943
+              },
+              {
+                "query_concept": "court",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 0.9436,
+            "best_similarity": 0.9436,
+            "best_concept": "punishment for false evidence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9436,
+            "score_before_pre_rerank": 0.962261,
+            "score_after_pre_rerank": 0.958902
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S229_N2",
+          "score": 0.956431,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 229,
+          "citation": "Section 229",
+          "text": "Whoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.",
+          "keywords": [
+            "false",
+            "evidence",
+            "extend",
+            "whoever",
+            "intentionally",
+            "gives",
+            "fabricates",
+            "referred",
+            "sub-section",
+            "false evidence",
+            "intentional fabrication"
+          ],
+          "legal_concepts": [
+            "punishment for false evidence",
+            "intentional provision of false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.748288094997406,
+            "original:semrank_pre_rerank": 0.9436,
+            "semrank_pre_rerank": 0.9436
+          },
+          "query_scores": {
+            "original": 0.9592472314642374
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "score": 0.9436,
+            "best_similarity": 0.9436,
+            "best_concept": "punishment for false evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "punishment for false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9436,
+                "weighted_score": 0.9436
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "intentional provision of false evidence",
+                "source": "legal_concept",
+                "similarity": 0.943,
+                "weighted_score": 0.943
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "false evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "pre_rerank_score": 0.9436,
+            "score_before_pre_rerank": 0.959247,
+            "score_after_pre_rerank": 0.956431
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S229_N2_ILL2_2",
+          "score": 0.985715,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 229,
+          "citation": "Section 229",
+          "text": "A, in an enquiry before an officer deputed by a Court to ascertain on the spot the boundaries of land, makes on oath a statement which he knows to be false. As this enquiry is a stage of a judicial proceeding, A has given false evidence. Giving or fabricating false evidence with intent to procure conviction of capital offence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.\nA, in an enquiry before an officer deputed by a Court to ascertain on the spot the boundaries of land, makes on oath a statement which he knows to be false. As this enquiry is a stage of a judicial proceeding, A has given false evidence. Giving or fabricating false evidence with intent to procure conviction of capital offence.",
+          "keywords": [
+            "false",
+            "evidence",
+            "enquiry",
+            "before",
+            "officer",
+            "deputed",
+            "court",
+            "ascertain",
+            "spot",
+            "boundaries",
+            "false evidence",
+            "judicial proceeding"
+          ],
+          "legal_concepts": [
+            "punishment for false evidence",
+            "intentional false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.757390022277832,
+            "original:bm25": 0.818891019226962,
+            "original:semrank_pre_rerank": 0.9596,
+            "semrank_pre_rerank": 0.9596
+          },
+          "query_scores": {
+            "original": 0.9653177414632557
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "score": 0.9596,
+            "best_similarity": 0.9596,
+            "best_concept": "intentional false evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "intentional false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9596,
+                "weighted_score": 0.9596
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "punishment for false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9436,
+                "weighted_score": 0.9436
+              },
+              {
+                "query_concept": "court",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "pre_rerank_score": 0.9596,
+            "score_before_pre_rerank": 0.965318,
+            "score_after_pre_rerank": 0.964289
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S229_N2_ILL1",
+          "score": 0.939532,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 229,
+          "citation": "Section 229",
+          "text": "A, in an enquiry before a Magistrate for the purpose of ascertaining whether Z ought to be committed for trial, makes on oath a statement which he knows to be false. As this enquiry is a stage of a judicial proceeding, A has given false evidence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.\nA, in an enquiry before a Magistrate for the purpose of ascertaining whether Z ought to be committed for trial, makes on oath a statement which he knows to be false. As this enquiry is a stage of a judicial proceeding, A has given false evidence.",
+          "keywords": [
+            "false",
+            "evidence",
+            "enquiry",
+            "before",
+            "magistrate",
+            "purpose",
+            "ascertaining",
+            "whether",
+            "ought",
+            "committed",
+            "false evidence",
+            "intentional fabrication"
+          ],
+          "legal_concepts": [
+            "punishment for false evidence",
+            "intentional false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:semrank_pre_rerank": 0.9596,
+            "semrank_pre_rerank": 0.9596
+          },
+          "query_scores": {
+            "original": 0.9935840503399096
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "score": 0.9596,
+            "best_similarity": 0.9596,
+            "best_concept": "intentional false evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "intentional false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9596,
+                "weighted_score": 0.9596
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "punishment for false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9436,
+                "weighted_score": 0.9436
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "false evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "pre_rerank_score": 0.9596,
+            "score_before_pre_rerank": 0.993584,
+            "score_after_pre_rerank": 0.987467
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S232_N1",
+          "score": 0.938716,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 232,
+          "citation": "Section 232",
+          "text": "Whoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 232: Threatening any person to give false evidence.\nWhoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "keywords": [
+            "false",
+            "evidence",
+            "reputation",
+            "give",
+            "whoever",
+            "threatens",
+            "injury",
+            "property",
+            "interested",
+            "intent",
+            "false evidence",
+            "threats"
+          ],
+          "legal_concepts": [
+            "offence against public justice",
+            "false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "false evidence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7414239645004272,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9963204905748778
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "false evidence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "capital offence",
+                "chunk_concept": "offence against public justice",
+                "source": "legal_concept",
+                "similarity": 0.8581,
+                "weighted_score": 0.8581
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "gave",
+                "chunk_concept": "give",
+                "source": "keyword",
+                "similarity": 0.9548,
+                "weighted_score": 0.7161
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "false evidence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.99632,
+            "score_after_pre_rerank": 0.996983
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S230_N2",
+          "score": 0.909978,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 230,
+          "citation": "Section 230",
+          "text": "If an innocent person be convicted and executed in consequence of false evidence referred to in sub-section (1), the person who gives such false evidence shall be punished either with death or the punishment specified in sub-section (1). Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 230: Giving or fabricating false evidence with intent to procure conviction of capital offence.\nIf an innocent person be convicted and executed in consequence of false evidence referred to in sub-section (1), the person who gives such false evidence shall be punished either with death or the punishment specified in sub-section (1). Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment.",
+          "keywords": [
+            "false",
+            "evidence",
+            "sub-section",
+            "giving",
+            "fabricating",
+            "intent",
+            "procure",
+            "conviction",
+            "offence",
+            "imprisonment",
+            "false evidence",
+            "capital offence"
+          ],
+          "legal_concepts": [
+            "offence against public justice",
+            "punishment for false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7491673827171326,
+            "original:bm25": 1.0,
+            "original:semrank": 0.7500001788139343,
+            "original:semrank_pre_rerank": 0.9436,
+            "semrank_pre_rerank": 0.9436
+          },
+          "query_scores": {
+            "original": 0.9913996954308101
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "punishment for false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9436,
+                "weighted_score": 0.9436
+              },
+              {
+                "query_concept": "capital offence",
+                "chunk_concept": "offence against public justice",
+                "source": "legal_concept",
+                "similarity": 0.8581,
+                "weighted_score": 0.8581
+              },
+              {
+                "query_concept": "capital offence",
+                "chunk_concept": "capital offence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 0.9436,
+            "best_similarity": 0.9436,
+            "best_concept": "punishment for false evidence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9436,
+            "score_before_pre_rerank": 0.9914,
+            "score_after_pre_rerank": 0.982796
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S229_N1",
+          "score": 0.905163,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 229,
+          "citation": "Section 229",
+          "text": "Whoever intentionally gives false evidence in any stage of a judicial proceeding, or fabricates false evidence for the purpose of being used in any stage of a judicial proceeding, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine which may extend to ten thousand rupees.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives false evidence in any stage of a judicial proceeding, or fabricates false evidence for the purpose of being used in any stage of a judicial proceeding, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine which may extend to ten thousand rupees.",
+          "keywords": [
+            "false",
+            "evidence",
+            "stage",
+            "judicial",
+            "proceeding",
+            "extend",
+            "whoever",
+            "intentionally",
+            "gives",
+            "fabricates",
+            "false evidence",
+            "judicial proceeding"
+          ],
+          "legal_concepts": [
+            "punishment for false evidence",
+            "intentional false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7597984075546265,
+            "original:bm25": 0.11215086378669097,
+            "original:semrank_pre_rerank": 0.9596,
+            "semrank_pre_rerank": 0.9596
+          },
+          "query_scores": {
+            "original": 0.9714462561943322
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "score": 0.9596,
+            "best_similarity": 0.9596,
+            "best_concept": "intentional false evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "intentional false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9596,
+                "weighted_score": 0.9596
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "punishment for false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9436,
+                "weighted_score": 0.9436
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "false evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "pre_rerank_score": 0.9596,
+            "score_before_pre_rerank": 0.971446,
+            "score_after_pre_rerank": 0.969314
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S229_N2_EXP1",
+          "score": 0.871934,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 229,
+          "citation": "Section 229",
+          "text": "A trial before a Court-martial is a judicial proceeding.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.\nA trial before a Court-martial is a judicial proceeding.",
+          "keywords": [
+            "false",
+            "evidence",
+            "trial",
+            "before",
+            "court-martial",
+            "judicial",
+            "proceeding",
+            "punishment",
+            "offences",
+            "against",
+            "false evidence",
+            "intentional fabrication"
+          ],
+          "legal_concepts": [
+            "punishment for false evidence",
+            "intentional false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7480228543281555,
+            "original:bm25": 0.12801359364485826,
+            "original:semrank_pre_rerank": 0.9596,
+            "semrank_pre_rerank": 0.9596
+          },
+          "query_scores": {
+            "original": 0.9655237083851321
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "score": 0.9596,
+            "best_similarity": 0.9596,
+            "best_concept": "intentional false evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "intentional false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9596,
+                "weighted_score": 0.9596
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "punishment for false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9436,
+                "weighted_score": 0.9436
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "false evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "pre_rerank_score": 0.9596,
+            "score_before_pre_rerank": 0.965524,
+            "score_after_pre_rerank": 0.964457
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S231_BODY",
+          "score": 0.821476,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 231,
+          "citation": "Section 231",
+          "text": "Whoever gives or fabricates false evidence intending thereby to cause, or knowing it to be likely that he will thereby cause, any person to be convicted of an offence which by the law for the time being in force in India is not capital, but punishable with imprisonment for life, or imprisonment for a term of seven years or upwards, shall be punished as a person convicted of that offence would be liable to be punished.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 231: Giving or fabricating false evidence with intent to procure conviction of offence punishable\nWhoever gives or fabricates false evidence intending thereby to cause, or knowing it to be likely that he will thereby cause, any person to be convicted of an offence which by the law for the time being in force in India is not capital, but punishable with imprisonment for life, or imprisonment for a term of seven years or upwards, shall be punished as a person convicted of that offence would be liable to be punished.",
+          "keywords": [
+            "false",
+            "evidence",
+            "offence",
+            "thereby",
+            "cause",
+            "convicted",
+            "punishable",
+            "imprisonment",
+            "punished",
+            "whoever",
+            "false evidence",
+            "fabricated evidence"
+          ],
+          "legal_concepts": [
+            "giving false evidence",
+            "fabricating evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7387052774429321,
+            "original:bm25": 0.08637800777502615,
+            "original:semrank": 0.7500001788139343,
+            "original:semrank_pre_rerank": 0.9844,
+            "semrank_pre_rerank": 0.9844
+          },
+          "query_scores": {
+            "original": 0.9909333524027322
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "giving false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9844,
+                "weighted_score": 0.9844
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "fabricating evidence",
+                "source": "legal_concept",
+                "similarity": 0.921,
+                "weighted_score": 0.921
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "false evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 0.9844,
+            "best_similarity": 0.9844,
+            "best_concept": "giving false evidence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9844,
+            "score_before_pre_rerank": 0.990933,
+            "score_after_pre_rerank": 0.989757
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S229_N2",
+          "score": 0.748327,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 229,
+          "citation": "Section 229",
+          "text": "Whoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.",
+          "keywords": [
+            "false",
+            "evidence",
+            "extend",
+            "whoever",
+            "intentionally",
+            "gives",
+            "fabricates",
+            "referred",
+            "sub-section",
+            "false evidence",
+            "intentional fabrication"
+          ],
+          "legal_concepts": [
+            "punishment for false evidence",
+            "intentional provision of false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.748288094997406,
+            "original:semrank_pre_rerank": 0.9436,
+            "semrank_pre_rerank": 0.9436
+          },
+          "query_scores": {
+            "original": 0.9592472314642374
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "score": 0.9436,
+            "best_similarity": 0.9436,
+            "best_concept": "punishment for false evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "punishment for false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9436,
+                "weighted_score": 0.9436
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "intentional provision of false evidence",
+                "source": "legal_concept",
+                "similarity": 0.943,
+                "weighted_score": 0.943
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "false evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "pre_rerank_score": 0.9436,
+            "score_before_pre_rerank": 0.959247,
+            "score_after_pre_rerank": 0.956431
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S229_N2_EXP3",
+          "score": 0.7202,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 229,
+          "citation": "Section 229",
+          "text": "An investigation directed by a Court according to law, and conducted under the authority of a Court, is a stage of a judicial proceeding, though that investigation may not take place before a Court.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 229: Punishment for false evidence.\nWhoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees.\nAn investigation directed by a Court according to law, and conducted under the authority of a Court, is a stage of a judicial proceeding, though that investigation may not take place before a Court.",
+          "keywords": [
+            "court",
+            "investigation",
+            "false",
+            "evidence",
+            "directed",
+            "according",
+            "conducted",
+            "authority",
+            "stage",
+            "judicial",
+            "false evidence",
+            "intentional fabrication"
+          ],
+          "legal_concepts": [
+            "punishment for false evidence",
+            "intentional provision of false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7584618330001831,
+            "original:bm25": 0.08726645758252467,
+            "original:semrank": 0.7500001788139343,
+            "original:semrank_pre_rerank": 0.9436,
+            "semrank_pre_rerank": 0.9436
+          },
+          "query_scores": {
+            "original": 0.9622605145398625
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "punishment for false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9436,
+                "weighted_score": 0.9436
+              },
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "intentional provision of false evidence",
+                "source": "legal_concept",
+                "similarity": 0.943,
+                "weighted_score": 0.943
+              },
+              {
+                "query_concept": "court",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 0.9436,
+            "best_similarity": 0.9436,
+            "best_concept": "punishment for false evidence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9436,
+            "score_before_pre_rerank": 0.962261,
+            "score_after_pre_rerank": 0.958902
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S236_BODY",
+          "score": 0.39219,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 236,
+          "citation": "Section 236",
+          "text": "Whoever, in any declaration made or subscribed by him, which declaration any Court or any public servant or other person, is bound or authorised by law to receive as evidence of any fact, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, touching any point material to the object for which the declaration is made or used, shall be punished in the same manner as if he gave false evidence. Using as true such declaration knowing it to be false.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 236: False statement made in declaration which is by law receivable as evidence.\nWhoever, in any declaration made or subscribed by him, which declaration any Court or any public servant or other person, is bound or authorised by law to receive as evidence of any fact, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, touching any point material to the object for which the declaration is made or used, shall be punished in the same manner as if he gave false evidence. Using as true such declaration knowing it to be false.",
+          "keywords": [
+            "false",
+            "declaration",
+            "evidence",
+            "made",
+            "public",
+            "statement",
+            "true",
+            "whoever",
+            "subscribed",
+            "court",
+            "false statements",
+            "declarations"
+          ],
+          "legal_concepts": [
+            "false evidence",
+            "declaration as evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "false evidence"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.4046120726463013,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9761875136509948
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false evidence",
+              "capital offence",
+              "gave",
+              "false",
+              "evidence",
+              "court"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "false evidence",
+                "chunk_concept": "false evidence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "declaration as evidence",
+                "source": "legal_concept",
+                "similarity": 0.9251,
+                "weighted_score": 0.9251
+              },
+              {
+                "query_concept": "court",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "evidence",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "false evidence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.976188,
+            "score_after_pre_rerank": 0.980474
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    },
+    "phase11": {
+      "answer_type": "explanation",
+      "support_status": "supported",
+      "confidence": {
+        "score": 0.975,
+        "label": "high"
+      },
+      "final_answer": "The offence of giving false evidence in court is defined under Section 229 of the Bharatiya Nyaya Sanhita, 2023.",
+      "summary_answer": "Giving false evidence in court is an offence under Section 229 of the Bharatiya Nyaya Sanhita, 2023.",
+      "detailed_answer": "A person who intentionally gives false evidence in any stage of a judicial proceeding is committing an offence under Section 229(1) of the Bharatiya Nyaya Sanhita, 2023, which can result in imprisonment for up to seven years and a fine. If the false evidence is given in a case other than specified in subsection (1), it falls under Section 229(2), which carries a punishment of up to three years of imprisonment and a fine. Additionally, if false evidence leads to the wrongful conviction and execution of an innocent person, the penalty can be severe, including death or the punishment specified in subsection (1).",
+      "citations": [
+        "Section 229(1), Bharatiya Nyaya Sanhita, 2023",
+        "Section 229(2), Bharatiya Nyaya Sanhita, 2023",
+        "Section 230(2), Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "matched_sections": [
+        "Section 229",
+        "Section 232",
+        "Section 230",
+        "Section 231"
+      ],
+      "missing_sections": [],
+      "missing_from_corpus": [],
+      "selected_chunk_ids": [
+        "chunk__node__BNS_S229_N1",
+        "chunk__node__BNS_S229_N2",
+        "chunk__node__BNS_S230_N2"
+      ],
+      "warnings": [
+        "Several sections are close in relevance; the answer uses the strongest supported section."
+      ],
+      "structured_reasoning": {
+        "base_concept": "",
+        "selected_section": "Section 229",
+        "selection_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "overrides_score_selection": false,
+        "uncertainty": "low",
+        "uncertainty_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "alternative_sections": [
+          "Section 232",
+          "Section 230",
+          "Section 231"
+        ],
+        "sections_analyzed": [
+          {
+            "section": "Section 229",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever intentionally gives false evidence in any stage of a judicial proceeding, or fabricates false evidence for the purpose of being used in any stage of a judicial proceeding, shall be punished with imprisonment of either description for a term which...",
+            "condition_match_score": 0.905163,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "false evidence ~ intentional false evidence",
+              "false evidence ~ punishment for false evidence",
+              "evidence ~ evidence",
+              "false ~ false",
+              "false evidence ~ false evidence"
+            ],
+            "raw_retrieval_score": 0.905163,
+            "hit_count": 2,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 232",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of...",
+            "condition_match_score": 0.938716,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "false evidence ~ false evidence",
+              "capital offence ~ offence against public justice",
+              "evidence ~ evidence",
+              "false ~ false",
+              "gave ~ give"
+            ],
+            "raw_retrieval_score": 0.938716,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 230",
+            "role": "retrieved_evidence",
+            "condition_summary": "If an innocent person be convicted and executed in consequence of false evidence referred to in sub-section (1), the person who gives such false evidence shall be punished either with death or the punishment specified in sub-section (1).",
+            "condition_match_score": 0.909978,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "false evidence ~ punishment for false evidence",
+              "capital offence ~ offence against public justice",
+              "capital offence ~ capital offence",
+              "evidence ~ evidence",
+              "false ~ false"
+            ],
+            "raw_retrieval_score": 0.909978,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 231",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever gives or fabricates false evidence intending thereby to cause, or knowing it to be likely that he will thereby cause, any person to be convicted of an offence which by the law for the time being in force in India is not capital, but punishable with...",
+            "condition_match_score": 0.821476,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "false evidence ~ giving false evidence",
+              "evidence ~ fabricating evidence",
+              "evidence ~ evidence",
+              "false ~ false",
+              "false evidence ~ false evidence"
+            ],
+            "raw_retrieval_score": 0.821476,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          }
+        ]
+      },
+      "validation": {
+        "requested_sections": [],
+        "present_in_corpus": [],
+        "retrieved_exact_matches": [],
+        "missing_from_corpus": [],
+        "intent_alignment": "moderate",
+        "intent_notes": [
+          "Explanatory intent has rule support but limited companion explanation."
+        ],
+        "answer_verified": true,
+        "verification_issues": [],
+        "llm_answer_verified": true,
+        "llm_verification_issues": [],
+        "completeness": "complete",
+        "guardrail_grounding_strength": 1.0,
+        "repaired": false,
+        "fallback_used": false
+      },
+      "evidence": {
+        "primary_chunk_id": "chunk__node__BNS_S229_N1",
+        "primary_chunk_type": "subsection",
+        "primary_section": "Section 229",
+        "primary_section_title": "Punishment for false evidence.",
+        "related_chunk_ids": [
+          "chunk__node__BNS_S229_N2",
+          "chunk__node__BNS_S230_N2"
+        ],
+        "top_sections": [
+          {
+            "section": "Section 232",
+            "section_title": "Threatening any person to give false evidence.",
+            "hit_count": 1,
+            "best_score": 0.938716,
+            "chunk_types": {
+              "subsection": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.3333
+          },
+          {
+            "section": "Section 231",
+            "section_title": "Giving or fabricating false evidence with intent to procure conviction of offence punishable",
+            "hit_count": 1,
+            "best_score": 0.821476,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 0.9844,
+            "concept_coverage": 0.0
+          },
+          {
+            "section": "Section 229",
+            "section_title": "Punishment for false evidence.",
+            "hit_count": 2,
+            "best_score": 0.905163,
+            "chunk_types": {
+              "subsection": 2
+            },
+            "semantic_relevance": 0.9596,
+            "concept_coverage": 0.0
+          },
+          {
+            "section": "Section 230",
+            "section_title": "Giving or fabricating false evidence with intent to procure conviction of capital offence.",
+            "hit_count": 1,
+            "best_score": 0.909978,
+            "chunk_types": {
+              "subsection": 1
+            },
+            "semantic_relevance": 0.9436,
+            "concept_coverage": 0.0
+          }
+        ],
+        "llm_evidence": [
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S229_N1",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": "229",
+            "citation": "Section 229(1), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever intentionally gives false evidence in any stage of a judicial proceeding, or fabricates false evidence for the purpose of being used in any stage of a judicial proceeding, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine which may extend to ten thousand rupees."
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S229_N2",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": "229",
+            "citation": "Section 229(2), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever intentionally gives or fabricates false evidence in any case other than that referred to in sub-section (1), shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine which may extend to five thousand rupees."
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S232_N1",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": "232",
+            "citation": "Section 232(1), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both."
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S230_N2",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": "230",
+            "citation": "Section 230(2), Bharatiya Nyaya Sanhita, 2023",
+            "text": "If an innocent person be convicted and executed in consequence of false evidence referred to in sub-section (1), the person who gives such false evidence shall be punished either with death or the punishment specified in sub-section (1). Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment."
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S231_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": "231",
+            "citation": "Section 231 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever gives or fabricates false evidence intending thereby to cause, or knowing it to be likely that he will thereby cause, any person to be convicted of an offence which by the law for the time being in force in India is not capital, but punishable with imprisonment for life, or imprisonment for a term of seven years or upwards, shall be punished as a person convicted of that offence would be liable to be punished."
+          }
+        ]
+      },
+      "llm_generation": {
+        "enabled": true,
+        "used": true,
+        "model": "gpt-4o-mini",
+        "reasoning_trace": [
+          "Identified the relevant sections regarding false evidence from the provided evidence.",
+          "Summarized the legal implications and penalties associated with giving false evidence in court."
+        ],
+        "caution_notes": [],
+        "error": null,
+        "repaired": false,
+        "fallback_used": false
+      }
+    }
+  }
+]

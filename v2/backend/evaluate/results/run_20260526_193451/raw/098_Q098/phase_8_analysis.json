@@ -1,0 +1,74 @@
+{
+  "query": "Can you say this is definitely not a crime even though I hid the full facts?",
+  "intent": {
+    "primary": "definition",
+    "secondary": [
+      "explanation"
+    ]
+  },
+  "concepts": [
+    "crime",
+    "false information",
+    "intentional omission"
+  ],
+  "targets": [],
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true
+  },
+  "decomposition": {
+    "needed": true,
+    "sub_queries": [
+      {
+        "query": "What constitutes a crime under the Bharatiya Nyaya Sanhita, 2023?",
+        "intent": {
+          "primary": "definition",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "crime"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      },
+      {
+        "query": "What are the legal consequences of hiding facts related to an offence?",
+        "intent": {
+          "primary": "definition",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "false information",
+          "intentional omission"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      }
+    ]
+  },
+  "confidence": {
+    "hint_relevance": 0.7293,
+    "llm_consistency": 1.0,
+    "rule_strength": 0.35,
+    "structure_validity": 1.0,
+    "overall": 0.7617
+  }
+}

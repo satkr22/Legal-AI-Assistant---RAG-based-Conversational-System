@@ -1,0 +1,49 @@
+{
+  "query_id": "Q047",
+  "query": "Someone borrowed my phone and never returned it. What offence may apply?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "316",
+      "subsection": null,
+      "label": "Section 316",
+      "role": "criminal breach of trust - entrusted property dishonestly converted",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "314",
+      "label": "Section 314",
+      "reason": "dishonest misappropriation may also be relevant if possession was originally innocent"
+    }
+  ],
+  "wrong_references": [
+    {
+      "act": "BNS",
+      "section": "303",
+      "label": "Section 303",
+      "reason": "theft is not applicable as the property was handed over with consent"
+    }
+  ],
+  "answer_key": {
+    "required_points": [
+      "When a person is entrusted with property and dishonestly misappropriates or converts it to their own use, it constitutes criminal breach of trust under Section 316.",
+      "Mere non-return may not automatically prove dishonest intent; the facts must be examined.",
+      "Theft under Section 303 does not apply because the property was handed over with consent."
+    ],
+    "optional_points": [
+      "Criminal misappropriation under Section 314 may also be relevant depending on facts."
+    ],
+    "forbidden_points": [
+      "This is definitely theft under Section 303.",
+      "Punishment is certain without further facts."
+    ]
+  },
+  "notes": "Scenario query. Section 316 is the primary applicable provision."
+}

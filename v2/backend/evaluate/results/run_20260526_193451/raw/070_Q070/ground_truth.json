@@ -1,0 +1,33 @@
+{
+  "query_id": "Q070",
+  "query": "If harm is caused accidentally during a lawful act, is it still an offence?",
+  "query_type": "multi_hop",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "18",
+      "subsection": null,
+      "label": "Section 18",
+      "role": "accident in doing a lawful act with proper care and caution",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 18 provides that nothing is an offence done by accident or misfortune, without criminal intention or knowledge, in doing a lawful act in a lawful manner by lawful means and with proper care and caution.",
+      "All four conditions must be satisfied: lawful act, lawful manner, lawful means, and proper care and caution.",
+      "If any of these conditions are absent - for example, if there was want of proper caution - the accident exception does not apply."
+    ],
+    "optional_points": [],
+    "forbidden_points": [
+      "Any accident is excused under BNS.",
+      "Harm caused accidentally is always an offence."
+    ]
+  },
+  "notes": "Multi-hop query applying Section 18 with all conditions."
+}

@@ -1,0 +1,3614 @@
+[
+  {
+    "query": "A servant stole property from their employer. What section may apply?",
+    "phase8": {
+      "query": "A servant stole property from their employer. What section may apply?",
+      "intent": {
+        "primary": "lookup",
+        "secondary": []
+      },
+      "concepts": [
+        "theft",
+        "servant",
+        "employer",
+        "property"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.2769,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.35,
+        "structure_validity": 1.0,
+        "overall": 0.5808
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "A servant stole property from their employer. What section may apply?",
+          "targets": [],
+          "concepts": [
+            "theft",
+            "servant",
+            "employer",
+            "property"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S306_BODY",
+            "score": 1.0,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 306,
+            "citation": "Section 306",
+            "text": "Whoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Theft after preparation made for causing death, hurt or restraint in order to committing of theft.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 306: Theft by clerk or servant of property in possession of master.\nWhoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Theft after preparation made for causing death, hurt or restraint in order to committing of theft.",
+            "keywords": [
+              "theft",
+              "clerk",
+              "servant",
+              "property",
+              "possession",
+              "master",
+              "whoever",
+              "employed",
+              "capacity",
+              "commits",
+              "theft by employee",
+              "employee theft"
+            ],
+            "legal_concepts": [
+              "theft",
+              "punishment for theft"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 1,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "theft"
+              ]
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "theft",
+                "servant",
+                "employer",
+                "property",
+                "stole",
+                "may",
+                "apply"
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "theft",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "punishment for theft",
+                  "source": "legal_concept",
+                  "similarity": 0.9492,
+                  "weighted_score": 0.9492
+                },
+                {
+                  "query_concept": "property",
+                  "chunk_concept": "property",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "servant",
+                  "chunk_concept": "servant",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft by employee",
+                  "source": "keyword",
+                  "similarity": 0.9293,
+                  "weighted_score": 0.697
+                }
+              ],
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S303_N1_ILL1_D",
+            "score": 0.86787,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 303,
+            "citation": "Section 303",
+            "text": "A being Z’s servant, and entrusted by Z with the care of Z’s plate, dishonestly runs away with the plate, without Z’s consent. A has committed theft.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nA being Z’s servant, and entrusted by Z with the care of Z’s plate, dishonestly runs away with the plate, without Z’s consent. A has committed theft.",
+            "keywords": [
+              "plate",
+              "theft",
+              "servant",
+              "entrusted",
+              "care",
+              "dishonestly",
+              "runs",
+              "away",
+              "consent",
+              "committed",
+              "dishonesty"
+            ],
+            "legal_concepts": [
+              "theft",
+              "dishonesty"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 1,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "theft"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7653964757919312,
+              "bm25": 0.07692307692307693,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.7653964757919312
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "theft",
+                "servant",
+                "employer",
+                "property",
+                "stole",
+                "may",
+                "apply"
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "theft",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "dishonesty",
+                  "source": "legal_concept",
+                  "similarity": 0.8905,
+                  "weighted_score": 0.8905
+                },
+                {
+                  "query_concept": "servant",
+                  "chunk_concept": "servant",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "entrusted",
+                  "source": "keyword",
+                  "similarity": 0.8882,
+                  "weighted_score": 0.6661
+                },
+                {
+                  "query_concept": "may",
+                  "chunk_concept": "consent",
+                  "source": "keyword",
+                  "similarity": 0.8877,
+                  "weighted_score": 0.6658
+                }
+              ],
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 0.853494,
+              "score_after_pre_rerank": 0.879865
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S317_N1",
+            "score": 0.547218,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 317,
+            "citation": "Section 317",
+            "text": "Property, the possession whereof has been transferred by theft or extortion or robbery or cheating, and property which has been criminally misappropriated or in respect of which criminal breach of trust has been committed, is designated as stolen property, whether the transfer has been made, or the misappropriation or breach of trust has been committed, within or without India, but, if such property subsequently comes into the possession of a person legally entitled to the possession thereof, it then ceases to be stolen property.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 317: Stolen property.\nProperty, the possession whereof has been transferred by theft or extortion or robbery or cheating, and property which has been criminally misappropriated or in respect of which criminal breach of trust has been committed, is designated as stolen property, whether the transfer has been made, or the misappropriation or breach of trust has been committed, within or without India, but, if such property subsequently comes into the possession of a person legally entitled to the possession thereof, it then ceases to be stolen property.",
+            "keywords": [
+              "property",
+              "possession",
+              "stolen",
+              "breach",
+              "trust",
+              "committed",
+              "whereof",
+              "transferred",
+              "theft",
+              "extortion"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "stolen property"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7157652974128723,
+              "semrank_pre_rerank": 0.9661
+            },
+            "query_scores": {
+              "original": 0.7157652974128723
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "theft",
+                "servant",
+                "employer",
+                "property",
+                "stole",
+                "may",
+                "apply"
+              ],
+              "score": 0.9661,
+              "best_similarity": 0.9661,
+              "best_concept": "stolen property",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "stolen property",
+                  "source": "legal_concept",
+                  "similarity": 0.9661,
+                  "weighted_score": 0.9661
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.9021,
+                  "weighted_score": 0.9021
+                },
+                {
+                  "query_concept": "property",
+                  "chunk_concept": "property",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "stolen",
+                  "source": "keyword",
+                  "similarity": 0.9739,
+                  "weighted_score": 0.7305
+                }
+              ],
+              "pre_rerank_score": 0.9661,
+              "score_before_pre_rerank": 0.840235,
+              "score_after_pre_rerank": 0.862891
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S303_N1_EXP5",
+            "score": 0.546148,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 303,
+            "citation": "Section 303",
+            "text": "The consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nThe consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied.",
+            "keywords": [
+              "express",
+              "implied",
+              "either",
+              "consent",
+              "mentioned",
+              "given",
+              "possession",
+              "having",
+              "purpose",
+              "authority",
+              "dishonest"
+            ],
+            "legal_concepts": [
+              "theft",
+              "movable property",
+              "possession",
+              "consent"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 1,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "theft"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7253009080886841,
+              "bm25": 0.06666666666666667,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.7253009080886841
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "theft",
+                "servant",
+                "employer",
+                "property",
+                "stole",
+                "may",
+                "apply"
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "theft",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "possession",
+                  "source": "legal_concept",
+                  "similarity": 0.9074,
+                  "weighted_score": 0.9074
+                },
+                {
+                  "query_concept": "property",
+                  "chunk_concept": "movable property",
+                  "source": "legal_concept",
+                  "similarity": 0.9003,
+                  "weighted_score": 0.9003
+                },
+                {
+                  "query_concept": "may",
+                  "chunk_concept": "consent",
+                  "source": "legal_concept",
+                  "similarity": 0.8877,
+                  "weighted_score": 0.8877
+                },
+                {
+                  "query_concept": "apply",
+                  "chunk_concept": "given",
+                  "source": "keyword",
+                  "similarity": 0.9223,
+                  "weighted_score": 0.6917
+                }
+              ],
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 0.898648,
+              "score_after_pre_rerank": 0.916891
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S316_N4",
+            "score": 0.514617,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 316,
+            "citation": "Section 316",
+            "text": "Whoever, being a clerk or servant or employed as a clerk or servant, and being in any manner entrusted in such capacity with property, or with any dominion over property, commits criminal breach of trust in respect of that property, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 316: Criminal breach of trust.\nWhoever, being a clerk or servant or employed as a clerk or servant, and being in any manner entrusted in such capacity with property, or with any dominion over property, commits criminal breach of trust in respect of that property, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+            "keywords": [
+              "property",
+              "clerk",
+              "servant",
+              "criminal",
+              "breach",
+              "trust",
+              "whoever",
+              "employed",
+              "manner",
+              "entrusted",
+              "criminal breach of trust"
+            ],
+            "legal_concepts": [
+              "criminal breach of trust",
+              "employment",
+              "property"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 1,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "property"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "theft",
+                "servant",
+                "employer",
+                "property",
+                "stole",
+                "may",
+                "apply"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "property",
+                  "chunk_concept": "property",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "employer",
+                  "chunk_concept": "employment",
+                  "source": "legal_concept",
+                  "similarity": 0.9571,
+                  "weighted_score": 0.9571
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "criminal breach of trust",
+                  "source": "legal_concept",
+                  "similarity": 0.8893,
+                  "weighted_score": 0.8893
+                },
+                {
+                  "query_concept": "servant",
+                  "chunk_concept": "servant",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "employer",
+                  "chunk_concept": "employed",
+                  "source": "keyword",
+                  "similarity": 0.9226,
+                  "weighted_score": 0.692
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "property",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S317_N3",
+            "score": 0.489339,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 317,
+            "citation": "Section 317",
+            "text": "Whoever dishonestly receives or retains any stolen property, the possession whereof he knows or has reason to believe to have been transferred by the commission of dacoity, or dishonestly receives from a person, whom he knows or has reason to believe to belong or to have belonged to a gang of dacoits, property which he knows or has reason to believe to have been stolen, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 317: Stolen property.\nWhoever dishonestly receives or retains any stolen property, the possession whereof he knows or has reason to believe to have been transferred by the commission of dacoity, or dishonestly receives from a person, whom he knows or has reason to believe to belong or to have belonged to a gang of dacoits, property which he knows or has reason to believe to have been stolen, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+            "keywords": [
+              "property",
+              "stolen",
+              "knows",
+              "reason",
+              "believe",
+              "dishonestly",
+              "receives",
+              "imprisonment",
+              "whoever",
+              "retains",
+              "dishonesty",
+              "stolen property",
+              "dacoity"
+            ],
+            "legal_concepts": [
+              "receiving stolen property",
+              "retaining stolen property",
+              "dacoity"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7176114320755005,
+              "semrank_pre_rerank": 0.9556
+            },
+            "query_scores": {
+              "original": 0.7176114320755005
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "theft",
+                "servant",
+                "employer",
+                "property",
+                "stole",
+                "may",
+                "apply"
+              ],
+              "score": 0.9556,
+              "best_similarity": 0.9556,
+              "best_concept": "receiving stolen property",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "receiving stolen property",
+                  "source": "legal_concept",
+                  "similarity": 0.9556,
+                  "weighted_score": 0.9556
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "retaining stolen property",
+                  "source": "legal_concept",
+                  "similarity": 0.9439,
+                  "weighted_score": 0.9439
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "dacoity",
+                  "source": "legal_concept",
+                  "similarity": 0.8247,
+                  "weighted_score": 0.8247
+                },
+                {
+                  "query_concept": "property",
+                  "chunk_concept": "property",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "stolen",
+                  "source": "keyword",
+                  "similarity": 0.9739,
+                  "weighted_score": 0.7305
+                }
+              ],
+              "pre_rerank_score": 0.9556,
+              "score_before_pre_rerank": 0.841046,
+              "score_after_pre_rerank": 0.861666
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S303_N1_EXP2",
+            "score": 0.463131,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 303,
+            "citation": "Section 303",
+            "text": "A moving effected by the same act which affects the severance may be a theft.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nA moving effected by the same act which affects the severance may be a theft.",
+            "keywords": [
+              "theft",
+              "moving",
+              "effected",
+              "affects",
+              "severance",
+              "offences",
+              "against",
+              "property",
+              "dishonest",
+              "movable"
+            ],
+            "legal_concepts": [
+              "theft",
+              "dishonesty",
+              "possession"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 1,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "theft"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7485703229904175,
+              "bm25": 0.25,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.7485703229904175
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "theft",
+                "servant",
+                "employer",
+                "property",
+                "stole",
+                "may",
+                "apply"
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "theft",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "possession",
+                  "source": "legal_concept",
+                  "similarity": 0.9074,
+                  "weighted_score": 0.9074
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "dishonesty",
+                  "source": "legal_concept",
+                  "similarity": 0.8905,
+                  "weighted_score": 0.8905
+                },
+                {
+                  "query_concept": "property",
+                  "chunk_concept": "property",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "offences",
+                  "source": "keyword",
+                  "similarity": 0.9041,
+                  "weighted_score": 0.6781
+                }
+              ],
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 0.927479,
+              "score_after_pre_rerank": 0.940532
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S317_N5",
+            "score": 0.454746,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 317,
+            "citation": "Section 317",
+            "text": "Whoever voluntarily assists in concealing or disposing of or making away with property which he knows or has reason to believe to be stolen property, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both. Of cheating Cheating. [OF CHEATING]",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 317: Stolen property.\nWhoever voluntarily assists in concealing or disposing of or making away with property which he knows or has reason to believe to be stolen property, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both. Of cheating Cheating. [OF CHEATING]",
+            "keywords": [
+              "property",
+              "cheating",
+              "stolen",
+              "whoever",
+              "voluntarily",
+              "assists",
+              "concealing",
+              "disposing",
+              "making",
+              "away",
+              "stolen property",
+              "assistance"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "punishment for assistance"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7194653153419495,
+              "semrank_pre_rerank": 0.9021
+            },
+            "query_scores": {
+              "original": 0.7194653153419495
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "theft",
+                "servant",
+                "employer",
+                "property",
+                "stole",
+                "may",
+                "apply"
+              ],
+              "score": 0.9021,
+              "best_similarity": 0.9021,
+              "best_concept": "offence against property",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.9021,
+                  "weighted_score": 0.9021
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "punishment for assistance",
+                  "source": "legal_concept",
+                  "similarity": 0.8675,
+                  "weighted_score": 0.8675
+                },
+                {
+                  "query_concept": "property",
+                  "chunk_concept": "property",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "stolen",
+                  "source": "keyword",
+                  "similarity": 0.9739,
+                  "weighted_score": 0.7305
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "stolen property",
+                  "source": "keyword",
+                  "similarity": 0.9661,
+                  "weighted_score": 0.7246
+                }
+              ],
+              "pre_rerank_score": 0.9021,
+              "score_before_pre_rerank": 0.878105,
+              "score_after_pre_rerank": 0.882424
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S303_N1_ILL1_J",
+            "score": 0.445205,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 303,
+            "citation": "Section 303",
+            "text": "If A owes money to Z for repairing the watch, and if Z retains the watch lawfully as a security for the debt, and A takes the watch out of Z’s possession, with the intention of depriving Z of the property as a security for his debt, he commits theft, in as much as he takes it dishonestly.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nIf A owes money to Z for repairing the watch, and if Z retains the watch lawfully as a security for the debt, and A takes the watch out of Z’s possession, with the intention of depriving Z of the property as a security for his debt, he commits theft, in as much as he takes it dishonestly.",
+            "keywords": [
+              "watch",
+              "security",
+              "debt",
+              "takes",
+              "property",
+              "theft",
+              "owes",
+              "money",
+              "repairing",
+              "retains",
+              "dishonest",
+              "intentional"
+            ],
+            "legal_concepts": [
+              "theft",
+              "property",
+              "possession",
+              "consent"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "theft",
+                "property"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "theft",
+                "servant",
+                "employer",
+                "property",
+                "stole",
+                "may",
+                "apply"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "property",
+                  "chunk_concept": "property",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "possession",
+                  "source": "legal_concept",
+                  "similarity": 0.9074,
+                  "weighted_score": 0.9074
+                },
+                {
+                  "query_concept": "may",
+                  "chunk_concept": "consent",
+                  "source": "legal_concept",
+                  "similarity": 0.8877,
+                  "weighted_score": 0.8877
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "security",
+                  "source": "keyword",
+                  "similarity": 0.9075,
+                  "weighted_score": 0.6806
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "property",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S303_N1_ILL1_N",
+            "score": 0.445147,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 303,
+            "citation": "Section 303",
+            "text": "A asks charity from Z’s wife. She gives A money, food and clothes, which A knows to belong to Z her husband. Here it is probable that A may conceive that Z’s wife is authorised to give away alms. If this was A’s impression, A has not committed theft.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nA asks charity from Z’s wife. She gives A money, food and clothes, which A knows to belong to Z her husband. Here it is probable that A may conceive that Z’s wife is authorised to give away alms. If this was A’s impression, A has not committed theft.",
+            "keywords": [
+              "wife",
+              "theft",
+              "asks",
+              "charity",
+              "gives",
+              "money",
+              "food",
+              "clothes",
+              "knows",
+              "belong",
+              "dishonesty",
+              "property",
+              "consent"
+            ],
+            "legal_concepts": [
+              "theft",
+              "dishonest intent",
+              "lack of consent"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 1,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "theft"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7375909090042114,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.7375909090042114
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "theft",
+                "servant",
+                "employer",
+                "property",
+                "stole",
+                "may",
+                "apply"
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "theft",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "dishonest intent",
+                  "source": "legal_concept",
+                  "similarity": 0.8672,
+                  "weighted_score": 0.8672
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "lack of consent",
+                  "source": "legal_concept",
+                  "similarity": 0.851,
+                  "weighted_score": 0.851
+                },
+                {
+                  "query_concept": "property",
+                  "chunk_concept": "property",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "apply",
+                  "chunk_concept": "asks",
+                  "source": "keyword",
+                  "similarity": 0.9111,
+                  "weighted_score": 0.6834
+                }
+              ],
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 0.822488,
+              "score_after_pre_rerank": 0.85444
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S306_BODY",
+          "score": 1.0,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 306,
+          "citation": "Section 306",
+          "text": "Whoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Theft after preparation made for causing death, hurt or restraint in order to committing of theft.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 306: Theft by clerk or servant of property in possession of master.\nWhoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Theft after preparation made for causing death, hurt or restraint in order to committing of theft.",
+          "keywords": [
+            "theft",
+            "clerk",
+            "servant",
+            "property",
+            "possession",
+            "master",
+            "whoever",
+            "employed",
+            "capacity",
+            "commits",
+            "theft by employee",
+            "employee theft"
+          ],
+          "legal_concepts": [
+            "theft",
+            "punishment for theft"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "punishment for theft",
+                "source": "legal_concept",
+                "similarity": 0.9492,
+                "weighted_score": 0.9492
+              },
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft by employee",
+                "source": "keyword",
+                "similarity": 0.9293,
+                "weighted_score": 0.697
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S303_N1_ILL1_D",
+          "score": 0.891654,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "A being Z’s servant, and entrusted by Z with the care of Z’s plate, dishonestly runs away with the plate, without Z’s consent. A has committed theft.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nA being Z’s servant, and entrusted by Z with the care of Z’s plate, dishonestly runs away with the plate, without Z’s consent. A has committed theft.",
+          "keywords": [
+            "plate",
+            "theft",
+            "servant",
+            "entrusted",
+            "care",
+            "dishonestly",
+            "runs",
+            "away",
+            "consent",
+            "committed",
+            "dishonesty"
+          ],
+          "legal_concepts": [
+            "theft",
+            "dishonesty"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7653964757919312,
+            "original:bm25": 0.07692307692307693,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8678701802813802
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "dishonesty",
+                "source": "legal_concept",
+                "similarity": 0.8905,
+                "weighted_score": 0.8905
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "entrusted",
+                "source": "keyword",
+                "similarity": 0.8882,
+                "weighted_score": 0.6661
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 0.8877,
+                "weighted_score": 0.6658
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.86787,
+            "score_after_pre_rerank": 0.891654
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S303_N1_EXP5",
+          "score": 0.627841,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "The consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nThe consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied.",
+          "keywords": [
+            "express",
+            "implied",
+            "either",
+            "consent",
+            "mentioned",
+            "given",
+            "possession",
+            "having",
+            "purpose",
+            "authority",
+            "dishonest"
+          ],
+          "legal_concepts": [
+            "theft",
+            "movable property",
+            "possession",
+            "consent"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7253009080886841,
+            "original:bm25": 0.06666666666666667,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.5461479722609837
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "possession",
+                "source": "legal_concept",
+                "similarity": 0.9074,
+                "weighted_score": 0.9074
+              },
+              {
+                "query_concept": "property",
+                "chunk_concept": "movable property",
+                "source": "legal_concept",
+                "similarity": 0.9003,
+                "weighted_score": 0.9003
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 0.8877,
+                "weighted_score": 0.8877
+              },
+              {
+                "query_concept": "apply",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9223,
+                "weighted_score": 0.6917
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.546148,
+            "score_after_pre_rerank": 0.627841
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S317_N1",
+          "score": 0.622617,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 317,
+          "citation": "Section 317",
+          "text": "Property, the possession whereof has been transferred by theft or extortion or robbery or cheating, and property which has been criminally misappropriated or in respect of which criminal breach of trust has been committed, is designated as stolen property, whether the transfer has been made, or the misappropriation or breach of trust has been committed, within or without India, but, if such property subsequently comes into the possession of a person legally entitled to the possession thereof, it then ceases to be stolen property.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 317: Stolen property.\nProperty, the possession whereof has been transferred by theft or extortion or robbery or cheating, and property which has been criminally misappropriated or in respect of which criminal breach of trust has been committed, is designated as stolen property, whether the transfer has been made, or the misappropriation or breach of trust has been committed, within or without India, but, if such property subsequently comes into the possession of a person legally entitled to the possession thereof, it then ceases to be stolen property.",
+          "keywords": [
+            "property",
+            "possession",
+            "stolen",
+            "breach",
+            "trust",
+            "committed",
+            "whereof",
+            "transferred",
+            "theft",
+            "extortion"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "stolen property"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7157652974128723,
+            "original:semrank_pre_rerank": 0.9661,
+            "semrank_pre_rerank": 0.9661
+          },
+          "query_scores": {
+            "original": 0.5472180763639944
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 0.9661,
+            "best_similarity": 0.9661,
+            "best_concept": "stolen property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "stolen property",
+                "source": "legal_concept",
+                "similarity": 0.9661,
+                "weighted_score": 0.9661
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.9021,
+                "weighted_score": 0.9021
+              },
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "stolen",
+                "source": "keyword",
+                "similarity": 0.9739,
+                "weighted_score": 0.7305
+              }
+            ],
+            "pre_rerank_score": 0.9661,
+            "score_before_pre_rerank": 0.547218,
+            "score_after_pre_rerank": 0.622617
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S316_N4",
+          "score": 0.601986,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 316,
+          "citation": "Section 316",
+          "text": "Whoever, being a clerk or servant or employed as a clerk or servant, and being in any manner entrusted in such capacity with property, or with any dominion over property, commits criminal breach of trust in respect of that property, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 316: Criminal breach of trust.\nWhoever, being a clerk or servant or employed as a clerk or servant, and being in any manner entrusted in such capacity with property, or with any dominion over property, commits criminal breach of trust in respect of that property, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "property",
+            "clerk",
+            "servant",
+            "criminal",
+            "breach",
+            "trust",
+            "whoever",
+            "employed",
+            "manner",
+            "entrusted",
+            "criminal breach of trust"
+          ],
+          "legal_concepts": [
+            "criminal breach of trust",
+            "employment",
+            "property"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "property"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.5146167171671397
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "employer",
+                "chunk_concept": "employment",
+                "source": "legal_concept",
+                "similarity": 0.9571,
+                "weighted_score": 0.9571
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "criminal breach of trust",
+                "source": "legal_concept",
+                "similarity": 0.8893,
+                "weighted_score": 0.8893
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "employer",
+                "chunk_concept": "employed",
+                "source": "keyword",
+                "similarity": 0.9226,
+                "weighted_score": 0.692
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "property",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.514617,
+            "score_after_pre_rerank": 0.601986
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S317_N3",
+          "score": 0.573266,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 317,
+          "citation": "Section 317",
+          "text": "Whoever dishonestly receives or retains any stolen property, the possession whereof he knows or has reason to believe to have been transferred by the commission of dacoity, or dishonestly receives from a person, whom he knows or has reason to believe to belong or to have belonged to a gang of dacoits, property which he knows or has reason to believe to have been stolen, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 317: Stolen property.\nWhoever dishonestly receives or retains any stolen property, the possession whereof he knows or has reason to believe to have been transferred by the commission of dacoity, or dishonestly receives from a person, whom he knows or has reason to believe to belong or to have belonged to a gang of dacoits, property which he knows or has reason to believe to have been stolen, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "keywords": [
+            "property",
+            "stolen",
+            "knows",
+            "reason",
+            "believe",
+            "dishonestly",
+            "receives",
+            "imprisonment",
+            "whoever",
+            "retains",
+            "dishonesty",
+            "stolen property",
+            "dacoity"
+          ],
+          "legal_concepts": [
+            "receiving stolen property",
+            "retaining stolen property",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7176114320755005,
+            "original:semrank_pre_rerank": 0.9556,
+            "semrank_pre_rerank": 0.9556
+          },
+          "query_scores": {
+            "original": 0.4893386699648871
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 0.9556,
+            "best_similarity": 0.9556,
+            "best_concept": "receiving stolen property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "receiving stolen property",
+                "source": "legal_concept",
+                "similarity": 0.9556,
+                "weighted_score": 0.9556
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "retaining stolen property",
+                "source": "legal_concept",
+                "similarity": 0.9439,
+                "weighted_score": 0.9439
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 0.8247,
+                "weighted_score": 0.8247
+              },
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "stolen",
+                "source": "keyword",
+                "similarity": 0.9739,
+                "weighted_score": 0.7305
+              }
+            ],
+            "pre_rerank_score": 0.9556,
+            "score_before_pre_rerank": 0.489339,
+            "score_after_pre_rerank": 0.573266
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S303_N1_EXP2",
+          "score": 0.559767,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "A moving effected by the same act which affects the severance may be a theft.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nA moving effected by the same act which affects the severance may be a theft.",
+          "keywords": [
+            "theft",
+            "moving",
+            "effected",
+            "affects",
+            "severance",
+            "offences",
+            "against",
+            "property",
+            "dishonest",
+            "movable"
+          ],
+          "legal_concepts": [
+            "theft",
+            "dishonesty",
+            "possession"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7485703229904175,
+            "original:bm25": 0.25,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4631306277263904
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "possession",
+                "source": "legal_concept",
+                "similarity": 0.9074,
+                "weighted_score": 0.9074
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "dishonesty",
+                "source": "legal_concept",
+                "similarity": 0.8905,
+                "weighted_score": 0.8905
+              },
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "offences",
+                "source": "keyword",
+                "similarity": 0.9041,
+                "weighted_score": 0.6781
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.463131,
+            "score_after_pre_rerank": 0.559767
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S303_N1_ILL1_J",
+          "score": 0.545068,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "If A owes money to Z for repairing the watch, and if Z retains the watch lawfully as a security for the debt, and A takes the watch out of Z’s possession, with the intention of depriving Z of the property as a security for his debt, he commits theft, in as much as he takes it dishonestly.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nIf A owes money to Z for repairing the watch, and if Z retains the watch lawfully as a security for the debt, and A takes the watch out of Z’s possession, with the intention of depriving Z of the property as a security for his debt, he commits theft, in as much as he takes it dishonestly.",
+          "keywords": [
+            "watch",
+            "security",
+            "debt",
+            "takes",
+            "property",
+            "theft",
+            "owes",
+            "money",
+            "repairing",
+            "retains",
+            "dishonest",
+            "intentional"
+          ],
+          "legal_concepts": [
+            "theft",
+            "property",
+            "possession",
+            "consent"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "theft",
+              "property"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.44520530536997444
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "possession",
+                "source": "legal_concept",
+                "similarity": 0.9074,
+                "weighted_score": 0.9074
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 0.8877,
+                "weighted_score": 0.8877
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "security",
+                "source": "keyword",
+                "similarity": 0.9075,
+                "weighted_score": 0.6806
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "property",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.445205,
+            "score_after_pre_rerank": 0.545068
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S303_N1_ILL1_N",
+          "score": 0.54502,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "A asks charity from Z’s wife. She gives A money, food and clothes, which A knows to belong to Z her husband. Here it is probable that A may conceive that Z’s wife is authorised to give away alms. If this was A’s impression, A has not committed theft.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nA asks charity from Z’s wife. She gives A money, food and clothes, which A knows to belong to Z her husband. Here it is probable that A may conceive that Z’s wife is authorised to give away alms. If this was A’s impression, A has not committed theft.",
+          "keywords": [
+            "wife",
+            "theft",
+            "asks",
+            "charity",
+            "gives",
+            "money",
+            "food",
+            "clothes",
+            "knows",
+            "belong",
+            "dishonesty",
+            "property",
+            "consent"
+          ],
+          "legal_concepts": [
+            "theft",
+            "dishonest intent",
+            "lack of consent"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7375909090042114,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4451469152864688
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "dishonest intent",
+                "source": "legal_concept",
+                "similarity": 0.8672,
+                "weighted_score": 0.8672
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "lack of consent",
+                "source": "legal_concept",
+                "similarity": 0.851,
+                "weighted_score": 0.851
+              },
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "apply",
+                "chunk_concept": "asks",
+                "source": "keyword",
+                "similarity": 0.9111,
+                "weighted_score": 0.6834
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.445147,
+            "score_after_pre_rerank": 0.54502
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S317_N5",
+          "score": 0.53527,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 317,
+          "citation": "Section 317",
+          "text": "Whoever voluntarily assists in concealing or disposing of or making away with property which he knows or has reason to believe to be stolen property, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both. Of cheating Cheating. [OF CHEATING]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 317: Stolen property.\nWhoever voluntarily assists in concealing or disposing of or making away with property which he knows or has reason to believe to be stolen property, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both. Of cheating Cheating. [OF CHEATING]",
+          "keywords": [
+            "property",
+            "cheating",
+            "stolen",
+            "whoever",
+            "voluntarily",
+            "assists",
+            "concealing",
+            "disposing",
+            "making",
+            "away",
+            "stolen property",
+            "assistance"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishment for assistance"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7194653153419495,
+            "original:semrank_pre_rerank": 0.9021,
+            "semrank_pre_rerank": 0.9021
+          },
+          "query_scores": {
+            "original": 0.4547464935005471
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 0.9021,
+            "best_similarity": 0.9021,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.9021,
+                "weighted_score": 0.9021
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "punishment for assistance",
+                "source": "legal_concept",
+                "similarity": 0.8675,
+                "weighted_score": 0.8675
+              },
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "stolen",
+                "source": "keyword",
+                "similarity": 0.9739,
+                "weighted_score": 0.7305
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "stolen property",
+                "source": "keyword",
+                "similarity": 0.9661,
+                "weighted_score": 0.7246
+              }
+            ],
+            "pre_rerank_score": 0.9021,
+            "score_before_pre_rerank": 0.454746,
+            "score_after_pre_rerank": 0.53527
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S306_BODY",
+          "score": 1.0,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 306,
+          "citation": "Section 306",
+          "text": "Whoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Theft after preparation made for causing death, hurt or restraint in order to committing of theft.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 306: Theft by clerk or servant of property in possession of master.\nWhoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Theft after preparation made for causing death, hurt or restraint in order to committing of theft.",
+          "keywords": [
+            "theft",
+            "clerk",
+            "servant",
+            "property",
+            "possession",
+            "master",
+            "whoever",
+            "employed",
+            "capacity",
+            "commits",
+            "theft by employee",
+            "employee theft"
+          ],
+          "legal_concepts": [
+            "theft",
+            "punishment for theft"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "punishment for theft",
+                "source": "legal_concept",
+                "similarity": 0.9492,
+                "weighted_score": 0.9492
+              },
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft by employee",
+                "source": "keyword",
+                "similarity": 0.9293,
+                "weighted_score": 0.697
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S303_N1_ILL1_D",
+          "score": 0.865735,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "A being Z’s servant, and entrusted by Z with the care of Z’s plate, dishonestly runs away with the plate, without Z’s consent. A has committed theft.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nA being Z’s servant, and entrusted by Z with the care of Z’s plate, dishonestly runs away with the plate, without Z’s consent. A has committed theft.",
+          "keywords": [
+            "plate",
+            "theft",
+            "servant",
+            "entrusted",
+            "care",
+            "dishonestly",
+            "runs",
+            "away",
+            "consent",
+            "committed",
+            "dishonesty"
+          ],
+          "legal_concepts": [
+            "theft",
+            "dishonesty"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7653964757919312,
+            "original:bm25": 0.07692307692307693,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8678701802813802
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "dishonesty",
+                "source": "legal_concept",
+                "similarity": 0.8905,
+                "weighted_score": 0.8905
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "entrusted",
+                "source": "keyword",
+                "similarity": 0.8882,
+                "weighted_score": 0.6661
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 0.8877,
+                "weighted_score": 0.6658
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.86787,
+            "score_after_pre_rerank": 0.891654
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S317_N1",
+          "score": 0.418684,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 317,
+          "citation": "Section 317",
+          "text": "Property, the possession whereof has been transferred by theft or extortion or robbery or cheating, and property which has been criminally misappropriated or in respect of which criminal breach of trust has been committed, is designated as stolen property, whether the transfer has been made, or the misappropriation or breach of trust has been committed, within or without India, but, if such property subsequently comes into the possession of a person legally entitled to the possession thereof, it then ceases to be stolen property.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 317: Stolen property.\nProperty, the possession whereof has been transferred by theft or extortion or robbery or cheating, and property which has been criminally misappropriated or in respect of which criminal breach of trust has been committed, is designated as stolen property, whether the transfer has been made, or the misappropriation or breach of trust has been committed, within or without India, but, if such property subsequently comes into the possession of a person legally entitled to the possession thereof, it then ceases to be stolen property.",
+          "keywords": [
+            "property",
+            "possession",
+            "stolen",
+            "breach",
+            "trust",
+            "committed",
+            "whereof",
+            "transferred",
+            "theft",
+            "extortion"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "stolen property"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7157652974128723,
+            "original:semrank_pre_rerank": 0.9661,
+            "semrank_pre_rerank": 0.9661
+          },
+          "query_scores": {
+            "original": 0.5472180763639944
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 0.9661,
+            "best_similarity": 0.9661,
+            "best_concept": "stolen property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "stolen property",
+                "source": "legal_concept",
+                "similarity": 0.9661,
+                "weighted_score": 0.9661
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.9021,
+                "weighted_score": 0.9021
+              },
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "stolen",
+                "source": "keyword",
+                "similarity": 0.9739,
+                "weighted_score": 0.7305
+              }
+            ],
+            "pre_rerank_score": 0.9661,
+            "score_before_pre_rerank": 0.547218,
+            "score_after_pre_rerank": 0.622617
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S303_N1_EXP5",
+          "score": 0.396256,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "The consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nThe consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied.",
+          "keywords": [
+            "express",
+            "implied",
+            "either",
+            "consent",
+            "mentioned",
+            "given",
+            "possession",
+            "having",
+            "purpose",
+            "authority",
+            "dishonest"
+          ],
+          "legal_concepts": [
+            "theft",
+            "movable property",
+            "possession",
+            "consent"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7253009080886841,
+            "original:bm25": 0.06666666666666667,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.5461479722609837
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "possession",
+                "source": "legal_concept",
+                "similarity": 0.9074,
+                "weighted_score": 0.9074
+              },
+              {
+                "query_concept": "property",
+                "chunk_concept": "movable property",
+                "source": "legal_concept",
+                "similarity": 0.9003,
+                "weighted_score": 0.9003
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 0.8877,
+                "weighted_score": 0.8877
+              },
+              {
+                "query_concept": "apply",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9223,
+                "weighted_score": 0.6917
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.546148,
+            "score_after_pre_rerank": 0.627841
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S317_N3",
+          "score": 0.336878,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 317,
+          "citation": "Section 317",
+          "text": "Whoever dishonestly receives or retains any stolen property, the possession whereof he knows or has reason to believe to have been transferred by the commission of dacoity, or dishonestly receives from a person, whom he knows or has reason to believe to belong or to have belonged to a gang of dacoits, property which he knows or has reason to believe to have been stolen, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 317: Stolen property.\nWhoever dishonestly receives or retains any stolen property, the possession whereof he knows or has reason to believe to have been transferred by the commission of dacoity, or dishonestly receives from a person, whom he knows or has reason to believe to belong or to have belonged to a gang of dacoits, property which he knows or has reason to believe to have been stolen, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "keywords": [
+            "property",
+            "stolen",
+            "knows",
+            "reason",
+            "believe",
+            "dishonestly",
+            "receives",
+            "imprisonment",
+            "whoever",
+            "retains",
+            "dishonesty",
+            "stolen property",
+            "dacoity"
+          ],
+          "legal_concepts": [
+            "receiving stolen property",
+            "retaining stolen property",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7176114320755005,
+            "original:semrank_pre_rerank": 0.9556,
+            "semrank_pre_rerank": 0.9556
+          },
+          "query_scores": {
+            "original": 0.4893386699648871
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 0.9556,
+            "best_similarity": 0.9556,
+            "best_concept": "receiving stolen property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "receiving stolen property",
+                "source": "legal_concept",
+                "similarity": 0.9556,
+                "weighted_score": 0.9556
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "retaining stolen property",
+                "source": "legal_concept",
+                "similarity": 0.9439,
+                "weighted_score": 0.9439
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 0.8247,
+                "weighted_score": 0.8247
+              },
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "stolen",
+                "source": "keyword",
+                "similarity": 0.9739,
+                "weighted_score": 0.7305
+              }
+            ],
+            "pre_rerank_score": 0.9556,
+            "score_before_pre_rerank": 0.489339,
+            "score_after_pre_rerank": 0.573266
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S316_N4",
+          "score": 0.315861,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 316,
+          "citation": "Section 316",
+          "text": "Whoever, being a clerk or servant or employed as a clerk or servant, and being in any manner entrusted in such capacity with property, or with any dominion over property, commits criminal breach of trust in respect of that property, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 316: Criminal breach of trust.\nWhoever, being a clerk or servant or employed as a clerk or servant, and being in any manner entrusted in such capacity with property, or with any dominion over property, commits criminal breach of trust in respect of that property, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "property",
+            "clerk",
+            "servant",
+            "criminal",
+            "breach",
+            "trust",
+            "whoever",
+            "employed",
+            "manner",
+            "entrusted",
+            "criminal breach of trust"
+          ],
+          "legal_concepts": [
+            "criminal breach of trust",
+            "employment",
+            "property"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "property"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.5146167171671397
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "employer",
+                "chunk_concept": "employment",
+                "source": "legal_concept",
+                "similarity": 0.9571,
+                "weighted_score": 0.9571
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "criminal breach of trust",
+                "source": "legal_concept",
+                "similarity": 0.8893,
+                "weighted_score": 0.8893
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "employer",
+                "chunk_concept": "employed",
+                "source": "keyword",
+                "similarity": 0.9226,
+                "weighted_score": 0.692
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "property",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.514617,
+            "score_after_pre_rerank": 0.601986
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S303_N1_ILL1_N",
+          "score": 0.280913,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "A asks charity from Z’s wife. She gives A money, food and clothes, which A knows to belong to Z her husband. Here it is probable that A may conceive that Z’s wife is authorised to give away alms. If this was A’s impression, A has not committed theft.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nA asks charity from Z’s wife. She gives A money, food and clothes, which A knows to belong to Z her husband. Here it is probable that A may conceive that Z’s wife is authorised to give away alms. If this was A’s impression, A has not committed theft.",
+          "keywords": [
+            "wife",
+            "theft",
+            "asks",
+            "charity",
+            "gives",
+            "money",
+            "food",
+            "clothes",
+            "knows",
+            "belong",
+            "dishonesty",
+            "property",
+            "consent"
+          ],
+          "legal_concepts": [
+            "theft",
+            "dishonest intent",
+            "lack of consent"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7375909090042114,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4451469152864688
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "dishonest intent",
+                "source": "legal_concept",
+                "similarity": 0.8672,
+                "weighted_score": 0.8672
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "lack of consent",
+                "source": "legal_concept",
+                "similarity": 0.851,
+                "weighted_score": 0.851
+              },
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "apply",
+                "chunk_concept": "asks",
+                "source": "keyword",
+                "similarity": 0.9111,
+                "weighted_score": 0.6834
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.445147,
+            "score_after_pre_rerank": 0.54502
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S317_N5",
+          "score": 0.275289,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 317,
+          "citation": "Section 317",
+          "text": "Whoever voluntarily assists in concealing or disposing of or making away with property which he knows or has reason to believe to be stolen property, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both. Of cheating Cheating. [OF CHEATING]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 317: Stolen property.\nWhoever voluntarily assists in concealing or disposing of or making away with property which he knows or has reason to believe to be stolen property, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both. Of cheating Cheating. [OF CHEATING]",
+          "keywords": [
+            "property",
+            "cheating",
+            "stolen",
+            "whoever",
+            "voluntarily",
+            "assists",
+            "concealing",
+            "disposing",
+            "making",
+            "away",
+            "stolen property",
+            "assistance"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishment for assistance"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7194653153419495,
+            "original:semrank_pre_rerank": 0.9021,
+            "semrank_pre_rerank": 0.9021
+          },
+          "query_scores": {
+            "original": 0.4547464935005471
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 0.9021,
+            "best_similarity": 0.9021,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.9021,
+                "weighted_score": 0.9021
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "punishment for assistance",
+                "source": "legal_concept",
+                "similarity": 0.8675,
+                "weighted_score": 0.8675
+              },
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "stolen",
+                "source": "keyword",
+                "similarity": 0.9739,
+                "weighted_score": 0.7305
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "stolen property",
+                "source": "keyword",
+                "similarity": 0.9661,
+                "weighted_score": 0.7246
+              }
+            ],
+            "pre_rerank_score": 0.9021,
+            "score_before_pre_rerank": 0.454746,
+            "score_after_pre_rerank": 0.53527
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S303_N1_EXP2",
+          "score": 0.269018,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "A moving effected by the same act which affects the severance may be a theft.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nA moving effected by the same act which affects the severance may be a theft.",
+          "keywords": [
+            "theft",
+            "moving",
+            "effected",
+            "affects",
+            "severance",
+            "offences",
+            "against",
+            "property",
+            "dishonest",
+            "movable"
+          ],
+          "legal_concepts": [
+            "theft",
+            "dishonesty",
+            "possession"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7485703229904175,
+            "original:bm25": 0.25,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4631306277263904
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "possession",
+                "source": "legal_concept",
+                "similarity": 0.9074,
+                "weighted_score": 0.9074
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "dishonesty",
+                "source": "legal_concept",
+                "similarity": 0.8905,
+                "weighted_score": 0.8905
+              },
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "offences",
+                "source": "keyword",
+                "similarity": 0.9041,
+                "weighted_score": 0.6781
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.463131,
+            "score_after_pre_rerank": 0.559767
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S303_N1_ILL1_J",
+          "score": 0.218027,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "If A owes money to Z for repairing the watch, and if Z retains the watch lawfully as a security for the debt, and A takes the watch out of Z’s possession, with the intention of depriving Z of the property as a security for his debt, he commits theft, in as much as he takes it dishonestly.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nIf A owes money to Z for repairing the watch, and if Z retains the watch lawfully as a security for the debt, and A takes the watch out of Z’s possession, with the intention of depriving Z of the property as a security for his debt, he commits theft, in as much as he takes it dishonestly.",
+          "keywords": [
+            "watch",
+            "security",
+            "debt",
+            "takes",
+            "property",
+            "theft",
+            "owes",
+            "money",
+            "repairing",
+            "retains",
+            "dishonest",
+            "intentional"
+          ],
+          "legal_concepts": [
+            "theft",
+            "property",
+            "possession",
+            "consent"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "theft",
+              "property"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.44520530536997444
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "servant",
+              "employer",
+              "property",
+              "stole",
+              "may",
+              "apply"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "property",
+                "chunk_concept": "property",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "possession",
+                "source": "legal_concept",
+                "similarity": 0.9074,
+                "weighted_score": 0.9074
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 0.8877,
+                "weighted_score": 0.8877
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "security",
+                "source": "keyword",
+                "similarity": 0.9075,
+                "weighted_score": 0.6806
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "property",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.445205,
+            "score_after_pre_rerank": 0.545068
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    },
+    "phase11": {
+      "answer_type": "lookup",
+      "support_status": "supported",
+      "confidence": {
+        "score": 0.98,
+        "label": "high"
+      },
+      "final_answer": "Section 306, Bharatiya Nyaya Sanhita, 2023 applies.",
+      "summary_answer": "Section 306 of the Bharatiya Nyaya Sanhita, 2023 may apply to a servant who steals property from their employer.",
+      "detailed_answer": "According to Section 306 of the Bharatiya Nyaya Sanhita, 2023, a clerk or servant who commits theft of property in the possession of their master or employer is subject to punishment, which may include imprisonment for up to seven years and a fine. This section specifically addresses the scenario where a servant steals from their employer, making it applicable in such cases.",
+      "citations": [
+        "Section 306 Body, Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "matched_sections": [
+        "Section 306",
+        "Section 303",
+        "Section 317"
+      ],
+      "missing_sections": [],
+      "missing_from_corpus": [],
+      "selected_chunk_ids": [
+        "chunk__node__BNS_S306_BODY"
+      ],
+      "warnings": [],
+      "structured_reasoning": {
+        "base_concept": "",
+        "selected_section": "Section 306",
+        "selection_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "overrides_score_selection": false,
+        "uncertainty": "low",
+        "uncertainty_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "alternative_sections": [
+          "Section 303",
+          "Section 317"
+        ],
+        "sections_analyzed": [
+          {
+            "section": "Section 306",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may...",
+            "condition_match_score": 1.0,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "theft ~ theft",
+              "theft ~ punishment for theft",
+              "property ~ property",
+              "servant ~ servant",
+              "theft ~ theft by employee"
+            ],
+            "raw_retrieval_score": 1.0,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 303",
+            "role": "retrieved_evidence",
+            "condition_summary": "A being Z’s servant, and entrusted by Z with the care of Z’s plate, dishonestly runs away with the plate, without Z’s consent.",
+            "condition_match_score": 0.865735,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "theft ~ theft",
+              "theft ~ dishonesty",
+              "servant ~ servant",
+              "theft ~ entrusted",
+              "may ~ consent"
+            ],
+            "raw_retrieval_score": 0.865735,
+            "hit_count": 2,
+            "is_base": false,
+            "note": ""
+          },
+          {
+            "section": "Section 317",
+            "role": "retrieved_evidence",
+            "condition_summary": "Property, the possession whereof has been transferred by theft or extortion or robbery or cheating, and property which has been criminally misappropriated or in respect of which criminal breach of trust has been committed, is designated as stolen property...",
+            "condition_match_score": 0.418684,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "theft ~ stolen property",
+              "theft ~ offence against property",
+              "property ~ property",
+              "theft ~ theft",
+              "theft ~ stolen"
+            ],
+            "raw_retrieval_score": 0.418684,
+            "hit_count": 2,
+            "is_base": true,
+            "note": ""
+          }
+        ]
+      },
+      "validation": {
+        "requested_sections": [],
+        "present_in_corpus": [],
+        "retrieved_exact_matches": [],
+        "missing_from_corpus": [],
+        "intent_alignment": "strong",
+        "intent_notes": [
+          "Lookup intent is anchored by a direct base legal chunk."
+        ],
+        "answer_verified": true,
+        "verification_issues": [],
+        "llm_answer_verified": true,
+        "llm_verification_issues": [],
+        "completeness": "complete",
+        "guardrail_grounding_strength": 1.0,
+        "repaired": false,
+        "fallback_used": false
+      },
+      "evidence": {
+        "primary_chunk_id": "chunk__node__BNS_S306_BODY",
+        "primary_chunk_type": "content",
+        "primary_section": "Section 306",
+        "primary_section_title": "Theft by clerk or servant of property in possession of master.",
+        "related_chunk_ids": [],
+        "top_sections": [
+          {
+            "section": "Section 306",
+            "section_title": "Theft by clerk or servant of property in possession of master.",
+            "hit_count": 1,
+            "best_score": 1.0,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.25
+          },
+          {
+            "section": "Section 303",
+            "section_title": "Theft.",
+            "hit_count": 2,
+            "best_score": 0.865735,
+            "chunk_types": {
+              "illustration": 1,
+              "explanation": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.25
+          },
+          {
+            "section": "Section 317",
+            "section_title": "Stolen property.",
+            "hit_count": 2,
+            "best_score": 0.418684,
+            "chunk_types": {
+              "subsection": 2
+            },
+            "semantic_relevance": 0.9661,
+            "concept_coverage": 0.0
+          }
+        ],
+        "llm_evidence": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S306_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": "306",
+            "citation": "Section 306 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Theft after preparation made for causing death, hurt or restraint in order to committing of theft."
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S303_N1_ILL1_D",
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": "303",
+            "citation": "Section 303(1) Illustration(d), Bharatiya Nyaya Sanhita, 2023",
+            "text": "A being Z’s servant, and entrusted by Z with the care of Z’s plate, dishonestly runs away with the plate, without Z’s consent. A has committed theft."
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S317_N1",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": "317",
+            "citation": "Section 317(1), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Property, the possession whereof has been transferred by theft or extortion or robbery or cheating, and property which has been criminally misappropriated or in respect of which criminal breach of trust has been committed, is designated as stolen property, whether the transfer has been made, or the misappropriation or breach of trust has been committed, within or without India, but, if such property subsequently comes into the possession of a person legally entitled to the possession thereof, it then ceases to be stolen property."
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S303_N1_EXP5",
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": "303",
+            "citation": "Section 303(1) Explanation 5, Bharatiya Nyaya Sanhita, 2023",
+            "text": "The consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied."
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S317_N3",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": "317",
+            "citation": "Section 317(3), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever dishonestly receives or retains any stolen property, the possession whereof he knows or has reason to believe to have been transferred by the commission of dacoity, or dishonestly receives from a person, whom he knows or has reason to believe to belong or to have belonged to a gang of dacoits, property which he knows or has reason to believe to have been stolen, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine."
+          }
+        ]
+      },
+      "llm_generation": {
+        "enabled": true,
+        "used": true,
+        "model": "gpt-4o-mini",
+        "reasoning_trace": [],
+        "caution_notes": [],
+        "error": null,
+        "repaired": false,
+        "fallback_used": false
+      }
+    }
+  }
+]

@@ -1,0 +1,191 @@
+{
+  "query_id": "Q044",
+  "query": "What is the punishment for false evidence?",
+  "query_type": "punishment",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "229"
+  ],
+  "acceptable_sections": [
+    "230"
+  ],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "229",
+    "229",
+    "229",
+    "229",
+    "229"
+  ],
+  "candidate_sections_at_10": [
+    "229",
+    "229",
+    "229",
+    "229",
+    "229",
+    "229",
+    "267",
+    "257",
+    "232",
+    "231"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "229",
+    "229",
+    "267",
+    "257",
+    "232"
+  ],
+  "cited_sections": [
+    "229"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "229"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "229"
+    ],
+    "support_precision_at_k": 1.0,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": []
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "229"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "229"
+    ],
+    "support_precision_at_k": 0.2,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "267",
+      "257",
+      "232",
+      "231"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "229"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "229"
+    ],
+    "support_precision_at_k": 0.25,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "267",
+      "257",
+      "232"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 1.0,
+    "required_points_matched": 2,
+    "required_points_total": 2,
+    "answer_completeness_score": 1.0,
+    "soft_answer_score": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Section 229(1) provides that whoever intentionally gives false evidence in any stage of a judicial proceeding, or fabricates false evidence for use in a judicial proceeding, shall be punished with imprisonment of either description up to seven years, and fine up to ten thousand rupees.",
+        "matched": true,
+        "overlap": 1.0,
+        "matched_terms": [
+          "229",
+          "description",
+          "either",
+          "evidence",
+          "fabricates",
+          "false",
+          "fine",
+          "gives",
+          "imprisonment",
+          "intentionally",
+          "judicial",
+          "proceeding"
+        ]
+      },
+      {
+        "point": "Section 229(2) provides that giving or fabricating false evidence in a non-judicial proceeding is punishable with imprisonment up to three years and fine up to five thousand rupees.",
+        "matched": true,
+        "overlap": 0.75,
+        "matched_terms": [
+          "229",
+          "evidence",
+          "false",
+          "fine",
+          "five",
+          "imprisonment",
+          "judicial",
+          "proceeding",
+          "rupees",
+          "thousand",
+          "three",
+          "years"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "229"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 2,
+    "supported_claims": 2,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.747,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": true,
+  "failure_reasons": [],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 6.177,
+    "phase_9_10": 173.974,
+    "phase_11": 14.7348,
+    "phase_12_13": 0.0102,
+    "total": 194.8961
+  },
+  "final_answer_preview": "According to Section 229(1) of the Bharatiya Nyaya Sanhita, 2023, whoever intentionally gives false evidence or fabricates false evidence for use in any stage of a judicial proceeding shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to a fine which may extend to ten thousand rupees. For cases not referred to in subsection (1), Section 229(2) states that the punishment can be imprisonment for up to three years and a fine of up to five thousand rupees.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/044_Q044"
+}

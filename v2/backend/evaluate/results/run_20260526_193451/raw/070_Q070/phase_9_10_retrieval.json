@@ -1,0 +1,2813 @@
+[
+  {
+    "query": "If harm is caused accidentally during a lawful act, is it still an offence?",
+    "phase8": {
+      "query": "If harm is caused accidentally during a lawful act, is it still an offence?",
+      "intent": {
+        "primary": "definition",
+        "secondary": [
+          "legal exception"
+        ]
+      },
+      "concepts": [
+        "accidental harm",
+        "lawful act",
+        "criminal liability"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": true
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.4736,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.6,
+        "structure_validity": 1.0,
+        "overall": 0.7094
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "If harm is caused accidentally during a lawful act, is it still an offence?",
+          "targets": [],
+          "concepts": [
+            "accidental harm",
+            "lawful act",
+            "criminal liability"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S18_ILL1",
+            "score": 0.982,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 18,
+            "citation": "Section 18",
+            "text": "A is at work with a hatchet; the head flies off and kills a man who is standing by. Here, if there was no want of proper caution on the part of A, his act is excusable and not an offence. Act likely to cause harm, but done without criminal intent, and to prevent other harm.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 18: Accident in doing a lawful act.\nA is at work with a hatchet; the head flies off and kills a man who is standing by. Here, if there was no want of proper caution on the part of A, his act is excusable and not an offence. Act likely to cause harm, but done without criminal intent, and to prevent other harm.",
+            "keywords": [
+              "harm",
+              "work",
+              "hatchet",
+              "head",
+              "flies",
+              "kills",
+              "standing",
+              "here",
+              "there",
+              "want"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 1.0,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "accidental harm",
+                "lawful act",
+                "criminal liability",
+                "harm",
+                "caused",
+                "accidentally",
+                "during",
+                "lawful"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "harm",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "harm",
+                  "chunk_concept": "harm",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "here",
+                  "source": "keyword",
+                  "similarity": 0.9131,
+                  "weighted_score": 0.6848
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "there",
+                  "source": "keyword",
+                  "similarity": 0.8949,
+                  "weighted_score": 0.6712
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "standing",
+                  "source": "keyword",
+                  "similarity": 0.8924,
+                  "weighted_score": 0.6693
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "work",
+                  "source": "keyword",
+                  "similarity": 0.8826,
+                  "weighted_score": 0.662
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.955
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S18_BODY",
+            "score": 0.980506,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 18,
+            "citation": "Section 18",
+            "text": "Nothing is an offence which is done by accident or misfortune, and without any criminal intention or knowledge in the doing of a lawful act in a lawful manner by lawful means and with proper care and caution.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 18: Accident in doing a lawful act.\nNothing is an offence which is done by accident or misfortune, and without any criminal intention or knowledge in the doing of a lawful act in a lawful manner by lawful means and with proper care and caution.",
+            "keywords": [
+              "lawful",
+              "accident",
+              "doing",
+              "nothing",
+              "offence",
+              "done",
+              "misfortune",
+              "criminal",
+              "intention",
+              "knowledge",
+              "lawful act"
+            ],
+            "legal_concepts": [
+              "exception to criminal liability",
+              "accidental harm"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "accidental harm"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7244645357131958,
+              "bm25": 0.6197179485751099,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "accidental harm",
+                "lawful act",
+                "criminal liability",
+                "harm",
+                "caused",
+                "accidentally",
+                "during",
+                "lawful"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "accidental harm",
+                  "chunk_concept": "accidental harm",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "criminal liability",
+                  "chunk_concept": "exception to criminal liability",
+                  "source": "legal_concept",
+                  "similarity": 0.9352,
+                  "weighted_score": 0.9352
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "lawful",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "lawful act",
+                  "chunk_concept": "lawful act",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "accidental harm",
+                  "chunk_concept": "accident",
+                  "source": "keyword",
+                  "similarity": 0.9253,
+                  "weighted_score": 0.694
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "accidental harm",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__section__BNS_S18",
+            "score": 0.935151,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 18,
+            "citation": "Section 18",
+            "text": "Nothing is an offence which is done by accident or misfortune,\nand without any criminal intention or knowledge in the doing of a lawful act\nin a lawful manner by lawful means and with proper care and caution.\nIllustration.\nA is at work with a hatchet; the head flies off and kills a man who is\nstanding by. Here, if there was no want of proper caution on the part of A,\nhis act is excusable and not an offence.\nAct likely to cause harm, but done without criminal intent, and to\nprevent other harm.",
+            "derived_context": "",
+            "keywords": [
+              "accidental harm",
+              "lawful act"
+            ],
+            "legal_concepts": [
+              "actus reus",
+              "mens rea"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "anchor": 0.8550000000000001
+            },
+            "query_scores": {
+              "anchor": 0.8550000000000001
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S18_ILL1",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S33_BODY",
+            "score": 0.541582,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 33,
+            "citation": "Section 33",
+            "text": "Nothing is an offence by reason that it causes, or that it is intended to cause, or that it is known to be likely to cause, any harm, if that harm is so slight that no person of ordinary sense and temper would complain of such harm. Of right of private defence Things done in private defence. [OF RIGHT OF PRIVATE DEFENCE]",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 33: Act causing slight harm.\nNothing is an offence by reason that it causes, or that it is intended to cause, or that it is known to be likely to cause, any harm, if that harm is so slight that no person of ordinary sense and temper would complain of such harm. Of right of private defence Things done in private defence. [OF RIGHT OF PRIVATE DEFENCE]",
+            "keywords": [
+              "harm",
+              "private",
+              "defence",
+              "cause",
+              "slight",
+              "right",
+              "nothing",
+              "offence",
+              "reason",
+              "causes",
+              "slight_harm",
+              "private_defence"
+            ],
+            "legal_concepts": [
+              "act causing slight harm",
+              "right of private defence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7247349619865417,
+              "bm25": 0.26249996768891365,
+              "semrank_pre_rerank": 0.9106
+            },
+            "query_scores": {
+              "original": 0.7247349619865417
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "accidental harm",
+                "lawful act",
+                "criminal liability",
+                "harm",
+                "caused",
+                "accidentally",
+                "during",
+                "lawful"
+              ],
+              "score": 0.9106,
+              "best_similarity": 0.9106,
+              "best_concept": "act causing slight harm",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "accidental harm",
+                  "chunk_concept": "act causing slight harm",
+                  "source": "legal_concept",
+                  "similarity": 0.9106,
+                  "weighted_score": 0.9106
+                },
+                {
+                  "query_concept": "criminal liability",
+                  "chunk_concept": "right of private defence",
+                  "source": "legal_concept",
+                  "similarity": 0.8297,
+                  "weighted_score": 0.8297
+                },
+                {
+                  "query_concept": "harm",
+                  "chunk_concept": "harm",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "caused",
+                  "chunk_concept": "cause",
+                  "source": "keyword",
+                  "similarity": 0.9825,
+                  "weighted_score": 0.7369
+                },
+                {
+                  "query_concept": "caused",
+                  "chunk_concept": "causes",
+                  "source": "keyword",
+                  "similarity": 0.9782,
+                  "weighted_score": 0.7336
+                }
+              ],
+              "pre_rerank_score": 0.9106,
+              "score_before_pre_rerank": 0.974271,
+              "score_after_pre_rerank": 0.96281
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__section__BNS_S19",
+            "score": 0.482605,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 19,
+            "citation": "Section 19",
+            "text": "Nothing is an offence merely by reason of its being done with the\nknowledge that it is likely to cause harm, if it be done without any criminal\nintention to cause harm, and in good faith for the purpose of preventing or\navoiding other harm to person or property.\nExplanation.—It is a question of fact in such a case whether the harm\nto be prevented or avoided was of such a nature and so imminent as to\njustify or excuse the risk of doing the act with the knowledge that it was\nlikely to cause harm.\nIllustrations.\n(a) A, the captain of a vessel, suddenly and without any fault or\nnegligence on his part, finds himself in such a position that, before he can\nstop his vessel, he must inevitably run down a boat B, with twenty or thirty\npassengers on board, unless he changes the course of his vessel, and that,\nby changing his course, he must incur risk of running down a boat C with\nonly two passengers on board, which he may possibly clear. Here, if A alters\nhis course without any intention to run down the boat C and in good faith\nfor the purpose of avoiding the danger to the passengers in the boat B, he\nis not guilty of an offence, though he may run down the boat C by doing an\nact which he knew was likely to cause that effect, if it be found as a matter\nof fact that the danger which he intended to avoid was such as to excuse\nhim in incurring the risk of running down the boat C.\n(b) A, in a great fire, pulls down houses in order to prevent the\nconflagration from spreading. He does this with the intention in good faith\nof saving human life or property. Here, if it be found that the harm to be\nprevented was of such a nature and so imminent as to excuse A’s act, A is\nnot guilty of the offence.\nAct of a child under seven years of age.",
+            "derived_context": "",
+            "keywords": [
+              "harm prevention",
+              "good faith"
+            ],
+            "legal_concepts": [
+              "act likely to cause harm",
+              "criminal intent",
+              "good faith",
+              "harm prevention"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "anchor": 0.7902374662590028
+            },
+            "query_scores": {
+              "anchor": 0.7902374662590028
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S19_EXP1",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S29_ILL1_BODY",
+            "score": 0.436291,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 29,
+            "citation": "Section 29",
+            "text": "Causing miscarriage (unless caused in good faith for the purpose of saving the life of the woman) is an offence independently of any harm which it may cause or be intended to cause to the woman. Therefore, it is not an offence “by reason of such harm”; and the consent of the woman or of her guardian to the causing of such miscarriage does not justify the act. Act done in good faith for benefit of a person without consent.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 29: Exclusion of acts which are offences independently of harm caused.\nCausing miscarriage (unless caused in good faith for the purpose of saving the life of the woman) is an offence independently of any harm which it may cause or be intended to cause to the woman. Therefore, it is not an offence “by reason of such harm”; and the consent of the woman or of her guardian to the causing of such miscarriage does not justify the act. Act done in good faith for benefit of a person without consent.",
+            "keywords": [
+              "woman",
+              "harm",
+              "causing",
+              "miscarriage",
+              "caused",
+              "good",
+              "faith",
+              "offence",
+              "independently",
+              "cause"
+            ],
+            "legal_concepts": [
+              "exclusion of acts which are offences independently of harm caused"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7395115494728088,
+              "bm25": 0.539910971271561,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.7395115494728088
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "accidental harm",
+                "lawful act",
+                "criminal liability",
+                "harm",
+                "caused",
+                "accidentally",
+                "during",
+                "lawful"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "caused",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "caused",
+                  "chunk_concept": "caused",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "harm",
+                  "chunk_concept": "harm",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "caused",
+                  "chunk_concept": "cause",
+                  "source": "keyword",
+                  "similarity": 0.9825,
+                  "weighted_score": 0.7369
+                },
+                {
+                  "query_concept": "caused",
+                  "chunk_concept": "causing",
+                  "source": "keyword",
+                  "similarity": 0.9718,
+                  "weighted_score": 0.7289
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "good",
+                  "source": "keyword",
+                  "similarity": 0.9191,
+                  "weighted_score": 0.6893
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.969444,
+              "score_after_pre_rerank": 0.929944
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S19_BODY",
+            "score": 0.410763,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 19,
+            "citation": "Section 19",
+            "text": "Nothing is an offence merely by reason of its being done with the knowledge that it is likely to cause harm, if it be done without any criminal intention to cause harm, and in good faith for the purpose of preventing or avoiding other harm to person or property.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 19: Act likely to cause harm, but done without criminal intent, and to prevent other harm.\nNothing is an offence merely by reason of its being done with the knowledge that it is likely to cause harm, if it be done without any criminal intention to cause harm, and in good faith for the purpose of preventing or avoiding other harm to person or property.",
+            "keywords": [
+              "harm",
+              "done",
+              "cause",
+              "likely",
+              "criminal",
+              "nothing",
+              "offence",
+              "merely",
+              "reason",
+              "knowledge",
+              "harm prevention",
+              "good faith"
+            ],
+            "legal_concepts": [
+              "actus reus",
+              "mens rea"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7207395434379578,
+              "bm25": 0.7120671516322503,
+              "semrank_pre_rerank": 0.8779
+            },
+            "query_scores": {
+              "original": 0.7207395434379578
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "accidental harm",
+                "lawful act",
+                "criminal liability",
+                "harm",
+                "caused",
+                "accidentally",
+                "during",
+                "lawful"
+              ],
+              "score": 0.8779,
+              "best_similarity": 0.8779,
+              "best_concept": "actus reus",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "lawful act",
+                  "chunk_concept": "actus reus",
+                  "source": "legal_concept",
+                  "similarity": 0.8779,
+                  "weighted_score": 0.8779
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "mens rea",
+                  "source": "legal_concept",
+                  "similarity": 0.8641,
+                  "weighted_score": 0.8641
+                },
+                {
+                  "query_concept": "harm",
+                  "chunk_concept": "harm",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "caused",
+                  "chunk_concept": "cause",
+                  "source": "keyword",
+                  "similarity": 0.9825,
+                  "weighted_score": 0.7369
+                },
+                {
+                  "query_concept": "harm",
+                  "chunk_concept": "harm prevention",
+                  "source": "keyword",
+                  "similarity": 0.9117,
+                  "weighted_score": 0.6838
+                }
+              ],
+              "pre_rerank_score": 0.8779,
+              "score_before_pre_rerank": 0.964,
+              "score_after_pre_rerank": 0.948502
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S29_BODY",
+            "score": 0.400303,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 29,
+            "citation": "Section 29",
+            "text": "The exceptions in sections 25, 26 and 27 do not extend to acts which are offences independently of any harm which they may cause, or be intended to cause, or be known to be likely to cause, to the person giving the consent, or on whose behalf the consent is given.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 29: Exclusion of acts which are offences independently of harm caused.\nThe exceptions in sections 25, 26 and 27 do not extend to acts which are offences independently of any harm which they may cause, or be intended to cause, or be known to be likely to cause, to the person giving the consent, or on whose behalf the consent is given.",
+            "keywords": [
+              "cause",
+              "exceptions",
+              "acts",
+              "offences",
+              "independently",
+              "harm",
+              "consent",
+              "sections",
+              "extend",
+              "they"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7470803260803223,
+              "bm25": 0.19574169894269086,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.7470803260803223
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "accidental harm",
+                "lawful act",
+                "criminal liability",
+                "harm",
+                "caused",
+                "accidentally",
+                "during",
+                "lawful"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "harm",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "harm",
+                  "chunk_concept": "harm",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "caused",
+                  "chunk_concept": "cause",
+                  "source": "keyword",
+                  "similarity": 0.9825,
+                  "weighted_score": 0.7369
+                },
+                {
+                  "query_concept": "criminal liability",
+                  "chunk_concept": "offences",
+                  "source": "keyword",
+                  "similarity": 0.9131,
+                  "weighted_score": 0.6848
+                },
+                {
+                  "query_concept": "lawful act",
+                  "chunk_concept": "acts",
+                  "source": "keyword",
+                  "similarity": 0.9075,
+                  "weighted_score": 0.6806
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "consent",
+                  "source": "keyword",
+                  "similarity": 0.9028,
+                  "weighted_score": 0.6771
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.979366,
+              "score_after_pre_rerank": 0.93808
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S199_C",
+            "score": 0.400035,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+            "section_number": 199,
+            "citation": "Section 199",
+            "text": "fails to record any information given to him under sub-section (1) of section 173 of the Bharatiya Nagarik Suraksha Sanhita, 2023 in relation to cognizable offence punishable under section 64, section 65, section 66, section 67, section 68, section 70, section 71, section 74, section 76, section 77, section 79, section 124, section 143 or section 144, shall be punished with rigorous imprisonment for a term which shall not be less than six months but which may extend to two years, and shall also be liable to fine. Punishment for non-treatment of victim.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 12: OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS\nSection 199: Public servant disobeying direction under law.\nfails to record any information given to him under sub-section (1) of section 173 of the Bharatiya Nagarik Suraksha Sanhita, 2023 in relation to cognizable offence punishable under section 64, section 65, section 66, section 67, section 68, section 70, section 71, section 74, section 76, section 77, section 79, section 124, section 143 or section 144, shall be punished with rigorous imprisonment for a term which shall not be less than six months but which may extend to two years, and shall also be liable to fine. Punishment for non-treatment of victim.",
+            "keywords": [
+              "public",
+              "fails",
+              "record",
+              "information",
+              "given",
+              "sub-section",
+              "bharatiya",
+              "nagarik",
+              "suraksha",
+              "relation",
+              "public servant",
+              "record keeping",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "disobedience of law",
+              "public service",
+              "criminal liability"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "criminal liability"
+              ]
+            },
+            "source_scores": {
+              "semrank": 0.9999998807907104,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999998807907104
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "accidental harm",
+                "lawful act",
+                "criminal liability",
+                "harm",
+                "caused",
+                "accidentally",
+                "during",
+                "lawful"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "criminal liability",
+                  "chunk_concept": "criminal liability",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "public service",
+                  "source": "legal_concept",
+                  "similarity": 0.8507,
+                  "weighted_score": 0.8507
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "disobedience of law",
+                  "source": "legal_concept",
+                  "similarity": 0.8385,
+                  "weighted_score": 0.8385
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "given",
+                  "source": "keyword",
+                  "similarity": 0.9109,
+                  "weighted_score": 0.6831
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "information",
+                  "source": "keyword",
+                  "similarity": 0.9053,
+                  "weighted_score": 0.679
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "criminal liability",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S45_BODY",
+            "score": 0.400031,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 45,
+            "citation": "Section 45",
+            "text": "A person abets the doing of a thing, who—",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nA person abets the doing of a thing, who—",
+            "keywords": [
+              "abetment",
+              "abets",
+              "doing",
+              "criminal",
+              "conspiracy",
+              "attempt",
+              "body",
+              "encouragement"
+            ],
+            "legal_concepts": [
+              "abetment",
+              "criminal liability"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "criminal liability"
+              ]
+            },
+            "source_scores": {
+              "semrank": 0.9999998807907104,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999998807907104
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "accidental harm",
+                "lawful act",
+                "criminal liability",
+                "harm",
+                "caused",
+                "accidentally",
+                "during",
+                "lawful"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "criminal liability",
+                  "chunk_concept": "criminal liability",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "abetment",
+                  "source": "legal_concept",
+                  "similarity": 0.8602,
+                  "weighted_score": 0.8602
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "doing",
+                  "source": "keyword",
+                  "similarity": 0.9082,
+                  "weighted_score": 0.6811
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "body",
+                  "source": "keyword",
+                  "similarity": 0.8735,
+                  "weighted_score": 0.6551
+                },
+                {
+                  "query_concept": "lawful",
+                  "chunk_concept": "attempt",
+                  "source": "keyword",
+                  "similarity": 0.8715,
+                  "weighted_score": 0.6536
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "criminal liability",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S18_BODY",
+          "score": 0.984015,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 18,
+          "citation": "Section 18",
+          "text": "Nothing is an offence which is done by accident or misfortune, and without any criminal intention or knowledge in the doing of a lawful act in a lawful manner by lawful means and with proper care and caution.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 18: Accident in doing a lawful act.\nNothing is an offence which is done by accident or misfortune, and without any criminal intention or knowledge in the doing of a lawful act in a lawful manner by lawful means and with proper care and caution.",
+          "keywords": [
+            "lawful",
+            "accident",
+            "doing",
+            "nothing",
+            "offence",
+            "done",
+            "misfortune",
+            "criminal",
+            "intention",
+            "knowledge",
+            "lawful act"
+          ],
+          "legal_concepts": [
+            "exception to criminal liability",
+            "accidental harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "accidental harm"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7244645357131958,
+            "original:bm25": 0.6197179485751099,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9805059605518142
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "accidental harm",
+              "lawful act",
+              "criminal liability",
+              "harm",
+              "caused",
+              "accidentally",
+              "during",
+              "lawful"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "accidental harm",
+                "chunk_concept": "accidental harm",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "criminal liability",
+                "chunk_concept": "exception to criminal liability",
+                "source": "legal_concept",
+                "similarity": 0.9352,
+                "weighted_score": 0.9352
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "lawful",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "lawful act",
+                "chunk_concept": "lawful act",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "accidental harm",
+                "chunk_concept": "accident",
+                "source": "keyword",
+                "similarity": 0.9253,
+                "weighted_score": 0.694
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "accidental harm",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.980506,
+            "score_after_pre_rerank": 0.984015
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__section__BNS_S18",
+          "score": 0.935151,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 18,
+          "citation": "Section 18",
+          "text": "Nothing is an offence which is done by accident or misfortune,\nand without any criminal intention or knowledge in the doing of a lawful act\nin a lawful manner by lawful means and with proper care and caution.\nIllustration.\nA is at work with a hatchet; the head flies off and kills a man who is\nstanding by. Here, if there was no want of proper caution on the part of A,\nhis act is excusable and not an offence.\nAct likely to cause harm, but done without criminal intent, and to\nprevent other harm.",
+          "derived_context": "",
+          "keywords": [
+            "accidental harm",
+            "lawful act"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.8550000000000001
+          },
+          "query_scores": {
+            "original": 0.9351513882538047
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S18_ILL1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S33_BODY",
+          "score": 0.608005,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 33,
+          "citation": "Section 33",
+          "text": "Nothing is an offence by reason that it causes, or that it is intended to cause, or that it is known to be likely to cause, any harm, if that harm is so slight that no person of ordinary sense and temper would complain of such harm. Of right of private defence Things done in private defence. [OF RIGHT OF PRIVATE DEFENCE]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 33: Act causing slight harm.\nNothing is an offence by reason that it causes, or that it is intended to cause, or that it is known to be likely to cause, any harm, if that harm is so slight that no person of ordinary sense and temper would complain of such harm. Of right of private defence Things done in private defence. [OF RIGHT OF PRIVATE DEFENCE]",
+          "keywords": [
+            "harm",
+            "private",
+            "defence",
+            "cause",
+            "slight",
+            "right",
+            "nothing",
+            "offence",
+            "reason",
+            "causes",
+            "slight_harm",
+            "private_defence"
+          ],
+          "legal_concepts": [
+            "act causing slight harm",
+            "right of private defence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7247349619865417,
+            "original:bm25": 0.26249996768891365,
+            "original:semrank_pre_rerank": 0.9106,
+            "semrank_pre_rerank": 0.9106
+          },
+          "query_scores": {
+            "original": 0.5415817137692824
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "accidental harm",
+              "lawful act",
+              "criminal liability",
+              "harm",
+              "caused",
+              "accidentally",
+              "during",
+              "lawful"
+            ],
+            "score": 0.9106,
+            "best_similarity": 0.9106,
+            "best_concept": "act causing slight harm",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "accidental harm",
+                "chunk_concept": "act causing slight harm",
+                "source": "legal_concept",
+                "similarity": 0.9106,
+                "weighted_score": 0.9106
+              },
+              {
+                "query_concept": "criminal liability",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 0.8297,
+                "weighted_score": 0.8297
+              },
+              {
+                "query_concept": "harm",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "caused",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.9825,
+                "weighted_score": 0.7369
+              },
+              {
+                "query_concept": "caused",
+                "chunk_concept": "causes",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7336
+              }
+            ],
+            "pre_rerank_score": 0.9106,
+            "score_before_pre_rerank": 0.541582,
+            "score_after_pre_rerank": 0.608005
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S199_C",
+          "score": 0.508029,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+          "section_number": 199,
+          "citation": "Section 199",
+          "text": "fails to record any information given to him under sub-section (1) of section 173 of the Bharatiya Nagarik Suraksha Sanhita, 2023 in relation to cognizable offence punishable under section 64, section 65, section 66, section 67, section 68, section 70, section 71, section 74, section 76, section 77, section 79, section 124, section 143 or section 144, shall be punished with rigorous imprisonment for a term which shall not be less than six months but which may extend to two years, and shall also be liable to fine. Punishment for non-treatment of victim.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 12: OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS\nSection 199: Public servant disobeying direction under law.\nfails to record any information given to him under sub-section (1) of section 173 of the Bharatiya Nagarik Suraksha Sanhita, 2023 in relation to cognizable offence punishable under section 64, section 65, section 66, section 67, section 68, section 70, section 71, section 74, section 76, section 77, section 79, section 124, section 143 or section 144, shall be punished with rigorous imprisonment for a term which shall not be less than six months but which may extend to two years, and shall also be liable to fine. Punishment for non-treatment of victim.",
+          "keywords": [
+            "public",
+            "fails",
+            "record",
+            "information",
+            "given",
+            "sub-section",
+            "bharatiya",
+            "nagarik",
+            "suraksha",
+            "relation",
+            "public servant",
+            "record keeping",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "disobedience of law",
+            "public service",
+            "criminal liability"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "criminal liability"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 0.9999998807907104,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000351148714308
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "accidental harm",
+              "lawful act",
+              "criminal liability",
+              "harm",
+              "caused",
+              "accidentally",
+              "during",
+              "lawful"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal liability",
+                "chunk_concept": "criminal liability",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "public service",
+                "source": "legal_concept",
+                "similarity": 0.8507,
+                "weighted_score": 0.8507
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "disobedience of law",
+                "source": "legal_concept",
+                "similarity": 0.8385,
+                "weighted_score": 0.8385
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9109,
+                "weighted_score": 0.6831
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "information",
+                "source": "keyword",
+                "similarity": 0.9053,
+                "weighted_score": 0.679
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal liability",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400035,
+            "score_after_pre_rerank": 0.508029
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S45_BODY",
+          "score": 0.508026,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "A person abets the doing of a thing, who—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nA person abets the doing of a thing, who—",
+          "keywords": [
+            "abetment",
+            "abets",
+            "doing",
+            "criminal",
+            "conspiracy",
+            "attempt",
+            "body",
+            "encouragement"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "criminal liability"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "criminal liability"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 0.9999998807907104,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40003148657039705
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "accidental harm",
+              "lawful act",
+              "criminal liability",
+              "harm",
+              "caused",
+              "accidentally",
+              "during",
+              "lawful"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal liability",
+                "chunk_concept": "criminal liability",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "abetment",
+                "source": "legal_concept",
+                "similarity": 0.8602,
+                "weighted_score": 0.8602
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "doing",
+                "source": "keyword",
+                "similarity": 0.9082,
+                "weighted_score": 0.6811
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 0.8735,
+                "weighted_score": 0.6551
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "attempt",
+                "source": "keyword",
+                "similarity": 0.8715,
+                "weighted_score": 0.6536
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal liability",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400031,
+            "score_after_pre_rerank": 0.508026
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S19_BODY",
+          "score": 0.494848,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 19,
+          "citation": "Section 19",
+          "text": "Nothing is an offence merely by reason of its being done with the knowledge that it is likely to cause harm, if it be done without any criminal intention to cause harm, and in good faith for the purpose of preventing or avoiding other harm to person or property.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 19: Act likely to cause harm, but done without criminal intent, and to prevent other harm.\nNothing is an offence merely by reason of its being done with the knowledge that it is likely to cause harm, if it be done without any criminal intention to cause harm, and in good faith for the purpose of preventing or avoiding other harm to person or property.",
+          "keywords": [
+            "harm",
+            "done",
+            "cause",
+            "likely",
+            "criminal",
+            "nothing",
+            "offence",
+            "merely",
+            "reason",
+            "knowledge",
+            "harm prevention",
+            "good faith"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7207395434379578,
+            "original:bm25": 0.7120671516322503,
+            "original:semrank_pre_rerank": 0.8779,
+            "semrank_pre_rerank": 0.8779
+          },
+          "query_scores": {
+            "original": 0.4107629830840792
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "accidental harm",
+              "lawful act",
+              "criminal liability",
+              "harm",
+              "caused",
+              "accidentally",
+              "during",
+              "lawful"
+            ],
+            "score": 0.8779,
+            "best_similarity": 0.8779,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "lawful act",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 0.8779,
+                "weighted_score": 0.8779
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 0.8641,
+                "weighted_score": 0.8641
+              },
+              {
+                "query_concept": "harm",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "caused",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.9825,
+                "weighted_score": 0.7369
+              },
+              {
+                "query_concept": "harm",
+                "chunk_concept": "harm prevention",
+                "source": "keyword",
+                "similarity": 0.9117,
+                "weighted_score": 0.6838
+              }
+            ],
+            "pre_rerank_score": 0.8779,
+            "score_before_pre_rerank": 0.410763,
+            "score_after_pre_rerank": 0.494848
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S29_ILL1_BODY",
+          "score": 0.492758,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 29,
+          "citation": "Section 29",
+          "text": "Causing miscarriage (unless caused in good faith for the purpose of saving the life of the woman) is an offence independently of any harm which it may cause or be intended to cause to the woman. Therefore, it is not an offence “by reason of such harm”; and the consent of the woman or of her guardian to the causing of such miscarriage does not justify the act. Act done in good faith for benefit of a person without consent.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 29: Exclusion of acts which are offences independently of harm caused.\nCausing miscarriage (unless caused in good faith for the purpose of saving the life of the woman) is an offence independently of any harm which it may cause or be intended to cause to the woman. Therefore, it is not an offence “by reason of such harm”; and the consent of the woman or of her guardian to the causing of such miscarriage does not justify the act. Act done in good faith for benefit of a person without consent.",
+          "keywords": [
+            "woman",
+            "harm",
+            "causing",
+            "miscarriage",
+            "caused",
+            "good",
+            "faith",
+            "offence",
+            "independently",
+            "cause"
+          ],
+          "legal_concepts": [
+            "exclusion of acts which are offences independently of harm caused"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7395115494728088,
+            "original:bm25": 0.539910971271561,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.4362907360886655
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "accidental harm",
+              "lawful act",
+              "criminal liability",
+              "harm",
+              "caused",
+              "accidentally",
+              "during",
+              "lawful"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "caused",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "caused",
+                "chunk_concept": "caused",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "harm",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "caused",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.9825,
+                "weighted_score": 0.7369
+              },
+              {
+                "query_concept": "caused",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 0.9718,
+                "weighted_score": 0.7289
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "good",
+                "source": "keyword",
+                "similarity": 0.9191,
+                "weighted_score": 0.6893
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.436291,
+            "score_after_pre_rerank": 0.492758
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__section__BNS_S19",
+          "score": 0.482605,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 19,
+          "citation": "Section 19",
+          "text": "Nothing is an offence merely by reason of its being done with the\nknowledge that it is likely to cause harm, if it be done without any criminal\nintention to cause harm, and in good faith for the purpose of preventing or\navoiding other harm to person or property.\nExplanation.—It is a question of fact in such a case whether the harm\nto be prevented or avoided was of such a nature and so imminent as to\njustify or excuse the risk of doing the act with the knowledge that it was\nlikely to cause harm.\nIllustrations.\n(a) A, the captain of a vessel, suddenly and without any fault or\nnegligence on his part, finds himself in such a position that, before he can\nstop his vessel, he must inevitably run down a boat B, with twenty or thirty\npassengers on board, unless he changes the course of his vessel, and that,\nby changing his course, he must incur risk of running down a boat C with\nonly two passengers on board, which he may possibly clear. Here, if A alters\nhis course without any intention to run down the boat C and in good faith\nfor the purpose of avoiding the danger to the passengers in the boat B, he\nis not guilty of an offence, though he may run down the boat C by doing an\nact which he knew was likely to cause that effect, if it be found as a matter\nof fact that the danger which he intended to avoid was such as to excuse\nhim in incurring the risk of running down the boat C.\n(b) A, in a great fire, pulls down houses in order to prevent the\nconflagration from spreading. He does this with the intention in good faith\nof saving human life or property. Here, if it be found that the harm to be\nprevented was of such a nature and so imminent as to excuse A’s act, A is\nnot guilty of the offence.\nAct of a child under seven years of age.",
+          "derived_context": "",
+          "keywords": [
+            "harm prevention",
+            "good faith"
+          ],
+          "legal_concepts": [
+            "act likely to cause harm",
+            "criminal intent",
+            "good faith",
+            "harm prevention"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.7902374662590028
+          },
+          "query_scores": {
+            "original": 0.4826047638370806
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S19_EXP1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S29_BODY",
+          "score": 0.463249,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 29,
+          "citation": "Section 29",
+          "text": "The exceptions in sections 25, 26 and 27 do not extend to acts which are offences independently of any harm which they may cause, or be intended to cause, or be known to be likely to cause, to the person giving the consent, or on whose behalf the consent is given.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 29: Exclusion of acts which are offences independently of harm caused.\nThe exceptions in sections 25, 26 and 27 do not extend to acts which are offences independently of any harm which they may cause, or be intended to cause, or be known to be likely to cause, to the person giving the consent, or on whose behalf the consent is given.",
+          "keywords": [
+            "cause",
+            "exceptions",
+            "acts",
+            "offences",
+            "independently",
+            "harm",
+            "consent",
+            "sections",
+            "extend",
+            "they"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7470803260803223,
+            "original:bm25": 0.19574169894269086,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.400303167234764
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "accidental harm",
+              "lawful act",
+              "criminal liability",
+              "harm",
+              "caused",
+              "accidentally",
+              "during",
+              "lawful"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "harm",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "harm",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "caused",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.9825,
+                "weighted_score": 0.7369
+              },
+              {
+                "query_concept": "criminal liability",
+                "chunk_concept": "offences",
+                "source": "keyword",
+                "similarity": 0.9131,
+                "weighted_score": 0.6848
+              },
+              {
+                "query_concept": "lawful act",
+                "chunk_concept": "acts",
+                "source": "keyword",
+                "similarity": 0.9075,
+                "weighted_score": 0.6806
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 0.9028,
+                "weighted_score": 0.6771
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.400303,
+            "score_after_pre_rerank": 0.463249
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__section__BNS_S33",
+          "score": 0.279781,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 33,
+          "citation": "Section 33",
+          "text": "Nothing is an offence by reason that it causes, or that it is\nintended to cause, or that it is known to be likely to cause, any harm, if\nthat harm is so slight that no person of ordinary sense and temper would\ncomplain of such harm.\nOf right of private defence\nThings done in private defence.\n[OF RIGHT OF PRIVATE DEFENCE]",
+          "derived_context": "",
+          "keywords": [
+            "slight_harm",
+            "private_defence"
+          ],
+          "legal_concepts": [
+            "offence",
+            "harm",
+            "private defence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "graph": 0.27978111333321126
+          },
+          "query_scores": {
+            "graph": 0.27978111333321126
+          },
+          "reasons": [
+            "graph_from:chunk__node__BNS_S33_BODY",
+            "zero_concept_overlap_penalty",
+            "general_clause_boost"
+          ]
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S18_BODY",
+          "score": 0.974111,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 18,
+          "citation": "Section 18",
+          "text": "Nothing is an offence which is done by accident or misfortune, and without any criminal intention or knowledge in the doing of a lawful act in a lawful manner by lawful means and with proper care and caution.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 18: Accident in doing a lawful act.\nNothing is an offence which is done by accident or misfortune, and without any criminal intention or knowledge in the doing of a lawful act in a lawful manner by lawful means and with proper care and caution.",
+          "keywords": [
+            "lawful",
+            "accident",
+            "doing",
+            "nothing",
+            "offence",
+            "done",
+            "misfortune",
+            "criminal",
+            "intention",
+            "knowledge",
+            "lawful act"
+          ],
+          "legal_concepts": [
+            "exception to criminal liability",
+            "accidental harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "accidental harm"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7244645357131958,
+            "original:bm25": 0.6197179485751099,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9805059605518142
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "accidental harm",
+              "lawful act",
+              "criminal liability",
+              "harm",
+              "caused",
+              "accidentally",
+              "during",
+              "lawful"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "accidental harm",
+                "chunk_concept": "accidental harm",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "criminal liability",
+                "chunk_concept": "exception to criminal liability",
+                "source": "legal_concept",
+                "similarity": 0.9352,
+                "weighted_score": 0.9352
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "lawful",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "lawful act",
+                "chunk_concept": "lawful act",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "accidental harm",
+                "chunk_concept": "accident",
+                "source": "keyword",
+                "similarity": 0.9253,
+                "weighted_score": 0.694
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "accidental harm",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.980506,
+            "score_after_pre_rerank": 0.984015
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__section__BNS_S18",
+          "score": 0.967212,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 18,
+          "citation": "Section 18",
+          "text": "Nothing is an offence which is done by accident or misfortune,\nand without any criminal intention or knowledge in the doing of a lawful act\nin a lawful manner by lawful means and with proper care and caution.\nIllustration.\nA is at work with a hatchet; the head flies off and kills a man who is\nstanding by. Here, if there was no want of proper caution on the part of A,\nhis act is excusable and not an offence.\nAct likely to cause harm, but done without criminal intent, and to\nprevent other harm.",
+          "derived_context": "",
+          "keywords": [
+            "accidental harm",
+            "lawful act"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.8550000000000001
+          },
+          "query_scores": {
+            "original": 0.9351513882538047
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S18_ILL1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S33_BODY",
+          "score": 0.399637,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 33,
+          "citation": "Section 33",
+          "text": "Nothing is an offence by reason that it causes, or that it is intended to cause, or that it is known to be likely to cause, any harm, if that harm is so slight that no person of ordinary sense and temper would complain of such harm. Of right of private defence Things done in private defence. [OF RIGHT OF PRIVATE DEFENCE]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 33: Act causing slight harm.\nNothing is an offence by reason that it causes, or that it is intended to cause, or that it is known to be likely to cause, any harm, if that harm is so slight that no person of ordinary sense and temper would complain of such harm. Of right of private defence Things done in private defence. [OF RIGHT OF PRIVATE DEFENCE]",
+          "keywords": [
+            "harm",
+            "private",
+            "defence",
+            "cause",
+            "slight",
+            "right",
+            "nothing",
+            "offence",
+            "reason",
+            "causes",
+            "slight_harm",
+            "private_defence"
+          ],
+          "legal_concepts": [
+            "act causing slight harm",
+            "right of private defence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7247349619865417,
+            "original:bm25": 0.26249996768891365,
+            "original:semrank_pre_rerank": 0.9106,
+            "semrank_pre_rerank": 0.9106
+          },
+          "query_scores": {
+            "original": 0.5415817137692824
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "accidental harm",
+              "lawful act",
+              "criminal liability",
+              "harm",
+              "caused",
+              "accidentally",
+              "during",
+              "lawful"
+            ],
+            "score": 0.9106,
+            "best_similarity": 0.9106,
+            "best_concept": "act causing slight harm",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "accidental harm",
+                "chunk_concept": "act causing slight harm",
+                "source": "legal_concept",
+                "similarity": 0.9106,
+                "weighted_score": 0.9106
+              },
+              {
+                "query_concept": "criminal liability",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 0.8297,
+                "weighted_score": 0.8297
+              },
+              {
+                "query_concept": "harm",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "caused",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.9825,
+                "weighted_score": 0.7369
+              },
+              {
+                "query_concept": "caused",
+                "chunk_concept": "causes",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7336
+              }
+            ],
+            "pre_rerank_score": 0.9106,
+            "score_before_pre_rerank": 0.541582,
+            "score_after_pre_rerank": 0.608005
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__section__BNS_S19",
+          "score": 0.359529,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 19,
+          "citation": "Section 19",
+          "text": "Nothing is an offence merely by reason of its being done with the\nknowledge that it is likely to cause harm, if it be done without any criminal\nintention to cause harm, and in good faith for the purpose of preventing or\navoiding other harm to person or property.\nExplanation.—It is a question of fact in such a case whether the harm\nto be prevented or avoided was of such a nature and so imminent as to\njustify or excuse the risk of doing the act with the knowledge that it was\nlikely to cause harm.\nIllustrations.\n(a) A, the captain of a vessel, suddenly and without any fault or\nnegligence on his part, finds himself in such a position that, before he can\nstop his vessel, he must inevitably run down a boat B, with twenty or thirty\npassengers on board, unless he changes the course of his vessel, and that,\nby changing his course, he must incur risk of running down a boat C with\nonly two passengers on board, which he may possibly clear. Here, if A alters\nhis course without any intention to run down the boat C and in good faith\nfor the purpose of avoiding the danger to the passengers in the boat B, he\nis not guilty of an offence, though he may run down the boat C by doing an\nact which he knew was likely to cause that effect, if it be found as a matter\nof fact that the danger which he intended to avoid was such as to excuse\nhim in incurring the risk of running down the boat C.\n(b) A, in a great fire, pulls down houses in order to prevent the\nconflagration from spreading. He does this with the intention in good faith\nof saving human life or property. Here, if it be found that the harm to be\nprevented was of such a nature and so imminent as to excuse A’s act, A is\nnot guilty of the offence.\nAct of a child under seven years of age.",
+          "derived_context": "",
+          "keywords": [
+            "harm prevention",
+            "good faith"
+          ],
+          "legal_concepts": [
+            "act likely to cause harm",
+            "criminal intent",
+            "good faith",
+            "harm prevention"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.7902374662590028
+          },
+          "query_scores": {
+            "original": 0.4826047638370806
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S19_EXP1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S29_ILL1_BODY",
+          "score": 0.261389,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 29,
+          "citation": "Section 29",
+          "text": "Causing miscarriage (unless caused in good faith for the purpose of saving the life of the woman) is an offence independently of any harm which it may cause or be intended to cause to the woman. Therefore, it is not an offence “by reason of such harm”; and the consent of the woman or of her guardian to the causing of such miscarriage does not justify the act. Act done in good faith for benefit of a person without consent.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 29: Exclusion of acts which are offences independently of harm caused.\nCausing miscarriage (unless caused in good faith for the purpose of saving the life of the woman) is an offence independently of any harm which it may cause or be intended to cause to the woman. Therefore, it is not an offence “by reason of such harm”; and the consent of the woman or of her guardian to the causing of such miscarriage does not justify the act. Act done in good faith for benefit of a person without consent.",
+          "keywords": [
+            "woman",
+            "harm",
+            "causing",
+            "miscarriage",
+            "caused",
+            "good",
+            "faith",
+            "offence",
+            "independently",
+            "cause"
+          ],
+          "legal_concepts": [
+            "exclusion of acts which are offences independently of harm caused"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7395115494728088,
+            "original:bm25": 0.539910971271561,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.4362907360886655
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "accidental harm",
+              "lawful act",
+              "criminal liability",
+              "harm",
+              "caused",
+              "accidentally",
+              "during",
+              "lawful"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "caused",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "caused",
+                "chunk_concept": "caused",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "harm",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "caused",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.9825,
+                "weighted_score": 0.7369
+              },
+              {
+                "query_concept": "caused",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 0.9718,
+                "weighted_score": 0.7289
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "good",
+                "source": "keyword",
+                "similarity": 0.9191,
+                "weighted_score": 0.6893
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.436291,
+            "score_after_pre_rerank": 0.492758
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S19_BODY",
+          "score": 0.229271,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 19,
+          "citation": "Section 19",
+          "text": "Nothing is an offence merely by reason of its being done with the knowledge that it is likely to cause harm, if it be done without any criminal intention to cause harm, and in good faith for the purpose of preventing or avoiding other harm to person or property.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 19: Act likely to cause harm, but done without criminal intent, and to prevent other harm.\nNothing is an offence merely by reason of its being done with the knowledge that it is likely to cause harm, if it be done without any criminal intention to cause harm, and in good faith for the purpose of preventing or avoiding other harm to person or property.",
+          "keywords": [
+            "harm",
+            "done",
+            "cause",
+            "likely",
+            "criminal",
+            "nothing",
+            "offence",
+            "merely",
+            "reason",
+            "knowledge",
+            "harm prevention",
+            "good faith"
+          ],
+          "legal_concepts": [
+            "actus reus",
+            "mens rea"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7207395434379578,
+            "original:bm25": 0.7120671516322503,
+            "original:semrank_pre_rerank": 0.8779,
+            "semrank_pre_rerank": 0.8779
+          },
+          "query_scores": {
+            "original": 0.4107629830840792
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "accidental harm",
+              "lawful act",
+              "criminal liability",
+              "harm",
+              "caused",
+              "accidentally",
+              "during",
+              "lawful"
+            ],
+            "score": 0.8779,
+            "best_similarity": 0.8779,
+            "best_concept": "actus reus",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "lawful act",
+                "chunk_concept": "actus reus",
+                "source": "legal_concept",
+                "similarity": 0.8779,
+                "weighted_score": 0.8779
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "mens rea",
+                "source": "legal_concept",
+                "similarity": 0.8641,
+                "weighted_score": 0.8641
+              },
+              {
+                "query_concept": "harm",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "caused",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.9825,
+                "weighted_score": 0.7369
+              },
+              {
+                "query_concept": "harm",
+                "chunk_concept": "harm prevention",
+                "source": "keyword",
+                "similarity": 0.9117,
+                "weighted_score": 0.6838
+              }
+            ],
+            "pre_rerank_score": 0.8779,
+            "score_before_pre_rerank": 0.410763,
+            "score_after_pre_rerank": 0.494848
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S29_BODY",
+          "score": 0.21034,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 29,
+          "citation": "Section 29",
+          "text": "The exceptions in sections 25, 26 and 27 do not extend to acts which are offences independently of any harm which they may cause, or be intended to cause, or be known to be likely to cause, to the person giving the consent, or on whose behalf the consent is given.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 29: Exclusion of acts which are offences independently of harm caused.\nThe exceptions in sections 25, 26 and 27 do not extend to acts which are offences independently of any harm which they may cause, or be intended to cause, or be known to be likely to cause, to the person giving the consent, or on whose behalf the consent is given.",
+          "keywords": [
+            "cause",
+            "exceptions",
+            "acts",
+            "offences",
+            "independently",
+            "harm",
+            "consent",
+            "sections",
+            "extend",
+            "they"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7470803260803223,
+            "original:bm25": 0.19574169894269086,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.400303167234764
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "accidental harm",
+              "lawful act",
+              "criminal liability",
+              "harm",
+              "caused",
+              "accidentally",
+              "during",
+              "lawful"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "harm",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "harm",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "caused",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.9825,
+                "weighted_score": 0.7369
+              },
+              {
+                "query_concept": "criminal liability",
+                "chunk_concept": "offences",
+                "source": "keyword",
+                "similarity": 0.9131,
+                "weighted_score": 0.6848
+              },
+              {
+                "query_concept": "lawful act",
+                "chunk_concept": "acts",
+                "source": "keyword",
+                "similarity": 0.9075,
+                "weighted_score": 0.6806
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 0.9028,
+                "weighted_score": 0.6771
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.400303,
+            "score_after_pre_rerank": 0.463249
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S199_C",
+          "score": 0.203215,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+          "section_number": 199,
+          "citation": "Section 199",
+          "text": "fails to record any information given to him under sub-section (1) of section 173 of the Bharatiya Nagarik Suraksha Sanhita, 2023 in relation to cognizable offence punishable under section 64, section 65, section 66, section 67, section 68, section 70, section 71, section 74, section 76, section 77, section 79, section 124, section 143 or section 144, shall be punished with rigorous imprisonment for a term which shall not be less than six months but which may extend to two years, and shall also be liable to fine. Punishment for non-treatment of victim.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 12: OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS\nSection 199: Public servant disobeying direction under law.\nfails to record any information given to him under sub-section (1) of section 173 of the Bharatiya Nagarik Suraksha Sanhita, 2023 in relation to cognizable offence punishable under section 64, section 65, section 66, section 67, section 68, section 70, section 71, section 74, section 76, section 77, section 79, section 124, section 143 or section 144, shall be punished with rigorous imprisonment for a term which shall not be less than six months but which may extend to two years, and shall also be liable to fine. Punishment for non-treatment of victim.",
+          "keywords": [
+            "public",
+            "fails",
+            "record",
+            "information",
+            "given",
+            "sub-section",
+            "bharatiya",
+            "nagarik",
+            "suraksha",
+            "relation",
+            "public servant",
+            "record keeping",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "disobedience of law",
+            "public service",
+            "criminal liability"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "criminal liability"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 0.9999998807907104,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000351148714308
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "accidental harm",
+              "lawful act",
+              "criminal liability",
+              "harm",
+              "caused",
+              "accidentally",
+              "during",
+              "lawful"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal liability",
+                "chunk_concept": "criminal liability",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "public service",
+                "source": "legal_concept",
+                "similarity": 0.8507,
+                "weighted_score": 0.8507
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "disobedience of law",
+                "source": "legal_concept",
+                "similarity": 0.8385,
+                "weighted_score": 0.8385
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9109,
+                "weighted_score": 0.6831
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "information",
+                "source": "keyword",
+                "similarity": 0.9053,
+                "weighted_score": 0.679
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal liability",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400035,
+            "score_after_pre_rerank": 0.508029
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S45_BODY",
+          "score": 0.20321,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "A person abets the doing of a thing, who—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nA person abets the doing of a thing, who—",
+          "keywords": [
+            "abetment",
+            "abets",
+            "doing",
+            "criminal",
+            "conspiracy",
+            "attempt",
+            "body",
+            "encouragement"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "criminal liability"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "criminal liability"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 0.9999998807907104,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40003148657039705
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "accidental harm",
+              "lawful act",
+              "criminal liability",
+              "harm",
+              "caused",
+              "accidentally",
+              "during",
+              "lawful"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal liability",
+                "chunk_concept": "criminal liability",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "abetment",
+                "source": "legal_concept",
+                "similarity": 0.8602,
+                "weighted_score": 0.8602
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "doing",
+                "source": "keyword",
+                "similarity": 0.9082,
+                "weighted_score": 0.6811
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 0.8735,
+                "weighted_score": 0.6551
+              },
+              {
+                "query_concept": "lawful",
+                "chunk_concept": "attempt",
+                "source": "keyword",
+                "similarity": 0.8715,
+                "weighted_score": 0.6536
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal liability",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400031,
+            "score_after_pre_rerank": 0.508026
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__section__BNS_S33",
+          "score": 0.178162,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 33,
+          "citation": "Section 33",
+          "text": "Nothing is an offence by reason that it causes, or that it is\nintended to cause, or that it is known to be likely to cause, any harm, if\nthat harm is so slight that no person of ordinary sense and temper would\ncomplain of such harm.\nOf right of private defence\nThings done in private defence.\n[OF RIGHT OF PRIVATE DEFENCE]",
+          "derived_context": "",
+          "keywords": [
+            "slight_harm",
+            "private_defence"
+          ],
+          "legal_concepts": [
+            "offence",
+            "harm",
+            "private defence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "graph": 0.27978111333321126
+          },
+          "query_scores": {
+            "graph": 0.27978111333321126
+          },
+          "reasons": [
+            "graph_from:chunk__node__BNS_S33_BODY",
+            "zero_concept_overlap_penalty",
+            "general_clause_boost",
+            "rerank"
+          ]
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

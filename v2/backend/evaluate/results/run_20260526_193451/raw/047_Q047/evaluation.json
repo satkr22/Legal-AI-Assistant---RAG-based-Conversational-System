@@ -1,0 +1,206 @@
+{
+  "query_id": "Q047",
+  "query": "Someone borrowed my phone and never returned it. What offence may apply?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "316"
+  ],
+  "acceptable_sections": [
+    "314"
+  ],
+  "wrong_sections": [
+    "303"
+  ],
+  "retrieved_sections_at_k": [
+    "307",
+    "306",
+    "303",
+    "303",
+    "306"
+  ],
+  "candidate_sections_at_10": [
+    "307",
+    "306",
+    "303",
+    "303",
+    "306",
+    "317",
+    "304",
+    "314",
+    "304",
+    "320"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "306",
+    "306",
+    "307",
+    "303",
+    "303"
+  ],
+  "cited_sections": [
+    "303",
+    "306"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "mrr_at_k": 0.0,
+    "required_hits": [],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [],
+    "support_precision_at_k": 0.0,
+    "any_correct_support_at_k": false,
+    "wrong_or_extra_sections": [
+      "307",
+      "306",
+      "303",
+      "303",
+      "306"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "mrr_at_k": 0.0,
+    "required_hits": [],
+    "acceptable_hits": [
+      "314"
+    ],
+    "required_or_acceptable_hits": [
+      "314"
+    ],
+    "support_precision_at_k": 0.1429,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "307",
+      "306",
+      "303",
+      "303",
+      "306",
+      "317",
+      "304",
+      "304",
+      "320"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "mrr_at_k": 0.0,
+    "required_hits": [],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [],
+    "support_precision_at_k": 0.0,
+    "any_correct_support_at_k": false,
+    "wrong_or_extra_sections": [
+      "306",
+      "306",
+      "307",
+      "303",
+      "303"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.3333,
+    "required_points_matched": 1,
+    "required_points_total": 3,
+    "answer_completeness_score": 0.3333,
+    "soft_answer_score": 0.2833,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "When a person is entrusted with property and dishonestly misappropriates or converts it to their own use, it constitutes criminal breach of trust under Section 316.",
+        "matched": false,
+        "overlap": 0.4167,
+        "matched_terms": [
+          "constitutes",
+          "dishonestly",
+          "own",
+          "property",
+          "trust"
+        ]
+      },
+      {
+        "point": "Mere non-return may not automatically prove dishonest intent; the facts must be examined.",
+        "matched": false,
+        "overlap": 0.1111,
+        "matched_terms": [
+          "return"
+        ]
+      },
+      {
+        "point": "Theft under Section 303 does not apply because the property was handed over with consent.",
+        "matched": true,
+        "overlap": 0.6667,
+        "matched_terms": [
+          "303",
+          "apply",
+          "consent",
+          "property",
+          "theft",
+          "was"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "correct_cited_sections": [],
+    "missing_required_sections": [
+      "316"
+    ],
+    "extra_cited_sections": [
+      "303",
+      "306"
+    ],
+    "faithfulness": 1.0,
+    "claims": 4,
+    "supported_claims": 4,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "missing_required_citation",
+    "low_required_point_coverage",
+    "wrong_reference_retrieved",
+    "wrong_reference_cited"
+  ],
+  "wrong_references": {
+    "retrieved": [
+      "303"
+    ],
+    "cited": [
+      "303"
+    ]
+  },
+  "timings": {
+    "phase_8": 9.7947,
+    "phase_9_10": 83.2241,
+    "phase_11": 19.8017,
+    "phase_12_13": 0.0004,
+    "total": 112.821
+  },
+  "final_answer_preview": "The situation described may constitute theft under the Bharatiya Nyaya Sanhita, 2023. Specifically, if someone borrowed your phone and did not return it, they may be committing theft as they have taken your property without your consent. This is supported by Section 303(1) Illustration (k), which states that if a person takes property out of another's possession without consent, even if it is their own property, it constitutes theft if done dishonestly. Additionally, if the person was in a position of trust (like a clerk or servant), Section 306 may also apply, which outlines penalties for theft committed by a clerk or servant regarding property in their employer's possession.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/047_Q047"
+}

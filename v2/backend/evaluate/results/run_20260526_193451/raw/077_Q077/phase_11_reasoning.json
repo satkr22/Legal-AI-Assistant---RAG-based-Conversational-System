@@ -1,0 +1,3432 @@
+[
+  {
+    "query": "What is the difference between robbery and dacoity?",
+    "phase8": {
+      "query": "What is the difference between robbery and dacoity?",
+      "intent": {
+        "primary": "comparison",
+        "secondary": []
+      },
+      "concepts": [
+        "robbery",
+        "dacoity"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.5746,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.35,
+        "structure_validity": 1.0,
+        "overall": 0.6998
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is the difference between robbery and dacoity?",
+          "targets": [],
+          "concepts": [
+            "robbery",
+            "dacoity"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S310_N1",
+            "score": 1.0,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 310,
+            "citation": "Section 310",
+            "text": "When five or more persons conjointly commit or attempt to commit a robbery, or where the whole number of persons conjointly committing or attempting to commit a robbery, and persons present and aiding such commission or attempt, amount to five or more, every person so committing, attempting or aiding, is said to commit dacoity.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhen five or more persons conjointly commit or attempt to commit a robbery, or where the whole number of persons conjointly committing or attempting to commit a robbery, and persons present and aiding such commission or attempt, amount to five or more, every person so committing, attempting or aiding, is said to commit dacoity.",
+            "keywords": [
+              "commit",
+              "five",
+              "conjointly",
+              "attempt",
+              "robbery",
+              "committing",
+              "attempting",
+              "aiding",
+              "dacoity",
+              "whole"
+            ],
+            "legal_concepts": [
+              "dacoity",
+              "robbery"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 2,
+              "coverage_ratio": 1.0,
+              "matched_concepts": [
+                "dacoity",
+                "robbery"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7304611802101135,
+              "bm25": 0.8470788492289709,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "robbery",
+                "dacoity",
+                "difference",
+                "between",
+                "what is the difference between robbery and dacoity"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "robbery",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "aiding",
+                  "source": "keyword",
+                  "similarity": 0.8816,
+                  "weighted_score": 0.6612
+                },
+                {
+                  "query_concept": "between",
+                  "chunk_concept": "whole",
+                  "source": "keyword",
+                  "similarity": 0.8814,
+                  "weighted_score": 0.661
+                },
+                {
+                  "query_concept": "between",
+                  "chunk_concept": "conjointly",
+                  "source": "keyword",
+                  "similarity": 0.8753,
+                  "weighted_score": 0.6565
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "dacoity",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S309_N6",
+            "score": 0.918122,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 309,
+            "citation": "Section 309",
+            "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+            "keywords": [
+              "robbery",
+              "committing",
+              "attempting",
+              "commit",
+              "imprisonment",
+              "voluntarily",
+              "causes",
+              "hurt",
+              "jointly",
+              "concerned",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "robbery"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "robbery"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6758407354354858,
+              "bm25": 0.6676756499130881,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "robbery",
+                "dacoity",
+                "difference",
+                "between",
+                "what is the difference between robbery and dacoity"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "robbery",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.8673,
+                  "weighted_score": 0.8673
+                },
+                {
+                  "query_concept": "between",
+                  "chunk_concept": "jointly",
+                  "source": "keyword",
+                  "similarity": 0.902,
+                  "weighted_score": 0.6765
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "concerned",
+                  "source": "keyword",
+                  "similarity": 0.8709,
+                  "weighted_score": 0.6532
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.8706,
+                  "weighted_score": 0.6529
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "robbery",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S310_N6",
+            "score": 0.824478,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 310,
+            "citation": "Section 310",
+            "text": "Whoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+            "keywords": [
+              "dacoity",
+              "imprisonment",
+              "whoever",
+              "belongs",
+              "gang",
+              "associated",
+              "purpose",
+              "habitually",
+              "committing",
+              "punished",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "dacoity"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "dacoity"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7076258659362793,
+              "bm25": 0.7741210035816695,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "robbery",
+                "dacoity",
+                "difference",
+                "between",
+                "what is the difference between robbery and dacoity"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.8673,
+                  "weighted_score": 0.8673
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "purpose",
+                  "source": "keyword",
+                  "similarity": 0.883,
+                  "weighted_score": 0.6622
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.8706,
+                  "weighted_score": 0.6529
+                },
+                {
+                  "query_concept": "between",
+                  "chunk_concept": "associated",
+                  "source": "keyword",
+                  "similarity": 0.8697,
+                  "weighted_score": 0.6522
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "dacoity",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S311_BODY",
+            "score": 0.789796,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 311,
+            "citation": "Section 311",
+            "text": "If, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 311: Robbery, or dacoity, with attempt to cause death or grievous hurt.\nIf, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+            "keywords": [
+              "robbery",
+              "dacoity",
+              "grievous",
+              "hurt",
+              "offender",
+              "deadly",
+              "weapon",
+              "cause",
+              "death",
+              "attempt",
+              "deadly weapon",
+              "grievous hurt"
+            ],
+            "legal_concepts": [
+              "robbery",
+              "dacoity",
+              "attempt to cause death"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 2,
+              "coverage_ratio": 1.0,
+              "matched_concepts": [
+                "robbery",
+                "dacoity"
+              ]
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 1.0,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "robbery",
+                "dacoity",
+                "difference",
+                "between",
+                "what is the difference between robbery and dacoity"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "robbery",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "attempt to cause death",
+                  "source": "legal_concept",
+                  "similarity": 0.8175,
+                  "weighted_score": 0.8175
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "cause",
+                  "source": "keyword",
+                  "similarity": 0.8632,
+                  "weighted_score": 0.6474
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "offender",
+                  "source": "keyword",
+                  "similarity": 0.8577,
+                  "weighted_score": 0.6433
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "dacoity",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S308_N7",
+            "score": 0.786336,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 308,
+            "citation": "Section 308",
+            "text": "Whoever commits extortion by putting any person in fear of an accusation against that person or any other, of having committed or attempted to commit any offence punishable with death, or with imprisonment for life, or with imprisonment for a term which may extend to ten years, or of having attempted to induce any other person to commit such offence, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Of robbery and dacoity Robbery. [OF ROBBERY AND DACOITY]",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 308: Extortion.\nWhoever commits extortion by putting any person in fear of an accusation against that person or any other, of having committed or attempted to commit any offence punishable with death, or with imprisonment for life, or with imprisonment for a term which may extend to ten years, or of having attempted to induce any other person to commit such offence, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Of robbery and dacoity Robbery. [OF ROBBERY AND DACOITY]",
+            "keywords": [
+              "imprisonment",
+              "robbery",
+              "extortion",
+              "against",
+              "having",
+              "attempted",
+              "commit",
+              "offence",
+              "term",
+              "extend",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence",
+              "imprisonment for life"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6531208753585815,
+              "bm25": 0.6921048354724731,
+              "semrank_pre_rerank": 0.8297
+            },
+            "query_scores": {
+              "original": 0.6921048354724731
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "robbery",
+                "dacoity",
+                "difference",
+                "between",
+                "what is the difference between robbery and dacoity"
+              ],
+              "score": 0.8297,
+              "best_similarity": 0.8297,
+              "best_concept": "imprisonment for life",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "imprisonment for life",
+                  "source": "legal_concept",
+                  "similarity": 0.8297,
+                  "weighted_score": 0.8297
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "robbery",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "against",
+                  "source": "keyword",
+                  "similarity": 0.8964,
+                  "weighted_score": 0.6723
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "term",
+                  "source": "keyword",
+                  "similarity": 0.8882,
+                  "weighted_score": 0.6662
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "extortion",
+                  "source": "keyword",
+                  "similarity": 0.8745,
+                  "weighted_score": 0.6559
+                }
+              ],
+              "pre_rerank_score": 0.8297,
+              "score_before_pre_rerank": 0.795468,
+              "score_after_pre_rerank": 0.80163
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S312_BODY",
+            "score": 0.553352,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 312,
+            "citation": "Section 312",
+            "text": "If, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 312: Attempt to commit robbery or dacoity when armed with deadly weapon.\nIf, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+            "keywords": [
+              "commit",
+              "robbery",
+              "dacoity",
+              "offender",
+              "armed",
+              "deadly",
+              "weapon",
+              "time",
+              "attempting",
+              "imprisonment",
+              "deadly weapon"
+            ],
+            "legal_concepts": [
+              "attempt to commit robbery",
+              "dacoity with deadly weapon"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6951100826263428,
+              "bm25": 0.8560412108807451,
+              "semrank": 0.9504150152206421,
+              "semrank_pre_rerank": 0.9504
+            },
+            "query_scores": {
+              "original": 0.9504150152206421
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9504,
+              "query_concepts": [
+                "robbery",
+                "dacoity",
+                "difference",
+                "between",
+                "what is the difference between robbery and dacoity"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "attempt to commit robbery",
+                  "source": "legal_concept",
+                  "similarity": 0.9504,
+                  "weighted_score": 0.9504
+                },
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity with deadly weapon",
+                  "source": "legal_concept",
+                  "similarity": 0.8811,
+                  "weighted_score": 0.8811
+                },
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "robbery",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "between",
+                  "chunk_concept": "time",
+                  "source": "keyword",
+                  "similarity": 0.8746,
+                  "weighted_score": 0.656
+                }
+              ],
+              "score": 0.9504,
+              "best_similarity": 0.9504,
+              "best_concept": "attempt to commit robbery",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9504,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.991072
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__section__BNS_S231",
+            "score": 0.50516,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 231,
+            "citation": "Section 231",
+            "text": "Whoever gives or fabricates false evidence intending thereby to\ncause, or knowing it to be likely that he will thereby cause, any person to\nbe convicted of an offence which by the law for the time being in force in\nIndia is not capital, but punishable with imprisonment for life, or\nimprisonment for a term of seven years or upwards, shall be punished as a\nperson convicted of that offence would be liable to be punished.\nIllustration.\nA gives false evidence before a Court, intending thereby to cause Z\nto be convicted of a dacoity. The punishment of dacoity is imprisonment for\nlife, or rigorous imprisonment for a term which may extend to ten years,\nwith or without fine. A, therefore, is liable to imprisonment for life or\nimprisonment, with or without fine.\nThreatening any person to give false evidence.",
+            "derived_context": "",
+            "keywords": [
+              "false_evidence",
+              "offence_punishable"
+            ],
+            "legal_concepts": [
+              "giving false evidence",
+              "offences against public justice"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "anchor": 0.9
+            },
+            "query_scores": {
+              "anchor": 0.9
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S231_ILL1",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S231_ILL1",
+            "score": 0.491989,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 231,
+            "citation": "Section 231",
+            "text": "A gives false evidence before a Court, intending thereby to cause Z to be convicted of a dacoity. The punishment of dacoity is imprisonment for life, or rigorous imprisonment for a term which may extend to ten years, with or without fine. A, therefore, is liable to imprisonment for life or imprisonment, with or without fine. Threatening any person to give false evidence.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 231: Giving or fabricating false evidence with intent to procure conviction of offence punishable\nA gives false evidence before a Court, intending thereby to cause Z to be convicted of a dacoity. The punishment of dacoity is imprisonment for life, or rigorous imprisonment for a term which may extend to ten years, with or without fine. A, therefore, is liable to imprisonment for life or imprisonment, with or without fine. Threatening any person to give false evidence.",
+            "keywords": [
+              "false",
+              "evidence",
+              "imprisonment",
+              "dacoity",
+              "life",
+              "fine",
+              "gives",
+              "before",
+              "court",
+              "intending",
+              "false evidence",
+              "dacoity conviction"
+            ],
+            "legal_concepts": [
+              "giving or fabricating false evidence",
+              "dacoity"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "dacoity"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6416565775871277,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "robbery",
+                "dacoity",
+                "difference",
+                "between",
+                "what is the difference between robbery and dacoity"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "giving or fabricating false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.8174,
+                  "weighted_score": 0.8174
+                },
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity conviction",
+                  "source": "keyword",
+                  "similarity": 0.9531,
+                  "weighted_score": 0.7148
+                },
+                {
+                  "query_concept": "between",
+                  "chunk_concept": "fine",
+                  "source": "keyword",
+                  "similarity": 0.8827,
+                  "weighted_score": 0.662
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "court",
+                  "source": "keyword",
+                  "similarity": 0.8811,
+                  "weighted_score": 0.6608
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "dacoity",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S310_N3",
+            "score": 0.463311,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 310,
+            "citation": "Section 310",
+            "text": "If any one of five or more persons, who are conjointly committing dacoity, commits murder in so committing dacoity, every one of those persons shall be punished with death, or imprisonment for life, or rigorous imprisonment for a term which shall not be less than ten years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nIf any one of five or more persons, who are conjointly committing dacoity, commits murder in so committing dacoity, every one of those persons shall be punished with death, or imprisonment for life, or rigorous imprisonment for a term which shall not be less than ten years, and shall also be liable to fine.",
+            "keywords": [
+              "dacoity",
+              "committing",
+              "imprisonment",
+              "five",
+              "conjointly",
+              "commits",
+              "murder",
+              "punished",
+              "death",
+              "life",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "dacoity",
+              "murder",
+              "punishment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "dacoity"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6663520336151123,
+              "bm25": 0.20838700752224212,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "robbery",
+                "dacoity",
+                "difference",
+                "between",
+                "what is the difference between robbery and dacoity"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "murder",
+                  "source": "legal_concept",
+                  "similarity": 0.8619,
+                  "weighted_score": 0.8619
+                },
+                {
+                  "query_concept": "between",
+                  "chunk_concept": "conjointly",
+                  "source": "keyword",
+                  "similarity": 0.8753,
+                  "weighted_score": 0.6565
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "five",
+                  "source": "keyword",
+                  "similarity": 0.8731,
+                  "weighted_score": 0.6548
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.8706,
+                  "weighted_score": 0.6529
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "dacoity",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S254_EXP1",
+            "score": 0.439143,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 254,
+            "citation": "Section 254",
+            "text": "For the purposes of this section it is immaterial whether the robbery or dacoity is intended to be committed, or has been committed, within or without India.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 254: Penalty for harbouring robbers or dacoits.\nFor the purposes of this section it is immaterial whether the robbery or dacoity is intended to be committed, or has been committed, within or without India.",
+            "keywords": [
+              "committed",
+              "purposes",
+              "immaterial",
+              "whether",
+              "robbery",
+              "dacoity",
+              "intended",
+              "india",
+              "penalty",
+              "harbouring"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7123237252235413,
+              "bm25": 0.5814469811842861,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.7123237252235413
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "robbery",
+                "dacoity",
+                "difference",
+                "between",
+                "what is the difference between robbery and dacoity"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "dacoity",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "dacoity",
+                  "chunk_concept": "dacoity",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "robbery",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "whether",
+                  "source": "keyword",
+                  "similarity": 0.9001,
+                  "weighted_score": 0.6751
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "purposes",
+                  "source": "keyword",
+                  "similarity": 0.8689,
+                  "weighted_score": 0.6517
+                },
+                {
+                  "query_concept": "between",
+                  "chunk_concept": "intended",
+                  "source": "keyword",
+                  "similarity": 0.8609,
+                  "weighted_score": 0.6457
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.848912,
+              "score_after_pre_rerank": 0.831108
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S310_N1",
+          "score": 1.0,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "When five or more persons conjointly commit or attempt to commit a robbery, or where the whole number of persons conjointly committing or attempting to commit a robbery, and persons present and aiding such commission or attempt, amount to five or more, every person so committing, attempting or aiding, is said to commit dacoity.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhen five or more persons conjointly commit or attempt to commit a robbery, or where the whole number of persons conjointly committing or attempting to commit a robbery, and persons present and aiding such commission or attempt, amount to five or more, every person so committing, attempting or aiding, is said to commit dacoity.",
+          "keywords": [
+            "commit",
+            "five",
+            "conjointly",
+            "attempt",
+            "robbery",
+            "committing",
+            "attempting",
+            "aiding",
+            "dacoity",
+            "whole"
+          ],
+          "legal_concepts": [
+            "dacoity",
+            "robbery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 2,
+            "coverage_ratio": 1.0,
+            "matched_concepts": [
+              "dacoity",
+              "robbery"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7304611802101135,
+            "original:bm25": 0.8470788492289709,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "aiding",
+                "source": "keyword",
+                "similarity": 0.8816,
+                "weighted_score": 0.6612
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "whole",
+                "source": "keyword",
+                "similarity": 0.8814,
+                "weighted_score": 0.661
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "conjointly",
+                "source": "keyword",
+                "similarity": 0.8753,
+                "weighted_score": 0.6565
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S309_N6",
+          "score": 0.93286,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "keywords": [
+            "robbery",
+            "committing",
+            "attempting",
+            "commit",
+            "imprisonment",
+            "voluntarily",
+            "causes",
+            "hurt",
+            "jointly",
+            "concerned",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "robbery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "robbery"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6758407354354858,
+            "original:bm25": 0.6676756499130881,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9181217843579524
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8673,
+                "weighted_score": 0.8673
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "jointly",
+                "source": "keyword",
+                "similarity": 0.902,
+                "weighted_score": 0.6765
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "concerned",
+                "source": "keyword",
+                "similarity": 0.8709,
+                "weighted_score": 0.6532
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8706,
+                "weighted_score": 0.6529
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "robbery",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.918122,
+            "score_after_pre_rerank": 0.93286
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S310_N6",
+          "score": 0.856072,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "Whoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "keywords": [
+            "dacoity",
+            "imprisonment",
+            "whoever",
+            "belongs",
+            "gang",
+            "associated",
+            "purpose",
+            "habitually",
+            "committing",
+            "punished",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "dacoity"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7076258659362793,
+            "original:bm25": 0.7741210035816695,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8244784848487591
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8673,
+                "weighted_score": 0.8673
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "purpose",
+                "source": "keyword",
+                "similarity": 0.883,
+                "weighted_score": 0.6622
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8706,
+                "weighted_score": 0.6529
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "associated",
+                "source": "keyword",
+                "similarity": 0.8697,
+                "weighted_score": 0.6522
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.824478,
+            "score_after_pre_rerank": 0.856072
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S311_BODY",
+          "score": 0.827633,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 311,
+          "citation": "Section 311",
+          "text": "If, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 311: Robbery, or dacoity, with attempt to cause death or grievous hurt.\nIf, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+          "keywords": [
+            "robbery",
+            "dacoity",
+            "grievous",
+            "hurt",
+            "offender",
+            "deadly",
+            "weapon",
+            "cause",
+            "death",
+            "attempt",
+            "deadly weapon",
+            "grievous hurt"
+          ],
+          "legal_concepts": [
+            "robbery",
+            "dacoity",
+            "attempt to cause death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 2,
+            "coverage_ratio": 1.0,
+            "matched_concepts": [
+              "robbery",
+              "dacoity"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7897964400804809
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "attempt to cause death",
+                "source": "legal_concept",
+                "similarity": 0.8175,
+                "weighted_score": 0.8175
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.8632,
+                "weighted_score": 0.6474
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "offender",
+                "source": "keyword",
+                "similarity": 0.8577,
+                "weighted_score": 0.6433
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.789796,
+            "score_after_pre_rerank": 0.827633
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S308_N7",
+          "score": 0.794141,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 308,
+          "citation": "Section 308",
+          "text": "Whoever commits extortion by putting any person in fear of an accusation against that person or any other, of having committed or attempted to commit any offence punishable with death, or with imprisonment for life, or with imprisonment for a term which may extend to ten years, or of having attempted to induce any other person to commit such offence, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Of robbery and dacoity Robbery. [OF ROBBERY AND DACOITY]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 308: Extortion.\nWhoever commits extortion by putting any person in fear of an accusation against that person or any other, of having committed or attempted to commit any offence punishable with death, or with imprisonment for life, or with imprisonment for a term which may extend to ten years, or of having attempted to induce any other person to commit such offence, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Of robbery and dacoity Robbery. [OF ROBBERY AND DACOITY]",
+          "keywords": [
+            "imprisonment",
+            "robbery",
+            "extortion",
+            "against",
+            "having",
+            "attempted",
+            "commit",
+            "offence",
+            "term",
+            "extend",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence",
+            "imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6531208753585815,
+            "original:bm25": 0.6921048354724731,
+            "original:semrank_pre_rerank": 0.8297,
+            "semrank_pre_rerank": 0.8297
+          },
+          "query_scores": {
+            "original": 0.7863355316205932
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "score": 0.8297,
+            "best_similarity": 0.8297,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 0.8297,
+                "weighted_score": 0.8297
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "against",
+                "source": "keyword",
+                "similarity": 0.8964,
+                "weighted_score": 0.6723
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8882,
+                "weighted_score": 0.6662
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "extortion",
+                "source": "keyword",
+                "similarity": 0.8745,
+                "weighted_score": 0.6559
+              }
+            ],
+            "pre_rerank_score": 0.8297,
+            "score_before_pre_rerank": 0.786336,
+            "score_after_pre_rerank": 0.794141
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S312_BODY",
+          "score": 0.624821,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 312,
+          "citation": "Section 312",
+          "text": "If, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 312: Attempt to commit robbery or dacoity when armed with deadly weapon.\nIf, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+          "keywords": [
+            "commit",
+            "robbery",
+            "dacoity",
+            "offender",
+            "armed",
+            "deadly",
+            "weapon",
+            "time",
+            "attempting",
+            "imprisonment",
+            "deadly weapon"
+          ],
+          "legal_concepts": [
+            "attempt to commit robbery",
+            "dacoity with deadly weapon"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6951100826263428,
+            "original:bm25": 0.8560412108807451,
+            "original:semrank": 0.9504150152206421,
+            "original:semrank_pre_rerank": 0.9504,
+            "semrank_pre_rerank": 0.9504
+          },
+          "query_scores": {
+            "original": 0.5533522164343285
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9504,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "attempt to commit robbery",
+                "source": "legal_concept",
+                "similarity": 0.9504,
+                "weighted_score": 0.9504
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity with deadly weapon",
+                "source": "legal_concept",
+                "similarity": 0.8811,
+                "weighted_score": 0.8811
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "time",
+                "source": "keyword",
+                "similarity": 0.8746,
+                "weighted_score": 0.656
+              }
+            ],
+            "score": 0.9504,
+            "best_similarity": 0.9504,
+            "best_concept": "attempt to commit robbery",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9504,
+            "score_before_pre_rerank": 0.553352,
+            "score_after_pre_rerank": 0.624821
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S231_ILL1",
+          "score": 0.583431,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 231,
+          "citation": "Section 231",
+          "text": "A gives false evidence before a Court, intending thereby to cause Z to be convicted of a dacoity. The punishment of dacoity is imprisonment for life, or rigorous imprisonment for a term which may extend to ten years, with or without fine. A, therefore, is liable to imprisonment for life or imprisonment, with or without fine. Threatening any person to give false evidence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 231: Giving or fabricating false evidence with intent to procure conviction of offence punishable\nA gives false evidence before a Court, intending thereby to cause Z to be convicted of a dacoity. The punishment of dacoity is imprisonment for life, or rigorous imprisonment for a term which may extend to ten years, with or without fine. A, therefore, is liable to imprisonment for life or imprisonment, with or without fine. Threatening any person to give false evidence.",
+          "keywords": [
+            "false",
+            "evidence",
+            "imprisonment",
+            "dacoity",
+            "life",
+            "fine",
+            "gives",
+            "before",
+            "court",
+            "intending",
+            "false evidence",
+            "dacoity conviction"
+          ],
+          "legal_concepts": [
+            "giving or fabricating false evidence",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "dacoity"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6416565775871277,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4919888290310781
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "giving or fabricating false evidence",
+                "source": "legal_concept",
+                "similarity": 0.8174,
+                "weighted_score": 0.8174
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity conviction",
+                "source": "keyword",
+                "similarity": 0.9531,
+                "weighted_score": 0.7148
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "fine",
+                "source": "keyword",
+                "similarity": 0.8827,
+                "weighted_score": 0.662
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 0.8811,
+                "weighted_score": 0.6608
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.491989,
+            "score_after_pre_rerank": 0.583431
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S310_N3",
+          "score": 0.559915,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "If any one of five or more persons, who are conjointly committing dacoity, commits murder in so committing dacoity, every one of those persons shall be punished with death, or imprisonment for life, or rigorous imprisonment for a term which shall not be less than ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nIf any one of five or more persons, who are conjointly committing dacoity, commits murder in so committing dacoity, every one of those persons shall be punished with death, or imprisonment for life, or rigorous imprisonment for a term which shall not be less than ten years, and shall also be liable to fine.",
+          "keywords": [
+            "dacoity",
+            "committing",
+            "imprisonment",
+            "five",
+            "conjointly",
+            "commits",
+            "murder",
+            "punished",
+            "death",
+            "life",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "dacoity",
+            "murder",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "dacoity"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6663520336151123,
+            "original:bm25": 0.20838700752224212,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4633110115127295
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 0.8619,
+                "weighted_score": 0.8619
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "conjointly",
+                "source": "keyword",
+                "similarity": 0.8753,
+                "weighted_score": 0.6565
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "five",
+                "source": "keyword",
+                "similarity": 0.8731,
+                "weighted_score": 0.6548
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8706,
+                "weighted_score": 0.6529
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.463311,
+            "score_after_pre_rerank": 0.559915
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__section__BNS_S231",
+          "score": 0.50516,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 231,
+          "citation": "Section 231",
+          "text": "Whoever gives or fabricates false evidence intending thereby to\ncause, or knowing it to be likely that he will thereby cause, any person to\nbe convicted of an offence which by the law for the time being in force in\nIndia is not capital, but punishable with imprisonment for life, or\nimprisonment for a term of seven years or upwards, shall be punished as a\nperson convicted of that offence would be liable to be punished.\nIllustration.\nA gives false evidence before a Court, intending thereby to cause Z\nto be convicted of a dacoity. The punishment of dacoity is imprisonment for\nlife, or rigorous imprisonment for a term which may extend to ten years,\nwith or without fine. A, therefore, is liable to imprisonment for life or\nimprisonment, with or without fine.\nThreatening any person to give false evidence.",
+          "derived_context": "",
+          "keywords": [
+            "false_evidence",
+            "offence_punishable"
+          ],
+          "legal_concepts": [
+            "giving false evidence",
+            "offences against public justice"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.9
+          },
+          "query_scores": {
+            "original": 0.5051595855105633
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S231_ILL1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S254_EXP1",
+          "score": 0.495097,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 254,
+          "citation": "Section 254",
+          "text": "For the purposes of this section it is immaterial whether the robbery or dacoity is intended to be committed, or has been committed, within or without India.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 254: Penalty for harbouring robbers or dacoits.\nFor the purposes of this section it is immaterial whether the robbery or dacoity is intended to be committed, or has been committed, within or without India.",
+          "keywords": [
+            "committed",
+            "purposes",
+            "immaterial",
+            "whether",
+            "robbery",
+            "dacoity",
+            "intended",
+            "india",
+            "penalty",
+            "harbouring"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7123237252235413,
+            "original:bm25": 0.5814469811842861,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.43914301393549215
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "whether",
+                "source": "keyword",
+                "similarity": 0.9001,
+                "weighted_score": 0.6751
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "purposes",
+                "source": "keyword",
+                "similarity": 0.8689,
+                "weighted_score": 0.6517
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "intended",
+                "source": "keyword",
+                "similarity": 0.8609,
+                "weighted_score": 0.6457
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.439143,
+            "score_after_pre_rerank": 0.495097
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S310_N1",
+          "score": 1.0,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "When five or more persons conjointly commit or attempt to commit a robbery, or where the whole number of persons conjointly committing or attempting to commit a robbery, and persons present and aiding such commission or attempt, amount to five or more, every person so committing, attempting or aiding, is said to commit dacoity.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhen five or more persons conjointly commit or attempt to commit a robbery, or where the whole number of persons conjointly committing or attempting to commit a robbery, and persons present and aiding such commission or attempt, amount to five or more, every person so committing, attempting or aiding, is said to commit dacoity.",
+          "keywords": [
+            "commit",
+            "five",
+            "conjointly",
+            "attempt",
+            "robbery",
+            "committing",
+            "attempting",
+            "aiding",
+            "dacoity",
+            "whole"
+          ],
+          "legal_concepts": [
+            "dacoity",
+            "robbery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 2,
+            "coverage_ratio": 1.0,
+            "matched_concepts": [
+              "dacoity",
+              "robbery"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7304611802101135,
+            "original:bm25": 0.8470788492289709,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "aiding",
+                "source": "keyword",
+                "similarity": 0.8816,
+                "weighted_score": 0.6612
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "whole",
+                "source": "keyword",
+                "similarity": 0.8814,
+                "weighted_score": 0.661
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "conjointly",
+                "source": "keyword",
+                "similarity": 0.8753,
+                "weighted_score": 0.6565
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S309_N6",
+          "score": 0.881607,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "keywords": [
+            "robbery",
+            "committing",
+            "attempting",
+            "commit",
+            "imprisonment",
+            "voluntarily",
+            "causes",
+            "hurt",
+            "jointly",
+            "concerned",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "robbery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "robbery"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6758407354354858,
+            "original:bm25": 0.6676756499130881,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9181217843579524
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8673,
+                "weighted_score": 0.8673
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "jointly",
+                "source": "keyword",
+                "similarity": 0.902,
+                "weighted_score": 0.6765
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "concerned",
+                "source": "keyword",
+                "similarity": 0.8709,
+                "weighted_score": 0.6532
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8706,
+                "weighted_score": 0.6529
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "robbery",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.918122,
+            "score_after_pre_rerank": 0.93286
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S308_N7",
+          "score": 0.767495,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 308,
+          "citation": "Section 308",
+          "text": "Whoever commits extortion by putting any person in fear of an accusation against that person or any other, of having committed or attempted to commit any offence punishable with death, or with imprisonment for life, or with imprisonment for a term which may extend to ten years, or of having attempted to induce any other person to commit such offence, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Of robbery and dacoity Robbery. [OF ROBBERY AND DACOITY]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 308: Extortion.\nWhoever commits extortion by putting any person in fear of an accusation against that person or any other, of having committed or attempted to commit any offence punishable with death, or with imprisonment for life, or with imprisonment for a term which may extend to ten years, or of having attempted to induce any other person to commit such offence, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Of robbery and dacoity Robbery. [OF ROBBERY AND DACOITY]",
+          "keywords": [
+            "imprisonment",
+            "robbery",
+            "extortion",
+            "against",
+            "having",
+            "attempted",
+            "commit",
+            "offence",
+            "term",
+            "extend",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence",
+            "imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6531208753585815,
+            "original:bm25": 0.6921048354724731,
+            "original:semrank_pre_rerank": 0.8297,
+            "semrank_pre_rerank": 0.8297
+          },
+          "query_scores": {
+            "original": 0.7863355316205932
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "score": 0.8297,
+            "best_similarity": 0.8297,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 0.8297,
+                "weighted_score": 0.8297
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "against",
+                "source": "keyword",
+                "similarity": 0.8964,
+                "weighted_score": 0.6723
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8882,
+                "weighted_score": 0.6662
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "extortion",
+                "source": "keyword",
+                "similarity": 0.8745,
+                "weighted_score": 0.6559
+              }
+            ],
+            "pre_rerank_score": 0.8297,
+            "score_before_pre_rerank": 0.786336,
+            "score_after_pre_rerank": 0.794141
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S310_N6",
+          "score": 0.746202,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "Whoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "keywords": [
+            "dacoity",
+            "imprisonment",
+            "whoever",
+            "belongs",
+            "gang",
+            "associated",
+            "purpose",
+            "habitually",
+            "committing",
+            "punished",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "dacoity"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7076258659362793,
+            "original:bm25": 0.7741210035816695,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8244784848487591
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8673,
+                "weighted_score": 0.8673
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "purpose",
+                "source": "keyword",
+                "similarity": 0.883,
+                "weighted_score": 0.6622
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8706,
+                "weighted_score": 0.6529
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "associated",
+                "source": "keyword",
+                "similarity": 0.8697,
+                "weighted_score": 0.6522
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.824478,
+            "score_after_pre_rerank": 0.856072
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S311_BODY",
+          "score": 0.696053,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 311,
+          "citation": "Section 311",
+          "text": "If, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 311: Robbery, or dacoity, with attempt to cause death or grievous hurt.\nIf, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+          "keywords": [
+            "robbery",
+            "dacoity",
+            "grievous",
+            "hurt",
+            "offender",
+            "deadly",
+            "weapon",
+            "cause",
+            "death",
+            "attempt",
+            "deadly weapon",
+            "grievous hurt"
+          ],
+          "legal_concepts": [
+            "robbery",
+            "dacoity",
+            "attempt to cause death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 2,
+            "coverage_ratio": 1.0,
+            "matched_concepts": [
+              "robbery",
+              "dacoity"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7897964400804809
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "attempt to cause death",
+                "source": "legal_concept",
+                "similarity": 0.8175,
+                "weighted_score": 0.8175
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.8632,
+                "weighted_score": 0.6474
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "offender",
+                "source": "keyword",
+                "similarity": 0.8577,
+                "weighted_score": 0.6433
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.789796,
+            "score_after_pre_rerank": 0.827633
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S312_BODY",
+          "score": 0.354586,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 312,
+          "citation": "Section 312",
+          "text": "If, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 312: Attempt to commit robbery or dacoity when armed with deadly weapon.\nIf, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+          "keywords": [
+            "commit",
+            "robbery",
+            "dacoity",
+            "offender",
+            "armed",
+            "deadly",
+            "weapon",
+            "time",
+            "attempting",
+            "imprisonment",
+            "deadly weapon"
+          ],
+          "legal_concepts": [
+            "attempt to commit robbery",
+            "dacoity with deadly weapon"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6951100826263428,
+            "original:bm25": 0.8560412108807451,
+            "original:semrank": 0.9504150152206421,
+            "original:semrank_pre_rerank": 0.9504,
+            "semrank_pre_rerank": 0.9504
+          },
+          "query_scores": {
+            "original": 0.5533522164343285
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9504,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "attempt to commit robbery",
+                "source": "legal_concept",
+                "similarity": 0.9504,
+                "weighted_score": 0.9504
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity with deadly weapon",
+                "source": "legal_concept",
+                "similarity": 0.8811,
+                "weighted_score": 0.8811
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "time",
+                "source": "keyword",
+                "similarity": 0.8746,
+                "weighted_score": 0.656
+              }
+            ],
+            "score": 0.9504,
+            "best_similarity": 0.9504,
+            "best_concept": "attempt to commit robbery",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9504,
+            "score_before_pre_rerank": 0.553352,
+            "score_after_pre_rerank": 0.624821
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__section__BNS_S231",
+          "score": 0.293569,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 231,
+          "citation": "Section 231",
+          "text": "Whoever gives or fabricates false evidence intending thereby to\ncause, or knowing it to be likely that he will thereby cause, any person to\nbe convicted of an offence which by the law for the time being in force in\nIndia is not capital, but punishable with imprisonment for life, or\nimprisonment for a term of seven years or upwards, shall be punished as a\nperson convicted of that offence would be liable to be punished.\nIllustration.\nA gives false evidence before a Court, intending thereby to cause Z\nto be convicted of a dacoity. The punishment of dacoity is imprisonment for\nlife, or rigorous imprisonment for a term which may extend to ten years,\nwith or without fine. A, therefore, is liable to imprisonment for life or\nimprisonment, with or without fine.\nThreatening any person to give false evidence.",
+          "derived_context": "",
+          "keywords": [
+            "false_evidence",
+            "offence_punishable"
+          ],
+          "legal_concepts": [
+            "giving false evidence",
+            "offences against public justice"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.9
+          },
+          "query_scores": {
+            "original": 0.5051595855105633
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S231_ILL1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S231_ILL1",
+          "score": 0.265433,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 231,
+          "citation": "Section 231",
+          "text": "A gives false evidence before a Court, intending thereby to cause Z to be convicted of a dacoity. The punishment of dacoity is imprisonment for life, or rigorous imprisonment for a term which may extend to ten years, with or without fine. A, therefore, is liable to imprisonment for life or imprisonment, with or without fine. Threatening any person to give false evidence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 231: Giving or fabricating false evidence with intent to procure conviction of offence punishable\nA gives false evidence before a Court, intending thereby to cause Z to be convicted of a dacoity. The punishment of dacoity is imprisonment for life, or rigorous imprisonment for a term which may extend to ten years, with or without fine. A, therefore, is liable to imprisonment for life or imprisonment, with or without fine. Threatening any person to give false evidence.",
+          "keywords": [
+            "false",
+            "evidence",
+            "imprisonment",
+            "dacoity",
+            "life",
+            "fine",
+            "gives",
+            "before",
+            "court",
+            "intending",
+            "false evidence",
+            "dacoity conviction"
+          ],
+          "legal_concepts": [
+            "giving or fabricating false evidence",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "dacoity"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6416565775871277,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4919888290310781
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "giving or fabricating false evidence",
+                "source": "legal_concept",
+                "similarity": 0.8174,
+                "weighted_score": 0.8174
+              },
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity conviction",
+                "source": "keyword",
+                "similarity": 0.9531,
+                "weighted_score": 0.7148
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "fine",
+                "source": "keyword",
+                "similarity": 0.8827,
+                "weighted_score": 0.662
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 0.8811,
+                "weighted_score": 0.6608
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.491989,
+            "score_after_pre_rerank": 0.583431
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S254_EXP1",
+          "score": 0.246546,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 254,
+          "citation": "Section 254",
+          "text": "For the purposes of this section it is immaterial whether the robbery or dacoity is intended to be committed, or has been committed, within or without India.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 254: Penalty for harbouring robbers or dacoits.\nFor the purposes of this section it is immaterial whether the robbery or dacoity is intended to be committed, or has been committed, within or without India.",
+          "keywords": [
+            "committed",
+            "purposes",
+            "immaterial",
+            "whether",
+            "robbery",
+            "dacoity",
+            "intended",
+            "india",
+            "penalty",
+            "harbouring"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7123237252235413,
+            "original:bm25": 0.5814469811842861,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.43914301393549215
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "whether",
+                "source": "keyword",
+                "similarity": 0.9001,
+                "weighted_score": 0.6751
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "purposes",
+                "source": "keyword",
+                "similarity": 0.8689,
+                "weighted_score": 0.6517
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "intended",
+                "source": "keyword",
+                "similarity": 0.8609,
+                "weighted_score": 0.6457
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.439143,
+            "score_after_pre_rerank": 0.495097
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S310_N3",
+          "score": 0.223966,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "If any one of five or more persons, who are conjointly committing dacoity, commits murder in so committing dacoity, every one of those persons shall be punished with death, or imprisonment for life, or rigorous imprisonment for a term which shall not be less than ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nIf any one of five or more persons, who are conjointly committing dacoity, commits murder in so committing dacoity, every one of those persons shall be punished with death, or imprisonment for life, or rigorous imprisonment for a term which shall not be less than ten years, and shall also be liable to fine.",
+          "keywords": [
+            "dacoity",
+            "committing",
+            "imprisonment",
+            "five",
+            "conjointly",
+            "commits",
+            "murder",
+            "punished",
+            "death",
+            "life",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "dacoity",
+            "murder",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "dacoity"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6663520336151123,
+            "original:bm25": 0.20838700752224212,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4633110115127295
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "dacoity",
+              "difference",
+              "between",
+              "what is the difference between robbery and dacoity"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dacoity",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 0.8619,
+                "weighted_score": 0.8619
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "conjointly",
+                "source": "keyword",
+                "similarity": 0.8753,
+                "weighted_score": 0.6565
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "five",
+                "source": "keyword",
+                "similarity": 0.8731,
+                "weighted_score": 0.6548
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.8706,
+                "weighted_score": 0.6529
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "dacoity",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.463311,
+            "score_after_pre_rerank": 0.559915
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    },
+    "phase11": {
+      "answer_type": "comparison",
+      "support_status": "supported",
+      "confidence": {
+        "score": 0.98,
+        "label": "high"
+      },
+      "final_answer": "Robbery is committed by one or more persons, while dacoity requires five or more persons acting together.",
+      "summary_answer": "Robbery involves the act of theft by one or more persons, while dacoity specifically involves five or more persons committing or attempting to commit robbery together.",
+      "detailed_answer": "The primary difference between robbery and dacoity lies in the number of individuals involved in the crime. Robbery can be committed by one or more persons, but dacoity specifically requires the involvement of five or more persons acting together. According to Section 310(1) of the Bharatiya Nyaya Sanhita, 2023, when five or more persons commit or attempt to commit robbery, they are said to commit dacoity. Additionally, both robbery and dacoity can lead to severe penalties, especially if they involve causing hurt or using deadly weapons, as outlined in Sections 309(6) and 311 Body.",
+      "citations": [
+        "Section 310(1), Bharatiya Nyaya Sanhita, 2023",
+        "Section 309(6), Bharatiya Nyaya Sanhita, 2023",
+        "Section 311 Body, Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "matched_sections": [
+        "Section 310",
+        "Section 309",
+        "Section 308",
+        "Section 311"
+      ],
+      "missing_sections": [],
+      "missing_from_corpus": [],
+      "selected_chunk_ids": [
+        "chunk__node__BNS_S310_N1",
+        "chunk__node__BNS_S309_N6",
+        "chunk__node__BNS_S311_BODY"
+      ],
+      "warnings": [],
+      "structured_reasoning": {
+        "base_concept": "",
+        "selected_section": "Section 310",
+        "selection_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "overrides_score_selection": false,
+        "uncertainty": "low",
+        "uncertainty_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "alternative_sections": [
+          "Section 309",
+          "Section 308",
+          "Section 311"
+        ],
+        "sections_analyzed": [
+          {
+            "section": "Section 310",
+            "role": "retrieved_evidence",
+            "condition_summary": "When five or more persons conjointly commit or attempt to commit a robbery, or where the whole number of persons conjointly committing or attempting to commit a robbery, and persons present and aiding such commission or attempt, amount to five or more...",
+            "condition_match_score": 1.0,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "dacoity ~ dacoity",
+              "robbery ~ robbery",
+              "difference ~ aiding",
+              "between ~ whole",
+              "between ~ conjointly"
+            ],
+            "raw_retrieval_score": 1.0,
+            "hit_count": 2,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 309",
+            "role": "retrieved_evidence",
+            "condition_summary": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous...",
+            "condition_match_score": 0.881607,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "robbery ~ robbery",
+              "robbery ~ offence against property",
+              "between ~ jointly",
+              "difference ~ concerned",
+              "robbery ~ imprisonment"
+            ],
+            "raw_retrieval_score": 0.881607,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 308",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever commits extortion by putting any person in fear of an accusation against that person or any other, of having committed or attempted to commit any offence punishable with death, or with imprisonment for life, or with imprisonment for a term which may...",
+            "condition_match_score": 0.767495,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "robbery ~ imprisonment for life",
+              "robbery ~ robbery",
+              "difference ~ against",
+              "difference ~ term",
+              "robbery ~ extortion"
+            ],
+            "raw_retrieval_score": 0.767495,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 311",
+            "role": "retrieved_evidence",
+            "condition_summary": "If, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be...",
+            "condition_match_score": 0.696053,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "dacoity ~ dacoity",
+              "robbery ~ robbery",
+              "robbery ~ attempt to cause death",
+              "difference ~ cause",
+              "robbery ~ offender"
+            ],
+            "raw_retrieval_score": 0.696053,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          }
+        ]
+      },
+      "validation": {
+        "requested_sections": [],
+        "present_in_corpus": [],
+        "retrieved_exact_matches": [],
+        "missing_from_corpus": [],
+        "intent_alignment": "moderate",
+        "intent_notes": [
+          "Explanatory intent has rule support but limited companion explanation."
+        ],
+        "answer_verified": true,
+        "verification_issues": [],
+        "llm_answer_verified": true,
+        "llm_verification_issues": [],
+        "completeness": "complete",
+        "guardrail_grounding_strength": 1.0,
+        "repaired": false,
+        "fallback_used": false
+      },
+      "evidence": {
+        "primary_chunk_id": "chunk__node__BNS_S310_N1",
+        "primary_chunk_type": "subsection",
+        "primary_section": "Section 310",
+        "primary_section_title": "Dacoity.",
+        "related_chunk_ids": [
+          "chunk__node__BNS_S309_N6",
+          "chunk__node__BNS_S311_BODY"
+        ],
+        "top_sections": [
+          {
+            "section": "Section 310",
+            "section_title": "Dacoity.",
+            "hit_count": 2,
+            "best_score": 1.0,
+            "chunk_types": {
+              "subsection": 2
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 1.0
+          },
+          {
+            "section": "Section 309",
+            "section_title": "Robbery.",
+            "hit_count": 1,
+            "best_score": 0.881607,
+            "chunk_types": {
+              "subsection": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.5
+          },
+          {
+            "section": "Section 311",
+            "section_title": "Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+            "hit_count": 1,
+            "best_score": 0.696053,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 1.0
+          },
+          {
+            "section": "Section 308",
+            "section_title": "Extortion.",
+            "hit_count": 1,
+            "best_score": 0.767495,
+            "chunk_types": {
+              "subsection": 1
+            },
+            "semantic_relevance": 0.8297,
+            "concept_coverage": 0.0
+          }
+        ],
+        "llm_evidence": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S310_N1",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": "310",
+            "citation": "Section 310(1), Bharatiya Nyaya Sanhita, 2023",
+            "text": "When five or more persons conjointly commit or attempt to commit a robbery, or where the whole number of persons conjointly committing or attempting to commit a robbery, and persons present and aiding such commission or attempt, amount to five or more, every person so committing, attempting or aiding, is said to commit dacoity."
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S310_N6",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": "310",
+            "citation": "Section 310(6), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt."
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S309_N6",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": "309",
+            "citation": "Section 309(6), Bharatiya Nyaya Sanhita, 2023",
+            "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity."
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S308_N7",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": "308",
+            "citation": "Section 308(7), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever commits extortion by putting any person in fear of an accusation against that person or any other, of having committed or attempted to commit any offence punishable with death, or with imprisonment for life, or with imprisonment for a term which may extend to ten years, or of having attempted to induce any other person to commit such offence, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Of robbery and dacoity Robbery. [OF ROBBERY AND DACOITY]"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S311_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": "311",
+            "citation": "Section 311 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "If, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon."
+          }
+        ]
+      },
+      "llm_generation": {
+        "enabled": true,
+        "used": true,
+        "model": "gpt-4o-mini",
+        "reasoning_trace": [],
+        "caution_notes": [],
+        "error": null,
+        "repaired": false,
+        "fallback_used": false
+      }
+    }
+  }
+]

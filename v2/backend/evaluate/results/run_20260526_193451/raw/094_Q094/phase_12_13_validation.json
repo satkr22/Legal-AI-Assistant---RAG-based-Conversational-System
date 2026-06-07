@@ -1,0 +1,95 @@
+{
+  "answer": "The retrieved evidence points to Section 268 (Personation of assessor.) as the strongest grounded source for this query.",
+  "summary_answer": "The retrieved evidence points to Section 268 (Personation of assessor.) as the strongest grounded source for this query.",
+  "detailed_answer": "Section 268: Whoever, by personation or otherwise, shall intentionally cause, or knowingly suffer himself to be returned, empanelled or sworn as an assessor in any case in which he knows that he is not entitled by law to be so returned, empanelled or sworn, or knowing himself to have been so returned, empanelled or sworn contrary to law, shall voluntarily serve as... [Section 268 Body, Bharatiya Nyaya Sanhita, 2023] Section 268: Whoever, by personation or otherwise, shall intentionally cause, or knowingly suffer himself to be returned, empanelled or sworn as an assessor in any case in which he knows that he is not entitled by law to be so returned, empanelled or sworn, or knowing himself to have been so returned, empanelled or sworn contrary to law, shall voluntarily serve as... [Section 268: Personation of assessor.] Section 269: Whoever, having been charged with an offence and released on bail bond or on bond, fails without sufficient cause (the burden of proving which shall lie upon him), to appear in Court in accordance with the terms of the bail or bond, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with... [Section 269: Failure by person released on bail bond or bond to appear in Court.] Section 269: Whoever, having been charged with an offence and released on bail bond or on bond, fails without sufficient cause (the burden of proving which shall lie upon him), to appear in Court in accordance with the terms of the bail or bond, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both. [Section 269 Body, Bharatiya Nyaya Sanhita, 2023] Section 73: Whoever prints or publishes any matter in relation to any proceeding before a Court with respect to an offence referred to in section 72 without the previous permission of such Court shall be punished with imprisonment of either description for a term which may extend to two years and shall also be liable to fine. Explanation.—The printing or publication... [Section 73: Printing or publishing any matter relating to Court proceedings without permission.]",
+  "final_answer": "The retrieved evidence points to Section 268 (Personation of assessor.) as the strongest grounded source for this query. Section 268: Whoever, by personation or otherwise, shall intentionally cause, or knowingly suffer himself to be returned, empanelled or sworn as an assessor in any case in which he knows that he is not entitled by law to be so returned, empanelled or sworn, or knowing himself to have been so returned, empanelled or sworn contrary to law, shall voluntarily serve as... [Section 268 Body, Bharatiya Nyaya Sanhita, 2023] Section 268: Whoever, by personation or otherwise, shall intentionally cause, or knowingly suffer himself to be returned, empanelled or sworn as an assessor in any case in which he knows that he is not entitled by law to be so returned, empanelled or sworn, or knowing himself to have been so returned, empanelled or sworn contrary to law, shall voluntarily serve as... [Section 268: Personation of assessor.] Section 269: Whoever, having been charged with an offence and released on bail bond or on bond, fails without sufficient cause (the burden of proving which shall lie upon him), to appear in Court in accordance with the terms of the bail or bond, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with... [Section 269: Failure by person released on bail bond or bond to appear in Court.] Section 269: Whoever, having been charged with an offence and released on bail bond or on bond, fails without sufficient cause (the burden of proving which shall lie upon him), to appear in Court in accordance with the terms of the bail or bond, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both. [Section 269 Body, Bharatiya Nyaya Sanhita, 2023] Section 73: Whoever prints or publishes any matter in relation to any proceeding before a Court with respect to an offence referred to in section 72 without the previous permission of such Court shall be punished with imprisonment of either description for a term which may extend to two years and shall also be liable to fine. Explanation.—The printing or publication... [Section 73: Printing or publishing any matter relating to Court proceedings without permission.]",
+  "display_answer_type": "summary",
+  "citations": [
+    "Section 268 Body, Bharatiya Nyaya Sanhita, 2023",
+    "Section 268: Personation of assessor.",
+    "Section 269: Failure by person released on bail bond or bond to appear in Court.",
+    "Section 269 Body, Bharatiya Nyaya Sanhita, 2023",
+    "Section 73: Printing or publishing any matter relating to Court proceedings without permission."
+  ],
+  "confidence": {
+    "retrieval": 0.6061,
+    "reranker": 0.5144,
+    "citation": 1.0,
+    "reasoning": 0.7567,
+    "evidence_strength": 0.6061,
+    "reasoning_certainty": 0.7567,
+    "grounding_certainty": 0.25,
+    "raw_score": 0.1147,
+    "confidence_floor": null,
+    "floor_adjusted_score": 0.1147,
+    "applied_caps": [
+      {
+        "reason": "unverified",
+        "max_score": 0.35
+      },
+      {
+        "reason": "unsafe",
+        "max_score": 0.25
+      },
+      {
+        "reason": "fallback",
+        "max_score": 0.65
+      }
+    ],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.5144,
+        "avg_selected_semrank_score": 0.956,
+        "avg_selected_concept_coverage": 0.2,
+        "selected_chunk_count": 5,
+        "matched_selected_chunk_count": 5,
+        "selected_semrank_count": 2
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.7735,
+        "ambiguity_gap_score": 1.0,
+        "uncertainty_score": 0.35,
+        "gap": 0.2474,
+        "highest_competing_score": 0.526,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 0.25
+      }
+    },
+    "score": 0.1147,
+    "label": "low",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "high",
+  "risk_reason": "The retrieved evidence is not sufficient to safely support this answer.",
+  "validation": {
+    "answer_verified": false,
+    "completeness": "unsafe",
+    "warnings": [
+      "Deterministic fallback was used.",
+      "Grounding issue: Unsupported section reference in answer: Section 72",
+      "reasoning uncertainty is high"
+    ],
+    "verification_issues": [
+      "phase11 did not verify the answer",
+      "phase11 marked the answer unsafe"
+    ],
+    "should_show": false
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S268_BODY",
+    "chunk__section__BNS_S268",
+    "chunk__section__BNS_S269",
+    "chunk__node__BNS_S269_BODY",
+    "chunk__section__BNS_S73"
+  ]
+}

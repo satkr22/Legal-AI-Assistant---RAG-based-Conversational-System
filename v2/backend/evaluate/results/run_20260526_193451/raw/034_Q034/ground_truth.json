@@ -1,0 +1,41 @@
+{
+  "query_id": "Q034",
+  "query": "What is the punishment for rape?",
+  "query_type": "punishment",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "64",
+      "subsection": null,
+      "label": "Section 64",
+      "role": "punishment for rape",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "65",
+      "label": "Section 65",
+      "reason": "provides enhanced punishment for rape of woman under 16 or 12"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 64(1) provides that whoever commits rape shall be punished with rigorous imprisonment for not less than ten years, which may extend to imprisonment for life, and shall also be liable to fine.",
+      "Section 64(2) provides enhanced punishment (not less than ten years, extending to imprisonment for life or death) in aggravated circumstances such as when committed by a police officer, public servant, armed forces member, a person in a position of trust, or on a woman with disability."
+    ],
+    "optional_points": [
+      "Section 65 provides that rape on a woman under sixteen years is punishable with rigorous imprisonment for not less than twenty years, extending to imprisonment for remainder of natural life, and fine."
+    ],
+    "forbidden_points": [
+      "The minimum punishment for rape is five years.",
+      "The punishment for rape is always life imprisonment."
+    ]
+  },
+  "notes": "Punishment query. Section 64 has general and aggravated categories."
+}

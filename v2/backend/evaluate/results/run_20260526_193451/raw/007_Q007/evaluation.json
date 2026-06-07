@@ -1,0 +1,193 @@
+{
+  "query_id": "Q007",
+  "query": "What does Section 20 say about children under seven years?",
+  "query_type": "direct_section_lookup",
+  "difficulty": "easy",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "20"
+  ],
+  "acceptable_sections": [
+    "21"
+  ],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "20",
+    "21",
+    "93",
+    "2",
+    "97"
+  ],
+  "candidate_sections_at_10": [
+    "20",
+    "21",
+    "93",
+    "2",
+    "97",
+    "308",
+    "260",
+    "259",
+    "254",
+    "143"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "20",
+    "21",
+    "93",
+    "2",
+    "97"
+  ],
+  "cited_sections": [
+    "20"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.25,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "20"
+    ],
+    "acceptable_hits": [
+      "21"
+    ],
+    "required_or_acceptable_hits": [
+      "20",
+      "21"
+    ],
+    "support_precision_at_k": 0.4,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "93",
+      "2",
+      "97"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1111,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "20"
+    ],
+    "acceptable_hits": [
+      "21"
+    ],
+    "required_or_acceptable_hits": [
+      "20",
+      "21"
+    ],
+    "support_precision_at_k": 0.2,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "93",
+      "2",
+      "97",
+      "308",
+      "260",
+      "259",
+      "254",
+      "143"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.25,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "20"
+    ],
+    "acceptable_hits": [
+      "21"
+    ],
+    "required_or_acceptable_hits": [
+      "20",
+      "21"
+    ],
+    "support_precision_at_k": 0.4,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "93",
+      "2",
+      "97"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.5,
+    "required_points_matched": 1,
+    "required_points_total": 2,
+    "answer_completeness_score": 0.5,
+    "soft_answer_score": 0.875,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Section 20 provides that nothing is an offence which is done by a child under seven years of age.",
+        "matched": true,
+        "overlap": 0.8,
+        "matched_terms": [
+          "age",
+          "child",
+          "seven",
+          "years"
+        ]
+      },
+      {
+        "point": "A child below seven years has complete immunity from criminal liability under BNS.",
+        "matched": false,
+        "overlap": 0.3333,
+        "matched_terms": [
+          "child",
+          "seven",
+          "years"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "20"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 1,
+    "supported_claims": 1,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.925,
+    "risk_level": "low",
+    "high_confidence_wrong": true,
+    "low_risk_wrong": true
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "low_required_point_coverage"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 0.0591,
+    "phase_9_10": 27.7196,
+    "phase_11": 7.9329,
+    "phase_12_13": 0.0002,
+    "total": 35.7118
+  },
+  "final_answer_preview": "According to Section 20 of the Bharatiya Nyaya Sanhita, 2023, any act done by a child under the age of seven years is not considered an offence. Additionally, it mentions that acts committed by children above seven and under twelve years of age may be considered based on their maturity of understanding.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/007_Q007"
+}

@@ -1,0 +1,76 @@
+{
+  "query": "Someone forged a document to claim property. What offence may apply?",
+  "intent": {
+    "primary": "case application",
+    "secondary": [
+      "explanation",
+      "legal penalty"
+    ]
+  },
+  "concepts": [
+    "forgery",
+    "property claim",
+    "counterfeit"
+  ],
+  "targets": [],
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true
+  },
+  "decomposition": {
+    "needed": true,
+    "sub_queries": [
+      {
+        "query": "What is the legal definition of forgery in the context of property claims?",
+        "intent": {
+          "primary": "case application",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "forgery",
+          "property claim"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      },
+      {
+        "query": "What are the punishments for forgery related to property claims?",
+        "intent": {
+          "primary": "case application",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "forgery",
+          "punishment"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      }
+    ]
+  },
+  "confidence": {
+    "hint_relevance": 0.4647,
+    "llm_consistency": 1.0,
+    "rule_strength": 0.35,
+    "structure_validity": 1.0,
+    "overall": 0.6559
+  }
+}

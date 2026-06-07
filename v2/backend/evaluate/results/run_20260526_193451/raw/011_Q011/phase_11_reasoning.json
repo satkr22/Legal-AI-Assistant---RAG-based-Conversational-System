@@ -1,0 +1,3777 @@
+[
+  {
+    "query": "When does private defence of body extend to causing death?",
+    "phase8": {
+      "query": "When does private defence of body extend to causing death?",
+      "intent": {
+        "primary": "definition",
+        "secondary": [
+          "explanation"
+        ]
+      },
+      "concepts": [
+        "right of private defence",
+        "causing death",
+        "Section 38"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.7309,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.35,
+        "structure_validity": 1.0,
+        "overall": 0.7624
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "When does private defence of body extend to causing death?",
+          "targets": [],
+          "concepts": [
+            "right of private defence",
+            "causing death",
+            "Section 38"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S40_BODY",
+            "score": 1.0,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 40,
+            "citation": "Section 40",
+            "text": "The right of private defence of the body commences as soon as a reasonable apprehension of danger to the body arises from an attempt or threat to commit the offence though the offence may not have been committed; and it continues as long as such apprehension of danger to the body continues. When right of private defence of property extends to causing death.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 40: Commencement and continuance of right of private defence of body.\nThe right of private defence of the body commences as soon as a reasonable apprehension of danger to the body arises from an attempt or threat to commit the offence though the offence may not have been committed; and it continues as long as such apprehension of danger to the body continues. When right of private defence of property extends to causing death.",
+            "keywords": [
+              "body",
+              "right",
+              "private",
+              "defence",
+              "apprehension",
+              "danger",
+              "offence",
+              "continues",
+              "commences",
+              "soon",
+              "private defence"
+            ],
+            "legal_concepts": [
+              "right of private defence",
+              "commencement of right",
+              "continuance of right"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "right of private defence"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.8211054801940918,
+              "bm25": 0.3537124461876187,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "right of private defence",
+                "causing death",
+                "section 38",
+                "private",
+                "defence",
+                "body",
+                "extend",
+                "causing"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "right of private defence",
+                  "chunk_concept": "right of private defence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "extend",
+                  "chunk_concept": "continuance of right",
+                  "source": "legal_concept",
+                  "similarity": 0.8837,
+                  "weighted_score": 0.8837
+                },
+                {
+                  "query_concept": "defence",
+                  "chunk_concept": "commencement of right",
+                  "source": "legal_concept",
+                  "similarity": 0.8452,
+                  "weighted_score": 0.8452
+                },
+                {
+                  "query_concept": "body",
+                  "chunk_concept": "body",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "defence",
+                  "chunk_concept": "defence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "right of private defence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S38_BODY",
+            "score": 0.998517,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 38,
+            "citation": "Section 38",
+            "text": "The right of private defence of the body extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the assailant, if the offence which occasions the exercise of the right be of any of the descriptions hereinafter enumerated, namely:—",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 38: When right of private defence of body extends to causing death.\nThe right of private defence of the body extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the assailant, if the offence which occasions the exercise of the right be of any of the descriptions hereinafter enumerated, namely:—",
+            "keywords": [
+              "right",
+              "body",
+              "private",
+              "defence",
+              "extends",
+              "causing",
+              "death",
+              "restrictions",
+              "specified",
+              "voluntary",
+              "private defence",
+              "causing death"
+            ],
+            "legal_concepts": [
+              "right of private defence",
+              "voluntary causing of death"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "right of private defence"
+              ]
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.9723589434960265,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "right of private defence",
+                "causing death",
+                "section 38",
+                "private",
+                "defence",
+                "body",
+                "extend",
+                "causing"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "right of private defence",
+                  "chunk_concept": "right of private defence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "causing death",
+                  "chunk_concept": "voluntary causing of death",
+                  "source": "legal_concept",
+                  "similarity": 0.9316,
+                  "weighted_score": 0.9316
+                },
+                {
+                  "query_concept": "body",
+                  "chunk_concept": "body",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "causing",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "causing death",
+                  "chunk_concept": "causing death",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "right of private defence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S38_G",
+            "score": 0.997684,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 38,
+            "citation": "Section 38",
+            "text": "an act of throwing or administering acid or an attempt to throw or administer acid which may reasonably cause the apprehension that grievous hurt will otherwise be the consequence of such act. When such right extends to causing any harm other than death.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 38: When right of private defence of body extends to causing death.\nan act of throwing or administering acid or an attempt to throw or administer acid which may reasonably cause the apprehension that grievous hurt will otherwise be the consequence of such act. When such right extends to causing any harm other than death.",
+            "keywords": [
+              "acid",
+              "right",
+              "extends",
+              "causing",
+              "death",
+              "throwing",
+              "administering",
+              "attempt",
+              "throw",
+              "administer",
+              "harm"
+            ],
+            "legal_concepts": [
+              "right of private defence",
+              "causing death"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 2,
+              "coverage_ratio": 0.6667,
+              "matched_concepts": [
+                "right of private defence",
+                "causing death"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.8141285181045532,
+              "bm25": 0.4585286645622094,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "right of private defence",
+                "causing death",
+                "section 38",
+                "private",
+                "defence",
+                "body",
+                "extend",
+                "causing"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "causing death",
+                  "chunk_concept": "causing death",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "right of private defence",
+                  "chunk_concept": "right of private defence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "causing",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "extend",
+                  "chunk_concept": "extends",
+                  "source": "keyword",
+                  "similarity": 0.9756,
+                  "weighted_score": 0.7317
+                },
+                {
+                  "query_concept": "causing death",
+                  "chunk_concept": "death",
+                  "source": "keyword",
+                  "similarity": 0.9544,
+                  "weighted_score": 0.7158
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "causing death",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S39_BODY",
+            "score": 0.995523,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 39,
+            "citation": "Section 39",
+            "text": "If the offence be not of any of the descriptions specified in section 38, the right of private defence of the body does not extend to the voluntary causing of death to the assailant, but does extend, under the restrictions specified in section 37, to the voluntary causing to the assailant of any harm other than death. Commencement and continuance of right of private defence of body.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 39: When such right extends to causing any harm other than death.\nIf the offence be not of any of the descriptions specified in section 38, the right of private defence of the body does not extend to the voluntary causing of death to the assailant, but does extend, under the restrictions specified in section 37, to the voluntary causing to the assailant of any harm other than death. Commencement and continuance of right of private defence of body.",
+            "keywords": [
+              "right",
+              "body",
+              "causing",
+              "death",
+              "specified",
+              "private",
+              "defence",
+              "extend",
+              "voluntary",
+              "assailant",
+              "private defence",
+              "harm"
+            ],
+            "legal_concepts": [
+              "right of private defence",
+              "causing harm",
+              "voluntary causing death"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "right of private defence"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.8497828245162964,
+              "bm25": 0.9376998178637628,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "right of private defence",
+                "causing death",
+                "section 38",
+                "private",
+                "defence",
+                "body",
+                "extend",
+                "causing"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "right of private defence",
+                  "chunk_concept": "right of private defence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "causing death",
+                  "chunk_concept": "voluntary causing death",
+                  "source": "legal_concept",
+                  "similarity": 0.9376,
+                  "weighted_score": 0.9376
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "causing harm",
+                  "source": "legal_concept",
+                  "similarity": 0.9212,
+                  "weighted_score": 0.9212
+                },
+                {
+                  "query_concept": "body",
+                  "chunk_concept": "body",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "causing",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "right of private defence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S41_BODY",
+            "score": 0.993517,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 41,
+            "citation": "Section 41",
+            "text": "The right of private defence of property extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the wrong-doer, if the offence, the committing of which, or the attempting to commit which, occasions the exercise of the right, be an offence of any of the descriptions hereinafter enumerated, namely:—",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 41: When right of private defence of property extends to causing death.\nThe right of private defence of property extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the wrong-doer, if the offence, the committing of which, or the attempting to commit which, occasions the exercise of the right, be an offence of any of the descriptions hereinafter enumerated, namely:—",
+            "keywords": [
+              "right",
+              "private",
+              "defence",
+              "property",
+              "extends",
+              "causing",
+              "death",
+              "offence",
+              "restrictions",
+              "specified",
+              "private defence",
+              "property rights"
+            ],
+            "legal_concepts": [
+              "right of private defence",
+              "causing death"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 2,
+              "coverage_ratio": 0.6667,
+              "matched_concepts": [
+                "right of private defence",
+                "causing death"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.8445736765861511,
+              "bm25": 0.3836811987168957,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "right of private defence",
+                "causing death",
+                "section 38",
+                "private",
+                "defence",
+                "body",
+                "extend",
+                "causing"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "causing death",
+                  "chunk_concept": "causing death",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "right of private defence",
+                  "chunk_concept": "right of private defence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "causing",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "defence",
+                  "chunk_concept": "defence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "private",
+                  "chunk_concept": "private",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "causing death",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S37_N2_EXP2",
+            "score": 0.987017,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 37,
+            "citation": "Section 37",
+            "text": "A person is not deprived of the right of private defence against an act done, or attempted to be done, by the direction of a public servant, unless he knows, or has reason to believe, that the person doing the act is acting by such direction, or unless such person states the authority under which he acts, or if he has authority in writing, unless he produces such authority, if demanded. When right of private defence of body extends to causing death.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 37: Acts against which there is no right of private defence.\nThe right of private defence in no case extends to the inflicting of more harm than it is necessary to inflict for the purpose of defence.\nA person is not deprived of the right of private defence against an act done, or attempted to be done, by the direction of a public servant, unless he knows, or has reason to believe, that the person doing the act is acting by such direction, or unless such person states the authority under which he acts, or if he has authority in writing, unless he produces such authority, if demanded. When right of private defence of body extends to causing death.",
+            "keywords": [
+              "right",
+              "private",
+              "defence",
+              "authority",
+              "against",
+              "done",
+              "direction",
+              "acts",
+              "deprived",
+              "attempted",
+              "excessive force",
+              "self-defence"
+            ],
+            "legal_concepts": [
+              "right of private defence",
+              "inflicting more harm"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "right of private defence"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7858757376670837,
+              "bm25": 0.0655909546812548,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "right of private defence",
+                "causing death",
+                "section 38",
+                "private",
+                "defence",
+                "body",
+                "extend",
+                "causing"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "right of private defence",
+                  "chunk_concept": "right of private defence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "causing death",
+                  "chunk_concept": "inflicting more harm",
+                  "source": "legal_concept",
+                  "similarity": 0.891,
+                  "weighted_score": 0.891
+                },
+                {
+                  "query_concept": "defence",
+                  "chunk_concept": "defence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "private",
+                  "chunk_concept": "private",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "defence",
+                  "chunk_concept": "self-defence",
+                  "source": "keyword",
+                  "similarity": 0.9312,
+                  "weighted_score": 0.6984
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "right of private defence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S38_F",
+            "score": 0.983755,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 38,
+            "citation": "Section 38",
+            "text": "an assault with the intention of wrongfully confining a person, under circumstances which may reasonably cause him to apprehend that he will be unable to have recourse to the public authorities for his release;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 38: When right of private defence of body extends to causing death.\nan assault with the intention of wrongfully confining a person, under circumstances which may reasonably cause him to apprehend that he will be unable to have recourse to the public authorities for his release;",
+            "keywords": [
+              "assault",
+              "intention",
+              "wrongfully",
+              "confining",
+              "circumstances",
+              "reasonably",
+              "cause",
+              "apprehend",
+              "unable",
+              "recourse",
+              "private defence"
+            ],
+            "legal_concepts": [
+              "right of private defence",
+              "causing death"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 2,
+              "coverage_ratio": 0.6667,
+              "matched_concepts": [
+                "right of private defence",
+                "causing death"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.86800217628479,
+              "bm25": 0.253283569485082,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "right of private defence",
+                "causing death",
+                "section 38",
+                "private",
+                "defence",
+                "body",
+                "extend",
+                "causing"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "causing death",
+                  "chunk_concept": "causing death",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "right of private defence",
+                  "chunk_concept": "right of private defence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "right of private defence",
+                  "chunk_concept": "private defence",
+                  "source": "keyword",
+                  "similarity": 0.9756,
+                  "weighted_score": 0.7317
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "cause",
+                  "source": "keyword",
+                  "similarity": 0.9625,
+                  "weighted_score": 0.7219
+                },
+                {
+                  "query_concept": "defence",
+                  "chunk_concept": "apprehend",
+                  "source": "keyword",
+                  "similarity": 0.9034,
+                  "weighted_score": 0.6776
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "causing death",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S42_BODY",
+            "score": 0.969619,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 42,
+            "citation": "Section 42",
+            "text": "If the offence, the committing of which, or the attempting to commit which occasions the exercise of the right of private defence, be theft, mischief, or criminal trespass, not of any of the descriptions specified in section 41, that right does not extend to the voluntary causing of death, but does extend, subject to the restrictions specified in section 37, to the voluntary causing to the wrong-doer of any harm other than death. Commencement and continuance of right of private defence of property.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 42: When such right extends to causing any harm other than death.\nIf the offence, the committing of which, or the attempting to commit which occasions the exercise of the right of private defence, be theft, mischief, or criminal trespass, not of any of the descriptions specified in section 41, that right does not extend to the voluntary causing of death, but does extend, subject to the restrictions specified in section 37, to the voluntary causing to the wrong-doer of any harm other than death. Commencement and continuance of right of private defence of property.",
+            "keywords": [
+              "right",
+              "causing",
+              "death",
+              "private",
+              "defence",
+              "specified",
+              "extend",
+              "voluntary",
+              "harm",
+              "offence",
+              "private defence",
+              "harm other than death"
+            ],
+            "legal_concepts": [
+              "right of private defence",
+              "voluntary causing of death"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "right of private defence"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.8148130774497986,
+              "bm25": 0.3831293706776221,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "right of private defence",
+                "causing death",
+                "section 38",
+                "private",
+                "defence",
+                "body",
+                "extend",
+                "causing"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "right of private defence",
+                  "chunk_concept": "right of private defence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "causing death",
+                  "chunk_concept": "voluntary causing of death",
+                  "source": "legal_concept",
+                  "similarity": 0.9316,
+                  "weighted_score": 0.9316
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "causing",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "defence",
+                  "chunk_concept": "defence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "extend",
+                  "chunk_concept": "extend",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "right of private defence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S38_E",
+            "score": 0.96376,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 38,
+            "citation": "Section 38",
+            "text": "an assault with the intention of kidnapping or abducting;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 38: When right of private defence of body extends to causing death.\nan assault with the intention of kidnapping or abducting;",
+            "keywords": [
+              "assault",
+              "intention",
+              "kidnapping",
+              "abducting",
+              "right",
+              "private",
+              "defence",
+              "body",
+              "extends",
+              "causing"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.8446621298789978,
+              "bm25": 0.9642847660099496,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.9642847660099496
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "right of private defence",
+                "causing death",
+                "section 38",
+                "private",
+                "defence",
+                "body",
+                "extend",
+                "causing"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "defence",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "body",
+                  "chunk_concept": "body",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "causing",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "defence",
+                  "chunk_concept": "defence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "private",
+                  "chunk_concept": "private",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "extend",
+                  "chunk_concept": "extends",
+                  "source": "keyword",
+                  "similarity": 0.9756,
+                  "weighted_score": 0.7317
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.955
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S41_D",
+            "score": 0.96287,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 41,
+            "citation": "Section 41",
+            "text": "theft, mischief, or house-trespass, under such circumstances as may reasonably cause apprehension that death or grievous hurt will be the consequence, if such right of private defence is not exercised. When such right extends to causing any harm other than death.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 41: When right of private defence of property extends to causing death.\ntheft, mischief, or house-trespass, under such circumstances as may reasonably cause apprehension that death or grievous hurt will be the consequence, if such right of private defence is not exercised. When such right extends to causing any harm other than death.",
+            "keywords": [
+              "death",
+              "right",
+              "private",
+              "defence",
+              "extends",
+              "causing",
+              "theft",
+              "mischief",
+              "house-trespass",
+              "circumstances"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.83781898021698,
+              "bm25": 0.5340361748991767,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.83781898021698
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "right of private defence",
+                "causing death",
+                "section 38",
+                "private",
+                "defence",
+                "body",
+                "extend",
+                "causing"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "defence",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "causing",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "defence",
+                  "chunk_concept": "defence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "private",
+                  "chunk_concept": "private",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "extend",
+                  "chunk_concept": "extends",
+                  "source": "keyword",
+                  "similarity": 0.9756,
+                  "weighted_score": 0.7317
+                },
+                {
+                  "query_concept": "causing death",
+                  "chunk_concept": "death",
+                  "source": "keyword",
+                  "similarity": 0.9544,
+                  "weighted_score": 0.7158
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.998471,
+              "score_after_pre_rerank": 0.953746
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S40_BODY",
+          "score": 1.0,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 40,
+          "citation": "Section 40",
+          "text": "The right of private defence of the body commences as soon as a reasonable apprehension of danger to the body arises from an attempt or threat to commit the offence though the offence may not have been committed; and it continues as long as such apprehension of danger to the body continues. When right of private defence of property extends to causing death.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 40: Commencement and continuance of right of private defence of body.\nThe right of private defence of the body commences as soon as a reasonable apprehension of danger to the body arises from an attempt or threat to commit the offence though the offence may not have been committed; and it continues as long as such apprehension of danger to the body continues. When right of private defence of property extends to causing death.",
+          "keywords": [
+            "body",
+            "right",
+            "private",
+            "defence",
+            "apprehension",
+            "danger",
+            "offence",
+            "continues",
+            "commences",
+            "soon",
+            "private defence"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "commencement of right",
+            "continuance of right"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "right of private defence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8211054801940918,
+            "original:bm25": 0.3537124461876187,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "extend",
+                "chunk_concept": "continuance of right",
+                "source": "legal_concept",
+                "similarity": 0.8837,
+                "weighted_score": 0.8837
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "commencement of right",
+                "source": "legal_concept",
+                "similarity": 0.8452,
+                "weighted_score": 0.8452
+              },
+              {
+                "query_concept": "body",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "defence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "right of private defence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S38_BODY",
+          "score": 0.998784,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 38,
+          "citation": "Section 38",
+          "text": "The right of private defence of the body extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the assailant, if the offence which occasions the exercise of the right be of any of the descriptions hereinafter enumerated, namely:—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 38: When right of private defence of body extends to causing death.\nThe right of private defence of the body extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the assailant, if the offence which occasions the exercise of the right be of any of the descriptions hereinafter enumerated, namely:—",
+          "keywords": [
+            "right",
+            "body",
+            "private",
+            "defence",
+            "extends",
+            "causing",
+            "death",
+            "restrictions",
+            "specified",
+            "voluntary",
+            "private defence",
+            "causing death"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "voluntary causing of death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "right of private defence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.9723589434960265,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9985173709675592
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "voluntary causing of death",
+                "source": "legal_concept",
+                "similarity": 0.9316,
+                "weighted_score": 0.9316
+              },
+              {
+                "query_concept": "body",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "causing death",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "right of private defence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.998517,
+            "score_after_pre_rerank": 0.998784
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S38_G",
+          "score": 0.998101,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 38,
+          "citation": "Section 38",
+          "text": "an act of throwing or administering acid or an attempt to throw or administer acid which may reasonably cause the apprehension that grievous hurt will otherwise be the consequence of such act. When such right extends to causing any harm other than death.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 38: When right of private defence of body extends to causing death.\nan act of throwing or administering acid or an attempt to throw or administer acid which may reasonably cause the apprehension that grievous hurt will otherwise be the consequence of such act. When such right extends to causing any harm other than death.",
+          "keywords": [
+            "acid",
+            "right",
+            "extends",
+            "causing",
+            "death",
+            "throwing",
+            "administering",
+            "attempt",
+            "throw",
+            "administer",
+            "harm"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "causing death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "right of private defence",
+              "causing death"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8141285181045532,
+            "original:bm25": 0.4585286645622094,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.997684000367713
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "causing death",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "extend",
+                "chunk_concept": "extends",
+                "source": "keyword",
+                "similarity": 0.9756,
+                "weighted_score": 0.7317
+              },
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.9544,
+                "weighted_score": 0.7158
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "causing death",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.997684,
+            "score_after_pre_rerank": 0.998101
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S39_BODY",
+          "score": 0.996329,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 39,
+          "citation": "Section 39",
+          "text": "If the offence be not of any of the descriptions specified in section 38, the right of private defence of the body does not extend to the voluntary causing of death to the assailant, but does extend, under the restrictions specified in section 37, to the voluntary causing to the assailant of any harm other than death. Commencement and continuance of right of private defence of body.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 39: When such right extends to causing any harm other than death.\nIf the offence be not of any of the descriptions specified in section 38, the right of private defence of the body does not extend to the voluntary causing of death to the assailant, but does extend, under the restrictions specified in section 37, to the voluntary causing to the assailant of any harm other than death. Commencement and continuance of right of private defence of body.",
+          "keywords": [
+            "right",
+            "body",
+            "causing",
+            "death",
+            "specified",
+            "private",
+            "defence",
+            "extend",
+            "voluntary",
+            "assailant",
+            "private defence",
+            "harm"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "causing harm",
+            "voluntary causing death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "right of private defence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8497828245162964,
+            "original:bm25": 0.9376998178637628,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9955233128328247
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "voluntary causing death",
+                "source": "legal_concept",
+                "similarity": 0.9376,
+                "weighted_score": 0.9376
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing harm",
+                "source": "legal_concept",
+                "similarity": 0.9212,
+                "weighted_score": 0.9212
+              },
+              {
+                "query_concept": "body",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "right of private defence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.995523,
+            "score_after_pre_rerank": 0.996329
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S41_BODY",
+          "score": 0.994684,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 41,
+          "citation": "Section 41",
+          "text": "The right of private defence of property extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the wrong-doer, if the offence, the committing of which, or the attempting to commit which, occasions the exercise of the right, be an offence of any of the descriptions hereinafter enumerated, namely:—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 41: When right of private defence of property extends to causing death.\nThe right of private defence of property extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the wrong-doer, if the offence, the committing of which, or the attempting to commit which, occasions the exercise of the right, be an offence of any of the descriptions hereinafter enumerated, namely:—",
+          "keywords": [
+            "right",
+            "private",
+            "defence",
+            "property",
+            "extends",
+            "causing",
+            "death",
+            "offence",
+            "restrictions",
+            "specified",
+            "private defence",
+            "property rights"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "causing death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "right of private defence",
+              "causing death"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8445736765861511,
+            "original:bm25": 0.3836811987168957,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9935172550994161
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "causing death",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "defence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "private",
+                "chunk_concept": "private",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "causing death",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.993517,
+            "score_after_pre_rerank": 0.994684
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S37_N2_EXP2",
+          "score": 0.989354,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 37,
+          "citation": "Section 37",
+          "text": "A person is not deprived of the right of private defence against an act done, or attempted to be done, by the direction of a public servant, unless he knows, or has reason to believe, that the person doing the act is acting by such direction, or unless such person states the authority under which he acts, or if he has authority in writing, unless he produces such authority, if demanded. When right of private defence of body extends to causing death.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 37: Acts against which there is no right of private defence.\nThe right of private defence in no case extends to the inflicting of more harm than it is necessary to inflict for the purpose of defence.\nA person is not deprived of the right of private defence against an act done, or attempted to be done, by the direction of a public servant, unless he knows, or has reason to believe, that the person doing the act is acting by such direction, or unless such person states the authority under which he acts, or if he has authority in writing, unless he produces such authority, if demanded. When right of private defence of body extends to causing death.",
+          "keywords": [
+            "right",
+            "private",
+            "defence",
+            "authority",
+            "against",
+            "done",
+            "direction",
+            "acts",
+            "deprived",
+            "attempted",
+            "excessive force",
+            "self-defence"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "inflicting more harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "right of private defence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7858757376670837,
+            "original:bm25": 0.0655909546812548,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9870174887111635
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "inflicting more harm",
+                "source": "legal_concept",
+                "similarity": 0.891,
+                "weighted_score": 0.891
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "defence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "private",
+                "chunk_concept": "private",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "self-defence",
+                "source": "keyword",
+                "similarity": 0.9312,
+                "weighted_score": 0.6984
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "right of private defence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.987017,
+            "score_after_pre_rerank": 0.989354
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S38_F",
+          "score": 0.986679,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 38,
+          "citation": "Section 38",
+          "text": "an assault with the intention of wrongfully confining a person, under circumstances which may reasonably cause him to apprehend that he will be unable to have recourse to the public authorities for his release;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 38: When right of private defence of body extends to causing death.\nan assault with the intention of wrongfully confining a person, under circumstances which may reasonably cause him to apprehend that he will be unable to have recourse to the public authorities for his release;",
+          "keywords": [
+            "assault",
+            "intention",
+            "wrongfully",
+            "confining",
+            "circumstances",
+            "reasonably",
+            "cause",
+            "apprehend",
+            "unable",
+            "recourse",
+            "private defence"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "causing death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "right of private defence",
+              "causing death"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.86800217628479,
+            "original:bm25": 0.253283569485082,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9837547855358183
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "causing death",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "private defence",
+                "source": "keyword",
+                "similarity": 0.9756,
+                "weighted_score": 0.7317
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.9625,
+                "weighted_score": 0.7219
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "apprehend",
+                "source": "keyword",
+                "similarity": 0.9034,
+                "weighted_score": 0.6776
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "causing death",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.983755,
+            "score_after_pre_rerank": 0.986679
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S42_BODY",
+          "score": 0.975088,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 42,
+          "citation": "Section 42",
+          "text": "If the offence, the committing of which, or the attempting to commit which occasions the exercise of the right of private defence, be theft, mischief, or criminal trespass, not of any of the descriptions specified in section 41, that right does not extend to the voluntary causing of death, but does extend, subject to the restrictions specified in section 37, to the voluntary causing to the wrong-doer of any harm other than death. Commencement and continuance of right of private defence of property.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 42: When such right extends to causing any harm other than death.\nIf the offence, the committing of which, or the attempting to commit which occasions the exercise of the right of private defence, be theft, mischief, or criminal trespass, not of any of the descriptions specified in section 41, that right does not extend to the voluntary causing of death, but does extend, subject to the restrictions specified in section 37, to the voluntary causing to the wrong-doer of any harm other than death. Commencement and continuance of right of private defence of property.",
+          "keywords": [
+            "right",
+            "causing",
+            "death",
+            "private",
+            "defence",
+            "specified",
+            "extend",
+            "voluntary",
+            "harm",
+            "offence",
+            "private defence",
+            "harm other than death"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "voluntary causing of death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "right of private defence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8148130774497986,
+            "original:bm25": 0.3831293706776221,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9696190505022728
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "voluntary causing of death",
+                "source": "legal_concept",
+                "similarity": 0.9316,
+                "weighted_score": 0.9316
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "defence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "extend",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "right of private defence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.969619,
+            "score_after_pre_rerank": 0.975088
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S38_E",
+          "score": 0.925283,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 38,
+          "citation": "Section 38",
+          "text": "an assault with the intention of kidnapping or abducting;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 38: When right of private defence of body extends to causing death.\nan assault with the intention of kidnapping or abducting;",
+          "keywords": [
+            "assault",
+            "intention",
+            "kidnapping",
+            "abducting",
+            "right",
+            "private",
+            "defence",
+            "body",
+            "extends",
+            "causing"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.8446621298789978,
+            "original:bm25": 0.9642847660099496,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.9637602550124134
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "defence",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "body",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "defence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "private",
+                "chunk_concept": "private",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "extend",
+                "chunk_concept": "extends",
+                "source": "keyword",
+                "similarity": 0.9756,
+                "weighted_score": 0.7317
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.96376,
+            "score_after_pre_rerank": 0.925283
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S41_D",
+          "score": 0.924553,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 41,
+          "citation": "Section 41",
+          "text": "theft, mischief, or house-trespass, under such circumstances as may reasonably cause apprehension that death or grievous hurt will be the consequence, if such right of private defence is not exercised. When such right extends to causing any harm other than death.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 41: When right of private defence of property extends to causing death.\ntheft, mischief, or house-trespass, under such circumstances as may reasonably cause apprehension that death or grievous hurt will be the consequence, if such right of private defence is not exercised. When such right extends to causing any harm other than death.",
+          "keywords": [
+            "death",
+            "right",
+            "private",
+            "defence",
+            "extends",
+            "causing",
+            "theft",
+            "mischief",
+            "house-trespass",
+            "circumstances"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.83781898021698,
+            "original:bm25": 0.5340361748991767,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.9628699024326466
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "defence",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "defence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "private",
+                "chunk_concept": "private",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "extend",
+                "chunk_concept": "extends",
+                "source": "keyword",
+                "similarity": 0.9756,
+                "weighted_score": 0.7317
+              },
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.9544,
+                "weighted_score": 0.7158
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.96287,
+            "score_after_pre_rerank": 0.924553
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S40_BODY",
+          "score": 1.0,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 40,
+          "citation": "Section 40",
+          "text": "The right of private defence of the body commences as soon as a reasonable apprehension of danger to the body arises from an attempt or threat to commit the offence though the offence may not have been committed; and it continues as long as such apprehension of danger to the body continues. When right of private defence of property extends to causing death.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 40: Commencement and continuance of right of private defence of body.\nThe right of private defence of the body commences as soon as a reasonable apprehension of danger to the body arises from an attempt or threat to commit the offence though the offence may not have been committed; and it continues as long as such apprehension of danger to the body continues. When right of private defence of property extends to causing death.",
+          "keywords": [
+            "body",
+            "right",
+            "private",
+            "defence",
+            "apprehension",
+            "danger",
+            "offence",
+            "continues",
+            "commences",
+            "soon",
+            "private defence"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "commencement of right",
+            "continuance of right"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "right of private defence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8211054801940918,
+            "original:bm25": 0.3537124461876187,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "extend",
+                "chunk_concept": "continuance of right",
+                "source": "legal_concept",
+                "similarity": 0.8837,
+                "weighted_score": 0.8837
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "commencement of right",
+                "source": "legal_concept",
+                "similarity": 0.8452,
+                "weighted_score": 0.8452
+              },
+              {
+                "query_concept": "body",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "defence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "right of private defence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S38_BODY",
+          "score": 0.970233,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 38,
+          "citation": "Section 38",
+          "text": "The right of private defence of the body extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the assailant, if the offence which occasions the exercise of the right be of any of the descriptions hereinafter enumerated, namely:—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 38: When right of private defence of body extends to causing death.\nThe right of private defence of the body extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the assailant, if the offence which occasions the exercise of the right be of any of the descriptions hereinafter enumerated, namely:—",
+          "keywords": [
+            "right",
+            "body",
+            "private",
+            "defence",
+            "extends",
+            "causing",
+            "death",
+            "restrictions",
+            "specified",
+            "voluntary",
+            "private defence",
+            "causing death"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "voluntary causing of death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "right of private defence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.9723589434960265,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9985173709675592
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "voluntary causing of death",
+                "source": "legal_concept",
+                "similarity": 0.9316,
+                "weighted_score": 0.9316
+              },
+              {
+                "query_concept": "body",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "causing death",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "right of private defence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.998517,
+            "score_after_pre_rerank": 0.998784
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S38_G",
+          "score": 0.953503,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 38,
+          "citation": "Section 38",
+          "text": "an act of throwing or administering acid or an attempt to throw or administer acid which may reasonably cause the apprehension that grievous hurt will otherwise be the consequence of such act. When such right extends to causing any harm other than death.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 38: When right of private defence of body extends to causing death.\nan act of throwing or administering acid or an attempt to throw or administer acid which may reasonably cause the apprehension that grievous hurt will otherwise be the consequence of such act. When such right extends to causing any harm other than death.",
+          "keywords": [
+            "acid",
+            "right",
+            "extends",
+            "causing",
+            "death",
+            "throwing",
+            "administering",
+            "attempt",
+            "throw",
+            "administer",
+            "harm"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "causing death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "right of private defence",
+              "causing death"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8141285181045532,
+            "original:bm25": 0.4585286645622094,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.997684000367713
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "causing death",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "extend",
+                "chunk_concept": "extends",
+                "source": "keyword",
+                "similarity": 0.9756,
+                "weighted_score": 0.7317
+              },
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.9544,
+                "weighted_score": 0.7158
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "causing death",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.997684,
+            "score_after_pre_rerank": 0.998101
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S39_BODY",
+          "score": 0.910121,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 39,
+          "citation": "Section 39",
+          "text": "If the offence be not of any of the descriptions specified in section 38, the right of private defence of the body does not extend to the voluntary causing of death to the assailant, but does extend, under the restrictions specified in section 37, to the voluntary causing to the assailant of any harm other than death. Commencement and continuance of right of private defence of body.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 39: When such right extends to causing any harm other than death.\nIf the offence be not of any of the descriptions specified in section 38, the right of private defence of the body does not extend to the voluntary causing of death to the assailant, but does extend, under the restrictions specified in section 37, to the voluntary causing to the assailant of any harm other than death. Commencement and continuance of right of private defence of body.",
+          "keywords": [
+            "right",
+            "body",
+            "causing",
+            "death",
+            "specified",
+            "private",
+            "defence",
+            "extend",
+            "voluntary",
+            "assailant",
+            "private defence",
+            "harm"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "causing harm",
+            "voluntary causing death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "right of private defence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8497828245162964,
+            "original:bm25": 0.9376998178637628,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9955233128328247
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "voluntary causing death",
+                "source": "legal_concept",
+                "similarity": 0.9376,
+                "weighted_score": 0.9376
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing harm",
+                "source": "legal_concept",
+                "similarity": 0.9212,
+                "weighted_score": 0.9212
+              },
+              {
+                "query_concept": "body",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "right of private defence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.995523,
+            "score_after_pre_rerank": 0.996329
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S41_BODY",
+          "score": 0.869845,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 41,
+          "citation": "Section 41",
+          "text": "The right of private defence of property extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the wrong-doer, if the offence, the committing of which, or the attempting to commit which, occasions the exercise of the right, be an offence of any of the descriptions hereinafter enumerated, namely:—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 41: When right of private defence of property extends to causing death.\nThe right of private defence of property extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the wrong-doer, if the offence, the committing of which, or the attempting to commit which, occasions the exercise of the right, be an offence of any of the descriptions hereinafter enumerated, namely:—",
+          "keywords": [
+            "right",
+            "private",
+            "defence",
+            "property",
+            "extends",
+            "causing",
+            "death",
+            "offence",
+            "restrictions",
+            "specified",
+            "private defence",
+            "property rights"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "causing death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "right of private defence",
+              "causing death"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8445736765861511,
+            "original:bm25": 0.3836811987168957,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9935172550994161
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "causing death",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "defence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "private",
+                "chunk_concept": "private",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "causing death",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.993517,
+            "score_after_pre_rerank": 0.994684
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S37_N2_EXP2",
+          "score": 0.739347,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 37,
+          "citation": "Section 37",
+          "text": "A person is not deprived of the right of private defence against an act done, or attempted to be done, by the direction of a public servant, unless he knows, or has reason to believe, that the person doing the act is acting by such direction, or unless such person states the authority under which he acts, or if he has authority in writing, unless he produces such authority, if demanded. When right of private defence of body extends to causing death.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 37: Acts against which there is no right of private defence.\nThe right of private defence in no case extends to the inflicting of more harm than it is necessary to inflict for the purpose of defence.\nA person is not deprived of the right of private defence against an act done, or attempted to be done, by the direction of a public servant, unless he knows, or has reason to believe, that the person doing the act is acting by such direction, or unless such person states the authority under which he acts, or if he has authority in writing, unless he produces such authority, if demanded. When right of private defence of body extends to causing death.",
+          "keywords": [
+            "right",
+            "private",
+            "defence",
+            "authority",
+            "against",
+            "done",
+            "direction",
+            "acts",
+            "deprived",
+            "attempted",
+            "excessive force",
+            "self-defence"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "inflicting more harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "right of private defence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7858757376670837,
+            "original:bm25": 0.0655909546812548,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9870174887111635
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "inflicting more harm",
+                "source": "legal_concept",
+                "similarity": 0.891,
+                "weighted_score": 0.891
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "defence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "private",
+                "chunk_concept": "private",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "self-defence",
+                "source": "keyword",
+                "similarity": 0.9312,
+                "weighted_score": 0.6984
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "right of private defence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.987017,
+            "score_after_pre_rerank": 0.989354
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S38_F",
+          "score": 0.673841,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 38,
+          "citation": "Section 38",
+          "text": "an assault with the intention of wrongfully confining a person, under circumstances which may reasonably cause him to apprehend that he will be unable to have recourse to the public authorities for his release;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 38: When right of private defence of body extends to causing death.\nan assault with the intention of wrongfully confining a person, under circumstances which may reasonably cause him to apprehend that he will be unable to have recourse to the public authorities for his release;",
+          "keywords": [
+            "assault",
+            "intention",
+            "wrongfully",
+            "confining",
+            "circumstances",
+            "reasonably",
+            "cause",
+            "apprehend",
+            "unable",
+            "recourse",
+            "private defence"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "causing death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "right of private defence",
+              "causing death"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.86800217628479,
+            "original:bm25": 0.253283569485082,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9837547855358183
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "causing death",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "private defence",
+                "source": "keyword",
+                "similarity": 0.9756,
+                "weighted_score": 0.7317
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.9625,
+                "weighted_score": 0.7219
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "apprehend",
+                "source": "keyword",
+                "similarity": 0.9034,
+                "weighted_score": 0.6776
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "causing death",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.983755,
+            "score_after_pre_rerank": 0.986679
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S38_E",
+          "score": 0.609891,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 38,
+          "citation": "Section 38",
+          "text": "an assault with the intention of kidnapping or abducting;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 38: When right of private defence of body extends to causing death.\nan assault with the intention of kidnapping or abducting;",
+          "keywords": [
+            "assault",
+            "intention",
+            "kidnapping",
+            "abducting",
+            "right",
+            "private",
+            "defence",
+            "body",
+            "extends",
+            "causing"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.8446621298789978,
+            "original:bm25": 0.9642847660099496,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.9637602550124134
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "defence",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "body",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "defence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "private",
+                "chunk_concept": "private",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "extend",
+                "chunk_concept": "extends",
+                "source": "keyword",
+                "similarity": 0.9756,
+                "weighted_score": 0.7317
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.96376,
+            "score_after_pre_rerank": 0.925283
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S41_D",
+          "score": 0.601923,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 41,
+          "citation": "Section 41",
+          "text": "theft, mischief, or house-trespass, under such circumstances as may reasonably cause apprehension that death or grievous hurt will be the consequence, if such right of private defence is not exercised. When such right extends to causing any harm other than death.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 41: When right of private defence of property extends to causing death.\ntheft, mischief, or house-trespass, under such circumstances as may reasonably cause apprehension that death or grievous hurt will be the consequence, if such right of private defence is not exercised. When such right extends to causing any harm other than death.",
+          "keywords": [
+            "death",
+            "right",
+            "private",
+            "defence",
+            "extends",
+            "causing",
+            "theft",
+            "mischief",
+            "house-trespass",
+            "circumstances"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.83781898021698,
+            "original:bm25": 0.5340361748991767,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.9628699024326466
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "defence",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "defence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "private",
+                "chunk_concept": "private",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "extend",
+                "chunk_concept": "extends",
+                "source": "keyword",
+                "similarity": 0.9756,
+                "weighted_score": 0.7317
+              },
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.9544,
+                "weighted_score": 0.7158
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.96287,
+            "score_after_pre_rerank": 0.924553
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S42_BODY",
+          "score": 0.390035,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 42,
+          "citation": "Section 42",
+          "text": "If the offence, the committing of which, or the attempting to commit which occasions the exercise of the right of private defence, be theft, mischief, or criminal trespass, not of any of the descriptions specified in section 41, that right does not extend to the voluntary causing of death, but does extend, subject to the restrictions specified in section 37, to the voluntary causing to the wrong-doer of any harm other than death. Commencement and continuance of right of private defence of property.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 42: When such right extends to causing any harm other than death.\nIf the offence, the committing of which, or the attempting to commit which occasions the exercise of the right of private defence, be theft, mischief, or criminal trespass, not of any of the descriptions specified in section 41, that right does not extend to the voluntary causing of death, but does extend, subject to the restrictions specified in section 37, to the voluntary causing to the wrong-doer of any harm other than death. Commencement and continuance of right of private defence of property.",
+          "keywords": [
+            "right",
+            "causing",
+            "death",
+            "private",
+            "defence",
+            "specified",
+            "extend",
+            "voluntary",
+            "harm",
+            "offence",
+            "private defence",
+            "harm other than death"
+          ],
+          "legal_concepts": [
+            "right of private defence",
+            "voluntary causing of death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "right of private defence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8148130774497986,
+            "original:bm25": 0.3831293706776221,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9696190505022728
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "right of private defence",
+              "causing death",
+              "section 38",
+              "private",
+              "defence",
+              "body",
+              "extend",
+              "causing"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "right of private defence",
+                "chunk_concept": "right of private defence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing death",
+                "chunk_concept": "voluntary causing of death",
+                "source": "legal_concept",
+                "similarity": 0.9316,
+                "weighted_score": 0.9316
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "defence",
+                "chunk_concept": "defence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "extend",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "right of private defence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.969619,
+            "score_after_pre_rerank": 0.975088
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    },
+    "phase11": {
+      "answer_type": "definition",
+      "support_status": "supported",
+      "confidence": {
+        "score": 0.98,
+        "label": "high"
+      },
+      "final_answer": "The right of private defence of body extends to causing death when the offence is of a specific description outlined in Section 38 of the Bharatiya Nyaya Sanhita, 2023.",
+      "summary_answer": "The right of private defence of body extends to causing death when the offence is of a specific description outlined in Section 38 of the Bharatiya Nyaya Sanhita, 2023.",
+      "detailed_answer": "According to Section 38 of the Bharatiya Nyaya Sanhita, 2023, the right of private defence of the body allows for the voluntary causing of death to an assailant if the offence that triggers this right falls under certain specified descriptions. If the offence does not meet these descriptions, as stated in Section 39, the right does not extend to causing death, but may allow for other forms of harm. Therefore, the extension of private defence to causing death is contingent upon the nature of the offence being committed or attempted.",
+      "citations": [
+        "Section 38 Body, Bharatiya Nyaya Sanhita, 2023",
+        "Section 39 Body, Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "matched_sections": [
+        "Section 38",
+        "Section 40",
+        "Section 39",
+        "Section 41"
+      ],
+      "missing_sections": [],
+      "missing_from_corpus": [],
+      "selected_chunk_ids": [
+        "chunk__node__BNS_S38_BODY",
+        "chunk__node__BNS_S39_BODY"
+      ],
+      "warnings": [
+        "Several sections are close in relevance; the answer uses the strongest supported section."
+      ],
+      "structured_reasoning": {
+        "base_concept": "",
+        "selected_section": "Section 38",
+        "selection_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "overrides_score_selection": false,
+        "uncertainty": "low",
+        "uncertainty_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "alternative_sections": [
+          "Section 40",
+          "Section 39",
+          "Section 41"
+        ],
+        "sections_analyzed": [
+          {
+            "section": "Section 38",
+            "role": "retrieved_evidence",
+            "condition_summary": "The right of private defence of the body extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the assailant, if the offence which occasions the exercise of the right be of any of the descriptions...",
+            "condition_match_score": 0.970233,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "right of private defence ~ right of private defence",
+              "causing death ~ voluntary causing of death",
+              "body ~ body",
+              "causing ~ causing",
+              "causing death ~ causing death"
+            ],
+            "raw_retrieval_score": 0.970233,
+            "hit_count": 2,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 40",
+            "role": "retrieved_evidence",
+            "condition_summary": "The right of private defence of the body commences as soon as a reasonable apprehension of danger to the body arises from an attempt or threat to commit the offence though the offence may not have been committed; and it continues as long as such...",
+            "condition_match_score": 1.0,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "right of private defence ~ right of private defence",
+              "extend ~ continuance of right",
+              "defence ~ commencement of right",
+              "body ~ body",
+              "defence ~ defence"
+            ],
+            "raw_retrieval_score": 1.0,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 39",
+            "role": "retrieved_evidence",
+            "condition_summary": "If the offence be not of any of the descriptions specified in section 38, the right of private defence of the body does not extend to the voluntary causing of death to the assailant, but does extend, under the restrictions specified in section 37, to the...",
+            "condition_match_score": 0.910121,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "right of private defence ~ right of private defence",
+              "causing death ~ voluntary causing death",
+              "causing ~ causing harm",
+              "body ~ body",
+              "causing ~ causing"
+            ],
+            "raw_retrieval_score": 0.910121,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 41",
+            "role": "retrieved_evidence",
+            "condition_summary": "The right of private defence of property extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the wrong-doer, if the offence, the committing of which, or the attempting to commit which, occasions...",
+            "condition_match_score": 0.869845,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "causing death ~ causing death",
+              "right of private defence ~ right of private defence",
+              "causing ~ causing",
+              "defence ~ defence",
+              "private ~ private"
+            ],
+            "raw_retrieval_score": 0.869845,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          }
+        ]
+      },
+      "validation": {
+        "requested_sections": [],
+        "present_in_corpus": [],
+        "retrieved_exact_matches": [],
+        "missing_from_corpus": [],
+        "intent_alignment": "strong",
+        "intent_notes": [
+          "Lookup intent is anchored by a direct base legal chunk."
+        ],
+        "answer_verified": true,
+        "verification_issues": [],
+        "llm_answer_verified": true,
+        "llm_verification_issues": [],
+        "completeness": "complete",
+        "guardrail_grounding_strength": 1.0,
+        "repaired": false,
+        "fallback_used": false
+      },
+      "evidence": {
+        "primary_chunk_id": "chunk__node__BNS_S38_BODY",
+        "primary_chunk_type": "content",
+        "primary_section": "Section 38",
+        "primary_section_title": "When right of private defence of body extends to causing death.",
+        "related_chunk_ids": [
+          "chunk__node__BNS_S39_BODY"
+        ],
+        "top_sections": [
+          {
+            "section": "Section 40",
+            "section_title": "Commencement and continuance of right of private defence of body.",
+            "hit_count": 1,
+            "best_score": 1.0,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.3333
+          },
+          {
+            "section": "Section 38",
+            "section_title": "When right of private defence of body extends to causing death.",
+            "hit_count": 2,
+            "best_score": 0.970233,
+            "chunk_types": {
+              "content": 1,
+              "clause": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.6667
+          },
+          {
+            "section": "Section 39",
+            "section_title": "When such right extends to causing any harm other than death.",
+            "hit_count": 1,
+            "best_score": 0.910121,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.3333
+          },
+          {
+            "section": "Section 41",
+            "section_title": "When right of private defence of property extends to causing death.",
+            "hit_count": 1,
+            "best_score": 0.869845,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.6667
+          }
+        ],
+        "llm_evidence": [
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S38_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": "38",
+            "citation": "Section 38 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "The right of private defence of the body extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the assailant, if the offence which occasions the exercise of the right be of any of the descriptions hereinafter enumerated, namely:—"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S38_G",
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": "38",
+            "citation": "Section 38(g), Bharatiya Nyaya Sanhita, 2023",
+            "text": "an act of throwing or administering acid or an attempt to throw or administer acid which may reasonably cause the apprehension that grievous hurt will otherwise be the consequence of such act. When such right extends to causing any harm other than death."
+          },
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S40_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": "40",
+            "citation": "Section 40 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "The right of private defence of the body commences as soon as a reasonable apprehension of danger to the body arises from an attempt or threat to commit the offence though the offence may not have been committed; and it continues as long as such apprehension of danger to the body continues. When right of private defence of property extends to causing death."
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S39_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": "39",
+            "citation": "Section 39 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "If the offence be not of any of the descriptions specified in section 38, the right of private defence of the body does not extend to the voluntary causing of death to the assailant, but does extend, under the restrictions specified in section 37, to the voluntary causing to the assailant of any harm other than death. Commencement and continuance of right of private defence of body."
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S41_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": "41",
+            "citation": "Section 41 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "The right of private defence of property extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the wrong-doer, if the offence, the committing of which, or the attempting to commit which, occasions the exercise of the right, be an offence of any of the descriptions hereinafter enumerated, namely:—"
+          }
+        ]
+      },
+      "llm_generation": {
+        "enabled": true,
+        "used": true,
+        "model": "gpt-4o-mini",
+        "reasoning_trace": [
+          "Identified that Section 38 allows for causing death under certain offences.",
+          "Referenced Section 39 to clarify the limitations on causing death."
+        ],
+        "caution_notes": [],
+        "error": null,
+        "repaired": false,
+        "fallback_used": false
+      }
+    }
+  }
+]

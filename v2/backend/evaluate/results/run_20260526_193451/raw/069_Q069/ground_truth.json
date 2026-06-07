@@ -1,0 +1,42 @@
+{
+  "query_id": "Q069",
+  "query": "If someone commits an act by mistake of fact, can they be protected?",
+  "query_type": "multi_hop",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "14",
+      "subsection": null,
+      "label": "Section 14",
+      "role": "act done by mistake of fact believing oneself bound by law",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "17",
+      "label": "Section 17",
+      "reason": "act done by mistake of fact believing oneself justified by law"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 14 protects a person who, by reason of a mistake of fact (not mistake of law) and in good faith, believes themselves to be bound by law to do the act.",
+      "The protection is only for mistakes of fact, not mistakes of law.",
+      "The act must be done in good faith, meaning with due care and attention."
+    ],
+    "optional_points": [
+      "Section 17 similarly protects acts done by a person who, by mistake of fact, believes themselves to be justified by law."
+    ],
+    "forbidden_points": [
+      "Mistake of fact never provides any protection under BNS.",
+      "A mistake of law also provides protection under Section 14."
+    ]
+  },
+  "notes": "Multi-hop. Sections 14 and 17 are the relevant provisions."
+}

@@ -1,0 +1,41 @@
+{
+  "query_id": "Q012",
+  "query": "Explain abetment under Section 45.",
+  "query_type": "direct_section_lookup",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "45",
+      "subsection": null,
+      "label": "Section 45",
+      "role": "definition of abetment of a thing",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "46",
+      "label": "Section 46",
+      "reason": "defines abettor"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 45 defines abetment. A person abets the doing of a thing who: (a) instigates any person to do that thing; (b) engages in a conspiracy for the doing of that thing if an act or illegal omission takes place in pursuance thereof; or (c) intentionally aids, by any act or illegal omission, the doing of that thing.",
+      "Abetment can occur by wilful misrepresentation or wilful concealment of a material fact."
+    ],
+    "optional_points": [
+      "Section 46 further defines an abettor as one who abets either the commission of an offence or an act that would be an offence if committed by a person capable by law."
+    ],
+    "forbidden_points": [
+      "Abetment requires physical presence at the crime scene.",
+      "Abetment only covers instigation, not aid or conspiracy."
+    ]
+  },
+  "notes": "Direct lookup. Section 45 is the foundational abetment definition."
+}

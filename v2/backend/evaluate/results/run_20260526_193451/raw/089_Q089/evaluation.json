@@ -1,0 +1,193 @@
+{
+  "query_id": "Q089",
+  "query": "Explain good faith with a simple example.",
+  "query_type": "illustration",
+  "difficulty": "easy",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "2"
+  ],
+  "acceptable_sections": [
+    "14",
+    "27"
+  ],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "27",
+    "314",
+    "316",
+    "356",
+    "2"
+  ],
+  "candidate_sections_at_10": [
+    "27",
+    "314",
+    "316",
+    "356",
+    "2",
+    "27",
+    "356",
+    "356",
+    "356",
+    "356"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "27",
+    "27",
+    "314",
+    "316",
+    "356"
+  ],
+  "cited_sections": [
+    "27"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.25,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 0.2,
+    "required_hits": [
+      "2"
+    ],
+    "acceptable_hits": [
+      "27"
+    ],
+    "required_or_acceptable_hits": [
+      "2",
+      "27"
+    ],
+    "support_precision_at_k": 0.4,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "314",
+      "316",
+      "356"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.125,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 0.2,
+    "required_hits": [
+      "2"
+    ],
+    "acceptable_hits": [
+      "27"
+    ],
+    "required_or_acceptable_hits": [
+      "2",
+      "27"
+    ],
+    "support_precision_at_k": 0.4,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "314",
+      "316",
+      "356",
+      "356",
+      "356",
+      "356",
+      "356"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "mrr_at_k": 0.0,
+    "required_hits": [],
+    "acceptable_hits": [
+      "27"
+    ],
+    "required_or_acceptable_hits": [
+      "27"
+    ],
+    "support_precision_at_k": 0.25,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "314",
+      "316",
+      "356"
+    ],
+    "selector_loss": true
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.0,
+    "required_points_matched": 0,
+    "required_points_total": 2,
+    "answer_completeness_score": 0.0,
+    "soft_answer_score": 0.35,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Section 2(11) defines good faith as requiring due care and attention; nothing is done in good faith without due care and attention.",
+        "matched": false,
+        "overlap": 0.25,
+        "matched_terms": [
+          "faith",
+          "good"
+        ]
+      },
+      {
+        "point": "Section 14 provides an illustration: A, an officer of a Court, ordered to arrest Y, and after due enquiry believing Z to be Y, arrests Z. A has committed no offence because A acted in good faith with due care.",
+        "matched": false,
+        "overlap": 0.3125,
+        "matched_terms": [
+          "believing",
+          "faith",
+          "good",
+          "has",
+          "illustration"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 0.0,
+    "correct_cited_sections": [
+      "27"
+    ],
+    "missing_required_sections": [
+      "2"
+    ],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 1,
+    "supported_claims": 1,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "missing_required_citation",
+    "low_required_point_coverage"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 5.2764,
+    "phase_9_10": 3.7545,
+    "phase_11": 17.1863,
+    "phase_12_13": 0.0002,
+    "total": 26.2175
+  },
+  "final_answer_preview": "Good faith is characterized by actions performed with honest intentions for the benefit of another person, particularly in situations involving vulnerable individuals. An example from the Bharatiya Nyaya Sanhita illustrates this concept: a parent (A) has their child undergo a surgical procedure, believing it will cure a condition, even though it may likely result in the child's death. A's intention is to benefit the child, thus placing A within the legal exception for good faith actions, as their objective was the child's cure, not harm. This is supported by Section 27 and its illustration in the Bharatiya Nyaya Sanhita, 2023.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/089_Q089"
+}

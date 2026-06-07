@@ -1,0 +1,69 @@
+{
+  "answer": "According to Section 229(1) of the Bharatiya Nyaya Sanhita, 2023, whoever intentionally gives false evidence or fabricates false evidence for use in any stage of a judicial proceeding shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to a fine which may extend to ten thousand rupees. For cases not referred to in subsection (1), Section 229(2) states that the punishment can be imprisonment for up to three years and a fine of up to five thousand rupees.",
+  "summary_answer": "The punishment for intentionally giving false evidence in a judicial proceeding can be imprisonment for up to seven years and a fine of up to ten thousand rupees.",
+  "detailed_answer": "According to Section 229(1) of the Bharatiya Nyaya Sanhita, 2023, whoever intentionally gives false evidence or fabricates false evidence for use in any stage of a judicial proceeding shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to a fine which may extend to ten thousand rupees. For cases not referred to in subsection (1), Section 229(2) states that the punishment can be imprisonment for up to three years and a fine of up to five thousand rupees.",
+  "final_answer": "The punishment for false evidence can be up to seven years of imprisonment and a fine of up to ten thousand rupees for cases in judicial proceedings, or up to three years and a fine of up to five thousand rupees for other cases.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 229(1), Bharatiya Nyaya Sanhita, 2023",
+    "Section 229(2), Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.7477,
+    "reranker": 0.8989,
+    "citation": 1.0,
+    "reasoning": 0.9991,
+    "evidence_strength": 0.7477,
+    "reasoning_certainty": 0.9991,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.747,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.747,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.8989,
+        "avg_selected_semrank_score": 0.9805,
+        "avg_selected_concept_coverage": 0.0,
+        "selected_chunk_count": 2,
+        "matched_selected_chunk_count": 2,
+        "selected_semrank_count": 2
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.9981,
+        "ambiguity_gap_score": 1.0,
+        "uncertainty_score": 1.0,
+        "gap": 0.2864,
+        "highest_competing_score": 0.7117,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.747,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S229_N1",
+    "chunk__node__BNS_S229_N2"
+  ]
+}

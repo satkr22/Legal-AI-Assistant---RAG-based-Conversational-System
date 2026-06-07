@@ -1,0 +1,71 @@
+{
+  "answer": "Section 14 of the Bharatiya Nyaya Sanhita states that no act is considered an offence if performed by a person who, due to a mistake of fact and not a mistake of law, believes in good faith that they are bound by law to perform that act.",
+  "summary_answer": "Section 14 of the Bharatiya Nyaya Sanhita states that no act is considered an offence if performed by a person who, due to a mistake of fact and not a mistake of law, believes in good faith that they are bound by law to perform that act.",
+  "detailed_answer": "Section 14 of the Bharatiya Nyaya Sanhita, 2023, provides that nothing is an offence if done by a person who believes, in good faith and due to a mistake of fact (not law), that they are legally bound to act. For example, a soldier acting under orders or a court officer mistakenly arresting the wrong person under a court order would not be committing an offence. This section emphasizes the importance of the individual's belief and the nature of the mistake involved.",
+  "final_answer": "Section 14 of the Bharatiya Nyaya Sanhita states that no act is considered an offence if performed by a person who, due to a mistake of fact and not a mistake of law, believes in good faith that they are bound by law to perform that act.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 14: Act done by a person bound, or by mistake of fact believing himself bound, by law.",
+    "Section 14 Body, Bharatiya Nyaya Sanhita, 2023",
+    "Section 14 Illustration(b), Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.8169,
+    "reranker": 0.9494,
+    "citation": 1.0,
+    "reasoning": 0.9856,
+    "evidence_strength": 0.8169,
+    "reasoning_certainty": 0.9856,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.8052,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.8052,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.9494,
+        "avg_selected_semrank_score": 0.923,
+        "avg_selected_concept_coverage": 0.3333,
+        "selected_chunk_count": 3,
+        "matched_selected_chunk_count": 3,
+        "selected_semrank_count": 2
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.9713,
+        "ambiguity_gap_score": 1.0,
+        "uncertainty_score": 1.0,
+        "gap": 0.2883,
+        "highest_competing_score": 0.683,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.8052,
+    "label": "high",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "low",
+  "risk_reason": "Evidence, citations, and reasoning are aligned well enough for the final answer view.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__section__BNS_S14",
+    "chunk__node__BNS_S14_BODY",
+    "chunk__node__BNS_S14_ILL1_B"
+  ]
+}

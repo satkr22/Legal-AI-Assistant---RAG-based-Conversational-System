@@ -1,0 +1,3428 @@
+[
+  {
+    "query": "What is Section 1 of BNS about?",
+    "phase8": {
+      "query": "What is Section 1 of BNS about?",
+      "intent": {
+        "primary": "lookup",
+        "secondary": []
+      },
+      "concepts": [
+        "act title",
+        "commencement date",
+        "force of law",
+        "central government authority",
+        "liable to punishment",
+        "acts or omissions contrary to provisions",
+        "extraterritorial jurisdiction",
+        "cybercrime"
+      ],
+      "targets": [
+        "Section 1"
+      ],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 1.0,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.8,
+        "structure_validity": 1.0,
+        "overall": 0.96
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is Section 1 of BNS about?",
+          "targets": [
+            "Section 1"
+          ],
+          "concepts": [
+            "act title",
+            "commencement date",
+            "force of law",
+            "central government authority",
+            "liable to punishment",
+            "acts or omissions contrary to provisions",
+            "extraterritorial jurisdiction",
+            "cybercrime"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S1_N3",
+            "score": 1.0,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 1,
+            "citation": "Section 1",
+            "text": "Every person shall be liable to punishment under this Sanhita and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within India.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nEvery person shall be liable to punishment under this Sanhita and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within India.",
+            "keywords": [
+              "liable",
+              "punishment",
+              "omission",
+              "contrary",
+              "guilty",
+              "india",
+              "short",
+              "title",
+              "commencement"
+            ],
+            "legal_concepts": [
+              "liable to punishment",
+              "acts or omissions contrary to provisions"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 2,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "liable to punishment",
+                "acts or omissions contrary to provisions"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6478191614151001,
+              "bm25": 0.5,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "act title",
+                "commencement date",
+                "force of law",
+                "central government authority",
+                "liable to punishment",
+                "acts or omissions contrary to provisions",
+                "extraterritorial jurisdiction",
+                "cybercrime"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "acts or omissions contrary to provisions",
+                  "chunk_concept": "acts or omissions contrary to provisions",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "liable to punishment",
+                  "chunk_concept": "liable to punishment",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "title",
+                  "source": "keyword",
+                  "similarity": 0.9562,
+                  "weighted_score": 0.7171
+                },
+                {
+                  "query_concept": "commencement date",
+                  "chunk_concept": "commencement",
+                  "source": "keyword",
+                  "similarity": 0.9509,
+                  "weighted_score": 0.7132
+                },
+                {
+                  "query_concept": "liable to punishment",
+                  "chunk_concept": "liable",
+                  "source": "keyword",
+                  "similarity": 0.9322,
+                  "weighted_score": 0.6992
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "liable to punishment",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S1_N5_C",
+            "score": 0.84386,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 1,
+            "citation": "Section 1",
+            "text": "any person in any place without and beyond India committing offence targeting a computer resource located in India.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThe provisions of this Sanhita shall also apply to any offence committed by—\nany person in any place without and beyond India committing offence targeting a computer resource located in India.",
+            "keywords": [
+              "india",
+              "place",
+              "beyond",
+              "committing",
+              "offence",
+              "targeting",
+              "computer",
+              "resource",
+              "located",
+              "short",
+              "computer resource"
+            ],
+            "legal_concepts": [
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 2,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "extraterritorial jurisdiction",
+                "cybercrime"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6063661575317383,
+              "bm25": 0.148476126328048,
+              "semrank": 0.9999998807907104,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999998807907104
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "act title",
+                "commencement date",
+                "force of law",
+                "central government authority",
+                "liable to punishment",
+                "acts or omissions contrary to provisions",
+                "extraterritorial jurisdiction",
+                "cybercrime"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "cybercrime",
+                  "chunk_concept": "cybercrime",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "extraterritorial jurisdiction",
+                  "chunk_concept": "extraterritorial jurisdiction",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "targeting",
+                  "source": "keyword",
+                  "similarity": 0.8898,
+                  "weighted_score": 0.6673
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "computer",
+                  "source": "keyword",
+                  "similarity": 0.8875,
+                  "weighted_score": 0.6657
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "short",
+                  "source": "keyword",
+                  "similarity": 0.887,
+                  "weighted_score": 0.6652
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "cybercrime",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S1_N2",
+            "score": 0.809536,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 1,
+            "citation": "Section 1",
+            "text": "It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint, and different dates may be appointed for different provisions of this Sanhita.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nIt shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint, and different dates may be appointed for different provisions of this Sanhita.",
+            "keywords": [
+              "different",
+              "come",
+              "force",
+              "date",
+              "central",
+              "government",
+              "notification",
+              "official",
+              "gazette",
+              "appoint",
+              "short title",
+              "commencement",
+              "application"
+            ],
+            "legal_concepts": [
+              "force of law",
+              "central government authority"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 2,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "force of law",
+                "central government authority"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6855894327163696,
+              "bm25": 1.0,
+              "semrank": 0.9999999403953552,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "act title",
+                "commencement date",
+                "force of law",
+                "central government authority",
+                "liable to punishment",
+                "acts or omissions contrary to provisions",
+                "extraterritorial jurisdiction",
+                "cybercrime"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "central government authority",
+                  "chunk_concept": "central government authority",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "force of law",
+                  "chunk_concept": "force of law",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "force of law",
+                  "chunk_concept": "force",
+                  "source": "keyword",
+                  "similarity": 0.9552,
+                  "weighted_score": 0.7164
+                },
+                {
+                  "query_concept": "commencement date",
+                  "chunk_concept": "commencement",
+                  "source": "keyword",
+                  "similarity": 0.9509,
+                  "weighted_score": 0.7132
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "short title",
+                  "source": "keyword",
+                  "similarity": 0.9348,
+                  "weighted_score": 0.7011
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "central government authority",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S1_N4",
+            "score": 0.725909,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 1,
+            "citation": "Section 1",
+            "text": "Any person liable, by any law for the time being in force in India, to be tried for an offence committed beyond India shall be dealt with according to the provisions of this Sanhita for any act committed beyond India in the same manner as if such act had been committed within India.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nAny person liable, by any law for the time being in force in India, to be tried for an offence committed beyond India shall be dealt with according to the provisions of this Sanhita for any act committed beyond India in the same manner as if such act had been committed within India.",
+            "keywords": [
+              "india",
+              "committed",
+              "beyond",
+              "liable",
+              "time",
+              "force",
+              "tried",
+              "offence",
+              "dealt",
+              "according"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6133402585983276,
+              "bm25": 0.4569328395214773,
+              "semrank_pre_rerank": 0.7164
+            },
+            "query_scores": {
+              "original": 0.6133402585983276
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "act title",
+                "commencement date",
+                "force of law",
+                "central government authority",
+                "liable to punishment",
+                "acts or omissions contrary to provisions",
+                "extraterritorial jurisdiction",
+                "cybercrime"
+              ],
+              "score": 0.7164,
+              "best_similarity": 0.9552,
+              "best_concept": "force",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "force of law",
+                  "chunk_concept": "force",
+                  "source": "keyword",
+                  "similarity": 0.9552,
+                  "weighted_score": 0.7164
+                },
+                {
+                  "query_concept": "liable to punishment",
+                  "chunk_concept": "liable",
+                  "source": "keyword",
+                  "similarity": 0.9322,
+                  "weighted_score": 0.6992
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "according",
+                  "source": "keyword",
+                  "similarity": 0.8968,
+                  "weighted_score": 0.6726
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "tried",
+                  "source": "keyword",
+                  "similarity": 0.8918,
+                  "weighted_score": 0.6689
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "dealt",
+                  "source": "keyword",
+                  "similarity": 0.8893,
+                  "weighted_score": 0.667
+                }
+              ],
+              "pre_rerank_score": 0.7164,
+              "score_before_pre_rerank": 0.727053,
+              "score_after_pre_rerank": 0.725136
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S1_N5_A",
+            "score": 0.721243,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 1,
+            "citation": "Section 1",
+            "text": "any citizen of India in any place without and beyond India;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThe provisions of this Sanhita shall also apply to any offence committed by—\nany citizen of India in any place without and beyond India;",
+            "keywords": [
+              "india",
+              "citizen",
+              "place",
+              "beyond",
+              "short",
+              "title",
+              "commencement",
+              "application",
+              "preliminary",
+              "indian citizen",
+              "offence",
+              "abroad"
+            ],
+            "legal_concepts": [
+              "extraterritorial jurisdiction"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 1,
+              "coverage_ratio": 0.125,
+              "matched_concepts": [
+                "extraterritorial jurisdiction"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6030530333518982,
+              "bm25": 0.23997458783836056,
+              "semrank": 0.9999998807907104,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999998807907104
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "act title",
+                "commencement date",
+                "force of law",
+                "central government authority",
+                "liable to punishment",
+                "acts or omissions contrary to provisions",
+                "extraterritorial jurisdiction",
+                "cybercrime"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "extraterritorial jurisdiction",
+                  "chunk_concept": "extraterritorial jurisdiction",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "title",
+                  "source": "keyword",
+                  "similarity": 0.9562,
+                  "weighted_score": 0.7171
+                },
+                {
+                  "query_concept": "commencement date",
+                  "chunk_concept": "commencement",
+                  "source": "keyword",
+                  "similarity": 0.9509,
+                  "weighted_score": 0.7132
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "application",
+                  "source": "keyword",
+                  "similarity": 0.9064,
+                  "weighted_score": 0.6798
+                },
+                {
+                  "query_concept": "extraterritorial jurisdiction",
+                  "chunk_concept": "abroad",
+                  "source": "keyword",
+                  "similarity": 0.8985,
+                  "weighted_score": 0.6739
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "extraterritorial jurisdiction",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S1_N6",
+            "score": 0.610991,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 1,
+            "citation": "Section 1",
+            "text": "Nothing in this Sanhita shall affect the provisions of any Act for punishing mutiny and desertion of officers, soldiers, sailors or airmen in the service of the Government of India or the provisions of any special or local law.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nNothing in this Sanhita shall affect the provisions of any Act for punishing mutiny and desertion of officers, soldiers, sailors or airmen in the service of the Government of India or the provisions of any special or local law.",
+            "keywords": [
+              "nothing",
+              "affect",
+              "punishing",
+              "mutiny",
+              "desertion",
+              "officers",
+              "soldiers",
+              "sailors",
+              "airmen",
+              "punishment laws",
+              "government service"
+            ],
+            "legal_concepts": [
+              "provisions of acts for punishing mutiny and desertion"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6472882032394409,
+              "bm25": 0.4472015951128251,
+              "semrank_pre_rerank": 0.8145
+            },
+            "query_scores": {
+              "original": 0.6472882032394409
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "act title",
+                "commencement date",
+                "force of law",
+                "central government authority",
+                "liable to punishment",
+                "acts or omissions contrary to provisions",
+                "extraterritorial jurisdiction",
+                "cybercrime"
+              ],
+              "score": 0.8145,
+              "best_similarity": 0.8145,
+              "best_concept": "provisions of acts for punishing mutiny and desertion",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "provisions of acts for punishing mutiny and desertion",
+                  "source": "legal_concept",
+                  "similarity": 0.8145,
+                  "weighted_score": 0.8145
+                },
+                {
+                  "query_concept": "liable to punishment",
+                  "chunk_concept": "punishing",
+                  "source": "keyword",
+                  "similarity": 0.9456,
+                  "weighted_score": 0.7092
+                },
+                {
+                  "query_concept": "liable to punishment",
+                  "chunk_concept": "punishment laws",
+                  "source": "keyword",
+                  "similarity": 0.9002,
+                  "weighted_score": 0.6752
+                },
+                {
+                  "query_concept": "central government authority",
+                  "chunk_concept": "government service",
+                  "source": "keyword",
+                  "similarity": 0.8905,
+                  "weighted_score": 0.6679
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "affect",
+                  "source": "keyword",
+                  "similarity": 0.8505,
+                  "weighted_score": 0.6379
+                }
+              ],
+              "pre_rerank_score": 0.8145,
+              "score_before_pre_rerank": 0.779296,
+              "score_after_pre_rerank": 0.785633
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S1_N1",
+            "score": 0.533978,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 1,
+            "citation": "Section 1",
+            "text": "This Act may be called the Bharatiya Nyaya Sanhita, 2023.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThis Act may be called the Bharatiya Nyaya Sanhita, 2023.",
+            "keywords": [
+              "called",
+              "bharatiya",
+              "nyaya",
+              "short",
+              "title",
+              "commencement",
+              "application",
+              "preliminary"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.33858338794623416,
+              "semrank": 0.7171131670475006,
+              "semrank_pre_rerank": 0.7171
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.7171,
+              "query_concepts": [
+                "act title",
+                "commencement date",
+                "force of law",
+                "central government authority",
+                "liable to punishment",
+                "acts or omissions contrary to provisions",
+                "extraterritorial jurisdiction",
+                "cybercrime"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "title",
+                  "source": "keyword",
+                  "similarity": 0.9562,
+                  "weighted_score": 0.7171
+                },
+                {
+                  "query_concept": "commencement date",
+                  "chunk_concept": "commencement",
+                  "source": "keyword",
+                  "similarity": 0.9509,
+                  "weighted_score": 0.7132
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "called",
+                  "source": "keyword",
+                  "similarity": 0.9071,
+                  "weighted_score": 0.6803
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "application",
+                  "source": "keyword",
+                  "similarity": 0.9064,
+                  "weighted_score": 0.6798
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "preliminary",
+                  "source": "keyword",
+                  "similarity": 0.8945,
+                  "weighted_score": 0.6708
+                }
+              ],
+              "score": 0.7171,
+              "best_similarity": 0.9562,
+              "best_concept": "title",
+              "best_concept_source": "keyword",
+              "pre_rerank_score": 0.7171,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.949078
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S1_N5_EXP1",
+            "score": 0.476702,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 1,
+            "citation": "Section 1",
+            "text": "In this section, the word “offence” includes every act committed outside India which, if committed in India, would be punishable under this Sanhita.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThe provisions of this Sanhita shall also apply to any offence committed by—\nIn this section, the word “offence” includes every act committed outside India which, if committed in India, would be punishable under this Sanhita.",
+            "keywords": [
+              "committed",
+              "india",
+              "word",
+              "offence",
+              "includes",
+              "outside",
+              "punishable",
+              "short",
+              "title",
+              "commencement"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.5892614126205444,
+              "bm25": 0.22312080331686227,
+              "semrank": 0.7171131670475006,
+              "semrank_pre_rerank": 0.7171
+            },
+            "query_scores": {
+              "original": 0.7171131670475006
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.7171,
+              "query_concepts": [
+                "act title",
+                "commencement date",
+                "force of law",
+                "central government authority",
+                "liable to punishment",
+                "acts or omissions contrary to provisions",
+                "extraterritorial jurisdiction",
+                "cybercrime"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "title",
+                  "source": "keyword",
+                  "similarity": 0.9562,
+                  "weighted_score": 0.7171
+                },
+                {
+                  "query_concept": "liable to punishment",
+                  "chunk_concept": "punishable",
+                  "source": "keyword",
+                  "similarity": 0.9537,
+                  "weighted_score": 0.7153
+                },
+                {
+                  "query_concept": "commencement date",
+                  "chunk_concept": "commencement",
+                  "source": "keyword",
+                  "similarity": 0.9509,
+                  "weighted_score": 0.7132
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "word",
+                  "source": "keyword",
+                  "similarity": 0.9001,
+                  "weighted_score": 0.675
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "short",
+                  "source": "keyword",
+                  "similarity": 0.887,
+                  "weighted_score": 0.6652
+                }
+              ],
+              "score": 0.7171,
+              "best_similarity": 0.9562,
+              "best_concept": "title",
+              "best_concept_source": "keyword",
+              "pre_rerank_score": 0.7171,
+              "score_before_pre_rerank": 0.850161,
+              "score_after_pre_rerank": 0.82621
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S1_N5_B",
+            "score": 0.464233,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 1,
+            "citation": "Section 1",
+            "text": "any person on any ship or aircraft registered in India wherever it may be;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThe provisions of this Sanhita shall also apply to any offence committed by—\nany person on any ship or aircraft registered in India wherever it may be;",
+            "keywords": [
+              "ship",
+              "aircraft",
+              "registered",
+              "india",
+              "wherever",
+              "short",
+              "title",
+              "commencement",
+              "application",
+              "preliminary"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6159193515777588,
+              "bm25": 0.18348833228797878,
+              "semrank": 0.7171131670475006,
+              "semrank_pre_rerank": 0.7171
+            },
+            "query_scores": {
+              "original": 0.7171131670475006
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.7171,
+              "query_concepts": [
+                "act title",
+                "commencement date",
+                "force of law",
+                "central government authority",
+                "liable to punishment",
+                "acts or omissions contrary to provisions",
+                "extraterritorial jurisdiction",
+                "cybercrime"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "title",
+                  "source": "keyword",
+                  "similarity": 0.9562,
+                  "weighted_score": 0.7171
+                },
+                {
+                  "query_concept": "commencement date",
+                  "chunk_concept": "commencement",
+                  "source": "keyword",
+                  "similarity": 0.9509,
+                  "weighted_score": 0.7132
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "application",
+                  "source": "keyword",
+                  "similarity": 0.9064,
+                  "weighted_score": 0.6798
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "preliminary",
+                  "source": "keyword",
+                  "similarity": 0.8945,
+                  "weighted_score": 0.6708
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "short",
+                  "source": "keyword",
+                  "similarity": 0.887,
+                  "weighted_score": 0.6652
+                }
+              ],
+              "score": 0.7171,
+              "best_similarity": 0.9562,
+              "best_concept": "title",
+              "best_concept_source": "keyword",
+              "pre_rerank_score": 0.7171,
+              "score_before_pre_rerank": 0.850161,
+              "score_after_pre_rerank": 0.82621
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S1_N5",
+            "score": 0.399532,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 1,
+            "citation": "Section 1",
+            "text": "The provisions of this Sanhita shall also apply to any offence committed by—",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThe provisions of this Sanhita shall also apply to any offence committed by—",
+            "keywords": [
+              "apply",
+              "offence",
+              "committed",
+              "short",
+              "title",
+              "commencement",
+              "application",
+              "preliminary"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6369792222976685,
+              "bm25": 0.3283330439969787,
+              "semrank": 0.7171131670475006,
+              "semrank_pre_rerank": 0.7171
+            },
+            "query_scores": {
+              "original": 0.7171131670475006
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.7171,
+              "query_concepts": [
+                "act title",
+                "commencement date",
+                "force of law",
+                "central government authority",
+                "liable to punishment",
+                "acts or omissions contrary to provisions",
+                "extraterritorial jurisdiction",
+                "cybercrime"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "title",
+                  "source": "keyword",
+                  "similarity": 0.9562,
+                  "weighted_score": 0.7171
+                },
+                {
+                  "query_concept": "commencement date",
+                  "chunk_concept": "commencement",
+                  "source": "keyword",
+                  "similarity": 0.9509,
+                  "weighted_score": 0.7132
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "application",
+                  "source": "keyword",
+                  "similarity": 0.9064,
+                  "weighted_score": 0.6798
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "preliminary",
+                  "source": "keyword",
+                  "similarity": 0.8945,
+                  "weighted_score": 0.6708
+                },
+                {
+                  "query_concept": "act title",
+                  "chunk_concept": "apply",
+                  "source": "keyword",
+                  "similarity": 0.8895,
+                  "weighted_score": 0.6671
+                }
+              ],
+              "score": 0.7171,
+              "best_similarity": 0.9562,
+              "best_concept": "title",
+              "best_concept_source": "keyword",
+              "pre_rerank_score": 0.7171,
+              "score_before_pre_rerank": 0.850161,
+              "score_after_pre_rerank": 0.82621
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S1_N3",
+          "score": 1.0,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "Every person shall be liable to punishment under this Sanhita and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within India.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nEvery person shall be liable to punishment under this Sanhita and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within India.",
+          "keywords": [
+            "liable",
+            "punishment",
+            "omission",
+            "contrary",
+            "guilty",
+            "india",
+            "short",
+            "title",
+            "commencement"
+          ],
+          "legal_concepts": [
+            "liable to punishment",
+            "acts or omissions contrary to provisions"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "liable to punishment",
+              "acts or omissions contrary to provisions"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6478191614151001,
+            "original:bm25": 0.5,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "acts or omissions contrary to provisions",
+                "chunk_concept": "acts or omissions contrary to provisions",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "liable to punishment",
+                "chunk_concept": "liable to punishment",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "title",
+                "source": "keyword",
+                "similarity": 0.9562,
+                "weighted_score": 0.7171
+              },
+              {
+                "query_concept": "commencement date",
+                "chunk_concept": "commencement",
+                "source": "keyword",
+                "similarity": 0.9509,
+                "weighted_score": 0.7132
+              },
+              {
+                "query_concept": "liable to punishment",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 0.9322,
+                "weighted_score": 0.6992
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "liable to punishment",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S1_N5_C",
+          "score": 0.871966,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "any person in any place without and beyond India committing offence targeting a computer resource located in India.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThe provisions of this Sanhita shall also apply to any offence committed by—\nany person in any place without and beyond India committing offence targeting a computer resource located in India.",
+          "keywords": [
+            "india",
+            "place",
+            "beyond",
+            "committing",
+            "offence",
+            "targeting",
+            "computer",
+            "resource",
+            "located",
+            "short",
+            "computer resource"
+          ],
+          "legal_concepts": [
+            "extraterritorial jurisdiction",
+            "cybercrime"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6063661575317383,
+            "original:bm25": 0.148476126328048,
+            "original:semrank": 0.9999998807907104,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8438604295054124
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "cybercrime",
+                "chunk_concept": "cybercrime",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "extraterritorial jurisdiction",
+                "chunk_concept": "extraterritorial jurisdiction",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "targeting",
+                "source": "keyword",
+                "similarity": 0.8898,
+                "weighted_score": 0.6673
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "computer",
+                "source": "keyword",
+                "similarity": 0.8875,
+                "weighted_score": 0.6657
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "short",
+                "source": "keyword",
+                "similarity": 0.887,
+                "weighted_score": 0.6652
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "cybercrime",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.84386,
+            "score_after_pre_rerank": 0.871966
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S1_N2",
+          "score": 0.84382,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint, and different dates may be appointed for different provisions of this Sanhita.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nIt shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint, and different dates may be appointed for different provisions of this Sanhita.",
+          "keywords": [
+            "different",
+            "come",
+            "force",
+            "date",
+            "central",
+            "government",
+            "notification",
+            "official",
+            "gazette",
+            "appoint",
+            "short title",
+            "commencement",
+            "application"
+          ],
+          "legal_concepts": [
+            "force of law",
+            "central government authority"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "force of law",
+              "central government authority"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6855894327163696,
+            "original:bm25": 1.0,
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.809536006622372
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "central government authority",
+                "chunk_concept": "central government authority",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "force of law",
+                "chunk_concept": "force of law",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "force of law",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 0.9552,
+                "weighted_score": 0.7164
+              },
+              {
+                "query_concept": "commencement date",
+                "chunk_concept": "commencement",
+                "source": "keyword",
+                "similarity": 0.9509,
+                "weighted_score": 0.7132
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "short title",
+                "source": "keyword",
+                "similarity": 0.9348,
+                "weighted_score": 0.7011
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "central government authority",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.809536,
+            "score_after_pre_rerank": 0.84382
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S1_N5_A",
+          "score": 0.77142,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "any citizen of India in any place without and beyond India;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThe provisions of this Sanhita shall also apply to any offence committed by—\nany citizen of India in any place without and beyond India;",
+          "keywords": [
+            "india",
+            "citizen",
+            "place",
+            "beyond",
+            "short",
+            "title",
+            "commencement",
+            "application",
+            "preliminary",
+            "indian citizen",
+            "offence",
+            "abroad"
+          ],
+          "legal_concepts": [
+            "extraterritorial jurisdiction"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "extraterritorial jurisdiction"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6030530333518982,
+            "original:bm25": 0.23997458783836056,
+            "original:semrank": 0.9999998807907104,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7212433530994083
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "extraterritorial jurisdiction",
+                "chunk_concept": "extraterritorial jurisdiction",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "title",
+                "source": "keyword",
+                "similarity": 0.9562,
+                "weighted_score": 0.7171
+              },
+              {
+                "query_concept": "commencement date",
+                "chunk_concept": "commencement",
+                "source": "keyword",
+                "similarity": 0.9509,
+                "weighted_score": 0.7132
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "application",
+                "source": "keyword",
+                "similarity": 0.9064,
+                "weighted_score": 0.6798
+              },
+              {
+                "query_concept": "extraterritorial jurisdiction",
+                "chunk_concept": "abroad",
+                "source": "keyword",
+                "similarity": 0.8985,
+                "weighted_score": 0.6739
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "extraterritorial jurisdiction",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.721243,
+            "score_after_pre_rerank": 0.77142
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S1_N4",
+          "score": 0.724197,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "Any person liable, by any law for the time being in force in India, to be tried for an offence committed beyond India shall be dealt with according to the provisions of this Sanhita for any act committed beyond India in the same manner as if such act had been committed within India.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nAny person liable, by any law for the time being in force in India, to be tried for an offence committed beyond India shall be dealt with according to the provisions of this Sanhita for any act committed beyond India in the same manner as if such act had been committed within India.",
+          "keywords": [
+            "india",
+            "committed",
+            "beyond",
+            "liable",
+            "time",
+            "force",
+            "tried",
+            "offence",
+            "dealt",
+            "according"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6133402585983276,
+            "original:bm25": 0.4569328395214773,
+            "original:semrank_pre_rerank": 0.7164,
+            "semrank_pre_rerank": 0.7164
+          },
+          "query_scores": {
+            "original": 0.7259086986991112
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "score": 0.7164,
+            "best_similarity": 0.9552,
+            "best_concept": "force",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "force of law",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 0.9552,
+                "weighted_score": 0.7164
+              },
+              {
+                "query_concept": "liable to punishment",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 0.9322,
+                "weighted_score": 0.6992
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "according",
+                "source": "keyword",
+                "similarity": 0.8968,
+                "weighted_score": 0.6726
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "tried",
+                "source": "keyword",
+                "similarity": 0.8918,
+                "weighted_score": 0.6689
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "dealt",
+                "source": "keyword",
+                "similarity": 0.8893,
+                "weighted_score": 0.667
+              }
+            ],
+            "pre_rerank_score": 0.7164,
+            "score_before_pre_rerank": 0.725909,
+            "score_after_pre_rerank": 0.724197
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S1_N6",
+          "score": 0.647622,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "Nothing in this Sanhita shall affect the provisions of any Act for punishing mutiny and desertion of officers, soldiers, sailors or airmen in the service of the Government of India or the provisions of any special or local law.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nNothing in this Sanhita shall affect the provisions of any Act for punishing mutiny and desertion of officers, soldiers, sailors or airmen in the service of the Government of India or the provisions of any special or local law.",
+          "keywords": [
+            "nothing",
+            "affect",
+            "punishing",
+            "mutiny",
+            "desertion",
+            "officers",
+            "soldiers",
+            "sailors",
+            "airmen",
+            "punishment laws",
+            "government service"
+          ],
+          "legal_concepts": [
+            "provisions of acts for punishing mutiny and desertion"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6472882032394409,
+            "original:bm25": 0.4472015951128251,
+            "original:semrank_pre_rerank": 0.8145,
+            "semrank_pre_rerank": 0.8145
+          },
+          "query_scores": {
+            "original": 0.6109907715294883
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "score": 0.8145,
+            "best_similarity": 0.8145,
+            "best_concept": "provisions of acts for punishing mutiny and desertion",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "act title",
+                "chunk_concept": "provisions of acts for punishing mutiny and desertion",
+                "source": "legal_concept",
+                "similarity": 0.8145,
+                "weighted_score": 0.8145
+              },
+              {
+                "query_concept": "liable to punishment",
+                "chunk_concept": "punishing",
+                "source": "keyword",
+                "similarity": 0.9456,
+                "weighted_score": 0.7092
+              },
+              {
+                "query_concept": "liable to punishment",
+                "chunk_concept": "punishment laws",
+                "source": "keyword",
+                "similarity": 0.9002,
+                "weighted_score": 0.6752
+              },
+              {
+                "query_concept": "central government authority",
+                "chunk_concept": "government service",
+                "source": "keyword",
+                "similarity": 0.8905,
+                "weighted_score": 0.6679
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "affect",
+                "source": "keyword",
+                "similarity": 0.8505,
+                "weighted_score": 0.6379
+              }
+            ],
+            "pre_rerank_score": 0.8145,
+            "score_before_pre_rerank": 0.610991,
+            "score_after_pre_rerank": 0.647622
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S1_N1",
+          "score": 0.56694,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "This Act may be called the Bharatiya Nyaya Sanhita, 2023.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThis Act may be called the Bharatiya Nyaya Sanhita, 2023.",
+          "keywords": [
+            "called",
+            "bharatiya",
+            "nyaya",
+            "short",
+            "title",
+            "commencement",
+            "application",
+            "preliminary"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.33858338794623416,
+            "original:semrank": 0.7171131670475006,
+            "original:semrank_pre_rerank": 0.7171,
+            "semrank_pre_rerank": 0.7171
+          },
+          "query_scores": {
+            "original": 0.5339783042212475
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7171,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "act title",
+                "chunk_concept": "title",
+                "source": "keyword",
+                "similarity": 0.9562,
+                "weighted_score": 0.7171
+              },
+              {
+                "query_concept": "commencement date",
+                "chunk_concept": "commencement",
+                "source": "keyword",
+                "similarity": 0.9509,
+                "weighted_score": 0.7132
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "called",
+                "source": "keyword",
+                "similarity": 0.9071,
+                "weighted_score": 0.6803
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "application",
+                "source": "keyword",
+                "similarity": 0.9064,
+                "weighted_score": 0.6798
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.8945,
+                "weighted_score": 0.6708
+              }
+            ],
+            "score": 0.7171,
+            "best_similarity": 0.9562,
+            "best_concept": "title",
+            "best_concept_source": "keyword",
+            "pre_rerank_score": 0.7171,
+            "score_before_pre_rerank": 0.533978,
+            "score_after_pre_rerank": 0.56694
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S1_N5_EXP1",
+          "score": 0.519973,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "In this section, the word “offence” includes every act committed outside India which, if committed in India, would be punishable under this Sanhita.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThe provisions of this Sanhita shall also apply to any offence committed by—\nIn this section, the word “offence” includes every act committed outside India which, if committed in India, would be punishable under this Sanhita.",
+          "keywords": [
+            "committed",
+            "india",
+            "word",
+            "offence",
+            "includes",
+            "outside",
+            "punishable",
+            "short",
+            "title",
+            "commencement"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.5892614126205444,
+            "original:bm25": 0.22312080331686227,
+            "original:semrank": 0.7171131670475006,
+            "original:semrank_pre_rerank": 0.7171,
+            "semrank_pre_rerank": 0.7171
+          },
+          "query_scores": {
+            "original": 0.4767015434127768
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7171,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "act title",
+                "chunk_concept": "title",
+                "source": "keyword",
+                "similarity": 0.9562,
+                "weighted_score": 0.7171
+              },
+              {
+                "query_concept": "liable to punishment",
+                "chunk_concept": "punishable",
+                "source": "keyword",
+                "similarity": 0.9537,
+                "weighted_score": 0.7153
+              },
+              {
+                "query_concept": "commencement date",
+                "chunk_concept": "commencement",
+                "source": "keyword",
+                "similarity": 0.9509,
+                "weighted_score": 0.7132
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "word",
+                "source": "keyword",
+                "similarity": 0.9001,
+                "weighted_score": 0.675
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "short",
+                "source": "keyword",
+                "similarity": 0.887,
+                "weighted_score": 0.6652
+              }
+            ],
+            "score": 0.7171,
+            "best_similarity": 0.9562,
+            "best_concept": "title",
+            "best_concept_source": "keyword",
+            "pre_rerank_score": 0.7171,
+            "score_before_pre_rerank": 0.476702,
+            "score_after_pre_rerank": 0.519973
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S1_N5_B",
+          "score": 0.509749,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "any person on any ship or aircraft registered in India wherever it may be;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThe provisions of this Sanhita shall also apply to any offence committed by—\nany person on any ship or aircraft registered in India wherever it may be;",
+          "keywords": [
+            "ship",
+            "aircraft",
+            "registered",
+            "india",
+            "wherever",
+            "short",
+            "title",
+            "commencement",
+            "application",
+            "preliminary"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6159193515777588,
+            "original:bm25": 0.18348833228797878,
+            "original:semrank": 0.7171131670475006,
+            "original:semrank_pre_rerank": 0.7171,
+            "semrank_pre_rerank": 0.7171
+          },
+          "query_scores": {
+            "original": 0.4642329594635115
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7171,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "act title",
+                "chunk_concept": "title",
+                "source": "keyword",
+                "similarity": 0.9562,
+                "weighted_score": 0.7171
+              },
+              {
+                "query_concept": "commencement date",
+                "chunk_concept": "commencement",
+                "source": "keyword",
+                "similarity": 0.9509,
+                "weighted_score": 0.7132
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "application",
+                "source": "keyword",
+                "similarity": 0.9064,
+                "weighted_score": 0.6798
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.8945,
+                "weighted_score": 0.6708
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "short",
+                "source": "keyword",
+                "similarity": 0.887,
+                "weighted_score": 0.6652
+              }
+            ],
+            "score": 0.7171,
+            "best_similarity": 0.9562,
+            "best_concept": "title",
+            "best_concept_source": "keyword",
+            "pre_rerank_score": 0.7171,
+            "score_before_pre_rerank": 0.464233,
+            "score_after_pre_rerank": 0.509749
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S1_N5",
+          "score": 0.456694,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "The provisions of this Sanhita shall also apply to any offence committed by—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThe provisions of this Sanhita shall also apply to any offence committed by—",
+          "keywords": [
+            "apply",
+            "offence",
+            "committed",
+            "short",
+            "title",
+            "commencement",
+            "application",
+            "preliminary"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6369792222976685,
+            "original:bm25": 0.3283330439969787,
+            "original:semrank": 0.7171131670475006,
+            "original:semrank_pre_rerank": 0.7171,
+            "semrank_pre_rerank": 0.7171
+          },
+          "query_scores": {
+            "original": 0.3995316147268999
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7171,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "act title",
+                "chunk_concept": "title",
+                "source": "keyword",
+                "similarity": 0.9562,
+                "weighted_score": 0.7171
+              },
+              {
+                "query_concept": "commencement date",
+                "chunk_concept": "commencement",
+                "source": "keyword",
+                "similarity": 0.9509,
+                "weighted_score": 0.7132
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "application",
+                "source": "keyword",
+                "similarity": 0.9064,
+                "weighted_score": 0.6798
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.8945,
+                "weighted_score": 0.6708
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "apply",
+                "source": "keyword",
+                "similarity": 0.8895,
+                "weighted_score": 0.6671
+              }
+            ],
+            "score": 0.7171,
+            "best_similarity": 0.9562,
+            "best_concept": "title",
+            "best_concept_source": "keyword",
+            "pre_rerank_score": 0.7171,
+            "score_before_pre_rerank": 0.399532,
+            "score_after_pre_rerank": 0.456694
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S1_N3",
+          "score": 1.0,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "Every person shall be liable to punishment under this Sanhita and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within India.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nEvery person shall be liable to punishment under this Sanhita and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within India.",
+          "keywords": [
+            "liable",
+            "punishment",
+            "omission",
+            "contrary",
+            "guilty",
+            "india",
+            "short",
+            "title",
+            "commencement"
+          ],
+          "legal_concepts": [
+            "liable to punishment",
+            "acts or omissions contrary to provisions"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "liable to punishment",
+              "acts or omissions contrary to provisions"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6478191614151001,
+            "original:bm25": 0.5,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "acts or omissions contrary to provisions",
+                "chunk_concept": "acts or omissions contrary to provisions",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "liable to punishment",
+                "chunk_concept": "liable to punishment",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "title",
+                "source": "keyword",
+                "similarity": 0.9562,
+                "weighted_score": 0.7171
+              },
+              {
+                "query_concept": "commencement date",
+                "chunk_concept": "commencement",
+                "source": "keyword",
+                "similarity": 0.9509,
+                "weighted_score": 0.7132
+              },
+              {
+                "query_concept": "liable to punishment",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 0.9322,
+                "weighted_score": 0.6992
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "liable to punishment",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S1_N5_C",
+          "score": 0.77234,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "any person in any place without and beyond India committing offence targeting a computer resource located in India.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThe provisions of this Sanhita shall also apply to any offence committed by—\nany person in any place without and beyond India committing offence targeting a computer resource located in India.",
+          "keywords": [
+            "india",
+            "place",
+            "beyond",
+            "committing",
+            "offence",
+            "targeting",
+            "computer",
+            "resource",
+            "located",
+            "short",
+            "computer resource"
+          ],
+          "legal_concepts": [
+            "extraterritorial jurisdiction",
+            "cybercrime"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6063661575317383,
+            "original:bm25": 0.148476126328048,
+            "original:semrank": 0.9999998807907104,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8438604295054124
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "cybercrime",
+                "chunk_concept": "cybercrime",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "extraterritorial jurisdiction",
+                "chunk_concept": "extraterritorial jurisdiction",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "targeting",
+                "source": "keyword",
+                "similarity": 0.8898,
+                "weighted_score": 0.6673
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "computer",
+                "source": "keyword",
+                "similarity": 0.8875,
+                "weighted_score": 0.6657
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "short",
+                "source": "keyword",
+                "similarity": 0.887,
+                "weighted_score": 0.6652
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "cybercrime",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.84386,
+            "score_after_pre_rerank": 0.871966
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S1_N2",
+          "score": 0.722296,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint, and different dates may be appointed for different provisions of this Sanhita.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nIt shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint, and different dates may be appointed for different provisions of this Sanhita.",
+          "keywords": [
+            "different",
+            "come",
+            "force",
+            "date",
+            "central",
+            "government",
+            "notification",
+            "official",
+            "gazette",
+            "appoint",
+            "short title",
+            "commencement",
+            "application"
+          ],
+          "legal_concepts": [
+            "force of law",
+            "central government authority"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "force of law",
+              "central government authority"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6855894327163696,
+            "original:bm25": 1.0,
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.809536006622372
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "central government authority",
+                "chunk_concept": "central government authority",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "force of law",
+                "chunk_concept": "force of law",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "force of law",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 0.9552,
+                "weighted_score": 0.7164
+              },
+              {
+                "query_concept": "commencement date",
+                "chunk_concept": "commencement",
+                "source": "keyword",
+                "similarity": 0.9509,
+                "weighted_score": 0.7132
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "short title",
+                "source": "keyword",
+                "similarity": 0.9348,
+                "weighted_score": 0.7011
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "central government authority",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.809536,
+            "score_after_pre_rerank": 0.84382
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S1_N4",
+          "score": 0.704188,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "Any person liable, by any law for the time being in force in India, to be tried for an offence committed beyond India shall be dealt with according to the provisions of this Sanhita for any act committed beyond India in the same manner as if such act had been committed within India.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nAny person liable, by any law for the time being in force in India, to be tried for an offence committed beyond India shall be dealt with according to the provisions of this Sanhita for any act committed beyond India in the same manner as if such act had been committed within India.",
+          "keywords": [
+            "india",
+            "committed",
+            "beyond",
+            "liable",
+            "time",
+            "force",
+            "tried",
+            "offence",
+            "dealt",
+            "according"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6133402585983276,
+            "original:bm25": 0.4569328395214773,
+            "original:semrank_pre_rerank": 0.7164,
+            "semrank_pre_rerank": 0.7164
+          },
+          "query_scores": {
+            "original": 0.7259086986991112
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "score": 0.7164,
+            "best_similarity": 0.9552,
+            "best_concept": "force",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "force of law",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 0.9552,
+                "weighted_score": 0.7164
+              },
+              {
+                "query_concept": "liable to punishment",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 0.9322,
+                "weighted_score": 0.6992
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "according",
+                "source": "keyword",
+                "similarity": 0.8968,
+                "weighted_score": 0.6726
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "tried",
+                "source": "keyword",
+                "similarity": 0.8918,
+                "weighted_score": 0.6689
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "dealt",
+                "source": "keyword",
+                "similarity": 0.8893,
+                "weighted_score": 0.667
+              }
+            ],
+            "pre_rerank_score": 0.7164,
+            "score_before_pre_rerank": 0.725909,
+            "score_after_pre_rerank": 0.724197
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S1_N5_A",
+          "score": 0.59356,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "any citizen of India in any place without and beyond India;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThe provisions of this Sanhita shall also apply to any offence committed by—\nany citizen of India in any place without and beyond India;",
+          "keywords": [
+            "india",
+            "citizen",
+            "place",
+            "beyond",
+            "short",
+            "title",
+            "commencement",
+            "application",
+            "preliminary",
+            "indian citizen",
+            "offence",
+            "abroad"
+          ],
+          "legal_concepts": [
+            "extraterritorial jurisdiction"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "extraterritorial jurisdiction"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6030530333518982,
+            "original:bm25": 0.23997458783836056,
+            "original:semrank": 0.9999998807907104,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7212433530994083
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "extraterritorial jurisdiction",
+                "chunk_concept": "extraterritorial jurisdiction",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "title",
+                "source": "keyword",
+                "similarity": 0.9562,
+                "weighted_score": 0.7171
+              },
+              {
+                "query_concept": "commencement date",
+                "chunk_concept": "commencement",
+                "source": "keyword",
+                "similarity": 0.9509,
+                "weighted_score": 0.7132
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "application",
+                "source": "keyword",
+                "similarity": 0.9064,
+                "weighted_score": 0.6798
+              },
+              {
+                "query_concept": "extraterritorial jurisdiction",
+                "chunk_concept": "abroad",
+                "source": "keyword",
+                "similarity": 0.8985,
+                "weighted_score": 0.6739
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "extraterritorial jurisdiction",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.721243,
+            "score_after_pre_rerank": 0.77142
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S1_N6",
+          "score": 0.516349,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "Nothing in this Sanhita shall affect the provisions of any Act for punishing mutiny and desertion of officers, soldiers, sailors or airmen in the service of the Government of India or the provisions of any special or local law.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nNothing in this Sanhita shall affect the provisions of any Act for punishing mutiny and desertion of officers, soldiers, sailors or airmen in the service of the Government of India or the provisions of any special or local law.",
+          "keywords": [
+            "nothing",
+            "affect",
+            "punishing",
+            "mutiny",
+            "desertion",
+            "officers",
+            "soldiers",
+            "sailors",
+            "airmen",
+            "punishment laws",
+            "government service"
+          ],
+          "legal_concepts": [
+            "provisions of acts for punishing mutiny and desertion"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6472882032394409,
+            "original:bm25": 0.4472015951128251,
+            "original:semrank_pre_rerank": 0.8145,
+            "semrank_pre_rerank": 0.8145
+          },
+          "query_scores": {
+            "original": 0.6109907715294883
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "score": 0.8145,
+            "best_similarity": 0.8145,
+            "best_concept": "provisions of acts for punishing mutiny and desertion",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "act title",
+                "chunk_concept": "provisions of acts for punishing mutiny and desertion",
+                "source": "legal_concept",
+                "similarity": 0.8145,
+                "weighted_score": 0.8145
+              },
+              {
+                "query_concept": "liable to punishment",
+                "chunk_concept": "punishing",
+                "source": "keyword",
+                "similarity": 0.9456,
+                "weighted_score": 0.7092
+              },
+              {
+                "query_concept": "liable to punishment",
+                "chunk_concept": "punishment laws",
+                "source": "keyword",
+                "similarity": 0.9002,
+                "weighted_score": 0.6752
+              },
+              {
+                "query_concept": "central government authority",
+                "chunk_concept": "government service",
+                "source": "keyword",
+                "similarity": 0.8905,
+                "weighted_score": 0.6679
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "affect",
+                "source": "keyword",
+                "similarity": 0.8505,
+                "weighted_score": 0.6379
+              }
+            ],
+            "pre_rerank_score": 0.8145,
+            "score_before_pre_rerank": 0.610991,
+            "score_after_pre_rerank": 0.647622
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S1_N1",
+          "score": 0.323167,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "This Act may be called the Bharatiya Nyaya Sanhita, 2023.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThis Act may be called the Bharatiya Nyaya Sanhita, 2023.",
+          "keywords": [
+            "called",
+            "bharatiya",
+            "nyaya",
+            "short",
+            "title",
+            "commencement",
+            "application",
+            "preliminary"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.33858338794623416,
+            "original:semrank": 0.7171131670475006,
+            "original:semrank_pre_rerank": 0.7171,
+            "semrank_pre_rerank": 0.7171
+          },
+          "query_scores": {
+            "original": 0.5339783042212475
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7171,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "act title",
+                "chunk_concept": "title",
+                "source": "keyword",
+                "similarity": 0.9562,
+                "weighted_score": 0.7171
+              },
+              {
+                "query_concept": "commencement date",
+                "chunk_concept": "commencement",
+                "source": "keyword",
+                "similarity": 0.9509,
+                "weighted_score": 0.7132
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "called",
+                "source": "keyword",
+                "similarity": 0.9071,
+                "weighted_score": 0.6803
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "application",
+                "source": "keyword",
+                "similarity": 0.9064,
+                "weighted_score": 0.6798
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.8945,
+                "weighted_score": 0.6708
+              }
+            ],
+            "score": 0.7171,
+            "best_similarity": 0.9562,
+            "best_concept": "title",
+            "best_concept_source": "keyword",
+            "pre_rerank_score": 0.7171,
+            "score_before_pre_rerank": 0.533978,
+            "score_after_pre_rerank": 0.56694
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S1_N5_EXP1",
+          "score": 0.295196,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "In this section, the word “offence” includes every act committed outside India which, if committed in India, would be punishable under this Sanhita.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThe provisions of this Sanhita shall also apply to any offence committed by—\nIn this section, the word “offence” includes every act committed outside India which, if committed in India, would be punishable under this Sanhita.",
+          "keywords": [
+            "committed",
+            "india",
+            "word",
+            "offence",
+            "includes",
+            "outside",
+            "punishable",
+            "short",
+            "title",
+            "commencement"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.5892614126205444,
+            "original:bm25": 0.22312080331686227,
+            "original:semrank": 0.7171131670475006,
+            "original:semrank_pre_rerank": 0.7171,
+            "semrank_pre_rerank": 0.7171
+          },
+          "query_scores": {
+            "original": 0.4767015434127768
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7171,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "act title",
+                "chunk_concept": "title",
+                "source": "keyword",
+                "similarity": 0.9562,
+                "weighted_score": 0.7171
+              },
+              {
+                "query_concept": "liable to punishment",
+                "chunk_concept": "punishable",
+                "source": "keyword",
+                "similarity": 0.9537,
+                "weighted_score": 0.7153
+              },
+              {
+                "query_concept": "commencement date",
+                "chunk_concept": "commencement",
+                "source": "keyword",
+                "similarity": 0.9509,
+                "weighted_score": 0.7132
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "word",
+                "source": "keyword",
+                "similarity": 0.9001,
+                "weighted_score": 0.675
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "short",
+                "source": "keyword",
+                "similarity": 0.887,
+                "weighted_score": 0.6652
+              }
+            ],
+            "score": 0.7171,
+            "best_similarity": 0.9562,
+            "best_concept": "title",
+            "best_concept_source": "keyword",
+            "pre_rerank_score": 0.7171,
+            "score_before_pre_rerank": 0.476702,
+            "score_after_pre_rerank": 0.519973
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S1_N5_B",
+          "score": 0.277015,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "any person on any ship or aircraft registered in India wherever it may be;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThe provisions of this Sanhita shall also apply to any offence committed by—\nany person on any ship or aircraft registered in India wherever it may be;",
+          "keywords": [
+            "ship",
+            "aircraft",
+            "registered",
+            "india",
+            "wherever",
+            "short",
+            "title",
+            "commencement",
+            "application",
+            "preliminary"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6159193515777588,
+            "original:bm25": 0.18348833228797878,
+            "original:semrank": 0.7171131670475006,
+            "original:semrank_pre_rerank": 0.7171,
+            "semrank_pre_rerank": 0.7171
+          },
+          "query_scores": {
+            "original": 0.4642329594635115
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7171,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "act title",
+                "chunk_concept": "title",
+                "source": "keyword",
+                "similarity": 0.9562,
+                "weighted_score": 0.7171
+              },
+              {
+                "query_concept": "commencement date",
+                "chunk_concept": "commencement",
+                "source": "keyword",
+                "similarity": 0.9509,
+                "weighted_score": 0.7132
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "application",
+                "source": "keyword",
+                "similarity": 0.9064,
+                "weighted_score": 0.6798
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.8945,
+                "weighted_score": 0.6708
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "short",
+                "source": "keyword",
+                "similarity": 0.887,
+                "weighted_score": 0.6652
+              }
+            ],
+            "score": 0.7171,
+            "best_similarity": 0.9562,
+            "best_concept": "title",
+            "best_concept_source": "keyword",
+            "pre_rerank_score": 0.7171,
+            "score_before_pre_rerank": 0.464233,
+            "score_after_pre_rerank": 0.509749
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S1_N5",
+          "score": 0.182678,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 1,
+          "citation": "Section 1",
+          "text": "The provisions of this Sanhita shall also apply to any offence committed by—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 1: Short title, commencement and application.\nThe provisions of this Sanhita shall also apply to any offence committed by—",
+          "keywords": [
+            "apply",
+            "offence",
+            "committed",
+            "short",
+            "title",
+            "commencement",
+            "application",
+            "preliminary"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6369792222976685,
+            "original:bm25": 0.3283330439969787,
+            "original:semrank": 0.7171131670475006,
+            "original:semrank_pre_rerank": 0.7171,
+            "semrank_pre_rerank": 0.7171
+          },
+          "query_scores": {
+            "original": 0.3995316147268999
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7171,
+            "query_concepts": [
+              "act title",
+              "commencement date",
+              "force of law",
+              "central government authority",
+              "liable to punishment",
+              "acts or omissions contrary to provisions",
+              "extraterritorial jurisdiction",
+              "cybercrime"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "act title",
+                "chunk_concept": "title",
+                "source": "keyword",
+                "similarity": 0.9562,
+                "weighted_score": 0.7171
+              },
+              {
+                "query_concept": "commencement date",
+                "chunk_concept": "commencement",
+                "source": "keyword",
+                "similarity": 0.9509,
+                "weighted_score": 0.7132
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "application",
+                "source": "keyword",
+                "similarity": 0.9064,
+                "weighted_score": 0.6798
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.8945,
+                "weighted_score": 0.6708
+              },
+              {
+                "query_concept": "act title",
+                "chunk_concept": "apply",
+                "source": "keyword",
+                "similarity": 0.8895,
+                "weighted_score": 0.6671
+              }
+            ],
+            "score": 0.7171,
+            "best_similarity": 0.9562,
+            "best_concept": "title",
+            "best_concept_source": "keyword",
+            "pre_rerank_score": 0.7171,
+            "score_before_pre_rerank": 0.399532,
+            "score_after_pre_rerank": 0.456694
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

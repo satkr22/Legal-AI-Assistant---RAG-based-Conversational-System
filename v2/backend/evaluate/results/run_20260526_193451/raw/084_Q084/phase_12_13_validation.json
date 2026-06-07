@@ -1,0 +1,70 @@
+{
+  "answer": "Defamation is defined as making or publishing any imputation concerning a person with the intent to harm or knowing that it will harm their reputation (Section 356(1), Bharatiya Nyaya Sanhita, 2023). This includes statements that are false and intended to damage someone's reputation. Insults, on the other hand, are not explicitly defined in the provided evidence but are generally understood to be expressions of disrespect or contempt that do not necessarily involve false statements. Therefore, the key difference lies in the nature of the statements: defamation requires falsehood and intent to harm reputation, while insults may not involve falsehoods.",
+  "summary_answer": "Defamation involves making false statements that harm a person's reputation, while insults are generally expressions of disrespect or contempt that may not necessarily involve falsehoods.",
+  "detailed_answer": "Defamation is defined as making or publishing any imputation concerning a person with the intent to harm or knowing that it will harm their reputation (Section 356(1), Bharatiya Nyaya Sanhita, 2023). This includes statements that are false and intended to damage someone's reputation. Insults, on the other hand, are not explicitly defined in the provided evidence but are generally understood to be expressions of disrespect or contempt that do not necessarily involve false statements. Therefore, the key difference lies in the nature of the statements: defamation requires falsehood and intent to harm reputation, while insults may not involve falsehoods.",
+  "final_answer": "Defamation involves false statements intended to harm a person's reputation, while insults are expressions of disrespect that may not involve falsehoods.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 356(1), Bharatiya Nyaya Sanhita, 2023",
+    "Section 353(2), Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.7474,
+    "reranker": 0.6609,
+    "citation": 1.0,
+    "reasoning": 0.9108,
+    "evidence_strength": 0.7474,
+    "reasoning_certainty": 0.9108,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.6807,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.72,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.6609,
+        "avg_selected_semrank_score": 1.0,
+        "avg_selected_concept_coverage": 0.5,
+        "selected_chunk_count": 3,
+        "matched_selected_chunk_count": 3,
+        "selected_semrank_count": 3
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.8216,
+        "ambiguity_gap_score": 1.0,
+        "uncertainty_score": 1.0,
+        "gap": 0.4286,
+        "highest_competing_score": 0.393,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.72,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S356_N1",
+    "chunk__node__BNS_S356_N1_EXP3",
+    "chunk__node__BNS_S353_N2"
+  ]
+}

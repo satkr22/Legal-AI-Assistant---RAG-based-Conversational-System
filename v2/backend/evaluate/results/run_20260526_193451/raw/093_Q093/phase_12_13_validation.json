@@ -1,0 +1,87 @@
+{
+  "answer": "The retrieved evidence points to Section 101 (Murder.) as the strongest grounded source for this query.",
+  "summary_answer": "The retrieved evidence points to Section 101 (Murder.) as the strongest grounded source for this query.",
+  "detailed_answer": "Section 101: if the act by which the death is caused is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death; or [Section 101(c), Bharatiya Nyaya Sanhita, 2023] Section 101: if the act by which the death is caused is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused; or [Section 101(b), Bharatiya Nyaya Sanhita, 2023] Section 109: (1) Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall... [Section 109: Attempt to murder.] Section 140: (1) Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Illustrations. [Section 140: Kidnapping or abducting in order to murder or for ransom, etc.] Section 109: Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be... [Section 109(1), Bharatiya Nyaya Sanhita, 2023]",
+  "final_answer": "The retrieved evidence points to Section 101 (Murder.) as the strongest grounded source for this query. Section 101: if the act by which the death is caused is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death; or [Section 101(c), Bharatiya Nyaya Sanhita, 2023] Section 101: if the act by which the death is caused is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused; or [Section 101(b), Bharatiya Nyaya Sanhita, 2023] Section 109: (1) Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall... [Section 109: Attempt to murder.] Section 140: (1) Whoever kidnaps or abducts any person in order that such person may be murdered or may be so disposed of as to be put in danger of being murdered, shall be punished with imprisonment for life or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Illustrations. [Section 140: Kidnapping or abducting in order to murder or for ransom, etc.] Section 109: Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be... [Section 109(1), Bharatiya Nyaya Sanhita, 2023]",
+  "display_answer_type": "summary",
+  "citations": [
+    "Section 101(c), Bharatiya Nyaya Sanhita, 2023",
+    "Section 101(b), Bharatiya Nyaya Sanhita, 2023",
+    "Section 109: Attempt to murder.",
+    "Section 140: Kidnapping or abducting in order to murder or for ransom, etc.",
+    "Section 109(1), Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.5731,
+    "reranker": 0.3181,
+    "citation": 1.0,
+    "reasoning": 0.3651,
+    "evidence_strength": 0.5731,
+    "reasoning_certainty": 0.3651,
+    "grounding_certainty": 0.72,
+    "raw_score": 0.1506,
+    "confidence_floor": null,
+    "floor_adjusted_score": 0.1506,
+    "applied_caps": [
+      {
+        "reason": "partial",
+        "max_score": 0.7
+      },
+      {
+        "reason": "fallback",
+        "max_score": 0.65
+      }
+    ],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.3181,
+        "avg_selected_semrank_score": 1.0,
+        "avg_selected_concept_coverage": 0.4,
+        "selected_chunk_count": 5,
+        "matched_selected_chunk_count": 5,
+        "selected_semrank_count": 3
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.2702,
+        "ambiguity_gap_score": 0.3,
+        "uncertainty_score": 0.7,
+        "gap": -0.2452,
+        "highest_competing_score": 0.5154,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 0.72
+      }
+    },
+    "score": 0.1506,
+    "label": "low",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "high",
+  "risk_reason": "The answer is grounded in retrieved evidence, but deterministic fallback was used after generation did not pass grounding checks.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "partial",
+    "warnings": [
+      "Several sections are close in relevance; the answer uses the strongest supported section.",
+      "Deterministic fallback was used."
+    ],
+    "verification_issues": [],
+    "should_show": false
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S101_C",
+    "chunk__node__BNS_S101_B",
+    "chunk__section__BNS_S109",
+    "chunk__section__BNS_S140",
+    "chunk__node__BNS_S109_N1"
+  ]
+}

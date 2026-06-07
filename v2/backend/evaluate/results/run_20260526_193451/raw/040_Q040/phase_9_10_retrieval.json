@@ -1,0 +1,3043 @@
+[
+  {
+    "query": "What is the punishment for robbery?",
+    "phase8": {
+      "query": "What is the punishment for robbery?",
+      "intent": {
+        "primary": "legal penalty",
+        "secondary": []
+      },
+      "concepts": [
+        "robbery",
+        "punishment",
+        "imprisonment"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.7881,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.25,
+        "structure_validity": 1.0,
+        "overall": 0.7652
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is the punishment for robbery?",
+          "targets": [],
+          "concepts": [
+            "robbery",
+            "punishment",
+            "imprisonment"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S309_N6",
+            "score": 0.992355,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 309,
+            "citation": "Section 309",
+            "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+            "keywords": [
+              "robbery",
+              "committing",
+              "attempting",
+              "commit",
+              "imprisonment",
+              "voluntarily",
+              "causes",
+              "hurt",
+              "jointly",
+              "concerned",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "robbery"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "robbery"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.736599326133728,
+              "bm25": 0.5978636498762492,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "robbery",
+                "imprisonment",
+                "what is the punishment for robbery"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "robbery",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.8673,
+                  "weighted_score": 0.8673
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "attempting",
+                  "source": "keyword",
+                  "similarity": 0.8387,
+                  "weighted_score": 0.6291
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "hurt",
+                  "source": "keyword",
+                  "similarity": 0.8378,
+                  "weighted_score": 0.6284
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "robbery",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S309_N5",
+            "score": 0.982,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 309,
+            "citation": "Section 309",
+            "text": "Whoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nWhoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+            "keywords": [
+              "robbery",
+              "whoever",
+              "attempts",
+              "commit",
+              "punished",
+              "rigorous",
+              "imprisonment",
+              "term",
+              "extend",
+              "seven"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.6104071972196355,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "robbery",
+                "imprisonment",
+                "what is the punishment for robbery"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "robbery",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "robbery",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "term",
+                  "source": "keyword",
+                  "similarity": 0.8506,
+                  "weighted_score": 0.6379
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "attempts",
+                  "source": "keyword",
+                  "similarity": 0.8363,
+                  "weighted_score": 0.6272
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "extend",
+                  "source": "keyword",
+                  "similarity": 0.8236,
+                  "weighted_score": 0.6177
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.955
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S309_N4",
+            "score": 0.935846,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 309,
+            "citation": "Section 309",
+            "text": "Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nWhoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
+            "keywords": [
+              "robbery",
+              "imprisonment",
+              "years",
+              "whoever",
+              "commits",
+              "punished",
+              "rigorous",
+              "term",
+              "extend",
+              "liable",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "punishable offence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7319158911705017,
+              "bm25": 0.7122075089890233,
+              "semrank_pre_rerank": 0.8924
+            },
+            "query_scores": {
+              "original": 0.7319158911705017
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "robbery",
+                "imprisonment",
+                "what is the punishment for robbery"
+              ],
+              "score": 0.8924,
+              "best_similarity": 0.8924,
+              "best_concept": "punishable offence",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "punishable offence",
+                  "source": "legal_concept",
+                  "similarity": 0.8924,
+                  "weighted_score": 0.8924
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.8673,
+                  "weighted_score": 0.8673
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "robbery",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "term",
+                  "source": "keyword",
+                  "similarity": 0.8506,
+                  "weighted_score": 0.6379
+                }
+              ],
+              "pre_rerank_score": 0.8924,
+              "score_before_pre_rerank": 0.891959,
+              "score_after_pre_rerank": 0.892039
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S312_BODY",
+            "score": 0.804414,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 312,
+            "citation": "Section 312",
+            "text": "If, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 312: Attempt to commit robbery or dacoity when armed with deadly weapon.\nIf, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+            "keywords": [
+              "commit",
+              "robbery",
+              "dacoity",
+              "offender",
+              "armed",
+              "deadly",
+              "weapon",
+              "time",
+              "attempting",
+              "imprisonment",
+              "deadly weapon"
+            ],
+            "legal_concepts": [
+              "attempt to commit robbery",
+              "dacoity with deadly weapon"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6928969621658325,
+              "bm25": 1.0,
+              "semrank_pre_rerank": 0.9504
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "robbery",
+                "imprisonment",
+                "what is the punishment for robbery"
+              ],
+              "score": 0.9504,
+              "best_similarity": 0.9504,
+              "best_concept": "attempt to commit robbery",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "attempt to commit robbery",
+                  "source": "legal_concept",
+                  "similarity": 0.9504,
+                  "weighted_score": 0.9504
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "dacoity with deadly weapon",
+                  "source": "legal_concept",
+                  "similarity": 0.8085,
+                  "weighted_score": 0.8085
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "robbery",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "offender",
+                  "source": "keyword",
+                  "similarity": 0.8857,
+                  "weighted_score": 0.6642
+                }
+              ],
+              "pre_rerank_score": 0.9504,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.991072
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S313_BODY",
+            "score": 0.803867,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 313,
+            "citation": "Section 313",
+            "text": "Whoever belongs to any gang of persons associated in habitually committing theft or robbery, and not being a gang of dacoits, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine. Of criminal misappropriation of property Dishonest misappropriation of property. [OF CRIMINAL MISAPPROPRIATION OF PROPERTY]",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 313: Punishment for belonging to gang of robbers, etc.\nWhoever belongs to any gang of persons associated in habitually committing theft or robbery, and not being a gang of dacoits, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine. Of criminal misappropriation of property Dishonest misappropriation of property. [OF CRIMINAL MISAPPROPRIATION OF PROPERTY]",
+            "keywords": [
+              "property",
+              "gang",
+              "misappropriation",
+              "criminal",
+              "whoever",
+              "belongs",
+              "associated",
+              "habitually",
+              "committing",
+              "theft",
+              "robbery"
+            ],
+            "legal_concepts": [
+              "punishment for gang membership"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7130362391471863,
+              "bm25": 0.341071760851678,
+              "semrank_pre_rerank": 0.8561
+            },
+            "query_scores": {
+              "original": 0.7130362391471863
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "robbery",
+                "imprisonment",
+                "what is the punishment for robbery"
+              ],
+              "score": 0.8561,
+              "best_similarity": 0.8561,
+              "best_concept": "punishment for gang membership",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "what is the punishment for robbery",
+                  "chunk_concept": "punishment for gang membership",
+                  "source": "legal_concept",
+                  "similarity": 0.8561,
+                  "weighted_score": 0.8561
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "robbery",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "theft",
+                  "source": "keyword",
+                  "similarity": 0.9319,
+                  "weighted_score": 0.6989
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "gang",
+                  "source": "keyword",
+                  "similarity": 0.8488,
+                  "weighted_score": 0.6366
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "committing",
+                  "source": "keyword",
+                  "similarity": 0.8369,
+                  "weighted_score": 0.6276
+                }
+              ],
+              "pre_rerank_score": 0.8561,
+              "score_before_pre_rerank": 0.950465,
+              "score_after_pre_rerank": 0.93348
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__section__BNS_S254",
+            "score": 0.80034,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 254,
+            "citation": "Section 254",
+            "text": "Whoever, knowing or having reason to believe that any persons\nare about to commit or have recently committed robbery or dacoity,\nharbours them or any of them, with the intention of facilitating the\ncommission of such robbery or dacoity, or of screening them or any of them\nfrom punishment, shall be punished with rigorous imprisonment for a term\nwhich may extend to seven years, and shall also be liable to fine.\nExplanation.—For the purposes of this section it is immaterial\nwhether the robbery or dacoity is intended to be committed, or has been\ncommitted, within or without India.\nException.—The provisions of this section do not extend to the case\nin which the harbour is by the spouse of the offender.\nPublic servant disobeying direction of law with intent to save\nperson from punishment or property from forfeiture.",
+            "derived_context": "",
+            "keywords": [
+              "harbouring",
+              "robbery",
+              "dacoity"
+            ],
+            "legal_concepts": [
+              "penalty for harbouring",
+              "rigorous imprisonment",
+              "fine"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "anchor": 0.6833372437202931
+            },
+            "query_scores": {
+              "anchor": 0.6833372437202931
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S254_EXP1",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S254_BODY",
+            "score": 0.796809,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 254,
+            "citation": "Section 254",
+            "text": "Whoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 254: Penalty for harbouring robbers or dacoits.\nWhoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+            "keywords": [
+              "them",
+              "robbery",
+              "dacoity",
+              "whoever",
+              "knowing",
+              "having",
+              "reason",
+              "believe",
+              "about",
+              "commit",
+              "harbouring"
+            ],
+            "legal_concepts": [
+              "punishment for harbouring robbers or dacoits"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6941927671432495,
+              "bm25": 0.6846486571120827,
+              "semrank_pre_rerank": 0.8967
+            },
+            "query_scores": {
+              "original": 0.6941927671432495
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "robbery",
+                "imprisonment",
+                "what is the punishment for robbery"
+              ],
+              "score": 0.8967,
+              "best_similarity": 0.8967,
+              "best_concept": "punishment for harbouring robbers or dacoits",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "what is the punishment for robbery",
+                  "chunk_concept": "punishment for harbouring robbers or dacoits",
+                  "source": "legal_concept",
+                  "similarity": 0.8967,
+                  "weighted_score": 0.8967
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "robbery",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "harbouring",
+                  "source": "keyword",
+                  "similarity": 0.8649,
+                  "weighted_score": 0.6486
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "about",
+                  "source": "keyword",
+                  "similarity": 0.8487,
+                  "weighted_score": 0.6365
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "them",
+                  "source": "keyword",
+                  "similarity": 0.8309,
+                  "weighted_score": 0.6232
+                }
+              ],
+              "pre_rerank_score": 0.8967,
+              "score_before_pre_rerank": 0.931207,
+              "score_after_pre_rerank": 0.924996
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S311_BODY",
+            "score": 0.755981,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 311,
+            "citation": "Section 311",
+            "text": "If, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 311: Robbery, or dacoity, with attempt to cause death or grievous hurt.\nIf, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+            "keywords": [
+              "robbery",
+              "dacoity",
+              "grievous",
+              "hurt",
+              "offender",
+              "deadly",
+              "weapon",
+              "cause",
+              "death",
+              "attempt",
+              "deadly weapon",
+              "grievous hurt"
+            ],
+            "legal_concepts": [
+              "robbery",
+              "dacoity",
+              "attempt to cause death"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "robbery"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7027324438095093,
+              "bm25": 0.41613331950526594,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "robbery",
+                "imprisonment",
+                "what is the punishment for robbery"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "robbery",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "attempt to cause death",
+                  "source": "legal_concept",
+                  "similarity": 0.8244,
+                  "weighted_score": 0.8244
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "dacoity",
+                  "source": "legal_concept",
+                  "similarity": 0.7901,
+                  "weighted_score": 0.7901
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "offender",
+                  "source": "keyword",
+                  "similarity": 0.8857,
+                  "weighted_score": 0.6642
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "weapon",
+                  "source": "keyword",
+                  "similarity": 0.8541,
+                  "weighted_score": 0.6406
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "robbery",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S56_ILL1_B",
+            "score": 0.586164,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 56,
+            "citation": "Section 56",
+            "text": "A, a police officer, whose duty it is to prevent robbery, abets the commission of robbery. Here, though the robbery be not committed, A is liable to one-half of the longest term of imprisonment provided for that offence, and also to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 56: Abetment of offence punishable with imprisonment.\nA, a police officer, whose duty it is to prevent robbery, abets the commission of robbery. Here, though the robbery be not committed, A is liable to one-half of the longest term of imprisonment provided for that offence, and also to fine.",
+            "keywords": [
+              "robbery",
+              "imprisonment",
+              "offence",
+              "abetment",
+              "police",
+              "officer",
+              "duty",
+              "prevent",
+              "abets",
+              "commission",
+              "police officer"
+            ],
+            "legal_concepts": [
+              "abetment",
+              "offence punishable with imprisonment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6633731126785278,
+              "bm25": 0.6923308671681078,
+              "semrank_pre_rerank": 0.9446
+            },
+            "query_scores": {
+              "original": 0.6923308671681078
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "robbery",
+                "imprisonment",
+                "what is the punishment for robbery"
+              ],
+              "score": 0.9446,
+              "best_similarity": 0.9446,
+              "best_concept": "offence punishable with imprisonment",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "offence punishable with imprisonment",
+                  "source": "legal_concept",
+                  "similarity": 0.9446,
+                  "weighted_score": 0.9446
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "abetment",
+                  "source": "legal_concept",
+                  "similarity": 0.8348,
+                  "weighted_score": 0.8348
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "robbery",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "police",
+                  "source": "keyword",
+                  "similarity": 0.8765,
+                  "weighted_score": 0.6573
+                }
+              ],
+              "pre_rerank_score": 0.9446,
+              "score_before_pre_rerank": 0.765494,
+              "score_after_pre_rerank": 0.797733
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S310_N6",
+            "score": 0.578912,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 310,
+            "citation": "Section 310",
+            "text": "Whoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+            "keywords": [
+              "dacoity",
+              "imprisonment",
+              "whoever",
+              "belongs",
+              "gang",
+              "associated",
+              "purpose",
+              "habitually",
+              "committing",
+              "punished",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "dacoity"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.664709210395813,
+              "semrank_pre_rerank": 0.8673
+            },
+            "query_scores": {
+              "original": 0.664709210395813
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "robbery",
+                "imprisonment",
+                "what is the punishment for robbery"
+              ],
+              "score": 0.8673,
+              "best_similarity": 0.8673,
+              "best_concept": "offence against property",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.8673,
+                  "weighted_score": 0.8673
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "dacoity",
+                  "source": "legal_concept",
+                  "similarity": 0.7901,
+                  "weighted_score": 0.7901
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "robbery",
+                  "chunk_concept": "gang",
+                  "source": "keyword",
+                  "similarity": 0.8488,
+                  "weighted_score": 0.6366
+                },
+                {
+                  "query_concept": "imprisonment",
+                  "chunk_concept": "committing",
+                  "source": "keyword",
+                  "similarity": 0.8369,
+                  "weighted_score": 0.6276
+                }
+              ],
+              "pre_rerank_score": 0.8673,
+              "score_before_pre_rerank": 0.806904,
+              "score_after_pre_rerank": 0.817775
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S309_N6",
+          "score": 0.993731,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "keywords": [
+            "robbery",
+            "committing",
+            "attempting",
+            "commit",
+            "imprisonment",
+            "voluntarily",
+            "causes",
+            "hurt",
+            "jointly",
+            "concerned",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "robbery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "robbery"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.736599326133728,
+            "original:bm25": 0.5978636498762492,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9923553260959231
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8673,
+                "weighted_score": 0.8673
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "attempting",
+                "source": "keyword",
+                "similarity": 0.8387,
+                "weighted_score": 0.6291
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 0.8378,
+                "weighted_score": 0.6284
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "robbery",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.992355,
+            "score_after_pre_rerank": 0.993731
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S309_N5",
+          "score": 0.94024,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "Whoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nWhoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "robbery",
+            "whoever",
+            "attempts",
+            "commit",
+            "punished",
+            "rigorous",
+            "imprisonment",
+            "term",
+            "extend",
+            "seven"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.6104071972196355,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.982
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "robbery",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8506,
+                "weighted_score": 0.6379
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "attempts",
+                "source": "keyword",
+                "similarity": 0.8363,
+                "weighted_score": 0.6272
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.8236,
+                "weighted_score": 0.6177
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.982,
+            "score_after_pre_rerank": 0.94024
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S309_N4",
+          "score": 0.928025,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nWhoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
+          "keywords": [
+            "robbery",
+            "imprisonment",
+            "years",
+            "whoever",
+            "commits",
+            "punished",
+            "rigorous",
+            "term",
+            "extend",
+            "liable",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishable offence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7319158911705017,
+            "original:bm25": 0.7122075089890233,
+            "original:semrank_pre_rerank": 0.8924,
+            "semrank_pre_rerank": 0.8924
+          },
+          "query_scores": {
+            "original": 0.9358457158883529
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "score": 0.8924,
+            "best_similarity": 0.8924,
+            "best_concept": "punishable offence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "punishable offence",
+                "source": "legal_concept",
+                "similarity": 0.8924,
+                "weighted_score": 0.8924
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8673,
+                "weighted_score": 0.8673
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8506,
+                "weighted_score": 0.6379
+              }
+            ],
+            "pre_rerank_score": 0.8924,
+            "score_before_pre_rerank": 0.935846,
+            "score_after_pre_rerank": 0.928025
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S312_BODY",
+          "score": 0.830691,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 312,
+          "citation": "Section 312",
+          "text": "If, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 312: Attempt to commit robbery or dacoity when armed with deadly weapon.\nIf, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+          "keywords": [
+            "commit",
+            "robbery",
+            "dacoity",
+            "offender",
+            "armed",
+            "deadly",
+            "weapon",
+            "time",
+            "attempting",
+            "imprisonment",
+            "deadly weapon"
+          ],
+          "legal_concepts": [
+            "attempt to commit robbery",
+            "dacoity with deadly weapon"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6928969621658325,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.9504,
+            "semrank_pre_rerank": 0.9504
+          },
+          "query_scores": {
+            "original": 0.8044135441708213
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "score": 0.9504,
+            "best_similarity": 0.9504,
+            "best_concept": "attempt to commit robbery",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "attempt to commit robbery",
+                "source": "legal_concept",
+                "similarity": 0.9504,
+                "weighted_score": 0.9504
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "dacoity with deadly weapon",
+                "source": "legal_concept",
+                "similarity": 0.8085,
+                "weighted_score": 0.8085
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "offender",
+                "source": "keyword",
+                "similarity": 0.8857,
+                "weighted_score": 0.6642
+              }
+            ],
+            "pre_rerank_score": 0.9504,
+            "score_before_pre_rerank": 0.804414,
+            "score_after_pre_rerank": 0.830691
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S254_BODY",
+          "score": 0.814789,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 254,
+          "citation": "Section 254",
+          "text": "Whoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 254: Penalty for harbouring robbers or dacoits.\nWhoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "them",
+            "robbery",
+            "dacoity",
+            "whoever",
+            "knowing",
+            "having",
+            "reason",
+            "believe",
+            "about",
+            "commit",
+            "harbouring"
+          ],
+          "legal_concepts": [
+            "punishment for harbouring robbers or dacoits"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6941927671432495,
+            "original:bm25": 0.6846486571120827,
+            "original:semrank_pre_rerank": 0.8967,
+            "semrank_pre_rerank": 0.8967
+          },
+          "query_scores": {
+            "original": 0.7968088904102577
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "score": 0.8967,
+            "best_similarity": 0.8967,
+            "best_concept": "punishment for harbouring robbers or dacoits",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "what is the punishment for robbery",
+                "chunk_concept": "punishment for harbouring robbers or dacoits",
+                "source": "legal_concept",
+                "similarity": 0.8967,
+                "weighted_score": 0.8967
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "harbouring",
+                "source": "keyword",
+                "similarity": 0.8649,
+                "weighted_score": 0.6486
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "about",
+                "source": "keyword",
+                "similarity": 0.8487,
+                "weighted_score": 0.6365
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "them",
+                "source": "keyword",
+                "similarity": 0.8309,
+                "weighted_score": 0.6232
+              }
+            ],
+            "pre_rerank_score": 0.8967,
+            "score_before_pre_rerank": 0.796809,
+            "score_after_pre_rerank": 0.814789
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S313_BODY",
+          "score": 0.813269,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 313,
+          "citation": "Section 313",
+          "text": "Whoever belongs to any gang of persons associated in habitually committing theft or robbery, and not being a gang of dacoits, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine. Of criminal misappropriation of property Dishonest misappropriation of property. [OF CRIMINAL MISAPPROPRIATION OF PROPERTY]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 313: Punishment for belonging to gang of robbers, etc.\nWhoever belongs to any gang of persons associated in habitually committing theft or robbery, and not being a gang of dacoits, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine. Of criminal misappropriation of property Dishonest misappropriation of property. [OF CRIMINAL MISAPPROPRIATION OF PROPERTY]",
+          "keywords": [
+            "property",
+            "gang",
+            "misappropriation",
+            "criminal",
+            "whoever",
+            "belongs",
+            "associated",
+            "habitually",
+            "committing",
+            "theft",
+            "robbery"
+          ],
+          "legal_concepts": [
+            "punishment for gang membership"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7130362391471863,
+            "original:bm25": 0.341071760851678,
+            "original:semrank_pre_rerank": 0.8561,
+            "semrank_pre_rerank": 0.8561
+          },
+          "query_scores": {
+            "original": 0.8038669539219316
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "score": 0.8561,
+            "best_similarity": 0.8561,
+            "best_concept": "punishment for gang membership",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "what is the punishment for robbery",
+                "chunk_concept": "punishment for gang membership",
+                "source": "legal_concept",
+                "similarity": 0.8561,
+                "weighted_score": 0.8561
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "theft",
+                "source": "keyword",
+                "similarity": 0.9319,
+                "weighted_score": 0.6989
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "gang",
+                "source": "keyword",
+                "similarity": 0.8488,
+                "weighted_score": 0.6366
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "committing",
+                "source": "keyword",
+                "similarity": 0.8369,
+                "weighted_score": 0.6276
+              }
+            ],
+            "pre_rerank_score": 0.8561,
+            "score_before_pre_rerank": 0.803867,
+            "score_after_pre_rerank": 0.813269
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__section__BNS_S254",
+          "score": 0.80034,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 254,
+          "citation": "Section 254",
+          "text": "Whoever, knowing or having reason to believe that any persons\nare about to commit or have recently committed robbery or dacoity,\nharbours them or any of them, with the intention of facilitating the\ncommission of such robbery or dacoity, or of screening them or any of them\nfrom punishment, shall be punished with rigorous imprisonment for a term\nwhich may extend to seven years, and shall also be liable to fine.\nExplanation.—For the purposes of this section it is immaterial\nwhether the robbery or dacoity is intended to be committed, or has been\ncommitted, within or without India.\nException.—The provisions of this section do not extend to the case\nin which the harbour is by the spouse of the offender.\nPublic servant disobeying direction of law with intent to save\nperson from punishment or property from forfeiture.",
+          "derived_context": "",
+          "keywords": [
+            "harbouring",
+            "robbery",
+            "dacoity"
+          ],
+          "legal_concepts": [
+            "penalty for harbouring",
+            "rigorous imprisonment",
+            "fine"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.6833372437202931
+          },
+          "query_scores": {
+            "original": 0.8003397600842459
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S254_EXP1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S311_BODY",
+          "score": 0.799904,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 311,
+          "citation": "Section 311",
+          "text": "If, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 311: Robbery, or dacoity, with attempt to cause death or grievous hurt.\nIf, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+          "keywords": [
+            "robbery",
+            "dacoity",
+            "grievous",
+            "hurt",
+            "offender",
+            "deadly",
+            "weapon",
+            "cause",
+            "death",
+            "attempt",
+            "deadly weapon",
+            "grievous hurt"
+          ],
+          "legal_concepts": [
+            "robbery",
+            "dacoity",
+            "attempt to cause death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "robbery"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7027324438095093,
+            "original:bm25": 0.41613331950526594,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7559809717653554
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "attempt to cause death",
+                "source": "legal_concept",
+                "similarity": 0.8244,
+                "weighted_score": 0.8244
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 0.7901,
+                "weighted_score": 0.7901
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "offender",
+                "source": "keyword",
+                "similarity": 0.8857,
+                "weighted_score": 0.6642
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "weapon",
+                "source": "keyword",
+                "similarity": 0.8541,
+                "weighted_score": 0.6406
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "robbery",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.755981,
+            "score_after_pre_rerank": 0.799904
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S56_ILL1_B",
+          "score": 0.650682,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 56,
+          "citation": "Section 56",
+          "text": "A, a police officer, whose duty it is to prevent robbery, abets the commission of robbery. Here, though the robbery be not committed, A is liable to one-half of the longest term of imprisonment provided for that offence, and also to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 56: Abetment of offence punishable with imprisonment.\nA, a police officer, whose duty it is to prevent robbery, abets the commission of robbery. Here, though the robbery be not committed, A is liable to one-half of the longest term of imprisonment provided for that offence, and also to fine.",
+          "keywords": [
+            "robbery",
+            "imprisonment",
+            "offence",
+            "abetment",
+            "police",
+            "officer",
+            "duty",
+            "prevent",
+            "abets",
+            "commission",
+            "police officer"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "offence punishable with imprisonment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6633731126785278,
+            "original:bm25": 0.6923308671681078,
+            "original:semrank_pre_rerank": 0.9446,
+            "semrank_pre_rerank": 0.9446
+          },
+          "query_scores": {
+            "original": 0.5861636340035681
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "score": 0.9446,
+            "best_similarity": 0.9446,
+            "best_concept": "offence punishable with imprisonment",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "offence punishable with imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.9446,
+                "weighted_score": 0.9446
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "abetment",
+                "source": "legal_concept",
+                "similarity": 0.8348,
+                "weighted_score": 0.8348
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "police",
+                "source": "keyword",
+                "similarity": 0.8765,
+                "weighted_score": 0.6573
+              }
+            ],
+            "pre_rerank_score": 0.9446,
+            "score_before_pre_rerank": 0.586164,
+            "score_after_pre_rerank": 0.650682
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S310_N6",
+          "score": 0.630822,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "Whoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "keywords": [
+            "dacoity",
+            "imprisonment",
+            "whoever",
+            "belongs",
+            "gang",
+            "associated",
+            "purpose",
+            "habitually",
+            "committing",
+            "punished",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.664709210395813,
+            "original:semrank_pre_rerank": 0.8673,
+            "semrank_pre_rerank": 0.8673
+          },
+          "query_scores": {
+            "original": 0.5789118768729169
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "score": 0.8673,
+            "best_similarity": 0.8673,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8673,
+                "weighted_score": 0.8673
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 0.7901,
+                "weighted_score": 0.7901
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "gang",
+                "source": "keyword",
+                "similarity": 0.8488,
+                "weighted_score": 0.6366
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "committing",
+                "source": "keyword",
+                "similarity": 0.8369,
+                "weighted_score": 0.6276
+              }
+            ],
+            "pre_rerank_score": 0.8673,
+            "score_before_pre_rerank": 0.578912,
+            "score_after_pre_rerank": 0.630822
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S309_N6",
+          "score": 0.98432,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nIf any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Dacoity.",
+          "keywords": [
+            "robbery",
+            "committing",
+            "attempting",
+            "commit",
+            "imprisonment",
+            "voluntarily",
+            "causes",
+            "hurt",
+            "jointly",
+            "concerned",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "robbery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "robbery"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.736599326133728,
+            "original:bm25": 0.5978636498762492,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9923553260959231
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8673,
+                "weighted_score": 0.8673
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "attempting",
+                "source": "keyword",
+                "similarity": 0.8387,
+                "weighted_score": 0.6291
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 0.8378,
+                "weighted_score": 0.6284
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "robbery",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.992355,
+            "score_after_pre_rerank": 0.993731
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S309_N5",
+          "score": 0.976096,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "Whoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nWhoever attempts to commit robbery shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "robbery",
+            "whoever",
+            "attempts",
+            "commit",
+            "punished",
+            "rigorous",
+            "imprisonment",
+            "term",
+            "extend",
+            "seven"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.6104071972196355,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.982
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "robbery",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8506,
+                "weighted_score": 0.6379
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "attempts",
+                "source": "keyword",
+                "similarity": 0.8363,
+                "weighted_score": 0.6272
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.8236,
+                "weighted_score": 0.6177
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.982,
+            "score_after_pre_rerank": 0.94024
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S309_N4",
+          "score": 0.935076,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nWhoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
+          "keywords": [
+            "robbery",
+            "imprisonment",
+            "years",
+            "whoever",
+            "commits",
+            "punished",
+            "rigorous",
+            "term",
+            "extend",
+            "liable",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishable offence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7319158911705017,
+            "original:bm25": 0.7122075089890233,
+            "original:semrank_pre_rerank": 0.8924,
+            "semrank_pre_rerank": 0.8924
+          },
+          "query_scores": {
+            "original": 0.9358457158883529
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "score": 0.8924,
+            "best_similarity": 0.8924,
+            "best_concept": "punishable offence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "punishable offence",
+                "source": "legal_concept",
+                "similarity": 0.8924,
+                "weighted_score": 0.8924
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8673,
+                "weighted_score": 0.8673
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8506,
+                "weighted_score": 0.6379
+              }
+            ],
+            "pre_rerank_score": 0.8924,
+            "score_before_pre_rerank": 0.935846,
+            "score_after_pre_rerank": 0.928025
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__section__BNS_S254",
+          "score": 0.794354,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 254,
+          "citation": "Section 254",
+          "text": "Whoever, knowing or having reason to believe that any persons\nare about to commit or have recently committed robbery or dacoity,\nharbours them or any of them, with the intention of facilitating the\ncommission of such robbery or dacoity, or of screening them or any of them\nfrom punishment, shall be punished with rigorous imprisonment for a term\nwhich may extend to seven years, and shall also be liable to fine.\nExplanation.—For the purposes of this section it is immaterial\nwhether the robbery or dacoity is intended to be committed, or has been\ncommitted, within or without India.\nException.—The provisions of this section do not extend to the case\nin which the harbour is by the spouse of the offender.\nPublic servant disobeying direction of law with intent to save\nperson from punishment or property from forfeiture.",
+          "derived_context": "",
+          "keywords": [
+            "harbouring",
+            "robbery",
+            "dacoity"
+          ],
+          "legal_concepts": [
+            "penalty for harbouring",
+            "rigorous imprisonment",
+            "fine"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.6833372437202931
+          },
+          "query_scores": {
+            "original": 0.8003397600842459
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S254_EXP1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S313_BODY",
+          "score": 0.63319,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 313,
+          "citation": "Section 313",
+          "text": "Whoever belongs to any gang of persons associated in habitually committing theft or robbery, and not being a gang of dacoits, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine. Of criminal misappropriation of property Dishonest misappropriation of property. [OF CRIMINAL MISAPPROPRIATION OF PROPERTY]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 313: Punishment for belonging to gang of robbers, etc.\nWhoever belongs to any gang of persons associated in habitually committing theft or robbery, and not being a gang of dacoits, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine. Of criminal misappropriation of property Dishonest misappropriation of property. [OF CRIMINAL MISAPPROPRIATION OF PROPERTY]",
+          "keywords": [
+            "property",
+            "gang",
+            "misappropriation",
+            "criminal",
+            "whoever",
+            "belongs",
+            "associated",
+            "habitually",
+            "committing",
+            "theft",
+            "robbery"
+          ],
+          "legal_concepts": [
+            "punishment for gang membership"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7130362391471863,
+            "original:bm25": 0.341071760851678,
+            "original:semrank_pre_rerank": 0.8561,
+            "semrank_pre_rerank": 0.8561
+          },
+          "query_scores": {
+            "original": 0.8038669539219316
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "score": 0.8561,
+            "best_similarity": 0.8561,
+            "best_concept": "punishment for gang membership",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "what is the punishment for robbery",
+                "chunk_concept": "punishment for gang membership",
+                "source": "legal_concept",
+                "similarity": 0.8561,
+                "weighted_score": 0.8561
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "theft",
+                "source": "keyword",
+                "similarity": 0.9319,
+                "weighted_score": 0.6989
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "gang",
+                "source": "keyword",
+                "similarity": 0.8488,
+                "weighted_score": 0.6366
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "committing",
+                "source": "keyword",
+                "similarity": 0.8369,
+                "weighted_score": 0.6276
+              }
+            ],
+            "pre_rerank_score": 0.8561,
+            "score_before_pre_rerank": 0.803867,
+            "score_after_pre_rerank": 0.813269
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S254_BODY",
+          "score": 0.627483,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 254,
+          "citation": "Section 254",
+          "text": "Whoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 254: Penalty for harbouring robbers or dacoits.\nWhoever, knowing or having reason to believe that any persons are about to commit or have recently committed robbery or dacoity, harbours them or any of them, with the intention of facilitating the commission of such robbery or dacoity, or of screening them or any of them from punishment, shall be punished with rigorous imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "them",
+            "robbery",
+            "dacoity",
+            "whoever",
+            "knowing",
+            "having",
+            "reason",
+            "believe",
+            "about",
+            "commit",
+            "harbouring"
+          ],
+          "legal_concepts": [
+            "punishment for harbouring robbers or dacoits"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6941927671432495,
+            "original:bm25": 0.6846486571120827,
+            "original:semrank_pre_rerank": 0.8967,
+            "semrank_pre_rerank": 0.8967
+          },
+          "query_scores": {
+            "original": 0.7968088904102577
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "score": 0.8967,
+            "best_similarity": 0.8967,
+            "best_concept": "punishment for harbouring robbers or dacoits",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "what is the punishment for robbery",
+                "chunk_concept": "punishment for harbouring robbers or dacoits",
+                "source": "legal_concept",
+                "similarity": 0.8967,
+                "weighted_score": 0.8967
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "harbouring",
+                "source": "keyword",
+                "similarity": 0.8649,
+                "weighted_score": 0.6486
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "about",
+                "source": "keyword",
+                "similarity": 0.8487,
+                "weighted_score": 0.6365
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "them",
+                "source": "keyword",
+                "similarity": 0.8309,
+                "weighted_score": 0.6232
+              }
+            ],
+            "pre_rerank_score": 0.8967,
+            "score_before_pre_rerank": 0.796809,
+            "score_after_pre_rerank": 0.814789
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S312_BODY",
+          "score": 0.601404,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 312,
+          "citation": "Section 312",
+          "text": "If, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 312: Attempt to commit robbery or dacoity when armed with deadly weapon.\nIf, at the time of attempting to commit robbery or dacoity, the offender is armed with any deadly weapon, the imprisonment with which such offender shall be punished shall not be less than seven years. Punishment for belonging to gang of robbers, etc.",
+          "keywords": [
+            "commit",
+            "robbery",
+            "dacoity",
+            "offender",
+            "armed",
+            "deadly",
+            "weapon",
+            "time",
+            "attempting",
+            "imprisonment",
+            "deadly weapon"
+          ],
+          "legal_concepts": [
+            "attempt to commit robbery",
+            "dacoity with deadly weapon"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6928969621658325,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.9504,
+            "semrank_pre_rerank": 0.9504
+          },
+          "query_scores": {
+            "original": 0.8044135441708213
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "score": 0.9504,
+            "best_similarity": 0.9504,
+            "best_concept": "attempt to commit robbery",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "attempt to commit robbery",
+                "source": "legal_concept",
+                "similarity": 0.9504,
+                "weighted_score": 0.9504
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "dacoity with deadly weapon",
+                "source": "legal_concept",
+                "similarity": 0.8085,
+                "weighted_score": 0.8085
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "offender",
+                "source": "keyword",
+                "similarity": 0.8857,
+                "weighted_score": 0.6642
+              }
+            ],
+            "pre_rerank_score": 0.9504,
+            "score_before_pre_rerank": 0.804414,
+            "score_after_pre_rerank": 0.830691
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S311_BODY",
+          "score": 0.499479,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 311,
+          "citation": "Section 311",
+          "text": "If, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 311: Robbery, or dacoity, with attempt to cause death or grievous hurt.\nIf, at the time of committing robbery or dacoity, the offender uses any deadly weapon, or causes grievous hurt to any person, or attempts to cause death or grievous hurt to any person, the imprisonment with which such offender shall be punished shall not be less than seven years. Attempt to commit robbery or dacoity when armed with deadly weapon.",
+          "keywords": [
+            "robbery",
+            "dacoity",
+            "grievous",
+            "hurt",
+            "offender",
+            "deadly",
+            "weapon",
+            "cause",
+            "death",
+            "attempt",
+            "deadly weapon",
+            "grievous hurt"
+          ],
+          "legal_concepts": [
+            "robbery",
+            "dacoity",
+            "attempt to cause death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "robbery"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7027324438095093,
+            "original:bm25": 0.41613331950526594,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7559809717653554
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "attempt to cause death",
+                "source": "legal_concept",
+                "similarity": 0.8244,
+                "weighted_score": 0.8244
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 0.7901,
+                "weighted_score": 0.7901
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "offender",
+                "source": "keyword",
+                "similarity": 0.8857,
+                "weighted_score": 0.6642
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "weapon",
+                "source": "keyword",
+                "similarity": 0.8541,
+                "weighted_score": 0.6406
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "robbery",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.755981,
+            "score_after_pre_rerank": 0.799904
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S56_ILL1_B",
+          "score": 0.286581,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 56,
+          "citation": "Section 56",
+          "text": "A, a police officer, whose duty it is to prevent robbery, abets the commission of robbery. Here, though the robbery be not committed, A is liable to one-half of the longest term of imprisonment provided for that offence, and also to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 56: Abetment of offence punishable with imprisonment.\nA, a police officer, whose duty it is to prevent robbery, abets the commission of robbery. Here, though the robbery be not committed, A is liable to one-half of the longest term of imprisonment provided for that offence, and also to fine.",
+          "keywords": [
+            "robbery",
+            "imprisonment",
+            "offence",
+            "abetment",
+            "police",
+            "officer",
+            "duty",
+            "prevent",
+            "abets",
+            "commission",
+            "police officer"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "offence punishable with imprisonment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6633731126785278,
+            "original:bm25": 0.6923308671681078,
+            "original:semrank_pre_rerank": 0.9446,
+            "semrank_pre_rerank": 0.9446
+          },
+          "query_scores": {
+            "original": 0.5861636340035681
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "score": 0.9446,
+            "best_similarity": 0.9446,
+            "best_concept": "offence punishable with imprisonment",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "offence punishable with imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.9446,
+                "weighted_score": 0.9446
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "abetment",
+                "source": "legal_concept",
+                "similarity": 0.8348,
+                "weighted_score": 0.8348
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "robbery",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "police",
+                "source": "keyword",
+                "similarity": 0.8765,
+                "weighted_score": 0.6573
+              }
+            ],
+            "pre_rerank_score": 0.9446,
+            "score_before_pre_rerank": 0.586164,
+            "score_after_pre_rerank": 0.650682
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S310_N6",
+          "score": 0.252329,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 310,
+          "citation": "Section 310",
+          "text": "Whoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 310: Dacoity.\nWhoever belongs to a gang of persons associated for the purpose of habitually committing dacoity, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine. Robbery, or dacoity, with attempt to cause death or grievous hurt.",
+          "keywords": [
+            "dacoity",
+            "imprisonment",
+            "whoever",
+            "belongs",
+            "gang",
+            "associated",
+            "purpose",
+            "habitually",
+            "committing",
+            "punished",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "dacoity"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.664709210395813,
+            "original:semrank_pre_rerank": 0.8673,
+            "semrank_pre_rerank": 0.8673
+          },
+          "query_scores": {
+            "original": 0.5789118768729169
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "robbery",
+              "imprisonment",
+              "what is the punishment for robbery"
+            ],
+            "score": 0.8673,
+            "best_similarity": 0.8673,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8673,
+                "weighted_score": 0.8673
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "dacoity",
+                "source": "legal_concept",
+                "similarity": 0.7901,
+                "weighted_score": 0.7901
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "robbery",
+                "chunk_concept": "gang",
+                "source": "keyword",
+                "similarity": 0.8488,
+                "weighted_score": 0.6366
+              },
+              {
+                "query_concept": "imprisonment",
+                "chunk_concept": "committing",
+                "source": "keyword",
+                "similarity": 0.8369,
+                "weighted_score": 0.6276
+              }
+            ],
+            "pre_rerank_score": 0.8673,
+            "score_before_pre_rerank": 0.578912,
+            "score_after_pre_rerank": 0.630822
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

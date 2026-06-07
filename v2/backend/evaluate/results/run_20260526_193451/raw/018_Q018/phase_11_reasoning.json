@@ -1,0 +1,3385 @@
+[
+  {
+    "query": "What is a document under BNS?",
+    "phase8": {
+      "query": "What is a document under BNS?",
+      "intent": {
+        "primary": "definition",
+        "secondary": []
+      },
+      "concepts": [
+        "document",
+        "BNS"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.4417,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.25,
+        "structure_validity": 1.0,
+        "overall": 0.6267
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is a document under BNS?",
+          "targets": [],
+          "concepts": [
+            "document",
+            "BNS"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S2_N8",
+            "score": 0.902645,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.",
+            "keywords": [
+              "means",
+              "used",
+              "expressed",
+              "described",
+              "upon",
+              "substance",
+              "letters",
+              "figures"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6519689559936523,
+              "semrank_pre_rerank": 0.6948
+            },
+            "query_scores": {
+              "original": 0.6519689559936523
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "document",
+                "bns",
+                "under",
+                "what is a document under bns"
+              ],
+              "score": 0.6948,
+              "best_similarity": 0.9264,
+              "best_concept": "described",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "described",
+                  "source": "keyword",
+                  "similarity": 0.9264,
+                  "weighted_score": 0.6948
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "used",
+                  "source": "keyword",
+                  "similarity": 0.9257,
+                  "weighted_score": 0.6942
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "expressed",
+                  "source": "keyword",
+                  "similarity": 0.9223,
+                  "weighted_score": 0.6918
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "upon",
+                  "source": "keyword",
+                  "similarity": 0.9109,
+                  "weighted_score": 0.6832
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "letters",
+                  "source": "keyword",
+                  "similarity": 0.8951,
+                  "weighted_score": 0.6713
+                }
+              ],
+              "pre_rerank_score": 0.6948,
+              "score_before_pre_rerank": 0.770182,
+              "score_after_pre_rerank": 0.756613
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S2_N8_EXP2",
+            "score": 0.622951,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "Whatever is expressed by means of letters, figures or marks as explained by mercantile or other usage, shall be deemed to be expressed by such letters, figures or marks within the meaning of this section, although the same may not be actually expressed.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.\nWhatever is expressed by means of letters, figures or marks as explained by mercantile or other usage, shall be deemed to be expressed by such letters, figures or marks within the meaning of this section, although the same may not be actually expressed.",
+            "keywords": [
+              "expressed",
+              "letters",
+              "figures",
+              "marks",
+              "whatever",
+              "means",
+              "explained",
+              "mercantile",
+              "usage",
+              "deemed"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6511595845222473,
+              "semrank_pre_rerank": 0.7007
+            },
+            "query_scores": {
+              "original": 0.6511595845222473
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "document",
+                "bns",
+                "under",
+                "what is a document under bns"
+              ],
+              "score": 0.7007,
+              "best_similarity": 0.9343,
+              "best_concept": "usage",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "usage",
+                  "source": "keyword",
+                  "similarity": 0.9343,
+                  "weighted_score": 0.7007
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "explained",
+                  "source": "keyword",
+                  "similarity": 0.9247,
+                  "weighted_score": 0.6935
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "expressed",
+                  "source": "keyword",
+                  "similarity": 0.9223,
+                  "weighted_score": 0.6918
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "letters",
+                  "source": "keyword",
+                  "similarity": 0.8951,
+                  "weighted_score": 0.6713
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "marks",
+                  "source": "keyword",
+                  "similarity": 0.8925,
+                  "weighted_score": 0.6694
+                }
+              ],
+              "pre_rerank_score": 0.7007,
+              "score_before_pre_rerank": 0.769952,
+              "score_after_pre_rerank": 0.757487
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S2_N8_ILL1_B",
+            "score": 0.546173,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "A cheque upon a banker is a document.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.\nA cheque upon a banker is a document.",
+            "keywords": [
+              "cheque",
+              "upon",
+              "banker",
+              "definitions",
+              "preliminary"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.08789777830119948,
+              "semrank_pre_rerank": 0.6894
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "document",
+                "bns",
+                "under",
+                "what is a document under bns"
+              ],
+              "score": 0.6894,
+              "best_similarity": 0.9191,
+              "best_concept": "definitions",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "definitions",
+                  "source": "keyword",
+                  "similarity": 0.9191,
+                  "weighted_score": 0.6894
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "upon",
+                  "source": "keyword",
+                  "similarity": 0.9109,
+                  "weighted_score": 0.6832
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "preliminary",
+                  "source": "keyword",
+                  "similarity": 0.9086,
+                  "weighted_score": 0.6814
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "cheque",
+                  "source": "keyword",
+                  "similarity": 0.8433,
+                  "weighted_score": 0.6325
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "banker",
+                  "source": "keyword",
+                  "similarity": 0.8237,
+                  "weighted_score": 0.6178
+                }
+              ],
+              "pre_rerank_score": 0.6894,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.944092
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S2_N8_EXP1",
+            "score": 0.46132,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "It is immaterial by what means or upon what substance the letters, figures or marks are formed, or whether the evidence is intended for, or may be used in a Court or not.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.\nIt is immaterial by what means or upon what substance the letters, figures or marks are formed, or whether the evidence is intended for, or may be used in a Court or not.",
+            "keywords": [
+              "what",
+              "immaterial",
+              "means",
+              "upon",
+              "substance",
+              "letters",
+              "figures",
+              "marks",
+              "formed",
+              "whether"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6461888551712036,
+              "semrank_pre_rerank": 0.6832
+            },
+            "query_scores": {
+              "original": 0.6461888551712036
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "document",
+                "bns",
+                "under",
+                "what is a document under bns"
+              ],
+              "score": 0.6832,
+              "best_similarity": 0.9109,
+              "best_concept": "upon",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "upon",
+                  "source": "keyword",
+                  "similarity": 0.9109,
+                  "weighted_score": 0.6832
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "formed",
+                  "source": "keyword",
+                  "similarity": 0.9095,
+                  "weighted_score": 0.6822
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "whether",
+                  "source": "keyword",
+                  "similarity": 0.9062,
+                  "weighted_score": 0.6797
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "letters",
+                  "source": "keyword",
+                  "similarity": 0.8951,
+                  "weighted_score": 0.6713
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "marks",
+                  "source": "keyword",
+                  "similarity": 0.8925,
+                  "weighted_score": 0.6694
+                }
+              ],
+              "pre_rerank_score": 0.6832,
+              "score_before_pre_rerank": 0.761937,
+              "score_after_pre_rerank": 0.747765
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S250_C",
+            "score": 0.395264,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 250,
+            "citation": "Section 250",
+            "text": "if the offence is punishable with imprisonment not extending to ten years, be punished with imprisonment of the description provided for the offence for a term which may extend to one-fourth part of the longest term of imprisonment provided for the offence, or with fine, or with both. Offering gift or restoration of property in consideration of screening offender.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 250: Taking gift, etc., to screen an offender from punishment.\nif the offence is punishable with imprisonment not extending to ten years, be punished with imprisonment of the description provided for the offence for a term which may extend to one-fourth part of the longest term of imprisonment provided for the offence, or with fine, or with both. Offering gift or restoration of property in consideration of screening offender.",
+            "keywords": [
+              "offence",
+              "imprisonment",
+              "provided",
+              "term",
+              "gift",
+              "offender",
+              "punishable",
+              "extending",
+              "years",
+              "punished",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence",
+              "punishable",
+              "term"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 0.9342
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9342,
+              "query_concepts": [
+                "document",
+                "bns",
+                "under",
+                "what is a document under bns"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "term",
+                  "source": "legal_concept",
+                  "similarity": 0.9342,
+                  "weighted_score": 0.9342
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "punishable",
+                  "source": "legal_concept",
+                  "similarity": 0.8647,
+                  "weighted_score": 0.8647
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "provided",
+                  "source": "keyword",
+                  "similarity": 0.911,
+                  "weighted_score": 0.6833
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "extending",
+                  "source": "keyword",
+                  "similarity": 0.9094,
+                  "weighted_score": 0.682
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "gift",
+                  "source": "keyword",
+                  "similarity": 0.8619,
+                  "weighted_score": 0.6464
+                }
+              ],
+              "score": 0.9342,
+              "best_similarity": 0.9342,
+              "best_concept": "term",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9342,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.988156
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S182_N3",
+            "score": 0.394332,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+            "section_number": 182,
+            "citation": "Section 182",
+            "text": "Where the name of any person appears on any document in respect of which any person is charged with an offence under sub-section (1) or on any other document used or distributed in connection with that document it may, until the contrary is proved, be presumed that the person caused the document to be made. Effacing writing from substance bearing Government stamp, or removing from document a stamp used for it, with intent to cause loss to Government.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 10: OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS\nSection 182: Making or using documents resembling currency-notes or bank-notes.\nWhere the name of any person appears on any document in respect of which any person is charged with an offence under sub-section (1) or on any other document used or distributed in connection with that document it may, until the contrary is proved, be presumed that the person caused the document to be made. Effacing writing from substance bearing Government stamp, or removing from document a stamp used for it, with intent to cause loss to Government.",
+            "keywords": [
+              "government",
+              "used",
+              "stamp",
+              "currency-notes",
+              "bank-notes",
+              "name",
+              "appears",
+              "respect",
+              "charged",
+              "presumption",
+              "document creation"
+            ],
+            "legal_concepts": [
+              "causing a document to be made",
+              "presumption of guilt"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.5838017463684082,
+              "bm25": 0.947098618978887,
+              "semrank_pre_rerank": 0.9094
+            },
+            "query_scores": {
+              "original": 0.947098618978887
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "document",
+                "bns",
+                "under",
+                "what is a document under bns"
+              ],
+              "score": 0.9094,
+              "best_similarity": 0.9094,
+              "best_concept": "causing a document to be made",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "causing a document to be made",
+                  "source": "legal_concept",
+                  "similarity": 0.9094,
+                  "weighted_score": 0.9094
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "presumption of guilt",
+                  "source": "legal_concept",
+                  "similarity": 0.8008,
+                  "weighted_score": 0.8008
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "document creation",
+                  "source": "keyword",
+                  "similarity": 0.9349,
+                  "weighted_score": 0.7012
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "used",
+                  "source": "keyword",
+                  "similarity": 0.9257,
+                  "weighted_score": 0.6942
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "government",
+                  "source": "keyword",
+                  "similarity": 0.8899,
+                  "weighted_score": 0.6674
+                }
+              ],
+              "pre_rerank_score": 0.9094,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.983692
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S340_N2",
+            "score": 0.391935,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+            "section_number": 340,
+            "citation": "Section 340",
+            "text": "Whoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic record. Making or possessing counterfeit seal, etc., with intent to commit forgery punishable under section 338.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 18: OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS\nSection 340: Forged document or electronic record and using it as genuine.\nWhoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic record. Making or possessing counterfeit seal, etc., with intent to commit forgery punishable under section 338.",
+            "keywords": [
+              "electronic",
+              "record",
+              "forged",
+              "genuine",
+              "whoever",
+              "fraudulently",
+              "dishonestly",
+              "uses",
+              "knows",
+              "forged documents",
+              "electronic records"
+            ],
+            "legal_concepts": [
+              "forgery of documents",
+              "punishment for forgery"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "bm25": 1.0,
+              "semrank_pre_rerank": 0.8823
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "document",
+                "bns",
+                "under",
+                "what is a document under bns"
+              ],
+              "score": 0.8823,
+              "best_similarity": 0.8823,
+              "best_concept": "forgery of documents",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "forgery of documents",
+                  "source": "legal_concept",
+                  "similarity": 0.8823,
+                  "weighted_score": 0.8823
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "punishment for forgery",
+                  "source": "legal_concept",
+                  "similarity": 0.8109,
+                  "weighted_score": 0.8109
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "uses",
+                  "source": "keyword",
+                  "similarity": 0.9228,
+                  "weighted_score": 0.6921
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "electronic",
+                  "source": "keyword",
+                  "similarity": 0.9192,
+                  "weighted_score": 0.6894
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "record",
+                  "source": "keyword",
+                  "similarity": 0.9162,
+                  "weighted_score": 0.6872
+                }
+              ],
+              "pre_rerank_score": 0.8823,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.978814
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S2_N31",
+            "score": 0.382889,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“valuable security” means a document which is, or purports to be, a document whereby any legal right is created, extended, transferred, restricted, extinguished or released, or whereby any person acknowledges that he lies under legal liability, or has not a certain legal right.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“valuable security” means a document which is, or purports to be, a document whereby any legal right is created, extended, transferred, restricted, extinguished or released, or whereby any person acknowledges that he lies under legal liability, or has not a certain legal right.",
+            "keywords": [
+              "right",
+              "valuable",
+              "security",
+              "means",
+              "purports",
+              "created",
+              "extended",
+              "transferred"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "bm25": 0.9005706352274805,
+              "semrank_pre_rerank": 0.6898
+            },
+            "query_scores": {
+              "original": 0.9005706352274805
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "document",
+                "bns",
+                "under",
+                "what is a document under bns"
+              ],
+              "score": 0.6898,
+              "best_similarity": 0.9197,
+              "best_concept": "extended",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "extended",
+                  "source": "keyword",
+                  "similarity": 0.9197,
+                  "weighted_score": 0.6898
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "right",
+                  "source": "keyword",
+                  "similarity": 0.9041,
+                  "weighted_score": 0.678
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "created",
+                  "source": "keyword",
+                  "similarity": 0.9011,
+                  "weighted_score": 0.6758
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "means",
+                  "source": "keyword",
+                  "similarity": 0.8895,
+                  "weighted_score": 0.6671
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "security",
+                  "source": "keyword",
+                  "similarity": 0.8877,
+                  "weighted_score": 0.6657
+                }
+              ],
+              "pre_rerank_score": 0.6898,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.944164
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S275_BODY",
+            "score": 0.364199,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+            "section_number": 275,
+            "citation": "Section 275",
+            "text": "Whoever sells, or offers or exposes for sale, as food or drink, any article which has been rendered or has become noxious, or is in a state unfit for food or drink, knowing or having reason to believe that the same is noxious as food or drink, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Adulteration of drugs.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 275: Sale of noxious food or drink.\nWhoever sells, or offers or exposes for sale, as food or drink, any article which has been rendered or has become noxious, or is in a state unfit for food or drink, knowing or having reason to believe that the same is noxious as food or drink, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Adulteration of drugs.",
+            "keywords": [
+              "food",
+              "drink",
+              "noxious",
+              "sale",
+              "extend",
+              "whoever",
+              "sells",
+              "offers",
+              "exposes",
+              "article",
+              "noxious food"
+            ],
+            "legal_concepts": [
+              "offence against public health",
+              "punishment for sale of noxious article"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.7104021906852722,
+              "semrank_pre_rerank": 0.7889
+            },
+            "query_scores": {
+              "original": 0.7104021906852722
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.7104,
+              "query_concepts": [
+                "document",
+                "bns",
+                "under",
+                "what is a document under bns"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "punishment for sale of noxious article",
+                  "source": "legal_concept",
+                  "similarity": 0.7889,
+                  "weighted_score": 0.7889
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "offence against public health",
+                  "source": "legal_concept",
+                  "similarity": 0.7806,
+                  "weighted_score": 0.7806
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "article",
+                  "source": "keyword",
+                  "similarity": 0.9472,
+                  "weighted_score": 0.7104
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "extend",
+                  "source": "keyword",
+                  "similarity": 0.8922,
+                  "weighted_score": 0.6692
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "offers",
+                  "source": "keyword",
+                  "similarity": 0.8663,
+                  "weighted_score": 0.6497
+                }
+              ],
+              "score": 0.7889,
+              "best_similarity": 0.7889,
+              "best_concept": "punishment for sale of noxious article",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.7889,
+              "score_before_pre_rerank": 0.937029,
+              "score_after_pre_rerank": 0.910366
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S294_N2_A_2_I",
+            "score": 0.354861,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+            "section_number": 294,
+            "citation": "Section 294",
+            "text": "the publication of which is proved to be justified as being for the public good on the ground that such book, pamphlet, paper, writing, drawing, painting, representation or figure is in the interest of science, literature, art or learning or other objects of general concern; or",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 294: Sale, etc., of obscene books, etc.\nWhoever—\nany book, pamphlet, paper, writing, drawing, painting, representation or figure—\nthe publication of which is proved to be justified as being for the public good on the ground that such book, pamphlet, paper, writing, drawing, painting, representation or figure is in the interest of science, literature, art or learning or other objects of general concern; or",
+            "keywords": [
+              "public",
+              "publication",
+              "proved",
+              "justified",
+              "good",
+              "ground",
+              "book",
+              "pamphlet",
+              "paper",
+              "writing",
+              "obscene",
+              "books",
+              "public good"
+            ],
+            "legal_concepts": [
+              "offence",
+              "publication",
+              "justification"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.714909240603447,
+              "semrank_pre_rerank": 0.9333
+            },
+            "query_scores": {
+              "original": 0.714909240603447
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.7149,
+              "query_concepts": [
+                "document",
+                "bns",
+                "under",
+                "what is a document under bns"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "publication",
+                  "source": "legal_concept",
+                  "similarity": 0.9333,
+                  "weighted_score": 0.9333
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "justification",
+                  "source": "legal_concept",
+                  "similarity": 0.8776,
+                  "weighted_score": 0.8776
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "paper",
+                  "source": "keyword",
+                  "similarity": 0.9532,
+                  "weighted_score": 0.7149
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "writing",
+                  "source": "keyword",
+                  "similarity": 0.9182,
+                  "weighted_score": 0.6887
+                },
+                {
+                  "query_concept": "document",
+                  "chunk_concept": "book",
+                  "source": "keyword",
+                  "similarity": 0.9127,
+                  "weighted_score": 0.6845
+                }
+              ],
+              "score": 0.9333,
+              "best_similarity": 0.9333,
+              "best_concept": "publication",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9333,
+              "score_before_pre_rerank": 0.87676,
+              "score_after_pre_rerank": 0.886937
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S2_N8",
+          "score": 0.865233,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.",
+          "keywords": [
+            "means",
+            "used",
+            "expressed",
+            "described",
+            "upon",
+            "substance",
+            "letters",
+            "figures"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6519689559936523,
+            "original:semrank_pre_rerank": 0.6948,
+            "semrank_pre_rerank": 0.6948
+          },
+          "query_scores": {
+            "original": 0.9026453424386811
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "score": 0.6948,
+            "best_similarity": 0.9264,
+            "best_concept": "described",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "described",
+                "source": "keyword",
+                "similarity": 0.9264,
+                "weighted_score": 0.6948
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "used",
+                "source": "keyword",
+                "similarity": 0.9257,
+                "weighted_score": 0.6942
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "expressed",
+                "source": "keyword",
+                "similarity": 0.9223,
+                "weighted_score": 0.6918
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "upon",
+                "source": "keyword",
+                "similarity": 0.9109,
+                "weighted_score": 0.6832
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "letters",
+                "source": "keyword",
+                "similarity": 0.8951,
+                "weighted_score": 0.6713
+              }
+            ],
+            "pre_rerank_score": 0.6948,
+            "score_before_pre_rerank": 0.902645,
+            "score_after_pre_rerank": 0.865233
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S2_N8_EXP2",
+          "score": 0.636946,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "Whatever is expressed by means of letters, figures or marks as explained by mercantile or other usage, shall be deemed to be expressed by such letters, figures or marks within the meaning of this section, although the same may not be actually expressed.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.\nWhatever is expressed by means of letters, figures or marks as explained by mercantile or other usage, shall be deemed to be expressed by such letters, figures or marks within the meaning of this section, although the same may not be actually expressed.",
+          "keywords": [
+            "expressed",
+            "letters",
+            "figures",
+            "marks",
+            "whatever",
+            "means",
+            "explained",
+            "mercantile",
+            "usage",
+            "deemed"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6511595845222473,
+            "original:semrank_pre_rerank": 0.7007,
+            "semrank_pre_rerank": 0.7007
+          },
+          "query_scores": {
+            "original": 0.6229511610135772
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "score": 0.7007,
+            "best_similarity": 0.9343,
+            "best_concept": "usage",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "usage",
+                "source": "keyword",
+                "similarity": 0.9343,
+                "weighted_score": 0.7007
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "explained",
+                "source": "keyword",
+                "similarity": 0.9247,
+                "weighted_score": 0.6935
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "expressed",
+                "source": "keyword",
+                "similarity": 0.9223,
+                "weighted_score": 0.6918
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "letters",
+                "source": "keyword",
+                "similarity": 0.8951,
+                "weighted_score": 0.6713
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "marks",
+                "source": "keyword",
+                "similarity": 0.8925,
+                "weighted_score": 0.6694
+              }
+            ],
+            "pre_rerank_score": 0.7007,
+            "score_before_pre_rerank": 0.622951,
+            "score_after_pre_rerank": 0.636946
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S2_N8_ILL1_B",
+          "score": 0.571953,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "A cheque upon a banker is a document.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.\nA cheque upon a banker is a document.",
+          "keywords": [
+            "cheque",
+            "upon",
+            "banker",
+            "definitions",
+            "preliminary"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.08789777830119948,
+            "original:semrank_pre_rerank": 0.6894,
+            "semrank_pre_rerank": 0.6894
+          },
+          "query_scores": {
+            "original": 0.5461725256955714
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "score": 0.6894,
+            "best_similarity": 0.9191,
+            "best_concept": "definitions",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "definitions",
+                "source": "keyword",
+                "similarity": 0.9191,
+                "weighted_score": 0.6894
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "upon",
+                "source": "keyword",
+                "similarity": 0.9109,
+                "weighted_score": 0.6832
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.9086,
+                "weighted_score": 0.6814
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "cheque",
+                "source": "keyword",
+                "similarity": 0.8433,
+                "weighted_score": 0.6325
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "banker",
+                "source": "keyword",
+                "similarity": 0.8237,
+                "weighted_score": 0.6178
+              }
+            ],
+            "pre_rerank_score": 0.6894,
+            "score_before_pre_rerank": 0.546173,
+            "score_after_pre_rerank": 0.571953
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S2_N8_EXP1",
+          "score": 0.501259,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "It is immaterial by what means or upon what substance the letters, figures or marks are formed, or whether the evidence is intended for, or may be used in a Court or not.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.\nIt is immaterial by what means or upon what substance the letters, figures or marks are formed, or whether the evidence is intended for, or may be used in a Court or not.",
+          "keywords": [
+            "what",
+            "immaterial",
+            "means",
+            "upon",
+            "substance",
+            "letters",
+            "figures",
+            "marks",
+            "formed",
+            "whether"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6461888551712036,
+            "original:semrank_pre_rerank": 0.6832,
+            "semrank_pre_rerank": 0.6832
+          },
+          "query_scores": {
+            "original": 0.4613204577298876
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "score": 0.6832,
+            "best_similarity": 0.9109,
+            "best_concept": "upon",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "under",
+                "chunk_concept": "upon",
+                "source": "keyword",
+                "similarity": 0.9109,
+                "weighted_score": 0.6832
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "formed",
+                "source": "keyword",
+                "similarity": 0.9095,
+                "weighted_score": 0.6822
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "whether",
+                "source": "keyword",
+                "similarity": 0.9062,
+                "weighted_score": 0.6797
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "letters",
+                "source": "keyword",
+                "similarity": 0.8951,
+                "weighted_score": 0.6713
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "marks",
+                "source": "keyword",
+                "similarity": 0.8925,
+                "weighted_score": 0.6694
+              }
+            ],
+            "pre_rerank_score": 0.6832,
+            "score_before_pre_rerank": 0.46132,
+            "score_after_pre_rerank": 0.501259
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S250_C",
+          "score": 0.492272,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 250,
+          "citation": "Section 250",
+          "text": "if the offence is punishable with imprisonment not extending to ten years, be punished with imprisonment of the description provided for the offence for a term which may extend to one-fourth part of the longest term of imprisonment provided for the offence, or with fine, or with both. Offering gift or restoration of property in consideration of screening offender.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 250: Taking gift, etc., to screen an offender from punishment.\nif the offence is punishable with imprisonment not extending to ten years, be punished with imprisonment of the description provided for the offence for a term which may extend to one-fourth part of the longest term of imprisonment provided for the offence, or with fine, or with both. Offering gift or restoration of property in consideration of screening offender.",
+          "keywords": [
+            "offence",
+            "imprisonment",
+            "provided",
+            "term",
+            "gift",
+            "offender",
+            "punishable",
+            "extending",
+            "years",
+            "punished",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence",
+            "punishable",
+            "term"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 0.9342,
+            "semrank_pre_rerank": 0.9342
+          },
+          "query_scores": {
+            "original": 0.39526384992482283
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9342,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "term",
+                "source": "legal_concept",
+                "similarity": 0.9342,
+                "weighted_score": 0.9342
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "punishable",
+                "source": "legal_concept",
+                "similarity": 0.8647,
+                "weighted_score": 0.8647
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "provided",
+                "source": "keyword",
+                "similarity": 0.911,
+                "weighted_score": 0.6833
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "extending",
+                "source": "keyword",
+                "similarity": 0.9094,
+                "weighted_score": 0.682
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "gift",
+                "source": "keyword",
+                "similarity": 0.8619,
+                "weighted_score": 0.6464
+              }
+            ],
+            "score": 0.9342,
+            "best_similarity": 0.9342,
+            "best_concept": "term",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9342,
+            "score_before_pre_rerank": 0.395264,
+            "score_after_pre_rerank": 0.492272
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S182_N3",
+          "score": 0.487044,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+          "section_number": 182,
+          "citation": "Section 182",
+          "text": "Where the name of any person appears on any document in respect of which any person is charged with an offence under sub-section (1) or on any other document used or distributed in connection with that document it may, until the contrary is proved, be presumed that the person caused the document to be made. Effacing writing from substance bearing Government stamp, or removing from document a stamp used for it, with intent to cause loss to Government.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 10: OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS\nSection 182: Making or using documents resembling currency-notes or bank-notes.\nWhere the name of any person appears on any document in respect of which any person is charged with an offence under sub-section (1) or on any other document used or distributed in connection with that document it may, until the contrary is proved, be presumed that the person caused the document to be made. Effacing writing from substance bearing Government stamp, or removing from document a stamp used for it, with intent to cause loss to Government.",
+          "keywords": [
+            "government",
+            "used",
+            "stamp",
+            "currency-notes",
+            "bank-notes",
+            "name",
+            "appears",
+            "respect",
+            "charged",
+            "presumption",
+            "document creation"
+          ],
+          "legal_concepts": [
+            "causing a document to be made",
+            "presumption of guilt"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.5838017463684082,
+            "original:bm25": 0.947098618978887,
+            "original:semrank_pre_rerank": 0.9094,
+            "semrank_pre_rerank": 0.9094
+          },
+          "query_scores": {
+            "original": 0.39433153421106504
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "score": 0.9094,
+            "best_similarity": 0.9094,
+            "best_concept": "causing a document to be made",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "causing a document to be made",
+                "source": "legal_concept",
+                "similarity": 0.9094,
+                "weighted_score": 0.9094
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "presumption of guilt",
+                "source": "legal_concept",
+                "similarity": 0.8008,
+                "weighted_score": 0.8008
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "document creation",
+                "source": "keyword",
+                "similarity": 0.9349,
+                "weighted_score": 0.7012
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "used",
+                "source": "keyword",
+                "similarity": 0.9257,
+                "weighted_score": 0.6942
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "government",
+                "source": "keyword",
+                "similarity": 0.8899,
+                "weighted_score": 0.6674
+              }
+            ],
+            "pre_rerank_score": 0.9094,
+            "score_before_pre_rerank": 0.394332,
+            "score_after_pre_rerank": 0.487044
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S340_N2",
+          "score": 0.480201,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+          "section_number": 340,
+          "citation": "Section 340",
+          "text": "Whoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic record. Making or possessing counterfeit seal, etc., with intent to commit forgery punishable under section 338.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 18: OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS\nSection 340: Forged document or electronic record and using it as genuine.\nWhoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic record. Making or possessing counterfeit seal, etc., with intent to commit forgery punishable under section 338.",
+          "keywords": [
+            "electronic",
+            "record",
+            "forged",
+            "genuine",
+            "whoever",
+            "fraudulently",
+            "dishonestly",
+            "uses",
+            "knows",
+            "forged documents",
+            "electronic records"
+          ],
+          "legal_concepts": [
+            "forgery of documents",
+            "punishment for forgery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.8823,
+            "semrank_pre_rerank": 0.8823
+          },
+          "query_scores": {
+            "original": 0.39193530664822035
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "score": 0.8823,
+            "best_similarity": 0.8823,
+            "best_concept": "forgery of documents",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "forgery of documents",
+                "source": "legal_concept",
+                "similarity": 0.8823,
+                "weighted_score": 0.8823
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "punishment for forgery",
+                "source": "legal_concept",
+                "similarity": 0.8109,
+                "weighted_score": 0.8109
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "uses",
+                "source": "keyword",
+                "similarity": 0.9228,
+                "weighted_score": 0.6921
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "electronic",
+                "source": "keyword",
+                "similarity": 0.9192,
+                "weighted_score": 0.6894
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "record",
+                "source": "keyword",
+                "similarity": 0.9162,
+                "weighted_score": 0.6872
+              }
+            ],
+            "pre_rerank_score": 0.8823,
+            "score_before_pre_rerank": 0.391935,
+            "score_after_pre_rerank": 0.480201
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S294_N2_A_2_I",
+          "score": 0.45898,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 294,
+          "citation": "Section 294",
+          "text": "the publication of which is proved to be justified as being for the public good on the ground that such book, pamphlet, paper, writing, drawing, painting, representation or figure is in the interest of science, literature, art or learning or other objects of general concern; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 294: Sale, etc., of obscene books, etc.\nWhoever—\nany book, pamphlet, paper, writing, drawing, painting, representation or figure—\nthe publication of which is proved to be justified as being for the public good on the ground that such book, pamphlet, paper, writing, drawing, painting, representation or figure is in the interest of science, literature, art or learning or other objects of general concern; or",
+          "keywords": [
+            "public",
+            "publication",
+            "proved",
+            "justified",
+            "good",
+            "ground",
+            "book",
+            "pamphlet",
+            "paper",
+            "writing",
+            "obscene",
+            "books",
+            "public good"
+          ],
+          "legal_concepts": [
+            "offence",
+            "publication",
+            "justification"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.714909240603447,
+            "original:semrank_pre_rerank": 0.9333,
+            "semrank_pre_rerank": 0.9333
+          },
+          "query_scores": {
+            "original": 0.354861166127507
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7149,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "publication",
+                "source": "legal_concept",
+                "similarity": 0.9333,
+                "weighted_score": 0.9333
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "justification",
+                "source": "legal_concept",
+                "similarity": 0.8776,
+                "weighted_score": 0.8776
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "paper",
+                "source": "keyword",
+                "similarity": 0.9532,
+                "weighted_score": 0.7149
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "writing",
+                "source": "keyword",
+                "similarity": 0.9182,
+                "weighted_score": 0.6887
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "book",
+                "source": "keyword",
+                "similarity": 0.9127,
+                "weighted_score": 0.6845
+              }
+            ],
+            "score": 0.9333,
+            "best_similarity": 0.9333,
+            "best_concept": "publication",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9333,
+            "score_before_pre_rerank": 0.354861,
+            "score_after_pre_rerank": 0.45898
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S275_BODY",
+          "score": 0.440646,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 275,
+          "citation": "Section 275",
+          "text": "Whoever sells, or offers or exposes for sale, as food or drink, any article which has been rendered or has become noxious, or is in a state unfit for food or drink, knowing or having reason to believe that the same is noxious as food or drink, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Adulteration of drugs.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 275: Sale of noxious food or drink.\nWhoever sells, or offers or exposes for sale, as food or drink, any article which has been rendered or has become noxious, or is in a state unfit for food or drink, knowing or having reason to believe that the same is noxious as food or drink, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Adulteration of drugs.",
+          "keywords": [
+            "food",
+            "drink",
+            "noxious",
+            "sale",
+            "extend",
+            "whoever",
+            "sells",
+            "offers",
+            "exposes",
+            "article",
+            "noxious food"
+          ],
+          "legal_concepts": [
+            "offence against public health",
+            "punishment for sale of noxious article"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.7104021906852722,
+            "original:semrank_pre_rerank": 0.7889,
+            "semrank_pre_rerank": 0.7889
+          },
+          "query_scores": {
+            "original": 0.36419947429043165
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7104,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "punishment for sale of noxious article",
+                "source": "legal_concept",
+                "similarity": 0.7889,
+                "weighted_score": 0.7889
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "offence against public health",
+                "source": "legal_concept",
+                "similarity": 0.7806,
+                "weighted_score": 0.7806
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "article",
+                "source": "keyword",
+                "similarity": 0.9472,
+                "weighted_score": 0.7104
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.8922,
+                "weighted_score": 0.6692
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "offers",
+                "source": "keyword",
+                "similarity": 0.8663,
+                "weighted_score": 0.6497
+              }
+            ],
+            "score": 0.7889,
+            "best_similarity": 0.7889,
+            "best_concept": "punishment for sale of noxious article",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.7889,
+            "score_before_pre_rerank": 0.364199,
+            "score_after_pre_rerank": 0.440646
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S2_N31",
+          "score": 0.438133,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "“valuable security” means a document which is, or purports to be, a document whereby any legal right is created, extended, transferred, restricted, extinguished or released, or whereby any person acknowledges that he lies under legal liability, or has not a certain legal right.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“valuable security” means a document which is, or purports to be, a document whereby any legal right is created, extended, transferred, restricted, extinguished or released, or whereby any person acknowledges that he lies under legal liability, or has not a certain legal right.",
+          "keywords": [
+            "right",
+            "valuable",
+            "security",
+            "means",
+            "purports",
+            "created",
+            "extended",
+            "transferred"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 0.9005706352274805,
+            "original:semrank_pre_rerank": 0.6898,
+            "semrank_pre_rerank": 0.6898
+          },
+          "query_scores": {
+            "original": 0.3828887212579565
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "score": 0.6898,
+            "best_similarity": 0.9197,
+            "best_concept": "extended",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "extended",
+                "source": "keyword",
+                "similarity": 0.9197,
+                "weighted_score": 0.6898
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "right",
+                "source": "keyword",
+                "similarity": 0.9041,
+                "weighted_score": 0.678
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "created",
+                "source": "keyword",
+                "similarity": 0.9011,
+                "weighted_score": 0.6758
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "means",
+                "source": "keyword",
+                "similarity": 0.8895,
+                "weighted_score": 0.6671
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "security",
+                "source": "keyword",
+                "similarity": 0.8877,
+                "weighted_score": 0.6657
+              }
+            ],
+            "pre_rerank_score": 0.6898,
+            "score_before_pre_rerank": 0.382889,
+            "score_after_pre_rerank": 0.438133
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S2_N8",
+          "score": 0.946093,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.",
+          "keywords": [
+            "means",
+            "used",
+            "expressed",
+            "described",
+            "upon",
+            "substance",
+            "letters",
+            "figures"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6519689559936523,
+            "original:semrank_pre_rerank": 0.6948,
+            "semrank_pre_rerank": 0.6948
+          },
+          "query_scores": {
+            "original": 0.9026453424386811
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "score": 0.6948,
+            "best_similarity": 0.9264,
+            "best_concept": "described",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "described",
+                "source": "keyword",
+                "similarity": 0.9264,
+                "weighted_score": 0.6948
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "used",
+                "source": "keyword",
+                "similarity": 0.9257,
+                "weighted_score": 0.6942
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "expressed",
+                "source": "keyword",
+                "similarity": 0.9223,
+                "weighted_score": 0.6918
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "upon",
+                "source": "keyword",
+                "similarity": 0.9109,
+                "weighted_score": 0.6832
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "letters",
+                "source": "keyword",
+                "similarity": 0.8951,
+                "weighted_score": 0.6713
+              }
+            ],
+            "pre_rerank_score": 0.6948,
+            "score_before_pre_rerank": 0.902645,
+            "score_after_pre_rerank": 0.865233
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S2_N8_EXP2",
+          "score": 0.574732,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "Whatever is expressed by means of letters, figures or marks as explained by mercantile or other usage, shall be deemed to be expressed by such letters, figures or marks within the meaning of this section, although the same may not be actually expressed.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.\nWhatever is expressed by means of letters, figures or marks as explained by mercantile or other usage, shall be deemed to be expressed by such letters, figures or marks within the meaning of this section, although the same may not be actually expressed.",
+          "keywords": [
+            "expressed",
+            "letters",
+            "figures",
+            "marks",
+            "whatever",
+            "means",
+            "explained",
+            "mercantile",
+            "usage",
+            "deemed"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6511595845222473,
+            "original:semrank_pre_rerank": 0.7007,
+            "semrank_pre_rerank": 0.7007
+          },
+          "query_scores": {
+            "original": 0.6229511610135772
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "score": 0.7007,
+            "best_similarity": 0.9343,
+            "best_concept": "usage",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "usage",
+                "source": "keyword",
+                "similarity": 0.9343,
+                "weighted_score": 0.7007
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "explained",
+                "source": "keyword",
+                "similarity": 0.9247,
+                "weighted_score": 0.6935
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "expressed",
+                "source": "keyword",
+                "similarity": 0.9223,
+                "weighted_score": 0.6918
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "letters",
+                "source": "keyword",
+                "similarity": 0.8951,
+                "weighted_score": 0.6713
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "marks",
+                "source": "keyword",
+                "similarity": 0.8925,
+                "weighted_score": 0.6694
+              }
+            ],
+            "pre_rerank_score": 0.7007,
+            "score_before_pre_rerank": 0.622951,
+            "score_after_pre_rerank": 0.636946
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S2_N8_ILL1_B",
+          "score": 0.397315,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "A cheque upon a banker is a document.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.\nA cheque upon a banker is a document.",
+          "keywords": [
+            "cheque",
+            "upon",
+            "banker",
+            "definitions",
+            "preliminary"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.08789777830119948,
+            "original:semrank_pre_rerank": 0.6894,
+            "semrank_pre_rerank": 0.6894
+          },
+          "query_scores": {
+            "original": 0.5461725256955714
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "score": 0.6894,
+            "best_similarity": 0.9191,
+            "best_concept": "definitions",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "definitions",
+                "source": "keyword",
+                "similarity": 0.9191,
+                "weighted_score": 0.6894
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "upon",
+                "source": "keyword",
+                "similarity": 0.9109,
+                "weighted_score": 0.6832
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.9086,
+                "weighted_score": 0.6814
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "cheque",
+                "source": "keyword",
+                "similarity": 0.8433,
+                "weighted_score": 0.6325
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "banker",
+                "source": "keyword",
+                "similarity": 0.8237,
+                "weighted_score": 0.6178
+              }
+            ],
+            "pre_rerank_score": 0.6894,
+            "score_before_pre_rerank": 0.546173,
+            "score_after_pre_rerank": 0.571953
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S2_N8_EXP1",
+          "score": 0.362718,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "It is immaterial by what means or upon what substance the letters, figures or marks are formed, or whether the evidence is intended for, or may be used in a Court or not.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.\nIt is immaterial by what means or upon what substance the letters, figures or marks are formed, or whether the evidence is intended for, or may be used in a Court or not.",
+          "keywords": [
+            "what",
+            "immaterial",
+            "means",
+            "upon",
+            "substance",
+            "letters",
+            "figures",
+            "marks",
+            "formed",
+            "whether"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6461888551712036,
+            "original:semrank_pre_rerank": 0.6832,
+            "semrank_pre_rerank": 0.6832
+          },
+          "query_scores": {
+            "original": 0.4613204577298876
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "score": 0.6832,
+            "best_similarity": 0.9109,
+            "best_concept": "upon",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "under",
+                "chunk_concept": "upon",
+                "source": "keyword",
+                "similarity": 0.9109,
+                "weighted_score": 0.6832
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "formed",
+                "source": "keyword",
+                "similarity": 0.9095,
+                "weighted_score": 0.6822
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "whether",
+                "source": "keyword",
+                "similarity": 0.9062,
+                "weighted_score": 0.6797
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "letters",
+                "source": "keyword",
+                "similarity": 0.8951,
+                "weighted_score": 0.6713
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "marks",
+                "source": "keyword",
+                "similarity": 0.8925,
+                "weighted_score": 0.6694
+              }
+            ],
+            "pre_rerank_score": 0.6832,
+            "score_before_pre_rerank": 0.46132,
+            "score_after_pre_rerank": 0.501259
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S250_C",
+          "score": 0.196909,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 250,
+          "citation": "Section 250",
+          "text": "if the offence is punishable with imprisonment not extending to ten years, be punished with imprisonment of the description provided for the offence for a term which may extend to one-fourth part of the longest term of imprisonment provided for the offence, or with fine, or with both. Offering gift or restoration of property in consideration of screening offender.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 250: Taking gift, etc., to screen an offender from punishment.\nif the offence is punishable with imprisonment not extending to ten years, be punished with imprisonment of the description provided for the offence for a term which may extend to one-fourth part of the longest term of imprisonment provided for the offence, or with fine, or with both. Offering gift or restoration of property in consideration of screening offender.",
+          "keywords": [
+            "offence",
+            "imprisonment",
+            "provided",
+            "term",
+            "gift",
+            "offender",
+            "punishable",
+            "extending",
+            "years",
+            "punished",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence",
+            "punishable",
+            "term"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 0.9342,
+            "semrank_pre_rerank": 0.9342
+          },
+          "query_scores": {
+            "original": 0.39526384992482283
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9342,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "term",
+                "source": "legal_concept",
+                "similarity": 0.9342,
+                "weighted_score": 0.9342
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "punishable",
+                "source": "legal_concept",
+                "similarity": 0.8647,
+                "weighted_score": 0.8647
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "provided",
+                "source": "keyword",
+                "similarity": 0.911,
+                "weighted_score": 0.6833
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "extending",
+                "source": "keyword",
+                "similarity": 0.9094,
+                "weighted_score": 0.682
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "gift",
+                "source": "keyword",
+                "similarity": 0.8619,
+                "weighted_score": 0.6464
+              }
+            ],
+            "score": 0.9342,
+            "best_similarity": 0.9342,
+            "best_concept": "term",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9342,
+            "score_before_pre_rerank": 0.395264,
+            "score_after_pre_rerank": 0.492272
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S182_N3",
+          "score": 0.195671,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+          "section_number": 182,
+          "citation": "Section 182",
+          "text": "Where the name of any person appears on any document in respect of which any person is charged with an offence under sub-section (1) or on any other document used or distributed in connection with that document it may, until the contrary is proved, be presumed that the person caused the document to be made. Effacing writing from substance bearing Government stamp, or removing from document a stamp used for it, with intent to cause loss to Government.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 10: OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS\nSection 182: Making or using documents resembling currency-notes or bank-notes.\nWhere the name of any person appears on any document in respect of which any person is charged with an offence under sub-section (1) or on any other document used or distributed in connection with that document it may, until the contrary is proved, be presumed that the person caused the document to be made. Effacing writing from substance bearing Government stamp, or removing from document a stamp used for it, with intent to cause loss to Government.",
+          "keywords": [
+            "government",
+            "used",
+            "stamp",
+            "currency-notes",
+            "bank-notes",
+            "name",
+            "appears",
+            "respect",
+            "charged",
+            "presumption",
+            "document creation"
+          ],
+          "legal_concepts": [
+            "causing a document to be made",
+            "presumption of guilt"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.5838017463684082,
+            "original:bm25": 0.947098618978887,
+            "original:semrank_pre_rerank": 0.9094,
+            "semrank_pre_rerank": 0.9094
+          },
+          "query_scores": {
+            "original": 0.39433153421106504
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "score": 0.9094,
+            "best_similarity": 0.9094,
+            "best_concept": "causing a document to be made",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "causing a document to be made",
+                "source": "legal_concept",
+                "similarity": 0.9094,
+                "weighted_score": 0.9094
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "presumption of guilt",
+                "source": "legal_concept",
+                "similarity": 0.8008,
+                "weighted_score": 0.8008
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "document creation",
+                "source": "keyword",
+                "similarity": 0.9349,
+                "weighted_score": 0.7012
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "used",
+                "source": "keyword",
+                "similarity": 0.9257,
+                "weighted_score": 0.6942
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "government",
+                "source": "keyword",
+                "similarity": 0.8899,
+                "weighted_score": 0.6674
+              }
+            ],
+            "pre_rerank_score": 0.9094,
+            "score_before_pre_rerank": 0.394332,
+            "score_after_pre_rerank": 0.487044
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S340_N2",
+          "score": 0.192489,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+          "section_number": 340,
+          "citation": "Section 340",
+          "text": "Whoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic record. Making or possessing counterfeit seal, etc., with intent to commit forgery punishable under section 338.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 18: OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS\nSection 340: Forged document or electronic record and using it as genuine.\nWhoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic record. Making or possessing counterfeit seal, etc., with intent to commit forgery punishable under section 338.",
+          "keywords": [
+            "electronic",
+            "record",
+            "forged",
+            "genuine",
+            "whoever",
+            "fraudulently",
+            "dishonestly",
+            "uses",
+            "knows",
+            "forged documents",
+            "electronic records"
+          ],
+          "legal_concepts": [
+            "forgery of documents",
+            "punishment for forgery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.8823,
+            "semrank_pre_rerank": 0.8823
+          },
+          "query_scores": {
+            "original": 0.39193530664822035
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "score": 0.8823,
+            "best_similarity": 0.8823,
+            "best_concept": "forgery of documents",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "forgery of documents",
+                "source": "legal_concept",
+                "similarity": 0.8823,
+                "weighted_score": 0.8823
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "punishment for forgery",
+                "source": "legal_concept",
+                "similarity": 0.8109,
+                "weighted_score": 0.8109
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "uses",
+                "source": "keyword",
+                "similarity": 0.9228,
+                "weighted_score": 0.6921
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "electronic",
+                "source": "keyword",
+                "similarity": 0.9192,
+                "weighted_score": 0.6894
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "record",
+                "source": "keyword",
+                "similarity": 0.9162,
+                "weighted_score": 0.6872
+              }
+            ],
+            "pre_rerank_score": 0.8823,
+            "score_before_pre_rerank": 0.391935,
+            "score_after_pre_rerank": 0.480201
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S294_N2_A_2_I",
+          "score": 0.183677,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 294,
+          "citation": "Section 294",
+          "text": "the publication of which is proved to be justified as being for the public good on the ground that such book, pamphlet, paper, writing, drawing, painting, representation or figure is in the interest of science, literature, art or learning or other objects of general concern; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 294: Sale, etc., of obscene books, etc.\nWhoever—\nany book, pamphlet, paper, writing, drawing, painting, representation or figure—\nthe publication of which is proved to be justified as being for the public good on the ground that such book, pamphlet, paper, writing, drawing, painting, representation or figure is in the interest of science, literature, art or learning or other objects of general concern; or",
+          "keywords": [
+            "public",
+            "publication",
+            "proved",
+            "justified",
+            "good",
+            "ground",
+            "book",
+            "pamphlet",
+            "paper",
+            "writing",
+            "obscene",
+            "books",
+            "public good"
+          ],
+          "legal_concepts": [
+            "offence",
+            "publication",
+            "justification"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.714909240603447,
+            "original:semrank_pre_rerank": 0.9333,
+            "semrank_pre_rerank": 0.9333
+          },
+          "query_scores": {
+            "original": 0.354861166127507
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7149,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "publication",
+                "source": "legal_concept",
+                "similarity": 0.9333,
+                "weighted_score": 0.9333
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "justification",
+                "source": "legal_concept",
+                "similarity": 0.8776,
+                "weighted_score": 0.8776
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "paper",
+                "source": "keyword",
+                "similarity": 0.9532,
+                "weighted_score": 0.7149
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "writing",
+                "source": "keyword",
+                "similarity": 0.9182,
+                "weighted_score": 0.6887
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "book",
+                "source": "keyword",
+                "similarity": 0.9127,
+                "weighted_score": 0.6845
+              }
+            ],
+            "score": 0.9333,
+            "best_similarity": 0.9333,
+            "best_concept": "publication",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9333,
+            "score_before_pre_rerank": 0.354861,
+            "score_after_pre_rerank": 0.45898
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S2_N31",
+          "score": 0.180475,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "“valuable security” means a document which is, or purports to be, a document whereby any legal right is created, extended, transferred, restricted, extinguished or released, or whereby any person acknowledges that he lies under legal liability, or has not a certain legal right.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“valuable security” means a document which is, or purports to be, a document whereby any legal right is created, extended, transferred, restricted, extinguished or released, or whereby any person acknowledges that he lies under legal liability, or has not a certain legal right.",
+          "keywords": [
+            "right",
+            "valuable",
+            "security",
+            "means",
+            "purports",
+            "created",
+            "extended",
+            "transferred"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 0.9005706352274805,
+            "original:semrank_pre_rerank": 0.6898,
+            "semrank_pre_rerank": 0.6898
+          },
+          "query_scores": {
+            "original": 0.3828887212579565
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "score": 0.6898,
+            "best_similarity": 0.9197,
+            "best_concept": "extended",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "extended",
+                "source": "keyword",
+                "similarity": 0.9197,
+                "weighted_score": 0.6898
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "right",
+                "source": "keyword",
+                "similarity": 0.9041,
+                "weighted_score": 0.678
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "created",
+                "source": "keyword",
+                "similarity": 0.9011,
+                "weighted_score": 0.6758
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "means",
+                "source": "keyword",
+                "similarity": 0.8895,
+                "weighted_score": 0.6671
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "security",
+                "source": "keyword",
+                "similarity": 0.8877,
+                "weighted_score": 0.6657
+              }
+            ],
+            "pre_rerank_score": 0.6898,
+            "score_before_pre_rerank": 0.382889,
+            "score_after_pre_rerank": 0.438133
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S275_BODY",
+          "score": 0.17631,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 275,
+          "citation": "Section 275",
+          "text": "Whoever sells, or offers or exposes for sale, as food or drink, any article which has been rendered or has become noxious, or is in a state unfit for food or drink, knowing or having reason to believe that the same is noxious as food or drink, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Adulteration of drugs.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 275: Sale of noxious food or drink.\nWhoever sells, or offers or exposes for sale, as food or drink, any article which has been rendered or has become noxious, or is in a state unfit for food or drink, knowing or having reason to believe that the same is noxious as food or drink, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Adulteration of drugs.",
+          "keywords": [
+            "food",
+            "drink",
+            "noxious",
+            "sale",
+            "extend",
+            "whoever",
+            "sells",
+            "offers",
+            "exposes",
+            "article",
+            "noxious food"
+          ],
+          "legal_concepts": [
+            "offence against public health",
+            "punishment for sale of noxious article"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.7104021906852722,
+            "original:semrank_pre_rerank": 0.7889,
+            "semrank_pre_rerank": 0.7889
+          },
+          "query_scores": {
+            "original": 0.36419947429043165
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7104,
+            "query_concepts": [
+              "document",
+              "bns",
+              "under",
+              "what is a document under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "document",
+                "chunk_concept": "punishment for sale of noxious article",
+                "source": "legal_concept",
+                "similarity": 0.7889,
+                "weighted_score": 0.7889
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "offence against public health",
+                "source": "legal_concept",
+                "similarity": 0.7806,
+                "weighted_score": 0.7806
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "article",
+                "source": "keyword",
+                "similarity": 0.9472,
+                "weighted_score": 0.7104
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.8922,
+                "weighted_score": 0.6692
+              },
+              {
+                "query_concept": "document",
+                "chunk_concept": "offers",
+                "source": "keyword",
+                "similarity": 0.8663,
+                "weighted_score": 0.6497
+              }
+            ],
+            "score": 0.7889,
+            "best_similarity": 0.7889,
+            "best_concept": "punishment for sale of noxious article",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.7889,
+            "score_before_pre_rerank": 0.364199,
+            "score_after_pre_rerank": 0.440646
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    },
+    "phase11": {
+      "answer_type": "definition",
+      "support_status": "supported",
+      "confidence": {
+        "score": 0.9611,
+        "label": "high"
+      },
+      "final_answer": "A document under the Bharatiya Nyaya Sanhita (BNS) is defined as any matter expressed or described on any substance using letters, figures, or marks, including electronic and digital records, intended to be used as evidence.",
+      "summary_answer": "A document under the Bharatiya Nyaya Sanhita (BNS) is defined as any matter expressed or described on any substance using letters, figures, or marks, including electronic and digital records, intended to be used as evidence.",
+      "detailed_answer": "According to Section 2(8) of the Bharatiya Nyaya Sanhita, 2023, a 'document' means any matter expressed or described upon any substance by means of letters, figures, or marks, or by more than one of those means. This definition includes electronic and digital records that are intended to be used, or may be used, as evidence of that matter.",
+      "citations": [
+        "Section 2(8), Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "matched_sections": [
+        "Section 2",
+        "Section 250",
+        "Section 182",
+        "Section 340"
+      ],
+      "missing_sections": [],
+      "missing_from_corpus": [],
+      "selected_chunk_ids": [
+        "chunk__node__BNS_S2_N8"
+      ],
+      "warnings": [],
+      "structured_reasoning": {
+        "base_concept": "",
+        "selected_section": "Section 2",
+        "selection_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "overrides_score_selection": false,
+        "uncertainty": "low",
+        "uncertainty_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "alternative_sections": [
+          "Section 250",
+          "Section 182",
+          "Section 340"
+        ],
+        "sections_analyzed": [
+          {
+            "section": "Section 2",
+            "role": "retrieved_evidence",
+            "condition_summary": "“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.",
+            "condition_match_score": 0.946093,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "document ~ described",
+              "under ~ used",
+              "document ~ expressed",
+              "under ~ upon",
+              "document ~ letters"
+            ],
+            "raw_retrieval_score": 0.946093,
+            "hit_count": 2,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 250",
+            "role": "retrieved_evidence",
+            "condition_summary": "if the offence is punishable with imprisonment not extending to ten years, be punished with imprisonment of the description provided for the offence for a term which may extend to one-fourth part of the longest term of imprisonment provided for the offence...",
+            "condition_match_score": 0.196909,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "document ~ term",
+              "under ~ punishable",
+              "under ~ provided",
+              "under ~ extending",
+              "under ~ gift"
+            ],
+            "raw_retrieval_score": 0.196909,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 182",
+            "role": "retrieved_evidence",
+            "condition_summary": "Where the name of any person appears on any document in respect of which any person is charged with an offence under sub-section (1) or on any other document used or distributed in connection with that document it may, until the contrary is proved, be...",
+            "condition_match_score": 0.195671,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "document ~ causing a document to be made",
+              "under ~ presumption of guilt",
+              "document ~ document creation",
+              "under ~ used",
+              "document ~ government"
+            ],
+            "raw_retrieval_score": 0.195671,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 340",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic...",
+            "condition_match_score": 0.192489,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "document ~ forgery of documents",
+              "document ~ punishment for forgery",
+              "document ~ uses",
+              "document ~ electronic",
+              "document ~ record"
+            ],
+            "raw_retrieval_score": 0.192489,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          }
+        ]
+      },
+      "validation": {
+        "requested_sections": [],
+        "present_in_corpus": [],
+        "retrieved_exact_matches": [],
+        "missing_from_corpus": [],
+        "intent_alignment": "strong",
+        "intent_notes": [
+          "Lookup intent is anchored by a direct base legal chunk."
+        ],
+        "answer_verified": true,
+        "verification_issues": [],
+        "llm_answer_verified": true,
+        "llm_verification_issues": [],
+        "completeness": "complete",
+        "guardrail_grounding_strength": 1.0,
+        "repaired": false,
+        "fallback_used": false
+      },
+      "evidence": {
+        "primary_chunk_id": "chunk__node__BNS_S2_N8",
+        "primary_chunk_type": "subsection",
+        "primary_section": "Section 2",
+        "primary_section_title": "Definitions.",
+        "related_chunk_ids": [],
+        "top_sections": [
+          {
+            "section": "Section 250",
+            "section_title": "Taking gift, etc., to screen an offender from punishment.",
+            "hit_count": 1,
+            "best_score": 0.196909,
+            "chunk_types": {
+              "clause": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.0
+          },
+          {
+            "section": "Section 2",
+            "section_title": "Definitions.",
+            "hit_count": 2,
+            "best_score": 0.946093,
+            "chunk_types": {
+              "subsection": 2
+            },
+            "semantic_relevance": 0.9264,
+            "concept_coverage": 0.0
+          },
+          {
+            "section": "Section 182",
+            "section_title": "Making or using documents resembling currency-notes or bank-notes.",
+            "hit_count": 1,
+            "best_score": 0.195671,
+            "chunk_types": {
+              "subsection": 1
+            },
+            "semantic_relevance": 0.9094,
+            "concept_coverage": 0.0
+          },
+          {
+            "section": "Section 340",
+            "section_title": "Forged document or electronic record and using it as genuine.",
+            "hit_count": 1,
+            "best_score": 0.192489,
+            "chunk_types": {
+              "subsection": 1
+            },
+            "semantic_relevance": 0.8823,
+            "concept_coverage": 0.0
+          }
+        ],
+        "llm_evidence": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S2_N8",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": "2",
+            "citation": "Section 2(8), Bharatiya Nyaya Sanhita, 2023",
+            "text": "“document” means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter."
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S2_N31",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": "2",
+            "citation": "Section 2(31), Bharatiya Nyaya Sanhita, 2023",
+            "text": "“valuable security” means a document which is, or purports to be, a document whereby any legal right is created, extended, transferred, restricted, extinguished or released, or whereby any person acknowledges that he lies under legal liability, or has not a certain legal right."
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S250_C",
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": "250",
+            "citation": "Section 250(c), Bharatiya Nyaya Sanhita, 2023",
+            "text": "if the offence is punishable with imprisonment not extending to ten years, be punished with imprisonment of the description provided for the offence for a term which may extend to one-fourth part of the longest term of imprisonment provided for the offence, or with fine, or with both. Offering gift or restoration of property in consideration of screening offender."
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S182_N3",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES RELATING TO COIN, CURRENCY-NOTES, BANK-NOTES, AND GOVERNMENT STAMPS",
+            "section_number": "182",
+            "citation": "Section 182(3), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Where the name of any person appears on any document in respect of which any person is charged with an offence under sub-section (1) or on any other document used or distributed in connection with that document it may, until the contrary is proved, be presumed that the person caused the document to be made. Effacing writing from substance bearing Government stamp, or removing from document a stamp used for it, with intent to cause loss to Government."
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S340_N2",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES RELATING TO DOCUMENTS AND TO PROPERTY MARKS",
+            "section_number": "340",
+            "citation": "Section 340(2), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic record. Making or possessing counterfeit seal, etc., with intent to commit forgery punishable under section 338."
+          }
+        ]
+      },
+      "llm_generation": {
+        "enabled": true,
+        "used": true,
+        "model": "gpt-4o-mini",
+        "reasoning_trace": [],
+        "caution_notes": [],
+        "error": null,
+        "repaired": false,
+        "fallback_used": false
+      }
+    }
+  }
+]

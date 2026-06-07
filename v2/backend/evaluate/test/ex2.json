@@ -1,0 +1,59 @@
+{
+  "query_id": "Q066",
+  "query": "Is life imprisonment always for whole life or can it mean fixed years?",
+  "query_type": "multi_hop",
+  "difficulty": "hard",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "6",
+      "subsection": null,
+      "label": "Section 6",
+      "role": "life imprisonment reckoned as twenty years unless otherwise provided",
+      "required": true,
+      "match_level": "section"
+    },
+    {
+      "act": "BNS",
+      "section": "71",
+      "subsection": null,
+      "label": "Section 71",
+      "role": "repeat offender punishment involving remainder of natural life",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "4",
+      "label": "Section 4",
+      "reason": "Lists imprisonment for life as a punishment"
+    }
+  ],
+  "wrong_references": [
+    {
+      "act": "BNS",
+      "section": "62",
+      "label": "Section 62",
+      "reason": "Attempt provision, not the main answer to life imprisonment duration"
+    }
+  ],
+  "answer_key": {
+    "required_points": [
+      "Life imprisonment should not be stated as always exactly one fixed duration.",
+      "Section 6 says life imprisonment is reckoned as equivalent to twenty years unless otherwise provided.",
+      "Some provisions can require imprisonment for the remainder of natural life."
+    ],
+    "optional_points": [
+      "The answer may explain that context matters."
+    ],
+    "forbidden_points": [
+      "Life imprisonment always means exactly twenty years.",
+      "Life imprisonment always means the whole natural life in every case.",
+      "Section 62 is the main rule for the meaning of life imprisonment."
+    ]
+  },
+  "notes": "Good test for retrieval plus reasoning. Section 62 should not be selected as the final legal basis."
+}

@@ -1,0 +1,2937 @@
+[
+  {
+    "query": "What is criminal force?",
+    "phase8": {
+      "query": "What is criminal force?",
+      "intent": {
+        "primary": "definition",
+        "secondary": []
+      },
+      "concepts": [
+        "criminal force",
+        "use of force"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.894,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.2,
+        "structure_validity": 1.0,
+        "overall": 0.7976
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is criminal force?",
+          "targets": [],
+          "concepts": [
+            "criminal force",
+            "use of force"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S129_BODY",
+            "score": 1.0,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 129,
+            "citation": "Section 129",
+            "text": "Whoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nWhoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+            "keywords": [
+              "force",
+              "cause",
+              "criminal",
+              "body",
+              "whoever",
+              "intentionally",
+              "uses",
+              "consent",
+              "order",
+              "committing",
+              "criminal force",
+              "intentional force"
+            ],
+            "legal_concepts": [
+              "use of force",
+              "consent",
+              "offence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "use of force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7691928148269653,
+              "bm25": 1.0,
+              "semrank": 0.9999999403953552,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "criminal force",
+                "use of force",
+                "force",
+                "what is criminal force"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "use of force",
+                  "chunk_concept": "use of force",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "consent",
+                  "source": "legal_concept",
+                  "similarity": 0.878,
+                  "weighted_score": 0.878
+                },
+                {
+                  "query_concept": "criminal force",
+                  "chunk_concept": "criminal force",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "force",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "intentional force",
+                  "source": "keyword",
+                  "similarity": 0.9271,
+                  "weighted_score": 0.6953
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "use of force",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S128_C",
+            "score": 0.902461,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 128,
+            "citation": "Section 128",
+            "text": "by inducing any animal to move, to change its motion, or to cease to move. Criminal force. 129. Whoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 128: Force.\nby inducing any animal to move, to change its motion, or to cease to move. Criminal force. 129. Whoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+            "keywords": [
+              "force",
+              "move",
+              "criminal",
+              "cause",
+              "inducing",
+              "animal",
+              "change",
+              "motion",
+              "cease",
+              "whoever",
+              "criminal force",
+              "intentional use"
+            ],
+            "legal_concepts": [
+              "causing bodily harm",
+              "assault"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.9222817041266591,
+              "semrank_pre_rerank": 0.8795
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "criminal force",
+                "use of force",
+                "force",
+                "what is criminal force"
+              ],
+              "score": 0.8795,
+              "best_similarity": 0.8795,
+              "best_concept": "assault",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "use of force",
+                  "chunk_concept": "assault",
+                  "source": "legal_concept",
+                  "similarity": 0.8795,
+                  "weighted_score": 0.8795
+                },
+                {
+                  "query_concept": "use of force",
+                  "chunk_concept": "causing bodily harm",
+                  "source": "legal_concept",
+                  "similarity": 0.8733,
+                  "weighted_score": 0.8733
+                },
+                {
+                  "query_concept": "criminal force",
+                  "chunk_concept": "criminal force",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "force",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "motion",
+                  "source": "keyword",
+                  "similarity": 0.887,
+                  "weighted_score": 0.6652
+                }
+              ],
+              "pre_rerank_score": 0.8795,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.97831
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__section__BNS_S128",
+            "score": 0.884304,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 128,
+            "citation": "Section 128",
+            "text": "A person is said to use force to another if he causes motion,\nchange of motion, or cessation of motion to that other, or if he causes to\nany substance such motion, or change of motion, or cessation of motion as\nbrings that substance into contact with any part of that other’s body, or\nwith anything which that other is wearing or carrying, or with anything so\nsituated that such contact affects that other’s sense of feeling:\nProvided that the person causing the motion, or change of motion, or\ncessation of motion, causes that motion, change of motion, or cessation of\nmotion in one of the following three ways, namely:–\n(a) by his own bodily power;\n(b) by disposing any substance in such a manner that the\nmotion or change or cessation of motion takes place without any\nfurther act on his part, or on the part of any other person;\n(c) by inducing any animal to move, to change its motion, or to\ncease to move.\nCriminal force.\n129. Whoever intentionally uses force to any person, without that\nperson’s consent, in order to the committing of any offence, or intending\nby the use of such force to cause, or knowing it to be likely that by the use\nof such force he will cause injury, fear or annoyance to the person to whom\nthe force is used, is said to use criminal force to that other.\nIllustrations.\n(a) Z is sitting in a moored boat on a river. A unfastens the moorings,\nand thus intentionally causes the boat to drift down the stream. Here A\nintentionally causes motion to Z, and he does this by disposing substances\nin such a manner that the motion is produced without any other action on\nany person’s part. A has therefore intentionally used force to Z; and if he\nhas done so without Z’s consent, in order to the committing of any offence,\nor intending or knowing it to be likely that this use of force will cause injury,\nfear or annoyance to Z, A has used criminal force to Z.\n(b) Z is riding in a chariot. A lashes Z’s horses, and thereby causes\nthem to quicken their pace. Here A has caused change of motion to Z by\ninducing the animals to change their motion. A has therefore used force to\nZ; and if A has done this without Z’s consent, intending or knowing it to be\nlikely that he may thereby injure, frighten or annoy Z, A has used criminal\nforce to Z.\n(c) Z is riding in a palanquin. A, intending to rob Z, seizes the pole\nand stops the palanquin. Here A has caused cessation of motion to Z, and\nhe has done this by his own bodily power. A has therefore used force to Z;\nand as A has acted thus intentionally, without Z’s consent, in order to the\ncommission of an offence. A has used criminal force to Z.\n(d) A intentionally pushes against Z in the street. Here A has by his\nown bodily power moved his own person so as to bring it into contact with\nZ. He has therefore intentionally used force to Z; and if he has done so\nwithout Z’s consent, intending or knowing it to be likely that he may thereby\ninjure, frighten or annoy Z, he has used criminal force to Z.\n(e) A throws a stone, intending or knowing it to be likely that the\nstone will be thus brought into contact with Z, or with Z’s clothes, or with\nsomething carried by Z, or that it will strike water and dash up the water\nagainst Z’s clothes or something carried by Z. Here, if the throwing of the\nstone produce the effect of causing any substance to come into contact with\nZ, or Z’s clothes, A has used force to Z, and if he did so without Z’s consent,\nintending thereby to injure, frighten or annoy Z, he has used criminal force\nto Z.\n(f) A intentionally pulls up a woman’s veil. Here A intentionally uses\nforce to her, and if he does so without her consent intending or knowing it\nto be likely that he may thereby injure, frighten or annoy her, he has used\ncriminal force to her.\n(g) Z is bathing. A pours into the bath water which he knows to be\nboiling. Here A intentionally by his own bodily power causes such motion in\nthe boiling water as brings that water into contact with Z, or with other\nwater so situated that such contact must affect Z’s sense of feeling; A has\ntherefore intentionally used force to Z; and if he has done this without Z’s\nconsent intending or knowing it to be likely that he may thereby cause\ninjury, fear or annoyance to Z, A has used criminal force.\n(h) A incites a dog to spring upon Z, without Z’s consent. Here, if A\nintends to cause injury, fear or annoyance to Z, he uses criminal force to\nZ.\nAssault.",
+            "derived_context": "",
+            "keywords": [
+              "force",
+              "motion",
+              "human body"
+            ],
+            "legal_concepts": [
+              "use of force",
+              "criminal force"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 2,
+              "coverage_ratio": 1.0,
+              "matched_concepts": [
+                "use of force",
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "anchor": 0.9
+            },
+            "query_scores": {
+              "anchor": 0.9
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S128_ILL1_D",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S129_ILL1_F",
+            "score": 0.873315,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 129,
+            "citation": "Section 129",
+            "text": "A intentionally pulls up a woman’s veil. Here A intentionally uses force to her, and if he does so without her consent intending or knowing it to be likely that he may thereby injure, frighten or annoy her, he has used criminal force to her.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nA intentionally pulls up a woman’s veil. Here A intentionally uses force to her, and if he does so without her consent intending or knowing it to be likely that he may thereby injure, frighten or annoy her, he has used criminal force to her.",
+            "keywords": [
+              "force",
+              "intentionally",
+              "criminal",
+              "pulls",
+              "woman",
+              "veil",
+              "here",
+              "uses",
+              "consent",
+              "intending"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7194045782089233,
+              "bm25": 0.08265823192574973,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.7194045782089233
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "criminal force",
+                "use of force",
+                "force",
+                "what is criminal force"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "force",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "force",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "uses",
+                  "source": "keyword",
+                  "similarity": 0.8879,
+                  "weighted_score": 0.666
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "here",
+                  "source": "keyword",
+                  "similarity": 0.8864,
+                  "weighted_score": 0.6648
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "pulls",
+                  "source": "keyword",
+                  "similarity": 0.8793,
+                  "weighted_score": 0.6595
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "consent",
+                  "source": "keyword",
+                  "similarity": 0.878,
+                  "weighted_score": 0.6585
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.771615,
+              "score_after_pre_rerank": 0.767725
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__section__BNS_S129",
+            "score": 0.856337,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 129,
+            "citation": "Section 129",
+            "text": "Whoever intentionally uses force to any person, without that\nperson’s consent, in order to the committing of any offence, or intending\nby the use of such force to cause, or knowing it to be likely that by the use\nof such force he will cause injury, fear or annoyance to the person to whom\nthe force is used, is said to use criminal force to that other.\nIllustrations.\n(a) Z is sitting in a moored boat on a river. A unfastens the moorings,\nand thus intentionally causes the boat to drift down the stream. Here A\nintentionally causes motion to Z, and he does this by disposing substances\nin such a manner that the motion is produced without any other action on\nany person’s part. A has therefore intentionally used force to Z; and if he\nhas done so without Z’s consent, in order to the committing of any offence,\nor intending or knowing it to be likely that this use of force will cause injury,\nfear or annoyance to Z, A has used criminal force to Z.\n(b) Z is riding in a chariot. A lashes Z’s horses, and thereby causes\nthem to quicken their pace. Here A has caused change of motion to Z by\ninducing the animals to change their motion. A has therefore used force to\nZ; and if A has done this without Z’s consent, intending or knowing it to be\nlikely that he may thereby injure, frighten or annoy Z, A has used criminal\nforce to Z.\n(c) Z is riding in a palanquin. A, intending to rob Z, seizes the pole\nand stops the palanquin. Here A has caused cessation of motion to Z, and\nhe has done this by his own bodily power. A has therefore used force to Z;\nand as A has acted thus intentionally, without Z’s consent, in order to the\ncommission of an offence. A has used criminal force to Z.\n(d) A intentionally pushes against Z in the street. Here A has by his\nown bodily power moved his own person so as to bring it into contact with\nZ. He has therefore intentionally used force to Z; and if he has done so\nwithout Z’s consent, intending or knowing it to be likely that he may thereby\ninjure, frighten or annoy Z, he has used criminal force to Z.\n(e) A throws a stone, intending or knowing it to be likely that the\nstone will be thus brought into contact with Z, or with Z’s clothes, or with\nsomething carried by Z, or that it will strike water and dash up the water\nagainst Z’s clothes or something carried by Z. Here, if the throwing of the\nstone produce the effect of causing any substance to come into contact with\nZ, or Z’s clothes, A has used force to Z, and if he did so without Z’s consent,\nintending thereby to injure, frighten or annoy Z, he has used criminal force\nto Z.\n(f) A intentionally pulls up a woman’s veil. Here A intentionally uses\nforce to her, and if he does so without her consent intending or knowing it\nto be likely that he may thereby injure, frighten or annoy her, he has used\ncriminal force to her.\n(g) Z is bathing. A pours into the bath water which he knows to be\nboiling. Here A intentionally by his own bodily power causes such motion in\nthe boiling water as brings that water into contact with Z, or with other\nwater so situated that such contact must affect Z’s sense of feeling; A has\ntherefore intentionally used force to Z; and if he has done this without Z’s\nconsent intending or knowing it to be likely that he may thereby cause\ninjury, fear or annoyance to Z, A has used criminal force.\n(h) A incites a dog to spring upon Z, without Z’s consent. Here, if A\nintends to cause injury, fear or annoyance to Z, he uses criminal force to\nZ.\nAssault.",
+            "derived_context": "",
+            "keywords": [
+              "criminal_force",
+              "intentional_use_of_force"
+            ],
+            "legal_concepts": [
+              "use_of_force",
+              "consent",
+              "offence",
+              "injury",
+              "fear",
+              "annoyance"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "anchor": 0.762528568957448
+            },
+            "query_scores": {
+              "anchor": 0.762528568957448
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S129_ILL1_H",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S129_ILL1_H",
+            "score": 0.845488,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 129,
+            "citation": "Section 129",
+            "text": "A incites a dog to spring upon Z, without Z’s consent. Here, if A intends to cause injury, fear or annoyance to Z, he uses criminal force to Z. Assault.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nA incites a dog to spring upon Z, without Z’s consent. Here, if A intends to cause injury, fear or annoyance to Z, he uses criminal force to Z. Assault.",
+            "keywords": [
+              "criminal",
+              "force",
+              "incites",
+              "spring",
+              "upon",
+              "consent",
+              "here",
+              "intends",
+              "cause",
+              "injury",
+              "criminal force",
+              "assault"
+            ],
+            "legal_concepts": [
+              "use of force",
+              "assault and battery"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "use of force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7464370131492615,
+              "bm25": 0.05555555555555555,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.7464370131492615
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "criminal force",
+                "use of force",
+                "force",
+                "what is criminal force"
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "use of force",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "use of force",
+                  "chunk_concept": "use of force",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "use of force",
+                  "chunk_concept": "assault and battery",
+                  "source": "legal_concept",
+                  "similarity": 0.8645,
+                  "weighted_score": 0.8645
+                },
+                {
+                  "query_concept": "criminal force",
+                  "chunk_concept": "criminal force",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "force",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "here",
+                  "source": "keyword",
+                  "similarity": 0.8864,
+                  "weighted_score": 0.6648
+                }
+              ],
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 0.832352,
+              "score_after_pre_rerank": 0.862529
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S129_ILL1_E",
+            "score": 0.832481,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 129,
+            "citation": "Section 129",
+            "text": "A throws a stone, intending or knowing it to be likely that the stone will be thus brought into contact with Z, or with Z’s clothes, or with something carried by Z, or that it will strike water and dash up the water against Z’s clothes or something carried by Z. Here, if the throwing of the stone produce the effect of causing any substance to come into contact with Z, or Z’s clothes, A has used force to Z, and if he did so without Z’s consent, intending thereby to injure, frighten or annoy Z, he has used criminal force to Z.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nA throws a stone, intending or knowing it to be likely that the stone will be thus brought into contact with Z, or with Z’s clothes, or with something carried by Z, or that it will strike water and dash up the water against Z’s clothes or something carried by Z. Here, if the throwing of the stone produce the effect of causing any substance to come into contact with Z, or Z’s clothes, A has used force to Z, and if he did so without Z’s consent, intending thereby to injure, frighten or annoy Z, he has used criminal force to Z.",
+            "keywords": [
+              "stone",
+              "clothes",
+              "force",
+              "intending",
+              "contact",
+              "something",
+              "carried",
+              "water",
+              "used",
+              "criminal",
+              "criminal force",
+              "intending to injure"
+            ],
+            "legal_concepts": [
+              "use of force",
+              "criminal intent"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "use of force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7287556529045105,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.7287556529045105
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "criminal force",
+                "use of force",
+                "force",
+                "what is criminal force"
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "use of force",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "use of force",
+                  "chunk_concept": "use of force",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "criminal force",
+                  "chunk_concept": "criminal intent",
+                  "source": "legal_concept",
+                  "similarity": 0.8924,
+                  "weighted_score": 0.8924
+                },
+                {
+                  "query_concept": "criminal force",
+                  "chunk_concept": "criminal force",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "force",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "used",
+                  "source": "keyword",
+                  "similarity": 0.8902,
+                  "weighted_score": 0.6677
+                }
+              ],
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 0.773939,
+              "score_after_pre_rerank": 0.81463
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S129_ILL1_G",
+            "score": 0.829274,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 129,
+            "citation": "Section 129",
+            "text": "Z is bathing. A pours into the bath water which he knows to be boiling. Here A intentionally by his own bodily power causes such motion in the boiling water as brings that water into contact with Z, or with other water so situated that such contact must affect Z’s sense of feeling; A has therefore intentionally used force to Z; and if he has done this without Z’s consent intending or knowing it to be likely that he may thereby cause injury, fear or annoyance to Z, A has used criminal force.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nZ is bathing. A pours into the bath water which he knows to be boiling. Here A intentionally by his own bodily power causes such motion in the boiling water as brings that water into contact with Z, or with other water so situated that such contact must affect Z’s sense of feeling; A has therefore intentionally used force to Z; and if he has done this without Z’s consent intending or knowing it to be likely that he may thereby cause injury, fear or annoyance to Z, A has used criminal force.",
+            "keywords": [
+              "water",
+              "force",
+              "boiling",
+              "intentionally",
+              "contact",
+              "used",
+              "criminal",
+              "bathing",
+              "pours",
+              "bath",
+              "boiling water",
+              "intentional harm"
+            ],
+            "legal_concepts": [
+              "criminal force",
+              "intentional infliction of harm"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.695093035697937,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "criminal force",
+                "use of force",
+                "force",
+                "what is criminal force"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "criminal force",
+                  "chunk_concept": "criminal force",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "use of force",
+                  "chunk_concept": "intentional infliction of harm",
+                  "source": "legal_concept",
+                  "similarity": 0.8498,
+                  "weighted_score": 0.8498
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "force",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "used",
+                  "source": "keyword",
+                  "similarity": 0.8902,
+                  "weighted_score": 0.6677
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "contact",
+                  "source": "keyword",
+                  "similarity": 0.8655,
+                  "weighted_score": 0.6491
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "criminal force",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S135_BODY",
+            "score": 0.78707,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 135,
+            "citation": "Section 135",
+            "text": "Whoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 135: Assault or criminal force in attempt to wrongfully confine a person.\nWhoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+            "keywords": [
+              "criminal",
+              "force",
+              "wrongfully",
+              "confine",
+              "extend",
+              "assault",
+              "body",
+              "whoever",
+              "assaults",
+              "uses",
+              "criminal force",
+              "wrongful confinement"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "wrongful confinement"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7209320664405823,
+              "bm25": 0.16971265344279055,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "criminal force",
+                "use of force",
+                "force",
+                "what is criminal force"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "criminal force",
+                  "chunk_concept": "criminal force",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "use of force",
+                  "chunk_concept": "assault",
+                  "source": "legal_concept",
+                  "similarity": 0.8795,
+                  "weighted_score": 0.8795
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "wrongful confinement",
+                  "source": "legal_concept",
+                  "similarity": 0.8169,
+                  "weighted_score": 0.8169
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "force",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "uses",
+                  "source": "keyword",
+                  "similarity": 0.8879,
+                  "weighted_score": 0.666
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "criminal force",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S132_BODY",
+            "score": 0.785336,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 132,
+            "citation": "Section 132",
+            "text": "Whoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 132: Assault or criminal force to deter public servant from discharge of his duty.\nWhoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+            "keywords": [
+              "public",
+              "servant",
+              "duty",
+              "criminal",
+              "force",
+              "intent",
+              "deter",
+              "done",
+              "discharge",
+              "assault",
+              "criminal force",
+              "public servant"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "public servant"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "criminal force"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.714914858341217,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "criminal force",
+                "use of force",
+                "force",
+                "what is criminal force"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "criminal force",
+                  "chunk_concept": "criminal force",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "use of force",
+                  "chunk_concept": "assault",
+                  "source": "legal_concept",
+                  "similarity": 0.8795,
+                  "weighted_score": 0.8795
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "public servant",
+                  "source": "legal_concept",
+                  "similarity": 0.81,
+                  "weighted_score": 0.81
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "force",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "force",
+                  "chunk_concept": "intent",
+                  "source": "keyword",
+                  "similarity": 0.8797,
+                  "weighted_score": 0.6597
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "criminal force",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S129_BODY",
+          "score": 1.0,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 129,
+          "citation": "Section 129",
+          "text": "Whoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nWhoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+          "keywords": [
+            "force",
+            "cause",
+            "criminal",
+            "body",
+            "whoever",
+            "intentionally",
+            "uses",
+            "consent",
+            "order",
+            "committing",
+            "criminal force",
+            "intentional force"
+          ],
+          "legal_concepts": [
+            "use of force",
+            "consent",
+            "offence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "use of force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7691928148269653,
+            "original:bm25": 1.0,
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "use of force",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 0.878,
+                "weighted_score": 0.878
+              },
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "intentional force",
+                "source": "keyword",
+                "similarity": 0.9271,
+                "weighted_score": 0.6953
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "use of force",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S128_C",
+          "score": 0.898328,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 128,
+          "citation": "Section 128",
+          "text": "by inducing any animal to move, to change its motion, or to cease to move. Criminal force. 129. Whoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 128: Force.\nby inducing any animal to move, to change its motion, or to cease to move. Criminal force. 129. Whoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+          "keywords": [
+            "force",
+            "move",
+            "criminal",
+            "cause",
+            "inducing",
+            "animal",
+            "change",
+            "motion",
+            "cease",
+            "whoever",
+            "criminal force",
+            "intentional use"
+          ],
+          "legal_concepts": [
+            "causing bodily harm",
+            "assault"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.9222817041266591,
+            "original:semrank_pre_rerank": 0.8795,
+            "semrank_pre_rerank": 0.8795
+          },
+          "query_scores": {
+            "original": 0.9024613812894121
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "score": 0.8795,
+            "best_similarity": 0.8795,
+            "best_concept": "assault",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "assault",
+                "source": "legal_concept",
+                "similarity": 0.8795,
+                "weighted_score": 0.8795
+              },
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "causing bodily harm",
+                "source": "legal_concept",
+                "similarity": 0.8733,
+                "weighted_score": 0.8733
+              },
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "motion",
+                "source": "keyword",
+                "similarity": 0.887,
+                "weighted_score": 0.6652
+              }
+            ],
+            "pre_rerank_score": 0.8795,
+            "score_before_pre_rerank": 0.902461,
+            "score_after_pre_rerank": 0.898328
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__section__BNS_S128",
+          "score": 0.884304,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 128,
+          "citation": "Section 128",
+          "text": "A person is said to use force to another if he causes motion,\nchange of motion, or cessation of motion to that other, or if he causes to\nany substance such motion, or change of motion, or cessation of motion as\nbrings that substance into contact with any part of that other’s body, or\nwith anything which that other is wearing or carrying, or with anything so\nsituated that such contact affects that other’s sense of feeling:\nProvided that the person causing the motion, or change of motion, or\ncessation of motion, causes that motion, change of motion, or cessation of\nmotion in one of the following three ways, namely:–\n(a) by his own bodily power;\n(b) by disposing any substance in such a manner that the\nmotion or change or cessation of motion takes place without any\nfurther act on his part, or on the part of any other person;\n(c) by inducing any animal to move, to change its motion, or to\ncease to move.\nCriminal force.\n129. Whoever intentionally uses force to any person, without that\nperson’s consent, in order to the committing of any offence, or intending\nby the use of such force to cause, or knowing it to be likely that by the use\nof such force he will cause injury, fear or annoyance to the person to whom\nthe force is used, is said to use criminal force to that other.\nIllustrations.\n(a) Z is sitting in a moored boat on a river. A unfastens the moorings,\nand thus intentionally causes the boat to drift down the stream. Here A\nintentionally causes motion to Z, and he does this by disposing substances\nin such a manner that the motion is produced without any other action on\nany person’s part. A has therefore intentionally used force to Z; and if he\nhas done so without Z’s consent, in order to the committing of any offence,\nor intending or knowing it to be likely that this use of force will cause injury,\nfear or annoyance to Z, A has used criminal force to Z.\n(b) Z is riding in a chariot. A lashes Z’s horses, and thereby causes\nthem to quicken their pace. Here A has caused change of motion to Z by\ninducing the animals to change their motion. A has therefore used force to\nZ; and if A has done this without Z’s consent, intending or knowing it to be\nlikely that he may thereby injure, frighten or annoy Z, A has used criminal\nforce to Z.\n(c) Z is riding in a palanquin. A, intending to rob Z, seizes the pole\nand stops the palanquin. Here A has caused cessation of motion to Z, and\nhe has done this by his own bodily power. A has therefore used force to Z;\nand as A has acted thus intentionally, without Z’s consent, in order to the\ncommission of an offence. A has used criminal force to Z.\n(d) A intentionally pushes against Z in the street. Here A has by his\nown bodily power moved his own person so as to bring it into contact with\nZ. He has therefore intentionally used force to Z; and if he has done so\nwithout Z’s consent, intending or knowing it to be likely that he may thereby\ninjure, frighten or annoy Z, he has used criminal force to Z.\n(e) A throws a stone, intending or knowing it to be likely that the\nstone will be thus brought into contact with Z, or with Z’s clothes, or with\nsomething carried by Z, or that it will strike water and dash up the water\nagainst Z’s clothes or something carried by Z. Here, if the throwing of the\nstone produce the effect of causing any substance to come into contact with\nZ, or Z’s clothes, A has used force to Z, and if he did so without Z’s consent,\nintending thereby to injure, frighten or annoy Z, he has used criminal force\nto Z.\n(f) A intentionally pulls up a woman’s veil. Here A intentionally uses\nforce to her, and if he does so without her consent intending or knowing it\nto be likely that he may thereby injure, frighten or annoy her, he has used\ncriminal force to her.\n(g) Z is bathing. A pours into the bath water which he knows to be\nboiling. Here A intentionally by his own bodily power causes such motion in\nthe boiling water as brings that water into contact with Z, or with other\nwater so situated that such contact must affect Z’s sense of feeling; A has\ntherefore intentionally used force to Z; and if he has done this without Z’s\nconsent intending or knowing it to be likely that he may thereby cause\ninjury, fear or annoyance to Z, A has used criminal force.\n(h) A incites a dog to spring upon Z, without Z’s consent. Here, if A\nintends to cause injury, fear or annoyance to Z, he uses criminal force to\nZ.\nAssault.",
+          "derived_context": "",
+          "keywords": [
+            "force",
+            "motion",
+            "human body"
+          ],
+          "legal_concepts": [
+            "use of force",
+            "criminal force"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 2,
+            "coverage_ratio": 1.0,
+            "matched_concepts": [
+              "use of force",
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.9
+          },
+          "query_scores": {
+            "original": 0.8843035785874682
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S128_ILL1_D",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S129_ILL1_H",
+          "score": 0.8733,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 129,
+          "citation": "Section 129",
+          "text": "A incites a dog to spring upon Z, without Z’s consent. Here, if A intends to cause injury, fear or annoyance to Z, he uses criminal force to Z. Assault.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nA incites a dog to spring upon Z, without Z’s consent. Here, if A intends to cause injury, fear or annoyance to Z, he uses criminal force to Z. Assault.",
+          "keywords": [
+            "criminal",
+            "force",
+            "incites",
+            "spring",
+            "upon",
+            "consent",
+            "here",
+            "intends",
+            "cause",
+            "injury",
+            "criminal force",
+            "assault"
+          ],
+          "legal_concepts": [
+            "use of force",
+            "assault and battery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "use of force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7464370131492615,
+            "original:bm25": 0.05555555555555555,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8454882167541579
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "use of force",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "use of force",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "assault and battery",
+                "source": "legal_concept",
+                "similarity": 0.8645,
+                "weighted_score": 0.8645
+              },
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "here",
+                "source": "keyword",
+                "similarity": 0.8864,
+                "weighted_score": 0.6648
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.845488,
+            "score_after_pre_rerank": 0.8733
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S129_ILL1_E",
+          "score": 0.862634,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 129,
+          "citation": "Section 129",
+          "text": "A throws a stone, intending or knowing it to be likely that the stone will be thus brought into contact with Z, or with Z’s clothes, or with something carried by Z, or that it will strike water and dash up the water against Z’s clothes or something carried by Z. Here, if the throwing of the stone produce the effect of causing any substance to come into contact with Z, or Z’s clothes, A has used force to Z, and if he did so without Z’s consent, intending thereby to injure, frighten or annoy Z, he has used criminal force to Z.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nA throws a stone, intending or knowing it to be likely that the stone will be thus brought into contact with Z, or with Z’s clothes, or with something carried by Z, or that it will strike water and dash up the water against Z’s clothes or something carried by Z. Here, if the throwing of the stone produce the effect of causing any substance to come into contact with Z, or Z’s clothes, A has used force to Z, and if he did so without Z’s consent, intending thereby to injure, frighten or annoy Z, he has used criminal force to Z.",
+          "keywords": [
+            "stone",
+            "clothes",
+            "force",
+            "intending",
+            "contact",
+            "something",
+            "carried",
+            "water",
+            "used",
+            "criminal",
+            "criminal force",
+            "intending to injure"
+          ],
+          "legal_concepts": [
+            "use of force",
+            "criminal intent"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "use of force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7287556529045105,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8324805997610321
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "use of force",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "use of force",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal intent",
+                "source": "legal_concept",
+                "similarity": 0.8924,
+                "weighted_score": 0.8924
+              },
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "used",
+                "source": "keyword",
+                "similarity": 0.8902,
+                "weighted_score": 0.6677
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.832481,
+            "score_after_pre_rerank": 0.862634
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S129_ILL1_G",
+          "score": 0.860005,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 129,
+          "citation": "Section 129",
+          "text": "Z is bathing. A pours into the bath water which he knows to be boiling. Here A intentionally by his own bodily power causes such motion in the boiling water as brings that water into contact with Z, or with other water so situated that such contact must affect Z’s sense of feeling; A has therefore intentionally used force to Z; and if he has done this without Z’s consent intending or knowing it to be likely that he may thereby cause injury, fear or annoyance to Z, A has used criminal force.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nZ is bathing. A pours into the bath water which he knows to be boiling. Here A intentionally by his own bodily power causes such motion in the boiling water as brings that water into contact with Z, or with other water so situated that such contact must affect Z’s sense of feeling; A has therefore intentionally used force to Z; and if he has done this without Z’s consent intending or knowing it to be likely that he may thereby cause injury, fear or annoyance to Z, A has used criminal force.",
+          "keywords": [
+            "water",
+            "force",
+            "boiling",
+            "intentionally",
+            "contact",
+            "used",
+            "criminal",
+            "bathing",
+            "pours",
+            "bath",
+            "boiling water",
+            "intentional harm"
+          ],
+          "legal_concepts": [
+            "criminal force",
+            "intentional infliction of harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.695093035697937,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8292739616981878
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal force",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "intentional infliction of harm",
+                "source": "legal_concept",
+                "similarity": 0.8498,
+                "weighted_score": 0.8498
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "used",
+                "source": "keyword",
+                "similarity": 0.8902,
+                "weighted_score": 0.6677
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "contact",
+                "source": "keyword",
+                "similarity": 0.8655,
+                "weighted_score": 0.6491
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal force",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.829274,
+            "score_after_pre_rerank": 0.860005
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__section__BNS_S129",
+          "score": 0.856337,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 129,
+          "citation": "Section 129",
+          "text": "Whoever intentionally uses force to any person, without that\nperson’s consent, in order to the committing of any offence, or intending\nby the use of such force to cause, or knowing it to be likely that by the use\nof such force he will cause injury, fear or annoyance to the person to whom\nthe force is used, is said to use criminal force to that other.\nIllustrations.\n(a) Z is sitting in a moored boat on a river. A unfastens the moorings,\nand thus intentionally causes the boat to drift down the stream. Here A\nintentionally causes motion to Z, and he does this by disposing substances\nin such a manner that the motion is produced without any other action on\nany person’s part. A has therefore intentionally used force to Z; and if he\nhas done so without Z’s consent, in order to the committing of any offence,\nor intending or knowing it to be likely that this use of force will cause injury,\nfear or annoyance to Z, A has used criminal force to Z.\n(b) Z is riding in a chariot. A lashes Z’s horses, and thereby causes\nthem to quicken their pace. Here A has caused change of motion to Z by\ninducing the animals to change their motion. A has therefore used force to\nZ; and if A has done this without Z’s consent, intending or knowing it to be\nlikely that he may thereby injure, frighten or annoy Z, A has used criminal\nforce to Z.\n(c) Z is riding in a palanquin. A, intending to rob Z, seizes the pole\nand stops the palanquin. Here A has caused cessation of motion to Z, and\nhe has done this by his own bodily power. A has therefore used force to Z;\nand as A has acted thus intentionally, without Z’s consent, in order to the\ncommission of an offence. A has used criminal force to Z.\n(d) A intentionally pushes against Z in the street. Here A has by his\nown bodily power moved his own person so as to bring it into contact with\nZ. He has therefore intentionally used force to Z; and if he has done so\nwithout Z’s consent, intending or knowing it to be likely that he may thereby\ninjure, frighten or annoy Z, he has used criminal force to Z.\n(e) A throws a stone, intending or knowing it to be likely that the\nstone will be thus brought into contact with Z, or with Z’s clothes, or with\nsomething carried by Z, or that it will strike water and dash up the water\nagainst Z’s clothes or something carried by Z. Here, if the throwing of the\nstone produce the effect of causing any substance to come into contact with\nZ, or Z’s clothes, A has used force to Z, and if he did so without Z’s consent,\nintending thereby to injure, frighten or annoy Z, he has used criminal force\nto Z.\n(f) A intentionally pulls up a woman’s veil. Here A intentionally uses\nforce to her, and if he does so without her consent intending or knowing it\nto be likely that he may thereby injure, frighten or annoy her, he has used\ncriminal force to her.\n(g) Z is bathing. A pours into the bath water which he knows to be\nboiling. Here A intentionally by his own bodily power causes such motion in\nthe boiling water as brings that water into contact with Z, or with other\nwater so situated that such contact must affect Z’s sense of feeling; A has\ntherefore intentionally used force to Z; and if he has done this without Z’s\nconsent intending or knowing it to be likely that he may thereby cause\ninjury, fear or annoyance to Z, A has used criminal force.\n(h) A incites a dog to spring upon Z, without Z’s consent. Here, if A\nintends to cause injury, fear or annoyance to Z, he uses criminal force to\nZ.\nAssault.",
+          "derived_context": "",
+          "keywords": [
+            "criminal_force",
+            "intentional_use_of_force"
+          ],
+          "legal_concepts": [
+            "use_of_force",
+            "consent",
+            "offence",
+            "injury",
+            "fear",
+            "annoyance"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.762528568957448
+          },
+          "query_scores": {
+            "original": 0.8563366749115371
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S129_ILL1_H",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S129_ILL1_F",
+          "score": 0.851118,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 129,
+          "citation": "Section 129",
+          "text": "A intentionally pulls up a woman’s veil. Here A intentionally uses force to her, and if he does so without her consent intending or knowing it to be likely that he may thereby injure, frighten or annoy her, he has used criminal force to her.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nA intentionally pulls up a woman’s veil. Here A intentionally uses force to her, and if he does so without her consent intending or knowing it to be likely that he may thereby injure, frighten or annoy her, he has used criminal force to her.",
+          "keywords": [
+            "force",
+            "intentionally",
+            "criminal",
+            "pulls",
+            "woman",
+            "veil",
+            "here",
+            "uses",
+            "consent",
+            "intending"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7194045782089233,
+            "original:bm25": 0.08265823192574973,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.8733148704603799
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "force",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "uses",
+                "source": "keyword",
+                "similarity": 0.8879,
+                "weighted_score": 0.666
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "here",
+                "source": "keyword",
+                "similarity": 0.8864,
+                "weighted_score": 0.6648
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "pulls",
+                "source": "keyword",
+                "similarity": 0.8793,
+                "weighted_score": 0.6595
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 0.878,
+                "weighted_score": 0.6585
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.873315,
+            "score_after_pre_rerank": 0.851118
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S135_BODY",
+          "score": 0.825398,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 135,
+          "citation": "Section 135",
+          "text": "Whoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 135: Assault or criminal force in attempt to wrongfully confine a person.\nWhoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+          "keywords": [
+            "criminal",
+            "force",
+            "wrongfully",
+            "confine",
+            "extend",
+            "assault",
+            "body",
+            "whoever",
+            "assaults",
+            "uses",
+            "criminal force",
+            "wrongful confinement"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "wrongful confinement"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7209320664405823,
+            "original:bm25": 0.16971265344279055,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7870702570519722
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal force",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "assault",
+                "source": "legal_concept",
+                "similarity": 0.8795,
+                "weighted_score": 0.8795
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "wrongful confinement",
+                "source": "legal_concept",
+                "similarity": 0.8169,
+                "weighted_score": 0.8169
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "uses",
+                "source": "keyword",
+                "similarity": 0.8879,
+                "weighted_score": 0.666
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal force",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.78707,
+            "score_after_pre_rerank": 0.825398
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S132_BODY",
+          "score": 0.823975,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 132,
+          "citation": "Section 132",
+          "text": "Whoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 132: Assault or criminal force to deter public servant from discharge of his duty.\nWhoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+          "keywords": [
+            "public",
+            "servant",
+            "duty",
+            "criminal",
+            "force",
+            "intent",
+            "deter",
+            "done",
+            "discharge",
+            "assault",
+            "criminal force",
+            "public servant"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.714914858341217,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7853359432429592
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal force",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "assault",
+                "source": "legal_concept",
+                "similarity": 0.8795,
+                "weighted_score": 0.8795
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 0.81,
+                "weighted_score": 0.81
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "intent",
+                "source": "keyword",
+                "similarity": 0.8797,
+                "weighted_score": 0.6597
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal force",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.785336,
+            "score_after_pre_rerank": 0.823975
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S129_BODY",
+          "score": 1.0,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 129,
+          "citation": "Section 129",
+          "text": "Whoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nWhoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+          "keywords": [
+            "force",
+            "cause",
+            "criminal",
+            "body",
+            "whoever",
+            "intentionally",
+            "uses",
+            "consent",
+            "order",
+            "committing",
+            "criminal force",
+            "intentional force"
+          ],
+          "legal_concepts": [
+            "use of force",
+            "consent",
+            "offence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "use of force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7691928148269653,
+            "original:bm25": 1.0,
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "use of force",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 0.878,
+                "weighted_score": 0.878
+              },
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "intentional force",
+                "source": "keyword",
+                "similarity": 0.9271,
+                "weighted_score": 0.6953
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "use of force",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S129_ILL1_F",
+          "score": 0.846044,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 129,
+          "citation": "Section 129",
+          "text": "A intentionally pulls up a woman’s veil. Here A intentionally uses force to her, and if he does so without her consent intending or knowing it to be likely that he may thereby injure, frighten or annoy her, he has used criminal force to her.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nA intentionally pulls up a woman’s veil. Here A intentionally uses force to her, and if he does so without her consent intending or knowing it to be likely that he may thereby injure, frighten or annoy her, he has used criminal force to her.",
+          "keywords": [
+            "force",
+            "intentionally",
+            "criminal",
+            "pulls",
+            "woman",
+            "veil",
+            "here",
+            "uses",
+            "consent",
+            "intending"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7194045782089233,
+            "original:bm25": 0.08265823192574973,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.8733148704603799
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "force",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "uses",
+                "source": "keyword",
+                "similarity": 0.8879,
+                "weighted_score": 0.666
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "here",
+                "source": "keyword",
+                "similarity": 0.8864,
+                "weighted_score": 0.6648
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "pulls",
+                "source": "keyword",
+                "similarity": 0.8793,
+                "weighted_score": 0.6595
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 0.878,
+                "weighted_score": 0.6585
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.873315,
+            "score_after_pre_rerank": 0.851118
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__section__BNS_S129",
+          "score": 0.806485,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 129,
+          "citation": "Section 129",
+          "text": "Whoever intentionally uses force to any person, without that\nperson’s consent, in order to the committing of any offence, or intending\nby the use of such force to cause, or knowing it to be likely that by the use\nof such force he will cause injury, fear or annoyance to the person to whom\nthe force is used, is said to use criminal force to that other.\nIllustrations.\n(a) Z is sitting in a moored boat on a river. A unfastens the moorings,\nand thus intentionally causes the boat to drift down the stream. Here A\nintentionally causes motion to Z, and he does this by disposing substances\nin such a manner that the motion is produced without any other action on\nany person’s part. A has therefore intentionally used force to Z; and if he\nhas done so without Z’s consent, in order to the committing of any offence,\nor intending or knowing it to be likely that this use of force will cause injury,\nfear or annoyance to Z, A has used criminal force to Z.\n(b) Z is riding in a chariot. A lashes Z’s horses, and thereby causes\nthem to quicken their pace. Here A has caused change of motion to Z by\ninducing the animals to change their motion. A has therefore used force to\nZ; and if A has done this without Z’s consent, intending or knowing it to be\nlikely that he may thereby injure, frighten or annoy Z, A has used criminal\nforce to Z.\n(c) Z is riding in a palanquin. A, intending to rob Z, seizes the pole\nand stops the palanquin. Here A has caused cessation of motion to Z, and\nhe has done this by his own bodily power. A has therefore used force to Z;\nand as A has acted thus intentionally, without Z’s consent, in order to the\ncommission of an offence. A has used criminal force to Z.\n(d) A intentionally pushes against Z in the street. Here A has by his\nown bodily power moved his own person so as to bring it into contact with\nZ. He has therefore intentionally used force to Z; and if he has done so\nwithout Z’s consent, intending or knowing it to be likely that he may thereby\ninjure, frighten or annoy Z, he has used criminal force to Z.\n(e) A throws a stone, intending or knowing it to be likely that the\nstone will be thus brought into contact with Z, or with Z’s clothes, or with\nsomething carried by Z, or that it will strike water and dash up the water\nagainst Z’s clothes or something carried by Z. Here, if the throwing of the\nstone produce the effect of causing any substance to come into contact with\nZ, or Z’s clothes, A has used force to Z, and if he did so without Z’s consent,\nintending thereby to injure, frighten or annoy Z, he has used criminal force\nto Z.\n(f) A intentionally pulls up a woman’s veil. Here A intentionally uses\nforce to her, and if he does so without her consent intending or knowing it\nto be likely that he may thereby injure, frighten or annoy her, he has used\ncriminal force to her.\n(g) Z is bathing. A pours into the bath water which he knows to be\nboiling. Here A intentionally by his own bodily power causes such motion in\nthe boiling water as brings that water into contact with Z, or with other\nwater so situated that such contact must affect Z’s sense of feeling; A has\ntherefore intentionally used force to Z; and if he has done this without Z’s\nconsent intending or knowing it to be likely that he may thereby cause\ninjury, fear or annoyance to Z, A has used criminal force.\n(h) A incites a dog to spring upon Z, without Z’s consent. Here, if A\nintends to cause injury, fear or annoyance to Z, he uses criminal force to\nZ.\nAssault.",
+          "derived_context": "",
+          "keywords": [
+            "criminal_force",
+            "intentional_use_of_force"
+          ],
+          "legal_concepts": [
+            "use_of_force",
+            "consent",
+            "offence",
+            "injury",
+            "fear",
+            "annoyance"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.762528568957448
+          },
+          "query_scores": {
+            "original": 0.8563366749115371
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S129_ILL1_H",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__section__BNS_S128",
+          "score": 0.742145,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 128,
+          "citation": "Section 128",
+          "text": "A person is said to use force to another if he causes motion,\nchange of motion, or cessation of motion to that other, or if he causes to\nany substance such motion, or change of motion, or cessation of motion as\nbrings that substance into contact with any part of that other’s body, or\nwith anything which that other is wearing or carrying, or with anything so\nsituated that such contact affects that other’s sense of feeling:\nProvided that the person causing the motion, or change of motion, or\ncessation of motion, causes that motion, change of motion, or cessation of\nmotion in one of the following three ways, namely:–\n(a) by his own bodily power;\n(b) by disposing any substance in such a manner that the\nmotion or change or cessation of motion takes place without any\nfurther act on his part, or on the part of any other person;\n(c) by inducing any animal to move, to change its motion, or to\ncease to move.\nCriminal force.\n129. Whoever intentionally uses force to any person, without that\nperson’s consent, in order to the committing of any offence, or intending\nby the use of such force to cause, or knowing it to be likely that by the use\nof such force he will cause injury, fear or annoyance to the person to whom\nthe force is used, is said to use criminal force to that other.\nIllustrations.\n(a) Z is sitting in a moored boat on a river. A unfastens the moorings,\nand thus intentionally causes the boat to drift down the stream. Here A\nintentionally causes motion to Z, and he does this by disposing substances\nin such a manner that the motion is produced without any other action on\nany person’s part. A has therefore intentionally used force to Z; and if he\nhas done so without Z’s consent, in order to the committing of any offence,\nor intending or knowing it to be likely that this use of force will cause injury,\nfear or annoyance to Z, A has used criminal force to Z.\n(b) Z is riding in a chariot. A lashes Z’s horses, and thereby causes\nthem to quicken their pace. Here A has caused change of motion to Z by\ninducing the animals to change their motion. A has therefore used force to\nZ; and if A has done this without Z’s consent, intending or knowing it to be\nlikely that he may thereby injure, frighten or annoy Z, A has used criminal\nforce to Z.\n(c) Z is riding in a palanquin. A, intending to rob Z, seizes the pole\nand stops the palanquin. Here A has caused cessation of motion to Z, and\nhe has done this by his own bodily power. A has therefore used force to Z;\nand as A has acted thus intentionally, without Z’s consent, in order to the\ncommission of an offence. A has used criminal force to Z.\n(d) A intentionally pushes against Z in the street. Here A has by his\nown bodily power moved his own person so as to bring it into contact with\nZ. He has therefore intentionally used force to Z; and if he has done so\nwithout Z’s consent, intending or knowing it to be likely that he may thereby\ninjure, frighten or annoy Z, he has used criminal force to Z.\n(e) A throws a stone, intending or knowing it to be likely that the\nstone will be thus brought into contact with Z, or with Z’s clothes, or with\nsomething carried by Z, or that it will strike water and dash up the water\nagainst Z’s clothes or something carried by Z. Here, if the throwing of the\nstone produce the effect of causing any substance to come into contact with\nZ, or Z’s clothes, A has used force to Z, and if he did so without Z’s consent,\nintending thereby to injure, frighten or annoy Z, he has used criminal force\nto Z.\n(f) A intentionally pulls up a woman’s veil. Here A intentionally uses\nforce to her, and if he does so without her consent intending or knowing it\nto be likely that he may thereby injure, frighten or annoy her, he has used\ncriminal force to her.\n(g) Z is bathing. A pours into the bath water which he knows to be\nboiling. Here A intentionally by his own bodily power causes such motion in\nthe boiling water as brings that water into contact with Z, or with other\nwater so situated that such contact must affect Z’s sense of feeling; A has\ntherefore intentionally used force to Z; and if he has done this without Z’s\nconsent intending or knowing it to be likely that he may thereby cause\ninjury, fear or annoyance to Z, A has used criminal force.\n(h) A incites a dog to spring upon Z, without Z’s consent. Here, if A\nintends to cause injury, fear or annoyance to Z, he uses criminal force to\nZ.\nAssault.",
+          "derived_context": "",
+          "keywords": [
+            "force",
+            "motion",
+            "human body"
+          ],
+          "legal_concepts": [
+            "use of force",
+            "criminal force"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 2,
+            "coverage_ratio": 1.0,
+            "matched_concepts": [
+              "use of force",
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.9
+          },
+          "query_scores": {
+            "original": 0.8843035785874682
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S128_ILL1_D",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S128_C",
+          "score": 0.710954,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 128,
+          "citation": "Section 128",
+          "text": "by inducing any animal to move, to change its motion, or to cease to move. Criminal force. 129. Whoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 128: Force.\nby inducing any animal to move, to change its motion, or to cease to move. Criminal force. 129. Whoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+          "keywords": [
+            "force",
+            "move",
+            "criminal",
+            "cause",
+            "inducing",
+            "animal",
+            "change",
+            "motion",
+            "cease",
+            "whoever",
+            "criminal force",
+            "intentional use"
+          ],
+          "legal_concepts": [
+            "causing bodily harm",
+            "assault"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.9222817041266591,
+            "original:semrank_pre_rerank": 0.8795,
+            "semrank_pre_rerank": 0.8795
+          },
+          "query_scores": {
+            "original": 0.9024613812894121
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "score": 0.8795,
+            "best_similarity": 0.8795,
+            "best_concept": "assault",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "assault",
+                "source": "legal_concept",
+                "similarity": 0.8795,
+                "weighted_score": 0.8795
+              },
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "causing bodily harm",
+                "source": "legal_concept",
+                "similarity": 0.8733,
+                "weighted_score": 0.8733
+              },
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "motion",
+                "source": "keyword",
+                "similarity": 0.887,
+                "weighted_score": 0.6652
+              }
+            ],
+            "pre_rerank_score": 0.8795,
+            "score_before_pre_rerank": 0.902461,
+            "score_after_pre_rerank": 0.898328
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S129_ILL1_E",
+          "score": 0.684075,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 129,
+          "citation": "Section 129",
+          "text": "A throws a stone, intending or knowing it to be likely that the stone will be thus brought into contact with Z, or with Z’s clothes, or with something carried by Z, or that it will strike water and dash up the water against Z’s clothes or something carried by Z. Here, if the throwing of the stone produce the effect of causing any substance to come into contact with Z, or Z’s clothes, A has used force to Z, and if he did so without Z’s consent, intending thereby to injure, frighten or annoy Z, he has used criminal force to Z.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nA throws a stone, intending or knowing it to be likely that the stone will be thus brought into contact with Z, or with Z’s clothes, or with something carried by Z, or that it will strike water and dash up the water against Z’s clothes or something carried by Z. Here, if the throwing of the stone produce the effect of causing any substance to come into contact with Z, or Z’s clothes, A has used force to Z, and if he did so without Z’s consent, intending thereby to injure, frighten or annoy Z, he has used criminal force to Z.",
+          "keywords": [
+            "stone",
+            "clothes",
+            "force",
+            "intending",
+            "contact",
+            "something",
+            "carried",
+            "water",
+            "used",
+            "criminal",
+            "criminal force",
+            "intending to injure"
+          ],
+          "legal_concepts": [
+            "use of force",
+            "criminal intent"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "use of force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7287556529045105,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8324805997610321
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "use of force",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "use of force",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal intent",
+                "source": "legal_concept",
+                "similarity": 0.8924,
+                "weighted_score": 0.8924
+              },
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "used",
+                "source": "keyword",
+                "similarity": 0.8902,
+                "weighted_score": 0.6677
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.832481,
+            "score_after_pre_rerank": 0.862634
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S129_ILL1_H",
+          "score": 0.671145,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 129,
+          "citation": "Section 129",
+          "text": "A incites a dog to spring upon Z, without Z’s consent. Here, if A intends to cause injury, fear or annoyance to Z, he uses criminal force to Z. Assault.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nA incites a dog to spring upon Z, without Z’s consent. Here, if A intends to cause injury, fear or annoyance to Z, he uses criminal force to Z. Assault.",
+          "keywords": [
+            "criminal",
+            "force",
+            "incites",
+            "spring",
+            "upon",
+            "consent",
+            "here",
+            "intends",
+            "cause",
+            "injury",
+            "criminal force",
+            "assault"
+          ],
+          "legal_concepts": [
+            "use of force",
+            "assault and battery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "use of force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7464370131492615,
+            "original:bm25": 0.05555555555555555,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8454882167541579
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "use of force",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "use of force",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "assault and battery",
+                "source": "legal_concept",
+                "similarity": 0.8645,
+                "weighted_score": 0.8645
+              },
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "here",
+                "source": "keyword",
+                "similarity": 0.8864,
+                "weighted_score": 0.6648
+              }
+            ],
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.845488,
+            "score_after_pre_rerank": 0.8733
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S129_ILL1_G",
+          "score": 0.466812,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 129,
+          "citation": "Section 129",
+          "text": "Z is bathing. A pours into the bath water which he knows to be boiling. Here A intentionally by his own bodily power causes such motion in the boiling water as brings that water into contact with Z, or with other water so situated that such contact must affect Z’s sense of feeling; A has therefore intentionally used force to Z; and if he has done this without Z’s consent intending or knowing it to be likely that he may thereby cause injury, fear or annoyance to Z, A has used criminal force.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nZ is bathing. A pours into the bath water which he knows to be boiling. Here A intentionally by his own bodily power causes such motion in the boiling water as brings that water into contact with Z, or with other water so situated that such contact must affect Z’s sense of feeling; A has therefore intentionally used force to Z; and if he has done this without Z’s consent intending or knowing it to be likely that he may thereby cause injury, fear or annoyance to Z, A has used criminal force.",
+          "keywords": [
+            "water",
+            "force",
+            "boiling",
+            "intentionally",
+            "contact",
+            "used",
+            "criminal",
+            "bathing",
+            "pours",
+            "bath",
+            "boiling water",
+            "intentional harm"
+          ],
+          "legal_concepts": [
+            "criminal force",
+            "intentional infliction of harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.695093035697937,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8292739616981878
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal force",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "intentional infliction of harm",
+                "source": "legal_concept",
+                "similarity": 0.8498,
+                "weighted_score": 0.8498
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "used",
+                "source": "keyword",
+                "similarity": 0.8902,
+                "weighted_score": 0.6677
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "contact",
+                "source": "keyword",
+                "similarity": 0.8655,
+                "weighted_score": 0.6491
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal force",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.829274,
+            "score_after_pre_rerank": 0.860005
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S135_BODY",
+          "score": 0.335008,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 135,
+          "citation": "Section 135",
+          "text": "Whoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 135: Assault or criminal force in attempt to wrongfully confine a person.\nWhoever assaults or uses criminal force to any person, in attempting wrongfully to confine that person, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. Assault or criminal force on grave provocation.",
+          "keywords": [
+            "criminal",
+            "force",
+            "wrongfully",
+            "confine",
+            "extend",
+            "assault",
+            "body",
+            "whoever",
+            "assaults",
+            "uses",
+            "criminal force",
+            "wrongful confinement"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "wrongful confinement"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7209320664405823,
+            "original:bm25": 0.16971265344279055,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7870702570519722
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal force",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "assault",
+                "source": "legal_concept",
+                "similarity": 0.8795,
+                "weighted_score": 0.8795
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "wrongful confinement",
+                "source": "legal_concept",
+                "similarity": 0.8169,
+                "weighted_score": 0.8169
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "uses",
+                "source": "keyword",
+                "similarity": 0.8879,
+                "weighted_score": 0.666
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal force",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.78707,
+            "score_after_pre_rerank": 0.825398
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S132_BODY",
+          "score": 0.32959,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 132,
+          "citation": "Section 132",
+          "text": "Whoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 132: Assault or criminal force to deter public servant from discharge of his duty.\nWhoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+          "keywords": [
+            "public",
+            "servant",
+            "duty",
+            "criminal",
+            "force",
+            "intent",
+            "deter",
+            "done",
+            "discharge",
+            "assault",
+            "criminal force",
+            "public servant"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "criminal force"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.714914858341217,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7853359432429592
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "criminal force",
+              "use of force",
+              "force",
+              "what is criminal force"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal force",
+                "chunk_concept": "criminal force",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "use of force",
+                "chunk_concept": "assault",
+                "source": "legal_concept",
+                "similarity": 0.8795,
+                "weighted_score": 0.8795
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 0.81,
+                "weighted_score": 0.81
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "force",
+                "chunk_concept": "intent",
+                "source": "keyword",
+                "similarity": 0.8797,
+                "weighted_score": 0.6597
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal force",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.785336,
+            "score_after_pre_rerank": 0.823975
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

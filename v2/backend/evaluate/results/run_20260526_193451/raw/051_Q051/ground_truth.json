@@ -1,0 +1,41 @@
+{
+  "query_id": "Q051",
+  "query": "A person with unsound mind committed an act that caused harm. How does BNS treat this?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "22",
+      "subsection": null,
+      "label": "Section 22",
+      "role": "act of person of unsound mind not an offence if incapable of knowing nature or wrongfulness",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "36",
+      "label": "Section 36",
+      "reason": "others may still exercise right of private defence against such a person"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Under Section 22, if a person at the time of the act, by reason of unsoundness of mind, was incapable of knowing the nature of the act or that it was wrong or contrary to law, the act is not an offence.",
+      "The unsoundness of mind must exist at the time of the act and must have rendered the person incapable; mere mental illness is not sufficient."
+    ],
+    "optional_points": [
+      "Under Section 36, other persons may still exercise the right of private defence against acts by a person of unsound mind."
+    ],
+    "forbidden_points": [
+      "A person with unsound mind can never be held criminally liable.",
+      "Unsoundness of mind at any time automatically excuses any act."
+    ]
+  },
+  "notes": "Scenario query applying Section 22."
+}

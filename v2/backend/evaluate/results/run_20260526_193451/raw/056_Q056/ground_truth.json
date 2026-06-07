@@ -1,0 +1,48 @@
+{
+  "query_id": "Q056",
+  "query": "Someone encouraged another person to commit theft. What offence may apply?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "45",
+      "subsection": null,
+      "label": "Section 45",
+      "role": "abetment by instigation",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "49",
+      "label": "Section 49",
+      "reason": "applies if the theft abetted is committed in consequence and no express punishment is provided"
+    },
+    {
+      "act": "BNS",
+      "section": "56",
+      "label": "Section 56",
+      "reason": "punishment for abetment of an offence punishable with imprisonment where the offence is not committed"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 45 provides that a person who instigates another to do a thing abets that thing.",
+      "Encouraging another person to commit theft amounts to abetment by instigation.",
+      "If the theft is committed in consequence of the abetment, Section 49 applies and the abettor is liable to the same punishment as for the offence."
+    ],
+    "optional_points": [
+      "If the theft is not committed, Section 56 may apply providing for reduced punishment."
+    ],
+    "forbidden_points": [
+      "Encouraging another to commit a crime is not an offence unless the person actually commits the crime.",
+      "The person encouraging can only be tried if present at the scene."
+    ]
+  },
+  "notes": "Scenario query applying Section 45 (abetment by instigation)."
+}

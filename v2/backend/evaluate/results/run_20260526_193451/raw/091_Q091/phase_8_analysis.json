@@ -1,0 +1,72 @@
+{
+  "query": "How do I file an FIR step by step under BNSS?",
+  "intent": {
+    "primary": "procedure",
+    "secondary": []
+  },
+  "concepts": [
+    "FIR filing",
+    "Bharatiya Nyaya Sanhita"
+  ],
+  "targets": [],
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true
+  },
+  "decomposition": {
+    "needed": true,
+    "sub_queries": [
+      {
+        "query": "What are the steps to file an FIR under Bharatiya Nyaya Sanhita?",
+        "intent": {
+          "primary": "procedure",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "FIR filing",
+          "Bharatiya Nyaya Sanhita"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      },
+      {
+        "query": "What information is required to file an FIR under Bharatiya Nyaya Sanhita?",
+        "intent": {
+          "primary": "procedure",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "FIR filing",
+          "Bharatiya Nyaya Sanhita"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      }
+    ]
+  },
+  "confidence": {
+    "hint_relevance": 0.7019,
+    "llm_consistency": 1.0,
+    "rule_strength": 0.35,
+    "structure_validity": 1.0,
+    "overall": 0.7508
+  }
+}

@@ -1,0 +1,3493 @@
+[
+  {
+    "query": "What is cruelty under Section 86?",
+    "phase8": {
+      "query": "What is cruelty under Section 86?",
+      "intent": {
+        "primary": "lookup",
+        "secondary": []
+      },
+      "concepts": [
+        "wilful conduct",
+        "grave injury",
+        "harassment",
+        "likely to drive",
+        "offence against woman",
+        "cruelty definition"
+      ],
+      "targets": [
+        "Section 86"
+      ],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 1.0,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.8,
+        "structure_validity": 1.0,
+        "overall": 0.96
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is cruelty under Section 86?",
+          "targets": [
+            "Section 86"
+          ],
+          "concepts": [
+            "wilful conduct",
+            "grave injury",
+            "harassment",
+            "likely to drive",
+            "offence against woman",
+            "cruelty definition"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S86_A",
+            "score": 1.0,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 86,
+            "citation": "Section 86",
+            "text": "any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman; or",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 86: Cruelty defined.\nany wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman; or",
+            "keywords": [
+              "woman",
+              "wilful",
+              "conduct",
+              "nature",
+              "likely",
+              "drive",
+              "commit",
+              "suicide",
+              "cause",
+              "grave"
+            ],
+            "legal_concepts": [
+              "wilful conduct",
+              "likely to drive"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 2,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "wilful conduct",
+                "likely to drive"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7741186618804932,
+              "bm25": 1.0,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wilful conduct",
+                "grave injury",
+                "harassment",
+                "likely to drive",
+                "offence against woman",
+                "cruelty definition",
+                "section 86",
+                "cruelty"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "likely to drive",
+                  "chunk_concept": "likely to drive",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "wilful conduct",
+                  "chunk_concept": "wilful conduct",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "grave injury",
+                  "chunk_concept": "grave",
+                  "source": "keyword",
+                  "similarity": 0.9422,
+                  "weighted_score": 0.7067
+                },
+                {
+                  "query_concept": "wilful conduct",
+                  "chunk_concept": "wilful",
+                  "source": "keyword",
+                  "similarity": 0.9387,
+                  "weighted_score": 0.7041
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "woman",
+                  "source": "keyword",
+                  "similarity": 0.9327,
+                  "weighted_score": 0.6995
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "likely to drive",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S86_B",
+            "score": 0.658189,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 86,
+            "citation": "Section 86",
+            "text": "harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand. Kidnapping, abducting or inducing woman to compel her marriage, etc.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 86: Cruelty defined.\nharassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand. Kidnapping, abducting or inducing woman to compel her marriage, etc.",
+            "keywords": [
+              "woman",
+              "harassment",
+              "related",
+              "meet",
+              "demand",
+              "view",
+              "coercing",
+              "unlawful",
+              "property",
+              "valuable",
+              "coercion",
+              "unlawful demand"
+            ],
+            "legal_concepts": [
+              "offence against woman",
+              "cruelty definition"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 2,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "offence against woman",
+                "cruelty definition"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.730534553527832,
+              "bm25": 0.4610598272104366,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wilful conduct",
+                "grave injury",
+                "harassment",
+                "likely to drive",
+                "offence against woman",
+                "cruelty definition",
+                "section 86",
+                "cruelty"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "cruelty definition",
+                  "chunk_concept": "cruelty definition",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "offence against woman",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "harassment",
+                  "chunk_concept": "harassment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "woman",
+                  "source": "keyword",
+                  "similarity": 0.9327,
+                  "weighted_score": 0.6995
+                },
+                {
+                  "query_concept": "harassment",
+                  "chunk_concept": "coercion",
+                  "source": "keyword",
+                  "similarity": 0.8799,
+                  "weighted_score": 0.6599
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "offence against woman",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S85_BODY",
+            "score": 0.400325,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 85,
+            "citation": "Section 85",
+            "text": "Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Cruelty defined.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 85: Husband or relative of husband of a woman subjecting her to cruelty.\nWhoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Cruelty defined.",
+            "keywords": [
+              "husband",
+              "woman",
+              "cruelty",
+              "relative",
+              "whoever",
+              "subjects",
+              "punished",
+              "imprisonment",
+              "term",
+              "extend",
+              "punishable"
+            ],
+            "legal_concepts": [
+              "offence against woman",
+              "subjecting to cruelty"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 1,
+              "coverage_ratio": 0.1667,
+              "matched_concepts": [
+                "offence against woman"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6893506050109863,
+              "bm25": 0.2613705445789195,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wilful conduct",
+                "grave injury",
+                "harassment",
+                "likely to drive",
+                "offence against woman",
+                "cruelty definition",
+                "section 86",
+                "cruelty"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "offence against woman",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "subjecting to cruelty",
+                  "source": "legal_concept",
+                  "similarity": 0.9704,
+                  "weighted_score": 0.9704
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "cruelty",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "woman",
+                  "source": "keyword",
+                  "similarity": 0.9327,
+                  "weighted_score": 0.6995
+                },
+                {
+                  "query_concept": "section 86",
+                  "chunk_concept": "term",
+                  "source": "keyword",
+                  "similarity": 0.8883,
+                  "weighted_score": 0.6662
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "offence against woman",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S89_BODY",
+            "score": 0.400013,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 89,
+            "citation": "Section 89",
+            "text": "Whoever commits the offence under section 88 without the consent of the woman, whether the woman is quick with child or not, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Death caused by act done with intent to cause miscarriage.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 89: Causing miscarriage without woman's consent.\nWhoever commits the offence under section 88 without the consent of the woman, whether the woman is quick with child or not, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Death caused by act done with intent to cause miscarriage.",
+            "keywords": [
+              "woman",
+              "consent",
+              "child",
+              "imprisonment",
+              "miscarriage",
+              "whoever",
+              "commits",
+              "offence",
+              "whether",
+              "quick"
+            ],
+            "legal_concepts": [
+              "offence against woman",
+              "causing miscarriage"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 1,
+              "coverage_ratio": 0.1667,
+              "matched_concepts": [
+                "offence against woman"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wilful conduct",
+                "grave injury",
+                "harassment",
+                "likely to drive",
+                "offence against woman",
+                "cruelty definition",
+                "section 86",
+                "cruelty"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "offence against woman",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "causing miscarriage",
+                  "source": "legal_concept",
+                  "similarity": 0.8085,
+                  "weighted_score": 0.8085
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "woman",
+                  "source": "keyword",
+                  "similarity": 0.9327,
+                  "weighted_score": 0.6995
+                },
+                {
+                  "query_concept": "section 86",
+                  "chunk_concept": "quick",
+                  "source": "keyword",
+                  "similarity": 0.8742,
+                  "weighted_score": 0.6556
+                },
+                {
+                  "query_concept": "section 86",
+                  "chunk_concept": "whether",
+                  "source": "keyword",
+                  "similarity": 0.8741,
+                  "weighted_score": 0.6556
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "offence against woman",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S78_N1_I",
+            "score": 0.400007,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 78,
+            "citation": "Section 78",
+            "text": "follows a woman and contacts, or attempts to contact such woman to foster personal interaction repeatedly despite a clear indication of disinterest by such woman; or",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 78: Stalking.\nAny man who—\nfollows a woman and contacts, or attempts to contact such woman to foster personal interaction repeatedly despite a clear indication of disinterest by such woman; or",
+            "keywords": [
+              "woman",
+              "follows",
+              "contacts",
+              "attempts",
+              "contact",
+              "foster",
+              "personal",
+              "interaction",
+              "repeatedly",
+              "despite",
+              "repeated contact",
+              "despite disinterest"
+            ],
+            "legal_concepts": [
+              "stalking",
+              "offence against woman"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 1,
+              "coverage_ratio": 0.1667,
+              "matched_concepts": [
+                "offence against woman"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wilful conduct",
+                "grave injury",
+                "harassment",
+                "likely to drive",
+                "offence against woman",
+                "cruelty definition",
+                "section 86",
+                "cruelty"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "offence against woman",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "harassment",
+                  "chunk_concept": "stalking",
+                  "source": "legal_concept",
+                  "similarity": 0.9281,
+                  "weighted_score": 0.9281
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "woman",
+                  "source": "keyword",
+                  "similarity": 0.9327,
+                  "weighted_score": 0.6995
+                },
+                {
+                  "query_concept": "section 86",
+                  "chunk_concept": "follows",
+                  "source": "keyword",
+                  "similarity": 0.8842,
+                  "weighted_score": 0.6631
+                },
+                {
+                  "query_concept": "section 86",
+                  "chunk_concept": "personal",
+                  "source": "keyword",
+                  "similarity": 0.8608,
+                  "weighted_score": 0.6456
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "offence against woman",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S78_N1_I_2",
+            "score": 0.400005,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 78,
+            "citation": "Section 78",
+            "text": "it was pursued for the purpose of preventing or detecting crime and the man accused of stalking had been entrusted with the responsibility of prevention and detection of crime by the State; or",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 78: Stalking.\nAny man who—\nit was pursued for the purpose of preventing or detecting crime and the man accused of stalking had been entrusted with the responsibility of prevention and detection of crime by the State; or",
+            "keywords": [
+              "crime",
+              "stalking",
+              "pursued",
+              "purpose",
+              "preventing",
+              "detecting",
+              "accused",
+              "entrusted",
+              "responsibility",
+              "prevention",
+              "crime prevention"
+            ],
+            "legal_concepts": [
+              "offence against woman",
+              "clause of exemption"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 1,
+              "coverage_ratio": 0.1667,
+              "matched_concepts": [
+                "offence against woman"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wilful conduct",
+                "grave injury",
+                "harassment",
+                "likely to drive",
+                "offence against woman",
+                "cruelty definition",
+                "section 86",
+                "cruelty"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "offence against woman",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "section 86",
+                  "chunk_concept": "clause of exemption",
+                  "source": "legal_concept",
+                  "similarity": 0.8181,
+                  "weighted_score": 0.8181
+                },
+                {
+                  "query_concept": "harassment",
+                  "chunk_concept": "stalking",
+                  "source": "keyword",
+                  "similarity": 0.9281,
+                  "weighted_score": 0.6961
+                },
+                {
+                  "query_concept": "section 86",
+                  "chunk_concept": "purpose",
+                  "source": "keyword",
+                  "similarity": 0.8809,
+                  "weighted_score": 0.6606
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "accused",
+                  "source": "keyword",
+                  "similarity": 0.8738,
+                  "weighted_score": 0.6554
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "offence against woman",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S64_N2_A_III",
+            "score": 0.400003,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 64,
+            "citation": "Section 64",
+            "text": "on a woman in such police officer’s custody or in the custody of a police officer subordinate to such police officer; or",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 64: Punishment for rape.\non a woman in such police officer’s custody or in the custody of a police officer subordinate to such police officer; or",
+            "keywords": [
+              "police",
+              "officer",
+              "woman",
+              "custody",
+              "subordinate",
+              "punishment",
+              "rape",
+              "offences",
+              "against",
+              "child",
+              "punishable"
+            ],
+            "legal_concepts": [
+              "offence against woman",
+              "punishment for rape"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 1,
+              "coverage_ratio": 0.1667,
+              "matched_concepts": [
+                "offence against woman"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wilful conduct",
+                "grave injury",
+                "harassment",
+                "likely to drive",
+                "offence against woman",
+                "cruelty definition",
+                "section 86",
+                "cruelty"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "offence against woman",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "punishment for rape",
+                  "source": "legal_concept",
+                  "similarity": 0.8674,
+                  "weighted_score": 0.8674
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "woman",
+                  "source": "keyword",
+                  "similarity": 0.9327,
+                  "weighted_score": 0.6995
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "offences",
+                  "source": "keyword",
+                  "similarity": 0.9037,
+                  "weighted_score": 0.6778
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "rape",
+                  "source": "keyword",
+                  "similarity": 0.8795,
+                  "weighted_score": 0.6596
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "offence against woman",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S64_N2_F",
+            "score": 0.400003,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 64,
+            "citation": "Section 64",
+            "text": "being a relative, guardian or teacher of, or a person in a position of trust or authority towards the woman, commits rape on such woman; or",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 64: Punishment for rape.\nWhoever,—\nbeing a relative, guardian or teacher of, or a person in a position of trust or authority towards the woman, commits rape on such woman; or",
+            "keywords": [
+              "woman",
+              "rape",
+              "relative",
+              "guardian",
+              "teacher",
+              "position",
+              "trust",
+              "authority",
+              "towards",
+              "commits",
+              "punishable"
+            ],
+            "legal_concepts": [
+              "offence against woman",
+              "position of trust or authority"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 1,
+              "coverage_ratio": 0.1667,
+              "matched_concepts": [
+                "offence against woman"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wilful conduct",
+                "grave injury",
+                "harassment",
+                "likely to drive",
+                "offence against woman",
+                "cruelty definition",
+                "section 86",
+                "cruelty"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "offence against woman",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "harassment",
+                  "chunk_concept": "position of trust or authority",
+                  "source": "legal_concept",
+                  "similarity": 0.8177,
+                  "weighted_score": 0.8177
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "woman",
+                  "source": "keyword",
+                  "similarity": 0.9327,
+                  "weighted_score": 0.6995
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "rape",
+                  "source": "keyword",
+                  "similarity": 0.8795,
+                  "weighted_score": 0.6596
+                },
+                {
+                  "query_concept": "wilful conduct",
+                  "chunk_concept": "punishable",
+                  "source": "keyword",
+                  "similarity": 0.8768,
+                  "weighted_score": 0.6576
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "offence against woman",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S63_D_III",
+            "score": 0.400002,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 63,
+            "citation": "Section 63",
+            "text": "with her consent, when her consent has been obtained by putting her or any person in whom she is interested, in fear of death or of hurt;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\nwith her consent, when her consent has been obtained by putting her or any person in whom she is interested, in fear of death or of hurt;",
+            "keywords": [
+              "consent",
+              "obtained",
+              "putting",
+              "interested",
+              "fear",
+              "death",
+              "hurt",
+              "rape",
+              "offences",
+              "against",
+              "offence",
+              "woman",
+              "child"
+            ],
+            "legal_concepts": [
+              "offence against woman",
+              "offence against child"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 1,
+              "coverage_ratio": 0.1667,
+              "matched_concepts": [
+                "offence against woman"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wilful conduct",
+                "grave injury",
+                "harassment",
+                "likely to drive",
+                "offence against woman",
+                "cruelty definition",
+                "section 86",
+                "cruelty"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "offence against woman",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "offence against child",
+                  "source": "legal_concept",
+                  "similarity": 0.8785,
+                  "weighted_score": 0.8785
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "woman",
+                  "source": "keyword",
+                  "similarity": 0.9327,
+                  "weighted_score": 0.6995
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "offences",
+                  "source": "keyword",
+                  "similarity": 0.9037,
+                  "weighted_score": 0.6778
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "rape",
+                  "source": "keyword",
+                  "similarity": 0.8795,
+                  "weighted_score": 0.6596
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "offence against woman",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S75_N3",
+            "score": 0.400001,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 75,
+            "citation": "Section 75",
+            "text": "Any man who commits the offence specified in clause (iv) of sub- section (1) shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both. Assault or use of criminal force to woman with intent to disrobe.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 75: Sexual harassment.\nAny man who commits the offence specified in clause (iv) of sub- section (1) shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both. Assault or use of criminal force to woman with intent to disrobe.",
+            "keywords": [
+              "woman",
+              "commits",
+              "offence",
+              "specified",
+              "punished",
+              "imprisonment",
+              "either",
+              "description",
+              "term",
+              "extend",
+              "sexual harassment",
+              "imprisonment for one year"
+            ],
+            "legal_concepts": [
+              "offence against woman",
+              "punishment for sexual harassment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 6,
+              "matched_count": 1,
+              "coverage_ratio": 0.1667,
+              "matched_concepts": [
+                "offence against woman"
+              ]
+            },
+            "source_scores": {
+              "bm25": 0.058823529411764705,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wilful conduct",
+                "grave injury",
+                "harassment",
+                "likely to drive",
+                "offence against woman",
+                "cruelty definition",
+                "section 86",
+                "cruelty"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "offence against woman",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "harassment",
+                  "chunk_concept": "punishment for sexual harassment",
+                  "source": "legal_concept",
+                  "similarity": 0.9245,
+                  "weighted_score": 0.9245
+                },
+                {
+                  "query_concept": "harassment",
+                  "chunk_concept": "sexual harassment",
+                  "source": "keyword",
+                  "similarity": 0.9561,
+                  "weighted_score": 0.7171
+                },
+                {
+                  "query_concept": "offence against woman",
+                  "chunk_concept": "woman",
+                  "source": "keyword",
+                  "similarity": 0.9327,
+                  "weighted_score": 0.6995
+                },
+                {
+                  "query_concept": "section 86",
+                  "chunk_concept": "description",
+                  "source": "keyword",
+                  "similarity": 0.8938,
+                  "weighted_score": 0.6704
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "offence against woman",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S86_A",
+          "score": 1.0,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 86,
+          "citation": "Section 86",
+          "text": "any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 86: Cruelty defined.\nany wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman; or",
+          "keywords": [
+            "woman",
+            "wilful",
+            "conduct",
+            "nature",
+            "likely",
+            "drive",
+            "commit",
+            "suicide",
+            "cause",
+            "grave"
+          ],
+          "legal_concepts": [
+            "wilful conduct",
+            "likely to drive"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 2,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "wilful conduct",
+              "likely to drive"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7741186618804932,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "likely to drive",
+                "chunk_concept": "likely to drive",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "wilful conduct",
+                "chunk_concept": "wilful conduct",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "grave injury",
+                "chunk_concept": "grave",
+                "source": "keyword",
+                "similarity": 0.9422,
+                "weighted_score": 0.7067
+              },
+              {
+                "query_concept": "wilful conduct",
+                "chunk_concept": "wilful",
+                "source": "keyword",
+                "similarity": 0.9387,
+                "weighted_score": 0.7041
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "likely to drive",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S86_B",
+          "score": 0.719715,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 86,
+          "citation": "Section 86",
+          "text": "harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand. Kidnapping, abducting or inducing woman to compel her marriage, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 86: Cruelty defined.\nharassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand. Kidnapping, abducting or inducing woman to compel her marriage, etc.",
+          "keywords": [
+            "woman",
+            "harassment",
+            "related",
+            "meet",
+            "demand",
+            "view",
+            "coercing",
+            "unlawful",
+            "property",
+            "valuable",
+            "coercion",
+            "unlawful demand"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "cruelty definition"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 2,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "offence against woman",
+              "cruelty definition"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.730534553527832,
+            "original:bm25": 0.4610598272104366,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6581892480952103
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "cruelty definition",
+                "chunk_concept": "cruelty definition",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "harassment",
+                "chunk_concept": "harassment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "harassment",
+                "chunk_concept": "coercion",
+                "source": "keyword",
+                "similarity": 0.8799,
+                "weighted_score": 0.6599
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.658189,
+            "score_after_pre_rerank": 0.719715
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S85_BODY",
+          "score": 0.508267,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 85,
+          "citation": "Section 85",
+          "text": "Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Cruelty defined.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 85: Husband or relative of husband of a woman subjecting her to cruelty.\nWhoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Cruelty defined.",
+          "keywords": [
+            "husband",
+            "woman",
+            "cruelty",
+            "relative",
+            "whoever",
+            "subjects",
+            "punished",
+            "imprisonment",
+            "term",
+            "extend",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "subjecting to cruelty"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6893506050109863,
+            "original:bm25": 0.2613705445789195,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4003253346475857
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "subjecting to cruelty",
+                "source": "legal_concept",
+                "similarity": 0.9704,
+                "weighted_score": 0.9704
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "cruelty",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8883,
+                "weighted_score": 0.6662
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400325,
+            "score_after_pre_rerank": 0.508267
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S89_BODY",
+          "score": 0.508011,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 89,
+          "citation": "Section 89",
+          "text": "Whoever commits the offence under section 88 without the consent of the woman, whether the woman is quick with child or not, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Death caused by act done with intent to cause miscarriage.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 89: Causing miscarriage without woman's consent.\nWhoever commits the offence under section 88 without the consent of the woman, whether the woman is quick with child or not, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Death caused by act done with intent to cause miscarriage.",
+          "keywords": [
+            "woman",
+            "consent",
+            "child",
+            "imprisonment",
+            "miscarriage",
+            "whoever",
+            "commits",
+            "offence",
+            "whether",
+            "quick"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "causing miscarriage"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000130893626765
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "causing miscarriage",
+                "source": "legal_concept",
+                "similarity": 0.8085,
+                "weighted_score": 0.8085
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "quick",
+                "source": "keyword",
+                "similarity": 0.8742,
+                "weighted_score": 0.6556
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "whether",
+                "source": "keyword",
+                "similarity": 0.8741,
+                "weighted_score": 0.6556
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400013,
+            "score_after_pre_rerank": 0.508011
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S78_N1_I",
+          "score": 0.508006,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 78,
+          "citation": "Section 78",
+          "text": "follows a woman and contacts, or attempts to contact such woman to foster personal interaction repeatedly despite a clear indication of disinterest by such woman; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 78: Stalking.\nAny man who—\nfollows a woman and contacts, or attempts to contact such woman to foster personal interaction repeatedly despite a clear indication of disinterest by such woman; or",
+          "keywords": [
+            "woman",
+            "follows",
+            "contacts",
+            "attempts",
+            "contact",
+            "foster",
+            "personal",
+            "interaction",
+            "repeatedly",
+            "despite",
+            "repeated contact",
+            "despite disinterest"
+          ],
+          "legal_concepts": [
+            "stalking",
+            "offence against woman"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40000717546106224
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "harassment",
+                "chunk_concept": "stalking",
+                "source": "legal_concept",
+                "similarity": 0.9281,
+                "weighted_score": 0.9281
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "follows",
+                "source": "keyword",
+                "similarity": 0.8842,
+                "weighted_score": 0.6631
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "personal",
+                "source": "keyword",
+                "similarity": 0.8608,
+                "weighted_score": 0.6456
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400007,
+            "score_after_pre_rerank": 0.508006
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S78_N1_I_2",
+          "score": 0.508004,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 78,
+          "citation": "Section 78",
+          "text": "it was pursued for the purpose of preventing or detecting crime and the man accused of stalking had been entrusted with the responsibility of prevention and detection of crime by the State; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 78: Stalking.\nAny man who—\nit was pursued for the purpose of preventing or detecting crime and the man accused of stalking had been entrusted with the responsibility of prevention and detection of crime by the State; or",
+          "keywords": [
+            "crime",
+            "stalking",
+            "pursued",
+            "purpose",
+            "preventing",
+            "detecting",
+            "accused",
+            "entrusted",
+            "responsibility",
+            "prevention",
+            "crime prevention"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "clause of exemption"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000047363854802
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "clause of exemption",
+                "source": "legal_concept",
+                "similarity": 0.8181,
+                "weighted_score": 0.8181
+              },
+              {
+                "query_concept": "harassment",
+                "chunk_concept": "stalking",
+                "source": "keyword",
+                "similarity": 0.9281,
+                "weighted_score": 0.6961
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "purpose",
+                "source": "keyword",
+                "similarity": 0.8809,
+                "weighted_score": 0.6606
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "accused",
+                "source": "keyword",
+                "similarity": 0.8738,
+                "weighted_score": 0.6554
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400005,
+            "score_after_pre_rerank": 0.508004
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S64_N2_A_III",
+          "score": 0.508003,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 64,
+          "citation": "Section 64",
+          "text": "on a woman in such police officer’s custody or in the custody of a police officer subordinate to such police officer; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 64: Punishment for rape.\non a woman in such police officer’s custody or in the custody of a police officer subordinate to such police officer; or",
+          "keywords": [
+            "police",
+            "officer",
+            "woman",
+            "custody",
+            "subordinate",
+            "punishment",
+            "rape",
+            "offences",
+            "against",
+            "child",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "punishment for rape"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000031689950369
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "punishment for rape",
+                "source": "legal_concept",
+                "similarity": 0.8674,
+                "weighted_score": 0.8674
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offences",
+                "source": "keyword",
+                "similarity": 0.9037,
+                "weighted_score": 0.6778
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "rape",
+                "source": "keyword",
+                "similarity": 0.8795,
+                "weighted_score": 0.6596
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400003,
+            "score_after_pre_rerank": 0.508003
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S64_N2_F",
+          "score": 0.508002,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 64,
+          "citation": "Section 64",
+          "text": "being a relative, guardian or teacher of, or a person in a position of trust or authority towards the woman, commits rape on such woman; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 64: Punishment for rape.\nWhoever,—\nbeing a relative, guardian or teacher of, or a person in a position of trust or authority towards the woman, commits rape on such woman; or",
+          "keywords": [
+            "woman",
+            "rape",
+            "relative",
+            "guardian",
+            "teacher",
+            "position",
+            "trust",
+            "authority",
+            "towards",
+            "commits",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "position of trust or authority"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40000259842079094
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "harassment",
+                "chunk_concept": "position of trust or authority",
+                "source": "legal_concept",
+                "similarity": 0.8177,
+                "weighted_score": 0.8177
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "rape",
+                "source": "keyword",
+                "similarity": 0.8795,
+                "weighted_score": 0.6596
+              },
+              {
+                "query_concept": "wilful conduct",
+                "chunk_concept": "punishable",
+                "source": "keyword",
+                "similarity": 0.8768,
+                "weighted_score": 0.6576
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400003,
+            "score_after_pre_rerank": 0.508002
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S63_D_III",
+          "score": 0.508002,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 63,
+          "citation": "Section 63",
+          "text": "with her consent, when her consent has been obtained by putting her or any person in whom she is interested, in fear of death or of hurt;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\nwith her consent, when her consent has been obtained by putting her or any person in whom she is interested, in fear of death or of hurt;",
+          "keywords": [
+            "consent",
+            "obtained",
+            "putting",
+            "interested",
+            "fear",
+            "death",
+            "hurt",
+            "rape",
+            "offences",
+            "against",
+            "offence",
+            "woman",
+            "child"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "offence against child"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40000187631543493
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against child",
+                "source": "legal_concept",
+                "similarity": 0.8785,
+                "weighted_score": 0.8785
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offences",
+                "source": "keyword",
+                "similarity": 0.9037,
+                "weighted_score": 0.6778
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "rape",
+                "source": "keyword",
+                "similarity": 0.8795,
+                "weighted_score": 0.6596
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400002,
+            "score_after_pre_rerank": 0.508002
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S75_N3",
+          "score": 0.508001,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 75,
+          "citation": "Section 75",
+          "text": "Any man who commits the offence specified in clause (iv) of sub- section (1) shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both. Assault or use of criminal force to woman with intent to disrobe.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 75: Sexual harassment.\nAny man who commits the offence specified in clause (iv) of sub- section (1) shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both. Assault or use of criminal force to woman with intent to disrobe.",
+          "keywords": [
+            "woman",
+            "commits",
+            "offence",
+            "specified",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "extend",
+            "sexual harassment",
+            "imprisonment for one year"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "punishment for sexual harassment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.058823529411764705,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000013739629304
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "harassment",
+                "chunk_concept": "punishment for sexual harassment",
+                "source": "legal_concept",
+                "similarity": 0.9245,
+                "weighted_score": 0.9245
+              },
+              {
+                "query_concept": "harassment",
+                "chunk_concept": "sexual harassment",
+                "source": "keyword",
+                "similarity": 0.9561,
+                "weighted_score": 0.7171
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "description",
+                "source": "keyword",
+                "similarity": 0.8938,
+                "weighted_score": 0.6704
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400001,
+            "score_after_pre_rerank": 0.508001
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S86_A",
+          "score": 1.0,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 86,
+          "citation": "Section 86",
+          "text": "any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 86: Cruelty defined.\nany wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman; or",
+          "keywords": [
+            "woman",
+            "wilful",
+            "conduct",
+            "nature",
+            "likely",
+            "drive",
+            "commit",
+            "suicide",
+            "cause",
+            "grave"
+          ],
+          "legal_concepts": [
+            "wilful conduct",
+            "likely to drive"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 2,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "wilful conduct",
+              "likely to drive"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7741186618804932,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "likely to drive",
+                "chunk_concept": "likely to drive",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "wilful conduct",
+                "chunk_concept": "wilful conduct",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "grave injury",
+                "chunk_concept": "grave",
+                "source": "keyword",
+                "similarity": 0.9422,
+                "weighted_score": 0.7067
+              },
+              {
+                "query_concept": "wilful conduct",
+                "chunk_concept": "wilful",
+                "source": "keyword",
+                "similarity": 0.9387,
+                "weighted_score": 0.7041
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "likely to drive",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S86_B",
+          "score": 0.546075,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 86,
+          "citation": "Section 86",
+          "text": "harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand. Kidnapping, abducting or inducing woman to compel her marriage, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 86: Cruelty defined.\nharassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand. Kidnapping, abducting or inducing woman to compel her marriage, etc.",
+          "keywords": [
+            "woman",
+            "harassment",
+            "related",
+            "meet",
+            "demand",
+            "view",
+            "coercing",
+            "unlawful",
+            "property",
+            "valuable",
+            "coercion",
+            "unlawful demand"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "cruelty definition"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 2,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "offence against woman",
+              "cruelty definition"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.730534553527832,
+            "original:bm25": 0.4610598272104366,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6581892480952103
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "cruelty definition",
+                "chunk_concept": "cruelty definition",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "harassment",
+                "chunk_concept": "harassment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "harassment",
+                "chunk_concept": "coercion",
+                "source": "keyword",
+                "similarity": 0.8799,
+                "weighted_score": 0.6599
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.658189,
+            "score_after_pre_rerank": 0.719715
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S85_BODY",
+          "score": 0.203631,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 85,
+          "citation": "Section 85",
+          "text": "Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Cruelty defined.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 85: Husband or relative of husband of a woman subjecting her to cruelty.\nWhoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Cruelty defined.",
+          "keywords": [
+            "husband",
+            "woman",
+            "cruelty",
+            "relative",
+            "whoever",
+            "subjects",
+            "punished",
+            "imprisonment",
+            "term",
+            "extend",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "subjecting to cruelty"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6893506050109863,
+            "original:bm25": 0.2613705445789195,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4003253346475857
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "subjecting to cruelty",
+                "source": "legal_concept",
+                "similarity": 0.9704,
+                "weighted_score": 0.9704
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "cruelty",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8883,
+                "weighted_score": 0.6662
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400325,
+            "score_after_pre_rerank": 0.508267
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S89_BODY",
+          "score": 0.203216,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 89,
+          "citation": "Section 89",
+          "text": "Whoever commits the offence under section 88 without the consent of the woman, whether the woman is quick with child or not, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Death caused by act done with intent to cause miscarriage.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 89: Causing miscarriage without woman's consent.\nWhoever commits the offence under section 88 without the consent of the woman, whether the woman is quick with child or not, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. Death caused by act done with intent to cause miscarriage.",
+          "keywords": [
+            "woman",
+            "consent",
+            "child",
+            "imprisonment",
+            "miscarriage",
+            "whoever",
+            "commits",
+            "offence",
+            "whether",
+            "quick"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "causing miscarriage"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000130893626765
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "causing miscarriage",
+                "source": "legal_concept",
+                "similarity": 0.8085,
+                "weighted_score": 0.8085
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "quick",
+                "source": "keyword",
+                "similarity": 0.8742,
+                "weighted_score": 0.6556
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "whether",
+                "source": "keyword",
+                "similarity": 0.8741,
+                "weighted_score": 0.6556
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400013,
+            "score_after_pre_rerank": 0.508011
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S78_N1_I",
+          "score": 0.203208,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 78,
+          "citation": "Section 78",
+          "text": "follows a woman and contacts, or attempts to contact such woman to foster personal interaction repeatedly despite a clear indication of disinterest by such woman; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 78: Stalking.\nAny man who—\nfollows a woman and contacts, or attempts to contact such woman to foster personal interaction repeatedly despite a clear indication of disinterest by such woman; or",
+          "keywords": [
+            "woman",
+            "follows",
+            "contacts",
+            "attempts",
+            "contact",
+            "foster",
+            "personal",
+            "interaction",
+            "repeatedly",
+            "despite",
+            "repeated contact",
+            "despite disinterest"
+          ],
+          "legal_concepts": [
+            "stalking",
+            "offence against woman"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40000717546106224
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "harassment",
+                "chunk_concept": "stalking",
+                "source": "legal_concept",
+                "similarity": 0.9281,
+                "weighted_score": 0.9281
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "follows",
+                "source": "keyword",
+                "similarity": 0.8842,
+                "weighted_score": 0.6631
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "personal",
+                "source": "keyword",
+                "similarity": 0.8608,
+                "weighted_score": 0.6456
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400007,
+            "score_after_pre_rerank": 0.508006
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S78_N1_I_2",
+          "score": 0.203205,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 78,
+          "citation": "Section 78",
+          "text": "it was pursued for the purpose of preventing or detecting crime and the man accused of stalking had been entrusted with the responsibility of prevention and detection of crime by the State; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 78: Stalking.\nAny man who—\nit was pursued for the purpose of preventing or detecting crime and the man accused of stalking had been entrusted with the responsibility of prevention and detection of crime by the State; or",
+          "keywords": [
+            "crime",
+            "stalking",
+            "pursued",
+            "purpose",
+            "preventing",
+            "detecting",
+            "accused",
+            "entrusted",
+            "responsibility",
+            "prevention",
+            "crime prevention"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "clause of exemption"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000047363854802
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "clause of exemption",
+                "source": "legal_concept",
+                "similarity": 0.8181,
+                "weighted_score": 0.8181
+              },
+              {
+                "query_concept": "harassment",
+                "chunk_concept": "stalking",
+                "source": "keyword",
+                "similarity": 0.9281,
+                "weighted_score": 0.6961
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "purpose",
+                "source": "keyword",
+                "similarity": 0.8809,
+                "weighted_score": 0.6606
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "accused",
+                "source": "keyword",
+                "similarity": 0.8738,
+                "weighted_score": 0.6554
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400005,
+            "score_after_pre_rerank": 0.508004
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S64_N2_A_III",
+          "score": 0.203203,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 64,
+          "citation": "Section 64",
+          "text": "on a woman in such police officer’s custody or in the custody of a police officer subordinate to such police officer; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 64: Punishment for rape.\non a woman in such police officer’s custody or in the custody of a police officer subordinate to such police officer; or",
+          "keywords": [
+            "police",
+            "officer",
+            "woman",
+            "custody",
+            "subordinate",
+            "punishment",
+            "rape",
+            "offences",
+            "against",
+            "child",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "punishment for rape"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000031689950369
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "punishment for rape",
+                "source": "legal_concept",
+                "similarity": 0.8674,
+                "weighted_score": 0.8674
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offences",
+                "source": "keyword",
+                "similarity": 0.9037,
+                "weighted_score": 0.6778
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "rape",
+                "source": "keyword",
+                "similarity": 0.8795,
+                "weighted_score": 0.6596
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400003,
+            "score_after_pre_rerank": 0.508003
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S64_N2_F",
+          "score": 0.203202,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 64,
+          "citation": "Section 64",
+          "text": "being a relative, guardian or teacher of, or a person in a position of trust or authority towards the woman, commits rape on such woman; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 64: Punishment for rape.\nWhoever,—\nbeing a relative, guardian or teacher of, or a person in a position of trust or authority towards the woman, commits rape on such woman; or",
+          "keywords": [
+            "woman",
+            "rape",
+            "relative",
+            "guardian",
+            "teacher",
+            "position",
+            "trust",
+            "authority",
+            "towards",
+            "commits",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "position of trust or authority"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40000259842079094
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "harassment",
+                "chunk_concept": "position of trust or authority",
+                "source": "legal_concept",
+                "similarity": 0.8177,
+                "weighted_score": 0.8177
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "rape",
+                "source": "keyword",
+                "similarity": 0.8795,
+                "weighted_score": 0.6596
+              },
+              {
+                "query_concept": "wilful conduct",
+                "chunk_concept": "punishable",
+                "source": "keyword",
+                "similarity": 0.8768,
+                "weighted_score": 0.6576
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400003,
+            "score_after_pre_rerank": 0.508002
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S63_D_III",
+          "score": 0.203201,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 63,
+          "citation": "Section 63",
+          "text": "with her consent, when her consent has been obtained by putting her or any person in whom she is interested, in fear of death or of hurt;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\nwith her consent, when her consent has been obtained by putting her or any person in whom she is interested, in fear of death or of hurt;",
+          "keywords": [
+            "consent",
+            "obtained",
+            "putting",
+            "interested",
+            "fear",
+            "death",
+            "hurt",
+            "rape",
+            "offences",
+            "against",
+            "offence",
+            "woman",
+            "child"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "offence against child"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40000187631543493
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against child",
+                "source": "legal_concept",
+                "similarity": 0.8785,
+                "weighted_score": 0.8785
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offences",
+                "source": "keyword",
+                "similarity": 0.9037,
+                "weighted_score": 0.6778
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "rape",
+                "source": "keyword",
+                "similarity": 0.8795,
+                "weighted_score": 0.6596
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400002,
+            "score_after_pre_rerank": 0.508002
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S75_N3",
+          "score": 0.2032,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 75,
+          "citation": "Section 75",
+          "text": "Any man who commits the offence specified in clause (iv) of sub- section (1) shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both. Assault or use of criminal force to woman with intent to disrobe.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 75: Sexual harassment.\nAny man who commits the offence specified in clause (iv) of sub- section (1) shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both. Assault or use of criminal force to woman with intent to disrobe.",
+          "keywords": [
+            "woman",
+            "commits",
+            "offence",
+            "specified",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "extend",
+            "sexual harassment",
+            "imprisonment for one year"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "punishment for sexual harassment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 6,
+            "matched_count": 1,
+            "coverage_ratio": 0.1667,
+            "matched_concepts": [
+              "offence against woman"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.058823529411764705,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000013739629304
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wilful conduct",
+              "grave injury",
+              "harassment",
+              "likely to drive",
+              "offence against woman",
+              "cruelty definition",
+              "section 86",
+              "cruelty"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "harassment",
+                "chunk_concept": "punishment for sexual harassment",
+                "source": "legal_concept",
+                "similarity": 0.9245,
+                "weighted_score": 0.9245
+              },
+              {
+                "query_concept": "harassment",
+                "chunk_concept": "sexual harassment",
+                "source": "keyword",
+                "similarity": 0.9561,
+                "weighted_score": 0.7171
+              },
+              {
+                "query_concept": "offence against woman",
+                "chunk_concept": "woman",
+                "source": "keyword",
+                "similarity": 0.9327,
+                "weighted_score": 0.6995
+              },
+              {
+                "query_concept": "section 86",
+                "chunk_concept": "description",
+                "source": "keyword",
+                "similarity": 0.8938,
+                "weighted_score": 0.6704
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400001,
+            "score_after_pre_rerank": 0.508001
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

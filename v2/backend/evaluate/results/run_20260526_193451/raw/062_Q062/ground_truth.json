@@ -1,0 +1,48 @@
+{
+  "query_id": "Q062",
+  "query": "Someone forged a document to claim property. What offence may apply?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "336",
+      "subsection": null,
+      "label": "Section 336",
+      "role": "forgery - making false document to support a claim or title",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "338",
+      "label": "Section 338",
+      "reason": "forgery of valuable security, will, or property authority - enhanced punishment"
+    },
+    {
+      "act": "BNS",
+      "section": "335",
+      "label": "Section 335",
+      "reason": "defines what constitutes making a false document"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 336 defines forgery as making a false document with intent to cause damage or injury, to support any claim or title, or to cause any person to part with property.",
+      "Making a forged document to claim property clearly falls within this definition.",
+      "If the forged document purports to be a will or valuable security, the enhanced punishment provisions of Section 338 apply."
+    ],
+    "optional_points": [
+      "Using the forged document as genuine would additionally attract Section 340."
+    ],
+    "forbidden_points": [
+      "Forging a document to claim property is only cheating, not forgery.",
+      "Forgery requires use of a printing press."
+    ]
+  },
+  "notes": "Scenario query. Section 336 for forgery, Section 338 if document is will or security."
+}

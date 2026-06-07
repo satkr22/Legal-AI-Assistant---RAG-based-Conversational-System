@@ -1,0 +1,3196 @@
+[
+  {
+    "query": "What is the punishment for culpable homicide not amounting to murder?",
+    "phase8": {
+      "query": "What is the punishment for culpable homicide not amounting to murder?",
+      "intent": {
+        "primary": "legal penalty",
+        "secondary": []
+      },
+      "concepts": [
+        "culpable homicide",
+        "punishment",
+        "murder"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.9603,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.35,
+        "structure_validity": 1.0,
+        "overall": 0.8541
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is the punishment for culpable homicide not amounting to murder?",
+          "targets": [],
+          "concepts": [
+            "culpable homicide",
+            "punishment",
+            "murder"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S105_BODY",
+            "score": 1.0,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 105,
+            "citation": "Section 105",
+            "text": "Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. Causing death by negligence.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 105: Punishment for culpable homicide not amounting to murder.\nWhoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. Causing death by negligence.",
+            "keywords": [
+              "death",
+              "cause",
+              "imprisonment",
+              "years",
+              "causing",
+              "likely",
+              "culpable",
+              "homicide",
+              "amounting",
+              "murder",
+              "life"
+            ],
+            "legal_concepts": [
+              "culpable homicide",
+              "murder",
+              "punishment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 3,
+              "coverage_ratio": 1.0,
+              "matched_concepts": [
+                "culpable homicide",
+                "murder",
+                "punishment"
+              ]
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.4238811317321641,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "culpable homicide",
+                "murder",
+                "culpable",
+                "homicide",
+                "not",
+                "amounting"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "culpable homicide",
+                  "chunk_concept": "culpable homicide",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "murder",
+                  "chunk_concept": "murder",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "amounting",
+                  "chunk_concept": "amounting",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "culpable",
+                  "chunk_concept": "culpable",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "homicide",
+                  "chunk_concept": "homicide",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "culpable homicide",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S104_BODY",
+            "score": 0.994884,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 104,
+            "citation": "Section 104",
+            "text": "Whoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life. Punishment for culpable homicide not amounting to murder.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 104: Punishment for murder by life-convict.\nWhoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life. Punishment for culpable homicide not amounting to murder.",
+            "keywords": [
+              "life",
+              "murder",
+              "imprisonment",
+              "punishment",
+              "body",
+              "whoever",
+              "sentence",
+              "commits",
+              "punished",
+              "death",
+              "life sentence"
+            ],
+            "legal_concepts": [
+              "punishment for murder",
+              "life sentence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7311353087425232,
+              "bm25": 0.9311025411190045,
+              "semrank_pre_rerank": 0.9534
+            },
+            "query_scores": {
+              "original": 0.9311025411190045
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "culpable homicide",
+                "murder",
+                "culpable",
+                "homicide",
+                "not",
+                "amounting"
+              ],
+              "score": 0.9534,
+              "best_similarity": 0.9534,
+              "best_concept": "punishment for murder",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "murder",
+                  "chunk_concept": "punishment for murder",
+                  "source": "legal_concept",
+                  "similarity": 0.9534,
+                  "weighted_score": 0.9534
+                },
+                {
+                  "query_concept": "murder",
+                  "chunk_concept": "life sentence",
+                  "source": "legal_concept",
+                  "similarity": 0.8553,
+                  "weighted_score": 0.8553
+                },
+                {
+                  "query_concept": "murder",
+                  "chunk_concept": "murder",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "murder",
+                  "chunk_concept": "death",
+                  "source": "keyword",
+                  "similarity": 0.9075,
+                  "weighted_score": 0.6806
+                },
+                {
+                  "query_concept": "not",
+                  "chunk_concept": "sentence",
+                  "source": "keyword",
+                  "similarity": 0.8697,
+                  "weighted_score": 0.6523
+                }
+              ],
+              "pre_rerank_score": 0.9534,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.991612
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S3_N9_ILL1",
+            "score": 0.986717,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 3,
+            "citation": "Section 3",
+            "text": "A attacks Z under such circumstances of grave provocation that his killing of Z would be only culpable homicide not amounting to murder. B, having ill-will towards Z and intending to kill him, and not having been subject to the provocation, assists A in killing Z. Here, though A and B are both engaged in causing Z’s death, B is guilty of murder, and A is guilty only of culpable homicide. OF PUNISHMENTS Punishments.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 3: General explanations.\nWhere several persons are engaged or concerned in the commission of a criminal act, they may be guilty of different offences by means of that act.\nA attacks Z under such circumstances of grave provocation that his killing of Z would be only culpable homicide not amounting to murder. B, having ill-will towards Z and intending to kill him, and not having been subject to the provocation, assists A in killing Z. Here, though A and B are both engaged in causing Z’s death, B is guilty of murder, and A is guilty only of culpable homicide. OF PUNISHMENTS Punishments.",
+            "keywords": [
+              "provocation",
+              "killing",
+              "only",
+              "culpable",
+              "homicide",
+              "murder",
+              "having",
+              "guilty",
+              "punishments",
+              "attacks"
+            ],
+            "legal_concepts": [
+              "murder",
+              "homicide"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "murder"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7388510704040527,
+              "bm25": 0.4153126632054983,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "culpable homicide",
+                "murder",
+                "culpable",
+                "homicide",
+                "not",
+                "amounting"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "homicide",
+                  "chunk_concept": "homicide",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "murder",
+                  "chunk_concept": "murder",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "culpable",
+                  "chunk_concept": "culpable",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "murder",
+                  "chunk_concept": "killing",
+                  "source": "keyword",
+                  "similarity": 0.9523,
+                  "weighted_score": 0.7142
+                },
+                {
+                  "query_concept": "amounting",
+                  "chunk_concept": "having",
+                  "source": "keyword",
+                  "similarity": 0.88,
+                  "weighted_score": 0.66
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "homicide",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S110_BODY",
+            "score": 0.981496,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 110,
+            "citation": "Section 110",
+            "text": "Whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 110: Attempt to commit culpable homicide.\nWhoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+            "keywords": [
+              "caused",
+              "culpable",
+              "homicide",
+              "punished",
+              "imprisonment",
+              "either",
+              "description",
+              "term",
+              "extend",
+              "years",
+              "culpable homicide",
+              "attempt"
+            ],
+            "legal_concepts": [
+              "culpable homicide not amounting to murder",
+              "imprisonment for a term which may extend to three years"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7584145665168762,
+              "bm25": 0.37492272433729934,
+              "semrank_pre_rerank": 0.9239
+            },
+            "query_scores": {
+              "original": 0.7584145665168762
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "culpable homicide",
+                "murder",
+                "culpable",
+                "homicide",
+                "not",
+                "amounting"
+              ],
+              "score": 0.9239,
+              "best_similarity": 0.9239,
+              "best_concept": "culpable homicide not amounting to murder",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "culpable homicide",
+                  "chunk_concept": "culpable homicide not amounting to murder",
+                  "source": "legal_concept",
+                  "similarity": 0.9239,
+                  "weighted_score": 0.9239
+                },
+                {
+                  "query_concept": "culpable",
+                  "chunk_concept": "culpable",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "culpable homicide",
+                  "chunk_concept": "culpable homicide",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "homicide",
+                  "chunk_concept": "homicide",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "culpable",
+                  "chunk_concept": "caused",
+                  "source": "keyword",
+                  "similarity": 0.9021,
+                  "weighted_score": 0.6766
+                }
+              ],
+              "pre_rerank_score": 0.9239,
+              "score_before_pre_rerank": 0.972994,
+              "score_after_pre_rerank": 0.964157
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__section__BNS_S110",
+            "score": 0.939421,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 110,
+            "citation": "Section 110",
+            "text": "Whoever does any act with such intention or knowledge and\nunder such circumstances that, if he by that act caused death, he would be\nguilty of culpable homicide not amounting to murder, shall be punished\nwith imprisonment of either description for a term which may extend to\nthree years, or with fine, or with both; and, if hurt is caused to any person\nby such act, shall be punished with imprisonment of either description for\na term which may extend to seven years, or with fine, or with both.\nIllustration.\nA, on grave and sudden provocation, fires a pistol at Z, under such\ncircumstances that if he thereby caused death, he would be guilty of\nculpable homicide not amounting to murder. A has committed the offence\ndefined in this section.\nOrganised crime.",
+            "derived_context": "",
+            "keywords": [
+              "culpable homicide",
+              "attempted murder"
+            ],
+            "legal_concepts": [
+              "culpable homicide not amounting to murder",
+              "attempted culpable homicide"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "anchor": 0.8550000000000001
+            },
+            "query_scores": {
+              "anchor": 0.8550000000000001
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S110_ILL1",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S106_N1",
+            "score": 0.937419,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 106,
+            "citation": "Section 106",
+            "text": "Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 106: Causing death by negligence.\nWhoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.",
+            "keywords": [
+              "death",
+              "punished",
+              "imprisonment",
+              "either",
+              "description",
+              "term",
+              "extend",
+              "years",
+              "liable",
+              "fine",
+              "causing death",
+              "negligence"
+            ],
+            "legal_concepts": [
+              "culpable homicide",
+              "imprisonment for a term"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "culpable homicide"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "culpable homicide",
+                "murder",
+                "culpable",
+                "homicide",
+                "not",
+                "amounting"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "culpable homicide",
+                  "chunk_concept": "culpable homicide",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "murder",
+                  "chunk_concept": "imprisonment for a term",
+                  "source": "legal_concept",
+                  "similarity": 0.8398,
+                  "weighted_score": 0.8398
+                },
+                {
+                  "query_concept": "murder",
+                  "chunk_concept": "death",
+                  "source": "keyword",
+                  "similarity": 0.9075,
+                  "weighted_score": 0.6806
+                },
+                {
+                  "query_concept": "culpable",
+                  "chunk_concept": "liable",
+                  "source": "keyword",
+                  "similarity": 0.9038,
+                  "weighted_score": 0.6779
+                },
+                {
+                  "query_concept": "murder",
+                  "chunk_concept": "causing death",
+                  "source": "keyword",
+                  "similarity": 0.8932,
+                  "weighted_score": 0.6699
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "culpable homicide",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S106_N1_EXP1",
+            "score": 0.871674,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 106,
+            "citation": "Section 106",
+            "text": "For the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 106: Causing death by negligence.\nWhoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.\nFor the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act.",
+            "keywords": [
+              "medical",
+              "practitioner",
+              "national",
+              "register",
+              "purposes",
+              "sub-section",
+              "registered",
+              "means",
+              "possesses",
+              "qualification",
+              "causing death",
+              "negligence",
+              "punishable"
+            ],
+            "legal_concepts": [
+              "culpable homicide",
+              "rash or negligent act",
+              "registered medical practitioner"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "culpable homicide"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "culpable homicide",
+                "murder",
+                "culpable",
+                "homicide",
+                "not",
+                "amounting"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "culpable homicide",
+                  "chunk_concept": "culpable homicide",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "culpable",
+                  "chunk_concept": "rash or negligent act",
+                  "source": "legal_concept",
+                  "similarity": 0.8237,
+                  "weighted_score": 0.8237
+                },
+                {
+                  "query_concept": "not",
+                  "chunk_concept": "registered medical practitioner",
+                  "source": "legal_concept",
+                  "similarity": 0.7739,
+                  "weighted_score": 0.7739
+                },
+                {
+                  "query_concept": "culpable",
+                  "chunk_concept": "punishable",
+                  "source": "keyword",
+                  "similarity": 0.9053,
+                  "weighted_score": 0.679
+                },
+                {
+                  "query_concept": "murder",
+                  "chunk_concept": "causing death",
+                  "source": "keyword",
+                  "similarity": 0.8932,
+                  "weighted_score": 0.6699
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "culpable homicide",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S110_ILL1",
+            "score": 0.835893,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 110,
+            "citation": "Section 110",
+            "text": "A, on grave and sudden provocation, fires a pistol at Z, under such circumstances that if he thereby caused death, he would be guilty of culpable homicide not amounting to murder. A has committed the offence defined in this section. Organised crime.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 110: Attempt to commit culpable homicide.\nA, on grave and sudden provocation, fires a pistol at Z, under such circumstances that if he thereby caused death, he would be guilty of culpable homicide not amounting to murder. A has committed the offence defined in this section. Organised crime.",
+            "keywords": [
+              "culpable",
+              "homicide",
+              "grave",
+              "sudden",
+              "provocation",
+              "fires",
+              "pistol",
+              "circumstances",
+              "thereby",
+              "caused"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7425870299339294,
+              "bm25": 1.0,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "culpable homicide",
+                "murder",
+                "culpable",
+                "homicide",
+                "not",
+                "amounting"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "culpable",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "culpable",
+                  "chunk_concept": "culpable",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "homicide",
+                  "chunk_concept": "homicide",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "culpable",
+                  "chunk_concept": "caused",
+                  "source": "keyword",
+                  "similarity": 0.9021,
+                  "weighted_score": 0.6766
+                },
+                {
+                  "query_concept": "amounting",
+                  "chunk_concept": "thereby",
+                  "source": "keyword",
+                  "similarity": 0.86,
+                  "weighted_score": 0.645
+                },
+                {
+                  "query_concept": "murder",
+                  "chunk_concept": "provocation",
+                  "source": "keyword",
+                  "similarity": 0.8576,
+                  "weighted_score": 0.6432
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.955
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S101_ECP3_3",
+            "score": 0.6592,
+            "chunk_type": "exception",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 101,
+            "citation": "Section 101",
+            "text": "3.—Culpable homicide is not murder if the offender, being a public servant or aiding a public servant acting for the advancement of public justice, exceeds the powers given to him by law, and causes death by doing an act which he, in good faith, believes to be lawful and necessary for the due discharge of his duty as such public servant and without ill-will towards the person whose death is caused.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 101: Murder.\n3.—Culpable homicide is not murder if the offender, being a public servant or aiding a public servant acting for the advancement of public justice, exceeds the powers given to him by law, and causes death by doing an act which he, in good faith, believes to be lawful and necessary for the due discharge of his duty as such public servant and without ill-will towards the person whose death is caused.",
+            "keywords": [
+              "public",
+              "servant",
+              "murder",
+              "death",
+              "culpable",
+              "homicide",
+              "offender",
+              "aiding",
+              "acting",
+              "advancement",
+              "culpable homicide",
+              "public servant"
+            ],
+            "legal_concepts": [
+              "murder",
+              "culpable homicide",
+              "public servant"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 2,
+              "coverage_ratio": 0.6667,
+              "matched_concepts": [
+                "murder",
+                "culpable homicide"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7699527144432068,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "culpable homicide",
+                "murder",
+                "culpable",
+                "homicide",
+                "not",
+                "amounting"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "culpable homicide",
+                  "chunk_concept": "culpable homicide",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "murder",
+                  "chunk_concept": "murder",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "not",
+                  "chunk_concept": "public servant",
+                  "source": "legal_concept",
+                  "similarity": 0.7838,
+                  "weighted_score": 0.7838
+                },
+                {
+                  "query_concept": "culpable",
+                  "chunk_concept": "culpable",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "homicide",
+                  "chunk_concept": "homicide",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "culpable homicide",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S101_ECP1",
+            "score": 0.623899,
+            "chunk_type": "exception",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 101,
+            "citation": "Section 101",
+            "text": "1.—Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation or causes the death of any other person by mistake or accident: Provided that the provocation is not,-",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 101: Murder.\n1.—Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation or causes the death of any other person by mistake or accident: Provided that the provocation is not,-",
+            "keywords": [
+              "provocation",
+              "murder",
+              "causes",
+              "death",
+              "culpable",
+              "homicide",
+              "offender",
+              "whilst",
+              "deprived",
+              "power",
+              "grave and sudden provocation",
+              "culpable homicide"
+            ],
+            "legal_concepts": [
+              "murder",
+              "culpable homicide",
+              "provocation"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 2,
+              "coverage_ratio": 0.6667,
+              "matched_concepts": [
+                "murder",
+                "culpable homicide"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7359767556190491,
+              "bm25": 0.09719621828430632,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "culpable homicide",
+                "murder",
+                "culpable",
+                "homicide",
+                "not",
+                "amounting"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "culpable homicide",
+                  "chunk_concept": "culpable homicide",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "murder",
+                  "chunk_concept": "murder",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "murder",
+                  "chunk_concept": "provocation",
+                  "source": "legal_concept",
+                  "similarity": 0.8576,
+                  "weighted_score": 0.8576
+                },
+                {
+                  "query_concept": "culpable",
+                  "chunk_concept": "culpable",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "homicide",
+                  "chunk_concept": "homicide",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "culpable homicide",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S105_BODY",
+          "score": 1.0,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 105,
+          "citation": "Section 105",
+          "text": "Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. Causing death by negligence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 105: Punishment for culpable homicide not amounting to murder.\nWhoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. Causing death by negligence.",
+          "keywords": [
+            "death",
+            "cause",
+            "imprisonment",
+            "years",
+            "causing",
+            "likely",
+            "culpable",
+            "homicide",
+            "amounting",
+            "murder",
+            "life"
+          ],
+          "legal_concepts": [
+            "culpable homicide",
+            "murder",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 3,
+            "coverage_ratio": 1.0,
+            "matched_concepts": [
+              "culpable homicide",
+              "murder",
+              "punishment"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.4238811317321641,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "culpable homicide",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "amounting",
+                "chunk_concept": "amounting",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "culpable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "homicide",
+                "chunk_concept": "homicide",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "culpable homicide",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S3_N9_ILL1",
+          "score": 0.989108,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 3,
+          "citation": "Section 3",
+          "text": "A attacks Z under such circumstances of grave provocation that his killing of Z would be only culpable homicide not amounting to murder. B, having ill-will towards Z and intending to kill him, and not having been subject to the provocation, assists A in killing Z. Here, though A and B are both engaged in causing Z’s death, B is guilty of murder, and A is guilty only of culpable homicide. OF PUNISHMENTS Punishments.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 3: General explanations.\nWhere several persons are engaged or concerned in the commission of a criminal act, they may be guilty of different offences by means of that act.\nA attacks Z under such circumstances of grave provocation that his killing of Z would be only culpable homicide not amounting to murder. B, having ill-will towards Z and intending to kill him, and not having been subject to the provocation, assists A in killing Z. Here, though A and B are both engaged in causing Z’s death, B is guilty of murder, and A is guilty only of culpable homicide. OF PUNISHMENTS Punishments.",
+          "keywords": [
+            "provocation",
+            "killing",
+            "only",
+            "culpable",
+            "homicide",
+            "murder",
+            "having",
+            "guilty",
+            "punishments",
+            "attacks"
+          ],
+          "legal_concepts": [
+            "murder",
+            "homicide"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "murder"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7388510704040527,
+            "original:bm25": 0.4153126632054983,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9867168574742453
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "homicide",
+                "chunk_concept": "homicide",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "culpable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "killing",
+                "source": "keyword",
+                "similarity": 0.9523,
+                "weighted_score": 0.7142
+              },
+              {
+                "query_concept": "amounting",
+                "chunk_concept": "having",
+                "source": "keyword",
+                "similarity": 0.88,
+                "weighted_score": 0.66
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "homicide",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.986717,
+            "score_after_pre_rerank": 0.989108
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S104_BODY",
+          "score": 0.987417,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 104,
+          "citation": "Section 104",
+          "text": "Whoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life. Punishment for culpable homicide not amounting to murder.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 104: Punishment for murder by life-convict.\nWhoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life. Punishment for culpable homicide not amounting to murder.",
+          "keywords": [
+            "life",
+            "murder",
+            "imprisonment",
+            "punishment",
+            "body",
+            "whoever",
+            "sentence",
+            "commits",
+            "punished",
+            "death",
+            "life sentence"
+          ],
+          "legal_concepts": [
+            "punishment for murder",
+            "life sentence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7311353087425232,
+            "original:bm25": 0.9311025411190045,
+            "original:semrank_pre_rerank": 0.9534,
+            "semrank_pre_rerank": 0.9534
+          },
+          "query_scores": {
+            "original": 0.994884380070169
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "score": 0.9534,
+            "best_similarity": 0.9534,
+            "best_concept": "punishment for murder",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "murder",
+                "chunk_concept": "punishment for murder",
+                "source": "legal_concept",
+                "similarity": 0.9534,
+                "weighted_score": 0.9534
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "life sentence",
+                "source": "legal_concept",
+                "similarity": 0.8553,
+                "weighted_score": 0.8553
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "murder",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.9075,
+                "weighted_score": 0.6806
+              },
+              {
+                "query_concept": "not",
+                "chunk_concept": "sentence",
+                "source": "keyword",
+                "similarity": 0.8697,
+                "weighted_score": 0.6523
+              }
+            ],
+            "pre_rerank_score": 0.9534,
+            "score_before_pre_rerank": 0.994884,
+            "score_after_pre_rerank": 0.987417
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S110_BODY",
+          "score": 0.971129,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 110,
+          "citation": "Section 110",
+          "text": "Whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 110: Attempt to commit culpable homicide.\nWhoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "keywords": [
+            "caused",
+            "culpable",
+            "homicide",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "extend",
+            "years",
+            "culpable homicide",
+            "attempt"
+          ],
+          "legal_concepts": [
+            "culpable homicide not amounting to murder",
+            "imprisonment for a term which may extend to three years"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7584145665168762,
+            "original:bm25": 0.37492272433729934,
+            "original:semrank_pre_rerank": 0.9239,
+            "semrank_pre_rerank": 0.9239
+          },
+          "query_scores": {
+            "original": 0.9814958648997849
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "score": 0.9239,
+            "best_similarity": 0.9239,
+            "best_concept": "culpable homicide not amounting to murder",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "culpable homicide",
+                "chunk_concept": "culpable homicide not amounting to murder",
+                "source": "legal_concept",
+                "similarity": 0.9239,
+                "weighted_score": 0.9239
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "culpable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "culpable homicide",
+                "chunk_concept": "culpable homicide",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "homicide",
+                "chunk_concept": "homicide",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "caused",
+                "source": "keyword",
+                "similarity": 0.9021,
+                "weighted_score": 0.6766
+              }
+            ],
+            "pre_rerank_score": 0.9239,
+            "score_before_pre_rerank": 0.981496,
+            "score_after_pre_rerank": 0.971129
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S106_N1",
+          "score": 0.948684,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 106,
+          "citation": "Section 106",
+          "text": "Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 106: Causing death by negligence.\nWhoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.",
+          "keywords": [
+            "death",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "extend",
+            "years",
+            "liable",
+            "fine",
+            "causing death",
+            "negligence"
+          ],
+          "legal_concepts": [
+            "culpable homicide",
+            "imprisonment for a term"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "culpable homicide"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9374190135947879
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "culpable homicide",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "imprisonment for a term",
+                "source": "legal_concept",
+                "similarity": 0.8398,
+                "weighted_score": 0.8398
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.9075,
+                "weighted_score": 0.6806
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 0.9038,
+                "weighted_score": 0.6779
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "causing death",
+                "source": "keyword",
+                "similarity": 0.8932,
+                "weighted_score": 0.6699
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "culpable homicide",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.937419,
+            "score_after_pre_rerank": 0.948684
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__section__BNS_S110",
+          "score": 0.939421,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 110,
+          "citation": "Section 110",
+          "text": "Whoever does any act with such intention or knowledge and\nunder such circumstances that, if he by that act caused death, he would be\nguilty of culpable homicide not amounting to murder, shall be punished\nwith imprisonment of either description for a term which may extend to\nthree years, or with fine, or with both; and, if hurt is caused to any person\nby such act, shall be punished with imprisonment of either description for\na term which may extend to seven years, or with fine, or with both.\nIllustration.\nA, on grave and sudden provocation, fires a pistol at Z, under such\ncircumstances that if he thereby caused death, he would be guilty of\nculpable homicide not amounting to murder. A has committed the offence\ndefined in this section.\nOrganised crime.",
+          "derived_context": "",
+          "keywords": [
+            "culpable homicide",
+            "attempted murder"
+          ],
+          "legal_concepts": [
+            "culpable homicide not amounting to murder",
+            "attempted culpable homicide"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.8550000000000001
+          },
+          "query_scores": {
+            "original": 0.9394214278164557
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S110_ILL1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S106_N1_EXP1",
+          "score": 0.894772,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 106,
+          "citation": "Section 106",
+          "text": "For the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 106: Causing death by negligence.\nWhoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.\nFor the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act.",
+          "keywords": [
+            "medical",
+            "practitioner",
+            "national",
+            "register",
+            "purposes",
+            "sub-section",
+            "registered",
+            "means",
+            "possesses",
+            "qualification",
+            "causing death",
+            "negligence",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "culpable homicide",
+            "rash or negligent act",
+            "registered medical practitioner"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "culpable homicide"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8716736030049803
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "culpable homicide",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "rash or negligent act",
+                "source": "legal_concept",
+                "similarity": 0.8237,
+                "weighted_score": 0.8237
+              },
+              {
+                "query_concept": "not",
+                "chunk_concept": "registered medical practitioner",
+                "source": "legal_concept",
+                "similarity": 0.7739,
+                "weighted_score": 0.7739
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "punishable",
+                "source": "keyword",
+                "similarity": 0.9053,
+                "weighted_score": 0.679
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "causing death",
+                "source": "keyword",
+                "similarity": 0.8932,
+                "weighted_score": 0.6699
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "culpable homicide",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.871674,
+            "score_after_pre_rerank": 0.894772
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S110_ILL1",
+          "score": 0.820433,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 110,
+          "citation": "Section 110",
+          "text": "A, on grave and sudden provocation, fires a pistol at Z, under such circumstances that if he thereby caused death, he would be guilty of culpable homicide not amounting to murder. A has committed the offence defined in this section. Organised crime.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 110: Attempt to commit culpable homicide.\nA, on grave and sudden provocation, fires a pistol at Z, under such circumstances that if he thereby caused death, he would be guilty of culpable homicide not amounting to murder. A has committed the offence defined in this section. Organised crime.",
+          "keywords": [
+            "culpable",
+            "homicide",
+            "grave",
+            "sudden",
+            "provocation",
+            "fires",
+            "pistol",
+            "circumstances",
+            "thereby",
+            "caused"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7425870299339294,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.8358933438141459
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "culpable",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "culpable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "homicide",
+                "chunk_concept": "homicide",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "caused",
+                "source": "keyword",
+                "similarity": 0.9021,
+                "weighted_score": 0.6766
+              },
+              {
+                "query_concept": "amounting",
+                "chunk_concept": "thereby",
+                "source": "keyword",
+                "similarity": 0.86,
+                "weighted_score": 0.645
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "provocation",
+                "source": "keyword",
+                "similarity": 0.8576,
+                "weighted_score": 0.6432
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.835893,
+            "score_after_pre_rerank": 0.820433
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S101_ECP3_3",
+          "score": 0.720544,
+          "chunk_type": "exception",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 101,
+          "citation": "Section 101",
+          "text": "3.—Culpable homicide is not murder if the offender, being a public servant or aiding a public servant acting for the advancement of public justice, exceeds the powers given to him by law, and causes death by doing an act which he, in good faith, believes to be lawful and necessary for the due discharge of his duty as such public servant and without ill-will towards the person whose death is caused.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 101: Murder.\n3.—Culpable homicide is not murder if the offender, being a public servant or aiding a public servant acting for the advancement of public justice, exceeds the powers given to him by law, and causes death by doing an act which he, in good faith, believes to be lawful and necessary for the due discharge of his duty as such public servant and without ill-will towards the person whose death is caused.",
+          "keywords": [
+            "public",
+            "servant",
+            "murder",
+            "death",
+            "culpable",
+            "homicide",
+            "offender",
+            "aiding",
+            "acting",
+            "advancement",
+            "culpable homicide",
+            "public servant"
+          ],
+          "legal_concepts": [
+            "murder",
+            "culpable homicide",
+            "public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "murder",
+              "culpable homicide"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7699527144432068,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6591999567429606
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "culpable homicide",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "not",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 0.7838,
+                "weighted_score": 0.7838
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "culpable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "homicide",
+                "chunk_concept": "homicide",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "culpable homicide",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.6592,
+            "score_after_pre_rerank": 0.720544
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S101_ECP1",
+          "score": 0.691597,
+          "chunk_type": "exception",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 101,
+          "citation": "Section 101",
+          "text": "1.—Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation or causes the death of any other person by mistake or accident: Provided that the provocation is not,-",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 101: Murder.\n1.—Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation or causes the death of any other person by mistake or accident: Provided that the provocation is not,-",
+          "keywords": [
+            "provocation",
+            "murder",
+            "causes",
+            "death",
+            "culpable",
+            "homicide",
+            "offender",
+            "whilst",
+            "deprived",
+            "power",
+            "grave and sudden provocation",
+            "culpable homicide"
+          ],
+          "legal_concepts": [
+            "murder",
+            "culpable homicide",
+            "provocation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "murder",
+              "culpable homicide"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7359767556190491,
+            "original:bm25": 0.09719621828430632,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.62389910701327
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "culpable homicide",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "provocation",
+                "source": "legal_concept",
+                "similarity": 0.8576,
+                "weighted_score": 0.8576
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "culpable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "homicide",
+                "chunk_concept": "homicide",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "culpable homicide",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.623899,
+            "score_after_pre_rerank": 0.691597
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S105_BODY",
+          "score": 1.0,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 105,
+          "citation": "Section 105",
+          "text": "Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. Causing death by negligence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 105: Punishment for culpable homicide not amounting to murder.\nWhoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. Causing death by negligence.",
+          "keywords": [
+            "death",
+            "cause",
+            "imprisonment",
+            "years",
+            "causing",
+            "likely",
+            "culpable",
+            "homicide",
+            "amounting",
+            "murder",
+            "life"
+          ],
+          "legal_concepts": [
+            "culpable homicide",
+            "murder",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 3,
+            "coverage_ratio": 1.0,
+            "matched_concepts": [
+              "culpable homicide",
+              "murder",
+              "punishment"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.4238811317321641,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "culpable homicide",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "amounting",
+                "chunk_concept": "amounting",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "culpable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "homicide",
+                "chunk_concept": "homicide",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "culpable homicide",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S104_BODY",
+          "score": 0.992158,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 104,
+          "citation": "Section 104",
+          "text": "Whoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life. Punishment for culpable homicide not amounting to murder.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 104: Punishment for murder by life-convict.\nWhoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or with imprisonment for life, which shall mean the remainder of that person’s natural life. Punishment for culpable homicide not amounting to murder.",
+          "keywords": [
+            "life",
+            "murder",
+            "imprisonment",
+            "punishment",
+            "body",
+            "whoever",
+            "sentence",
+            "commits",
+            "punished",
+            "death",
+            "life sentence"
+          ],
+          "legal_concepts": [
+            "punishment for murder",
+            "life sentence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7311353087425232,
+            "original:bm25": 0.9311025411190045,
+            "original:semrank_pre_rerank": 0.9534,
+            "semrank_pre_rerank": 0.9534
+          },
+          "query_scores": {
+            "original": 0.994884380070169
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "score": 0.9534,
+            "best_similarity": 0.9534,
+            "best_concept": "punishment for murder",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "murder",
+                "chunk_concept": "punishment for murder",
+                "source": "legal_concept",
+                "similarity": 0.9534,
+                "weighted_score": 0.9534
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "life sentence",
+                "source": "legal_concept",
+                "similarity": 0.8553,
+                "weighted_score": 0.8553
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "murder",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.9075,
+                "weighted_score": 0.6806
+              },
+              {
+                "query_concept": "not",
+                "chunk_concept": "sentence",
+                "source": "keyword",
+                "similarity": 0.8697,
+                "weighted_score": 0.6523
+              }
+            ],
+            "pre_rerank_score": 0.9534,
+            "score_before_pre_rerank": 0.994884,
+            "score_after_pre_rerank": 0.987417
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S110_BODY",
+          "score": 0.981804,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 110,
+          "citation": "Section 110",
+          "text": "Whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 110: Attempt to commit culpable homicide.\nWhoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "keywords": [
+            "caused",
+            "culpable",
+            "homicide",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "extend",
+            "years",
+            "culpable homicide",
+            "attempt"
+          ],
+          "legal_concepts": [
+            "culpable homicide not amounting to murder",
+            "imprisonment for a term which may extend to three years"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7584145665168762,
+            "original:bm25": 0.37492272433729934,
+            "original:semrank_pre_rerank": 0.9239,
+            "semrank_pre_rerank": 0.9239
+          },
+          "query_scores": {
+            "original": 0.9814958648997849
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "score": 0.9239,
+            "best_similarity": 0.9239,
+            "best_concept": "culpable homicide not amounting to murder",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "culpable homicide",
+                "chunk_concept": "culpable homicide not amounting to murder",
+                "source": "legal_concept",
+                "similarity": 0.9239,
+                "weighted_score": 0.9239
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "culpable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "culpable homicide",
+                "chunk_concept": "culpable homicide",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "homicide",
+                "chunk_concept": "homicide",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "caused",
+                "source": "keyword",
+                "similarity": 0.9021,
+                "weighted_score": 0.6766
+              }
+            ],
+            "pre_rerank_score": 0.9239,
+            "score_before_pre_rerank": 0.981496,
+            "score_after_pre_rerank": 0.971129
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S3_N9_ILL1",
+          "score": 0.974452,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 3,
+          "citation": "Section 3",
+          "text": "A attacks Z under such circumstances of grave provocation that his killing of Z would be only culpable homicide not amounting to murder. B, having ill-will towards Z and intending to kill him, and not having been subject to the provocation, assists A in killing Z. Here, though A and B are both engaged in causing Z’s death, B is guilty of murder, and A is guilty only of culpable homicide. OF PUNISHMENTS Punishments.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 3: General explanations.\nWhere several persons are engaged or concerned in the commission of a criminal act, they may be guilty of different offences by means of that act.\nA attacks Z under such circumstances of grave provocation that his killing of Z would be only culpable homicide not amounting to murder. B, having ill-will towards Z and intending to kill him, and not having been subject to the provocation, assists A in killing Z. Here, though A and B are both engaged in causing Z’s death, B is guilty of murder, and A is guilty only of culpable homicide. OF PUNISHMENTS Punishments.",
+          "keywords": [
+            "provocation",
+            "killing",
+            "only",
+            "culpable",
+            "homicide",
+            "murder",
+            "having",
+            "guilty",
+            "punishments",
+            "attacks"
+          ],
+          "legal_concepts": [
+            "murder",
+            "homicide"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "murder"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7388510704040527,
+            "original:bm25": 0.4153126632054983,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9867168574742453
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "homicide",
+                "chunk_concept": "homicide",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "culpable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "killing",
+                "source": "keyword",
+                "similarity": 0.9523,
+                "weighted_score": 0.7142
+              },
+              {
+                "query_concept": "amounting",
+                "chunk_concept": "having",
+                "source": "keyword",
+                "similarity": 0.88,
+                "weighted_score": 0.66
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "homicide",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.986717,
+            "score_after_pre_rerank": 0.989108
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__section__BNS_S110",
+          "score": 0.971655,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 110,
+          "citation": "Section 110",
+          "text": "Whoever does any act with such intention or knowledge and\nunder such circumstances that, if he by that act caused death, he would be\nguilty of culpable homicide not amounting to murder, shall be punished\nwith imprisonment of either description for a term which may extend to\nthree years, or with fine, or with both; and, if hurt is caused to any person\nby such act, shall be punished with imprisonment of either description for\na term which may extend to seven years, or with fine, or with both.\nIllustration.\nA, on grave and sudden provocation, fires a pistol at Z, under such\ncircumstances that if he thereby caused death, he would be guilty of\nculpable homicide not amounting to murder. A has committed the offence\ndefined in this section.\nOrganised crime.",
+          "derived_context": "",
+          "keywords": [
+            "culpable homicide",
+            "attempted murder"
+          ],
+          "legal_concepts": [
+            "culpable homicide not amounting to murder",
+            "attempted culpable homicide"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.8550000000000001
+          },
+          "query_scores": {
+            "original": 0.9394214278164557
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S110_ILL1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S106_N1",
+          "score": 0.879638,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 106,
+          "citation": "Section 106",
+          "text": "Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 106: Causing death by negligence.\nWhoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.",
+          "keywords": [
+            "death",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "extend",
+            "years",
+            "liable",
+            "fine",
+            "causing death",
+            "negligence"
+          ],
+          "legal_concepts": [
+            "culpable homicide",
+            "imprisonment for a term"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "culpable homicide"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9374190135947879
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "culpable homicide",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "imprisonment for a term",
+                "source": "legal_concept",
+                "similarity": 0.8398,
+                "weighted_score": 0.8398
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.9075,
+                "weighted_score": 0.6806
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 0.9038,
+                "weighted_score": 0.6779
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "causing death",
+                "source": "keyword",
+                "similarity": 0.8932,
+                "weighted_score": 0.6699
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "culpable homicide",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.937419,
+            "score_after_pre_rerank": 0.948684
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S106_N1_EXP1",
+          "score": 0.753187,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 106,
+          "citation": "Section 106",
+          "text": "For the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 106: Causing death by negligence.\nWhoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.\nFor the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act.",
+          "keywords": [
+            "medical",
+            "practitioner",
+            "national",
+            "register",
+            "purposes",
+            "sub-section",
+            "registered",
+            "means",
+            "possesses",
+            "qualification",
+            "causing death",
+            "negligence",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "culpable homicide",
+            "rash or negligent act",
+            "registered medical practitioner"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "culpable homicide"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8716736030049803
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "culpable homicide",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "rash or negligent act",
+                "source": "legal_concept",
+                "similarity": 0.8237,
+                "weighted_score": 0.8237
+              },
+              {
+                "query_concept": "not",
+                "chunk_concept": "registered medical practitioner",
+                "source": "legal_concept",
+                "similarity": 0.7739,
+                "weighted_score": 0.7739
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "punishable",
+                "source": "keyword",
+                "similarity": 0.9053,
+                "weighted_score": 0.679
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "causing death",
+                "source": "keyword",
+                "similarity": 0.8932,
+                "weighted_score": 0.6699
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "culpable homicide",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.871674,
+            "score_after_pre_rerank": 0.894772
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S110_ILL1",
+          "score": 0.695087,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 110,
+          "citation": "Section 110",
+          "text": "A, on grave and sudden provocation, fires a pistol at Z, under such circumstances that if he thereby caused death, he would be guilty of culpable homicide not amounting to murder. A has committed the offence defined in this section. Organised crime.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 110: Attempt to commit culpable homicide.\nA, on grave and sudden provocation, fires a pistol at Z, under such circumstances that if he thereby caused death, he would be guilty of culpable homicide not amounting to murder. A has committed the offence defined in this section. Organised crime.",
+          "keywords": [
+            "culpable",
+            "homicide",
+            "grave",
+            "sudden",
+            "provocation",
+            "fires",
+            "pistol",
+            "circumstances",
+            "thereby",
+            "caused"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7425870299339294,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.8358933438141459
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "culpable",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "culpable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "homicide",
+                "chunk_concept": "homicide",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "caused",
+                "source": "keyword",
+                "similarity": 0.9021,
+                "weighted_score": 0.6766
+              },
+              {
+                "query_concept": "amounting",
+                "chunk_concept": "thereby",
+                "source": "keyword",
+                "similarity": 0.86,
+                "weighted_score": 0.645
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "provocation",
+                "source": "keyword",
+                "similarity": 0.8576,
+                "weighted_score": 0.6432
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.835893,
+            "score_after_pre_rerank": 0.820433
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S101_ECP3_3",
+          "score": 0.344533,
+          "chunk_type": "exception",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 101,
+          "citation": "Section 101",
+          "text": "3.—Culpable homicide is not murder if the offender, being a public servant or aiding a public servant acting for the advancement of public justice, exceeds the powers given to him by law, and causes death by doing an act which he, in good faith, believes to be lawful and necessary for the due discharge of his duty as such public servant and without ill-will towards the person whose death is caused.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 101: Murder.\n3.—Culpable homicide is not murder if the offender, being a public servant or aiding a public servant acting for the advancement of public justice, exceeds the powers given to him by law, and causes death by doing an act which he, in good faith, believes to be lawful and necessary for the due discharge of his duty as such public servant and without ill-will towards the person whose death is caused.",
+          "keywords": [
+            "public",
+            "servant",
+            "murder",
+            "death",
+            "culpable",
+            "homicide",
+            "offender",
+            "aiding",
+            "acting",
+            "advancement",
+            "culpable homicide",
+            "public servant"
+          ],
+          "legal_concepts": [
+            "murder",
+            "culpable homicide",
+            "public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "murder",
+              "culpable homicide"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7699527144432068,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6591999567429606
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "culpable homicide",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "not",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 0.7838,
+                "weighted_score": 0.7838
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "culpable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "homicide",
+                "chunk_concept": "homicide",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "culpable homicide",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.6592,
+            "score_after_pre_rerank": 0.720544
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S101_ECP1",
+          "score": 0.276639,
+          "chunk_type": "exception",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 101,
+          "citation": "Section 101",
+          "text": "1.—Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation or causes the death of any other person by mistake or accident: Provided that the provocation is not,-",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 101: Murder.\n1.—Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation or causes the death of any other person by mistake or accident: Provided that the provocation is not,-",
+          "keywords": [
+            "provocation",
+            "murder",
+            "causes",
+            "death",
+            "culpable",
+            "homicide",
+            "offender",
+            "whilst",
+            "deprived",
+            "power",
+            "grave and sudden provocation",
+            "culpable homicide"
+          ],
+          "legal_concepts": [
+            "murder",
+            "culpable homicide",
+            "provocation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "murder",
+              "culpable homicide"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7359767556190491,
+            "original:bm25": 0.09719621828430632,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.62389910701327
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "culpable homicide",
+              "murder",
+              "culpable",
+              "homicide",
+              "not",
+              "amounting"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "culpable homicide",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "murder",
+                "chunk_concept": "provocation",
+                "source": "legal_concept",
+                "similarity": 0.8576,
+                "weighted_score": 0.8576
+              },
+              {
+                "query_concept": "culpable",
+                "chunk_concept": "culpable",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "homicide",
+                "chunk_concept": "homicide",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "culpable homicide",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.623899,
+            "score_after_pre_rerank": 0.691597
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

@@ -1,0 +1,3333 @@
+[
+  {
+    "query": "What is the punishment for snatching?",
+    "phase8": {
+      "query": "What is the punishment for snatching?",
+      "intent": {
+        "primary": "legal penalty",
+        "secondary": []
+      },
+      "concepts": [
+        "offence",
+        "punishment",
+        "theft"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.829,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.25,
+        "structure_validity": 1.0,
+        "overall": 0.7816
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is the punishment for snatching?",
+          "targets": [],
+          "concepts": [
+            "offence",
+            "punishment",
+            "theft"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S304_N2",
+            "score": 0.992951,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 304,
+            "citation": "Section 304",
+            "text": "Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Theft in a dwelling house, or means of transportation or place of worship, etc.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 304: Snatching.\nWhoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Theft in a dwelling house, or means of transportation or place of worship, etc.",
+            "keywords": [
+              "snatching",
+              "whoever",
+              "commits",
+              "punished",
+              "imprisonment",
+              "either",
+              "description",
+              "term",
+              "extend",
+              "three",
+              "punishable"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "imprisonment for term"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.798444101959527,
+              "semrank_pre_rerank": 0.9021
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "theft",
+                "snatching",
+                "what is the punishment for snatching"
+              ],
+              "score": 0.9021,
+              "best_similarity": 0.9021,
+              "best_concept": "offence against property",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.9021,
+                  "weighted_score": 0.9021
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "imprisonment for term",
+                  "source": "legal_concept",
+                  "similarity": 0.8593,
+                  "weighted_score": 0.8593
+                },
+                {
+                  "query_concept": "snatching",
+                  "chunk_concept": "snatching",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "description",
+                  "source": "keyword",
+                  "similarity": 0.8887,
+                  "weighted_score": 0.6666
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "term",
+                  "source": "keyword",
+                  "similarity": 0.8846,
+                  "weighted_score": 0.6635
+                }
+              ],
+              "pre_rerank_score": 0.9021,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.982378
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S303_N2",
+            "score": 0.934412,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 303,
+            "citation": "Section 303",
+            "text": "Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine: Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service. Snatching.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine: Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service. Snatching.",
+            "keywords": [
+              "property",
+              "theft",
+              "punished",
+              "imprisonment",
+              "term",
+              "extend",
+              "years",
+              "fine",
+              "five",
+              "value",
+              "theft punishment",
+              "imprisonment fine"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "punishment for theft"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7745354175567627,
+              "bm25": 0.3334917852141534,
+              "semrank_pre_rerank": 0.9492
+            },
+            "query_scores": {
+              "original": 0.7745354175567627
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "theft",
+                "snatching",
+                "what is the punishment for snatching"
+              ],
+              "score": 0.9492,
+              "best_similarity": 0.9492,
+              "best_concept": "punishment for theft",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "punishment for theft",
+                  "source": "legal_concept",
+                  "similarity": 0.9492,
+                  "weighted_score": 0.9492
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.9021,
+                  "weighted_score": 0.9021
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft punishment",
+                  "source": "keyword",
+                  "similarity": 0.9545,
+                  "weighted_score": 0.7159
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "term",
+                  "source": "keyword",
+                  "similarity": 0.8846,
+                  "weighted_score": 0.6635
+                }
+              ],
+              "pre_rerank_score": 0.9492,
+              "score_before_pre_rerank": 0.906869,
+              "score_after_pre_rerank": 0.914489
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S304_N1",
+            "score": 0.716083,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 304,
+            "citation": "Section 304",
+            "text": "Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 304: Snatching.\nTheft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property.",
+            "keywords": [
+              "theft",
+              "snatching",
+              "property",
+              "order",
+              "commit",
+              "offender",
+              "suddenly",
+              "quickly",
+              "forcibly",
+              "seizes",
+              "sudden seizure",
+              "quick snatch"
+            ],
+            "legal_concepts": [
+              "theft",
+              "snatching",
+              "seizure"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "theft"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7397600412368774,
+              "bm25": 1.0,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "theft",
+                "snatching",
+                "what is the punishment for snatching"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "snatching",
+                  "chunk_concept": "snatching",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "seizure",
+                  "source": "legal_concept",
+                  "similarity": 0.8494,
+                  "weighted_score": 0.8494
+                },
+                {
+                  "query_concept": "snatching",
+                  "chunk_concept": "quick snatch",
+                  "source": "keyword",
+                  "similarity": 0.9311,
+                  "weighted_score": 0.6983
+                },
+                {
+                  "query_concept": "snatching",
+                  "chunk_concept": "seizes",
+                  "source": "keyword",
+                  "similarity": 0.8866,
+                  "weighted_score": 0.665
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "theft",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S62_ILL1_A",
+            "score": 0.448003,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 62,
+            "citation": "Section 62",
+            "text": "A makes an attempt to steal some jewels by breaking open a box, and finds after so opening the box, that there is no jewel in it. He has done an act towards the commission of theft, and therefore is guilty under this section.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 62: Punishment for attempting to commit offences punishable with imprisonment for life or other\nA makes an attempt to steal some jewels by breaking open a box, and finds after so opening the box, that there is no jewel in it. He has done an act towards the commission of theft, and therefore is guilty under this section.",
+            "keywords": [
+              "attempt",
+              "makes",
+              "steal",
+              "some",
+              "jewels",
+              "breaking",
+              "open",
+              "finds",
+              "after",
+              "opening",
+              "attempting to steal",
+              "act towards commission"
+            ],
+            "legal_concepts": [
+              "attempt",
+              "theft"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "theft"
+              ]
+            },
+            "source_scores": {
+              "bm25": 0.07692307692307693,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "theft",
+                "snatching",
+                "what is the punishment for snatching"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "attempt",
+                  "source": "legal_concept",
+                  "similarity": 0.863,
+                  "weighted_score": 0.863
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "steal",
+                  "source": "keyword",
+                  "similarity": 0.961,
+                  "weighted_score": 0.7208
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "attempting to steal",
+                  "source": "keyword",
+                  "similarity": 0.9481,
+                  "weighted_score": 0.7111
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "some",
+                  "source": "keyword",
+                  "similarity": 0.8832,
+                  "weighted_score": 0.6624
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "theft",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S134_BODY",
+            "score": 0.420923,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 134,
+            "citation": "Section 134",
+            "text": "Whoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 134: Assault or criminal force in attempt to commit theft of property carried by a person.\nWhoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+            "keywords": [
+              "criminal",
+              "force",
+              "commit",
+              "theft",
+              "property",
+              "assault",
+              "attempt",
+              "body",
+              "whoever",
+              "assaults",
+              "criminal force"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "attempted theft"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7060830593109131,
+              "semrank_pre_rerank": 0.9458
+            },
+            "query_scores": {
+              "original": 0.7060830593109131
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "theft",
+                "snatching",
+                "what is the punishment for snatching"
+              ],
+              "score": 0.9458,
+              "best_similarity": 0.9458,
+              "best_concept": "attempted theft",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "attempted theft",
+                  "source": "legal_concept",
+                  "similarity": 0.9458,
+                  "weighted_score": 0.9458
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "assault",
+                  "source": "legal_concept",
+                  "similarity": 0.8634,
+                  "weighted_score": 0.8634
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "criminal force",
+                  "source": "legal_concept",
+                  "similarity": 0.8489,
+                  "weighted_score": 0.8489
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "assaults",
+                  "source": "keyword",
+                  "similarity": 0.8784,
+                  "weighted_score": 0.6588
+                }
+              ],
+              "pre_rerank_score": 0.9458,
+              "score_before_pre_rerank": 0.954364,
+              "score_after_pre_rerank": 0.952823
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S306_BODY",
+            "score": 0.411774,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 306,
+            "citation": "Section 306",
+            "text": "Whoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Theft after preparation made for causing death, hurt or restraint in order to committing of theft.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 306: Theft by clerk or servant of property in possession of master.\nWhoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Theft after preparation made for causing death, hurt or restraint in order to committing of theft.",
+            "keywords": [
+              "theft",
+              "clerk",
+              "servant",
+              "property",
+              "possession",
+              "master",
+              "whoever",
+              "employed",
+              "capacity",
+              "commits",
+              "theft by employee",
+              "employee theft"
+            ],
+            "legal_concepts": [
+              "theft",
+              "punishment for theft"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "theft"
+              ]
+            },
+            "source_scores": {
+              "bm25": 0.05263157894736842,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "theft",
+                "snatching",
+                "what is the punishment for snatching"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "punishment for theft",
+                  "source": "legal_concept",
+                  "similarity": 0.9492,
+                  "weighted_score": 0.9492
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft by employee",
+                  "source": "keyword",
+                  "similarity": 0.9293,
+                  "weighted_score": 0.697
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "employee theft",
+                  "source": "keyword",
+                  "similarity": 0.9243,
+                  "weighted_score": 0.6932
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "possession",
+                  "source": "keyword",
+                  "similarity": 0.9074,
+                  "weighted_score": 0.6806
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "theft",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S46_ILL2_2_D",
+            "score": 0.402388,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 46,
+            "citation": "Section 46",
+            "text": "A, intending to cause a theft to be committed, instigates B to take property belonging to Z out of Z’s possession. A induces B to believe that the property belongs to A. B takes the property out of Z’s possession, in good faith, believing it to be A’s property. B, acting under this misconception, does not take dishonestly, and therefore does not commit theft. But A is guilty of abetting theft, and is liable to the same punishment as if B had committed theft.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 46: Abettor.\nA, intending to cause a theft to be committed, instigates B to take property belonging to Z out of Z’s possession. A induces B to believe that the property belongs to A. B takes the property out of Z’s possession, in good faith, believing it to be A’s property. B, acting under this misconception, does not take dishonestly, and therefore does not commit theft. But A is guilty of abetting theft, and is liable to the same punishment as if B had committed theft.",
+            "keywords": [
+              "theft",
+              "property",
+              "committed",
+              "take",
+              "possession",
+              "intending",
+              "cause",
+              "instigates",
+              "belonging",
+              "induces",
+              "abettor",
+              "instigation"
+            ],
+            "legal_concepts": [
+              "abettor",
+              "theft"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "theft"
+              ]
+            },
+            "source_scores": {
+              "bm25": 0.19579150296857217,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "theft",
+                "snatching",
+                "what is the punishment for snatching"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "abettor",
+                  "source": "legal_concept",
+                  "similarity": 0.8114,
+                  "weighted_score": 0.8114
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "possession",
+                  "source": "keyword",
+                  "similarity": 0.9074,
+                  "weighted_score": 0.6806
+                },
+                {
+                  "query_concept": "snatching",
+                  "chunk_concept": "take",
+                  "source": "keyword",
+                  "similarity": 0.904,
+                  "weighted_score": 0.678
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "cause",
+                  "source": "keyword",
+                  "similarity": 0.8717,
+                  "weighted_score": 0.6538
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "theft",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S314_ILL1_B",
+            "score": 0.402233,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 314,
+            "citation": "Section 314",
+            "text": "A, being on friendly terms with Z, goes into Z’s library in Z’s absence, and takes away a book without Z’s express consent. Here, if A was under the impression that he had Z’s implied consent to take the book for the purpose of reading it, A has not committed theft. But, if A afterwards sells the book for his own benefit, he is guilty of an offence under this section.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 314: Dishonest misappropriation of property.\nA, being on friendly terms with Z, goes into Z’s library in Z’s absence, and takes away a book without Z’s express consent. Here, if A was under the impression that he had Z’s implied consent to take the book for the purpose of reading it, A has not committed theft. But, if A afterwards sells the book for his own benefit, he is guilty of an offence under this section.",
+            "keywords": [
+              "book",
+              "consent",
+              "property",
+              "friendly",
+              "terms",
+              "goes",
+              "library",
+              "absence",
+              "takes",
+              "away",
+              "implied consent",
+              "theft",
+              "offence"
+            ],
+            "legal_concepts": [
+              "dishonest misappropriation of property",
+              "implied consent",
+              "theft"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "theft"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "theft",
+                "snatching",
+                "what is the punishment for snatching"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "dishonest misappropriation of property",
+                  "source": "legal_concept",
+                  "similarity": 0.9206,
+                  "weighted_score": 0.9206
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "implied consent",
+                  "source": "legal_concept",
+                  "similarity": 0.8444,
+                  "weighted_score": 0.8444
+                },
+                {
+                  "query_concept": "snatching",
+                  "chunk_concept": "takes",
+                  "source": "keyword",
+                  "similarity": 0.9018,
+                  "weighted_score": 0.6763
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "terms",
+                  "source": "keyword",
+                  "similarity": 0.884,
+                  "weighted_score": 0.663
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "theft",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S309_N2",
+            "score": 0.401432,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 309,
+            "citation": "Section 309",
+            "text": "Theft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nTheft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint.",
+            "keywords": [
+              "theft",
+              "instant",
+              "robbery",
+              "committing",
+              "away",
+              "property",
+              "death",
+              "hurt",
+              "wrongful",
+              "restraint",
+              "harm",
+              "fear"
+            ],
+            "legal_concepts": [
+              "robbery",
+              "theft",
+              "causing harm"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "theft"
+              ]
+            },
+            "source_scores": {
+              "bm25": 0.08333333333333333,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "theft",
+                "snatching",
+                "what is the punishment for snatching"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "robbery",
+                  "source": "legal_concept",
+                  "similarity": 0.9319,
+                  "weighted_score": 0.9319
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "causing harm",
+                  "source": "legal_concept",
+                  "similarity": 0.8743,
+                  "weighted_score": 0.8743
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "harm",
+                  "source": "keyword",
+                  "similarity": 0.8686,
+                  "weighted_score": 0.6515
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "wrongful",
+                  "source": "keyword",
+                  "similarity": 0.8682,
+                  "weighted_score": 0.6512
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "theft",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S307_ILL1_B",
+            "score": 0.401257,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 307,
+            "citation": "Section 307",
+            "text": "A picks Z’s pocket, having posted several of his companions near him, in order that they may restrain Z, if Z should perceive what is passing and should resist, or should attempt to apprehend A. A has committed the offence defined in this section. Of extortion Extortion. [OF EXTORTION]",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 307: Theft after preparation made for causing death, hurt or restraint in order to committing of\nA picks Z’s pocket, having posted several of his companions near him, in order that they may restrain Z, if Z should perceive what is passing and should resist, or should attempt to apprehend A. A has committed the offence defined in this section. Of extortion Extortion. [OF EXTORTION]",
+            "keywords": [
+              "extortion",
+              "order",
+              "picks",
+              "pocket",
+              "having",
+              "posted",
+              "several",
+              "companions",
+              "near",
+              "they",
+              "picking pocket",
+              "restraint"
+            ],
+            "legal_concepts": [
+              "theft",
+              "extortion"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "theft"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "theft",
+                "snatching",
+                "what is the punishment for snatching"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "theft",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "extortion",
+                  "source": "legal_concept",
+                  "similarity": 0.8982,
+                  "weighted_score": 0.8982
+                },
+                {
+                  "query_concept": "snatching",
+                  "chunk_concept": "picks",
+                  "source": "keyword",
+                  "similarity": 0.8972,
+                  "weighted_score": 0.6729
+                },
+                {
+                  "query_concept": "snatching",
+                  "chunk_concept": "picking pocket",
+                  "source": "keyword",
+                  "similarity": 0.8826,
+                  "weighted_score": 0.6619
+                },
+                {
+                  "query_concept": "theft",
+                  "chunk_concept": "posted",
+                  "source": "keyword",
+                  "similarity": 0.8763,
+                  "weighted_score": 0.6572
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "theft",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S304_N2",
+          "score": 0.976598,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 304,
+          "citation": "Section 304",
+          "text": "Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Theft in a dwelling house, or means of transportation or place of worship, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 304: Snatching.\nWhoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Theft in a dwelling house, or means of transportation or place of worship, etc.",
+          "keywords": [
+            "snatching",
+            "whoever",
+            "commits",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "extend",
+            "three",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "imprisonment for term"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.798444101959527,
+            "original:semrank_pre_rerank": 0.9021,
+            "semrank_pre_rerank": 0.9021
+          },
+          "query_scores": {
+            "original": 0.9929512
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "score": 0.9021,
+            "best_similarity": 0.9021,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.9021,
+                "weighted_score": 0.9021
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "imprisonment for term",
+                "source": "legal_concept",
+                "similarity": 0.8593,
+                "weighted_score": 0.8593
+              },
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "snatching",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "description",
+                "source": "keyword",
+                "similarity": 0.8887,
+                "weighted_score": 0.6666
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8846,
+                "weighted_score": 0.6635
+              }
+            ],
+            "pre_rerank_score": 0.9021,
+            "score_before_pre_rerank": 0.992951,
+            "score_after_pre_rerank": 0.976598
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S303_N2",
+          "score": 0.937074,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine: Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service. Snatching.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine: Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service. Snatching.",
+          "keywords": [
+            "property",
+            "theft",
+            "punished",
+            "imprisonment",
+            "term",
+            "extend",
+            "years",
+            "fine",
+            "five",
+            "value",
+            "theft punishment",
+            "imprisonment fine"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishment for theft"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7745354175567627,
+            "original:bm25": 0.3334917852141534,
+            "original:semrank_pre_rerank": 0.9492,
+            "semrank_pre_rerank": 0.9492
+          },
+          "query_scores": {
+            "original": 0.9344118054788016
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "score": 0.9492,
+            "best_similarity": 0.9492,
+            "best_concept": "punishment for theft",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "punishment for theft",
+                "source": "legal_concept",
+                "similarity": 0.9492,
+                "weighted_score": 0.9492
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.9021,
+                "weighted_score": 0.9021
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft punishment",
+                "source": "keyword",
+                "similarity": 0.9545,
+                "weighted_score": 0.7159
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8846,
+                "weighted_score": 0.6635
+              }
+            ],
+            "pre_rerank_score": 0.9492,
+            "score_before_pre_rerank": 0.934412,
+            "score_after_pre_rerank": 0.937074
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S304_N1",
+          "score": 0.767188,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 304,
+          "citation": "Section 304",
+          "text": "Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 304: Snatching.\nTheft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property.",
+          "keywords": [
+            "theft",
+            "snatching",
+            "property",
+            "order",
+            "commit",
+            "offender",
+            "suddenly",
+            "quickly",
+            "forcibly",
+            "seizes",
+            "sudden seizure",
+            "quick snatch"
+          ],
+          "legal_concepts": [
+            "theft",
+            "snatching",
+            "seizure"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7397600412368774,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7160825388341614
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "snatching",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "seizure",
+                "source": "legal_concept",
+                "similarity": 0.8494,
+                "weighted_score": 0.8494
+              },
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "quick snatch",
+                "source": "keyword",
+                "similarity": 0.9311,
+                "weighted_score": 0.6983
+              },
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "seizes",
+                "source": "keyword",
+                "similarity": 0.8866,
+                "weighted_score": 0.665
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.716083,
+            "score_after_pre_rerank": 0.767188
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S62_ILL1_A",
+          "score": 0.547362,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 62,
+          "citation": "Section 62",
+          "text": "A makes an attempt to steal some jewels by breaking open a box, and finds after so opening the box, that there is no jewel in it. He has done an act towards the commission of theft, and therefore is guilty under this section.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 62: Punishment for attempting to commit offences punishable with imprisonment for life or other\nA makes an attempt to steal some jewels by breaking open a box, and finds after so opening the box, that there is no jewel in it. He has done an act towards the commission of theft, and therefore is guilty under this section.",
+          "keywords": [
+            "attempt",
+            "makes",
+            "steal",
+            "some",
+            "jewels",
+            "breaking",
+            "open",
+            "finds",
+            "after",
+            "opening",
+            "attempting to steal",
+            "act towards commission"
+          ],
+          "legal_concepts": [
+            "attempt",
+            "theft"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.07692307692307693,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.44800278309136526
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "attempt",
+                "source": "legal_concept",
+                "similarity": 0.863,
+                "weighted_score": 0.863
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "steal",
+                "source": "keyword",
+                "similarity": 0.961,
+                "weighted_score": 0.7208
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "attempting to steal",
+                "source": "keyword",
+                "similarity": 0.9481,
+                "weighted_score": 0.7111
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "some",
+                "source": "keyword",
+                "similarity": 0.8832,
+                "weighted_score": 0.6624
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.448003,
+            "score_after_pre_rerank": 0.547362
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S306_BODY",
+          "score": 0.517655,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 306,
+          "citation": "Section 306",
+          "text": "Whoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Theft after preparation made for causing death, hurt or restraint in order to committing of theft.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 306: Theft by clerk or servant of property in possession of master.\nWhoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Theft after preparation made for causing death, hurt or restraint in order to committing of theft.",
+          "keywords": [
+            "theft",
+            "clerk",
+            "servant",
+            "property",
+            "possession",
+            "master",
+            "whoever",
+            "employed",
+            "capacity",
+            "commits",
+            "theft by employee",
+            "employee theft"
+          ],
+          "legal_concepts": [
+            "theft",
+            "punishment for theft"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.05263157894736842,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4117740994103994
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "punishment for theft",
+                "source": "legal_concept",
+                "similarity": 0.9492,
+                "weighted_score": 0.9492
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft by employee",
+                "source": "keyword",
+                "similarity": 0.9293,
+                "weighted_score": 0.697
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "employee theft",
+                "source": "keyword",
+                "similarity": 0.9243,
+                "weighted_score": 0.6932
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "possession",
+                "source": "keyword",
+                "similarity": 0.9074,
+                "weighted_score": 0.6806
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.411774,
+            "score_after_pre_rerank": 0.517655
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S134_BODY",
+          "score": 0.515401,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 134,
+          "citation": "Section 134",
+          "text": "Whoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 134: Assault or criminal force in attempt to commit theft of property carried by a person.\nWhoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+          "keywords": [
+            "criminal",
+            "force",
+            "commit",
+            "theft",
+            "property",
+            "assault",
+            "attempt",
+            "body",
+            "whoever",
+            "assaults",
+            "criminal force"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "attempted theft"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7060830593109131,
+            "original:semrank_pre_rerank": 0.9458,
+            "semrank_pre_rerank": 0.9458
+          },
+          "query_scores": {
+            "original": 0.4209227877393586
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "score": 0.9458,
+            "best_similarity": 0.9458,
+            "best_concept": "attempted theft",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "attempted theft",
+                "source": "legal_concept",
+                "similarity": 0.9458,
+                "weighted_score": 0.9458
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "assault",
+                "source": "legal_concept",
+                "similarity": 0.8634,
+                "weighted_score": 0.8634
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "criminal force",
+                "source": "legal_concept",
+                "similarity": 0.8489,
+                "weighted_score": 0.8489
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "assaults",
+                "source": "keyword",
+                "similarity": 0.8784,
+                "weighted_score": 0.6588
+              }
+            ],
+            "pre_rerank_score": 0.9458,
+            "score_before_pre_rerank": 0.420923,
+            "score_after_pre_rerank": 0.515401
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S46_ILL2_2_D",
+          "score": 0.509958,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 46,
+          "citation": "Section 46",
+          "text": "A, intending to cause a theft to be committed, instigates B to take property belonging to Z out of Z’s possession. A induces B to believe that the property belongs to A. B takes the property out of Z’s possession, in good faith, believing it to be A’s property. B, acting under this misconception, does not take dishonestly, and therefore does not commit theft. But A is guilty of abetting theft, and is liable to the same punishment as if B had committed theft.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 46: Abettor.\nA, intending to cause a theft to be committed, instigates B to take property belonging to Z out of Z’s possession. A induces B to believe that the property belongs to A. B takes the property out of Z’s possession, in good faith, believing it to be A’s property. B, acting under this misconception, does not take dishonestly, and therefore does not commit theft. But A is guilty of abetting theft, and is liable to the same punishment as if B had committed theft.",
+          "keywords": [
+            "theft",
+            "property",
+            "committed",
+            "take",
+            "possession",
+            "intending",
+            "cause",
+            "instigates",
+            "belonging",
+            "induces",
+            "abettor",
+            "instigation"
+          ],
+          "legal_concepts": [
+            "abettor",
+            "theft"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.19579150296857217,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40238760434300197
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "abettor",
+                "source": "legal_concept",
+                "similarity": 0.8114,
+                "weighted_score": 0.8114
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "possession",
+                "source": "keyword",
+                "similarity": 0.9074,
+                "weighted_score": 0.6806
+              },
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "take",
+                "source": "keyword",
+                "similarity": 0.904,
+                "weighted_score": 0.678
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.8717,
+                "weighted_score": 0.6538
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.402388,
+            "score_after_pre_rerank": 0.509958
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S314_ILL1_B",
+          "score": 0.509831,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 314,
+          "citation": "Section 314",
+          "text": "A, being on friendly terms with Z, goes into Z’s library in Z’s absence, and takes away a book without Z’s express consent. Here, if A was under the impression that he had Z’s implied consent to take the book for the purpose of reading it, A has not committed theft. But, if A afterwards sells the book for his own benefit, he is guilty of an offence under this section.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 314: Dishonest misappropriation of property.\nA, being on friendly terms with Z, goes into Z’s library in Z’s absence, and takes away a book without Z’s express consent. Here, if A was under the impression that he had Z’s implied consent to take the book for the purpose of reading it, A has not committed theft. But, if A afterwards sells the book for his own benefit, he is guilty of an offence under this section.",
+          "keywords": [
+            "book",
+            "consent",
+            "property",
+            "friendly",
+            "terms",
+            "goes",
+            "library",
+            "absence",
+            "takes",
+            "away",
+            "implied consent",
+            "theft",
+            "offence"
+          ],
+          "legal_concepts": [
+            "dishonest misappropriation of property",
+            "implied consent",
+            "theft"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4022334743559399
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "dishonest misappropriation of property",
+                "source": "legal_concept",
+                "similarity": 0.9206,
+                "weighted_score": 0.9206
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "implied consent",
+                "source": "legal_concept",
+                "similarity": 0.8444,
+                "weighted_score": 0.8444
+              },
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "takes",
+                "source": "keyword",
+                "similarity": 0.9018,
+                "weighted_score": 0.6763
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "terms",
+                "source": "keyword",
+                "similarity": 0.884,
+                "weighted_score": 0.663
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.402233,
+            "score_after_pre_rerank": 0.509831
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S309_N2",
+          "score": 0.509174,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "Theft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nTheft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint.",
+          "keywords": [
+            "theft",
+            "instant",
+            "robbery",
+            "committing",
+            "away",
+            "property",
+            "death",
+            "hurt",
+            "wrongful",
+            "restraint",
+            "harm",
+            "fear"
+          ],
+          "legal_concepts": [
+            "robbery",
+            "theft",
+            "causing harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.08333333333333333,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4014322107842431
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "robbery",
+                "source": "legal_concept",
+                "similarity": 0.9319,
+                "weighted_score": 0.9319
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "causing harm",
+                "source": "legal_concept",
+                "similarity": 0.8743,
+                "weighted_score": 0.8743
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 0.8686,
+                "weighted_score": 0.6515
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "wrongful",
+                "source": "keyword",
+                "similarity": 0.8682,
+                "weighted_score": 0.6512
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.401432,
+            "score_after_pre_rerank": 0.509174
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S307_ILL1_B",
+          "score": 0.509031,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 307,
+          "citation": "Section 307",
+          "text": "A picks Z’s pocket, having posted several of his companions near him, in order that they may restrain Z, if Z should perceive what is passing and should resist, or should attempt to apprehend A. A has committed the offence defined in this section. Of extortion Extortion. [OF EXTORTION]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 307: Theft after preparation made for causing death, hurt or restraint in order to committing of\nA picks Z’s pocket, having posted several of his companions near him, in order that they may restrain Z, if Z should perceive what is passing and should resist, or should attempt to apprehend A. A has committed the offence defined in this section. Of extortion Extortion. [OF EXTORTION]",
+          "keywords": [
+            "extortion",
+            "order",
+            "picks",
+            "pocket",
+            "having",
+            "posted",
+            "several",
+            "companions",
+            "near",
+            "they",
+            "picking pocket",
+            "restraint"
+          ],
+          "legal_concepts": [
+            "theft",
+            "extortion"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.401256895713136
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "extortion",
+                "source": "legal_concept",
+                "similarity": 0.8982,
+                "weighted_score": 0.8982
+              },
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "picks",
+                "source": "keyword",
+                "similarity": 0.8972,
+                "weighted_score": 0.6729
+              },
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "picking pocket",
+                "source": "keyword",
+                "similarity": 0.8826,
+                "weighted_score": 0.6619
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "posted",
+                "source": "keyword",
+                "similarity": 0.8763,
+                "weighted_score": 0.6572
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.401257,
+            "score_after_pre_rerank": 0.509031
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S304_N2",
+          "score": 0.990639,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 304,
+          "citation": "Section 304",
+          "text": "Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Theft in a dwelling house, or means of transportation or place of worship, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 304: Snatching.\nWhoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Theft in a dwelling house, or means of transportation or place of worship, etc.",
+          "keywords": [
+            "snatching",
+            "whoever",
+            "commits",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "extend",
+            "three",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "imprisonment for term"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.798444101959527,
+            "original:semrank_pre_rerank": 0.9021,
+            "semrank_pre_rerank": 0.9021
+          },
+          "query_scores": {
+            "original": 0.9929512
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "score": 0.9021,
+            "best_similarity": 0.9021,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.9021,
+                "weighted_score": 0.9021
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "imprisonment for term",
+                "source": "legal_concept",
+                "similarity": 0.8593,
+                "weighted_score": 0.8593
+              },
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "snatching",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "description",
+                "source": "keyword",
+                "similarity": 0.8887,
+                "weighted_score": 0.6666
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8846,
+                "weighted_score": 0.6635
+              }
+            ],
+            "pre_rerank_score": 0.9021,
+            "score_before_pre_rerank": 0.992951,
+            "score_after_pre_rerank": 0.976598
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S303_N2",
+          "score": 0.94338,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine: Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service. Snatching.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both and in case of second or subsequent conviction of any person under this section, he shall be punished with rigorous imprisonment for a term which shall not be less than one year but which may extend to five years and with fine: Provided that in cases of theft where the value of the stolen property is less than five thousand rupees, and a person is convicted for the first time, shall upon return of the value of property or restoration of the stolen property, shall be punished with community service. Snatching.",
+          "keywords": [
+            "property",
+            "theft",
+            "punished",
+            "imprisonment",
+            "term",
+            "extend",
+            "years",
+            "fine",
+            "five",
+            "value",
+            "theft punishment",
+            "imprisonment fine"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishment for theft"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7745354175567627,
+            "original:bm25": 0.3334917852141534,
+            "original:semrank_pre_rerank": 0.9492,
+            "semrank_pre_rerank": 0.9492
+          },
+          "query_scores": {
+            "original": 0.9344118054788016
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "score": 0.9492,
+            "best_similarity": 0.9492,
+            "best_concept": "punishment for theft",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "punishment for theft",
+                "source": "legal_concept",
+                "similarity": 0.9492,
+                "weighted_score": 0.9492
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.9021,
+                "weighted_score": 0.9021
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft punishment",
+                "source": "keyword",
+                "similarity": 0.9545,
+                "weighted_score": 0.7159
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8846,
+                "weighted_score": 0.6635
+              }
+            ],
+            "pre_rerank_score": 0.9492,
+            "score_before_pre_rerank": 0.934412,
+            "score_after_pre_rerank": 0.937074
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S304_N1",
+          "score": 0.622362,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 304,
+          "citation": "Section 304",
+          "text": "Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 304: Snatching.\nTheft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property.",
+          "keywords": [
+            "theft",
+            "snatching",
+            "property",
+            "order",
+            "commit",
+            "offender",
+            "suddenly",
+            "quickly",
+            "forcibly",
+            "seizes",
+            "sudden seizure",
+            "quick snatch"
+          ],
+          "legal_concepts": [
+            "theft",
+            "snatching",
+            "seizure"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7397600412368774,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7160825388341614
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "snatching",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "seizure",
+                "source": "legal_concept",
+                "similarity": 0.8494,
+                "weighted_score": 0.8494
+              },
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "quick snatch",
+                "source": "keyword",
+                "similarity": 0.9311,
+                "weighted_score": 0.6983
+              },
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "seizes",
+                "source": "keyword",
+                "similarity": 0.8866,
+                "weighted_score": 0.665
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.716083,
+            "score_after_pre_rerank": 0.767188
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S62_ILL1_A",
+          "score": 0.265789,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 62,
+          "citation": "Section 62",
+          "text": "A makes an attempt to steal some jewels by breaking open a box, and finds after so opening the box, that there is no jewel in it. He has done an act towards the commission of theft, and therefore is guilty under this section.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 62: Punishment for attempting to commit offences punishable with imprisonment for life or other\nA makes an attempt to steal some jewels by breaking open a box, and finds after so opening the box, that there is no jewel in it. He has done an act towards the commission of theft, and therefore is guilty under this section.",
+          "keywords": [
+            "attempt",
+            "makes",
+            "steal",
+            "some",
+            "jewels",
+            "breaking",
+            "open",
+            "finds",
+            "after",
+            "opening",
+            "attempting to steal",
+            "act towards commission"
+          ],
+          "legal_concepts": [
+            "attempt",
+            "theft"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.07692307692307693,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.44800278309136526
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "attempt",
+                "source": "legal_concept",
+                "similarity": 0.863,
+                "weighted_score": 0.863
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "steal",
+                "source": "keyword",
+                "similarity": 0.961,
+                "weighted_score": 0.7208
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "attempting to steal",
+                "source": "keyword",
+                "similarity": 0.9481,
+                "weighted_score": 0.7111
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "some",
+                "source": "keyword",
+                "similarity": 0.8832,
+                "weighted_score": 0.6624
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.448003,
+            "score_after_pre_rerank": 0.547362
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S134_BODY",
+          "score": 0.244778,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 134,
+          "citation": "Section 134",
+          "text": "Whoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 134: Assault or criminal force in attempt to commit theft of property carried by a person.\nWhoever assaults or uses criminal force to any person, in attempting to commit theft on any property which that person is then wearing or carrying, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force in attempt to wrongfully confine a person.",
+          "keywords": [
+            "criminal",
+            "force",
+            "commit",
+            "theft",
+            "property",
+            "assault",
+            "attempt",
+            "body",
+            "whoever",
+            "assaults",
+            "criminal force"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "attempted theft"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7060830593109131,
+            "original:semrank_pre_rerank": 0.9458,
+            "semrank_pre_rerank": 0.9458
+          },
+          "query_scores": {
+            "original": 0.4209227877393586
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "score": 0.9458,
+            "best_similarity": 0.9458,
+            "best_concept": "attempted theft",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "attempted theft",
+                "source": "legal_concept",
+                "similarity": 0.9458,
+                "weighted_score": 0.9458
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "assault",
+                "source": "legal_concept",
+                "similarity": 0.8634,
+                "weighted_score": 0.8634
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "criminal force",
+                "source": "legal_concept",
+                "similarity": 0.8489,
+                "weighted_score": 0.8489
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "assaults",
+                "source": "keyword",
+                "similarity": 0.8784,
+                "weighted_score": 0.6588
+              }
+            ],
+            "pre_rerank_score": 0.9458,
+            "score_before_pre_rerank": 0.420923,
+            "score_after_pre_rerank": 0.515401
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S306_BODY",
+          "score": 0.217601,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 306,
+          "citation": "Section 306",
+          "text": "Whoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Theft after preparation made for causing death, hurt or restraint in order to committing of theft.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 306: Theft by clerk or servant of property in possession of master.\nWhoever, being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. Theft after preparation made for causing death, hurt or restraint in order to committing of theft.",
+          "keywords": [
+            "theft",
+            "clerk",
+            "servant",
+            "property",
+            "possession",
+            "master",
+            "whoever",
+            "employed",
+            "capacity",
+            "commits",
+            "theft by employee",
+            "employee theft"
+          ],
+          "legal_concepts": [
+            "theft",
+            "punishment for theft"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.05263157894736842,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4117740994103994
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "punishment for theft",
+                "source": "legal_concept",
+                "similarity": 0.9492,
+                "weighted_score": 0.9492
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft by employee",
+                "source": "keyword",
+                "similarity": 0.9293,
+                "weighted_score": 0.697
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "employee theft",
+                "source": "keyword",
+                "similarity": 0.9243,
+                "weighted_score": 0.6932
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "possession",
+                "source": "keyword",
+                "similarity": 0.9074,
+                "weighted_score": 0.6806
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.411774,
+            "score_after_pre_rerank": 0.517655
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S46_ILL2_2_D",
+          "score": 0.205116,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 46,
+          "citation": "Section 46",
+          "text": "A, intending to cause a theft to be committed, instigates B to take property belonging to Z out of Z’s possession. A induces B to believe that the property belongs to A. B takes the property out of Z’s possession, in good faith, believing it to be A’s property. B, acting under this misconception, does not take dishonestly, and therefore does not commit theft. But A is guilty of abetting theft, and is liable to the same punishment as if B had committed theft.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 46: Abettor.\nA, intending to cause a theft to be committed, instigates B to take property belonging to Z out of Z’s possession. A induces B to believe that the property belongs to A. B takes the property out of Z’s possession, in good faith, believing it to be A’s property. B, acting under this misconception, does not take dishonestly, and therefore does not commit theft. But A is guilty of abetting theft, and is liable to the same punishment as if B had committed theft.",
+          "keywords": [
+            "theft",
+            "property",
+            "committed",
+            "take",
+            "possession",
+            "intending",
+            "cause",
+            "instigates",
+            "belonging",
+            "induces",
+            "abettor",
+            "instigation"
+          ],
+          "legal_concepts": [
+            "abettor",
+            "theft"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.19579150296857217,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40238760434300197
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "abettor",
+                "source": "legal_concept",
+                "similarity": 0.8114,
+                "weighted_score": 0.8114
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "possession",
+                "source": "keyword",
+                "similarity": 0.9074,
+                "weighted_score": 0.6806
+              },
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "take",
+                "source": "keyword",
+                "similarity": 0.904,
+                "weighted_score": 0.678
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.8717,
+                "weighted_score": 0.6538
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.402388,
+            "score_after_pre_rerank": 0.509958
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S314_ILL1_B",
+          "score": 0.204911,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 314,
+          "citation": "Section 314",
+          "text": "A, being on friendly terms with Z, goes into Z’s library in Z’s absence, and takes away a book without Z’s express consent. Here, if A was under the impression that he had Z’s implied consent to take the book for the purpose of reading it, A has not committed theft. But, if A afterwards sells the book for his own benefit, he is guilty of an offence under this section.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 314: Dishonest misappropriation of property.\nA, being on friendly terms with Z, goes into Z’s library in Z’s absence, and takes away a book without Z’s express consent. Here, if A was under the impression that he had Z’s implied consent to take the book for the purpose of reading it, A has not committed theft. But, if A afterwards sells the book for his own benefit, he is guilty of an offence under this section.",
+          "keywords": [
+            "book",
+            "consent",
+            "property",
+            "friendly",
+            "terms",
+            "goes",
+            "library",
+            "absence",
+            "takes",
+            "away",
+            "implied consent",
+            "theft",
+            "offence"
+          ],
+          "legal_concepts": [
+            "dishonest misappropriation of property",
+            "implied consent",
+            "theft"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4022334743559399
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "dishonest misappropriation of property",
+                "source": "legal_concept",
+                "similarity": 0.9206,
+                "weighted_score": 0.9206
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "implied consent",
+                "source": "legal_concept",
+                "similarity": 0.8444,
+                "weighted_score": 0.8444
+              },
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "takes",
+                "source": "keyword",
+                "similarity": 0.9018,
+                "weighted_score": 0.6763
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "terms",
+                "source": "keyword",
+                "similarity": 0.884,
+                "weighted_score": 0.663
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.402233,
+            "score_after_pre_rerank": 0.509831
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S309_N2",
+          "score": 0.203845,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 309,
+          "citation": "Section 309",
+          "text": "Theft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 309: Robbery.\nTheft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint.",
+          "keywords": [
+            "theft",
+            "instant",
+            "robbery",
+            "committing",
+            "away",
+            "property",
+            "death",
+            "hurt",
+            "wrongful",
+            "restraint",
+            "harm",
+            "fear"
+          ],
+          "legal_concepts": [
+            "robbery",
+            "theft",
+            "causing harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.08333333333333333,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4014322107842431
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "robbery",
+                "source": "legal_concept",
+                "similarity": 0.9319,
+                "weighted_score": 0.9319
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "causing harm",
+                "source": "legal_concept",
+                "similarity": 0.8743,
+                "weighted_score": 0.8743
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 0.8686,
+                "weighted_score": 0.6515
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "wrongful",
+                "source": "keyword",
+                "similarity": 0.8682,
+                "weighted_score": 0.6512
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.401432,
+            "score_after_pre_rerank": 0.509174
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S307_ILL1_B",
+          "score": 0.203612,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 307,
+          "citation": "Section 307",
+          "text": "A picks Z’s pocket, having posted several of his companions near him, in order that they may restrain Z, if Z should perceive what is passing and should resist, or should attempt to apprehend A. A has committed the offence defined in this section. Of extortion Extortion. [OF EXTORTION]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 307: Theft after preparation made for causing death, hurt or restraint in order to committing of\nA picks Z’s pocket, having posted several of his companions near him, in order that they may restrain Z, if Z should perceive what is passing and should resist, or should attempt to apprehend A. A has committed the offence defined in this section. Of extortion Extortion. [OF EXTORTION]",
+          "keywords": [
+            "extortion",
+            "order",
+            "picks",
+            "pocket",
+            "having",
+            "posted",
+            "several",
+            "companions",
+            "near",
+            "they",
+            "picking pocket",
+            "restraint"
+          ],
+          "legal_concepts": [
+            "theft",
+            "extortion"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "theft"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.401256895713136
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "theft",
+              "snatching",
+              "what is the punishment for snatching"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "theft",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "extortion",
+                "source": "legal_concept",
+                "similarity": 0.8982,
+                "weighted_score": 0.8982
+              },
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "picks",
+                "source": "keyword",
+                "similarity": 0.8972,
+                "weighted_score": 0.6729
+              },
+              {
+                "query_concept": "snatching",
+                "chunk_concept": "picking pocket",
+                "source": "keyword",
+                "similarity": 0.8826,
+                "weighted_score": 0.6619
+              },
+              {
+                "query_concept": "theft",
+                "chunk_concept": "posted",
+                "source": "keyword",
+                "similarity": 0.8763,
+                "weighted_score": 0.6572
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "theft",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.401257,
+            "score_after_pre_rerank": 0.509031
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

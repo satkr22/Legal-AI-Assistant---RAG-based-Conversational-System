@@ -1,0 +1,218 @@
+{
+  "query_id": "Q087",
+  "query": "Give an example where taking property is not theft.",
+  "query_type": "illustration",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "303"
+  ],
+  "acceptable_sections": [],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "314",
+    "303",
+    "303",
+    "317",
+    "317"
+  ],
+  "candidate_sections_at_10": [
+    "314",
+    "303",
+    "303",
+    "317",
+    "317",
+    "3",
+    "13",
+    "35",
+    "3",
+    "13"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "303",
+    "303",
+    "314",
+    "317",
+    "317"
+  ],
+  "cited_sections": [
+    "314"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 0.5,
+    "required_hits": [
+      "303"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "303"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "314",
+      "317",
+      "317"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 0.5,
+    "required_hits": [
+      "303"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "303"
+    ],
+    "support_precision_at_k": 0.1667,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "314",
+      "317",
+      "317",
+      "3",
+      "13",
+      "35",
+      "3",
+      "13"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "303"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "303"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "314",
+      "317",
+      "317"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.3333,
+    "required_points_matched": 1,
+    "required_points_total": 3,
+    "answer_completeness_score": 0.3333,
+    "soft_answer_score": 0.4833,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.5,
+    "forbidden_contradiction_skips": [
+      {
+        "point": "Any taking of another's property is always theft.",
+        "sentence": "According to Section 314 of the Bharatiya Nyaya Sanhita, 2023, if a person takes property belonging to another out of their possession, believing in good faith that the property belongs to themselves, they are not guilty of theft.",
+        "overlap": 0.6,
+        "threshold": 0.9,
+        "matched_terms": [
+          "another",
+          "property",
+          "theft"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      }
+    ],
+    "required_point_details": [
+      {
+        "point": "Section 303 illustrations include: A, in good faith, believing property belonging to Z to be A's own property, takes it out of Z's possession - as A does not take dishonestly, A does not commit theft.",
+        "matched": true,
+        "overlap": 0.75,
+        "matched_terms": [
+          "believing",
+          "belonging",
+          "commit",
+          "dishonestly",
+          "faith",
+          "good",
+          "out",
+          "own",
+          "possession",
+          "property",
+          "takes",
+          "theft"
+        ]
+      },
+      {
+        "point": "Another example from Section 303: A finds a ring lying on the highroad not in anyone's possession - A by taking it commits no theft (though may commit criminal misappropriation).",
+        "matched": false,
+        "overlap": 0.3125,
+        "matched_terms": [
+          "another",
+          "commit",
+          "misappropriation",
+          "possession",
+          "theft"
+        ]
+      },
+      {
+        "point": "Taking property openly and with belief of entitlement, or with implied consent, is not theft because dishonest intent is absent.",
+        "matched": false,
+        "overlap": 0.25,
+        "matched_terms": [
+          "dishonest",
+          "property",
+          "theft"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "correct_cited_sections": [],
+    "missing_required_sections": [
+      "303"
+    ],
+    "extra_cited_sections": [
+      "314"
+    ],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "missing_required_citation",
+    "low_required_point_coverage"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 9.7664,
+    "phase_9_10": 10.6985,
+    "phase_11": 13.4124,
+    "phase_12_13": 0.0002,
+    "total": 33.8775
+  },
+  "final_answer_preview": "According to Section 314 of the Bharatiya Nyaya Sanhita, 2023, if a person takes property belonging to another out of their possession, believing in good faith that the property belongs to themselves, they are not guilty of theft. This illustrates that the intention behind the act is crucial in determining whether theft has occurred. For instance, if A takes property from Z, genuinely believing it to be A's own, A does not commit theft at that moment. However, if A later discovers the mistake and dishonestly keeps the property, A may then be guilty of dishonest misappropriation.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/087_Q087"
+}

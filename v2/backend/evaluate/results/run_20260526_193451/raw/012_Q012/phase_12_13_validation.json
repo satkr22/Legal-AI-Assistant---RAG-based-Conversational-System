@@ -1,0 +1,71 @@
+{
+  "answer": "Abetment under Section 45 involves intentionally aiding the commission of an act or engaging in conspiracy to commit that act.",
+  "summary_answer": "Abetment under Section 45 involves intentionally aiding the commission of an act or engaging in conspiracy to commit that act.",
+  "detailed_answer": "Section 45 of the Bharatiya Nyaya Sanhita, 2023 defines abetment as occurring when a person intentionally aids the doing of a thing through any act or illegal omission (Section 45(c)). Additionally, it includes engaging in conspiracy with others to commit that act, provided an act or illegal omission occurs in furtherance of that conspiracy (Section 45(b)). This section establishes the framework for understanding how abetment operates in relation to criminal acts.",
+  "final_answer": "Abetment under Section 45 involves intentionally aiding the commission of an act or engaging in conspiracy to commit that act.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 45 Body, Bharatiya Nyaya Sanhita, 2023",
+    "Section 45(c), Bharatiya Nyaya Sanhita, 2023",
+    "Section 45(b), Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.8343,
+    "reranker": 0.9651,
+    "citation": 1.0,
+    "reasoning": 0.9928,
+    "evidence_strength": 0.8343,
+    "reasoning_certainty": 0.9928,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.8283,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.8283,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.9651,
+        "avg_selected_semrank_score": 1.0,
+        "avg_selected_concept_coverage": 0.25,
+        "selected_chunk_count": 3,
+        "matched_selected_chunk_count": 3,
+        "selected_semrank_count": 3
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.9857,
+        "ambiguity_gap_score": 1.0,
+        "uncertainty_score": 1.0,
+        "gap": 0.6864,
+        "highest_competing_score": 0.2993,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.8283,
+    "label": "high",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "low",
+  "risk_reason": "Evidence, citations, and reasoning are aligned well enough for the final answer view.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S45_BODY",
+    "chunk__node__BNS_S45_C",
+    "chunk__node__BNS_S45_B"
+  ]
+}

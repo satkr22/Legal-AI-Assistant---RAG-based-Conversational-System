@@ -1,0 +1,72 @@
+{
+  "query": "A child below seven years damaged someone's property. Is the child liable?",
+  "intent": {
+    "primary": "explanation",
+    "secondary": []
+  },
+  "concepts": [
+    "liability",
+    "definition of a child",
+    "immature understanding"
+  ],
+  "targets": [],
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true
+  },
+  "decomposition": {
+    "needed": true,
+    "sub_queries": [
+      {
+        "query": "Is a child below seven years of age considered liable for damaging property?",
+        "intent": {
+          "primary": "explanation",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "liability",
+          "definition of a child"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      },
+      {
+        "query": "What is the definition of a child under the Bharatiya Nyaya Sanhita, 2023?",
+        "intent": {
+          "primary": "explanation",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "definition of a child"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      }
+    ]
+  },
+  "confidence": {
+    "hint_relevance": 0.386,
+    "llm_consistency": 1.0,
+    "rule_strength": 0.35,
+    "structure_validity": 1.0,
+    "overall": 0.6244
+  }
+}

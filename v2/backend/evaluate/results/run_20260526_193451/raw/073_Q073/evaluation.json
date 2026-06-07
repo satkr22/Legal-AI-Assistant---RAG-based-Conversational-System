@@ -1,0 +1,281 @@
+{
+  "query_id": "Q073",
+  "query": "Can private defence be used against a public servant?",
+  "query_type": "multi_hop",
+  "difficulty": "hard",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "37"
+  ],
+  "acceptable_sections": [
+    "35"
+  ],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "37",
+    "37",
+    "40",
+    "35",
+    "34"
+  ],
+  "candidate_sections_at_10": [
+    "37",
+    "37",
+    "40",
+    "35",
+    "34",
+    "43",
+    "132",
+    "39",
+    "195",
+    "224"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "37",
+    "37",
+    "40",
+    "35",
+    "34"
+  ],
+  "cited_sections": [
+    "37"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.25,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "37"
+    ],
+    "acceptable_hits": [
+      "35"
+    ],
+    "required_or_acceptable_hits": [
+      "35",
+      "37"
+    ],
+    "support_precision_at_k": 0.5,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "40",
+      "34"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1111,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "37"
+    ],
+    "acceptable_hits": [
+      "35"
+    ],
+    "required_or_acceptable_hits": [
+      "35",
+      "37"
+    ],
+    "support_precision_at_k": 0.2222,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "40",
+      "34",
+      "43",
+      "132",
+      "39",
+      "195",
+      "224"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.25,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "37"
+    ],
+    "acceptable_hits": [
+      "35"
+    ],
+    "required_or_acceptable_hits": [
+      "35",
+      "37"
+    ],
+    "support_precision_at_k": 0.5,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "40",
+      "34"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.5,
+    "required_points_matched": 1,
+    "required_points_total": 2,
+    "answer_completeness_score": 0.5,
+    "soft_answer_score": 0.875,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 3.0,
+    "forbidden_contradiction_skips": [
+      {
+        "point": "Private defence can always be used against a public servant.",
+        "sentence": "According to Section 37(2) Explanation 1 of the Bharatiya Nyaya Sanhita, 2023, a person retains the right of private defence against acts done by a public servant unless they know or have reason to believe that the individual is a public servant.",
+        "overlap": 0.6667,
+        "threshold": 0.9,
+        "matched_terms": [
+          "defence",
+          "private",
+          "public",
+          "servant"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      },
+      {
+        "point": "Private defence can always be used against a public servant.",
+        "sentence": "This means that if a person is unaware that they are interacting with a public servant, they can invoke private defence.",
+        "overlap": 0.6667,
+        "threshold": 0.9,
+        "matched_terms": [
+          "defence",
+          "private",
+          "public",
+          "servant"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      },
+      {
+        "point": "Private defence can always be used against a public servant.",
+        "sentence": "Additionally, Section 37(1)(a) states that private defence can be exercised against acts by a public servant acting in good faith, even if those acts may not be strictly justifiable by law.",
+        "overlap": 0.6667,
+        "threshold": 0.9,
+        "matched_terms": [
+          "defence",
+          "private",
+          "public",
+          "servant"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      },
+      {
+        "point": "There is never any right of private defence against a public servant.",
+        "sentence": "According to Section 37(2) Explanation 1 of the Bharatiya Nyaya Sanhita, 2023, a person retains the right of private defence against acts done by a public servant unless they know or have reason to believe that the individual is a public servant.",
+        "overlap": 0.8333,
+        "threshold": 0.9,
+        "matched_terms": [
+          "defence",
+          "private",
+          "public",
+          "right",
+          "servant"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      },
+      {
+        "point": "There is never any right of private defence against a public servant.",
+        "sentence": "This means that if a person is unaware that they are interacting with a public servant, they can invoke private defence.",
+        "overlap": 0.6667,
+        "threshold": 0.9,
+        "matched_terms": [
+          "defence",
+          "private",
+          "public",
+          "servant"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      },
+      {
+        "point": "There is never any right of private defence against a public servant.",
+        "sentence": "Additionally, Section 37(1)(a) states that private defence can be exercised against acts by a public servant acting in good faith, even if those acts may not be strictly justifiable by law.",
+        "overlap": 0.6667,
+        "threshold": 0.9,
+        "matched_terms": [
+          "defence",
+          "private",
+          "public",
+          "servant"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      }
+    ],
+    "required_point_details": [
+      {
+        "point": "Section 37 provides that there is no right of private defence against an act which does not reasonably cause the apprehension of death or grievous hurt, if done or attempted to be done by a public servant acting in good faith under colour of his office, even if that act may not be strictly justifiable by law.",
+        "matched": true,
+        "overlap": 0.5217,
+        "matched_terms": [
+          "acting",
+          "defence",
+          "even",
+          "faith",
+          "good",
+          "justifiable",
+          "law",
+          "private",
+          "public",
+          "right",
+          "servant",
+          "strictly"
+        ]
+      },
+      {
+        "point": "However, if the act by a public servant does reasonably cause apprehension of death or grievous hurt, the right of private defence may still be exercised.",
+        "matched": false,
+        "overlap": 0.4,
+        "matched_terms": [
+          "defence",
+          "exercised",
+          "private",
+          "public",
+          "right",
+          "servant"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "37"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 4,
+    "supported_claims": 4,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.7828,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "low_required_point_coverage"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 9.2071,
+    "phase_9_10": 10.1064,
+    "phase_11": 17.2496,
+    "phase_12_13": 0.0002,
+    "total": 36.5633
+  },
+  "final_answer_preview": "According to Section 37(2) Explanation 1 of the Bharatiya Nyaya Sanhita, 2023, a person retains the right of private defence against acts done by a public servant unless they know or have reason to believe that the individual is a public servant. This means that if a person is unaware that they are interacting with a public servant, they can invoke private defence. Additionally, Section 37(1)(a) states that private defence can be exercised against acts by a public servant acting in good faith, even if those acts may not be strictly justifiable by law. Therefore, private defence is permissible under certain conditions when it involves public servants.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/073_Q073"
+}

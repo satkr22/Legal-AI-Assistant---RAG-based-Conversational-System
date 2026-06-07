@@ -1,0 +1,40 @@
+{
+  "query_id": "Q059",
+  "query": "Someone threatened to kill me unless I paid money. What offence may apply?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "308",
+      "subsection": null,
+      "label": "Section 308",
+      "role": "extortion - putting person in fear and inducing delivery of property",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "351",
+      "label": "Section 351",
+      "reason": "criminal intimidation may also apply if money was not actually delivered"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Threatening to kill unless money is paid and thereby inducing delivery of property constitutes extortion under Section 308.",
+      "Section 308(5) provides that extortion by putting a person in fear of death or grievous hurt is punishable with imprisonment up to ten years and fine.",
+      "If money was not actually delivered but the threat was made to cause alarm or force an act, criminal intimidation under Section 351 may also apply."
+    ],
+    "optional_points": [],
+    "forbidden_points": [
+      "This is only criminal intimidation and not extortion.",
+      "The offence is robbery because a threat to kill was used."
+    ]
+  },
+  "notes": "Scenario query. Extortion under Section 308 is the primary provision."
+}

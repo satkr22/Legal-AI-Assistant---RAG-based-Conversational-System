@@ -1,0 +1,215 @@
+{
+  "query_id": "Q069",
+  "query": "If someone commits an act by mistake of fact, can they be protected?",
+  "query_type": "multi_hop",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "14"
+  ],
+  "acceptable_sections": [
+    "17"
+  ],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "14",
+    "17",
+    "17",
+    "14",
+    "19"
+  ],
+  "candidate_sections_at_10": [
+    "14",
+    "17",
+    "17",
+    "14",
+    "19",
+    "2",
+    "59",
+    "46",
+    "58",
+    "305"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "14",
+    "14",
+    "17",
+    "17",
+    "19"
+  ],
+  "cited_sections": [
+    "14",
+    "17"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.3333,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "14"
+    ],
+    "acceptable_hits": [
+      "17"
+    ],
+    "required_or_acceptable_hits": [
+      "14",
+      "17"
+    ],
+    "support_precision_at_k": 0.6667,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "19"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.125,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "14"
+    ],
+    "acceptable_hits": [
+      "17"
+    ],
+    "required_or_acceptable_hits": [
+      "14",
+      "17"
+    ],
+    "support_precision_at_k": 0.25,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "19",
+      "2",
+      "59",
+      "46",
+      "58",
+      "305"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.3333,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "14"
+    ],
+    "acceptable_hits": [
+      "17"
+    ],
+    "required_or_acceptable_hits": [
+      "14",
+      "17"
+    ],
+    "support_precision_at_k": 0.6667,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "19"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 1.0,
+    "required_points_matched": 3,
+    "required_points_total": 3,
+    "answer_completeness_score": 1.0,
+    "soft_answer_score": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.5,
+    "forbidden_contradiction_skips": [
+      {
+        "point": "Mistake of fact never provides any protection under BNS.",
+        "sentence": "According to Section 14 of the Bharatiya Nyaya Sanhita, 2023, nothing is considered an offence if it is done by a person who, due to a mistake of fact (and not a mistake of law), believes in good faith that they are bound by law to perform that act.",
+        "overlap": 0.5,
+        "threshold": 0.9,
+        "matched_terms": [
+          "fact",
+          "mistake"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      }
+    ],
+    "required_point_details": [
+      {
+        "point": "Section 14 protects a person who, by reason of a mistake of fact (not mistake of law) and in good faith, believes themselves to be bound by law to do the act.",
+        "matched": true,
+        "overlap": 0.8333,
+        "matched_terms": [
+          "act",
+          "believes",
+          "bound",
+          "fact",
+          "faith",
+          "good",
+          "law",
+          "mistake",
+          "themselves",
+          "who"
+        ]
+      },
+      {
+        "point": "The protection is only for mistakes of fact, not mistakes of law.",
+        "matched": true,
+        "overlap": 0.5,
+        "matched_terms": [
+          "fact",
+          "law"
+        ]
+      },
+      {
+        "point": "The act must be done in good faith, meaning with due care and attention.",
+        "matched": true,
+        "overlap": 0.5714,
+        "matched_terms": [
+          "act",
+          "due",
+          "faith",
+          "good"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "14",
+      "17"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": true,
+  "failure_reasons": [],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 9.0442,
+    "phase_9_10": 10.3159,
+    "phase_11": 18.0537,
+    "phase_12_13": 0.0003,
+    "total": 37.4142
+  },
+  "final_answer_preview": "According to Section 14 of the Bharatiya Nyaya Sanhita, 2023, nothing is considered an offence if it is done by a person who, due to a mistake of fact (and not a mistake of law), believes in good faith that they are bound by law to perform that act. This is further supported by Section 17, which states that a person who believes themselves to be justified by law due to a mistake of fact is also not committing an offence. Therefore, if someone acts under a genuine misunderstanding of the facts, they may be protected from legal liability.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/069_Q069"
+}

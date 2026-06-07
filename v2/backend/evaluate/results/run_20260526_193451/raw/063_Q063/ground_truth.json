@@ -1,0 +1,45 @@
+{
+  "query_id": "Q063",
+  "query": "A person used a fake seal to create a legal-looking document. What offence may apply?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "341",
+      "subsection": null,
+      "label": "Section 341",
+      "role": "making or possessing counterfeit seal with intent to commit forgery",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "336",
+      "label": "Section 336",
+      "reason": "forgery is the underlying offence"
+    },
+    {
+      "act": "BNS",
+      "section": "338",
+      "label": "Section 338",
+      "reason": "if the document relates to valuable security or will"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 341 provides that whoever makes or counterfeits any seal, plate or other instrument for making an impression intending it for committing forgery punishable under Section 338, or possesses such instrument knowing it to be counterfeit, shall be punished with imprisonment for life or imprisonment up to seven years, and also fine.",
+      "Using a fake seal to create a legal-looking document also constitutes forgery under Section 336."
+    ],
+    "optional_points": [],
+    "forbidden_points": [
+      "Using a fake seal is only a minor infraction.",
+      "Only government officials can commit seal-related forgery offences."
+    ]
+  },
+  "notes": "Scenario query. Section 341 is specifically about counterfeit seals."
+}

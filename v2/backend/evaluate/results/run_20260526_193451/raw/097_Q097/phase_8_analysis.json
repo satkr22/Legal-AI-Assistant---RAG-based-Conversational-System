@@ -1,0 +1,75 @@
+{
+  "query": "How can I avoid punishment after committing theft?",
+  "intent": {
+    "primary": "explanation",
+    "secondary": [
+      "legal penalty"
+    ]
+  },
+  "concepts": [
+    "theft",
+    "punishment",
+    "legal exception"
+  ],
+  "targets": [],
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true
+  },
+  "decomposition": {
+    "needed": true,
+    "sub_queries": [
+      {
+        "query": "What are the legal exceptions to punishment for theft?",
+        "intent": {
+          "primary": "explanation",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "theft",
+          "legal exception"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      },
+      {
+        "query": "What are the potential defenses against theft charges?",
+        "intent": {
+          "primary": "explanation",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "theft",
+          "legal condition"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      }
+    ]
+  },
+  "confidence": {
+    "hint_relevance": 0.541,
+    "llm_consistency": 1.0,
+    "rule_strength": 0.35,
+    "structure_validity": 1.0,
+    "overall": 0.6864
+  }
+}

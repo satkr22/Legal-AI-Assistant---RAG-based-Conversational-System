@@ -1,0 +1,31 @@
+{
+  "query_id": "Q071",
+  "query": "If an act causes slight harm, is it always punishable?",
+  "query_type": "multi_hop",
+  "difficulty": "easy",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "33",
+      "subsection": null,
+      "label": "Section 33",
+      "role": "acts causing only slight harm not an offence",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 33 provides that nothing is an offence by reason that it causes, or is intended to cause, or is known to be likely to cause, any harm, if that harm is so slight that no person of ordinary sense and temper would complain of such harm."
+    ],
+    "optional_points": [],
+    "forbidden_points": [
+      "Any harm, however slight, is punishable under BNS.",
+      "The threshold for harm is subjective and depends on the victim."
+    ]
+  },
+  "notes": "Multi-hop query. Section 33 is the de minimis exception."
+}

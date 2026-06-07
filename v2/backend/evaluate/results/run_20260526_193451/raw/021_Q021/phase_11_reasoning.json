@@ -1,0 +1,3546 @@
+[
+  {
+    "query": "Who is a public servant under BNS?",
+    "phase8": {
+      "query": "Who is a public servant under BNS?",
+      "intent": {
+        "primary": "definition",
+        "secondary": []
+      },
+      "concepts": [
+        "public servant",
+        "Bharatiya Nyaya Sanhita"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.637,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.25,
+        "structure_validity": 1.0,
+        "overall": 0.7048
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "Who is a public servant under BNS?",
+          "targets": [],
+          "concepts": [
+            "public servant",
+            "Bharatiya Nyaya Sanhita"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S2_N28_A",
+            "score": 1.0,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "every commissioned officer in the Army, Navy or Air Force;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery commissioned officer in the Army, Navy or Air Force;",
+            "keywords": [
+              "commissioned",
+              "officer",
+              "army",
+              "navy",
+              "force",
+              "definitions",
+              "preliminary"
+            ],
+            "legal_concepts": [
+              "public servant"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "public servant"
+              ]
+            },
+            "source_scores": {
+              "bm25": 0.05263157894736842,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "public servant",
+                "bharatiya nyaya sanhita",
+                "servant",
+                "under",
+                "bns",
+                "who is a public servant under bns"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "public servant",
+                  "chunk_concept": "public servant",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "definitions",
+                  "source": "keyword",
+                  "similarity": 0.9153,
+                  "weighted_score": 0.6865
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "preliminary",
+                  "source": "keyword",
+                  "similarity": 0.9086,
+                  "weighted_score": 0.6814
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "force",
+                  "source": "keyword",
+                  "similarity": 0.8684,
+                  "weighted_score": 0.6513
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "commissioned",
+                  "source": "keyword",
+                  "similarity": 0.856,
+                  "weighted_score": 0.642
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "public servant",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S2_N28_D",
+            "score": 0.998855,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "every assessor or member of a panchayat assisting a Court or public servant;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery assessor or member of a panchayat assisting a Court or public servant;",
+            "keywords": [
+              "assessor",
+              "member",
+              "panchayat",
+              "assisting",
+              "court",
+              "public",
+              "servant",
+              "definitions",
+              "preliminary"
+            ],
+            "legal_concepts": [
+              "public servant"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "public servant"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6385167837142944,
+              "bm25": 0.17293142387209298,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "public servant",
+                "bharatiya nyaya sanhita",
+                "servant",
+                "under",
+                "bns",
+                "who is a public servant under bns"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "public servant",
+                  "chunk_concept": "public servant",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "servant",
+                  "chunk_concept": "servant",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "assisting",
+                  "source": "keyword",
+                  "similarity": 0.9237,
+                  "weighted_score": 0.6928
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "definitions",
+                  "source": "keyword",
+                  "similarity": 0.9153,
+                  "weighted_score": 0.6865
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "preliminary",
+                  "source": "keyword",
+                  "similarity": 0.9086,
+                  "weighted_score": 0.6814
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "public servant",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S2_N28_B",
+            "score": 0.9701,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "every Judge including any person empowered by law to discharge, whether by himself or as a member of any body of persons, any adjudicatory functions;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery Judge including any person empowered by law to discharge, whether by himself or as a member of any body of persons, any adjudicatory functions;",
+            "keywords": [
+              "judge",
+              "including",
+              "empowered",
+              "discharge",
+              "whether",
+              "himself",
+              "member",
+              "body",
+              "adjudicatory",
+              "functions"
+            ],
+            "legal_concepts": [
+              "public servant",
+              "judge"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "public servant"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "public servant",
+                "bharatiya nyaya sanhita",
+                "servant",
+                "under",
+                "bns",
+                "who is a public servant under bns"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "public servant",
+                  "chunk_concept": "public servant",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "judge",
+                  "source": "legal_concept",
+                  "similarity": 0.8787,
+                  "weighted_score": 0.8787
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "whether",
+                  "source": "keyword",
+                  "similarity": 0.9062,
+                  "weighted_score": 0.6797
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "including",
+                  "source": "keyword",
+                  "similarity": 0.89,
+                  "weighted_score": 0.6675
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "empowered",
+                  "source": "keyword",
+                  "similarity": 0.8782,
+                  "weighted_score": 0.6586
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "public servant",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S2_N28_H",
+            "score": 0.906084,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "every officer whose duty it is, as such officer, to take, receive, keep or expend any property on behalf of the Government, or to make any survey, assessment or contract on behalf of the Government, or to execute any revenue-process, or to investigate, or to report, on any matter affecting the pecuniary interests of the Government, or to make, authenticate or keep any document relating to the pecuniary interests of the Government, or to prevent the infraction of any law for the protection of the pecuniary interests of the Government;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery officer whose duty it is, as such officer, to take, receive, keep or expend any property on behalf of the Government, or to make any survey, assessment or contract on behalf of the Government, or to execute any revenue-process, or to investigate, or to report, on any matter affecting the pecuniary interests of the Government, or to make, authenticate or keep any document relating to the pecuniary interests of the Government, or to prevent the infraction of any law for the protection of the pecuniary interests of the Government;",
+            "keywords": [
+              "government",
+              "pecuniary",
+              "interests",
+              "officer",
+              "keep",
+              "behalf",
+              "make",
+              "duty",
+              "take",
+              "receive",
+              "public servant",
+              "government duties"
+            ],
+            "legal_concepts": [
+              "definition of public servant",
+              "government officer"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6186022758483887,
+              "semrank_pre_rerank": 0.9732
+            },
+            "query_scores": {
+              "original": 0.6186022758483887
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "public servant",
+                "bharatiya nyaya sanhita",
+                "servant",
+                "under",
+                "bns",
+                "who is a public servant under bns"
+              ],
+              "score": 0.9732,
+              "best_similarity": 0.9732,
+              "best_concept": "definition of public servant",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "public servant",
+                  "chunk_concept": "definition of public servant",
+                  "source": "legal_concept",
+                  "similarity": 0.9732,
+                  "weighted_score": 0.9732
+                },
+                {
+                  "query_concept": "public servant",
+                  "chunk_concept": "government officer",
+                  "source": "legal_concept",
+                  "similarity": 0.8994,
+                  "weighted_score": 0.8994
+                },
+                {
+                  "query_concept": "public servant",
+                  "chunk_concept": "public servant",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "take",
+                  "source": "keyword",
+                  "similarity": 0.8912,
+                  "weighted_score": 0.6684
+                },
+                {
+                  "query_concept": "servant",
+                  "chunk_concept": "duty",
+                  "source": "keyword",
+                  "similarity": 0.8886,
+                  "weighted_score": 0.6664
+                }
+              ],
+              "pre_rerank_score": 0.9732,
+              "score_before_pre_rerank": 0.726967,
+              "score_after_pre_rerank": 0.771289
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S2_N28_C",
+            "score": 0.899829,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "every officer of a Court including a liquidator, receiver or commissioner whose duty it is, as such officer, to investigate or report on any matter of law or fact, or to make, authenticate, or keep any document, or to take charge or dispose of any property, or to execute any judicial process, or to administer any oath, or to interpret, or to preserve order in the Court, and every person specially authorised by a Court to perform any of such duties;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery officer of a Court including a liquidator, receiver or commissioner whose duty it is, as such officer, to investigate or report on any matter of law or fact, or to make, authenticate, or keep any document, or to take charge or dispose of any property, or to execute any judicial process, or to administer any oath, or to interpret, or to preserve order in the Court, and every person specially authorised by a Court to perform any of such duties;",
+            "keywords": [
+              "court",
+              "officer",
+              "including",
+              "liquidator",
+              "receiver",
+              "commissioner",
+              "duty",
+              "investigate",
+              "report",
+              "public servant",
+              "court officer"
+            ],
+            "legal_concepts": [
+              "definition of public servant"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.625643789768219,
+              "semrank_pre_rerank": 0.9732
+            },
+            "query_scores": {
+              "original": 0.625643789768219
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "public servant",
+                "bharatiya nyaya sanhita",
+                "servant",
+                "under",
+                "bns",
+                "who is a public servant under bns"
+              ],
+              "score": 0.9732,
+              "best_similarity": 0.9732,
+              "best_concept": "definition of public servant",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "public servant",
+                  "chunk_concept": "definition of public servant",
+                  "source": "legal_concept",
+                  "similarity": 0.9732,
+                  "weighted_score": 0.9732
+                },
+                {
+                  "query_concept": "public servant",
+                  "chunk_concept": "public servant",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "court",
+                  "source": "keyword",
+                  "similarity": 0.8913,
+                  "weighted_score": 0.6685
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "investigate",
+                  "source": "keyword",
+                  "similarity": 0.8901,
+                  "weighted_score": 0.6676
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "including",
+                  "source": "keyword",
+                  "similarity": 0.89,
+                  "weighted_score": 0.6675
+                }
+              ],
+              "pre_rerank_score": 0.9732,
+              "score_before_pre_rerank": 0.735242,
+              "score_after_pre_rerank": 0.778074
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S2_N28_EXP1_B",
+            "score": 0.869638,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "every person who is in actual possession of the situation of a public servant, whatever legal defect there may be in his right to hold that situation is a public servant;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery person who is in actual possession of the situation of a public servant, whatever legal defect there may be in his right to hold that situation is a public servant;",
+            "keywords": [
+              "situation",
+              "public",
+              "servant",
+              "actual",
+              "possession",
+              "whatever",
+              "defect",
+              "there",
+              "right"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6142608523368835,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.6142608523368835
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "public servant",
+                "bharatiya nyaya sanhita",
+                "servant",
+                "under",
+                "bns",
+                "who is a public servant under bns"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "servant",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "servant",
+                  "chunk_concept": "servant",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "right",
+                  "source": "keyword",
+                  "similarity": 0.9019,
+                  "weighted_score": 0.6765
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "there",
+                  "source": "keyword",
+                  "similarity": 0.8934,
+                  "weighted_score": 0.6701
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "actual",
+                  "source": "keyword",
+                  "similarity": 0.8851,
+                  "weighted_score": 0.6638
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "situation",
+                  "source": "keyword",
+                  "similarity": 0.8838,
+                  "weighted_score": 0.6628
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.732045,
+              "score_after_pre_rerank": 0.735277
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S2_N28",
+            "score": 0.667283,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 2,
+            "citation": "Section 2",
+            "text": "“public servant” means a person falling under any of the descriptions, namely:—",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—",
+            "keywords": [
+              "public",
+              "servant",
+              "means",
+              "falling",
+              "descriptions",
+              "namely",
+              "definitions",
+              "preliminary"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6179417371749878,
+              "bm25": 0.09220613162010138,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.6179417371749878
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "public servant",
+                "bharatiya nyaya sanhita",
+                "servant",
+                "under",
+                "bns",
+                "who is a public servant under bns"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "servant",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "servant",
+                  "chunk_concept": "servant",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "namely",
+                  "source": "keyword",
+                  "similarity": 0.9281,
+                  "weighted_score": 0.6961
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "definitions",
+                  "source": "keyword",
+                  "similarity": 0.9153,
+                  "weighted_score": 0.6865
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "preliminary",
+                  "source": "keyword",
+                  "similarity": 0.9086,
+                  "weighted_score": 0.6814
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "means",
+                  "source": "keyword",
+                  "similarity": 0.8846,
+                  "weighted_score": 0.6634
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.736432,
+              "score_after_pre_rerank": 0.738874
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S132_BODY",
+            "score": 0.5622,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 132,
+            "citation": "Section 132",
+            "text": "Whoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 132: Assault or criminal force to deter public servant from discharge of his duty.\nWhoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+            "keywords": [
+              "public",
+              "servant",
+              "duty",
+              "criminal",
+              "force",
+              "intent",
+              "deter",
+              "done",
+              "discharge",
+              "assault",
+              "criminal force",
+              "public servant"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "public servant"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "public servant"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "public servant",
+                "bharatiya nyaya sanhita",
+                "servant",
+                "under",
+                "bns",
+                "who is a public servant under bns"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "public servant",
+                  "chunk_concept": "public servant",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "assault",
+                  "source": "legal_concept",
+                  "similarity": 0.8148,
+                  "weighted_score": 0.8148
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "criminal force",
+                  "source": "legal_concept",
+                  "similarity": 0.7995,
+                  "weighted_score": 0.7995
+                },
+                {
+                  "query_concept": "servant",
+                  "chunk_concept": "servant",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "servant",
+                  "chunk_concept": "duty",
+                  "source": "keyword",
+                  "similarity": 0.8886,
+                  "weighted_score": 0.6664
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "public servant",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S216_BODY",
+            "score": 0.44793,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+            "section_number": 216,
+            "citation": "Section 216",
+            "text": "Whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. False information, with intent to cause public servant to use his lawful power to injury of another person.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 13: OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS\nSection 216: False statement on oath or affirmation to public servant or person authorised to administer\nWhoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. False information, with intent to cause public servant to use his lawful power to injury of another person.",
+            "keywords": [
+              "public",
+              "servant",
+              "false",
+              "oath",
+              "affirmation",
+              "subject",
+              "authorised",
+              "administer",
+              "statement",
+              "either",
+              "false statement",
+              "public servant"
+            ],
+            "legal_concepts": [
+              "false statement on oath",
+              "public servant"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "public servant"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "public servant",
+                "bharatiya nyaya sanhita",
+                "servant",
+                "under",
+                "bns",
+                "who is a public servant under bns"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "public servant",
+                  "chunk_concept": "public servant",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "servant",
+                  "chunk_concept": "false statement on oath",
+                  "source": "legal_concept",
+                  "similarity": 0.7536,
+                  "weighted_score": 0.7536
+                },
+                {
+                  "query_concept": "servant",
+                  "chunk_concept": "servant",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "administer",
+                  "source": "keyword",
+                  "similarity": 0.8969,
+                  "weighted_score": 0.6727
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "subject",
+                  "source": "keyword",
+                  "similarity": 0.8946,
+                  "weighted_score": 0.671
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "public servant",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S200_BODY",
+            "score": 0.42812,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+            "section_number": 200,
+            "citation": "Section 200",
+            "text": "Whoever, being in charge of a hospital, public or private, whether run by the Central Government, the State Government, local bodies or any other person, contravenes the provisions of section 397 of the Bharatiya Nagarik Suraksha Sanhita, 2023, shall be punished with imprisonment for a term which may extend to one year, or with fine, or with both. Public servant framing an incorrect document with intent to cause injury.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 12: OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS\nSection 200: Punishment for non-treatment of victim.\nWhoever, being in charge of a hospital, public or private, whether run by the Central Government, the State Government, local bodies or any other person, contravenes the provisions of section 397 of the Bharatiya Nagarik Suraksha Sanhita, 2023, shall be punished with imprisonment for a term which may extend to one year, or with fine, or with both. Public servant framing an incorrect document with intent to cause injury.",
+            "keywords": [
+              "public",
+              "government",
+              "whoever",
+              "charge",
+              "hospital",
+              "private",
+              "whether",
+              "central",
+              "state",
+              "local",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "public servant",
+              "imprisonment",
+              "fine"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "public servant"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6289058327674866,
+              "bm25": 0.26821603146157347,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "public servant",
+                "bharatiya nyaya sanhita",
+                "servant",
+                "under",
+                "bns",
+                "who is a public servant under bns"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "public servant",
+                  "chunk_concept": "public servant",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "fine",
+                  "source": "legal_concept",
+                  "similarity": 0.8911,
+                  "weighted_score": 0.8911
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "imprisonment",
+                  "source": "legal_concept",
+                  "similarity": 0.8285,
+                  "weighted_score": 0.8285
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "whether",
+                  "source": "keyword",
+                  "similarity": 0.9062,
+                  "weighted_score": 0.6797
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "state",
+                  "source": "keyword",
+                  "similarity": 0.8995,
+                  "weighted_score": 0.6747
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "public servant",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S2_N28_A",
+          "score": 1.0,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "every commissioned officer in the Army, Navy or Air Force;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery commissioned officer in the Army, Navy or Air Force;",
+          "keywords": [
+            "commissioned",
+            "officer",
+            "army",
+            "navy",
+            "force",
+            "definitions",
+            "preliminary"
+          ],
+          "legal_concepts": [
+            "public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "public servant"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.05263157894736842,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "definitions",
+                "source": "keyword",
+                "similarity": 0.9153,
+                "weighted_score": 0.6865
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.9086,
+                "weighted_score": 0.6814
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 0.8684,
+                "weighted_score": 0.6513
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "commissioned",
+                "source": "keyword",
+                "similarity": 0.856,
+                "weighted_score": 0.642
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "public servant",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S2_N28_D",
+          "score": 0.999061,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "every assessor or member of a panchayat assisting a Court or public servant;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery assessor or member of a panchayat assisting a Court or public servant;",
+          "keywords": [
+            "assessor",
+            "member",
+            "panchayat",
+            "assisting",
+            "court",
+            "public",
+            "servant",
+            "definitions",
+            "preliminary"
+          ],
+          "legal_concepts": [
+            "public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "public servant"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6385167837142944,
+            "original:bm25": 0.17293142387209298,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9988551753529534
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "assisting",
+                "source": "keyword",
+                "similarity": 0.9237,
+                "weighted_score": 0.6928
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "definitions",
+                "source": "keyword",
+                "similarity": 0.9153,
+                "weighted_score": 0.6865
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.9086,
+                "weighted_score": 0.6814
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "public servant",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.998855,
+            "score_after_pre_rerank": 0.999061
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S2_N28_B",
+          "score": 0.975482,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "every Judge including any person empowered by law to discharge, whether by himself or as a member of any body of persons, any adjudicatory functions;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery Judge including any person empowered by law to discharge, whether by himself or as a member of any body of persons, any adjudicatory functions;",
+          "keywords": [
+            "judge",
+            "including",
+            "empowered",
+            "discharge",
+            "whether",
+            "himself",
+            "member",
+            "body",
+            "adjudicatory",
+            "functions"
+          ],
+          "legal_concepts": [
+            "public servant",
+            "judge"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "public servant"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.970100292133732
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "judge",
+                "source": "legal_concept",
+                "similarity": 0.8787,
+                "weighted_score": 0.8787
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "whether",
+                "source": "keyword",
+                "similarity": 0.9062,
+                "weighted_score": 0.6797
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "including",
+                "source": "keyword",
+                "similarity": 0.89,
+                "weighted_score": 0.6675
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "empowered",
+                "source": "keyword",
+                "similarity": 0.8782,
+                "weighted_score": 0.6586
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "public servant",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.9701,
+            "score_after_pre_rerank": 0.975482
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S2_N28_H",
+          "score": 0.918165,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "every officer whose duty it is, as such officer, to take, receive, keep or expend any property on behalf of the Government, or to make any survey, assessment or contract on behalf of the Government, or to execute any revenue-process, or to investigate, or to report, on any matter affecting the pecuniary interests of the Government, or to make, authenticate or keep any document relating to the pecuniary interests of the Government, or to prevent the infraction of any law for the protection of the pecuniary interests of the Government;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery officer whose duty it is, as such officer, to take, receive, keep or expend any property on behalf of the Government, or to make any survey, assessment or contract on behalf of the Government, or to execute any revenue-process, or to investigate, or to report, on any matter affecting the pecuniary interests of the Government, or to make, authenticate or keep any document relating to the pecuniary interests of the Government, or to prevent the infraction of any law for the protection of the pecuniary interests of the Government;",
+          "keywords": [
+            "government",
+            "pecuniary",
+            "interests",
+            "officer",
+            "keep",
+            "behalf",
+            "make",
+            "duty",
+            "take",
+            "receive",
+            "public servant",
+            "government duties"
+          ],
+          "legal_concepts": [
+            "definition of public servant",
+            "government officer"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6186022758483887,
+            "original:semrank_pre_rerank": 0.9732,
+            "semrank_pre_rerank": 0.9732
+          },
+          "query_scores": {
+            "original": 0.9060837353634243
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "score": 0.9732,
+            "best_similarity": 0.9732,
+            "best_concept": "definition of public servant",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "definition of public servant",
+                "source": "legal_concept",
+                "similarity": 0.9732,
+                "weighted_score": 0.9732
+              },
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "government officer",
+                "source": "legal_concept",
+                "similarity": 0.8994,
+                "weighted_score": 0.8994
+              },
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "take",
+                "source": "keyword",
+                "similarity": 0.8912,
+                "weighted_score": 0.6684
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "duty",
+                "source": "keyword",
+                "similarity": 0.8886,
+                "weighted_score": 0.6664
+              }
+            ],
+            "pre_rerank_score": 0.9732,
+            "score_before_pre_rerank": 0.906084,
+            "score_after_pre_rerank": 0.918165
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S2_N28_C",
+          "score": 0.913036,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "every officer of a Court including a liquidator, receiver or commissioner whose duty it is, as such officer, to investigate or report on any matter of law or fact, or to make, authenticate, or keep any document, or to take charge or dispose of any property, or to execute any judicial process, or to administer any oath, or to interpret, or to preserve order in the Court, and every person specially authorised by a Court to perform any of such duties;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery officer of a Court including a liquidator, receiver or commissioner whose duty it is, as such officer, to investigate or report on any matter of law or fact, or to make, authenticate, or keep any document, or to take charge or dispose of any property, or to execute any judicial process, or to administer any oath, or to interpret, or to preserve order in the Court, and every person specially authorised by a Court to perform any of such duties;",
+          "keywords": [
+            "court",
+            "officer",
+            "including",
+            "liquidator",
+            "receiver",
+            "commissioner",
+            "duty",
+            "investigate",
+            "report",
+            "public servant",
+            "court officer"
+          ],
+          "legal_concepts": [
+            "definition of public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.625643789768219,
+            "original:semrank_pre_rerank": 0.9732,
+            "semrank_pre_rerank": 0.9732
+          },
+          "query_scores": {
+            "original": 0.8998290805834932
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "score": 0.9732,
+            "best_similarity": 0.9732,
+            "best_concept": "definition of public servant",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "definition of public servant",
+                "source": "legal_concept",
+                "similarity": 0.9732,
+                "weighted_score": 0.9732
+              },
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 0.8913,
+                "weighted_score": 0.6685
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "investigate",
+                "source": "keyword",
+                "similarity": 0.8901,
+                "weighted_score": 0.6676
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "including",
+                "source": "keyword",
+                "similarity": 0.89,
+                "weighted_score": 0.6675
+              }
+            ],
+            "pre_rerank_score": 0.9732,
+            "score_before_pre_rerank": 0.899829,
+            "score_after_pre_rerank": 0.913036
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S2_N28_EXP1_B",
+          "score": 0.848103,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "every person who is in actual possession of the situation of a public servant, whatever legal defect there may be in his right to hold that situation is a public servant;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery person who is in actual possession of the situation of a public servant, whatever legal defect there may be in his right to hold that situation is a public servant;",
+          "keywords": [
+            "situation",
+            "public",
+            "servant",
+            "actual",
+            "possession",
+            "whatever",
+            "defect",
+            "there",
+            "right"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6142608523368835,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.8696377321842124
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "servant",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "right",
+                "source": "keyword",
+                "similarity": 0.9019,
+                "weighted_score": 0.6765
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "there",
+                "source": "keyword",
+                "similarity": 0.8934,
+                "weighted_score": 0.6701
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "actual",
+                "source": "keyword",
+                "similarity": 0.8851,
+                "weighted_score": 0.6638
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "situation",
+                "source": "keyword",
+                "similarity": 0.8838,
+                "weighted_score": 0.6628
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.869638,
+            "score_after_pre_rerank": 0.848103
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S2_N28",
+          "score": 0.682172,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "“public servant” means a person falling under any of the descriptions, namely:—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—",
+          "keywords": [
+            "public",
+            "servant",
+            "means",
+            "falling",
+            "descriptions",
+            "namely",
+            "definitions",
+            "preliminary"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6179417371749878,
+            "original:bm25": 0.09220613162010138,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.6672834505966677
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "servant",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "namely",
+                "source": "keyword",
+                "similarity": 0.9281,
+                "weighted_score": 0.6961
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "definitions",
+                "source": "keyword",
+                "similarity": 0.9153,
+                "weighted_score": 0.6865
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.9086,
+                "weighted_score": 0.6814
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "means",
+                "source": "keyword",
+                "similarity": 0.8846,
+                "weighted_score": 0.6634
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.667283,
+            "score_after_pre_rerank": 0.682172
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S132_BODY",
+          "score": 0.641004,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 132,
+          "citation": "Section 132",
+          "text": "Whoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 132: Assault or criminal force to deter public servant from discharge of his duty.\nWhoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+          "keywords": [
+            "public",
+            "servant",
+            "duty",
+            "criminal",
+            "force",
+            "intent",
+            "deter",
+            "done",
+            "discharge",
+            "assault",
+            "criminal force",
+            "public servant"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "public servant"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.5621995332967176
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "assault",
+                "source": "legal_concept",
+                "similarity": 0.8148,
+                "weighted_score": 0.8148
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "criminal force",
+                "source": "legal_concept",
+                "similarity": 0.7995,
+                "weighted_score": 0.7995
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "duty",
+                "source": "keyword",
+                "similarity": 0.8886,
+                "weighted_score": 0.6664
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "public servant",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.5622,
+            "score_after_pre_rerank": 0.641004
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S216_BODY",
+          "score": 0.547302,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+          "section_number": 216,
+          "citation": "Section 216",
+          "text": "Whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. False information, with intent to cause public servant to use his lawful power to injury of another person.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 13: OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS\nSection 216: False statement on oath or affirmation to public servant or person authorised to administer\nWhoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. False information, with intent to cause public servant to use his lawful power to injury of another person.",
+          "keywords": [
+            "public",
+            "servant",
+            "false",
+            "oath",
+            "affirmation",
+            "subject",
+            "authorised",
+            "administer",
+            "statement",
+            "either",
+            "false statement",
+            "public servant"
+          ],
+          "legal_concepts": [
+            "false statement on oath",
+            "public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "public servant"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4479296565340257
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "false statement on oath",
+                "source": "legal_concept",
+                "similarity": 0.7536,
+                "weighted_score": 0.7536
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "administer",
+                "source": "keyword",
+                "similarity": 0.8969,
+                "weighted_score": 0.6727
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "subject",
+                "source": "keyword",
+                "similarity": 0.8946,
+                "weighted_score": 0.671
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "public servant",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.44793,
+            "score_after_pre_rerank": 0.547302
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S200_BODY",
+          "score": 0.531058,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+          "section_number": 200,
+          "citation": "Section 200",
+          "text": "Whoever, being in charge of a hospital, public or private, whether run by the Central Government, the State Government, local bodies or any other person, contravenes the provisions of section 397 of the Bharatiya Nagarik Suraksha Sanhita, 2023, shall be punished with imprisonment for a term which may extend to one year, or with fine, or with both. Public servant framing an incorrect document with intent to cause injury.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 12: OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS\nSection 200: Punishment for non-treatment of victim.\nWhoever, being in charge of a hospital, public or private, whether run by the Central Government, the State Government, local bodies or any other person, contravenes the provisions of section 397 of the Bharatiya Nagarik Suraksha Sanhita, 2023, shall be punished with imprisonment for a term which may extend to one year, or with fine, or with both. Public servant framing an incorrect document with intent to cause injury.",
+          "keywords": [
+            "public",
+            "government",
+            "whoever",
+            "charge",
+            "hospital",
+            "private",
+            "whether",
+            "central",
+            "state",
+            "local",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "public servant",
+            "imprisonment",
+            "fine"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "public servant"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6289058327674866,
+            "original:bm25": 0.26821603146157347,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.42812009519896593
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "fine",
+                "source": "legal_concept",
+                "similarity": 0.8911,
+                "weighted_score": 0.8911
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.8285,
+                "weighted_score": 0.8285
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "whether",
+                "source": "keyword",
+                "similarity": 0.9062,
+                "weighted_score": 0.6797
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "state",
+                "source": "keyword",
+                "similarity": 0.8995,
+                "weighted_score": 0.6747
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "public servant",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.42812,
+            "score_after_pre_rerank": 0.531058
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S2_N28_A",
+          "score": 1.0,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "every commissioned officer in the Army, Navy or Air Force;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery commissioned officer in the Army, Navy or Air Force;",
+          "keywords": [
+            "commissioned",
+            "officer",
+            "army",
+            "navy",
+            "force",
+            "definitions",
+            "preliminary"
+          ],
+          "legal_concepts": [
+            "public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "public servant"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.05263157894736842,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "definitions",
+                "source": "keyword",
+                "similarity": 0.9153,
+                "weighted_score": 0.6865
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.9086,
+                "weighted_score": 0.6814
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "force",
+                "source": "keyword",
+                "similarity": 0.8684,
+                "weighted_score": 0.6513
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "commissioned",
+                "source": "keyword",
+                "similarity": 0.856,
+                "weighted_score": 0.642
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "public servant",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S2_N28_D",
+          "score": 0.998423,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "every assessor or member of a panchayat assisting a Court or public servant;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery assessor or member of a panchayat assisting a Court or public servant;",
+          "keywords": [
+            "assessor",
+            "member",
+            "panchayat",
+            "assisting",
+            "court",
+            "public",
+            "servant",
+            "definitions",
+            "preliminary"
+          ],
+          "legal_concepts": [
+            "public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "public servant"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6385167837142944,
+            "original:bm25": 0.17293142387209298,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9988551753529534
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "assisting",
+                "source": "keyword",
+                "similarity": 0.9237,
+                "weighted_score": 0.6928
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "definitions",
+                "source": "keyword",
+                "similarity": 0.9153,
+                "weighted_score": 0.6865
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.9086,
+                "weighted_score": 0.6814
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "public servant",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.998855,
+            "score_after_pre_rerank": 0.999061
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S2_N28_H",
+          "score": 0.964715,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "every officer whose duty it is, as such officer, to take, receive, keep or expend any property on behalf of the Government, or to make any survey, assessment or contract on behalf of the Government, or to execute any revenue-process, or to investigate, or to report, on any matter affecting the pecuniary interests of the Government, or to make, authenticate or keep any document relating to the pecuniary interests of the Government, or to prevent the infraction of any law for the protection of the pecuniary interests of the Government;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery officer whose duty it is, as such officer, to take, receive, keep or expend any property on behalf of the Government, or to make any survey, assessment or contract on behalf of the Government, or to execute any revenue-process, or to investigate, or to report, on any matter affecting the pecuniary interests of the Government, or to make, authenticate or keep any document relating to the pecuniary interests of the Government, or to prevent the infraction of any law for the protection of the pecuniary interests of the Government;",
+          "keywords": [
+            "government",
+            "pecuniary",
+            "interests",
+            "officer",
+            "keep",
+            "behalf",
+            "make",
+            "duty",
+            "take",
+            "receive",
+            "public servant",
+            "government duties"
+          ],
+          "legal_concepts": [
+            "definition of public servant",
+            "government officer"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6186022758483887,
+            "original:semrank_pre_rerank": 0.9732,
+            "semrank_pre_rerank": 0.9732
+          },
+          "query_scores": {
+            "original": 0.9060837353634243
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "score": 0.9732,
+            "best_similarity": 0.9732,
+            "best_concept": "definition of public servant",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "definition of public servant",
+                "source": "legal_concept",
+                "similarity": 0.9732,
+                "weighted_score": 0.9732
+              },
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "government officer",
+                "source": "legal_concept",
+                "similarity": 0.8994,
+                "weighted_score": 0.8994
+              },
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "take",
+                "source": "keyword",
+                "similarity": 0.8912,
+                "weighted_score": 0.6684
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "duty",
+                "source": "keyword",
+                "similarity": 0.8886,
+                "weighted_score": 0.6664
+              }
+            ],
+            "pre_rerank_score": 0.9732,
+            "score_before_pre_rerank": 0.906084,
+            "score_after_pre_rerank": 0.918165
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S2_N28_B",
+          "score": 0.958823,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "every Judge including any person empowered by law to discharge, whether by himself or as a member of any body of persons, any adjudicatory functions;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery Judge including any person empowered by law to discharge, whether by himself or as a member of any body of persons, any adjudicatory functions;",
+          "keywords": [
+            "judge",
+            "including",
+            "empowered",
+            "discharge",
+            "whether",
+            "himself",
+            "member",
+            "body",
+            "adjudicatory",
+            "functions"
+          ],
+          "legal_concepts": [
+            "public servant",
+            "judge"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "public servant"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.970100292133732
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "judge",
+                "source": "legal_concept",
+                "similarity": 0.8787,
+                "weighted_score": 0.8787
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "whether",
+                "source": "keyword",
+                "similarity": 0.9062,
+                "weighted_score": 0.6797
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "including",
+                "source": "keyword",
+                "similarity": 0.89,
+                "weighted_score": 0.6675
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "empowered",
+                "source": "keyword",
+                "similarity": 0.8782,
+                "weighted_score": 0.6586
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "public servant",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.9701,
+            "score_after_pre_rerank": 0.975482
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S2_N28_C",
+          "score": 0.953254,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "every officer of a Court including a liquidator, receiver or commissioner whose duty it is, as such officer, to investigate or report on any matter of law or fact, or to make, authenticate, or keep any document, or to take charge or dispose of any property, or to execute any judicial process, or to administer any oath, or to interpret, or to preserve order in the Court, and every person specially authorised by a Court to perform any of such duties;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery officer of a Court including a liquidator, receiver or commissioner whose duty it is, as such officer, to investigate or report on any matter of law or fact, or to make, authenticate, or keep any document, or to take charge or dispose of any property, or to execute any judicial process, or to administer any oath, or to interpret, or to preserve order in the Court, and every person specially authorised by a Court to perform any of such duties;",
+          "keywords": [
+            "court",
+            "officer",
+            "including",
+            "liquidator",
+            "receiver",
+            "commissioner",
+            "duty",
+            "investigate",
+            "report",
+            "public servant",
+            "court officer"
+          ],
+          "legal_concepts": [
+            "definition of public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.625643789768219,
+            "original:semrank_pre_rerank": 0.9732,
+            "semrank_pre_rerank": 0.9732
+          },
+          "query_scores": {
+            "original": 0.8998290805834932
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "score": 0.9732,
+            "best_similarity": 0.9732,
+            "best_concept": "definition of public servant",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "definition of public servant",
+                "source": "legal_concept",
+                "similarity": 0.9732,
+                "weighted_score": 0.9732
+              },
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 0.8913,
+                "weighted_score": 0.6685
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "investigate",
+                "source": "keyword",
+                "similarity": 0.8901,
+                "weighted_score": 0.6676
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "including",
+                "source": "keyword",
+                "similarity": 0.89,
+                "weighted_score": 0.6675
+              }
+            ],
+            "pre_rerank_score": 0.9732,
+            "score_before_pre_rerank": 0.899829,
+            "score_after_pre_rerank": 0.913036
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S2_N28_EXP1_B",
+          "score": 0.913564,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "every person who is in actual possession of the situation of a public servant, whatever legal defect there may be in his right to hold that situation is a public servant;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—\nevery person who is in actual possession of the situation of a public servant, whatever legal defect there may be in his right to hold that situation is a public servant;",
+          "keywords": [
+            "situation",
+            "public",
+            "servant",
+            "actual",
+            "possession",
+            "whatever",
+            "defect",
+            "there",
+            "right"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6142608523368835,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.8696377321842124
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "servant",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "right",
+                "source": "keyword",
+                "similarity": 0.9019,
+                "weighted_score": 0.6765
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "there",
+                "source": "keyword",
+                "similarity": 0.8934,
+                "weighted_score": 0.6701
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "actual",
+                "source": "keyword",
+                "similarity": 0.8851,
+                "weighted_score": 0.6638
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "situation",
+                "source": "keyword",
+                "similarity": 0.8838,
+                "weighted_score": 0.6628
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.869638,
+            "score_after_pre_rerank": 0.848103
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S2_N28",
+          "score": 0.633379,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 2,
+          "citation": "Section 2",
+          "text": "“public servant” means a person falling under any of the descriptions, namely:—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 2: Definitions.\n“public servant” means a person falling under any of the descriptions, namely:—",
+          "keywords": [
+            "public",
+            "servant",
+            "means",
+            "falling",
+            "descriptions",
+            "namely",
+            "definitions",
+            "preliminary"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6179417371749878,
+            "original:bm25": 0.09220613162010138,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.6672834505966677
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "servant",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "namely",
+                "source": "keyword",
+                "similarity": 0.9281,
+                "weighted_score": 0.6961
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "definitions",
+                "source": "keyword",
+                "similarity": 0.9153,
+                "weighted_score": 0.6865
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.9086,
+                "weighted_score": 0.6814
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "means",
+                "source": "keyword",
+                "similarity": 0.8846,
+                "weighted_score": 0.6634
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.667283,
+            "score_after_pre_rerank": 0.682172
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S132_BODY",
+          "score": 0.397074,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 132,
+          "citation": "Section 132",
+          "text": "Whoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 132: Assault or criminal force to deter public servant from discharge of his duty.\nWhoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.",
+          "keywords": [
+            "public",
+            "servant",
+            "duty",
+            "criminal",
+            "force",
+            "intent",
+            "deter",
+            "done",
+            "discharge",
+            "assault",
+            "criminal force",
+            "public servant"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "public servant"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.5621995332967176
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "assault",
+                "source": "legal_concept",
+                "similarity": 0.8148,
+                "weighted_score": 0.8148
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "criminal force",
+                "source": "legal_concept",
+                "similarity": 0.7995,
+                "weighted_score": 0.7995
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "duty",
+                "source": "keyword",
+                "similarity": 0.8886,
+                "weighted_score": 0.6664
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "public servant",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.5622,
+            "score_after_pre_rerank": 0.641004
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S216_BODY",
+          "score": 0.239704,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+          "section_number": 216,
+          "citation": "Section 216",
+          "text": "Whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. False information, with intent to cause public servant to use his lawful power to injury of another person.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 13: OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS\nSection 216: False statement on oath or affirmation to public servant or person authorised to administer\nWhoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. False information, with intent to cause public servant to use his lawful power to injury of another person.",
+          "keywords": [
+            "public",
+            "servant",
+            "false",
+            "oath",
+            "affirmation",
+            "subject",
+            "authorised",
+            "administer",
+            "statement",
+            "either",
+            "false statement",
+            "public servant"
+          ],
+          "legal_concepts": [
+            "false statement on oath",
+            "public servant"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "public servant"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4479296565340257
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "false statement on oath",
+                "source": "legal_concept",
+                "similarity": 0.7536,
+                "weighted_score": 0.7536
+              },
+              {
+                "query_concept": "servant",
+                "chunk_concept": "servant",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "administer",
+                "source": "keyword",
+                "similarity": 0.8969,
+                "weighted_score": 0.6727
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "subject",
+                "source": "keyword",
+                "similarity": 0.8946,
+                "weighted_score": 0.671
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "public servant",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.44793,
+            "score_after_pre_rerank": 0.547302
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S200_BODY",
+          "score": 0.212423,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+          "section_number": 200,
+          "citation": "Section 200",
+          "text": "Whoever, being in charge of a hospital, public or private, whether run by the Central Government, the State Government, local bodies or any other person, contravenes the provisions of section 397 of the Bharatiya Nagarik Suraksha Sanhita, 2023, shall be punished with imprisonment for a term which may extend to one year, or with fine, or with both. Public servant framing an incorrect document with intent to cause injury.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 12: OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS\nSection 200: Punishment for non-treatment of victim.\nWhoever, being in charge of a hospital, public or private, whether run by the Central Government, the State Government, local bodies or any other person, contravenes the provisions of section 397 of the Bharatiya Nagarik Suraksha Sanhita, 2023, shall be punished with imprisonment for a term which may extend to one year, or with fine, or with both. Public servant framing an incorrect document with intent to cause injury.",
+          "keywords": [
+            "public",
+            "government",
+            "whoever",
+            "charge",
+            "hospital",
+            "private",
+            "whether",
+            "central",
+            "state",
+            "local",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "public servant",
+            "imprisonment",
+            "fine"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "public servant"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6289058327674866,
+            "original:bm25": 0.26821603146157347,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.42812009519896593
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "public servant",
+              "bharatiya nyaya sanhita",
+              "servant",
+              "under",
+              "bns",
+              "who is a public servant under bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "public servant",
+                "chunk_concept": "public servant",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "fine",
+                "source": "legal_concept",
+                "similarity": 0.8911,
+                "weighted_score": 0.8911
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.8285,
+                "weighted_score": 0.8285
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "whether",
+                "source": "keyword",
+                "similarity": 0.9062,
+                "weighted_score": 0.6797
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "state",
+                "source": "keyword",
+                "similarity": 0.8995,
+                "weighted_score": 0.6747
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "public servant",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.42812,
+            "score_after_pre_rerank": 0.531058
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    },
+    "phase11": {
+      "answer_type": "definition",
+      "support_status": "supported",
+      "confidence": {
+        "score": 0.98,
+        "label": "high"
+      },
+      "final_answer": "A public servant under the Bharatiya Nyaya Sanhita, 2023, includes individuals such as commissioned officers in the Army, Navy, or Air Force.",
+      "summary_answer": "A public servant under the Bharatiya Nyaya Sanhita, 2023, includes individuals such as commissioned officers in the Army, Navy, or Air Force.",
+      "detailed_answer": "According to Section 2(28) of the Bharatiya Nyaya Sanhita, 2023, a 'public servant' is defined as a person who falls under specific descriptions, including every commissioned officer in the Army, Navy, or Air Force as stated in Section 2(28)(a). This definition establishes the framework for identifying public servants within the context of the law.",
+      "citations": [
+        "Section 2(28), Bharatiya Nyaya Sanhita, 2023",
+        "Section 2(28)(a), Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "matched_sections": [
+        "Section 2",
+        "Section 132",
+        "Section 216",
+        "Section 200"
+      ],
+      "missing_sections": [],
+      "missing_from_corpus": [],
+      "selected_chunk_ids": [
+        "chunk__node__BNS_S2_N28",
+        "chunk__node__BNS_S2_N28_A"
+      ],
+      "warnings": [],
+      "structured_reasoning": {
+        "base_concept": "",
+        "selected_section": "Section 2",
+        "selection_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "overrides_score_selection": false,
+        "uncertainty": "low",
+        "uncertainty_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "alternative_sections": [
+          "Section 132",
+          "Section 216",
+          "Section 200"
+        ],
+        "sections_analyzed": [
+          {
+            "section": "Section 2",
+            "role": "retrieved_evidence",
+            "condition_summary": "every commissioned officer in the Army, Navy or Air Force;",
+            "condition_match_score": 1.0,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "public servant ~ public servant",
+              "under ~ definitions",
+              "under ~ preliminary",
+              "under ~ force",
+              "under ~ commissioned"
+            ],
+            "raw_retrieval_score": 1.0,
+            "hit_count": 2,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 132",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything...",
+            "condition_match_score": 0.397074,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "public servant ~ public servant",
+              "under ~ assault",
+              "under ~ criminal force",
+              "servant ~ servant",
+              "servant ~ duty"
+            ],
+            "raw_retrieval_score": 0.397074,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 216",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching...",
+            "condition_match_score": 0.239704,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "public servant ~ public servant",
+              "servant ~ false statement on oath",
+              "servant ~ servant",
+              "under ~ administer",
+              "under ~ subject"
+            ],
+            "raw_retrieval_score": 0.239704,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 200",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever, being in charge of a hospital, public or private, whether run by the Central Government, the State Government, local bodies or any other person, contravenes the provisions of section 397 of the Bharatiya Nagarik Suraksha Sanhita, 2023, shall be...",
+            "condition_match_score": 0.212423,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "public servant ~ public servant",
+              "under ~ fine",
+              "under ~ imprisonment",
+              "under ~ whether",
+              "under ~ state"
+            ],
+            "raw_retrieval_score": 0.212423,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          }
+        ]
+      },
+      "validation": {
+        "requested_sections": [],
+        "present_in_corpus": [],
+        "retrieved_exact_matches": [],
+        "missing_from_corpus": [],
+        "intent_alignment": "strong",
+        "intent_notes": [
+          "Lookup intent is anchored by a direct base legal chunk."
+        ],
+        "answer_verified": true,
+        "verification_issues": [],
+        "llm_answer_verified": true,
+        "llm_verification_issues": [],
+        "completeness": "complete",
+        "guardrail_grounding_strength": 1.0,
+        "repaired": false,
+        "fallback_used": false
+      },
+      "evidence": {
+        "primary_chunk_id": "chunk__node__BNS_S2_N28",
+        "primary_chunk_type": "subsection",
+        "primary_section": "Section 2",
+        "primary_section_title": "Definitions.",
+        "related_chunk_ids": [
+          "chunk__node__BNS_S2_N28_A"
+        ],
+        "top_sections": [
+          {
+            "section": "Section 2",
+            "section_title": "Definitions.",
+            "hit_count": 2,
+            "best_score": 1.0,
+            "chunk_types": {
+              "subsection": 1,
+              "clause": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.5
+          },
+          {
+            "section": "Section 132",
+            "section_title": "Assault or criminal force to deter public servant from discharge of his duty.",
+            "hit_count": 1,
+            "best_score": 0.397074,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.5
+          },
+          {
+            "section": "Section 216",
+            "section_title": "False statement on oath or affirmation to public servant or person authorised to administer",
+            "hit_count": 1,
+            "best_score": 0.239704,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.5
+          },
+          {
+            "section": "Section 200",
+            "section_title": "Punishment for non-treatment of victim.",
+            "hit_count": 1,
+            "best_score": 0.212423,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.5
+          }
+        ],
+        "llm_evidence": [
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S2_N28",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": "2",
+            "citation": "Section 2(28), Bharatiya Nyaya Sanhita, 2023",
+            "text": "“public servant” means a person falling under any of the descriptions, namely:—"
+          },
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S2_N28_A",
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": "2",
+            "citation": "Section 2(28)(a), Bharatiya Nyaya Sanhita, 2023",
+            "text": "every commissioned officer in the Army, Navy or Air Force;"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S132_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": "132",
+            "citation": "Section 132 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever assaults or uses criminal force to any person being a public servant in the execution of his duty as such public servant, or with intent to prevent or deter that person from discharging his duty as such public servant, or in consequence of anything done or attempted to be done by such person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation."
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S216_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS",
+            "section_number": "216",
+            "citation": "Section 216 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever, being legally bound by an oath or affirmation to state the truth on any subject to any public servant or other person authorised by law to administer such oath or affirmation, makes, to such public servant or other person as aforesaid, touching that subject, any statement which is false, and which he either knows or believes to be false or does not believe to be true, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. False information, with intent to cause public servant to use his lawful power to injury of another person."
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S200_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+            "section_number": "200",
+            "citation": "Section 200 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever, being in charge of a hospital, public or private, whether run by the Central Government, the State Government, local bodies or any other person, contravenes the provisions of section 397 of the Bharatiya Nagarik Suraksha Sanhita, 2023, shall be punished with imprisonment for a term which may extend to one year, or with fine, or with both. Public servant framing an incorrect document with intent to cause injury."
+          }
+        ]
+      },
+      "llm_generation": {
+        "enabled": true,
+        "used": true,
+        "model": "gpt-4o-mini",
+        "reasoning_trace": [],
+        "caution_notes": [],
+        "error": null,
+        "repaired": false,
+        "fallback_used": false
+      }
+    }
+  }
+]

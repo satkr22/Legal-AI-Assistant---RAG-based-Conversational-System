@@ -1,0 +1,262 @@
+{
+  "query_id": "Q034",
+  "query": "What is the punishment for rape?",
+  "query_type": "punishment",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "64"
+  ],
+  "acceptable_sections": [
+    "65"
+  ],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "64",
+    "64",
+    "65",
+    "65",
+    "64"
+  ],
+  "candidate_sections_at_10": [
+    "64",
+    "64",
+    "65",
+    "65",
+    "64",
+    "64",
+    "64",
+    "64",
+    "64",
+    "64"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "64",
+    "64",
+    "65",
+    "65"
+  ],
+  "cited_sections": [
+    "65",
+    "64"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.3333,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "64"
+    ],
+    "acceptable_hits": [
+      "65"
+    ],
+    "required_or_acceptable_hits": [
+      "64",
+      "65"
+    ],
+    "support_precision_at_k": 1.0,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": []
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.125,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "64"
+    ],
+    "acceptable_hits": [
+      "65"
+    ],
+    "required_or_acceptable_hits": [
+      "64",
+      "65"
+    ],
+    "support_precision_at_k": 1.0,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": []
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.5,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "64"
+    ],
+    "acceptable_hits": [
+      "65"
+    ],
+    "required_or_acceptable_hits": [
+      "64",
+      "65"
+    ],
+    "support_precision_at_k": 1.0,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.5,
+    "required_points_matched": 1,
+    "required_points_total": 2,
+    "answer_completeness_score": 0.5,
+    "soft_answer_score": 0.875,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 3.0,
+    "forbidden_contradiction_skips": [
+      {
+        "point": "The minimum punishment for rape is five years.",
+        "sentence": "Under the Bharatiya Nyaya Sanhita, 2023, the punishment for committing rape is as follows: For general cases, the offender shall face rigorous imprisonment for a term not less than ten years, which may extend to life imprisonment, along with a fine (Section 64(1)).",
+        "overlap": 0.6,
+        "threshold": 0.9,
+        "matched_terms": [
+          "punishment",
+          "rape",
+          "years"
+        ],
+        "reason": "forbidden point asserts a fixed minimum, but answer sentence is conditional or alternative"
+      },
+      {
+        "point": "The minimum punishment for rape is five years.",
+        "sentence": "If the victim is under sixteen years of age, the punishment increases to a minimum of twenty years to life imprisonment, with a fine to cover medical expenses and rehabilitation (Section 65(1)).",
+        "overlap": 0.6,
+        "threshold": 0.9,
+        "matched_terms": [
+          "minimum",
+          "punishment",
+          "years"
+        ],
+        "reason": "forbidden point asserts a fixed minimum, but answer sentence is conditional or alternative"
+      },
+      {
+        "point": "The minimum punishment for rape is five years.",
+        "sentence": "For victims under twelve years of age, the punishment is also a minimum of twenty years to life imprisonment, and may include death, along with a fine (Section 65(2)).",
+        "overlap": 0.6,
+        "threshold": 0.9,
+        "matched_terms": [
+          "minimum",
+          "punishment",
+          "years"
+        ],
+        "reason": "forbidden point asserts a fixed minimum, but answer sentence is conditional or alternative"
+      },
+      {
+        "point": "The punishment for rape is always life imprisonment.",
+        "sentence": "Under the Bharatiya Nyaya Sanhita, 2023, the punishment for committing rape is as follows: For general cases, the offender shall face rigorous imprisonment for a term not less than ten years, which may extend to life imprisonment, along with a fine (Section 64(1)).",
+        "overlap": 0.8,
+        "threshold": 0.9,
+        "matched_terms": [
+          "imprisonment",
+          "life",
+          "punishment",
+          "rape"
+        ],
+        "reason": "forbidden point is absolute imprisonment claim, but answer sentence gives alternatives or limits"
+      },
+      {
+        "point": "The punishment for rape is always life imprisonment.",
+        "sentence": "If the victim is under sixteen years of age, the punishment increases to a minimum of twenty years to life imprisonment, with a fine to cover medical expenses and rehabilitation (Section 65(1)).",
+        "overlap": 0.6,
+        "threshold": 0.9,
+        "matched_terms": [
+          "imprisonment",
+          "life",
+          "punishment"
+        ],
+        "reason": "forbidden point is absolute imprisonment claim, but answer sentence gives alternatives or limits"
+      },
+      {
+        "point": "The punishment for rape is always life imprisonment.",
+        "sentence": "For victims under twelve years of age, the punishment is also a minimum of twenty years to life imprisonment, and may include death, along with a fine (Section 65(2)).",
+        "overlap": 0.6,
+        "threshold": 0.9,
+        "matched_terms": [
+          "imprisonment",
+          "life",
+          "punishment"
+        ],
+        "reason": "forbidden point is absolute imprisonment claim, but answer sentence gives alternatives or limits"
+      }
+    ],
+    "required_point_details": [
+      {
+        "point": "Section 64(1) provides that whoever commits rape shall be punished with rigorous imprisonment for not less than ten years, which may extend to imprisonment for life, and shall also be liable to fine.",
+        "matched": true,
+        "overlap": 0.7143,
+        "matched_terms": [
+          "extend",
+          "fine",
+          "imprisonment",
+          "less",
+          "life",
+          "rape",
+          "rigorous",
+          "ten",
+          "than",
+          "years"
+        ]
+      },
+      {
+        "point": "Section 64(2) provides enhanced punishment (not less than ten years, extending to imprisonment for life or death) in aggravated circumstances such as when committed by a police officer, public servant, armed forces member, a person in a position of trust, or on a woman with disability.",
+        "matched": false,
+        "overlap": 0.3333,
+        "matched_terms": [
+          "death",
+          "imprisonment",
+          "less",
+          "life",
+          "punishment",
+          "ten",
+          "than",
+          "years"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "64",
+      "65"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "low_required_point_coverage"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 5.6289,
+    "phase_9_10": 21.5861,
+    "phase_11": 17.4567,
+    "phase_12_13": 0.0003,
+    "total": 44.672
+  },
+  "final_answer_preview": "Under the Bharatiya Nyaya Sanhita, 2023, the punishment for committing rape is as follows: For general cases, the offender shall face rigorous imprisonment for a term not less than ten years, which may extend to life imprisonment, along with a fine (Section 64(1)). If the victim is under sixteen years of age, the punishment increases to a minimum of twenty years to life imprisonment, with a fine to cover medical expenses and rehabilitation (Section 65(1)). For victims under twelve years of age, the punishment is also a minimum of twenty years to life imprisonment, and may include death, along with a fine (Section 65(2)).",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/034_Q034"
+}

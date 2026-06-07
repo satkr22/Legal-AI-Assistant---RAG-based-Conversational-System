@@ -1,0 +1,237 @@
+{
+  "query_id": "Q032",
+  "query": "What is the punishment for culpable homicide not amounting to murder?",
+  "query_type": "punishment",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "105"
+  ],
+  "acceptable_sections": [
+    "100"
+  ],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "105",
+    "104",
+    "110",
+    "3",
+    "110"
+  ],
+  "candidate_sections_at_10": [
+    "105",
+    "104",
+    "110",
+    "3",
+    "110",
+    "106",
+    "106",
+    "110",
+    "101",
+    "101"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "105",
+    "104",
+    "110",
+    "3",
+    "110"
+  ],
+  "cited_sections": [
+    "105",
+    "110"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "105"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "105"
+    ],
+    "support_precision_at_k": 0.25,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "104",
+      "110",
+      "3",
+      "110"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "105"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "105"
+    ],
+    "support_precision_at_k": 0.1667,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "104",
+      "110",
+      "3",
+      "110",
+      "106",
+      "106",
+      "110",
+      "101",
+      "101"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "105"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "105"
+    ],
+    "support_precision_at_k": 0.25,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "104",
+      "110",
+      "3",
+      "110"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 1.0,
+    "required_points_matched": 2,
+    "required_points_total": 2,
+    "answer_completeness_score": 1.0,
+    "soft_answer_score": 0.825,
+    "forbidden_claim_rate": 0.5,
+    "forbidden_claims_matched": 1,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.5,
+    "forbidden_contradiction_skips": [
+      {
+        "point": "The punishment is imprisonment for a minimum of ten years in all cases.",
+        "sentence": "If the act is done with knowledge that it is likely to cause death but without intention, the punishment is imprisonment for a term that may extend to ten years and a fine.",
+        "overlap": 0.5714,
+        "threshold": 0.9,
+        "matched_terms": [
+          "imprisonment",
+          "punishment",
+          "ten",
+          "years"
+        ],
+        "reason": "forbidden point asserts a fixed minimum, but answer sentence is conditional or alternative"
+      }
+    ],
+    "required_point_details": [
+      {
+        "point": "Section 105 provides that if the act causing death is done with intention to cause death or bodily injury likely to cause death, the punishment is imprisonment for life, or imprisonment of either description for not less than five years but up to ten years, and fine.",
+        "matched": true,
+        "overlap": 0.9048,
+        "matched_terms": [
+          "105",
+          "act",
+          "bodily",
+          "but",
+          "cause",
+          "causing",
+          "death",
+          "fine",
+          "five",
+          "imprisonment",
+          "injury",
+          "intention"
+        ]
+      },
+      {
+        "point": "If the act causing death is done with knowledge that it is likely to cause death but without intention to cause death, the punishment is imprisonment of either description up to ten years and fine.",
+        "matched": true,
+        "overlap": 0.8667,
+        "matched_terms": [
+          "act",
+          "but",
+          "cause",
+          "causing",
+          "death",
+          "fine",
+          "imprisonment",
+          "intention",
+          "knowledge",
+          "likely",
+          "punishment",
+          "ten"
+        ]
+      }
+    ],
+    "forbidden_claim_details": [
+      {
+        "point": "Culpable homicide not amounting to murder is punished with death.",
+        "matched": true,
+        "overlap": 1.0,
+        "matched_terms": [
+          "amounting",
+          "culpable",
+          "death",
+          "homicide",
+          "murder",
+          "punished"
+        ],
+        "sentence": "According to Section 105 of the Bharatiya Nyaya Sanhita, 2023, whoever commits culpable homicide not amounting to murder shall be punished with imprisonment for life, or imprisonment for a term not less than five years but which may extend to ten years, and shall also be liable to fine if the act is done with the intention of causing death or causing bodily injury likely to cause death.",
+        "threshold": 0.9
+      }
+    ]
+  },
+  "grounding": {
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "105"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [
+      "110"
+    ],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.7767,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "forbidden_claim_detected"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 5.7026,
+    "phase_9_10": 27.8925,
+    "phase_11": 19.3685,
+    "phase_12_13": 0.0003,
+    "total": 52.9639
+  },
+  "final_answer_preview": "According to Section 105 of the Bharatiya Nyaya Sanhita, 2023, whoever commits culpable homicide not amounting to murder shall be punished with imprisonment for life, or imprisonment for a term not less than five years but which may extend to ten years, and shall also be liable to fine if the act is done with the intention of causing death or causing bodily injury likely to cause death. If the act is done with knowledge that it is likely to cause death but without intention, the punishment is imprisonment for a term that may extend to ten years and a fine. Additionally, Section 110 outlines that if an act is done with intention or knowledge that could lead to culpable homicide not amounting to murder, the punishment can be imprisonment for up to three years or a fine, or both, and if hurt is caused, the punishment can extend to seven years.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/032_Q032"
+}

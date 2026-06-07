@@ -1,0 +1,60 @@
+{
+  "query_id": "Q053",
+  "query": "I injured someone while trying to stop a theft. Can private defence apply?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "35",
+      "subsection": null,
+      "label": "Section 35",
+      "role": "right of private defence extends to property against theft",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "34",
+      "label": "Section 34",
+      "reason": "foundational provision for private defence"
+    },
+    {
+      "act": "BNS",
+      "section": "42",
+      "label": "Section 42",
+      "reason": "right of private defence of property does not extend to causing death in non-specified cases"
+    },
+    {
+      "act": "BNS",
+      "section": "37",
+      "label": "Section 37",
+      "reason": "sets restrictions on the right of private defence"
+    },
+    {
+      "act": "BNS",
+      "section": "41",
+      "label": "Section 41",
+      "reason": "private defence of property extends to causing death only in specified cases"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 35 provides the right to defend property against theft, which includes causing harm to the offender.",
+      "The harm caused must not exceed what is necessary and must remain within the restrictions of Section 37.",
+      "The right of private defence of property does not ordinarily extend to causing death unless the act falls under the categories in Section 41 (robbery, house-breaking after sunset, etc.)."
+    ],
+    "optional_points": [
+      "If the theft did not involve a threat to life, the right may not extend to causing grievous hurt or death."
+    ],
+    "forbidden_points": [
+      "Private defence can never apply to stopping a theft.",
+      "Any injury caused while stopping a theft is automatically excused."
+    ]
+  },
+  "notes": "Scenario query. Private defence of property applies but with restrictions."
+}

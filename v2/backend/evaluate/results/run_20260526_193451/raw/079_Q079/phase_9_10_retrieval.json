@@ -1,0 +1,3154 @@
+[
+  {
+    "query": "What is the difference between hurt and grievous hurt?",
+    "phase8": {
+      "query": "What is the difference between hurt and grievous hurt?",
+      "intent": {
+        "primary": "comparison",
+        "secondary": []
+      },
+      "concepts": [
+        "hurt",
+        "grievous hurt"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": true,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.4695,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.5,
+        "structure_validity": 1.0,
+        "overall": 0.6878
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is the difference between hurt and grievous hurt?",
+          "targets": [],
+          "concepts": [
+            "hurt",
+            "grievous hurt"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S116_H",
+            "score": 1.0,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 116,
+            "citation": "Section 116",
+            "text": "Any hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits. Voluntarily causing grievous hurt.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 116: Grievous hurt.\nAny hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits. Voluntarily causing grievous hurt.",
+            "keywords": [
+              "hurt",
+              "grievous",
+              "endangers",
+              "life",
+              "causes",
+              "sufferer",
+              "during",
+              "space",
+              "fifteen",
+              "days",
+              "severe",
+              "bodily",
+              "pain"
+            ],
+            "legal_concepts": [
+              "grievous hurt",
+              "voluntary act"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "grievous hurt"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7730013132095337,
+              "bm25": 0.3474284996557617,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "hurt",
+                "grievous hurt",
+                "difference",
+                "between",
+                "grievous",
+                "what is the difference between hurt and grievous hurt"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "grievous hurt",
+                  "chunk_concept": "grievous hurt",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "voluntary act",
+                  "source": "legal_concept",
+                  "similarity": 0.8052,
+                  "weighted_score": 0.8052
+                },
+                {
+                  "query_concept": "grievous",
+                  "chunk_concept": "grievous",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "hurt",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "pain",
+                  "source": "keyword",
+                  "similarity": 0.9452,
+                  "weighted_score": 0.7089
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "grievous hurt",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S117_N1",
+            "score": 0.841772,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 117,
+            "citation": "Section 117",
+            "text": "Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 117: Voluntarily causing grievous hurt.\nWhoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”.",
+            "keywords": [
+              "hurt",
+              "grievous",
+              "voluntarily",
+              "cause",
+              "causes",
+              "whoever",
+              "intends",
+              "knows",
+              "himself",
+              "likely",
+              "grievous hurt",
+              "voluntary causation"
+            ],
+            "legal_concepts": [
+              "causing grievous hurt",
+              "voluntary act"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6986396908760071,
+              "bm25": 0.8858111794617051,
+              "semrank": 0.9735159873962402,
+              "semrank_pre_rerank": 0.9735
+            },
+            "query_scores": {
+              "original": 0.9735159873962402
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9735,
+              "query_concepts": [
+                "hurt",
+                "grievous hurt",
+                "difference",
+                "between",
+                "grievous",
+                "what is the difference between hurt and grievous hurt"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "grievous hurt",
+                  "chunk_concept": "causing grievous hurt",
+                  "source": "legal_concept",
+                  "similarity": 0.9735,
+                  "weighted_score": 0.9735
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "voluntary act",
+                  "source": "legal_concept",
+                  "similarity": 0.8052,
+                  "weighted_score": 0.8052
+                },
+                {
+                  "query_concept": "grievous",
+                  "chunk_concept": "grievous",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "grievous hurt",
+                  "chunk_concept": "grievous hurt",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "hurt",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 0.9735,
+              "best_similarity": 0.9735,
+              "best_concept": "causing grievous hurt",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9735,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.99523
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S117_N1_EXP1",
+            "score": 0.678269,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 117,
+            "citation": "Section 117",
+            "text": "A person is not said voluntarily to cause grievous hurt except when he both causes grievous hurt and intends or knows himself to be likely to cause grievous hurt. But he is said voluntarily to cause grievous hurt, if intending or knowing himself to be likely to cause grievous hurt of one kind, he actually causes grievous hurt of another kind.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 117: Voluntarily causing grievous hurt.\nWhoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”.\nA person is not said voluntarily to cause grievous hurt except when he both causes grievous hurt and intends or knows himself to be likely to cause grievous hurt. But he is said voluntarily to cause grievous hurt, if intending or knowing himself to be likely to cause grievous hurt of one kind, he actually causes grievous hurt of another kind.",
+            "keywords": [
+              "grievous",
+              "hurt",
+              "cause",
+              "voluntarily",
+              "said",
+              "causes",
+              "himself",
+              "likely",
+              "kind",
+              "except",
+              "grievous hurt",
+              "voluntary causation"
+            ],
+            "legal_concepts": [
+              "causing grievous hurt",
+              "voluntary act"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.699394702911377,
+              "bm25": 1.0,
+              "semrank": 0.9735159873962402,
+              "semrank_pre_rerank": 0.9735
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9735,
+              "query_concepts": [
+                "hurt",
+                "grievous hurt",
+                "difference",
+                "between",
+                "grievous",
+                "what is the difference between hurt and grievous hurt"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "grievous hurt",
+                  "chunk_concept": "causing grievous hurt",
+                  "source": "legal_concept",
+                  "similarity": 0.9735,
+                  "weighted_score": 0.9735
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "voluntary act",
+                  "source": "legal_concept",
+                  "similarity": 0.8052,
+                  "weighted_score": 0.8052
+                },
+                {
+                  "query_concept": "grievous",
+                  "chunk_concept": "grievous",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "grievous hurt",
+                  "chunk_concept": "grievous hurt",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "hurt",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 0.9735,
+              "best_similarity": 0.9735,
+              "best_concept": "causing grievous hurt",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9735,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.99523
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S117_N1_ILL1",
+            "score": 0.659847,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 117,
+            "citation": "Section 117",
+            "text": "A, intending of knowing himself to be likely permanently to disfigure Z’s face, gives Z a blow which does not permanently disfigure Z’s face, but which causes Z to suffer severe bodily pain for the space of fifteen days. A has voluntarily caused grievous hurt.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 117: Voluntarily causing grievous hurt.\nWhoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”.\nA, intending of knowing himself to be likely permanently to disfigure Z’s face, gives Z a blow which does not permanently disfigure Z’s face, but which causes Z to suffer severe bodily pain for the space of fifteen days. A has voluntarily caused grievous hurt.",
+            "keywords": [
+              "permanently",
+              "disfigure",
+              "face",
+              "voluntarily",
+              "grievous",
+              "hurt",
+              "intending",
+              "knowing",
+              "himself",
+              "likely",
+              "grievous hurt",
+              "voluntary causation"
+            ],
+            "legal_concepts": [
+              "causing grievous hurt",
+              "voluntary act"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.712989330291748,
+              "bm25": 0.611775919838301,
+              "semrank": 0.9735159873962402,
+              "semrank_pre_rerank": 0.9735
+            },
+            "query_scores": {
+              "original": 0.9735159873962402
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9735,
+              "query_concepts": [
+                "hurt",
+                "grievous hurt",
+                "difference",
+                "between",
+                "grievous",
+                "what is the difference between hurt and grievous hurt"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "grievous hurt",
+                  "chunk_concept": "causing grievous hurt",
+                  "source": "legal_concept",
+                  "similarity": 0.9735,
+                  "weighted_score": 0.9735
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "voluntary act",
+                  "source": "legal_concept",
+                  "similarity": 0.8052,
+                  "weighted_score": 0.8052
+                },
+                {
+                  "query_concept": "grievous",
+                  "chunk_concept": "grievous",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "grievous hurt",
+                  "chunk_concept": "grievous hurt",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "hurt",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 0.9735,
+              "best_similarity": 0.9735,
+              "best_concept": "causing grievous hurt",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9735,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.99523
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S116_BODY",
+            "score": 0.566088,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 116,
+            "citation": "Section 116",
+            "text": "The following kinds of hurt only are designated as “grievous”, namely:–",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 116: Grievous hurt.\nThe following kinds of hurt only are designated as “grievous”, namely:–",
+            "keywords": [
+              "hurt",
+              "grievous",
+              "body",
+              "following",
+              "kinds",
+              "only",
+              "designated",
+              "namely",
+              "offences",
+              "affecting",
+              "grievous hurt",
+              "kinds of hurt"
+            ],
+            "legal_concepts": [
+              "definition of grievous hurt"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.6229682582316713,
+              "semrank": 0.9670876264572144,
+              "semrank_pre_rerank": 0.9671
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9671,
+              "query_concepts": [
+                "hurt",
+                "grievous hurt",
+                "difference",
+                "between",
+                "grievous",
+                "what is the difference between hurt and grievous hurt"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "grievous hurt",
+                  "chunk_concept": "definition of grievous hurt",
+                  "source": "legal_concept",
+                  "similarity": 0.9671,
+                  "weighted_score": 0.9671
+                },
+                {
+                  "query_concept": "grievous",
+                  "chunk_concept": "grievous",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "grievous hurt",
+                  "chunk_concept": "grievous hurt",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "hurt",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "kinds of hurt",
+                  "source": "keyword",
+                  "similarity": 0.9575,
+                  "weighted_score": 0.7181
+                }
+              ],
+              "score": 0.9671,
+              "best_similarity": 0.9671,
+              "best_concept": "definition of grievous hurt",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9671,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.994078
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S118_N1",
+            "score": 0.481411,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 118,
+            "citation": "Section 118",
+            "text": "Whoever, except in the case provided for by sub-section (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 118: Voluntarily causing hurt or grievous hurt by dangerous weapons or means.\nWhoever, except in the case provided for by sub-section (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both.",
+            "keywords": [
+              "means",
+              "substance",
+              "hurt",
+              "voluntarily",
+              "instrument",
+              "human",
+              "body",
+              "extend",
+              "whoever",
+              "except",
+              "dangerous weapons"
+            ],
+            "legal_concepts": [
+              "causing hurt",
+              "dangerous weapons",
+              "punishment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.9665178060531616,
+              "semrank_pre_rerank": 0.9665
+            },
+            "query_scores": {
+              "original": 0.9665178060531616
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9665,
+              "query_concepts": [
+                "hurt",
+                "grievous hurt",
+                "difference",
+                "between",
+                "grievous",
+                "what is the difference between hurt and grievous hurt"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "causing hurt",
+                  "source": "legal_concept",
+                  "similarity": 0.9665,
+                  "weighted_score": 0.9665
+                },
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "dangerous weapons",
+                  "source": "legal_concept",
+                  "similarity": 0.8226,
+                  "weighted_score": 0.8226
+                },
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "hurt",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "means",
+                  "source": "keyword",
+                  "similarity": 0.8874,
+                  "weighted_score": 0.6656
+                },
+                {
+                  "query_concept": "between",
+                  "chunk_concept": "extend",
+                  "source": "keyword",
+                  "similarity": 0.871,
+                  "weighted_score": 0.6533
+                }
+              ],
+              "score": 0.9665,
+              "best_similarity": 0.9665,
+              "best_concept": "causing hurt",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9665,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.99397
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S121_N1",
+            "score": 0.469681,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 121,
+            "citation": "Section 121",
+            "text": "Whoever voluntarily causes hurt to any person being a public servant in the discharge of his duty as such public servant, or with intent to prevent or deter that person or any other public servant from discharging his duty as such public servant or in consequence of anything done or attempted to be done by that person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 121: Voluntarily causing hurt or grievous hurt to deter public servant from his duty.\nWhoever voluntarily causes hurt to any person being a public servant in the discharge of his duty as such public servant, or with intent to prevent or deter that person or any other public servant from discharging his duty as such public servant or in consequence of anything done or attempted to be done by that person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both.",
+            "keywords": [
+              "public",
+              "servant",
+              "duty",
+              "hurt",
+              "voluntarily",
+              "discharge",
+              "deter",
+              "done",
+              "whoever",
+              "causes",
+              "public servant"
+            ],
+            "legal_concepts": [
+              "causing hurt",
+              "public servant duty"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.9665178060531616,
+              "semrank_pre_rerank": 0.9665
+            },
+            "query_scores": {
+              "original": 0.9665178060531616
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9665,
+              "query_concepts": [
+                "hurt",
+                "grievous hurt",
+                "difference",
+                "between",
+                "grievous",
+                "what is the difference between hurt and grievous hurt"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "causing hurt",
+                  "source": "legal_concept",
+                  "similarity": 0.9665,
+                  "weighted_score": 0.9665
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "public servant duty",
+                  "source": "legal_concept",
+                  "similarity": 0.7798,
+                  "weighted_score": 0.7798
+                },
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "hurt",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "deter",
+                  "source": "keyword",
+                  "similarity": 0.8647,
+                  "weighted_score": 0.6485
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "causes",
+                  "source": "keyword",
+                  "similarity": 0.8618,
+                  "weighted_score": 0.6463
+                }
+              ],
+              "score": 0.9665,
+              "best_similarity": 0.9665,
+              "best_concept": "causing hurt",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9665,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.99397
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S116_E",
+            "score": 0.464257,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 116,
+            "citation": "Section 116",
+            "text": "Destruction or permanent impairing of the powers of any member or joint;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 116: Grievous hurt.\nDestruction or permanent impairing of the powers of any member or joint;",
+            "keywords": [
+              "destruction",
+              "permanent",
+              "impairing",
+              "powers",
+              "member",
+              "joint",
+              "grievous",
+              "hurt",
+              "offences",
+              "affecting"
+            ],
+            "legal_concepts": [
+              "destruction or permanent impairing of the powers of any member or joint"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7660837173461914,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.7660837173461914
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "hurt",
+                "grievous hurt",
+                "difference",
+                "between",
+                "grievous",
+                "what is the difference between hurt and grievous hurt"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "grievous",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "grievous",
+                  "chunk_concept": "grievous",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "hurt",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "between",
+                  "chunk_concept": "joint",
+                  "source": "keyword",
+                  "similarity": 0.8789,
+                  "weighted_score": 0.6592
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "affecting",
+                  "source": "keyword",
+                  "similarity": 0.8704,
+                  "weighted_score": 0.6528
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "impairing",
+                  "source": "keyword",
+                  "similarity": 0.8583,
+                  "weighted_score": 0.6437
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.91298,
+              "score_after_pre_rerank": 0.883644
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S118_N2",
+            "score": 0.457142,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 118,
+            "citation": "Section 118",
+            "text": "Whoever, except in the case provided for by sub-section (2) of section 122, voluntarily causes grievous hurt by any means referred to in sub–section (1), shall be punished with imprisonment for life, or with imprisonment of either description for a term which shall not be less than one year but which may extend to ten years, and shall also be liable to fine. Voluntarily causing hurt or grievous hurt to extort property, or to constrain to an illegal act.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 118: Voluntarily causing hurt or grievous hurt by dangerous weapons or means.\nWhoever, except in the case provided for by sub-section (2) of section 122, voluntarily causes grievous hurt by any means referred to in sub–section (1), shall be punished with imprisonment for life, or with imprisonment of either description for a term which shall not be less than one year but which may extend to ten years, and shall also be liable to fine. Voluntarily causing hurt or grievous hurt to extort property, or to constrain to an illegal act.",
+            "keywords": [
+              "hurt",
+              "voluntarily",
+              "grievous",
+              "means",
+              "imprisonment",
+              "causing",
+              "whoever",
+              "except",
+              "provided",
+              "grievous hurt",
+              "dangerous weapons"
+            ],
+            "legal_concepts": [
+              "causing grievous hurt",
+              "punishment for grievous hurt"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6818578243255615,
+              "bm25": 0.11159959516532975,
+              "semrank": 0.9735159873962402,
+              "semrank_pre_rerank": 0.9735
+            },
+            "query_scores": {
+              "original": 0.9735159873962402
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9735,
+              "query_concepts": [
+                "hurt",
+                "grievous hurt",
+                "difference",
+                "between",
+                "grievous",
+                "what is the difference between hurt and grievous hurt"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "grievous hurt",
+                  "chunk_concept": "causing grievous hurt",
+                  "source": "legal_concept",
+                  "similarity": 0.9735,
+                  "weighted_score": 0.9735
+                },
+                {
+                  "query_concept": "grievous hurt",
+                  "chunk_concept": "punishment for grievous hurt",
+                  "source": "legal_concept",
+                  "similarity": 0.9626,
+                  "weighted_score": 0.9626
+                },
+                {
+                  "query_concept": "grievous",
+                  "chunk_concept": "grievous",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "grievous hurt",
+                  "chunk_concept": "grievous hurt",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "hurt",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 0.9735,
+              "best_similarity": 0.9735,
+              "best_concept": "causing grievous hurt",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9735,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.99523
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S120_N1",
+            "score": 0.447721,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 120,
+            "citation": "Section 120",
+            "text": "Whoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 120: Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of\nWhoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+            "keywords": [
+              "sufferer",
+              "hurt",
+              "restoration",
+              "voluntarily",
+              "purpose",
+              "interested",
+              "confession",
+              "information",
+              "lead",
+              "property",
+              "extortion"
+            ],
+            "legal_concepts": [
+              "causing hurt",
+              "extortion",
+              "compelling restoration"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.9665178060531616,
+              "semrank_pre_rerank": 0.9665
+            },
+            "query_scores": {
+              "original": 0.9665178060531616
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9665,
+              "query_concepts": [
+                "hurt",
+                "grievous hurt",
+                "difference",
+                "between",
+                "grievous",
+                "what is the difference between hurt and grievous hurt"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "causing hurt",
+                  "source": "legal_concept",
+                  "similarity": 0.9665,
+                  "weighted_score": 0.9665
+                },
+                {
+                  "query_concept": "between",
+                  "chunk_concept": "compelling restoration",
+                  "source": "legal_concept",
+                  "similarity": 0.8518,
+                  "weighted_score": 0.8518
+                },
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "extortion",
+                  "source": "legal_concept",
+                  "similarity": 0.8301,
+                  "weighted_score": 0.8301
+                },
+                {
+                  "query_concept": "hurt",
+                  "chunk_concept": "hurt",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "difference",
+                  "chunk_concept": "information",
+                  "source": "keyword",
+                  "similarity": 0.893,
+                  "weighted_score": 0.6697
+                }
+              ],
+              "score": 0.9665,
+              "best_similarity": 0.9665,
+              "best_concept": "causing hurt",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9665,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.99397
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S116_H",
+          "score": 1.0,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 116,
+          "citation": "Section 116",
+          "text": "Any hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits. Voluntarily causing grievous hurt.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 116: Grievous hurt.\nAny hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits. Voluntarily causing grievous hurt.",
+          "keywords": [
+            "hurt",
+            "grievous",
+            "endangers",
+            "life",
+            "causes",
+            "sufferer",
+            "during",
+            "space",
+            "fifteen",
+            "days",
+            "severe",
+            "bodily",
+            "pain"
+          ],
+          "legal_concepts": [
+            "grievous hurt",
+            "voluntary act"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "grievous hurt"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7730013132095337,
+            "original:bm25": 0.3474284996557617,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "grievous hurt",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "voluntary act",
+                "source": "legal_concept",
+                "similarity": 0.8052,
+                "weighted_score": 0.8052
+              },
+              {
+                "query_concept": "grievous",
+                "chunk_concept": "grievous",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "pain",
+                "source": "keyword",
+                "similarity": 0.9452,
+                "weighted_score": 0.7089
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "grievous hurt",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S117_N1",
+          "score": 0.865483,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 117,
+          "citation": "Section 117",
+          "text": "Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 117: Voluntarily causing grievous hurt.\nWhoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”.",
+          "keywords": [
+            "hurt",
+            "grievous",
+            "voluntarily",
+            "cause",
+            "causes",
+            "whoever",
+            "intends",
+            "knows",
+            "himself",
+            "likely",
+            "grievous hurt",
+            "voluntary causation"
+          ],
+          "legal_concepts": [
+            "causing grievous hurt",
+            "voluntary act"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6986396908760071,
+            "original:bm25": 0.8858111794617051,
+            "original:semrank": 0.9735159873962402,
+            "original:semrank_pre_rerank": 0.9735,
+            "semrank_pre_rerank": 0.9735
+          },
+          "query_scores": {
+            "original": 0.841771963845868
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9735,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "causing grievous hurt",
+                "source": "legal_concept",
+                "similarity": 0.9735,
+                "weighted_score": 0.9735
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "voluntary act",
+                "source": "legal_concept",
+                "similarity": 0.8052,
+                "weighted_score": 0.8052
+              },
+              {
+                "query_concept": "grievous",
+                "chunk_concept": "grievous",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "grievous hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 0.9735,
+            "best_similarity": 0.9735,
+            "best_concept": "causing grievous hurt",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9735,
+            "score_before_pre_rerank": 0.841772,
+            "score_after_pre_rerank": 0.865483
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S117_N1_EXP1",
+          "score": 0.73141,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 117,
+          "citation": "Section 117",
+          "text": "A person is not said voluntarily to cause grievous hurt except when he both causes grievous hurt and intends or knows himself to be likely to cause grievous hurt. But he is said voluntarily to cause grievous hurt, if intending or knowing himself to be likely to cause grievous hurt of one kind, he actually causes grievous hurt of another kind.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 117: Voluntarily causing grievous hurt.\nWhoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”.\nA person is not said voluntarily to cause grievous hurt except when he both causes grievous hurt and intends or knows himself to be likely to cause grievous hurt. But he is said voluntarily to cause grievous hurt, if intending or knowing himself to be likely to cause grievous hurt of one kind, he actually causes grievous hurt of another kind.",
+          "keywords": [
+            "grievous",
+            "hurt",
+            "cause",
+            "voluntarily",
+            "said",
+            "causes",
+            "himself",
+            "likely",
+            "kind",
+            "except",
+            "grievous hurt",
+            "voluntary causation"
+          ],
+          "legal_concepts": [
+            "causing grievous hurt",
+            "voluntary act"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.699394702911377,
+            "original:bm25": 1.0,
+            "original:semrank": 0.9735159873962402,
+            "original:semrank_pre_rerank": 0.9735,
+            "semrank_pre_rerank": 0.9735
+          },
+          "query_scores": {
+            "original": 0.678268521204503
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9735,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "causing grievous hurt",
+                "source": "legal_concept",
+                "similarity": 0.9735,
+                "weighted_score": 0.9735
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "voluntary act",
+                "source": "legal_concept",
+                "similarity": 0.8052,
+                "weighted_score": 0.8052
+              },
+              {
+                "query_concept": "grievous",
+                "chunk_concept": "grievous",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "grievous hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 0.9735,
+            "best_similarity": 0.9735,
+            "best_concept": "causing grievous hurt",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9735,
+            "score_before_pre_rerank": 0.678269,
+            "score_after_pre_rerank": 0.73141
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S116_BODY",
+          "score": 0.63827,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 116,
+          "citation": "Section 116",
+          "text": "The following kinds of hurt only are designated as “grievous”, namely:–",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 116: Grievous hurt.\nThe following kinds of hurt only are designated as “grievous”, namely:–",
+          "keywords": [
+            "hurt",
+            "grievous",
+            "body",
+            "following",
+            "kinds",
+            "only",
+            "designated",
+            "namely",
+            "offences",
+            "affecting",
+            "grievous hurt",
+            "kinds of hurt"
+          ],
+          "legal_concepts": [
+            "definition of grievous hurt"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.6229682582316713,
+            "original:semrank": 0.9670876264572144,
+            "original:semrank_pre_rerank": 0.9671,
+            "semrank_pre_rerank": 0.9671
+          },
+          "query_scores": {
+            "original": 0.5660879493806864
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9671,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "definition of grievous hurt",
+                "source": "legal_concept",
+                "similarity": 0.9671,
+                "weighted_score": 0.9671
+              },
+              {
+                "query_concept": "grievous",
+                "chunk_concept": "grievous",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "grievous hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "kinds of hurt",
+                "source": "keyword",
+                "similarity": 0.9575,
+                "weighted_score": 0.7181
+              }
+            ],
+            "score": 0.9671,
+            "best_similarity": 0.9671,
+            "best_concept": "definition of grievous hurt",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9671,
+            "score_before_pre_rerank": 0.566088,
+            "score_after_pre_rerank": 0.63827
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S118_N1",
+          "score": 0.568727,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 118,
+          "citation": "Section 118",
+          "text": "Whoever, except in the case provided for by sub-section (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 118: Voluntarily causing hurt or grievous hurt by dangerous weapons or means.\nWhoever, except in the case provided for by sub-section (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both.",
+          "keywords": [
+            "means",
+            "substance",
+            "hurt",
+            "voluntarily",
+            "instrument",
+            "human",
+            "body",
+            "extend",
+            "whoever",
+            "except",
+            "dangerous weapons"
+          ],
+          "legal_concepts": [
+            "causing hurt",
+            "dangerous weapons",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9665178060531616,
+            "original:semrank_pre_rerank": 0.9665,
+            "semrank_pre_rerank": 0.9665
+          },
+          "query_scores": {
+            "original": 0.4814112091977828
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9665,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "causing hurt",
+                "source": "legal_concept",
+                "similarity": 0.9665,
+                "weighted_score": 0.9665
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "dangerous weapons",
+                "source": "legal_concept",
+                "similarity": 0.8226,
+                "weighted_score": 0.8226
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "means",
+                "source": "keyword",
+                "similarity": 0.8874,
+                "weighted_score": 0.6656
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.871,
+                "weighted_score": 0.6533
+              }
+            ],
+            "score": 0.9665,
+            "best_similarity": 0.9665,
+            "best_concept": "causing hurt",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9665,
+            "score_before_pre_rerank": 0.481411,
+            "score_after_pre_rerank": 0.568727
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S121_N1",
+          "score": 0.559108,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 121,
+          "citation": "Section 121",
+          "text": "Whoever voluntarily causes hurt to any person being a public servant in the discharge of his duty as such public servant, or with intent to prevent or deter that person or any other public servant from discharging his duty as such public servant or in consequence of anything done or attempted to be done by that person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 121: Voluntarily causing hurt or grievous hurt to deter public servant from his duty.\nWhoever voluntarily causes hurt to any person being a public servant in the discharge of his duty as such public servant, or with intent to prevent or deter that person or any other public servant from discharging his duty as such public servant or in consequence of anything done or attempted to be done by that person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both.",
+          "keywords": [
+            "public",
+            "servant",
+            "duty",
+            "hurt",
+            "voluntarily",
+            "discharge",
+            "deter",
+            "done",
+            "whoever",
+            "causes",
+            "public servant"
+          ],
+          "legal_concepts": [
+            "causing hurt",
+            "public servant duty"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9665178060531616,
+            "original:semrank_pre_rerank": 0.9665,
+            "semrank_pre_rerank": 0.9665
+          },
+          "query_scores": {
+            "original": 0.4696806720332213
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9665,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "causing hurt",
+                "source": "legal_concept",
+                "similarity": 0.9665,
+                "weighted_score": 0.9665
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "public servant duty",
+                "source": "legal_concept",
+                "similarity": 0.7798,
+                "weighted_score": 0.7798
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "deter",
+                "source": "keyword",
+                "similarity": 0.8647,
+                "weighted_score": 0.6485
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "causes",
+                "source": "keyword",
+                "similarity": 0.8618,
+                "weighted_score": 0.6463
+              }
+            ],
+            "score": 0.9665,
+            "best_similarity": 0.9665,
+            "best_concept": "causing hurt",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9665,
+            "score_before_pre_rerank": 0.469681,
+            "score_after_pre_rerank": 0.559108
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S122_N1",
+          "score": 0.553764,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 122,
+          "citation": "Section 122",
+          "text": "Whoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to five thousand rupees, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 122: Voluntarily causing hurt or grievous hurt on provocation.\nWhoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to five thousand rupees, or with both.",
+          "keywords": [
+            "hurt",
+            "provocation",
+            "voluntarily",
+            "extend",
+            "whoever",
+            "causes",
+            "grave",
+            "sudden",
+            "neither",
+            "intends"
+          ],
+          "legal_concepts": [
+            "voluntary causation of hurt",
+            "grave and sudden provocation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "graph": 0.48065840915915664,
+            "semrank_pre_rerank": 0.8868
+          },
+          "query_scores": {
+            "graph": 0.48065840915915664
+          },
+          "reasons": [
+            "graph_from:chunk__node__BNS_S118_N1",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "score": 0.8868,
+            "best_similarity": 0.8868,
+            "best_concept": "voluntary causation of hurt",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "voluntary causation of hurt",
+                "source": "legal_concept",
+                "similarity": 0.8868,
+                "weighted_score": 0.8868
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "grave and sudden provocation",
+                "source": "legal_concept",
+                "similarity": 0.8451,
+                "weighted_score": 0.8451
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.871,
+                "weighted_score": 0.6533
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "causes",
+                "source": "keyword",
+                "similarity": 0.8618,
+                "weighted_score": 0.6463
+              }
+            ],
+            "pre_rerank_score": 0.8868,
+            "score_before_pre_rerank": 0.480658,
+            "score_after_pre_rerank": 0.553764
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S118_N2",
+          "score": 0.550086,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 118,
+          "citation": "Section 118",
+          "text": "Whoever, except in the case provided for by sub-section (2) of section 122, voluntarily causes grievous hurt by any means referred to in sub–section (1), shall be punished with imprisonment for life, or with imprisonment of either description for a term which shall not be less than one year but which may extend to ten years, and shall also be liable to fine. Voluntarily causing hurt or grievous hurt to extort property, or to constrain to an illegal act.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 118: Voluntarily causing hurt or grievous hurt by dangerous weapons or means.\nWhoever, except in the case provided for by sub-section (2) of section 122, voluntarily causes grievous hurt by any means referred to in sub–section (1), shall be punished with imprisonment for life, or with imprisonment of either description for a term which shall not be less than one year but which may extend to ten years, and shall also be liable to fine. Voluntarily causing hurt or grievous hurt to extort property, or to constrain to an illegal act.",
+          "keywords": [
+            "hurt",
+            "voluntarily",
+            "grievous",
+            "means",
+            "imprisonment",
+            "causing",
+            "whoever",
+            "except",
+            "provided",
+            "grievous hurt",
+            "dangerous weapons"
+          ],
+          "legal_concepts": [
+            "causing grievous hurt",
+            "punishment for grievous hurt"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6818578243255615,
+            "original:bm25": 0.11159959516532975,
+            "original:semrank": 0.9735159873962402,
+            "original:semrank_pre_rerank": 0.9735,
+            "semrank_pre_rerank": 0.9735
+          },
+          "query_scores": {
+            "original": 0.4571420346163341
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9735,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "causing grievous hurt",
+                "source": "legal_concept",
+                "similarity": 0.9735,
+                "weighted_score": 0.9735
+              },
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "punishment for grievous hurt",
+                "source": "legal_concept",
+                "similarity": 0.9626,
+                "weighted_score": 0.9626
+              },
+              {
+                "query_concept": "grievous",
+                "chunk_concept": "grievous",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "grievous hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 0.9735,
+            "best_similarity": 0.9735,
+            "best_concept": "causing grievous hurt",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9735,
+            "score_before_pre_rerank": 0.457142,
+            "score_after_pre_rerank": 0.550086
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S120_N1",
+          "score": 0.541101,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 120,
+          "citation": "Section 120",
+          "text": "Whoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 120: Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of\nWhoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "sufferer",
+            "hurt",
+            "restoration",
+            "voluntarily",
+            "purpose",
+            "interested",
+            "confession",
+            "information",
+            "lead",
+            "property",
+            "extortion"
+          ],
+          "legal_concepts": [
+            "causing hurt",
+            "extortion",
+            "compelling restoration"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9665178060531616,
+            "original:semrank_pre_rerank": 0.9665,
+            "semrank_pre_rerank": 0.9665
+          },
+          "query_scores": {
+            "original": 0.447720634905922
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9665,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "causing hurt",
+                "source": "legal_concept",
+                "similarity": 0.9665,
+                "weighted_score": 0.9665
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "compelling restoration",
+                "source": "legal_concept",
+                "similarity": 0.8518,
+                "weighted_score": 0.8518
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "extortion",
+                "source": "legal_concept",
+                "similarity": 0.8301,
+                "weighted_score": 0.8301
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "information",
+                "source": "keyword",
+                "similarity": 0.893,
+                "weighted_score": 0.6697
+              }
+            ],
+            "score": 0.9665,
+            "best_similarity": 0.9665,
+            "best_concept": "causing hurt",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9665,
+            "score_before_pre_rerank": 0.447721,
+            "score_after_pre_rerank": 0.541101
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__section__BNS_S117",
+          "score": 0.414152,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 117,
+          "citation": "Section 117",
+          "text": "(1) Whoever voluntarily causes hurt, if the hurt which he intends\nto cause or knows himself to be likely to cause is grievous hurt, and if the\nhurt which he causes is grievous hurt, is said “voluntarily to cause grievous\nhurt”.\nExplanation.—A person is not said voluntarily to cause grievous hurt\nexcept when he both causes grievous hurt and intends or knows himself to\nbe likely to cause grievous hurt. But he is said voluntarily to cause grievous\nhurt, if intending or knowing himself to be likely to cause grievous hurt of\none kind, he actually causes grievous hurt of another kind.\nIllustration.\nA, intending of knowing himself to be likely permanently to disfigure\nZ’s face, gives Z a blow which does not permanently disfigure Z’s face, but\nwhich causes Z to suffer severe bodily pain for the space of fifteen days. A\nhas voluntarily caused grievous hurt.\n(2) Whoever, except in the case provided for by sub-section (2) of\nsection 122, voluntarily causes grievous hurt, shall be punished with\nimprisonment of either description for a term which may extend to seven\nyears, and shall also be liable to fine.\n(3) Whoever commits an offence under sub-section (1) and in the\ncourse of such commission causes any hurt to a person which causes that\nperson to be in permanent disability or in persistent vegetative state, shall\nbe punished with rigorous imprisonment for a term which shall not be less\nthan ten years but which may extend to imprisonment for life, which shall\nmean imprisonment for the remainder of that person’s natural life.\n(4) When a group of five or more persons acting in concert, causes\ngrievous hurt to a person on the ground of his race, caste or community,\nsex, place of birth, language, personal belief or any other similar ground,\neach member of such group shall be guilty of the offence of causing\ngrievous hurt, and shall be punished with imprisonment of either\ndescription for a term which may extend to seven years, and shall also be\nliable to fine.\nVoluntarily causing hurt or grievous hurt by dangerous weapons or\nmeans.",
+          "derived_context": "",
+          "keywords": [
+            "grievous_hurt",
+            "voluntary_causation"
+          ],
+          "legal_concepts": [
+            "offence",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "graph": 0.414151806212167
+          },
+          "query_scores": {
+            "graph": 0.414151806212167
+          },
+          "reasons": [
+            "graph_from:chunk__node__BNS_S117_N1",
+            "zero_concept_overlap_penalty"
+          ]
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S116_H",
+          "score": 1.0,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 116,
+          "citation": "Section 116",
+          "text": "Any hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits. Voluntarily causing grievous hurt.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 116: Grievous hurt.\nAny hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits. Voluntarily causing grievous hurt.",
+          "keywords": [
+            "hurt",
+            "grievous",
+            "endangers",
+            "life",
+            "causes",
+            "sufferer",
+            "during",
+            "space",
+            "fifteen",
+            "days",
+            "severe",
+            "bodily",
+            "pain"
+          ],
+          "legal_concepts": [
+            "grievous hurt",
+            "voluntary act"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "grievous hurt"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7730013132095337,
+            "original:bm25": 0.3474284996557617,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "grievous hurt",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "voluntary act",
+                "source": "legal_concept",
+                "similarity": 0.8052,
+                "weighted_score": 0.8052
+              },
+              {
+                "query_concept": "grievous",
+                "chunk_concept": "grievous",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "pain",
+                "source": "keyword",
+                "similarity": 0.9452,
+                "weighted_score": 0.7089
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "grievous hurt",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S117_N1",
+          "score": 0.782264,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 117,
+          "citation": "Section 117",
+          "text": "Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 117: Voluntarily causing grievous hurt.\nWhoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”.",
+          "keywords": [
+            "hurt",
+            "grievous",
+            "voluntarily",
+            "cause",
+            "causes",
+            "whoever",
+            "intends",
+            "knows",
+            "himself",
+            "likely",
+            "grievous hurt",
+            "voluntary causation"
+          ],
+          "legal_concepts": [
+            "causing grievous hurt",
+            "voluntary act"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6986396908760071,
+            "original:bm25": 0.8858111794617051,
+            "original:semrank": 0.9735159873962402,
+            "original:semrank_pre_rerank": 0.9735,
+            "semrank_pre_rerank": 0.9735
+          },
+          "query_scores": {
+            "original": 0.841771963845868
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9735,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "causing grievous hurt",
+                "source": "legal_concept",
+                "similarity": 0.9735,
+                "weighted_score": 0.9735
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "voluntary act",
+                "source": "legal_concept",
+                "similarity": 0.8052,
+                "weighted_score": 0.8052
+              },
+              {
+                "query_concept": "grievous",
+                "chunk_concept": "grievous",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "grievous hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 0.9735,
+            "best_similarity": 0.9735,
+            "best_concept": "causing grievous hurt",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9735,
+            "score_before_pre_rerank": 0.841772,
+            "score_after_pre_rerank": 0.865483
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__section__BNS_S116",
+          "score": 0.760209,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 116,
+          "citation": "Section 116",
+          "text": "The following kinds of hurt only are designated as “grievous”,\nnamely:–\n(a) Emasculation;\n(b) Permanent privation of the sight of either eye;\n(c) Permanent privation of the hearing of either ear;\n(d) Privation of any member or joint;\n(e) Destruction or permanent impairing of the powers of any\nmember or joint;\n(f) Permanent disfiguration of the head or face;\n(g) Fracture or dislocation of a bone or tooth;\n(h) Any hurt which endangers life or which causes the sufferer\nto be during the space of fifteen days in severe bodily pain, or unable\nto follow his ordinary pursuits.\nVoluntarily causing grievous hurt.",
+          "derived_context": "",
+          "keywords": [
+            "grievous_hurt",
+            "emasculation",
+            "permanent_eye_damage",
+            "permanent_ear_damage"
+          ],
+          "legal_concepts": [
+            "grievous_hurt",
+            "emasculation",
+            "permanent_privation_of_sight",
+            "permanent_privation_of_hearing"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "graph": 0.49199999999999994
+          },
+          "query_scores": {
+            "graph": 0.49199999999999994
+          },
+          "reasons": [
+            "graph_from:chunk__node__BNS_S116_H",
+            "zero_concept_overlap_penalty",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S117_N1_EXP1",
+          "score": 0.557171,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 117,
+          "citation": "Section 117",
+          "text": "A person is not said voluntarily to cause grievous hurt except when he both causes grievous hurt and intends or knows himself to be likely to cause grievous hurt. But he is said voluntarily to cause grievous hurt, if intending or knowing himself to be likely to cause grievous hurt of one kind, he actually causes grievous hurt of another kind.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 117: Voluntarily causing grievous hurt.\nWhoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said “voluntarily to cause grievous hurt”.\nA person is not said voluntarily to cause grievous hurt except when he both causes grievous hurt and intends or knows himself to be likely to cause grievous hurt. But he is said voluntarily to cause grievous hurt, if intending or knowing himself to be likely to cause grievous hurt of one kind, he actually causes grievous hurt of another kind.",
+          "keywords": [
+            "grievous",
+            "hurt",
+            "cause",
+            "voluntarily",
+            "said",
+            "causes",
+            "himself",
+            "likely",
+            "kind",
+            "except",
+            "grievous hurt",
+            "voluntary causation"
+          ],
+          "legal_concepts": [
+            "causing grievous hurt",
+            "voluntary act"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.699394702911377,
+            "original:bm25": 1.0,
+            "original:semrank": 0.9735159873962402,
+            "original:semrank_pre_rerank": 0.9735,
+            "semrank_pre_rerank": 0.9735
+          },
+          "query_scores": {
+            "original": 0.678268521204503
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9735,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "causing grievous hurt",
+                "source": "legal_concept",
+                "similarity": 0.9735,
+                "weighted_score": 0.9735
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "voluntary act",
+                "source": "legal_concept",
+                "similarity": 0.8052,
+                "weighted_score": 0.8052
+              },
+              {
+                "query_concept": "grievous",
+                "chunk_concept": "grievous",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "grievous hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 0.9735,
+            "best_similarity": 0.9735,
+            "best_concept": "causing grievous hurt",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9735,
+            "score_before_pre_rerank": 0.678269,
+            "score_after_pre_rerank": 0.73141
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__section__BNS_S117",
+          "score": 0.339585,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 117,
+          "citation": "Section 117",
+          "text": "(1) Whoever voluntarily causes hurt, if the hurt which he intends\nto cause or knows himself to be likely to cause is grievous hurt, and if the\nhurt which he causes is grievous hurt, is said “voluntarily to cause grievous\nhurt”.\nExplanation.—A person is not said voluntarily to cause grievous hurt\nexcept when he both causes grievous hurt and intends or knows himself to\nbe likely to cause grievous hurt. But he is said voluntarily to cause grievous\nhurt, if intending or knowing himself to be likely to cause grievous hurt of\none kind, he actually causes grievous hurt of another kind.\nIllustration.\nA, intending of knowing himself to be likely permanently to disfigure\nZ’s face, gives Z a blow which does not permanently disfigure Z’s face, but\nwhich causes Z to suffer severe bodily pain for the space of fifteen days. A\nhas voluntarily caused grievous hurt.\n(2) Whoever, except in the case provided for by sub-section (2) of\nsection 122, voluntarily causes grievous hurt, shall be punished with\nimprisonment of either description for a term which may extend to seven\nyears, and shall also be liable to fine.\n(3) Whoever commits an offence under sub-section (1) and in the\ncourse of such commission causes any hurt to a person which causes that\nperson to be in permanent disability or in persistent vegetative state, shall\nbe punished with rigorous imprisonment for a term which shall not be less\nthan ten years but which may extend to imprisonment for life, which shall\nmean imprisonment for the remainder of that person’s natural life.\n(4) When a group of five or more persons acting in concert, causes\ngrievous hurt to a person on the ground of his race, caste or community,\nsex, place of birth, language, personal belief or any other similar ground,\neach member of such group shall be guilty of the offence of causing\ngrievous hurt, and shall be punished with imprisonment of either\ndescription for a term which may extend to seven years, and shall also be\nliable to fine.\nVoluntarily causing hurt or grievous hurt by dangerous weapons or\nmeans.",
+          "derived_context": "",
+          "keywords": [
+            "grievous_hurt",
+            "voluntary_causation"
+          ],
+          "legal_concepts": [
+            "offence",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "graph": 0.414151806212167
+          },
+          "query_scores": {
+            "graph": 0.414151806212167
+          },
+          "reasons": [
+            "graph_from:chunk__node__BNS_S117_N1",
+            "zero_concept_overlap_penalty",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S118_N1",
+          "score": 0.286186,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 118,
+          "citation": "Section 118",
+          "text": "Whoever, except in the case provided for by sub-section (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 118: Voluntarily causing hurt or grievous hurt by dangerous weapons or means.\nWhoever, except in the case provided for by sub-section (1) of section 122, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to twenty thousand rupees, or with both.",
+          "keywords": [
+            "means",
+            "substance",
+            "hurt",
+            "voluntarily",
+            "instrument",
+            "human",
+            "body",
+            "extend",
+            "whoever",
+            "except",
+            "dangerous weapons"
+          ],
+          "legal_concepts": [
+            "causing hurt",
+            "dangerous weapons",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9665178060531616,
+            "original:semrank_pre_rerank": 0.9665,
+            "semrank_pre_rerank": 0.9665
+          },
+          "query_scores": {
+            "original": 0.4814112091977828
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9665,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "causing hurt",
+                "source": "legal_concept",
+                "similarity": 0.9665,
+                "weighted_score": 0.9665
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "dangerous weapons",
+                "source": "legal_concept",
+                "similarity": 0.8226,
+                "weighted_score": 0.8226
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "means",
+                "source": "keyword",
+                "similarity": 0.8874,
+                "weighted_score": 0.6656
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.871,
+                "weighted_score": 0.6533
+              }
+            ],
+            "score": 0.9665,
+            "best_similarity": 0.9665,
+            "best_concept": "causing hurt",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9665,
+            "score_before_pre_rerank": 0.481411,
+            "score_after_pre_rerank": 0.568727
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S121_N1",
+          "score": 0.270037,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 121,
+          "citation": "Section 121",
+          "text": "Whoever voluntarily causes hurt to any person being a public servant in the discharge of his duty as such public servant, or with intent to prevent or deter that person or any other public servant from discharging his duty as such public servant or in consequence of anything done or attempted to be done by that person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 121: Voluntarily causing hurt or grievous hurt to deter public servant from his duty.\nWhoever voluntarily causes hurt to any person being a public servant in the discharge of his duty as such public servant, or with intent to prevent or deter that person or any other public servant from discharging his duty as such public servant or in consequence of anything done or attempted to be done by that person in the lawful discharge of his duty as such public servant, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both.",
+          "keywords": [
+            "public",
+            "servant",
+            "duty",
+            "hurt",
+            "voluntarily",
+            "discharge",
+            "deter",
+            "done",
+            "whoever",
+            "causes",
+            "public servant"
+          ],
+          "legal_concepts": [
+            "causing hurt",
+            "public servant duty"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9665178060531616,
+            "original:semrank_pre_rerank": 0.9665,
+            "semrank_pre_rerank": 0.9665
+          },
+          "query_scores": {
+            "original": 0.4696806720332213
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9665,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "causing hurt",
+                "source": "legal_concept",
+                "similarity": 0.9665,
+                "weighted_score": 0.9665
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "public servant duty",
+                "source": "legal_concept",
+                "similarity": 0.7798,
+                "weighted_score": 0.7798
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "deter",
+                "source": "keyword",
+                "similarity": 0.8647,
+                "weighted_score": 0.6485
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "causes",
+                "source": "keyword",
+                "similarity": 0.8618,
+                "weighted_score": 0.6463
+              }
+            ],
+            "score": 0.9665,
+            "best_similarity": 0.9665,
+            "best_concept": "causing hurt",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9665,
+            "score_before_pre_rerank": 0.469681,
+            "score_after_pre_rerank": 0.559108
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S118_N2",
+          "score": 0.25275,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 118,
+          "citation": "Section 118",
+          "text": "Whoever, except in the case provided for by sub-section (2) of section 122, voluntarily causes grievous hurt by any means referred to in sub–section (1), shall be punished with imprisonment for life, or with imprisonment of either description for a term which shall not be less than one year but which may extend to ten years, and shall also be liable to fine. Voluntarily causing hurt or grievous hurt to extort property, or to constrain to an illegal act.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 118: Voluntarily causing hurt or grievous hurt by dangerous weapons or means.\nWhoever, except in the case provided for by sub-section (2) of section 122, voluntarily causes grievous hurt by any means referred to in sub–section (1), shall be punished with imprisonment for life, or with imprisonment of either description for a term which shall not be less than one year but which may extend to ten years, and shall also be liable to fine. Voluntarily causing hurt or grievous hurt to extort property, or to constrain to an illegal act.",
+          "keywords": [
+            "hurt",
+            "voluntarily",
+            "grievous",
+            "means",
+            "imprisonment",
+            "causing",
+            "whoever",
+            "except",
+            "provided",
+            "grievous hurt",
+            "dangerous weapons"
+          ],
+          "legal_concepts": [
+            "causing grievous hurt",
+            "punishment for grievous hurt"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6818578243255615,
+            "original:bm25": 0.11159959516532975,
+            "original:semrank": 0.9735159873962402,
+            "original:semrank_pre_rerank": 0.9735,
+            "semrank_pre_rerank": 0.9735
+          },
+          "query_scores": {
+            "original": 0.4571420346163341
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9735,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "causing grievous hurt",
+                "source": "legal_concept",
+                "similarity": 0.9735,
+                "weighted_score": 0.9735
+              },
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "punishment for grievous hurt",
+                "source": "legal_concept",
+                "similarity": 0.9626,
+                "weighted_score": 0.9626
+              },
+              {
+                "query_concept": "grievous",
+                "chunk_concept": "grievous",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "grievous hurt",
+                "chunk_concept": "grievous hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 0.9735,
+            "best_similarity": 0.9735,
+            "best_concept": "causing grievous hurt",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9735,
+            "score_before_pre_rerank": 0.457142,
+            "score_after_pre_rerank": 0.550086
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S120_N1",
+          "score": 0.239805,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 120,
+          "citation": "Section 120",
+          "text": "Whoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 120: Voluntarily causing hurt or grievous hurt to extort confession, or to compel restoration of\nWhoever voluntarily causes hurt for the purpose of extorting from the sufferer or from any person interested in the sufferer, any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the sufferer or any person interested in the sufferer to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "sufferer",
+            "hurt",
+            "restoration",
+            "voluntarily",
+            "purpose",
+            "interested",
+            "confession",
+            "information",
+            "lead",
+            "property",
+            "extortion"
+          ],
+          "legal_concepts": [
+            "causing hurt",
+            "extortion",
+            "compelling restoration"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9665178060531616,
+            "original:semrank_pre_rerank": 0.9665,
+            "semrank_pre_rerank": 0.9665
+          },
+          "query_scores": {
+            "original": 0.447720634905922
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9665,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "causing hurt",
+                "source": "legal_concept",
+                "similarity": 0.9665,
+                "weighted_score": 0.9665
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "compelling restoration",
+                "source": "legal_concept",
+                "similarity": 0.8518,
+                "weighted_score": 0.8518
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "extortion",
+                "source": "legal_concept",
+                "similarity": 0.8301,
+                "weighted_score": 0.8301
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "information",
+                "source": "keyword",
+                "similarity": 0.893,
+                "weighted_score": 0.6697
+              }
+            ],
+            "score": 0.9665,
+            "best_similarity": 0.9665,
+            "best_concept": "causing hurt",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9665,
+            "score_before_pre_rerank": 0.447721,
+            "score_after_pre_rerank": 0.541101
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S122_N1",
+          "score": 0.221506,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 122,
+          "citation": "Section 122",
+          "text": "Whoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to five thousand rupees, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 122: Voluntarily causing hurt or grievous hurt on provocation.\nWhoever voluntarily causes hurt on grave and sudden provocation, if he neither intends nor knows himself to be likely to cause hurt to any person other than the person who gave the provocation, shall be punished with imprisonment of either description for a term which may extend to one month, or with fine which may extend to five thousand rupees, or with both.",
+          "keywords": [
+            "hurt",
+            "provocation",
+            "voluntarily",
+            "extend",
+            "whoever",
+            "causes",
+            "grave",
+            "sudden",
+            "neither",
+            "intends"
+          ],
+          "legal_concepts": [
+            "voluntary causation of hurt",
+            "grave and sudden provocation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "graph": 0.48065840915915664,
+            "semrank_pre_rerank": 0.8868
+          },
+          "query_scores": {
+            "graph": 0.48065840915915664
+          },
+          "reasons": [
+            "graph_from:chunk__node__BNS_S118_N1",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "hurt",
+              "grievous hurt",
+              "difference",
+              "between",
+              "grievous",
+              "what is the difference between hurt and grievous hurt"
+            ],
+            "score": 0.8868,
+            "best_similarity": 0.8868,
+            "best_concept": "voluntary causation of hurt",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "voluntary causation of hurt",
+                "source": "legal_concept",
+                "similarity": 0.8868,
+                "weighted_score": 0.8868
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "grave and sudden provocation",
+                "source": "legal_concept",
+                "similarity": 0.8451,
+                "weighted_score": 0.8451
+              },
+              {
+                "query_concept": "hurt",
+                "chunk_concept": "hurt",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "between",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.871,
+                "weighted_score": 0.6533
+              },
+              {
+                "query_concept": "difference",
+                "chunk_concept": "causes",
+                "source": "keyword",
+                "similarity": 0.8618,
+                "weighted_score": 0.6463
+              }
+            ],
+            "pre_rerank_score": 0.8868,
+            "score_before_pre_rerank": 0.480658,
+            "score_after_pre_rerank": 0.553764
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "query_id": "Q052",
+  "query": "Someone forced me at gunpoint to help commit a crime. Will I still be punished?",
+  "query_type": "factual_scenario",
+  "difficulty": "hard",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "32",
+      "subsection": null,
+      "label": "Section 32",
+      "role": "act compelled by threats of instant death - defence available except for murder",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 32 provides that except for murder and offences against the State punishable with death, nothing is an offence done by a person compelled by threats that reasonably cause apprehension of instant death.",
+      "If the offence committed was murder or an offence against the State punishable with death, the defence under Section 32 is not available.",
+      "The person must not have voluntarily placed themselves in the situation by which they became subject to such constraint."
+    ],
+    "optional_points": [
+      "The person must show that the threat was of instant death and that the apprehension was reasonable."
+    ],
+    "forbidden_points": [
+      "Being forced at gunpoint always provides a complete defence regardless of the offence.",
+      "There is no defence available for acts done under compulsion."
+    ]
+  },
+  "notes": "Scenario query applying Section 32. Murder exception is critical."
+}

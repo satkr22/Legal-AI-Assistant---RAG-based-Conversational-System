@@ -1,0 +1,76 @@
+{
+  "query": "Someone forced me at gunpoint to help commit a crime. Will I still be punished?",
+  "intent": {
+    "primary": "legal penalty",
+    "secondary": [
+      "explanation"
+    ]
+  },
+  "concepts": [
+    "coercion",
+    "criminal liability",
+    "organized crime",
+    "robbery"
+  ],
+  "targets": [],
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true
+  },
+  "decomposition": {
+    "needed": true,
+    "sub_queries": [
+      {
+        "query": "What are the legal consequences of being coerced into committing a crime?",
+        "intent": {
+          "primary": "legal penalty",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "coercion",
+          "criminal liability"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      },
+      {
+        "query": "What is the punishment for participating in organized crime under duress?",
+        "intent": {
+          "primary": "legal penalty",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "organized crime",
+          "punishment"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      }
+    ]
+  },
+  "confidence": {
+    "hint_relevance": 0.244,
+    "llm_consistency": 1.0,
+    "rule_strength": 0.35,
+    "structure_validity": 1.0,
+    "overall": 0.5676
+  }
+}

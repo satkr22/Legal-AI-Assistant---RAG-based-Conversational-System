@@ -1,0 +1,73 @@
+{
+  "answer": "A person who intentionally gives false evidence in any stage of a judicial proceeding is committing an offence under Section 229(1) of the Bharatiya Nyaya Sanhita, 2023, which can result in imprisonment for up to seven years and a fine. If the false evidence is given in a case other than specified in subsection (1), it falls under Section 229(2), which carries a punishment of up to three years of imprisonment and a fine. Additionally, if false evidence leads to the wrongful conviction and execution of an innocent person, the penalty can be severe, including death or the punishment specified in subsection (1).",
+  "summary_answer": "Giving false evidence in court is an offence under Section 229 of the Bharatiya Nyaya Sanhita, 2023.",
+  "detailed_answer": "A person who intentionally gives false evidence in any stage of a judicial proceeding is committing an offence under Section 229(1) of the Bharatiya Nyaya Sanhita, 2023, which can result in imprisonment for up to seven years and a fine. If the false evidence is given in a case other than specified in subsection (1), it falls under Section 229(2), which carries a punishment of up to three years of imprisonment and a fine. Additionally, if false evidence leads to the wrongful conviction and execution of an innocent person, the penalty can be severe, including death or the punishment specified in subsection (1).",
+  "final_answer": "The offence of giving false evidence in court is defined under Section 229 of the Bharatiya Nyaya Sanhita, 2023.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 229(1), Bharatiya Nyaya Sanhita, 2023",
+    "Section 229(2), Bharatiya Nyaya Sanhita, 2023",
+    "Section 230(2), Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.7166,
+    "reranker": 0.8545,
+    "citation": 1.0,
+    "reasoning": 0.8326,
+    "evidence_strength": 0.7166,
+    "reasoning_certainty": 0.8326,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.5967,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.72,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.8545,
+        "avg_selected_semrank_score": 0.9489,
+        "avg_selected_concept_coverage": 0.0,
+        "selected_chunk_count": 3,
+        "matched_selected_chunk_count": 3,
+        "selected_semrank_count": 3
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.9052,
+        "ambiguity_gap_score": 0.6,
+        "uncertainty_score": 1.0,
+        "gap": -0.0336,
+        "highest_competing_score": 0.9387,
+        "ambiguity_mitigated_by_grounding": true
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.72,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [
+      "Several sections are close in relevance; the answer uses the strongest supported section."
+    ],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S229_N1",
+    "chunk__node__BNS_S229_N2",
+    "chunk__node__BNS_S230_N2"
+  ]
+}

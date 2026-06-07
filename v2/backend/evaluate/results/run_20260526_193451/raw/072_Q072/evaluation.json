@@ -1,0 +1,207 @@
+{
+  "query_id": "Q072",
+  "query": "When does private defence start and when does it end?",
+  "query_type": "multi_hop",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "40",
+    "43"
+  ],
+  "acceptable_sections": [
+    "37"
+  ],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "40",
+    "40",
+    "43",
+    "34",
+    "37"
+  ],
+  "candidate_sections_at_10": [
+    "40",
+    "40",
+    "43",
+    "34",
+    "37",
+    "43",
+    "36",
+    "37",
+    "39",
+    "35"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "40",
+    "40",
+    "43",
+    "34",
+    "37"
+  ],
+  "cited_sections": [
+    "40",
+    "43"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.5,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "40",
+      "43"
+    ],
+    "acceptable_hits": [
+      "37"
+    ],
+    "required_or_acceptable_hits": [
+      "37",
+      "40",
+      "43"
+    ],
+    "support_precision_at_k": 0.75,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "34"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.25,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "40",
+      "43"
+    ],
+    "acceptable_hits": [
+      "37"
+    ],
+    "required_or_acceptable_hits": [
+      "37",
+      "40",
+      "43"
+    ],
+    "support_precision_at_k": 0.4286,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "34",
+      "36",
+      "39",
+      "35"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.5,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "40",
+      "43"
+    ],
+    "acceptable_hits": [
+      "37"
+    ],
+    "required_or_acceptable_hits": [
+      "37",
+      "40",
+      "43"
+    ],
+    "support_precision_at_k": 0.75,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "34"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 1.0,
+    "required_points_matched": 2,
+    "required_points_total": 2,
+    "answer_completeness_score": 1.0,
+    "soft_answer_score": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Section 40 provides that the right of private defence of body commences as soon as a reasonable apprehension of danger to the body arises from an attempt or threat to commit the offence, even though the offence may not have been committed; and continues as long as the apprehension of danger continues.",
+        "matched": true,
+        "overlap": 0.8889,
+        "matched_terms": [
+          "apprehension",
+          "attempt",
+          "body",
+          "commences",
+          "commit",
+          "committed",
+          "continues",
+          "danger",
+          "defence",
+          "even",
+          "long",
+          "private"
+        ]
+      },
+      {
+        "point": "Section 43 provides that the right of private defence of property commences when a reasonable apprehension of danger to the property commences; and continues in different ways depending on whether the threat is theft, robbery, or trespass.",
+        "matched": true,
+        "overlap": 0.5882,
+        "matched_terms": [
+          "apprehension",
+          "commences",
+          "continues",
+          "danger",
+          "defence",
+          "private",
+          "property",
+          "reasonable",
+          "right",
+          "threat"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "40",
+      "43"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": true,
+  "failure_reasons": [],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 8.666,
+    "phase_9_10": 9.5562,
+    "phase_11": 9.0709,
+    "phase_12_13": 0.0002,
+    "total": 27.2934
+  },
+  "final_answer_preview": "According to Section 40 of the Bharatiya Nyaya Sanhita, 2023, the right of private defence of the body commences as soon as there is a reasonable apprehension of danger arising from an attempt or threat to commit an offence, even if the offence has not yet been committed. This right continues as long as the apprehension of danger persists. Similarly, for property, the right of private defence commences when there is a reasonable apprehension of danger to the property (Section 43(a)). Therefore, private defence begins with the perception of threat and concludes when that threat is no longer perceived.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/072_Q072"
+}

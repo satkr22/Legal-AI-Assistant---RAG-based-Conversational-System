@@ -1,0 +1,67 @@
+{
+  "answer": "Section 22 states that nothing is an offence which is done by a person who, at the time of doing it, by reason of unsoundness of mind, is incapable of knowing the nature of the act, or that he is doing what is either wrong or contrary to law.",
+  "summary_answer": "Section 22 states that a person is not liable for an offence if, due to unsoundness of mind, they are incapable of understanding the nature of their act or that it is wrong or against the law.",
+  "detailed_answer": "Section 22 of the Bharatiya Nyaya Sanhita, 2023, provides that no act is considered an offence if it is committed by a person who, at the time of the act, is unable to comprehend the nature of their actions due to unsoundness of mind. This includes situations where the individual does not realize that their actions are wrong or contrary to the law. Additionally, it mentions that similar considerations apply to acts performed under involuntary intoxication.",
+  "final_answer": "Section 22 states that nothing is an offence which is done by a person who, at the time of doing it, by reason of unsoundness of mind, is incapable of knowing the nature of the act, or that he is doing what is either wrong or contrary to law.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 22 Body, Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.9,
+    "reranker": 1.0,
+    "citation": 1.0,
+    "reasoning": 1.0,
+    "evidence_strength": 0.9,
+    "reasoning_certainty": 1.0,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.9,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.9,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 1.0,
+        "avg_selected_semrank_score": 1.0,
+        "avg_selected_concept_coverage": 0.5,
+        "selected_chunk_count": 1,
+        "matched_selected_chunk_count": 1,
+        "selected_semrank_count": 1
+      },
+      "reasoning": {
+        "selected_condition_match_score": 1.0,
+        "ambiguity_gap_score": 1.0,
+        "uncertainty_score": 1.0,
+        "gap": 0.7882,
+        "highest_competing_score": 0.2118,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.9,
+    "label": "high",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "low",
+  "risk_reason": "Evidence, citations, and reasoning are aligned well enough for the final answer view.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S22_BODY"
+  ]
+}

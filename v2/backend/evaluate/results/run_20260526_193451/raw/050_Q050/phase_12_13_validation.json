@@ -1,0 +1,69 @@
+{
+  "answer": "According to Section 20 of the Bharatiya Nyaya Sanhita, 2023, nothing is considered an offence if it is done by a child under seven years of age. Therefore, if a child below this age damages someone's property, the child cannot be held liable for that act.",
+  "summary_answer": "A child below seven years is not liable for damaging property.",
+  "detailed_answer": "According to Section 20 of the Bharatiya Nyaya Sanhita, 2023, nothing is considered an offence if it is done by a child under seven years of age. Therefore, if a child below this age damages someone's property, the child cannot be held liable for that act.",
+  "final_answer": "A child below seven years is not liable for damaging property.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 20: Act of a child under seven years of age.",
+    "Section 20 Body, Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.6569,
+    "reranker": 0.6079,
+    "citation": 1.0,
+    "reasoning": 0.7081,
+    "evidence_strength": 0.6569,
+    "reasoning_certainty": 0.7081,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.4652,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.72,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.6079,
+        "avg_selected_semrank_score": 1.0,
+        "avg_selected_concept_coverage": 0.1666,
+        "selected_chunk_count": 2,
+        "matched_selected_chunk_count": 2,
+        "selected_semrank_count": 1
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.6563,
+        "ambiguity_gap_score": 0.6,
+        "uncertainty_score": 1.0,
+        "gap": -0.3335,
+        "highest_competing_score": 0.9898,
+        "ambiguity_mitigated_by_grounding": true
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.72,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__section__BNS_S20",
+    "chunk__node__BNS_S20_BODY"
+  ]
+}

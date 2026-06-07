@@ -1,0 +1,211 @@
+{
+  "query_id": "Q082",
+  "query": "What is the difference between abetment and criminal conspiracy?",
+  "query_type": "comparison",
+  "difficulty": "hard",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "45",
+    "61"
+  ],
+  "acceptable_sections": [],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "61",
+    "61",
+    "60",
+    "51",
+    "45"
+  ],
+  "candidate_sections_at_10": [
+    "61",
+    "61",
+    "60",
+    "51",
+    "45",
+    "53",
+    "51",
+    "46",
+    "46",
+    "45"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "61",
+    "61",
+    "60",
+    "51",
+    "45"
+  ],
+  "cited_sections": [
+    "51",
+    "61"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.4,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "45",
+      "61"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "45",
+      "61"
+    ],
+    "support_precision_at_k": 0.5,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "60",
+      "51"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "45",
+      "61"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "45",
+      "61"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "60",
+      "51",
+      "53",
+      "51",
+      "46",
+      "46"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.4,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "45",
+      "61"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "45",
+      "61"
+    ],
+    "support_precision_at_k": 0.5,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "60",
+      "51"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.6667,
+    "required_points_matched": 2,
+    "required_points_total": 3,
+    "answer_completeness_score": 0.6667,
+    "soft_answer_score": 0.7417,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Section 45 defines abetment as instigating, engaging in conspiracy for, or intentionally aiding the doing of a thing; it can be by a single person and does not necessarily require an agreement.",
+        "matched": false,
+        "overlap": 0.4167,
+        "matched_terms": [
+          "abetment",
+          "agreement",
+          "aiding",
+          "conspiracy",
+          "instigating"
+        ]
+      },
+      {
+        "point": "Section 61 defines criminal conspiracy as an agreement between two or more persons to do or cause to be done an illegal act or an act not illegal by illegal means; it requires at least two persons and is the agreement itself that is the offence.",
+        "matched": true,
+        "overlap": 0.5714,
+        "matched_terms": [
+          "act",
+          "agreement",
+          "between",
+          "conspiracy",
+          "criminal",
+          "illegal",
+          "more",
+          "two"
+        ]
+      },
+      {
+        "point": "Abetment is broader; conspiracy is a specific type of abetment involving an agreement between two or more persons. Criminal conspiracy can be charged independently even without any further act in some cases.",
+        "matched": true,
+        "overlap": 0.4211,
+        "matched_terms": [
+          "abetment",
+          "act",
+          "agreement",
+          "between",
+          "conspiracy",
+          "criminal",
+          "more",
+          "two"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 0.5,
+    "citation_recall": 0.5,
+    "correct_cited_sections": [
+      "61"
+    ],
+    "missing_required_sections": [
+      "45"
+    ],
+    "extra_cited_sections": [
+      "51"
+    ],
+    "faithfulness": 1.0,
+    "claims": 2,
+    "supported_claims": 2,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "missing_required_citation"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 9.2249,
+    "phase_9_10": 9.8377,
+    "phase_11": 19.7174,
+    "phase_12_13": 0.0002,
+    "total": 38.7803
+  },
+  "final_answer_preview": "Abetment is defined as the act of instigating or aiding another person to commit an offense, where the abettor can be held liable for the act done if it is a probable consequence of their instigation (Section 51, Bharatiya Nyaya Sanhita, 2023). In contrast, criminal conspiracy involves an agreement between two or more individuals to commit an illegal act (Section 61(1), Bharatiya Nyaya Sanhita, 2023). The key difference lies in the nature of involvement: abetment focuses on the support or encouragement of an individual act, while conspiracy emphasizes the collective agreement to engage in unlawful conduct.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/082_Q082"
+}

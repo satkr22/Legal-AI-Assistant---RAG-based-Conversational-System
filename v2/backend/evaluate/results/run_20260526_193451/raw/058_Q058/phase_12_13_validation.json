@@ -1,0 +1,67 @@
+{
+  "answer": "According to Section 306 of the Bharatiya Nyaya Sanhita, 2023, a clerk or servant who commits theft of property in the possession of their master or employer is subject to punishment, which may include imprisonment for up to seven years and a fine. This section specifically addresses the scenario where a servant steals from their employer, making it applicable in such cases.",
+  "summary_answer": "Section 306 of the Bharatiya Nyaya Sanhita, 2023 may apply to a servant who steals property from their employer.",
+  "detailed_answer": "According to Section 306 of the Bharatiya Nyaya Sanhita, 2023, a clerk or servant who commits theft of property in the possession of their master or employer is subject to punishment, which may include imprisonment for up to seven years and a fine. This section specifically addresses the scenario where a servant steals from their employer, making it applicable in such cases.",
+  "final_answer": "Section 306, Bharatiya Nyaya Sanhita, 2023 applies.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 306 Body, Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.85,
+    "reranker": 1.0,
+    "citation": 1.0,
+    "reasoning": 0.925,
+    "evidence_strength": 0.85,
+    "reasoning_certainty": 0.925,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.7863,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.7863,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 1.0,
+        "avg_selected_semrank_score": 1.0,
+        "avg_selected_concept_coverage": 0.25,
+        "selected_chunk_count": 1,
+        "matched_selected_chunk_count": 1,
+        "selected_semrank_count": 1
+      },
+      "reasoning": {
+        "selected_condition_match_score": 1.0,
+        "ambiguity_gap_score": 0.75,
+        "uncertainty_score": 1.0,
+        "gap": 0.1343,
+        "highest_competing_score": 0.8657,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.7863,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S306_BODY"
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "query_id": "Q046",
+  "query": "Someone pointed a knife at me and took my phone. What offence is this?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "309"
+  ],
+  "acceptable_sections": [
+    "303",
+    "304"
+  ],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "311",
+    "134",
+    "309",
+    "133",
+    "309"
+  ],
+  "candidate_sections_at_10": [
+    "311",
+    "134",
+    "309",
+    "133",
+    "309",
+    "311",
+    "134",
+    "133",
+    "131",
+    "136"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "309",
+    "309",
+    "311",
+    "134",
+    "133"
+  ],
+  "cited_sections": [
+    "309",
+    "311"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 0.3333,
+    "required_hits": [
+      "309"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "309"
+    ],
+    "support_precision_at_k": 0.25,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "311",
+      "134",
+      "133"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 0.3333,
+    "required_hits": [
+      "309"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "309"
+    ],
+    "support_precision_at_k": 0.1667,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "311",
+      "134",
+      "133",
+      "311",
+      "134",
+      "133",
+      "131",
+      "136"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "309"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "309"
+    ],
+    "support_precision_at_k": 0.25,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "311",
+      "134",
+      "133"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.25,
+    "required_points_matched": 1,
+    "required_points_total": 4,
+    "answer_completeness_score": 0.25,
+    "soft_answer_score": 0.7625,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Taking property by putting a person in fear of instant hurt (pointing a knife) can amount to robbery under Section 309.",
+        "matched": true,
+        "overlap": 0.7,
+        "matched_terms": [
+          "309",
+          "fear",
+          "knife",
+          "pointing",
+          "putting",
+          "robbery",
+          "taking"
+        ]
+      },
+      {
+        "point": "Pointing a knife is legally relevant as it suggests a threat of instant hurt.",
+        "matched": false,
+        "overlap": 0.25,
+        "matched_terms": [
+          "knife",
+          "pointing"
+        ]
+      },
+      {
+        "point": "Theft is robbery if the offender causes or attempts to cause fear of instant hurt in order to commit the theft.",
+        "matched": false,
+        "overlap": 0.1818,
+        "matched_terms": [
+          "fear",
+          "robbery"
+        ]
+      },
+      {
+        "point": "The final classification depends on facts proved.",
+        "matched": false,
+        "overlap": 0.0,
+        "matched_terms": []
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "309"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [
+      "311"
+    ],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "low_required_point_coverage"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 16.4737,
+    "phase_9_10": 79.2887,
+    "phase_11": 18.7234,
+    "phase_12_13": 0.0004,
+    "total": 114.4861
+  },
+  "final_answer_preview": "The act of pointing a knife at someone and taking their phone constitutes robbery, particularly under Section 309(3) of the Bharatiya Nyaya Sanhita, 2023, which defines extortion as robbery if it involves putting the victim in fear of immediate harm. Additionally, if the knife is considered a deadly weapon, it could also fall under Section 311, which stipulates severe penalties for robbery committed with a deadly weapon. Therefore, the offence can be classified as robbery or extortion, depending on the circumstances.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/046_Q046"
+}

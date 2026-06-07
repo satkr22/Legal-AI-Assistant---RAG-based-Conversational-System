@@ -1,0 +1,3483 @@
+[
+  {
+    "query": "Someone spread a false statement to damage my reputation. What offence may apply?",
+    "phase8": {
+      "query": "Someone spread a false statement to damage my reputation. What offence may apply?",
+      "intent": {
+        "primary": "lookup",
+        "secondary": []
+      },
+      "concepts": [
+        "false statement",
+        "defamation",
+        "reputation damage"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.4502,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.35,
+        "structure_validity": 1.0,
+        "overall": 0.6501
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "Someone spread a false statement to damage my reputation. What offence may apply?",
+          "targets": [],
+          "concepts": [
+            "false statement",
+            "defamation",
+            "reputation damage"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S353_N3_ECP1",
+            "score": 1.0,
+            "chunk_type": "exception",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+            "section_number": 353,
+            "citation": "Section 353",
+            "text": "It does not amount to an offence, within the meaning of this section, when the person making, publishing or circulating any such statement, false information, rumor or report, has reasonable grounds for believing that such statement, false information, rumor or report is true and makes, publishes or circulates it in good faith and without any such intent as aforesaid. Act caused by inducing person to believe that he will be rendered an object of Divine displeasure.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 353: Statements conducing to public mischief.\nWhoever commits an offence specified in sub-section (2) in any place of worship or in any assembly engaged in the performance of religious worship or religious ceremonies, shall be punished with imprisonment which may extend to five years and shall also be liable to fine.\nIt does not amount to an offence, within the meaning of this section, when the person making, publishing or circulating any such statement, false information, rumor or report, has reasonable grounds for believing that such statement, false information, rumor or report is true and makes, publishes or circulates it in good faith and without any such intent as aforesaid. Act caused by inducing person to believe that he will be rendered an object of Divine displeasure.",
+            "keywords": [
+              "statement",
+              "false",
+              "information",
+              "rumor",
+              "report",
+              "amount",
+              "offence",
+              "meaning",
+              "making",
+              "publishing",
+              "public mischief",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "criminal intimidation",
+              "defamation",
+              "offence against religion"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "defamation"
+              ]
+            },
+            "source_scores": {
+              "bm25": 0.05263157894736842,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "false statement",
+                "defamation",
+                "reputation damage",
+                "spread",
+                "false",
+                "statement",
+                "damage",
+                "reputation"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "defamation",
+                  "chunk_concept": "defamation",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "defamation",
+                  "chunk_concept": "criminal intimidation",
+                  "source": "legal_concept",
+                  "similarity": 0.8192,
+                  "weighted_score": 0.8192
+                },
+                {
+                  "query_concept": "defamation",
+                  "chunk_concept": "offence against religion",
+                  "source": "legal_concept",
+                  "similarity": 0.793,
+                  "weighted_score": 0.793
+                },
+                {
+                  "query_concept": "false",
+                  "chunk_concept": "false",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "statement",
+                  "chunk_concept": "statement",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "defamation",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S356_N1_ILL4_4_B",
+            "score": 0.790209,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+            "section_number": 356,
+            "citation": "Section 356",
+            "text": "A person who makes a speech in public, submits that speech to the judgment of the public.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nA person who makes a speech in public, submits that speech to the judgment of the public.",
+            "keywords": [
+              "speech",
+              "public",
+              "defamation",
+              "makes",
+              "submits",
+              "judgment",
+              "criminal",
+              "intimidation",
+              "insult",
+              "annoyance",
+              "reputation",
+              "harm"
+            ],
+            "legal_concepts": [
+              "defamation",
+              "reputation harm"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "defamation"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "false statement",
+                "defamation",
+                "reputation damage",
+                "spread",
+                "false",
+                "statement",
+                "damage",
+                "reputation"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "defamation",
+                  "chunk_concept": "defamation",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "reputation damage",
+                  "chunk_concept": "reputation harm",
+                  "source": "legal_concept",
+                  "similarity": 0.9701,
+                  "weighted_score": 0.9701
+                },
+                {
+                  "query_concept": "reputation",
+                  "chunk_concept": "reputation",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "damage",
+                  "chunk_concept": "harm",
+                  "source": "keyword",
+                  "similarity": 0.9275,
+                  "weighted_score": 0.6956
+                },
+                {
+                  "query_concept": "statement",
+                  "chunk_concept": "judgment",
+                  "source": "keyword",
+                  "similarity": 0.8992,
+                  "weighted_score": 0.6744
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "defamation",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S356_N1_EXP3",
+            "score": 0.696455,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+            "section_number": 356,
+            "citation": "Section 356",
+            "text": "An imputation in the form of an alternative or expressed ironically, may amount to defamation.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nAn imputation in the form of an alternative or expressed ironically, may amount to defamation.",
+            "keywords": [
+              "defamation",
+              "imputation",
+              "form",
+              "alternative",
+              "expressed",
+              "ironically",
+              "amount",
+              "criminal",
+              "intimidation",
+              "insult",
+              "reputation"
+            ],
+            "legal_concepts": [
+              "defamation",
+              "imputation"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "defamation"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7457442283630371,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "false statement",
+                "defamation",
+                "reputation damage",
+                "spread",
+                "false",
+                "statement",
+                "damage",
+                "reputation"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "defamation",
+                  "chunk_concept": "defamation",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "spread",
+                  "chunk_concept": "imputation",
+                  "source": "legal_concept",
+                  "similarity": 0.8429,
+                  "weighted_score": 0.8429
+                },
+                {
+                  "query_concept": "reputation",
+                  "chunk_concept": "reputation",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "statement",
+                  "chunk_concept": "expressed",
+                  "source": "keyword",
+                  "similarity": 0.9294,
+                  "weighted_score": 0.6971
+                },
+                {
+                  "query_concept": "statement",
+                  "chunk_concept": "form",
+                  "source": "keyword",
+                  "similarity": 0.8886,
+                  "weighted_score": 0.6664
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "defamation",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S356_N1_EXP1",
+            "score": 0.671324,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+            "section_number": 356,
+            "citation": "Section 356",
+            "text": "It may amount to defamation to impute anything to a deceased person, if the imputation would harm the reputation of that person if living, and is intended to be hurtful to the feelings of his family or other near relatives.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nIt may amount to defamation to impute anything to a deceased person, if the imputation would harm the reputation of that person if living, and is intended to be hurtful to the feelings of his family or other near relatives.",
+            "keywords": [
+              "defamation",
+              "amount",
+              "impute",
+              "anything",
+              "deceased",
+              "imputation",
+              "harm",
+              "reputation",
+              "living",
+              "intended"
+            ],
+            "legal_concepts": [
+              "defamation",
+              "imputation",
+              "reputation"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "defamation"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7399089932441711,
+              "bm25": 0.05,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "false statement",
+                "defamation",
+                "reputation damage",
+                "spread",
+                "false",
+                "statement",
+                "damage",
+                "reputation"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "defamation",
+                  "chunk_concept": "defamation",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "reputation",
+                  "chunk_concept": "reputation",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "spread",
+                  "chunk_concept": "imputation",
+                  "source": "legal_concept",
+                  "similarity": 0.8429,
+                  "weighted_score": 0.8429
+                },
+                {
+                  "query_concept": "damage",
+                  "chunk_concept": "harm",
+                  "source": "keyword",
+                  "similarity": 0.9275,
+                  "weighted_score": 0.6956
+                },
+                {
+                  "query_concept": "statement",
+                  "chunk_concept": "intended",
+                  "source": "keyword",
+                  "similarity": 0.8873,
+                  "weighted_score": 0.6654
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "defamation",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S356_N1_EXP2",
+            "score": 0.661881,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+            "section_number": 356,
+            "citation": "Section 356",
+            "text": "It may amount to defamation to make an imputation concerning a company or an association or collection of persons as such.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nIt may amount to defamation to make an imputation concerning a company or an association or collection of persons as such.",
+            "keywords": [
+              "defamation",
+              "amount",
+              "make",
+              "imputation",
+              "concerning",
+              "company",
+              "association",
+              "collection",
+              "criminal",
+              "intimidation",
+              "reputation"
+            ],
+            "legal_concepts": [
+              "defamation",
+              "imputation",
+              "reputation"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "defamation"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.74870365858078,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "false statement",
+                "defamation",
+                "reputation damage",
+                "spread",
+                "false",
+                "statement",
+                "damage",
+                "reputation"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "defamation",
+                  "chunk_concept": "defamation",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "reputation",
+                  "chunk_concept": "reputation",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "spread",
+                  "chunk_concept": "imputation",
+                  "source": "legal_concept",
+                  "similarity": 0.8429,
+                  "weighted_score": 0.8429
+                },
+                {
+                  "query_concept": "statement",
+                  "chunk_concept": "collection",
+                  "source": "keyword",
+                  "similarity": 0.8978,
+                  "weighted_score": 0.6733
+                },
+                {
+                  "query_concept": "statement",
+                  "chunk_concept": "concerning",
+                  "source": "keyword",
+                  "similarity": 0.8836,
+                  "weighted_score": 0.6627
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "defamation",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S232_N1",
+            "score": 0.647748,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 232,
+            "citation": "Section 232",
+            "text": "Whoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 232: Threatening any person to give false evidence.\nWhoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+            "keywords": [
+              "false",
+              "evidence",
+              "reputation",
+              "give",
+              "whoever",
+              "threatens",
+              "injury",
+              "property",
+              "interested",
+              "intent",
+              "false evidence",
+              "threats"
+            ],
+            "legal_concepts": [
+              "offence against public justice",
+              "false evidence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7273465991020203,
+              "bm25": 0.6043071955665924,
+              "semrank_pre_rerank": 0.9429
+            },
+            "query_scores": {
+              "original": 0.7273465991020203
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "false statement",
+                "defamation",
+                "reputation damage",
+                "spread",
+                "false",
+                "statement",
+                "damage",
+                "reputation"
+              ],
+              "score": 0.9429,
+              "best_similarity": 0.9429,
+              "best_concept": "false evidence",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "false",
+                  "chunk_concept": "false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.9429,
+                  "weighted_score": 0.9429
+                },
+                {
+                  "query_concept": "defamation",
+                  "chunk_concept": "offence against public justice",
+                  "source": "legal_concept",
+                  "similarity": 0.8103,
+                  "weighted_score": 0.8103
+                },
+                {
+                  "query_concept": "false",
+                  "chunk_concept": "false",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "reputation",
+                  "chunk_concept": "reputation",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "damage",
+                  "chunk_concept": "injury",
+                  "source": "keyword",
+                  "similarity": 0.9247,
+                  "weighted_score": 0.6935
+                }
+              ],
+              "pre_rerank_score": 0.9429,
+              "score_before_pre_rerank": 0.893333,
+              "score_after_pre_rerank": 0.902255
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S353_N1",
+            "score": 0.634136,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+            "section_number": 353,
+            "citation": "Section 353",
+            "text": "Whoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 353: Statements conducing to public mischief.\nWhoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—",
+            "keywords": [
+              "whoever",
+              "makes",
+              "publishes",
+              "circulates",
+              "statement",
+              "false",
+              "information",
+              "rumour",
+              "report",
+              "including",
+              "false information",
+              "public mischief"
+            ],
+            "legal_concepts": [
+              "criminal intimidation",
+              "defamation"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "defamation"
+              ]
+            },
+            "source_scores": {
+              "bm25": 0.5923287640062207,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "false statement",
+                "defamation",
+                "reputation damage",
+                "spread",
+                "false",
+                "statement",
+                "damage",
+                "reputation"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "defamation",
+                  "chunk_concept": "defamation",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "defamation",
+                  "chunk_concept": "criminal intimidation",
+                  "source": "legal_concept",
+                  "similarity": 0.8192,
+                  "weighted_score": 0.8192
+                },
+                {
+                  "query_concept": "false",
+                  "chunk_concept": "false",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "statement",
+                  "chunk_concept": "statement",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "false",
+                  "chunk_concept": "false information",
+                  "source": "keyword",
+                  "similarity": 0.9517,
+                  "weighted_score": 0.7138
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "defamation",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S356_N1",
+            "score": 0.63262,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+            "section_number": 356,
+            "citation": "Section 356",
+            "text": "Whoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.",
+            "keywords": [
+              "imputation",
+              "harm",
+              "defamation",
+              "whoever",
+              "words",
+              "either",
+              "spoken",
+              "intended",
+              "read",
+              "signs",
+              "reputation"
+            ],
+            "legal_concepts": [
+              "defamation",
+              "intentional harm"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "defamation"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7358419895172119,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "false statement",
+                "defamation",
+                "reputation damage",
+                "spread",
+                "false",
+                "statement",
+                "damage",
+                "reputation"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "defamation",
+                  "chunk_concept": "defamation",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "damage",
+                  "chunk_concept": "intentional harm",
+                  "source": "legal_concept",
+                  "similarity": 0.8912,
+                  "weighted_score": 0.8912
+                },
+                {
+                  "query_concept": "reputation",
+                  "chunk_concept": "reputation",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "damage",
+                  "chunk_concept": "harm",
+                  "source": "keyword",
+                  "similarity": 0.9275,
+                  "weighted_score": 0.6956
+                },
+                {
+                  "query_concept": "statement",
+                  "chunk_concept": "words",
+                  "source": "keyword",
+                  "similarity": 0.9011,
+                  "weighted_score": 0.6759
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "defamation",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S356_N1_ILL4_4_C",
+            "score": 0.625433,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+            "section_number": 356,
+            "citation": "Section 356",
+            "text": "An actor or singer who appears on a public stage, submits his acting or singing to the judgment of the public.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nAn actor or singer who appears on a public stage, submits his acting or singing to the judgment of the public.",
+            "keywords": [
+              "public",
+              "defamation",
+              "actor",
+              "singer",
+              "appears",
+              "stage",
+              "submits",
+              "acting",
+              "singing",
+              "judgment",
+              "reputation"
+            ],
+            "legal_concepts": [
+              "defamation",
+              "reputation"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "defamation"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "false statement",
+                "defamation",
+                "reputation damage",
+                "spread",
+                "false",
+                "statement",
+                "damage",
+                "reputation"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "defamation",
+                  "chunk_concept": "defamation",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "reputation",
+                  "chunk_concept": "reputation",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "statement",
+                  "chunk_concept": "judgment",
+                  "source": "keyword",
+                  "similarity": 0.8992,
+                  "weighted_score": 0.6744
+                },
+                {
+                  "query_concept": "statement",
+                  "chunk_concept": "appears",
+                  "source": "keyword",
+                  "similarity": 0.8754,
+                  "weighted_score": 0.6565
+                },
+                {
+                  "query_concept": "statement",
+                  "chunk_concept": "submits",
+                  "source": "keyword",
+                  "similarity": 0.8744,
+                  "weighted_score": 0.6558
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "defamation",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S356_N1_EXP4",
+            "score": 0.614711,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+            "section_number": 356,
+            "citation": "Section 356",
+            "text": "No imputation is said to harm a person’s reputation, unless that imputation directly or indirectly, in the estimation of others, lowers the moral or intellectual character of that person, or lowers the character of that person in respect of his caste or of his calling, or lowers the credit of that person, or causes it to be believed that the body of that person is in a loathsome state, or in a state generally considered as disgraceful.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nNo imputation is said to harm a person’s reputation, unless that imputation directly or indirectly, in the estimation of others, lowers the moral or intellectual character of that person, or lowers the character of that person in respect of his caste or of his calling, or lowers the credit of that person, or causes it to be believed that the body of that person is in a loathsome state, or in a state generally considered as disgraceful.",
+            "keywords": [
+              "lowers",
+              "imputation",
+              "character",
+              "state",
+              "defamation",
+              "said",
+              "harm",
+              "reputation",
+              "directly",
+              "indirectly"
+            ],
+            "legal_concepts": [
+              "defamation",
+              "reputation harm"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "defamation"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7304677367210388,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "false statement",
+                "defamation",
+                "reputation damage",
+                "spread",
+                "false",
+                "statement",
+                "damage",
+                "reputation"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "defamation",
+                  "chunk_concept": "defamation",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "reputation damage",
+                  "chunk_concept": "reputation harm",
+                  "source": "legal_concept",
+                  "similarity": 0.9701,
+                  "weighted_score": 0.9701
+                },
+                {
+                  "query_concept": "reputation",
+                  "chunk_concept": "reputation",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "damage",
+                  "chunk_concept": "harm",
+                  "source": "keyword",
+                  "similarity": 0.9275,
+                  "weighted_score": 0.6956
+                },
+                {
+                  "query_concept": "statement",
+                  "chunk_concept": "said",
+                  "source": "keyword",
+                  "similarity": 0.9123,
+                  "weighted_score": 0.6842
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "defamation",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S353_N3_ECP1",
+          "score": 1.0,
+          "chunk_type": "exception",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 353,
+          "citation": "Section 353",
+          "text": "It does not amount to an offence, within the meaning of this section, when the person making, publishing or circulating any such statement, false information, rumor or report, has reasonable grounds for believing that such statement, false information, rumor or report is true and makes, publishes or circulates it in good faith and without any such intent as aforesaid. Act caused by inducing person to believe that he will be rendered an object of Divine displeasure.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 353: Statements conducing to public mischief.\nWhoever commits an offence specified in sub-section (2) in any place of worship or in any assembly engaged in the performance of religious worship or religious ceremonies, shall be punished with imprisonment which may extend to five years and shall also be liable to fine.\nIt does not amount to an offence, within the meaning of this section, when the person making, publishing or circulating any such statement, false information, rumor or report, has reasonable grounds for believing that such statement, false information, rumor or report is true and makes, publishes or circulates it in good faith and without any such intent as aforesaid. Act caused by inducing person to believe that he will be rendered an object of Divine displeasure.",
+          "keywords": [
+            "statement",
+            "false",
+            "information",
+            "rumor",
+            "report",
+            "amount",
+            "offence",
+            "meaning",
+            "making",
+            "publishing",
+            "public mischief",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "criminal intimidation",
+            "defamation",
+            "offence against religion"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.05263157894736842,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "criminal intimidation",
+                "source": "legal_concept",
+                "similarity": 0.8192,
+                "weighted_score": 0.8192
+              },
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "offence against religion",
+                "source": "legal_concept",
+                "similarity": 0.793,
+                "weighted_score": 0.793
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "statement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S356_N1_ILL4_4_B",
+          "score": 0.827971,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 356,
+          "citation": "Section 356",
+          "text": "A person who makes a speech in public, submits that speech to the judgment of the public.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nA person who makes a speech in public, submits that speech to the judgment of the public.",
+          "keywords": [
+            "speech",
+            "public",
+            "defamation",
+            "makes",
+            "submits",
+            "judgment",
+            "criminal",
+            "intimidation",
+            "insult",
+            "annoyance",
+            "reputation",
+            "harm"
+          ],
+          "legal_concepts": [
+            "defamation",
+            "reputation harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7902087881561682
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "reputation damage",
+                "chunk_concept": "reputation harm",
+                "source": "legal_concept",
+                "similarity": 0.9701,
+                "weighted_score": 0.9701
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "damage",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 0.9275,
+                "weighted_score": 0.6956
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "judgment",
+                "source": "keyword",
+                "similarity": 0.8992,
+                "weighted_score": 0.6744
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.790209,
+            "score_after_pre_rerank": 0.827971
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S356_N1_EXP3",
+          "score": 0.751093,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 356,
+          "citation": "Section 356",
+          "text": "An imputation in the form of an alternative or expressed ironically, may amount to defamation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nAn imputation in the form of an alternative or expressed ironically, may amount to defamation.",
+          "keywords": [
+            "defamation",
+            "imputation",
+            "form",
+            "alternative",
+            "expressed",
+            "ironically",
+            "amount",
+            "criminal",
+            "intimidation",
+            "insult",
+            "reputation"
+          ],
+          "legal_concepts": [
+            "defamation",
+            "imputation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7457442283630371,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6964554390168802
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "spread",
+                "chunk_concept": "imputation",
+                "source": "legal_concept",
+                "similarity": 0.8429,
+                "weighted_score": 0.8429
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "expressed",
+                "source": "keyword",
+                "similarity": 0.9294,
+                "weighted_score": 0.6971
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "form",
+                "source": "keyword",
+                "similarity": 0.8886,
+                "weighted_score": 0.6664
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.696455,
+            "score_after_pre_rerank": 0.751093
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S356_N1_EXP1",
+          "score": 0.730485,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 356,
+          "citation": "Section 356",
+          "text": "It may amount to defamation to impute anything to a deceased person, if the imputation would harm the reputation of that person if living, and is intended to be hurtful to the feelings of his family or other near relatives.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nIt may amount to defamation to impute anything to a deceased person, if the imputation would harm the reputation of that person if living, and is intended to be hurtful to the feelings of his family or other near relatives.",
+          "keywords": [
+            "defamation",
+            "amount",
+            "impute",
+            "anything",
+            "deceased",
+            "imputation",
+            "harm",
+            "reputation",
+            "living",
+            "intended"
+          ],
+          "legal_concepts": [
+            "defamation",
+            "imputation",
+            "reputation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7399089932441711,
+            "original:bm25": 0.05,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6713235009146007
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "spread",
+                "chunk_concept": "imputation",
+                "source": "legal_concept",
+                "similarity": 0.8429,
+                "weighted_score": 0.8429
+              },
+              {
+                "query_concept": "damage",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 0.9275,
+                "weighted_score": 0.6956
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "intended",
+                "source": "keyword",
+                "similarity": 0.8873,
+                "weighted_score": 0.6654
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.671324,
+            "score_after_pre_rerank": 0.730485
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S356_N1_EXP2",
+          "score": 0.722743,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 356,
+          "citation": "Section 356",
+          "text": "It may amount to defamation to make an imputation concerning a company or an association or collection of persons as such.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nIt may amount to defamation to make an imputation concerning a company or an association or collection of persons as such.",
+          "keywords": [
+            "defamation",
+            "amount",
+            "make",
+            "imputation",
+            "concerning",
+            "company",
+            "association",
+            "collection",
+            "criminal",
+            "intimidation",
+            "reputation"
+          ],
+          "legal_concepts": [
+            "defamation",
+            "imputation",
+            "reputation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.74870365858078,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6618811131157907
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "spread",
+                "chunk_concept": "imputation",
+                "source": "legal_concept",
+                "similarity": 0.8429,
+                "weighted_score": 0.8429
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "collection",
+                "source": "keyword",
+                "similarity": 0.8978,
+                "weighted_score": 0.6733
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "concerning",
+                "source": "keyword",
+                "similarity": 0.8836,
+                "weighted_score": 0.6627
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.661881,
+            "score_after_pre_rerank": 0.722743
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S232_N1",
+          "score": 0.700875,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 232,
+          "citation": "Section 232",
+          "text": "Whoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 232: Threatening any person to give false evidence.\nWhoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "keywords": [
+            "false",
+            "evidence",
+            "reputation",
+            "give",
+            "whoever",
+            "threatens",
+            "injury",
+            "property",
+            "interested",
+            "intent",
+            "false evidence",
+            "threats"
+          ],
+          "legal_concepts": [
+            "offence against public justice",
+            "false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7273465991020203,
+            "original:bm25": 0.6043071955665924,
+            "original:semrank_pre_rerank": 0.9429,
+            "semrank_pre_rerank": 0.9429
+          },
+          "query_scores": {
+            "original": 0.647748029007012
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "score": 0.9429,
+            "best_similarity": 0.9429,
+            "best_concept": "false evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "false",
+                "chunk_concept": "false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9429,
+                "weighted_score": 0.9429
+              },
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "offence against public justice",
+                "source": "legal_concept",
+                "similarity": 0.8103,
+                "weighted_score": 0.8103
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "damage",
+                "chunk_concept": "injury",
+                "source": "keyword",
+                "similarity": 0.9247,
+                "weighted_score": 0.6935
+              }
+            ],
+            "pre_rerank_score": 0.9429,
+            "score_before_pre_rerank": 0.647748,
+            "score_after_pre_rerank": 0.700875
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S353_N1",
+          "score": 0.699991,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 353,
+          "citation": "Section 353",
+          "text": "Whoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 353: Statements conducing to public mischief.\nWhoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—",
+          "keywords": [
+            "whoever",
+            "makes",
+            "publishes",
+            "circulates",
+            "statement",
+            "false",
+            "information",
+            "rumour",
+            "report",
+            "including",
+            "false information",
+            "public mischief"
+          ],
+          "legal_concepts": [
+            "criminal intimidation",
+            "defamation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.5923287640062207,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.634135514592988
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "criminal intimidation",
+                "source": "legal_concept",
+                "similarity": 0.8192,
+                "weighted_score": 0.8192
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "statement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false information",
+                "source": "keyword",
+                "similarity": 0.9517,
+                "weighted_score": 0.7138
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.634136,
+            "score_after_pre_rerank": 0.699991
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S356_N1",
+          "score": 0.698748,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 356,
+          "citation": "Section 356",
+          "text": "Whoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.",
+          "keywords": [
+            "imputation",
+            "harm",
+            "defamation",
+            "whoever",
+            "words",
+            "either",
+            "spoken",
+            "intended",
+            "read",
+            "signs",
+            "reputation"
+          ],
+          "legal_concepts": [
+            "defamation",
+            "intentional harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7358419895172119,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6326196080442592
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "damage",
+                "chunk_concept": "intentional harm",
+                "source": "legal_concept",
+                "similarity": 0.8912,
+                "weighted_score": 0.8912
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "damage",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 0.9275,
+                "weighted_score": 0.6956
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "words",
+                "source": "keyword",
+                "similarity": 0.9011,
+                "weighted_score": 0.6759
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.63262,
+            "score_after_pre_rerank": 0.698748
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S356_N1_ILL4_4_C",
+          "score": 0.692855,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 356,
+          "citation": "Section 356",
+          "text": "An actor or singer who appears on a public stage, submits his acting or singing to the judgment of the public.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nAn actor or singer who appears on a public stage, submits his acting or singing to the judgment of the public.",
+          "keywords": [
+            "public",
+            "defamation",
+            "actor",
+            "singer",
+            "appears",
+            "stage",
+            "submits",
+            "acting",
+            "singing",
+            "judgment",
+            "reputation"
+          ],
+          "legal_concepts": [
+            "defamation",
+            "reputation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6254331828040661
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "judgment",
+                "source": "keyword",
+                "similarity": 0.8992,
+                "weighted_score": 0.6744
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "appears",
+                "source": "keyword",
+                "similarity": 0.8754,
+                "weighted_score": 0.6565
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "submits",
+                "source": "keyword",
+                "similarity": 0.8744,
+                "weighted_score": 0.6558
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.625433,
+            "score_after_pre_rerank": 0.692855
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S356_N1_EXP4",
+          "score": 0.684063,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 356,
+          "citation": "Section 356",
+          "text": "No imputation is said to harm a person’s reputation, unless that imputation directly or indirectly, in the estimation of others, lowers the moral or intellectual character of that person, or lowers the character of that person in respect of his caste or of his calling, or lowers the credit of that person, or causes it to be believed that the body of that person is in a loathsome state, or in a state generally considered as disgraceful.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nNo imputation is said to harm a person’s reputation, unless that imputation directly or indirectly, in the estimation of others, lowers the moral or intellectual character of that person, or lowers the character of that person in respect of his caste or of his calling, or lowers the credit of that person, or causes it to be believed that the body of that person is in a loathsome state, or in a state generally considered as disgraceful.",
+          "keywords": [
+            "lowers",
+            "imputation",
+            "character",
+            "state",
+            "defamation",
+            "said",
+            "harm",
+            "reputation",
+            "directly",
+            "indirectly"
+          ],
+          "legal_concepts": [
+            "defamation",
+            "reputation harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7304677367210388,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6147110581193285
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "reputation damage",
+                "chunk_concept": "reputation harm",
+                "source": "legal_concept",
+                "similarity": 0.9701,
+                "weighted_score": 0.9701
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "damage",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 0.9275,
+                "weighted_score": 0.6956
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "said",
+                "source": "keyword",
+                "similarity": 0.9123,
+                "weighted_score": 0.6842
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.614711,
+            "score_after_pre_rerank": 0.684063
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S353_N3_ECP1",
+          "score": 1.0,
+          "chunk_type": "exception",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 353,
+          "citation": "Section 353",
+          "text": "It does not amount to an offence, within the meaning of this section, when the person making, publishing or circulating any such statement, false information, rumor or report, has reasonable grounds for believing that such statement, false information, rumor or report is true and makes, publishes or circulates it in good faith and without any such intent as aforesaid. Act caused by inducing person to believe that he will be rendered an object of Divine displeasure.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 353: Statements conducing to public mischief.\nWhoever commits an offence specified in sub-section (2) in any place of worship or in any assembly engaged in the performance of religious worship or religious ceremonies, shall be punished with imprisonment which may extend to five years and shall also be liable to fine.\nIt does not amount to an offence, within the meaning of this section, when the person making, publishing or circulating any such statement, false information, rumor or report, has reasonable grounds for believing that such statement, false information, rumor or report is true and makes, publishes or circulates it in good faith and without any such intent as aforesaid. Act caused by inducing person to believe that he will be rendered an object of Divine displeasure.",
+          "keywords": [
+            "statement",
+            "false",
+            "information",
+            "rumor",
+            "report",
+            "amount",
+            "offence",
+            "meaning",
+            "making",
+            "publishing",
+            "public mischief",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "criminal intimidation",
+            "defamation",
+            "offence against religion"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.05263157894736842,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "criminal intimidation",
+                "source": "legal_concept",
+                "similarity": 0.8192,
+                "weighted_score": 0.8192
+              },
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "offence against religion",
+                "source": "legal_concept",
+                "similarity": 0.793,
+                "weighted_score": 0.793
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "statement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S356_N1_ILL4_4_B",
+          "score": 0.604485,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 356,
+          "citation": "Section 356",
+          "text": "A person who makes a speech in public, submits that speech to the judgment of the public.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nA person who makes a speech in public, submits that speech to the judgment of the public.",
+          "keywords": [
+            "speech",
+            "public",
+            "defamation",
+            "makes",
+            "submits",
+            "judgment",
+            "criminal",
+            "intimidation",
+            "insult",
+            "annoyance",
+            "reputation",
+            "harm"
+          ],
+          "legal_concepts": [
+            "defamation",
+            "reputation harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7902087881561682
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "reputation damage",
+                "chunk_concept": "reputation harm",
+                "source": "legal_concept",
+                "similarity": 0.9701,
+                "weighted_score": 0.9701
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "damage",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 0.9275,
+                "weighted_score": 0.6956
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "judgment",
+                "source": "keyword",
+                "similarity": 0.8992,
+                "weighted_score": 0.6744
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.790209,
+            "score_after_pre_rerank": 0.827971
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S356_N1_EXP3",
+          "score": 0.427736,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 356,
+          "citation": "Section 356",
+          "text": "An imputation in the form of an alternative or expressed ironically, may amount to defamation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nAn imputation in the form of an alternative or expressed ironically, may amount to defamation.",
+          "keywords": [
+            "defamation",
+            "imputation",
+            "form",
+            "alternative",
+            "expressed",
+            "ironically",
+            "amount",
+            "criminal",
+            "intimidation",
+            "insult",
+            "reputation"
+          ],
+          "legal_concepts": [
+            "defamation",
+            "imputation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7457442283630371,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6964554390168802
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "spread",
+                "chunk_concept": "imputation",
+                "source": "legal_concept",
+                "similarity": 0.8429,
+                "weighted_score": 0.8429
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "expressed",
+                "source": "keyword",
+                "similarity": 0.9294,
+                "weighted_score": 0.6971
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "form",
+                "source": "keyword",
+                "similarity": 0.8886,
+                "weighted_score": 0.6664
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.696455,
+            "score_after_pre_rerank": 0.751093
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S232_N1",
+          "score": 0.392684,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 232,
+          "citation": "Section 232",
+          "text": "Whoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 232: Threatening any person to give false evidence.\nWhoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "keywords": [
+            "false",
+            "evidence",
+            "reputation",
+            "give",
+            "whoever",
+            "threatens",
+            "injury",
+            "property",
+            "interested",
+            "intent",
+            "false evidence",
+            "threats"
+          ],
+          "legal_concepts": [
+            "offence against public justice",
+            "false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7273465991020203,
+            "original:bm25": 0.6043071955665924,
+            "original:semrank_pre_rerank": 0.9429,
+            "semrank_pre_rerank": 0.9429
+          },
+          "query_scores": {
+            "original": 0.647748029007012
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "score": 0.9429,
+            "best_similarity": 0.9429,
+            "best_concept": "false evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "false",
+                "chunk_concept": "false evidence",
+                "source": "legal_concept",
+                "similarity": 0.9429,
+                "weighted_score": 0.9429
+              },
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "offence against public justice",
+                "source": "legal_concept",
+                "similarity": 0.8103,
+                "weighted_score": 0.8103
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "damage",
+                "chunk_concept": "injury",
+                "source": "keyword",
+                "similarity": 0.9247,
+                "weighted_score": 0.6935
+              }
+            ],
+            "pre_rerank_score": 0.9429,
+            "score_before_pre_rerank": 0.647748,
+            "score_after_pre_rerank": 0.700875
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S356_N1_EXP1",
+          "score": 0.380352,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 356,
+          "citation": "Section 356",
+          "text": "It may amount to defamation to impute anything to a deceased person, if the imputation would harm the reputation of that person if living, and is intended to be hurtful to the feelings of his family or other near relatives.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nIt may amount to defamation to impute anything to a deceased person, if the imputation would harm the reputation of that person if living, and is intended to be hurtful to the feelings of his family or other near relatives.",
+          "keywords": [
+            "defamation",
+            "amount",
+            "impute",
+            "anything",
+            "deceased",
+            "imputation",
+            "harm",
+            "reputation",
+            "living",
+            "intended"
+          ],
+          "legal_concepts": [
+            "defamation",
+            "imputation",
+            "reputation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7399089932441711,
+            "original:bm25": 0.05,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6713235009146007
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "spread",
+                "chunk_concept": "imputation",
+                "source": "legal_concept",
+                "similarity": 0.8429,
+                "weighted_score": 0.8429
+              },
+              {
+                "query_concept": "damage",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 0.9275,
+                "weighted_score": 0.6956
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "intended",
+                "source": "keyword",
+                "similarity": 0.8873,
+                "weighted_score": 0.6654
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.671324,
+            "score_after_pre_rerank": 0.730485
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S356_N1_EXP2",
+          "score": 0.362551,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 356,
+          "citation": "Section 356",
+          "text": "It may amount to defamation to make an imputation concerning a company or an association or collection of persons as such.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nIt may amount to defamation to make an imputation concerning a company or an association or collection of persons as such.",
+          "keywords": [
+            "defamation",
+            "amount",
+            "make",
+            "imputation",
+            "concerning",
+            "company",
+            "association",
+            "collection",
+            "criminal",
+            "intimidation",
+            "reputation"
+          ],
+          "legal_concepts": [
+            "defamation",
+            "imputation",
+            "reputation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.74870365858078,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6618811131157907
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "spread",
+                "chunk_concept": "imputation",
+                "source": "legal_concept",
+                "similarity": 0.8429,
+                "weighted_score": 0.8429
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "collection",
+                "source": "keyword",
+                "similarity": 0.8978,
+                "weighted_score": 0.6733
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "concerning",
+                "source": "keyword",
+                "similarity": 0.8836,
+                "weighted_score": 0.6627
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.661881,
+            "score_after_pre_rerank": 0.722743
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S353_N1",
+          "score": 0.310245,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 353,
+          "citation": "Section 353",
+          "text": "Whoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 353: Statements conducing to public mischief.\nWhoever makes, publishes or circulates any statement, false information, rumour, or report, including through electronic means—",
+          "keywords": [
+            "whoever",
+            "makes",
+            "publishes",
+            "circulates",
+            "statement",
+            "false",
+            "information",
+            "rumour",
+            "report",
+            "including",
+            "false information",
+            "public mischief"
+          ],
+          "legal_concepts": [
+            "criminal intimidation",
+            "defamation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.5923287640062207,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.634135514592988
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "criminal intimidation",
+                "source": "legal_concept",
+                "similarity": 0.8192,
+                "weighted_score": 0.8192
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "statement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "false",
+                "chunk_concept": "false information",
+                "source": "keyword",
+                "similarity": 0.9517,
+                "weighted_score": 0.7138
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.634136,
+            "score_after_pre_rerank": 0.699991
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S356_N1",
+          "score": 0.307387,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 356,
+          "citation": "Section 356",
+          "text": "Whoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.",
+          "keywords": [
+            "imputation",
+            "harm",
+            "defamation",
+            "whoever",
+            "words",
+            "either",
+            "spoken",
+            "intended",
+            "read",
+            "signs",
+            "reputation"
+          ],
+          "legal_concepts": [
+            "defamation",
+            "intentional harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7358419895172119,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6326196080442592
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "damage",
+                "chunk_concept": "intentional harm",
+                "source": "legal_concept",
+                "similarity": 0.8912,
+                "weighted_score": 0.8912
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "damage",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 0.9275,
+                "weighted_score": 0.6956
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "words",
+                "source": "keyword",
+                "similarity": 0.9011,
+                "weighted_score": 0.6759
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.63262,
+            "score_after_pre_rerank": 0.698748
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S356_N1_ILL4_4_C",
+          "score": 0.293839,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 356,
+          "citation": "Section 356",
+          "text": "An actor or singer who appears on a public stage, submits his acting or singing to the judgment of the public.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nAn actor or singer who appears on a public stage, submits his acting or singing to the judgment of the public.",
+          "keywords": [
+            "public",
+            "defamation",
+            "actor",
+            "singer",
+            "appears",
+            "stage",
+            "submits",
+            "acting",
+            "singing",
+            "judgment",
+            "reputation"
+          ],
+          "legal_concepts": [
+            "defamation",
+            "reputation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6254331828040661
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "judgment",
+                "source": "keyword",
+                "similarity": 0.8992,
+                "weighted_score": 0.6744
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "appears",
+                "source": "keyword",
+                "similarity": 0.8754,
+                "weighted_score": 0.6565
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "submits",
+                "source": "keyword",
+                "similarity": 0.8744,
+                "weighted_score": 0.6558
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.625433,
+            "score_after_pre_rerank": 0.692855
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S356_N1_EXP4",
+          "score": 0.273625,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 356,
+          "citation": "Section 356",
+          "text": "No imputation is said to harm a person’s reputation, unless that imputation directly or indirectly, in the estimation of others, lowers the moral or intellectual character of that person, or lowers the character of that person in respect of his caste or of his calling, or lowers the credit of that person, or causes it to be believed that the body of that person is in a loathsome state, or in a state generally considered as disgraceful.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 356: Defamation.\nWhoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes in any manner, any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\nNo imputation is said to harm a person’s reputation, unless that imputation directly or indirectly, in the estimation of others, lowers the moral or intellectual character of that person, or lowers the character of that person in respect of his caste or of his calling, or lowers the credit of that person, or causes it to be believed that the body of that person is in a loathsome state, or in a state generally considered as disgraceful.",
+          "keywords": [
+            "lowers",
+            "imputation",
+            "character",
+            "state",
+            "defamation",
+            "said",
+            "harm",
+            "reputation",
+            "directly",
+            "indirectly"
+          ],
+          "legal_concepts": [
+            "defamation",
+            "reputation harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "defamation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7304677367210388,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6147110581193285
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "false statement",
+              "defamation",
+              "reputation damage",
+              "spread",
+              "false",
+              "statement",
+              "damage",
+              "reputation"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "defamation",
+                "chunk_concept": "defamation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "reputation damage",
+                "chunk_concept": "reputation harm",
+                "source": "legal_concept",
+                "similarity": 0.9701,
+                "weighted_score": 0.9701
+              },
+              {
+                "query_concept": "reputation",
+                "chunk_concept": "reputation",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "damage",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 0.9275,
+                "weighted_score": 0.6956
+              },
+              {
+                "query_concept": "statement",
+                "chunk_concept": "said",
+                "source": "keyword",
+                "similarity": 0.9123,
+                "weighted_score": 0.6842
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "defamation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.614711,
+            "score_after_pre_rerank": 0.684063
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

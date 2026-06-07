@@ -1,0 +1,69 @@
+{
+  "answer": "Theft under the Bharatiya Nyaya Sanhita (BNS) is defined in Section 303. A clear example is illustrated in the act of cutting down a tree on another person's land with the intent to take it without their consent. As soon as the tree is severed from the earth, the act of theft is committed. This is supported by the explanation provided in Section 303, which states that a person commits theft by moving property out of another's possession without consent, intending to take it dishonestly. Other examples include taking a dog from its owner without consent or inducing it to follow with the intent to take it away.",
+  "summary_answer": "An example of theft under the Bharatiya Nyaya Sanhita (BNS) is when a person cuts down a tree on someone else's property with the intention of taking it without consent. This act constitutes theft as soon as the tree is severed from the ground.",
+  "detailed_answer": "Theft under the Bharatiya Nyaya Sanhita (BNS) is defined in Section 303. A clear example is illustrated in the act of cutting down a tree on another person's land with the intent to take it without their consent. As soon as the tree is severed from the earth, the act of theft is committed. This is supported by the explanation provided in Section 303, which states that a person commits theft by moving property out of another's possession without consent, intending to take it dishonestly. Other examples include taking a dog from its owner without consent or inducing it to follow with the intent to take it away.",
+  "final_answer": "An example of theft under BNS is cutting down a tree on someone else's property with the intent to take it without consent, which constitutes theft as soon as the tree is severed from the ground.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 303(1), Bharatiya Nyaya Sanhita, 2023",
+    "Section 303: Theft."
+  ],
+  "confidence": {
+    "retrieval": 0.6771,
+    "reranker": 0.5048,
+    "citation": 1.0,
+    "reasoning": 0.814,
+    "evidence_strength": 0.6771,
+    "reasoning_certainty": 0.814,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.5512,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.72,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.5048,
+        "avg_selected_semrank_score": 1.0,
+        "avg_selected_concept_coverage": 0.5,
+        "selected_chunk_count": 2,
+        "matched_selected_chunk_count": 2,
+        "selected_semrank_count": 1
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.628,
+        "ambiguity_gap_score": 1.0,
+        "uncertainty_score": 1.0,
+        "gap": 0.3289,
+        "highest_competing_score": 0.2991,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.72,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S303_N1",
+    "chunk__section__BNS_S303"
+  ]
+}

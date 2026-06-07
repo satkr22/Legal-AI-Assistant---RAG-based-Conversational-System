@@ -1,0 +1,3346 @@
+[
+  {
+    "query": "What is wrongful confinement?",
+    "phase8": {
+      "query": "What is wrongful confinement?",
+      "intent": {
+        "primary": "definition",
+        "secondary": [
+          "legal penalty"
+        ]
+      },
+      "concepts": [
+        "wrongful confinement",
+        "restriction of movement"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.8946,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.2,
+        "structure_validity": 1.0,
+        "overall": 0.7978
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is wrongful confinement?",
+          "targets": [],
+          "concepts": [
+            "wrongful confinement",
+            "restriction of movement"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S127_N1_ILL1_A",
+            "score": 1.0,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 127,
+            "citation": "Section 127",
+            "text": "A causes Z to go within a walled space, and locks Z in. Z is thus prevented from proceeding in any direction beyond the circumscribing line of wall. A wrongfully confines Z.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully restrains any person in such a manner as to prevent that person from proceedings beyond certain circumscribing limits, is said “wrongfully to confine” that person.\nA causes Z to go within a walled space, and locks Z in. Z is thus prevented from proceeding in any direction beyond the circumscribing line of wall. A wrongfully confines Z.",
+            "keywords": [
+              "causes",
+              "walled",
+              "space",
+              "locks",
+              "thus",
+              "prevented",
+              "proceeding",
+              "direction",
+              "beyond",
+              "circumscribing",
+              "wrongful confinement",
+              "restraint"
+            ],
+            "legal_concepts": [
+              "wrongful confinement",
+              "restraint of person"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "wrongful confinement"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7746442556381226,
+              "bm25": 0.47988708115450146,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wrongful confinement",
+                "restriction of movement",
+                "wrongful",
+                "confinement",
+                "what is wrongful confinement"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "wrongful confinement",
+                  "chunk_concept": "wrongful confinement",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "restriction of movement",
+                  "chunk_concept": "restraint of person",
+                  "source": "legal_concept",
+                  "similarity": 0.9099,
+                  "weighted_score": 0.9099
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "restraint",
+                  "source": "keyword",
+                  "similarity": 0.9061,
+                  "weighted_score": 0.6796
+                },
+                {
+                  "query_concept": "restriction of movement",
+                  "chunk_concept": "prevented",
+                  "source": "keyword",
+                  "similarity": 0.8933,
+                  "weighted_score": 0.6699
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "walled",
+                  "source": "keyword",
+                  "similarity": 0.8916,
+                  "weighted_score": 0.6687
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "wrongful confinement",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S127_N1",
+            "score": 0.992048,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 127,
+            "citation": "Section 127",
+            "text": "Whoever wrongfully restrains any person in such a manner as to prevent that person from proceedings beyond certain circumscribing limits, is said “wrongfully to confine” that person.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully restrains any person in such a manner as to prevent that person from proceedings beyond certain circumscribing limits, is said “wrongfully to confine” that person.",
+            "keywords": [
+              "wrongfully",
+              "whoever",
+              "restrains",
+              "manner",
+              "prevent",
+              "proceedings",
+              "beyond",
+              "certain",
+              "circumscribing",
+              "limits",
+              "wrongful confinement",
+              "restraint"
+            ],
+            "legal_concepts": [
+              "wrongful confinement",
+              "restraint of liberty"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "wrongful confinement"
+              ]
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.4114518267030776,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wrongful confinement",
+                "restriction of movement",
+                "wrongful",
+                "confinement",
+                "what is wrongful confinement"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "wrongful confinement",
+                  "chunk_concept": "wrongful confinement",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "restraint of liberty",
+                  "source": "legal_concept",
+                  "similarity": 0.8739,
+                  "weighted_score": 0.8739
+                },
+                {
+                  "query_concept": "wrongful",
+                  "chunk_concept": "wrongfully",
+                  "source": "keyword",
+                  "similarity": 0.9782,
+                  "weighted_score": 0.7337
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "restraint",
+                  "source": "keyword",
+                  "similarity": 0.9061,
+                  "weighted_score": 0.6796
+                },
+                {
+                  "query_concept": "restriction of movement",
+                  "chunk_concept": "restrains",
+                  "source": "keyword",
+                  "similarity": 0.8993,
+                  "weighted_score": 0.6745
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "wrongful confinement",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S127_N1_ILL1_B",
+            "score": 0.988214,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 127,
+            "citation": "Section 127",
+            "text": "A places men with firearms at the outlets of a building, and tells Z that they will fire at Z if Z attempts to leave the building. A wrongfully confines Z.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully restrains any person in such a manner as to prevent that person from proceedings beyond certain circumscribing limits, is said “wrongfully to confine” that person.\nA places men with firearms at the outlets of a building, and tells Z that they will fire at Z if Z attempts to leave the building. A wrongfully confines Z.",
+            "keywords": [
+              "building",
+              "places",
+              "firearms",
+              "outlets",
+              "tells",
+              "they",
+              "fire",
+              "attempts",
+              "leave",
+              "wrongfully",
+              "wrongful confinement",
+              "restraint"
+            ],
+            "legal_concepts": [
+              "confinement",
+              "restraint of liberty"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7275468111038208,
+              "bm25": 0.4916634757678651,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wrongful confinement",
+                "restriction of movement",
+                "wrongful",
+                "confinement",
+                "what is wrongful confinement"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "confinement",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "restraint of liberty",
+                  "source": "legal_concept",
+                  "similarity": 0.8739,
+                  "weighted_score": 0.8739
+                },
+                {
+                  "query_concept": "wrongful confinement",
+                  "chunk_concept": "wrongful confinement",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "wrongful",
+                  "chunk_concept": "wrongfully",
+                  "source": "keyword",
+                  "similarity": 0.9782,
+                  "weighted_score": 0.7337
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "restraint",
+                  "source": "keyword",
+                  "similarity": 0.9061,
+                  "weighted_score": 0.6796
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "confinement",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S127_N6",
+            "score": 0.791783,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 127,
+            "citation": "Section 127",
+            "text": "Whoever wrongfully confines any person in such manner as to indicate an intention that the confinement of such person may not be known to any person interested in the person so confined, or to any public servant, or that the place of such confinement may not be known to or discovered by any such person or public servant as hereinbefore mentioned, shall be punished with imprisonment of either description for a term which may extend to three years in addition to any other punishment to which he may be liable for such wrongful confinement and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person in such manner as to indicate an intention that the confinement of such person may not be known to any person interested in the person so confined, or to any public servant, or that the place of such confinement may not be known to or discovered by any such person or public servant as hereinbefore mentioned, shall be punished with imprisonment of either description for a term which may extend to three years in addition to any other punishment to which he may be liable for such wrongful confinement and shall also be liable to fine.",
+            "keywords": [
+              "confinement",
+              "known",
+              "public",
+              "servant",
+              "liable",
+              "wrongful",
+              "whoever",
+              "wrongfully",
+              "confines",
+              "manner",
+              "wrongful confinement",
+              "secret confinement"
+            ],
+            "legal_concepts": [
+              "confinement",
+              "intention",
+              "punishment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7566104531288147,
+              "bm25": 0.6560034477226668,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wrongful confinement",
+                "restriction of movement",
+                "wrongful",
+                "confinement",
+                "what is wrongful confinement"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "confinement",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "intention",
+                  "source": "legal_concept",
+                  "similarity": 0.846,
+                  "weighted_score": 0.846
+                },
+                {
+                  "query_concept": "wrongful",
+                  "chunk_concept": "wrongful",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "wrongful confinement",
+                  "chunk_concept": "wrongful confinement",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "wrongful",
+                  "chunk_concept": "wrongfully",
+                  "source": "keyword",
+                  "similarity": 0.9782,
+                  "weighted_score": 0.7337
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "confinement",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S127_N8",
+            "score": 0.729155,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 127,
+            "citation": "Section 127",
+            "text": "Whoever wrongfully confines any person for the purpose of extorting from the person confined or any person interested in the person confined any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the person confined or any person interested in the person confined to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Of criminal force and assault Force. [OF CRIMINAL FORCE AND ASSAULT]",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person for the purpose of extorting from the person confined or any person interested in the person confined any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the person confined or any person interested in the person confined to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Of criminal force and assault Force. [OF CRIMINAL FORCE AND ASSAULT]",
+            "keywords": [
+              "confined",
+              "force",
+              "purpose",
+              "interested",
+              "information",
+              "lead",
+              "restoration",
+              "property",
+              "valuable",
+              "security",
+              "wrongful confinement",
+              "extortion",
+              "property restoration"
+            ],
+            "legal_concepts": [
+              "wrongful confinement",
+              "extortion",
+              "property restoration"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 1,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "wrongful confinement"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7751682996749878,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wrongful confinement",
+                "restriction of movement",
+                "wrongful",
+                "confinement",
+                "what is wrongful confinement"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "wrongful confinement",
+                  "chunk_concept": "wrongful confinement",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "extortion",
+                  "source": "legal_concept",
+                  "similarity": 0.8305,
+                  "weighted_score": 0.8305
+                },
+                {
+                  "query_concept": "wrongful",
+                  "chunk_concept": "property restoration",
+                  "source": "legal_concept",
+                  "similarity": 0.8285,
+                  "weighted_score": 0.8285
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "confined",
+                  "source": "keyword",
+                  "similarity": 0.969,
+                  "weighted_score": 0.7268
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "security",
+                  "source": "keyword",
+                  "similarity": 0.8874,
+                  "weighted_score": 0.6655
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "wrongful confinement",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S127_N2",
+            "score": 0.696606,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 127,
+            "citation": "Section 127",
+            "text": "Whoever wrongfully confines any person shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both.",
+            "keywords": [
+              "extend",
+              "whoever",
+              "wrongfully",
+              "confines",
+              "punished",
+              "imprisonment",
+              "either",
+              "description",
+              "term",
+              "year",
+              "wrongful confinement",
+              "fine"
+            ],
+            "legal_concepts": [
+              "offence against the human body",
+              "punishment for wrongful confinement"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7635687589645386,
+              "bm25": 0.4457564660106084,
+              "semrank": 0.965640664100647,
+              "semrank_pre_rerank": 0.9656
+            },
+            "query_scores": {
+              "original": 0.965640664100647
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9656,
+              "query_concepts": [
+                "wrongful confinement",
+                "restriction of movement",
+                "wrongful",
+                "confinement",
+                "what is wrongful confinement"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "wrongful confinement",
+                  "chunk_concept": "punishment for wrongful confinement",
+                  "source": "legal_concept",
+                  "similarity": 0.9656,
+                  "weighted_score": 0.9656
+                },
+                {
+                  "query_concept": "wrongful confinement",
+                  "chunk_concept": "offence against the human body",
+                  "source": "legal_concept",
+                  "similarity": 0.8248,
+                  "weighted_score": 0.8248
+                },
+                {
+                  "query_concept": "wrongful confinement",
+                  "chunk_concept": "wrongful confinement",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "wrongful",
+                  "chunk_concept": "wrongfully",
+                  "source": "keyword",
+                  "similarity": 0.9782,
+                  "weighted_score": 0.7337
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "confines",
+                  "source": "keyword",
+                  "similarity": 0.9472,
+                  "weighted_score": 0.7104
+                }
+              ],
+              "score": 0.9656,
+              "best_similarity": 0.9656,
+              "best_concept": "punishment for wrongful confinement",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9656,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.993808
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S127_N4",
+            "score": 0.693264,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 127,
+            "citation": "Section 127",
+            "text": "Whoever wrongfully confines any person for ten days or more, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine which shall not be less than ten thousand rupees.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person for ten days or more, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine which shall not be less than ten thousand rupees.",
+            "keywords": [
+              "whoever",
+              "wrongfully",
+              "confines",
+              "days",
+              "punished",
+              "imprisonment",
+              "either",
+              "description",
+              "term",
+              "extend",
+              "wrongful confinement",
+              "punishable"
+            ],
+            "legal_concepts": [
+              "confinement",
+              "imprisonment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7545303702354431,
+              "bm25": 0.3626932660353822,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wrongful confinement",
+                "restriction of movement",
+                "wrongful",
+                "confinement",
+                "what is wrongful confinement"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "confinement",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "imprisonment",
+                  "source": "legal_concept",
+                  "similarity": 0.9044,
+                  "weighted_score": 0.9044
+                },
+                {
+                  "query_concept": "wrongful confinement",
+                  "chunk_concept": "wrongful confinement",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "wrongful",
+                  "chunk_concept": "wrongfully",
+                  "source": "keyword",
+                  "similarity": 0.9782,
+                  "weighted_score": 0.7337
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "confines",
+                  "source": "keyword",
+                  "similarity": 0.9472,
+                  "weighted_score": 0.7104
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "confinement",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S127_N7",
+            "score": 0.666709,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 127,
+            "citation": "Section 127",
+            "text": "Whoever wrongfully confines any person for the purpose of extorting from the person confined, or from any person interested in the person confined, any property or valuable security or of constraining the person confined or any person interested in such person to do anything illegal or to give any information which may facilitate the commission of an offence, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person for the purpose of extorting from the person confined, or from any person interested in the person confined, any property or valuable security or of constraining the person confined or any person interested in such person to do anything illegal or to give any information which may facilitate the commission of an offence, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.",
+            "keywords": [
+              "confined",
+              "interested",
+              "whoever",
+              "wrongfully",
+              "confines",
+              "purpose",
+              "extorting",
+              "property",
+              "valuable",
+              "security",
+              "wrongful confinement",
+              "extortion"
+            ],
+            "legal_concepts": [
+              "confinement",
+              "extortion"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7676122784614563,
+              "bm25": 0.15684125845062455,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wrongful confinement",
+                "restriction of movement",
+                "wrongful",
+                "confinement",
+                "what is wrongful confinement"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "confinement",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "extortion",
+                  "source": "legal_concept",
+                  "similarity": 0.8305,
+                  "weighted_score": 0.8305
+                },
+                {
+                  "query_concept": "wrongful confinement",
+                  "chunk_concept": "wrongful confinement",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "wrongful",
+                  "chunk_concept": "wrongfully",
+                  "source": "keyword",
+                  "similarity": 0.9782,
+                  "weighted_score": 0.7337
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "confined",
+                  "source": "keyword",
+                  "similarity": 0.969,
+                  "weighted_score": 0.7268
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "confinement",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S127_N3",
+            "score": 0.662654,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 127,
+            "citation": "Section 127",
+            "text": "Whoever wrongfully confines any person for three days, or more, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to ten thousand rupees, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person for three days, or more, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to ten thousand rupees, or with both.",
+            "keywords": [
+              "three",
+              "extend",
+              "whoever",
+              "wrongfully",
+              "confines",
+              "days",
+              "punished",
+              "imprisonment",
+              "either",
+              "description",
+              "wrongful confinement",
+              "three days"
+            ],
+            "legal_concepts": [
+              "confinement",
+              "punishment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7480025291442871,
+              "bm25": 0.3925747756291818,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "wrongful confinement",
+                "restriction of movement",
+                "wrongful",
+                "confinement",
+                "what is wrongful confinement"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "confinement",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "wrongful confinement",
+                  "chunk_concept": "wrongful confinement",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "wrongful",
+                  "chunk_concept": "wrongfully",
+                  "source": "keyword",
+                  "similarity": 0.9782,
+                  "weighted_score": 0.7337
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "confines",
+                  "source": "keyword",
+                  "similarity": 0.9472,
+                  "weighted_score": 0.7104
+                },
+                {
+                  "query_concept": "confinement",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.9044,
+                  "weighted_score": 0.6783
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "confinement",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__section__BNS_S127",
+            "score": 0.650775,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 127,
+            "citation": "Section 127",
+            "text": "(1) Whoever wrongfully restrains any person in such a manner\nas to prevent that person from proceedings beyond certain circumscribing\nlimits, is said “wrongfully to confine” that person.\nIllustrations.\n(a) A causes Z to go within a walled space, and locks Z in. Z is thus\nprevented from proceeding in any direction beyond the circumscribing line\nof wall. A wrongfully confines Z.\n(b) A places men with firearms at the outlets of a building, and tells\nZ that they will fire at Z if Z attempts to leave the building. A wrongfully\nconfines Z.\n(2) Whoever wrongfully confines any person shall be punished with\nimprisonment of either description for a term which may extend to one\nyear, or with fine which may extend to five thousand rupees, or with both.\n(3) Whoever wrongfully confines any person for three days, or more,\nshall be punished with imprisonment of either description for a term which\nmay extend to three years, or with fine which may extend to ten thousand\nrupees, or with both.\n(4) Whoever wrongfully confines any person for ten days or more,\nshall be punished with imprisonment of either description for a term which\nmay extend to five years, and shall also be liable to fine which shall not be\nless than ten thousand rupees.\n(5) Whoever keeps any person in wrongful confinement, knowing that\na writ for the liberation of that person has been duly issued, shall be\npunished with imprisonment of either description for a term which may\nextend to two years in addition to any term of imprisonment to which he\nmay be liable under any other section of this Chapter and shall also be\nliable to fine.\n(6) Whoever wrongfully confines any person in such manner as to\nindicate an intention that the confinement of such person may not be known\nto any person interested in the person so confined, or to any public servant,\nor that the place of such confinement may not be known to or discovered\nby any such person or public servant as hereinbefore mentioned, shall be\npunished with imprisonment of either description for a term which may\nextend to three years in addition to any other punishment to which he may\nbe liable for such wrongful confinement and shall also be liable to fine.\n(7) Whoever wrongfully confines any person for the purpose of\nextorting from the person confined, or from any person interested in the\nperson confined, any property or valuable security or of constraining the\nperson confined or any person interested in such person to do anything\nillegal or to give any information which may facilitate the commission of an\noffence, shall be punished with imprisonment of either description for a\nterm which may extend to three years, and shall also be liable to fine.\n(8) Whoever wrongfully confines any person for the purpose of\nextorting from the person confined or any person interested in the person\nconfined any confession or any information which may lead to the detection\nof an offence or misconduct, or for the purpose of constraining the person\nconfined or any person interested in the person confined to restore or to\ncause the restoration of any property or valuable security or to satisfy any\nclaim or demand, or to give information which may lead to the restoration\nof any property or valuable security, shall be punished with imprisonment\nof either description for a term which may extend to three years, and shall\nalso be liable to fine.\nOf criminal force and assault\nForce.\n[OF CRIMINAL FORCE AND ASSAULT]",
+            "derived_context": "",
+            "keywords": [
+              "wrongful confinement",
+              "restraint of person"
+            ],
+            "legal_concepts": [
+              "wrongful confinement",
+              "restriction of movement"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 2,
+              "coverage_ratio": 1.0,
+              "matched_concepts": [
+                "wrongful confinement",
+                "restriction of movement"
+              ]
+            },
+            "source_scores": {
+              "anchor": 0.9
+            },
+            "query_scores": {
+              "anchor": 0.9
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S127_N1_ILL1_A",
+              "rerank"
+            ]
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S127_N1_ILL1_A",
+          "score": 1.0,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "A causes Z to go within a walled space, and locks Z in. Z is thus prevented from proceeding in any direction beyond the circumscribing line of wall. A wrongfully confines Z.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully restrains any person in such a manner as to prevent that person from proceedings beyond certain circumscribing limits, is said “wrongfully to confine” that person.\nA causes Z to go within a walled space, and locks Z in. Z is thus prevented from proceeding in any direction beyond the circumscribing line of wall. A wrongfully confines Z.",
+          "keywords": [
+            "causes",
+            "walled",
+            "space",
+            "locks",
+            "thus",
+            "prevented",
+            "proceeding",
+            "direction",
+            "beyond",
+            "circumscribing",
+            "wrongful confinement",
+            "restraint"
+          ],
+          "legal_concepts": [
+            "wrongful confinement",
+            "restraint of person"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "wrongful confinement"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7746442556381226,
+            "original:bm25": 0.47988708115450146,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "restriction of movement",
+                "chunk_concept": "restraint of person",
+                "source": "legal_concept",
+                "similarity": 0.9099,
+                "weighted_score": 0.9099
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "restraint",
+                "source": "keyword",
+                "similarity": 0.9061,
+                "weighted_score": 0.6796
+              },
+              {
+                "query_concept": "restriction of movement",
+                "chunk_concept": "prevented",
+                "source": "keyword",
+                "similarity": 0.8933,
+                "weighted_score": 0.6699
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "walled",
+                "source": "keyword",
+                "similarity": 0.8916,
+                "weighted_score": 0.6687
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "wrongful confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S127_N1",
+          "score": 0.99348,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "Whoever wrongfully restrains any person in such a manner as to prevent that person from proceedings beyond certain circumscribing limits, is said “wrongfully to confine” that person.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully restrains any person in such a manner as to prevent that person from proceedings beyond certain circumscribing limits, is said “wrongfully to confine” that person.",
+          "keywords": [
+            "wrongfully",
+            "whoever",
+            "restrains",
+            "manner",
+            "prevent",
+            "proceedings",
+            "beyond",
+            "certain",
+            "circumscribing",
+            "limits",
+            "wrongful confinement",
+            "restraint"
+          ],
+          "legal_concepts": [
+            "wrongful confinement",
+            "restraint of liberty"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "wrongful confinement"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.4114518267030776,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9920482044824992
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "restraint of liberty",
+                "source": "legal_concept",
+                "similarity": 0.8739,
+                "weighted_score": 0.8739
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongfully",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7337
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "restraint",
+                "source": "keyword",
+                "similarity": 0.9061,
+                "weighted_score": 0.6796
+              },
+              {
+                "query_concept": "restriction of movement",
+                "chunk_concept": "restrains",
+                "source": "keyword",
+                "similarity": 0.8993,
+                "weighted_score": 0.6745
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "wrongful confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.992048,
+            "score_after_pre_rerank": 0.99348
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S127_N1_ILL1_B",
+          "score": 0.990336,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "A places men with firearms at the outlets of a building, and tells Z that they will fire at Z if Z attempts to leave the building. A wrongfully confines Z.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully restrains any person in such a manner as to prevent that person from proceedings beyond certain circumscribing limits, is said “wrongfully to confine” that person.\nA places men with firearms at the outlets of a building, and tells Z that they will fire at Z if Z attempts to leave the building. A wrongfully confines Z.",
+          "keywords": [
+            "building",
+            "places",
+            "firearms",
+            "outlets",
+            "tells",
+            "they",
+            "fire",
+            "attempts",
+            "leave",
+            "wrongfully",
+            "wrongful confinement",
+            "restraint"
+          ],
+          "legal_concepts": [
+            "confinement",
+            "restraint of liberty"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7275468111038208,
+            "original:bm25": 0.4916634757678651,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9882140826727612
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "restraint of liberty",
+                "source": "legal_concept",
+                "similarity": 0.8739,
+                "weighted_score": 0.8739
+              },
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongfully",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7337
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "restraint",
+                "source": "keyword",
+                "similarity": 0.9061,
+                "weighted_score": 0.6796
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.988214,
+            "score_after_pre_rerank": 0.990336
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S127_N6",
+          "score": 0.829262,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "Whoever wrongfully confines any person in such manner as to indicate an intention that the confinement of such person may not be known to any person interested in the person so confined, or to any public servant, or that the place of such confinement may not be known to or discovered by any such person or public servant as hereinbefore mentioned, shall be punished with imprisonment of either description for a term which may extend to three years in addition to any other punishment to which he may be liable for such wrongful confinement and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person in such manner as to indicate an intention that the confinement of such person may not be known to any person interested in the person so confined, or to any public servant, or that the place of such confinement may not be known to or discovered by any such person or public servant as hereinbefore mentioned, shall be punished with imprisonment of either description for a term which may extend to three years in addition to any other punishment to which he may be liable for such wrongful confinement and shall also be liable to fine.",
+          "keywords": [
+            "confinement",
+            "known",
+            "public",
+            "servant",
+            "liable",
+            "wrongful",
+            "whoever",
+            "wrongfully",
+            "confines",
+            "manner",
+            "wrongful confinement",
+            "secret confinement"
+          ],
+          "legal_concepts": [
+            "confinement",
+            "intention",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7566104531288147,
+            "original:bm25": 0.6560034477226668,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7917828801304125
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "intention",
+                "source": "legal_concept",
+                "similarity": 0.846,
+                "weighted_score": 0.846
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongful",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongfully",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7337
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.791783,
+            "score_after_pre_rerank": 0.829262
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S127_N8",
+          "score": 0.777907,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "Whoever wrongfully confines any person for the purpose of extorting from the person confined or any person interested in the person confined any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the person confined or any person interested in the person confined to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Of criminal force and assault Force. [OF CRIMINAL FORCE AND ASSAULT]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person for the purpose of extorting from the person confined or any person interested in the person confined any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the person confined or any person interested in the person confined to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Of criminal force and assault Force. [OF CRIMINAL FORCE AND ASSAULT]",
+          "keywords": [
+            "confined",
+            "force",
+            "purpose",
+            "interested",
+            "information",
+            "lead",
+            "restoration",
+            "property",
+            "valuable",
+            "security",
+            "wrongful confinement",
+            "extortion",
+            "property restoration"
+          ],
+          "legal_concepts": [
+            "wrongful confinement",
+            "extortion",
+            "property restoration"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "wrongful confinement"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7751682996749878,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7291546352761618
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "extortion",
+                "source": "legal_concept",
+                "similarity": 0.8305,
+                "weighted_score": 0.8305
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "property restoration",
+                "source": "legal_concept",
+                "similarity": 0.8285,
+                "weighted_score": 0.8285
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confined",
+                "source": "keyword",
+                "similarity": 0.969,
+                "weighted_score": 0.7268
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "security",
+                "source": "keyword",
+                "similarity": 0.8874,
+                "weighted_score": 0.6655
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "wrongful confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.729155,
+            "score_after_pre_rerank": 0.777907
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S127_N4",
+          "score": 0.748477,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "Whoever wrongfully confines any person for ten days or more, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine which shall not be less than ten thousand rupees.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person for ten days or more, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine which shall not be less than ten thousand rupees.",
+          "keywords": [
+            "whoever",
+            "wrongfully",
+            "confines",
+            "days",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "extend",
+            "wrongful confinement",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "confinement",
+            "imprisonment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7545303702354431,
+            "original:bm25": 0.3626932660353822,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6932642453727713
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.9044,
+                "weighted_score": 0.9044
+              },
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongfully",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7337
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confines",
+                "source": "keyword",
+                "similarity": 0.9472,
+                "weighted_score": 0.7104
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.693264,
+            "score_after_pre_rerank": 0.748477
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S127_N2",
+          "score": 0.745025,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "Whoever wrongfully confines any person shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both.",
+          "keywords": [
+            "extend",
+            "whoever",
+            "wrongfully",
+            "confines",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "year",
+            "wrongful confinement",
+            "fine"
+          ],
+          "legal_concepts": [
+            "offence against the human body",
+            "punishment for wrongful confinement"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7635687589645386,
+            "original:bm25": 0.4457564660106084,
+            "original:semrank": 0.965640664100647,
+            "original:semrank_pre_rerank": 0.9656,
+            "semrank_pre_rerank": 0.9656
+          },
+          "query_scores": {
+            "original": 0.696606107792271
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9656,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "punishment for wrongful confinement",
+                "source": "legal_concept",
+                "similarity": 0.9656,
+                "weighted_score": 0.9656
+              },
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "offence against the human body",
+                "source": "legal_concept",
+                "similarity": 0.8248,
+                "weighted_score": 0.8248
+              },
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongfully",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7337
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confines",
+                "source": "keyword",
+                "similarity": 0.9472,
+                "weighted_score": 0.7104
+              }
+            ],
+            "score": 0.9656,
+            "best_similarity": 0.9656,
+            "best_concept": "punishment for wrongful confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9656,
+            "score_before_pre_rerank": 0.696606,
+            "score_after_pre_rerank": 0.745025
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S127_N7",
+          "score": 0.726701,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "Whoever wrongfully confines any person for the purpose of extorting from the person confined, or from any person interested in the person confined, any property or valuable security or of constraining the person confined or any person interested in such person to do anything illegal or to give any information which may facilitate the commission of an offence, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person for the purpose of extorting from the person confined, or from any person interested in the person confined, any property or valuable security or of constraining the person confined or any person interested in such person to do anything illegal or to give any information which may facilitate the commission of an offence, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.",
+          "keywords": [
+            "confined",
+            "interested",
+            "whoever",
+            "wrongfully",
+            "confines",
+            "purpose",
+            "extorting",
+            "property",
+            "valuable",
+            "security",
+            "wrongful confinement",
+            "extortion"
+          ],
+          "legal_concepts": [
+            "confinement",
+            "extortion"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7676122784614563,
+            "original:bm25": 0.15684125845062455,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6667087630971484
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "extortion",
+                "source": "legal_concept",
+                "similarity": 0.8305,
+                "weighted_score": 0.8305
+              },
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongfully",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7337
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confined",
+                "source": "keyword",
+                "similarity": 0.969,
+                "weighted_score": 0.7268
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.666709,
+            "score_after_pre_rerank": 0.726701
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S127_N3",
+          "score": 0.723376,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "Whoever wrongfully confines any person for three days, or more, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to ten thousand rupees, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person for three days, or more, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to ten thousand rupees, or with both.",
+          "keywords": [
+            "three",
+            "extend",
+            "whoever",
+            "wrongfully",
+            "confines",
+            "days",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "wrongful confinement",
+            "three days"
+          ],
+          "legal_concepts": [
+            "confinement",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7480025291442871,
+            "original:bm25": 0.3925747756291818,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6626539306208398
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongfully",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7337
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confines",
+                "source": "keyword",
+                "similarity": 0.9472,
+                "weighted_score": 0.7104
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9044,
+                "weighted_score": 0.6783
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.662654,
+            "score_after_pre_rerank": 0.723376
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__section__BNS_S127",
+          "score": 0.650775,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "(1) Whoever wrongfully restrains any person in such a manner\nas to prevent that person from proceedings beyond certain circumscribing\nlimits, is said “wrongfully to confine” that person.\nIllustrations.\n(a) A causes Z to go within a walled space, and locks Z in. Z is thus\nprevented from proceeding in any direction beyond the circumscribing line\nof wall. A wrongfully confines Z.\n(b) A places men with firearms at the outlets of a building, and tells\nZ that they will fire at Z if Z attempts to leave the building. A wrongfully\nconfines Z.\n(2) Whoever wrongfully confines any person shall be punished with\nimprisonment of either description for a term which may extend to one\nyear, or with fine which may extend to five thousand rupees, or with both.\n(3) Whoever wrongfully confines any person for three days, or more,\nshall be punished with imprisonment of either description for a term which\nmay extend to three years, or with fine which may extend to ten thousand\nrupees, or with both.\n(4) Whoever wrongfully confines any person for ten days or more,\nshall be punished with imprisonment of either description for a term which\nmay extend to five years, and shall also be liable to fine which shall not be\nless than ten thousand rupees.\n(5) Whoever keeps any person in wrongful confinement, knowing that\na writ for the liberation of that person has been duly issued, shall be\npunished with imprisonment of either description for a term which may\nextend to two years in addition to any term of imprisonment to which he\nmay be liable under any other section of this Chapter and shall also be\nliable to fine.\n(6) Whoever wrongfully confines any person in such manner as to\nindicate an intention that the confinement of such person may not be known\nto any person interested in the person so confined, or to any public servant,\nor that the place of such confinement may not be known to or discovered\nby any such person or public servant as hereinbefore mentioned, shall be\npunished with imprisonment of either description for a term which may\nextend to three years in addition to any other punishment to which he may\nbe liable for such wrongful confinement and shall also be liable to fine.\n(7) Whoever wrongfully confines any person for the purpose of\nextorting from the person confined, or from any person interested in the\nperson confined, any property or valuable security or of constraining the\nperson confined or any person interested in such person to do anything\nillegal or to give any information which may facilitate the commission of an\noffence, shall be punished with imprisonment of either description for a\nterm which may extend to three years, and shall also be liable to fine.\n(8) Whoever wrongfully confines any person for the purpose of\nextorting from the person confined or any person interested in the person\nconfined any confession or any information which may lead to the detection\nof an offence or misconduct, or for the purpose of constraining the person\nconfined or any person interested in the person confined to restore or to\ncause the restoration of any property or valuable security or to satisfy any\nclaim or demand, or to give information which may lead to the restoration\nof any property or valuable security, shall be punished with imprisonment\nof either description for a term which may extend to three years, and shall\nalso be liable to fine.\nOf criminal force and assault\nForce.\n[OF CRIMINAL FORCE AND ASSAULT]",
+          "derived_context": "",
+          "keywords": [
+            "wrongful confinement",
+            "restraint of person"
+          ],
+          "legal_concepts": [
+            "wrongful confinement",
+            "restriction of movement"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 2,
+            "coverage_ratio": 1.0,
+            "matched_concepts": [
+              "wrongful confinement",
+              "restriction of movement"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.9
+          },
+          "query_scores": {
+            "original": 0.6507747161764845
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S127_N1_ILL1_A",
+            "rerank"
+          ]
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S127_N1_ILL1_A",
+          "score": 1.0,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "A causes Z to go within a walled space, and locks Z in. Z is thus prevented from proceeding in any direction beyond the circumscribing line of wall. A wrongfully confines Z.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully restrains any person in such a manner as to prevent that person from proceedings beyond certain circumscribing limits, is said “wrongfully to confine” that person.\nA causes Z to go within a walled space, and locks Z in. Z is thus prevented from proceeding in any direction beyond the circumscribing line of wall. A wrongfully confines Z.",
+          "keywords": [
+            "causes",
+            "walled",
+            "space",
+            "locks",
+            "thus",
+            "prevented",
+            "proceeding",
+            "direction",
+            "beyond",
+            "circumscribing",
+            "wrongful confinement",
+            "restraint"
+          ],
+          "legal_concepts": [
+            "wrongful confinement",
+            "restraint of person"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "wrongful confinement"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7746442556381226,
+            "original:bm25": 0.47988708115450146,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "restriction of movement",
+                "chunk_concept": "restraint of person",
+                "source": "legal_concept",
+                "similarity": 0.9099,
+                "weighted_score": 0.9099
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "restraint",
+                "source": "keyword",
+                "similarity": 0.9061,
+                "weighted_score": 0.6796
+              },
+              {
+                "query_concept": "restriction of movement",
+                "chunk_concept": "prevented",
+                "source": "keyword",
+                "similarity": 0.8933,
+                "weighted_score": 0.6699
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "walled",
+                "source": "keyword",
+                "similarity": 0.8916,
+                "weighted_score": 0.6687
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "wrongful confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S127_N1",
+          "score": 0.983249,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "Whoever wrongfully restrains any person in such a manner as to prevent that person from proceedings beyond certain circumscribing limits, is said “wrongfully to confine” that person.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully restrains any person in such a manner as to prevent that person from proceedings beyond certain circumscribing limits, is said “wrongfully to confine” that person.",
+          "keywords": [
+            "wrongfully",
+            "whoever",
+            "restrains",
+            "manner",
+            "prevent",
+            "proceedings",
+            "beyond",
+            "certain",
+            "circumscribing",
+            "limits",
+            "wrongful confinement",
+            "restraint"
+          ],
+          "legal_concepts": [
+            "wrongful confinement",
+            "restraint of liberty"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "wrongful confinement"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.4114518267030776,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9920482044824992
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "restraint of liberty",
+                "source": "legal_concept",
+                "similarity": 0.8739,
+                "weighted_score": 0.8739
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongfully",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7337
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "restraint",
+                "source": "keyword",
+                "similarity": 0.9061,
+                "weighted_score": 0.6796
+              },
+              {
+                "query_concept": "restriction of movement",
+                "chunk_concept": "restrains",
+                "source": "keyword",
+                "similarity": 0.8993,
+                "weighted_score": 0.6745
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "wrongful confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.992048,
+            "score_after_pre_rerank": 0.99348
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S127_N1_ILL1_B",
+          "score": 0.975172,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "A places men with firearms at the outlets of a building, and tells Z that they will fire at Z if Z attempts to leave the building. A wrongfully confines Z.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully restrains any person in such a manner as to prevent that person from proceedings beyond certain circumscribing limits, is said “wrongfully to confine” that person.\nA places men with firearms at the outlets of a building, and tells Z that they will fire at Z if Z attempts to leave the building. A wrongfully confines Z.",
+          "keywords": [
+            "building",
+            "places",
+            "firearms",
+            "outlets",
+            "tells",
+            "they",
+            "fire",
+            "attempts",
+            "leave",
+            "wrongfully",
+            "wrongful confinement",
+            "restraint"
+          ],
+          "legal_concepts": [
+            "confinement",
+            "restraint of liberty"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7275468111038208,
+            "original:bm25": 0.4916634757678651,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9882140826727612
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "restraint of liberty",
+                "source": "legal_concept",
+                "similarity": 0.8739,
+                "weighted_score": 0.8739
+              },
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongfully",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7337
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "restraint",
+                "source": "keyword",
+                "similarity": 0.9061,
+                "weighted_score": 0.6796
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.988214,
+            "score_after_pre_rerank": 0.990336
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S127_N6",
+          "score": 0.561372,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "Whoever wrongfully confines any person in such manner as to indicate an intention that the confinement of such person may not be known to any person interested in the person so confined, or to any public servant, or that the place of such confinement may not be known to or discovered by any such person or public servant as hereinbefore mentioned, shall be punished with imprisonment of either description for a term which may extend to three years in addition to any other punishment to which he may be liable for such wrongful confinement and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person in such manner as to indicate an intention that the confinement of such person may not be known to any person interested in the person so confined, or to any public servant, or that the place of such confinement may not be known to or discovered by any such person or public servant as hereinbefore mentioned, shall be punished with imprisonment of either description for a term which may extend to three years in addition to any other punishment to which he may be liable for such wrongful confinement and shall also be liable to fine.",
+          "keywords": [
+            "confinement",
+            "known",
+            "public",
+            "servant",
+            "liable",
+            "wrongful",
+            "whoever",
+            "wrongfully",
+            "confines",
+            "manner",
+            "wrongful confinement",
+            "secret confinement"
+          ],
+          "legal_concepts": [
+            "confinement",
+            "intention",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7566104531288147,
+            "original:bm25": 0.6560034477226668,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7917828801304125
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "intention",
+                "source": "legal_concept",
+                "similarity": 0.846,
+                "weighted_score": 0.846
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongful",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongfully",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7337
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.791783,
+            "score_after_pre_rerank": 0.829262
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S127_N8",
+          "score": 0.429439,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "Whoever wrongfully confines any person for the purpose of extorting from the person confined or any person interested in the person confined any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the person confined or any person interested in the person confined to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Of criminal force and assault Force. [OF CRIMINAL FORCE AND ASSAULT]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person for the purpose of extorting from the person confined or any person interested in the person confined any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the person confined or any person interested in the person confined to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Of criminal force and assault Force. [OF CRIMINAL FORCE AND ASSAULT]",
+          "keywords": [
+            "confined",
+            "force",
+            "purpose",
+            "interested",
+            "information",
+            "lead",
+            "restoration",
+            "property",
+            "valuable",
+            "security",
+            "wrongful confinement",
+            "extortion",
+            "property restoration"
+          ],
+          "legal_concepts": [
+            "wrongful confinement",
+            "extortion",
+            "property restoration"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 1,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "wrongful confinement"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7751682996749878,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7291546352761618
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "extortion",
+                "source": "legal_concept",
+                "similarity": 0.8305,
+                "weighted_score": 0.8305
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "property restoration",
+                "source": "legal_concept",
+                "similarity": 0.8285,
+                "weighted_score": 0.8285
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confined",
+                "source": "keyword",
+                "similarity": 0.969,
+                "weighted_score": 0.7268
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "security",
+                "source": "keyword",
+                "similarity": 0.8874,
+                "weighted_score": 0.6655
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "wrongful confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.729155,
+            "score_after_pre_rerank": 0.777907
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S127_N2",
+          "score": 0.362803,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "Whoever wrongfully confines any person shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both.",
+          "keywords": [
+            "extend",
+            "whoever",
+            "wrongfully",
+            "confines",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "year",
+            "wrongful confinement",
+            "fine"
+          ],
+          "legal_concepts": [
+            "offence against the human body",
+            "punishment for wrongful confinement"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7635687589645386,
+            "original:bm25": 0.4457564660106084,
+            "original:semrank": 0.965640664100647,
+            "original:semrank_pre_rerank": 0.9656,
+            "semrank_pre_rerank": 0.9656
+          },
+          "query_scores": {
+            "original": 0.696606107792271
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9656,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "punishment for wrongful confinement",
+                "source": "legal_concept",
+                "similarity": 0.9656,
+                "weighted_score": 0.9656
+              },
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "offence against the human body",
+                "source": "legal_concept",
+                "similarity": 0.8248,
+                "weighted_score": 0.8248
+              },
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongfully",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7337
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confines",
+                "source": "keyword",
+                "similarity": 0.9472,
+                "weighted_score": 0.7104
+              }
+            ],
+            "score": 0.9656,
+            "best_similarity": 0.9656,
+            "best_concept": "punishment for wrongful confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9656,
+            "score_before_pre_rerank": 0.696606,
+            "score_after_pre_rerank": 0.745025
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S127_N4",
+          "score": 0.353835,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "Whoever wrongfully confines any person for ten days or more, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine which shall not be less than ten thousand rupees.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person for ten days or more, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine which shall not be less than ten thousand rupees.",
+          "keywords": [
+            "whoever",
+            "wrongfully",
+            "confines",
+            "days",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "extend",
+            "wrongful confinement",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "confinement",
+            "imprisonment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7545303702354431,
+            "original:bm25": 0.3626932660353822,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6932642453727713
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.9044,
+                "weighted_score": 0.9044
+              },
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongfully",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7337
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confines",
+                "source": "keyword",
+                "similarity": 0.9472,
+                "weighted_score": 0.7104
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.693264,
+            "score_after_pre_rerank": 0.748477
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__section__BNS_S127",
+          "score": 0.310325,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "(1) Whoever wrongfully restrains any person in such a manner\nas to prevent that person from proceedings beyond certain circumscribing\nlimits, is said “wrongfully to confine” that person.\nIllustrations.\n(a) A causes Z to go within a walled space, and locks Z in. Z is thus\nprevented from proceeding in any direction beyond the circumscribing line\nof wall. A wrongfully confines Z.\n(b) A places men with firearms at the outlets of a building, and tells\nZ that they will fire at Z if Z attempts to leave the building. A wrongfully\nconfines Z.\n(2) Whoever wrongfully confines any person shall be punished with\nimprisonment of either description for a term which may extend to one\nyear, or with fine which may extend to five thousand rupees, or with both.\n(3) Whoever wrongfully confines any person for three days, or more,\nshall be punished with imprisonment of either description for a term which\nmay extend to three years, or with fine which may extend to ten thousand\nrupees, or with both.\n(4) Whoever wrongfully confines any person for ten days or more,\nshall be punished with imprisonment of either description for a term which\nmay extend to five years, and shall also be liable to fine which shall not be\nless than ten thousand rupees.\n(5) Whoever keeps any person in wrongful confinement, knowing that\na writ for the liberation of that person has been duly issued, shall be\npunished with imprisonment of either description for a term which may\nextend to two years in addition to any term of imprisonment to which he\nmay be liable under any other section of this Chapter and shall also be\nliable to fine.\n(6) Whoever wrongfully confines any person in such manner as to\nindicate an intention that the confinement of such person may not be known\nto any person interested in the person so confined, or to any public servant,\nor that the place of such confinement may not be known to or discovered\nby any such person or public servant as hereinbefore mentioned, shall be\npunished with imprisonment of either description for a term which may\nextend to three years in addition to any other punishment to which he may\nbe liable for such wrongful confinement and shall also be liable to fine.\n(7) Whoever wrongfully confines any person for the purpose of\nextorting from the person confined, or from any person interested in the\nperson confined, any property or valuable security or of constraining the\nperson confined or any person interested in such person to do anything\nillegal or to give any information which may facilitate the commission of an\noffence, shall be punished with imprisonment of either description for a\nterm which may extend to three years, and shall also be liable to fine.\n(8) Whoever wrongfully confines any person for the purpose of\nextorting from the person confined or any person interested in the person\nconfined any confession or any information which may lead to the detection\nof an offence or misconduct, or for the purpose of constraining the person\nconfined or any person interested in the person confined to restore or to\ncause the restoration of any property or valuable security or to satisfy any\nclaim or demand, or to give information which may lead to the restoration\nof any property or valuable security, shall be punished with imprisonment\nof either description for a term which may extend to three years, and shall\nalso be liable to fine.\nOf criminal force and assault\nForce.\n[OF CRIMINAL FORCE AND ASSAULT]",
+          "derived_context": "",
+          "keywords": [
+            "wrongful confinement",
+            "restraint of person"
+          ],
+          "legal_concepts": [
+            "wrongful confinement",
+            "restriction of movement"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 2,
+            "coverage_ratio": 1.0,
+            "matched_concepts": [
+              "wrongful confinement",
+              "restriction of movement"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.9
+          },
+          "query_scores": {
+            "original": 0.6507747161764845
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S127_N1_ILL1_A",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S127_N7",
+          "score": 0.297892,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "Whoever wrongfully confines any person for the purpose of extorting from the person confined, or from any person interested in the person confined, any property or valuable security or of constraining the person confined or any person interested in such person to do anything illegal or to give any information which may facilitate the commission of an offence, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person for the purpose of extorting from the person confined, or from any person interested in the person confined, any property or valuable security or of constraining the person confined or any person interested in such person to do anything illegal or to give any information which may facilitate the commission of an offence, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.",
+          "keywords": [
+            "confined",
+            "interested",
+            "whoever",
+            "wrongfully",
+            "confines",
+            "purpose",
+            "extorting",
+            "property",
+            "valuable",
+            "security",
+            "wrongful confinement",
+            "extortion"
+          ],
+          "legal_concepts": [
+            "confinement",
+            "extortion"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7676122784614563,
+            "original:bm25": 0.15684125845062455,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6667087630971484
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "extortion",
+                "source": "legal_concept",
+                "similarity": 0.8305,
+                "weighted_score": 0.8305
+              },
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongfully",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7337
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confined",
+                "source": "keyword",
+                "similarity": 0.969,
+                "weighted_score": 0.7268
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.666709,
+            "score_after_pre_rerank": 0.726701
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S127_N3",
+          "score": 0.28935,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 127,
+          "citation": "Section 127",
+          "text": "Whoever wrongfully confines any person for three days, or more, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to ten thousand rupees, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 127: Wrongful confinement.\nWhoever wrongfully confines any person for three days, or more, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to ten thousand rupees, or with both.",
+          "keywords": [
+            "three",
+            "extend",
+            "whoever",
+            "wrongfully",
+            "confines",
+            "days",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "wrongful confinement",
+            "three days"
+          ],
+          "legal_concepts": [
+            "confinement",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7480025291442871,
+            "original:bm25": 0.3925747756291818,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6626539306208398
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "wrongful confinement",
+              "restriction of movement",
+              "wrongful",
+              "confinement",
+              "what is wrongful confinement"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confinement",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "wrongful confinement",
+                "chunk_concept": "wrongful confinement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "wrongful",
+                "chunk_concept": "wrongfully",
+                "source": "keyword",
+                "similarity": 0.9782,
+                "weighted_score": 0.7337
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "confines",
+                "source": "keyword",
+                "similarity": 0.9472,
+                "weighted_score": 0.7104
+              },
+              {
+                "query_concept": "confinement",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9044,
+                "weighted_score": 0.6783
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "confinement",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.662654,
+            "score_after_pre_rerank": 0.723376
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    },
+    "phase11": {
+      "answer_type": "definition",
+      "support_status": "supported",
+      "confidence": {
+        "score": 0.98,
+        "label": "high"
+      },
+      "final_answer": "Wrongful confinement is defined as the act of wrongfully restraining a person from proceeding beyond certain limits, and it can lead to a punishment of up to three years of imprisonment and a fine if done for extortion or coercion.",
+      "summary_answer": "Wrongful confinement is the act of restraining a person in a way that prevents them from moving beyond certain limits.",
+      "detailed_answer": "According to Section 127(1) of the Bharatiya Nyaya Sanhita, 2023, wrongful confinement occurs when a person is wrongfully restrained in such a manner that they cannot proceed beyond certain circumscribing limits. Additionally, Section 127(8) outlines that wrongful confinement for the purpose of extorting confessions or information, or to compel the restoration of property, is punishable by imprisonment for up to three years and a fine.",
+      "citations": [
+        "Section 127(1), Bharatiya Nyaya Sanhita, 2023",
+        "Section 127(8), Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "matched_sections": [
+        "Section 127"
+      ],
+      "missing_sections": [],
+      "missing_from_corpus": [],
+      "selected_chunk_ids": [
+        "chunk__node__BNS_S127_N1",
+        "chunk__node__BNS_S127_N8"
+      ],
+      "warnings": [],
+      "structured_reasoning": {
+        "base_concept": "",
+        "selected_section": "Section 127",
+        "selection_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "overrides_score_selection": false,
+        "uncertainty": "low",
+        "uncertainty_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "alternative_sections": [],
+        "sections_analyzed": [
+          {
+            "section": "Section 127",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever wrongfully restrains any person in such a manner as to prevent that person from proceedings beyond certain circumscribing limits, is said “wrongfully to confine” that person.",
+            "condition_match_score": 0.983249,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "wrongful confinement ~ wrongful confinement",
+              "confinement ~ restraint of liberty",
+              "wrongful ~ wrongfully",
+              "confinement ~ restraint",
+              "restriction of movement ~ restrains"
+            ],
+            "raw_retrieval_score": 0.983249,
+            "hit_count": 2,
+            "is_base": true,
+            "note": ""
+          }
+        ]
+      },
+      "validation": {
+        "requested_sections": [],
+        "present_in_corpus": [],
+        "retrieved_exact_matches": [],
+        "missing_from_corpus": [],
+        "intent_alignment": "strong",
+        "intent_notes": [
+          "Lookup intent is anchored by a direct base legal chunk."
+        ],
+        "answer_verified": true,
+        "verification_issues": [],
+        "llm_answer_verified": true,
+        "llm_verification_issues": [],
+        "completeness": "complete",
+        "guardrail_grounding_strength": 1.0,
+        "repaired": false,
+        "fallback_used": false
+      },
+      "evidence": {
+        "primary_chunk_id": "chunk__node__BNS_S127_N1",
+        "primary_chunk_type": "subsection",
+        "primary_section": "Section 127",
+        "primary_section_title": "Wrongful confinement.",
+        "related_chunk_ids": [
+          "chunk__node__BNS_S127_N8"
+        ],
+        "top_sections": [
+          {
+            "section": "Section 127",
+            "section_title": "Wrongful confinement.",
+            "hit_count": 2,
+            "best_score": 0.983249,
+            "chunk_types": {
+              "subsection": 2
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.5
+          }
+        ],
+        "llm_evidence": [
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S127_N1",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": "127",
+            "citation": "Section 127(1), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever wrongfully restrains any person in such a manner as to prevent that person from proceedings beyond certain circumscribing limits, is said “wrongfully to confine” that person."
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S127_N8",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": "127",
+            "citation": "Section 127(8), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever wrongfully confines any person for the purpose of extorting from the person confined or any person interested in the person confined any confession or any information which may lead to the detection of an offence or misconduct, or for the purpose of constraining the person confined or any person interested in the person confined to restore or to cause the restoration of any property or valuable security or to satisfy any claim or demand, or to give information which may lead to the restoration of any property or valuable security, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. Of criminal force and assault Force. [OF CRIMINAL FORCE AND ASSAULT]"
+          }
+        ]
+      },
+      "llm_generation": {
+        "enabled": true,
+        "used": true,
+        "model": "gpt-4o-mini",
+        "reasoning_trace": [],
+        "caution_notes": [],
+        "error": null,
+        "repaired": false,
+        "fallback_used": false
+      }
+    }
+  }
+]

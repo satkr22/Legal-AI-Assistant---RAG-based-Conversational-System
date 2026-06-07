@@ -1,0 +1,195 @@
+{
+  "query_id": "Q076",
+  "query": "What is the difference between theft and robbery?",
+  "query_type": "comparison",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "303",
+    "309"
+  ],
+  "acceptable_sections": [],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "309",
+    "309",
+    "309",
+    "309",
+    "35"
+  ],
+  "candidate_sections_at_10": [
+    "309",
+    "309",
+    "309",
+    "309",
+    "35",
+    "309",
+    "309",
+    "309",
+    "309",
+    "309"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "309",
+    "309",
+    "35"
+  ],
+  "cited_sections": [
+    "309"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 0.5,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "309"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "309"
+    ],
+    "support_precision_at_k": 0.5,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "35"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1,
+    "recall_at_k": 0.5,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "309"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "309"
+    ],
+    "support_precision_at_k": 0.5,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "35"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.3333,
+    "recall_at_k": 0.5,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "309"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "309"
+    ],
+    "support_precision_at_k": 0.5,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "35"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.6667,
+    "required_points_matched": 2,
+    "required_points_total": 3,
+    "answer_completeness_score": 0.6667,
+    "soft_answer_score": 0.7167,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Section 303 defines theft as dishonestly taking movable property out of a person's possession without consent.",
+        "matched": false,
+        "overlap": 0.4,
+        "matched_terms": [
+          "consent",
+          "property",
+          "taking",
+          "theft"
+        ]
+      },
+      {
+        "point": "Section 309 provides that theft is robbery if, in order to commit the theft or in committing it or in carrying away the property, the offender voluntarily causes or attempts to cause to any person death, hurt, wrongful restraint, or fear of instant death, hurt, or wrongful restraint.",
+        "matched": true,
+        "overlap": 0.65,
+        "matched_terms": [
+          "309",
+          "attempts",
+          "cause",
+          "causes",
+          "death",
+          "fear",
+          "hurt",
+          "offender",
+          "property",
+          "restraint",
+          "robbery",
+          "theft"
+        ]
+      },
+      {
+        "point": "The key difference is that robbery involves the use or threat of violence or fear of instant harm, while theft does not.",
+        "matched": true,
+        "overlap": 0.6364,
+        "matched_terms": [
+          "difference",
+          "fear",
+          "harm",
+          "involves",
+          "robbery",
+          "theft",
+          "use"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 0.5,
+    "correct_cited_sections": [
+      "309"
+    ],
+    "missing_required_sections": [
+      "303"
+    ],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 5,
+    "supported_claims": 5,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "missing_required_citation"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 8.8186,
+    "phase_9_10": 3.4987,
+    "phase_11": 22.0314,
+    "phase_12_13": 0.0002,
+    "total": 34.3488
+  },
+  "final_answer_preview": "The primary difference between theft and robbery lies in the use of force or intimidation. Theft is defined as the unlawful taking of someone else's property without their consent. However, it escalates to robbery if, during the act of theft, the offender causes or attempts to cause death, hurt, or wrongful restraint, or instills fear of such actions in the victim. This is outlined in Section 309(2) of the Bharatiya Nyaya Sanhita, 2023. Additionally, extortion is also classified as robbery if it involves putting a person in fear of immediate harm while demanding property, as stated in Section 309(3).",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/076_Q076"
+}

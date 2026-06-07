@@ -1,0 +1,75 @@
+{
+  "query": "Someone obstructed a public road and caused danger. What offence may apply?",
+  "intent": {
+    "primary": "explanation",
+    "secondary": []
+  },
+  "concepts": [
+    "obstruction",
+    "public road",
+    "danger",
+    "punishment"
+  ],
+  "targets": [],
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true
+  },
+  "decomposition": {
+    "needed": true,
+    "sub_queries": [
+      {
+        "query": "What is the legal definition of obstruction in public ways?",
+        "intent": {
+          "primary": "explanation",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "obstruction",
+          "public ways"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      },
+      {
+        "query": "What are the punishments for causing danger in public ways?",
+        "intent": {
+          "primary": "explanation",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "danger",
+          "public ways",
+          "punishment"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      }
+    ]
+  },
+  "confidence": {
+    "hint_relevance": 0.4532,
+    "llm_consistency": 1.0,
+    "rule_strength": 0.6,
+    "structure_validity": 1.0,
+    "overall": 0.7013
+  }
+}

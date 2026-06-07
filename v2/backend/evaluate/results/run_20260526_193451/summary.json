@@ -1,0 +1,564 @@
+{
+  "total": 100,
+  "completed": 100,
+  "pipeline_errors": 0,
+  "overall": {
+    "count": 100,
+    "answer_accuracy": 0.42,
+    "retrieval_precision_at_k": 0.2212,
+    "retrieval_recall_at_k": 0.8846,
+    "retrieval_mrr_at_k": 0.8231,
+    "retrieval_support_precision_at_k": 0.4668,
+    "retrieval_any_correct_support_at_k": 0.91,
+    "candidate_precision_at_10": 0.1129,
+    "candidate_recall_at_10": 0.9011,
+    "candidate_mrr_at_10": 0.8249,
+    "candidate_any_correct_support_at_10": 0.92,
+    "prompt_precision_at_5": 0.2353,
+    "prompt_recall_at_5": 0.8736,
+    "prompt_mrr_at_5": 0.8443,
+    "prompt_any_correct_support_at_5": 0.91,
+    "selector_loss_rate": 0.03,
+    "soft_answer_score": 0.7919,
+    "required_point_coverage": 0.5858,
+    "forbidden_claim_rate": 0.025,
+    "forbidden_contradiction_skipped_rate": 0.2633,
+    "citation_recall": 0.84,
+    "citation_precision": 0.6995,
+    "faithfulness": 1.0,
+    "hallucination_rate": 0.0,
+    "confidence_score": 0.7233,
+    "expected_behavior_accuracy": 0.95
+  },
+  "by_query_type": {
+    "adversarial": {
+      "count": 5,
+      "answer_accuracy": 0.2,
+      "retrieval_precision_at_k": 0.2,
+      "retrieval_recall_at_k": 1.0,
+      "retrieval_mrr_at_k": 0.25,
+      "retrieval_support_precision_at_k": 0.3733,
+      "retrieval_any_correct_support_at_k": 0.8,
+      "candidate_precision_at_10": 0.1,
+      "candidate_recall_at_10": 1.0,
+      "candidate_mrr_at_10": 0.25,
+      "candidate_any_correct_support_at_10": 0.8,
+      "prompt_precision_at_5": 0.2,
+      "prompt_recall_at_5": 1.0,
+      "prompt_mrr_at_5": 0.25,
+      "prompt_any_correct_support_at_5": 0.8,
+      "selector_loss_rate": 0.0,
+      "soft_answer_score": 0.5133,
+      "required_point_coverage": 0.1333,
+      "forbidden_claim_rate": 0.0,
+      "forbidden_contradiction_skipped_rate": 0.0,
+      "citation_recall": 0.8,
+      "citation_precision": 0.4,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "confidence_score": 0.7377,
+      "expected_behavior_accuracy": 0.2
+    },
+    "comparison": {
+      "count": 10,
+      "answer_accuracy": 0.4,
+      "retrieval_precision_at_k": 0.32,
+      "retrieval_recall_at_k": 0.8,
+      "retrieval_mrr_at_k": 1.0,
+      "retrieval_support_precision_at_k": 0.6667,
+      "retrieval_any_correct_support_at_k": 1.0,
+      "candidate_precision_at_10": 0.175,
+      "candidate_recall_at_10": 0.85,
+      "candidate_mrr_at_10": 1.0,
+      "candidate_any_correct_support_at_10": 1.0,
+      "prompt_precision_at_5": 0.3667,
+      "prompt_recall_at_5": 0.85,
+      "prompt_mrr_at_5": 1.0,
+      "prompt_any_correct_support_at_5": 1.0,
+      "selector_loss_rate": 0.0,
+      "soft_answer_score": 0.7975,
+      "required_point_coverage": 0.5667,
+      "forbidden_claim_rate": 0.0,
+      "forbidden_contradiction_skipped_rate": 0.0,
+      "citation_recall": 0.8,
+      "citation_precision": 0.7833,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "confidence_score": 0.7469,
+      "expected_behavior_accuracy": 1.0
+    },
+    "definition": {
+      "count": 15,
+      "answer_accuracy": 0.4,
+      "retrieval_precision_at_k": 0.2122,
+      "retrieval_recall_at_k": 1.0,
+      "retrieval_mrr_at_k": 1.0,
+      "retrieval_support_precision_at_k": 0.5522,
+      "retrieval_any_correct_support_at_k": 1.0,
+      "candidate_precision_at_10": 0.1045,
+      "candidate_recall_at_10": 1.0,
+      "candidate_mrr_at_10": 1.0,
+      "candidate_any_correct_support_at_10": 1.0,
+      "prompt_precision_at_5": 0.2444,
+      "prompt_recall_at_5": 1.0,
+      "prompt_mrr_at_5": 1.0,
+      "prompt_any_correct_support_at_5": 1.0,
+      "selector_loss_rate": 0.0,
+      "soft_answer_score": 0.883,
+      "required_point_coverage": 0.6778,
+      "forbidden_claim_rate": 0.0667,
+      "forbidden_contradiction_skipped_rate": 0.0667,
+      "citation_recall": 1.0,
+      "citation_precision": 0.8022,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "confidence_score": 0.7596,
+      "expected_behavior_accuracy": 1.0
+    },
+    "direct_section_lookup": {
+      "count": 15,
+      "answer_accuracy": 0.2,
+      "retrieval_precision_at_k": 0.22,
+      "retrieval_recall_at_k": 1.0,
+      "retrieval_mrr_at_k": 0.9667,
+      "retrieval_support_precision_at_k": 0.6167,
+      "retrieval_any_correct_support_at_k": 1.0,
+      "candidate_precision_at_10": 0.1106,
+      "candidate_recall_at_10": 1.0,
+      "candidate_mrr_at_10": 0.9667,
+      "candidate_any_correct_support_at_10": 1.0,
+      "prompt_precision_at_5": 0.2467,
+      "prompt_recall_at_5": 1.0,
+      "prompt_mrr_at_5": 1.0,
+      "prompt_any_correct_support_at_5": 1.0,
+      "selector_loss_rate": 0.0,
+      "soft_answer_score": 0.8356,
+      "required_point_coverage": 0.4222,
+      "forbidden_claim_rate": 0.0,
+      "forbidden_contradiction_skipped_rate": 0.1667,
+      "citation_recall": 0.9667,
+      "citation_precision": 0.8833,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "confidence_score": 0.7855,
+      "expected_behavior_accuracy": 1.0
+    },
+    "factual_scenario": {
+      "count": 20,
+      "answer_accuracy": 0.3,
+      "retrieval_precision_at_k": 0.1675,
+      "retrieval_recall_at_k": 0.65,
+      "retrieval_mrr_at_k": 0.4708,
+      "retrieval_support_precision_at_k": 0.355,
+      "retrieval_any_correct_support_at_k": 0.85,
+      "candidate_precision_at_10": 0.0919,
+      "candidate_recall_at_10": 0.7,
+      "candidate_mrr_at_10": 0.4792,
+      "candidate_any_correct_support_at_10": 0.9,
+      "prompt_precision_at_5": 0.1675,
+      "prompt_recall_at_5": 0.65,
+      "prompt_mrr_at_5": 0.4792,
+      "prompt_any_correct_support_at_5": 0.85,
+      "selector_loss_rate": 0.05,
+      "soft_answer_score": 0.6802,
+      "required_point_coverage": 0.5792,
+      "forbidden_claim_rate": 0.025,
+      "forbidden_contradiction_skipped_rate": 0.275,
+      "citation_recall": 0.6,
+      "citation_precision": 0.5667,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "confidence_score": 0.7151,
+      "expected_behavior_accuracy": 0.95
+    },
+    "illustration": {
+      "count": 5,
+      "answer_accuracy": 0.2,
+      "retrieval_precision_at_k": 0.22,
+      "retrieval_recall_at_k": 0.9,
+      "retrieval_mrr_at_k": 0.58,
+      "retrieval_support_precision_at_k": 0.5133,
+      "retrieval_any_correct_support_at_k": 1.0,
+      "candidate_precision_at_10": 0.1072,
+      "candidate_recall_at_10": 0.9,
+      "candidate_mrr_at_10": 0.58,
+      "candidate_any_correct_support_at_10": 1.0,
+      "prompt_precision_at_5": 0.1467,
+      "prompt_recall_at_5": 0.6,
+      "prompt_mrr_at_5": 0.6,
+      "prompt_any_correct_support_at_5": 1.0,
+      "selector_loss_rate": 0.4,
+      "soft_answer_score": 0.6167,
+      "required_point_coverage": 0.4667,
+      "forbidden_claim_rate": 0.0,
+      "forbidden_contradiction_skipped_rate": 0.3,
+      "citation_recall": 0.4,
+      "citation_precision": 0.6,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "confidence_score": 0.724,
+      "expected_behavior_accuracy": 1.0
+    },
+    "multi_hop": {
+      "count": 10,
+      "answer_accuracy": 0.7,
+      "retrieval_precision_at_k": 0.2617,
+      "retrieval_recall_at_k": 0.9,
+      "retrieval_mrr_at_k": 0.9,
+      "retrieval_support_precision_at_k": 0.4533,
+      "retrieval_any_correct_support_at_k": 1.0,
+      "candidate_precision_at_10": 0.1233,
+      "candidate_recall_at_10": 0.9,
+      "candidate_mrr_at_10": 0.9,
+      "candidate_any_correct_support_at_10": 1.0,
+      "prompt_precision_at_5": 0.2617,
+      "prompt_recall_at_5": 0.9,
+      "prompt_mrr_at_5": 0.9,
+      "prompt_any_correct_support_at_5": 1.0,
+      "selector_loss_rate": 0.0,
+      "soft_answer_score": 0.8983,
+      "required_point_coverage": 0.8833,
+      "forbidden_claim_rate": 0.0,
+      "forbidden_contradiction_skipped_rate": 0.7333,
+      "citation_recall": 0.85,
+      "citation_precision": 0.85,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "confidence_score": 0.746,
+      "expected_behavior_accuracy": 1.0
+    },
+    "out_of_scope": {
+      "count": 5,
+      "answer_accuracy": 0.8,
+      "retrieval_precision_at_k": null,
+      "retrieval_recall_at_k": null,
+      "retrieval_mrr_at_k": null,
+      "retrieval_support_precision_at_k": 0.0,
+      "retrieval_any_correct_support_at_k": 0.0,
+      "candidate_precision_at_10": null,
+      "candidate_recall_at_10": null,
+      "candidate_mrr_at_10": null,
+      "candidate_any_correct_support_at_10": 0.0,
+      "prompt_precision_at_5": null,
+      "prompt_recall_at_5": null,
+      "prompt_mrr_at_5": null,
+      "prompt_any_correct_support_at_5": 0.0,
+      "selector_loss_rate": 0.0,
+      "soft_answer_score": 0.675,
+      "required_point_coverage": 0.2,
+      "forbidden_claim_rate": 0.1,
+      "forbidden_contradiction_skipped_rate": 0.0,
+      "citation_recall": 1.0,
+      "citation_precision": 0.0,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "confidence_score": 0.2952,
+      "expected_behavior_accuracy": 1.0
+    },
+    "punishment": {
+      "count": 15,
+      "answer_accuracy": 0.6667,
+      "retrieval_precision_at_k": 0.2122,
+      "retrieval_recall_at_k": 1.0,
+      "retrieval_mrr_at_k": 0.9222,
+      "retrieval_support_precision_at_k": 0.4278,
+      "retrieval_any_correct_support_at_k": 1.0,
+      "candidate_precision_at_10": 0.1062,
+      "candidate_recall_at_10": 1.0,
+      "candidate_mrr_at_10": 0.9222,
+      "candidate_any_correct_support_at_10": 1.0,
+      "prompt_precision_at_5": 0.2322,
+      "prompt_recall_at_5": 1.0,
+      "prompt_mrr_at_5": 1.0,
+      "prompt_any_correct_support_at_5": 1.0,
+      "selector_loss_rate": 0.0,
+      "soft_answer_score": 0.9217,
+      "required_point_coverage": 0.8,
+      "forbidden_claim_rate": 0.0333,
+      "forbidden_contradiction_skipped_rate": 0.5667,
+      "citation_recall": 1.0,
+      "citation_precision": 0.8,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "confidence_score": 0.7426,
+      "expected_behavior_accuracy": 1.0
+    }
+  },
+  "safety": {
+    "out_of_scope_handling_accuracy": 1.0,
+    "unsafe_behavior_failure_rate": 0.8,
+    "out_of_scope_count": 5,
+    "adversarial_count": 5
+  },
+  "ux": {
+    "high_confidence_wrong_count": 6,
+    "low_risk_wrong_count": 6,
+    "risk_level_counts": {
+      "medium": 85,
+      "low": 10,
+      "high": 5
+    }
+  },
+  "failure_reason_counts": {
+    "low_required_point_coverage": 43,
+    "missing_required_citation": 19,
+    "forbidden_claim_detected": 5,
+    "wrong_reference_retrieved": 2,
+    "wrong_reference_cited": 1,
+    "expected_behavior_failed": 5
+  },
+  "worst_failures": [
+    {
+      "query_id": "Q001",
+      "query": "What is Section 1 of BNS about?",
+      "query_type": "direct_section_lookup",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.72,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q002",
+      "query": "Explain Section 2 of BNS in simple words.",
+      "query_type": "direct_section_lookup",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.72,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q003",
+      "query": "What punishments are listed under Section 4 of BNS?",
+      "query_type": "direct_section_lookup",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.72,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q004",
+      "query": "What does Section 6 say about life imprisonment and term calculation?",
+      "query_type": "direct_section_lookup",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.7798,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q006",
+      "query": "What is the accident exception under Section 18?",
+      "query_type": "direct_section_lookup",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.8288,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "Q007",
+      "query": "What does Section 20 say about children under seven years?",
+      "query_type": "direct_section_lookup",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.925,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "Q008",
+      "query": "Explain Section 22 on unsoundness of mind.",
+      "query_type": "direct_section_lookup",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.9,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "Q010",
+      "query": "What is the right of private defence under Section 34?",
+      "query_type": "direct_section_lookup",
+      "failure_reasons": [
+        "missing_required_citation",
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.7542,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q011",
+      "query": "When does private defence of body extend to causing death?",
+      "query_type": "direct_section_lookup",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.7265,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q012",
+      "query": "Explain abetment under Section 45.",
+      "query_type": "direct_section_lookup",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.8283,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "Q013",
+      "query": "What is criminal conspiracy under Section 61?",
+      "query_type": "direct_section_lookup",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.72,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q014",
+      "query": "What is rape under Section 63?",
+      "query_type": "direct_section_lookup",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.8204,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "Q017",
+      "query": "What is the meaning of wrongful gain and wrongful loss?",
+      "query_type": "definition",
+      "failure_reasons": [
+        "forbidden_claim_detected"
+      ],
+      "confidence_score": 0.8675,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "Q019",
+      "query": "What does counterfeit mean under BNS?",
+      "query_type": "definition",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.7648,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q020",
+      "query": "What does 'good faith' mean under BNS?",
+      "query_type": "definition",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.7366,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q021",
+      "query": "Who is a public servant under BNS?",
+      "query_type": "definition",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.7675,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q022",
+      "query": "What does 'injury' mean under BNS?",
+      "query_type": "definition",
+      "failure_reasons": [
+        "forbidden_claim_detected"
+      ],
+      "confidence_score": 0.7798,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q025",
+      "query": "What does 'reason to believe' mean?",
+      "query_type": "definition",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.7798,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q027",
+      "query": "What is grievous hurt?",
+      "query_type": "definition",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.72,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q028",
+      "query": "What is wrongful restraint?",
+      "query_type": "definition",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.72,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q029",
+      "query": "What is wrongful confinement?",
+      "query_type": "definition",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.7614,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q032",
+      "query": "What is the punishment for culpable homicide not amounting to murder?",
+      "query_type": "punishment",
+      "failure_reasons": [
+        "forbidden_claim_detected"
+      ],
+      "confidence_score": 0.7767,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q033",
+      "query": "What is the punishment for causing death by negligence?",
+      "query_type": "punishment",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.72,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q034",
+      "query": "What is the punishment for rape?",
+      "query_type": "punishment",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.72,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "Q035",
+      "query": "What is the punishment for gang rape?",
+      "query_type": "punishment",
+      "failure_reasons": [
+        "low_required_point_coverage"
+      ],
+      "confidence_score": 0.7944,
+      "risk_level": "medium"
+    }
+  ],
+  "errors": []
+}

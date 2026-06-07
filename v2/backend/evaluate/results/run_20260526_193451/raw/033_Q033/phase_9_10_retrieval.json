@@ -1,0 +1,3342 @@
+[
+  {
+    "query": "What is the punishment for causing death by negligence?",
+    "phase8": {
+      "query": "What is the punishment for causing death by negligence?",
+      "intent": {
+        "primary": "legal penalty",
+        "secondary": []
+      },
+      "concepts": [
+        "causing death by negligence",
+        "punishment",
+        "Bharatiya Nyaya Sanhita 2023"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.8494,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.35,
+        "structure_validity": 1.0,
+        "overall": 0.8098
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is the punishment for causing death by negligence?",
+          "targets": [],
+          "concepts": [
+            "causing death by negligence",
+            "punishment",
+            "Bharatiya Nyaya Sanhita 2023"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S106_N2",
+            "score": 1.0,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 106,
+            "citation": "Section 106",
+            "text": "Whoever causes death of any person by rash and negligent driving of vehicle not amounting to culpable homicide, and escapes without reporting it to a police officer or a Magistrate soon after the incident, shall be punished with imprisonment of either description of a term which may extend to ten years, and shall also be liable to fine. Abetment of suicide of child or person of unsound mind.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 106: Causing death by negligence.\nWhoever causes death of any person by rash and negligent driving of vehicle not amounting to culpable homicide, and escapes without reporting it to a police officer or a Magistrate soon after the incident, shall be punished with imprisonment of either description of a term which may extend to ten years, and shall also be liable to fine. Abetment of suicide of child or person of unsound mind.",
+            "keywords": [
+              "death",
+              "whoever",
+              "causes",
+              "rash",
+              "negligent",
+              "driving",
+              "vehicle",
+              "amounting",
+              "culpable",
+              "homicide",
+              "rash driving",
+              "negligent driving"
+            ],
+            "legal_concepts": [
+              "causing death by negligence",
+              "punishable offence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "causing death by negligence"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7685788869857788,
+              "bm25": 0.4050306811408999,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "causing death by negligence",
+                "bharatiya nyaya sanhita 2023",
+                "causing",
+                "death",
+                "negligence",
+                "what is the punishment for causing death by negligence"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "causing death by negligence",
+                  "chunk_concept": "causing death by negligence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "punishable offence",
+                  "source": "legal_concept",
+                  "similarity": 0.8534,
+                  "weighted_score": 0.8534
+                },
+                {
+                  "query_concept": "death",
+                  "chunk_concept": "death",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "causes",
+                  "source": "keyword",
+                  "similarity": 0.9636,
+                  "weighted_score": 0.7227
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligent",
+                  "source": "keyword",
+                  "similarity": 0.9294,
+                  "weighted_score": 0.6971
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "causing death by negligence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S106_N1",
+            "score": 0.985305,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 106,
+            "citation": "Section 106",
+            "text": "Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 106: Causing death by negligence.\nWhoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.",
+            "keywords": [
+              "death",
+              "punished",
+              "imprisonment",
+              "either",
+              "description",
+              "term",
+              "extend",
+              "years",
+              "liable",
+              "fine",
+              "causing death",
+              "negligence"
+            ],
+            "legal_concepts": [
+              "culpable homicide",
+              "imprisonment for a term"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.31959945024547726,
+              "semrank_pre_rerank": 0.8622
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "causing death by negligence",
+                "bharatiya nyaya sanhita 2023",
+                "causing",
+                "death",
+                "negligence",
+                "what is the punishment for causing death by negligence"
+              ],
+              "score": 0.8622,
+              "best_similarity": 0.8622,
+              "best_concept": "culpable homicide",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "causing death by negligence",
+                  "chunk_concept": "culpable homicide",
+                  "source": "legal_concept",
+                  "similarity": 0.8622,
+                  "weighted_score": 0.8622
+                },
+                {
+                  "query_concept": "death",
+                  "chunk_concept": "imprisonment for a term",
+                  "source": "legal_concept",
+                  "similarity": 0.8357,
+                  "weighted_score": 0.8357
+                },
+                {
+                  "query_concept": "death",
+                  "chunk_concept": "death",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "causing death by negligence",
+                  "chunk_concept": "causing death",
+                  "source": "keyword",
+                  "similarity": 0.957,
+                  "weighted_score": 0.7177
+                }
+              ],
+              "pre_rerank_score": 0.8622,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.975196
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S105_BODY",
+            "score": 0.965897,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 105,
+            "citation": "Section 105",
+            "text": "Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. Causing death by negligence.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 105: Punishment for culpable homicide not amounting to murder.\nWhoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. Causing death by negligence.",
+            "keywords": [
+              "death",
+              "cause",
+              "imprisonment",
+              "years",
+              "causing",
+              "likely",
+              "culpable",
+              "homicide",
+              "amounting",
+              "murder",
+              "life"
+            ],
+            "legal_concepts": [
+              "culpable homicide",
+              "murder",
+              "punishment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "punishment"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7258444428443909,
+              "bm25": 0.5052147572263743,
+              "semrank_pre_rerank": 0.9075
+            },
+            "query_scores": {
+              "original": 0.7258444428443909
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "causing death by negligence",
+                "bharatiya nyaya sanhita 2023",
+                "causing",
+                "death",
+                "negligence",
+                "what is the punishment for causing death by negligence"
+              ],
+              "score": 0.9075,
+              "best_similarity": 0.9075,
+              "best_concept": "murder",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "death",
+                  "chunk_concept": "murder",
+                  "source": "legal_concept",
+                  "similarity": 0.9075,
+                  "weighted_score": 0.9075
+                },
+                {
+                  "query_concept": "causing death by negligence",
+                  "chunk_concept": "culpable homicide",
+                  "source": "legal_concept",
+                  "similarity": 0.8622,
+                  "weighted_score": 0.8622
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "causing",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "death",
+                  "chunk_concept": "death",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "cause",
+                  "source": "keyword",
+                  "similarity": 0.9625,
+                  "weighted_score": 0.7219
+                }
+              ],
+              "pre_rerank_score": 0.9075,
+              "score_before_pre_rerank": 0.928852,
+              "score_after_pre_rerank": 0.925009
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S106_N1_EXP1",
+            "score": 0.960914,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 106,
+            "citation": "Section 106",
+            "text": "For the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 106: Causing death by negligence.\nWhoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.\nFor the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act.",
+            "keywords": [
+              "medical",
+              "practitioner",
+              "national",
+              "register",
+              "purposes",
+              "sub-section",
+              "registered",
+              "means",
+              "possesses",
+              "qualification",
+              "causing death",
+              "negligence",
+              "punishable"
+            ],
+            "legal_concepts": [
+              "culpable homicide",
+              "rash or negligent act",
+              "registered medical practitioner"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7577723264694214,
+              "bm25": 0.1111111111111111,
+              "semrank_pre_rerank": 0.8934
+            },
+            "query_scores": {
+              "original": 0.7577723264694214
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "causing death by negligence",
+                "bharatiya nyaya sanhita 2023",
+                "causing",
+                "death",
+                "negligence",
+                "what is the punishment for causing death by negligence"
+              ],
+              "score": 0.8934,
+              "best_similarity": 0.8934,
+              "best_concept": "rash or negligent act",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "rash or negligent act",
+                  "source": "legal_concept",
+                  "similarity": 0.8934,
+                  "weighted_score": 0.8934
+                },
+                {
+                  "query_concept": "causing death by negligence",
+                  "chunk_concept": "culpable homicide",
+                  "source": "legal_concept",
+                  "similarity": 0.8622,
+                  "weighted_score": 0.8622
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "registered medical practitioner",
+                  "source": "legal_concept",
+                  "similarity": 0.7901,
+                  "weighted_score": 0.7901
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligence",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "causing death by negligence",
+                  "chunk_concept": "causing death",
+                  "source": "keyword",
+                  "similarity": 0.957,
+                  "weighted_score": 0.7177
+                }
+              ],
+              "pre_rerank_score": 0.8934,
+              "score_before_pre_rerank": 0.923613,
+              "score_after_pre_rerank": 0.918174
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S324_N6",
+            "score": 0.445407,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 324,
+            "citation": "Section 324",
+            "text": "Whoever commits mischief, having made preparation for causing to any person death, or hurt, or wrongful restraint, or fear of death, or of hurt, or of wrongful restraint, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine. Mischief by killing or maiming animal.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 324: Mischief.\nWhoever commits mischief, having made preparation for causing to any person death, or hurt, or wrongful restraint, or fear of death, or of hurt, or of wrongful restraint, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine. Mischief by killing or maiming animal.",
+            "keywords": [
+              "mischief",
+              "death",
+              "hurt",
+              "wrongful",
+              "restraint",
+              "whoever",
+              "commits",
+              "having",
+              "made",
+              "preparation",
+              "punishable"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "mischief"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7009842991828918,
+              "semrank_pre_rerank": 0.8585
+            },
+            "query_scores": {
+              "original": 0.7009842991828918
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "causing death by negligence",
+                "bharatiya nyaya sanhita 2023",
+                "causing",
+                "death",
+                "negligence",
+                "what is the punishment for causing death by negligence"
+              ],
+              "score": 0.8585,
+              "best_similarity": 0.8585,
+              "best_concept": "mischief",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "mischief",
+                  "source": "legal_concept",
+                  "similarity": 0.8585,
+                  "weighted_score": 0.8585
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.851,
+                  "weighted_score": 0.851
+                },
+                {
+                  "query_concept": "death",
+                  "chunk_concept": "death",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "wrongful",
+                  "source": "keyword",
+                  "similarity": 0.9092,
+                  "weighted_score": 0.6819
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "having",
+                  "source": "keyword",
+                  "similarity": 0.9001,
+                  "weighted_score": 0.6751
+                }
+              ],
+              "pre_rerank_score": 0.8585,
+              "score_before_pre_rerank": 0.849773,
+              "score_after_pre_rerank": 0.851344
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S91_BODY",
+            "score": 0.426453,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 91,
+            "citation": "Section 91",
+            "text": "Whoever before the birth of any child does any act with the intention of thereby preventing that child from being born alive or causing it to die after its birth, and does by such act prevent that child from being born alive, or causes it to die after its birth, shall, if such act be not caused in good faith for the purpose of saving the life of the mother, be punished with imprisonment of either description for a term which may extend to ten years, or with fine, or with both. Causing death of quick unborn child by act amounting to culpable homicide.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 91: Act done with intent to prevent child being born alive or to cause to die after birth.\nWhoever before the birth of any child does any act with the intention of thereby preventing that child from being born alive or causing it to die after its birth, and does by such act prevent that child from being born alive, or causes it to die after its birth, shall, if such act be not caused in good faith for the purpose of saving the life of the mother, be punished with imprisonment of either description for a term which may extend to ten years, or with fine, or with both. Causing death of quick unborn child by act amounting to culpable homicide.",
+            "keywords": [
+              "child",
+              "birth",
+              "born",
+              "alive",
+              "after",
+              "causing",
+              "prevent",
+              "whoever",
+              "before",
+              "intention"
+            ],
+            "legal_concepts": [
+              "offence against woman and child",
+              "punishment for preventing child from being born alive"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.7500001788139343,
+              "semrank_pre_rerank": 0.8136
+            },
+            "query_scores": {
+              "original": 0.7500001788139343
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.75,
+              "query_concepts": [
+                "causing death by negligence",
+                "bharatiya nyaya sanhita 2023",
+                "causing",
+                "death",
+                "negligence",
+                "what is the punishment for causing death by negligence"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "causing death by negligence",
+                  "chunk_concept": "punishment for preventing child from being born alive",
+                  "source": "legal_concept",
+                  "similarity": 0.8136,
+                  "weighted_score": 0.8136
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "offence against woman and child",
+                  "source": "legal_concept",
+                  "similarity": 0.8045,
+                  "weighted_score": 0.8045
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "causing",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "prevent",
+                  "source": "keyword",
+                  "similarity": 0.8851,
+                  "weighted_score": 0.6638
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "intention",
+                  "source": "keyword",
+                  "similarity": 0.8784,
+                  "weighted_score": 0.6588
+                }
+              ],
+              "score": 0.8136,
+              "best_similarity": 0.8136,
+              "best_concept": "punishment for preventing child from being born alive",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.8136,
+              "score_before_pre_rerank": 0.94582,
+              "score_after_pre_rerank": 0.92202
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S289_BODY",
+            "score": 0.425864,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+            "section_number": 289,
+            "citation": "Section 289",
+            "text": "Whoever does, with any machinery, any act so rashly or negligently as to endanger human life or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any machinery in his possession or under his care as is sufficient to guard against any probable danger to human life from such machinery, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 289: Negligent conduct with respect to machinery.\nWhoever does, with any machinery, any act so rashly or negligently as to endanger human life or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any machinery in his possession or under his care as is sufficient to guard against any probable danger to human life from such machinery, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.",
+            "keywords": [
+              "machinery",
+              "negligently",
+              "human",
+              "life",
+              "extend",
+              "negligent",
+              "conduct",
+              "respect",
+              "whoever",
+              "rashly",
+              "negligent conduct",
+              "machinery safety"
+            ],
+            "legal_concepts": [
+              "negligence",
+              "machinery safety"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.9999999403953552,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999999403953552
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "causing death by negligence",
+                "bharatiya nyaya sanhita 2023",
+                "causing",
+                "death",
+                "negligence",
+                "what is the punishment for causing death by negligence"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "machinery safety",
+                  "source": "legal_concept",
+                  "similarity": 0.8302,
+                  "weighted_score": 0.8302
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligent",
+                  "source": "keyword",
+                  "similarity": 0.9294,
+                  "weighted_score": 0.6971
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligently",
+                  "source": "keyword",
+                  "similarity": 0.9113,
+                  "weighted_score": 0.6834
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligent conduct",
+                  "source": "keyword",
+                  "similarity": 0.9087,
+                  "weighted_score": 0.6815
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "negligence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S286_BODY",
+            "score": 0.423959,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+            "section_number": 286,
+            "citation": "Section 286",
+            "text": "Whoever does, with any poisonous substance, any act in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any person or knowingly or negligently omits to take such order with any poisonous substance in his possession as is sufficient to guard against any probable danger to human life from such poisonous substance, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to fire or combustible matter.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 286: Negligent conduct with respect to poisonous substance.\nWhoever does, with any poisonous substance, any act in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any person or knowingly or negligently omits to take such order with any poisonous substance in his possession as is sufficient to guard against any probable danger to human life from such poisonous substance, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to fire or combustible matter.",
+            "keywords": [
+              "poisonous",
+              "substance",
+              "negligent",
+              "human",
+              "life",
+              "extend",
+              "conduct",
+              "respect",
+              "whoever",
+              "manner",
+              "negligent conduct",
+              "poisonous substance"
+            ],
+            "legal_concepts": [
+              "negligence",
+              "endangering human life"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.9999999403953552,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999999403953552
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "causing death by negligence",
+                "bharatiya nyaya sanhita 2023",
+                "causing",
+                "death",
+                "negligence",
+                "what is the punishment for causing death by negligence"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "causing death by negligence",
+                  "chunk_concept": "endangering human life",
+                  "source": "legal_concept",
+                  "similarity": 0.8828,
+                  "weighted_score": 0.8828
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligent",
+                  "source": "keyword",
+                  "similarity": 0.9294,
+                  "weighted_score": 0.6971
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligent conduct",
+                  "source": "keyword",
+                  "similarity": 0.9087,
+                  "weighted_score": 0.6815
+                },
+                {
+                  "query_concept": "death",
+                  "chunk_concept": "life",
+                  "source": "keyword",
+                  "similarity": 0.9064,
+                  "weighted_score": 0.6798
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "negligence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S307_BODY",
+            "score": 0.423264,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 307,
+            "citation": "Section 307",
+            "text": "Whoever commits theft, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining of property taken by such theft, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 307: Theft after preparation made for causing death, hurt or restraint in order to committing of\nWhoever commits theft, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining of property taken by such theft, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+            "keywords": [
+              "theft",
+              "order",
+              "death",
+              "hurt",
+              "restraint",
+              "committing",
+              "made",
+              "preparation",
+              "causing",
+              "after",
+              "harm",
+              "escape",
+              "retain"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "theft with preparation for causing harm"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.7500002682209015,
+              "semrank_pre_rerank": 0.8713
+            },
+            "query_scores": {
+              "original": 0.7500002682209015
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.75,
+              "query_concepts": [
+                "causing death by negligence",
+                "bharatiya nyaya sanhita 2023",
+                "causing",
+                "death",
+                "negligence",
+                "what is the punishment for causing death by negligence"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "theft with preparation for causing harm",
+                  "source": "legal_concept",
+                  "similarity": 0.8713,
+                  "weighted_score": 0.8713
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.851,
+                  "weighted_score": 0.851
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "causing",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "death",
+                  "chunk_concept": "death",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "causing",
+                  "chunk_concept": "harm",
+                  "source": "keyword",
+                  "similarity": 0.8841,
+                  "weighted_score": 0.6631
+                }
+              ],
+              "score": 0.8713,
+              "best_similarity": 0.8713,
+              "best_concept": "theft with preparation for causing harm",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.8713,
+              "score_before_pre_rerank": 0.954388,
+              "score_after_pre_rerank": 0.939432
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S287_BODY",
+            "score": 0.41597,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+            "section_number": 287,
+            "citation": "Section 287",
+            "text": "Whoever does, with fire or any combustible matter, any act so rashly or negligently as to endanger human life, or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any fire or any combustible matter in his possession as is sufficient to guard against any probable danger to human life from such fire or combustible matter, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to two thousand rupees, or with both. Negligent conduct with respect to explosive substance.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 287: Negligent conduct with respect to fire or combustible matter.\nWhoever does, with fire or any combustible matter, any act so rashly or negligently as to endanger human life, or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any fire or any combustible matter in his possession as is sufficient to guard against any probable danger to human life from such fire or combustible matter, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to two thousand rupees, or with both. Negligent conduct with respect to explosive substance.",
+            "keywords": [
+              "fire",
+              "combustible",
+              "negligently",
+              "human",
+              "life",
+              "extend",
+              "negligent",
+              "conduct",
+              "respect",
+              "negligent conduct",
+              "fire safety"
+            ],
+            "legal_concepts": [
+              "negligence",
+              "fire safety"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.9999999403953552,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999999403953552
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "causing death by negligence",
+                "bharatiya nyaya sanhita 2023",
+                "causing",
+                "death",
+                "negligence",
+                "what is the punishment for causing death by negligence"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "fire safety",
+                  "source": "legal_concept",
+                  "similarity": 0.8273,
+                  "weighted_score": 0.8273
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligent",
+                  "source": "keyword",
+                  "similarity": 0.9294,
+                  "weighted_score": 0.6971
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligently",
+                  "source": "keyword",
+                  "similarity": 0.9113,
+                  "weighted_score": 0.6834
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligent conduct",
+                  "source": "keyword",
+                  "similarity": 0.9087,
+                  "weighted_score": 0.6815
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "negligence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S106_N2",
+          "score": 1.0,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 106,
+          "citation": "Section 106",
+          "text": "Whoever causes death of any person by rash and negligent driving of vehicle not amounting to culpable homicide, and escapes without reporting it to a police officer or a Magistrate soon after the incident, shall be punished with imprisonment of either description of a term which may extend to ten years, and shall also be liable to fine. Abetment of suicide of child or person of unsound mind.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 106: Causing death by negligence.\nWhoever causes death of any person by rash and negligent driving of vehicle not amounting to culpable homicide, and escapes without reporting it to a police officer or a Magistrate soon after the incident, shall be punished with imprisonment of either description of a term which may extend to ten years, and shall also be liable to fine. Abetment of suicide of child or person of unsound mind.",
+          "keywords": [
+            "death",
+            "whoever",
+            "causes",
+            "rash",
+            "negligent",
+            "driving",
+            "vehicle",
+            "amounting",
+            "culpable",
+            "homicide",
+            "rash driving",
+            "negligent driving"
+          ],
+          "legal_concepts": [
+            "causing death by negligence",
+            "punishable offence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "causing death by negligence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7685788869857788,
+            "original:bm25": 0.4050306811408999,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "causing death by negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "punishable offence",
+                "source": "legal_concept",
+                "similarity": 0.8534,
+                "weighted_score": 0.8534
+              },
+              {
+                "query_concept": "death",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causes",
+                "source": "keyword",
+                "similarity": 0.9636,
+                "weighted_score": 0.7227
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.9294,
+                "weighted_score": 0.6971
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "causing death by negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S106_N1",
+          "score": 0.963146,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 106,
+          "citation": "Section 106",
+          "text": "Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 106: Causing death by negligence.\nWhoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.",
+          "keywords": [
+            "death",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "extend",
+            "years",
+            "liable",
+            "fine",
+            "causing death",
+            "negligence"
+          ],
+          "legal_concepts": [
+            "culpable homicide",
+            "imprisonment for a term"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.31959945024547726,
+            "original:semrank_pre_rerank": 0.8622,
+            "semrank_pre_rerank": 0.8622
+          },
+          "query_scores": {
+            "original": 0.9853054724779403
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "score": 0.8622,
+            "best_similarity": 0.8622,
+            "best_concept": "culpable homicide",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 0.8622,
+                "weighted_score": 0.8622
+              },
+              {
+                "query_concept": "death",
+                "chunk_concept": "imprisonment for a term",
+                "source": "legal_concept",
+                "similarity": 0.8357,
+                "weighted_score": 0.8357
+              },
+              {
+                "query_concept": "death",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "causing death",
+                "source": "keyword",
+                "similarity": 0.957,
+                "weighted_score": 0.7177
+              }
+            ],
+            "pre_rerank_score": 0.8622,
+            "score_before_pre_rerank": 0.985305,
+            "score_after_pre_rerank": 0.963146
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S105_BODY",
+          "score": 0.955386,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 105,
+          "citation": "Section 105",
+          "text": "Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. Causing death by negligence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 105: Punishment for culpable homicide not amounting to murder.\nWhoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. Causing death by negligence.",
+          "keywords": [
+            "death",
+            "cause",
+            "imprisonment",
+            "years",
+            "causing",
+            "likely",
+            "culpable",
+            "homicide",
+            "amounting",
+            "murder",
+            "life"
+          ],
+          "legal_concepts": [
+            "culpable homicide",
+            "murder",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "punishment"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7258444428443909,
+            "original:bm25": 0.5052147572263743,
+            "original:semrank_pre_rerank": 0.9075,
+            "semrank_pre_rerank": 0.9075
+          },
+          "query_scores": {
+            "original": 0.9658973573795754
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "score": 0.9075,
+            "best_similarity": 0.9075,
+            "best_concept": "murder",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "death",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 0.9075,
+                "weighted_score": 0.9075
+              },
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 0.8622,
+                "weighted_score": 0.8622
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "death",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.9625,
+                "weighted_score": 0.7219
+              }
+            ],
+            "pre_rerank_score": 0.9075,
+            "score_before_pre_rerank": 0.965897,
+            "score_after_pre_rerank": 0.955386
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S106_N1_EXP1",
+          "score": 0.948762,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 106,
+          "citation": "Section 106",
+          "text": "For the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 106: Causing death by negligence.\nWhoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.\nFor the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act.",
+          "keywords": [
+            "medical",
+            "practitioner",
+            "national",
+            "register",
+            "purposes",
+            "sub-section",
+            "registered",
+            "means",
+            "possesses",
+            "qualification",
+            "causing death",
+            "negligence",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "culpable homicide",
+            "rash or negligent act",
+            "registered medical practitioner"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7577723264694214,
+            "original:bm25": 0.1111111111111111,
+            "original:semrank_pre_rerank": 0.8934,
+            "semrank_pre_rerank": 0.8934
+          },
+          "query_scores": {
+            "original": 0.960914197011238
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "score": 0.8934,
+            "best_similarity": 0.8934,
+            "best_concept": "rash or negligent act",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "rash or negligent act",
+                "source": "legal_concept",
+                "similarity": 0.8934,
+                "weighted_score": 0.8934
+              },
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 0.8622,
+                "weighted_score": 0.8622
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "registered medical practitioner",
+                "source": "legal_concept",
+                "similarity": 0.7901,
+                "weighted_score": 0.7901
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "causing death",
+                "source": "keyword",
+                "similarity": 0.957,
+                "weighted_score": 0.7177
+              }
+            ],
+            "pre_rerank_score": 0.8934,
+            "score_before_pre_rerank": 0.960914,
+            "score_after_pre_rerank": 0.948762
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S289_BODY",
+          "score": 0.529208,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 289,
+          "citation": "Section 289",
+          "text": "Whoever does, with any machinery, any act so rashly or negligently as to endanger human life or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any machinery in his possession or under his care as is sufficient to guard against any probable danger to human life from such machinery, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 289: Negligent conduct with respect to machinery.\nWhoever does, with any machinery, any act so rashly or negligently as to endanger human life or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any machinery in his possession or under his care as is sufficient to guard against any probable danger to human life from such machinery, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.",
+          "keywords": [
+            "machinery",
+            "negligently",
+            "human",
+            "life",
+            "extend",
+            "negligent",
+            "conduct",
+            "respect",
+            "whoever",
+            "rashly",
+            "negligent conduct",
+            "machinery safety"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "machinery safety"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.42586396952039224
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "machinery safety",
+                "source": "legal_concept",
+                "similarity": 0.8302,
+                "weighted_score": 0.8302
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.9294,
+                "weighted_score": 0.6971
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligently",
+                "source": "keyword",
+                "similarity": 0.9113,
+                "weighted_score": 0.6834
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9087,
+                "weighted_score": 0.6815
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.425864,
+            "score_after_pre_rerank": 0.529208
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S286_BODY",
+          "score": 0.527646,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 286,
+          "citation": "Section 286",
+          "text": "Whoever does, with any poisonous substance, any act in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any person or knowingly or negligently omits to take such order with any poisonous substance in his possession as is sufficient to guard against any probable danger to human life from such poisonous substance, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to fire or combustible matter.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 286: Negligent conduct with respect to poisonous substance.\nWhoever does, with any poisonous substance, any act in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any person or knowingly or negligently omits to take such order with any poisonous substance in his possession as is sufficient to guard against any probable danger to human life from such poisonous substance, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to fire or combustible matter.",
+          "keywords": [
+            "poisonous",
+            "substance",
+            "negligent",
+            "human",
+            "life",
+            "extend",
+            "conduct",
+            "respect",
+            "whoever",
+            "manner",
+            "negligent conduct",
+            "poisonous substance"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "endangering human life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4239590446433275
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "endangering human life",
+                "source": "legal_concept",
+                "similarity": 0.8828,
+                "weighted_score": 0.8828
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.9294,
+                "weighted_score": 0.6971
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9087,
+                "weighted_score": 0.6815
+              },
+              {
+                "query_concept": "death",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 0.9064,
+                "weighted_score": 0.6798
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.423959,
+            "score_after_pre_rerank": 0.527646
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S287_BODY",
+          "score": 0.521095,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 287,
+          "citation": "Section 287",
+          "text": "Whoever does, with fire or any combustible matter, any act so rashly or negligently as to endanger human life, or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any fire or any combustible matter in his possession as is sufficient to guard against any probable danger to human life from such fire or combustible matter, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to two thousand rupees, or with both. Negligent conduct with respect to explosive substance.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 287: Negligent conduct with respect to fire or combustible matter.\nWhoever does, with fire or any combustible matter, any act so rashly or negligently as to endanger human life, or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any fire or any combustible matter in his possession as is sufficient to guard against any probable danger to human life from such fire or combustible matter, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to two thousand rupees, or with both. Negligent conduct with respect to explosive substance.",
+          "keywords": [
+            "fire",
+            "combustible",
+            "negligently",
+            "human",
+            "life",
+            "extend",
+            "negligent",
+            "conduct",
+            "respect",
+            "negligent conduct",
+            "fire safety"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "fire safety"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4159699569192915
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "fire safety",
+                "source": "legal_concept",
+                "similarity": 0.8273,
+                "weighted_score": 0.8273
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.9294,
+                "weighted_score": 0.6971
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligently",
+                "source": "keyword",
+                "similarity": 0.9113,
+                "weighted_score": 0.6834
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9087,
+                "weighted_score": 0.6815
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.41597,
+            "score_after_pre_rerank": 0.521095
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S324_N6",
+          "score": 0.519764,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 324,
+          "citation": "Section 324",
+          "text": "Whoever commits mischief, having made preparation for causing to any person death, or hurt, or wrongful restraint, or fear of death, or of hurt, or of wrongful restraint, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine. Mischief by killing or maiming animal.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 324: Mischief.\nWhoever commits mischief, having made preparation for causing to any person death, or hurt, or wrongful restraint, or fear of death, or of hurt, or of wrongful restraint, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine. Mischief by killing or maiming animal.",
+          "keywords": [
+            "mischief",
+            "death",
+            "hurt",
+            "wrongful",
+            "restraint",
+            "whoever",
+            "commits",
+            "having",
+            "made",
+            "preparation",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "mischief"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7009842991828918,
+            "original:semrank_pre_rerank": 0.8585,
+            "semrank_pre_rerank": 0.8585
+          },
+          "query_scores": {
+            "original": 0.4454074293587912
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "score": 0.8585,
+            "best_similarity": 0.8585,
+            "best_concept": "mischief",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "causing",
+                "chunk_concept": "mischief",
+                "source": "legal_concept",
+                "similarity": 0.8585,
+                "weighted_score": 0.8585
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.851,
+                "weighted_score": 0.851
+              },
+              {
+                "query_concept": "death",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "wrongful",
+                "source": "keyword",
+                "similarity": 0.9092,
+                "weighted_score": 0.6819
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "having",
+                "source": "keyword",
+                "similarity": 0.9001,
+                "weighted_score": 0.6751
+              }
+            ],
+            "pre_rerank_score": 0.8585,
+            "score_before_pre_rerank": 0.445407,
+            "score_after_pre_rerank": 0.519764
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S307_BODY",
+          "score": 0.50391,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 307,
+          "citation": "Section 307",
+          "text": "Whoever commits theft, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining of property taken by such theft, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 307: Theft after preparation made for causing death, hurt or restraint in order to committing of\nWhoever commits theft, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining of property taken by such theft, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "keywords": [
+            "theft",
+            "order",
+            "death",
+            "hurt",
+            "restraint",
+            "committing",
+            "made",
+            "preparation",
+            "causing",
+            "after",
+            "harm",
+            "escape",
+            "retain"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "theft with preparation for causing harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.7500002682209015,
+            "original:semrank_pre_rerank": 0.8713,
+            "semrank_pre_rerank": 0.8713
+          },
+          "query_scores": {
+            "original": 0.4232640005102951
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "theft with preparation for causing harm",
+                "source": "legal_concept",
+                "similarity": 0.8713,
+                "weighted_score": 0.8713
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.851,
+                "weighted_score": 0.851
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "death",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 0.8841,
+                "weighted_score": 0.6631
+              }
+            ],
+            "score": 0.8713,
+            "best_similarity": 0.8713,
+            "best_concept": "theft with preparation for causing harm",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8713,
+            "score_before_pre_rerank": 0.423264,
+            "score_after_pre_rerank": 0.50391
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S91_BODY",
+          "score": 0.49614,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 91,
+          "citation": "Section 91",
+          "text": "Whoever before the birth of any child does any act with the intention of thereby preventing that child from being born alive or causing it to die after its birth, and does by such act prevent that child from being born alive, or causes it to die after its birth, shall, if such act be not caused in good faith for the purpose of saving the life of the mother, be punished with imprisonment of either description for a term which may extend to ten years, or with fine, or with both. Causing death of quick unborn child by act amounting to culpable homicide.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 91: Act done with intent to prevent child being born alive or to cause to die after birth.\nWhoever before the birth of any child does any act with the intention of thereby preventing that child from being born alive or causing it to die after its birth, and does by such act prevent that child from being born alive, or causes it to die after its birth, shall, if such act be not caused in good faith for the purpose of saving the life of the mother, be punished with imprisonment of either description for a term which may extend to ten years, or with fine, or with both. Causing death of quick unborn child by act amounting to culpable homicide.",
+          "keywords": [
+            "child",
+            "birth",
+            "born",
+            "alive",
+            "after",
+            "causing",
+            "prevent",
+            "whoever",
+            "before",
+            "intention"
+          ],
+          "legal_concepts": [
+            "offence against woman and child",
+            "punishment for preventing child from being born alive"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.7500001788139343,
+            "original:semrank_pre_rerank": 0.8136,
+            "semrank_pre_rerank": 0.8136
+          },
+          "query_scores": {
+            "original": 0.4264534986188199
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "punishment for preventing child from being born alive",
+                "source": "legal_concept",
+                "similarity": 0.8136,
+                "weighted_score": 0.8136
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "offence against woman and child",
+                "source": "legal_concept",
+                "similarity": 0.8045,
+                "weighted_score": 0.8045
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "prevent",
+                "source": "keyword",
+                "similarity": 0.8851,
+                "weighted_score": 0.6638
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "intention",
+                "source": "keyword",
+                "similarity": 0.8784,
+                "weighted_score": 0.6588
+              }
+            ],
+            "score": 0.8136,
+            "best_similarity": 0.8136,
+            "best_concept": "punishment for preventing child from being born alive",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8136,
+            "score_before_pre_rerank": 0.426453,
+            "score_after_pre_rerank": 0.49614
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S106_N2",
+          "score": 1.0,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 106,
+          "citation": "Section 106",
+          "text": "Whoever causes death of any person by rash and negligent driving of vehicle not amounting to culpable homicide, and escapes without reporting it to a police officer or a Magistrate soon after the incident, shall be punished with imprisonment of either description of a term which may extend to ten years, and shall also be liable to fine. Abetment of suicide of child or person of unsound mind.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 106: Causing death by negligence.\nWhoever causes death of any person by rash and negligent driving of vehicle not amounting to culpable homicide, and escapes without reporting it to a police officer or a Magistrate soon after the incident, shall be punished with imprisonment of either description of a term which may extend to ten years, and shall also be liable to fine. Abetment of suicide of child or person of unsound mind.",
+          "keywords": [
+            "death",
+            "whoever",
+            "causes",
+            "rash",
+            "negligent",
+            "driving",
+            "vehicle",
+            "amounting",
+            "culpable",
+            "homicide",
+            "rash driving",
+            "negligent driving"
+          ],
+          "legal_concepts": [
+            "causing death by negligence",
+            "punishable offence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "causing death by negligence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7685788869857788,
+            "original:bm25": 0.4050306811408999,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "causing death by negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "punishable offence",
+                "source": "legal_concept",
+                "similarity": 0.8534,
+                "weighted_score": 0.8534
+              },
+              {
+                "query_concept": "death",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causes",
+                "source": "keyword",
+                "similarity": 0.9636,
+                "weighted_score": 0.7227
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.9294,
+                "weighted_score": 0.6971
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "causing death by negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S106_N1",
+          "score": 0.980355,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 106,
+          "citation": "Section 106",
+          "text": "Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 106: Causing death by negligence.\nWhoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.",
+          "keywords": [
+            "death",
+            "punished",
+            "imprisonment",
+            "either",
+            "description",
+            "term",
+            "extend",
+            "years",
+            "liable",
+            "fine",
+            "causing death",
+            "negligence"
+          ],
+          "legal_concepts": [
+            "culpable homicide",
+            "imprisonment for a term"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.31959945024547726,
+            "original:semrank_pre_rerank": 0.8622,
+            "semrank_pre_rerank": 0.8622
+          },
+          "query_scores": {
+            "original": 0.9853054724779403
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "score": 0.8622,
+            "best_similarity": 0.8622,
+            "best_concept": "culpable homicide",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 0.8622,
+                "weighted_score": 0.8622
+              },
+              {
+                "query_concept": "death",
+                "chunk_concept": "imprisonment for a term",
+                "source": "legal_concept",
+                "similarity": 0.8357,
+                "weighted_score": 0.8357
+              },
+              {
+                "query_concept": "death",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "causing death",
+                "source": "keyword",
+                "similarity": 0.957,
+                "weighted_score": 0.7177
+              }
+            ],
+            "pre_rerank_score": 0.8622,
+            "score_before_pre_rerank": 0.985305,
+            "score_after_pre_rerank": 0.963146
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S105_BODY",
+          "score": 0.977936,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 105,
+          "citation": "Section 105",
+          "text": "Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. Causing death by negligence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 105: Punishment for culpable homicide not amounting to murder.\nWhoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. Causing death by negligence.",
+          "keywords": [
+            "death",
+            "cause",
+            "imprisonment",
+            "years",
+            "causing",
+            "likely",
+            "culpable",
+            "homicide",
+            "amounting",
+            "murder",
+            "life"
+          ],
+          "legal_concepts": [
+            "culpable homicide",
+            "murder",
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "punishment"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7258444428443909,
+            "original:bm25": 0.5052147572263743,
+            "original:semrank_pre_rerank": 0.9075,
+            "semrank_pre_rerank": 0.9075
+          },
+          "query_scores": {
+            "original": 0.9658973573795754
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "score": 0.9075,
+            "best_similarity": 0.9075,
+            "best_concept": "murder",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "death",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 0.9075,
+                "weighted_score": 0.9075
+              },
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 0.8622,
+                "weighted_score": 0.8622
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "death",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.9625,
+                "weighted_score": 0.7219
+              }
+            ],
+            "pre_rerank_score": 0.9075,
+            "score_before_pre_rerank": 0.965897,
+            "score_after_pre_rerank": 0.955386
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S106_N1_EXP1",
+          "score": 0.972975,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 106,
+          "citation": "Section 106",
+          "text": "For the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 106: Causing death by negligence.\nWhoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.\nFor the purposes of this sub-section, “registered medical practitioner” means a medical practitioner who possesses any medical qualification recognised under the National Medical Commission Act, 2019 and whose name has been entered in the National Medical Register or a State Medical Register under that Act.",
+          "keywords": [
+            "medical",
+            "practitioner",
+            "national",
+            "register",
+            "purposes",
+            "sub-section",
+            "registered",
+            "means",
+            "possesses",
+            "qualification",
+            "causing death",
+            "negligence",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "culpable homicide",
+            "rash or negligent act",
+            "registered medical practitioner"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7577723264694214,
+            "original:bm25": 0.1111111111111111,
+            "original:semrank_pre_rerank": 0.8934,
+            "semrank_pre_rerank": 0.8934
+          },
+          "query_scores": {
+            "original": 0.960914197011238
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "score": 0.8934,
+            "best_similarity": 0.8934,
+            "best_concept": "rash or negligent act",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "rash or negligent act",
+                "source": "legal_concept",
+                "similarity": 0.8934,
+                "weighted_score": 0.8934
+              },
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "culpable homicide",
+                "source": "legal_concept",
+                "similarity": 0.8622,
+                "weighted_score": 0.8622
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "registered medical practitioner",
+                "source": "legal_concept",
+                "similarity": 0.7901,
+                "weighted_score": 0.7901
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "causing death",
+                "source": "keyword",
+                "similarity": 0.957,
+                "weighted_score": 0.7177
+              }
+            ],
+            "pre_rerank_score": 0.8934,
+            "score_before_pre_rerank": 0.960914,
+            "score_after_pre_rerank": 0.948762
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S324_N6",
+          "score": 0.299237,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 324,
+          "citation": "Section 324",
+          "text": "Whoever commits mischief, having made preparation for causing to any person death, or hurt, or wrongful restraint, or fear of death, or of hurt, or of wrongful restraint, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine. Mischief by killing or maiming animal.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 324: Mischief.\nWhoever commits mischief, having made preparation for causing to any person death, or hurt, or wrongful restraint, or fear of death, or of hurt, or of wrongful restraint, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine. Mischief by killing or maiming animal.",
+          "keywords": [
+            "mischief",
+            "death",
+            "hurt",
+            "wrongful",
+            "restraint",
+            "whoever",
+            "commits",
+            "having",
+            "made",
+            "preparation",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "mischief"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7009842991828918,
+            "original:semrank_pre_rerank": 0.8585,
+            "semrank_pre_rerank": 0.8585
+          },
+          "query_scores": {
+            "original": 0.4454074293587912
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "score": 0.8585,
+            "best_similarity": 0.8585,
+            "best_concept": "mischief",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "causing",
+                "chunk_concept": "mischief",
+                "source": "legal_concept",
+                "similarity": 0.8585,
+                "weighted_score": 0.8585
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.851,
+                "weighted_score": 0.851
+              },
+              {
+                "query_concept": "death",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "wrongful",
+                "source": "keyword",
+                "similarity": 0.9092,
+                "weighted_score": 0.6819
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "having",
+                "source": "keyword",
+                "similarity": 0.9001,
+                "weighted_score": 0.6751
+              }
+            ],
+            "pre_rerank_score": 0.8585,
+            "score_before_pre_rerank": 0.445407,
+            "score_after_pre_rerank": 0.519764
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S91_BODY",
+          "score": 0.241271,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 91,
+          "citation": "Section 91",
+          "text": "Whoever before the birth of any child does any act with the intention of thereby preventing that child from being born alive or causing it to die after its birth, and does by such act prevent that child from being born alive, or causes it to die after its birth, shall, if such act be not caused in good faith for the purpose of saving the life of the mother, be punished with imprisonment of either description for a term which may extend to ten years, or with fine, or with both. Causing death of quick unborn child by act amounting to culpable homicide.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 91: Act done with intent to prevent child being born alive or to cause to die after birth.\nWhoever before the birth of any child does any act with the intention of thereby preventing that child from being born alive or causing it to die after its birth, and does by such act prevent that child from being born alive, or causes it to die after its birth, shall, if such act be not caused in good faith for the purpose of saving the life of the mother, be punished with imprisonment of either description for a term which may extend to ten years, or with fine, or with both. Causing death of quick unborn child by act amounting to culpable homicide.",
+          "keywords": [
+            "child",
+            "birth",
+            "born",
+            "alive",
+            "after",
+            "causing",
+            "prevent",
+            "whoever",
+            "before",
+            "intention"
+          ],
+          "legal_concepts": [
+            "offence against woman and child",
+            "punishment for preventing child from being born alive"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.7500001788139343,
+            "original:semrank_pre_rerank": 0.8136,
+            "semrank_pre_rerank": 0.8136
+          },
+          "query_scores": {
+            "original": 0.4264534986188199
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "punishment for preventing child from being born alive",
+                "source": "legal_concept",
+                "similarity": 0.8136,
+                "weighted_score": 0.8136
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "offence against woman and child",
+                "source": "legal_concept",
+                "similarity": 0.8045,
+                "weighted_score": 0.8045
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "prevent",
+                "source": "keyword",
+                "similarity": 0.8851,
+                "weighted_score": 0.6638
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "intention",
+                "source": "keyword",
+                "similarity": 0.8784,
+                "weighted_score": 0.6588
+              }
+            ],
+            "score": 0.8136,
+            "best_similarity": 0.8136,
+            "best_concept": "punishment for preventing child from being born alive",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8136,
+            "score_before_pre_rerank": 0.426453,
+            "score_after_pre_rerank": 0.49614
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S307_BODY",
+          "score": 0.233947,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 307,
+          "citation": "Section 307",
+          "text": "Whoever commits theft, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining of property taken by such theft, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 307: Theft after preparation made for causing death, hurt or restraint in order to committing of\nWhoever commits theft, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining of property taken by such theft, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "keywords": [
+            "theft",
+            "order",
+            "death",
+            "hurt",
+            "restraint",
+            "committing",
+            "made",
+            "preparation",
+            "causing",
+            "after",
+            "harm",
+            "escape",
+            "retain"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "theft with preparation for causing harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.7500002682209015,
+            "original:semrank_pre_rerank": 0.8713,
+            "semrank_pre_rerank": 0.8713
+          },
+          "query_scores": {
+            "original": 0.4232640005102951
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "theft with preparation for causing harm",
+                "source": "legal_concept",
+                "similarity": 0.8713,
+                "weighted_score": 0.8713
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.851,
+                "weighted_score": 0.851
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "causing",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "death",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "causing",
+                "chunk_concept": "harm",
+                "source": "keyword",
+                "similarity": 0.8841,
+                "weighted_score": 0.6631
+              }
+            ],
+            "score": 0.8713,
+            "best_similarity": 0.8713,
+            "best_concept": "theft with preparation for causing harm",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8713,
+            "score_before_pre_rerank": 0.423264,
+            "score_after_pre_rerank": 0.50391
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S289_BODY",
+          "score": 0.221848,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 289,
+          "citation": "Section 289",
+          "text": "Whoever does, with any machinery, any act so rashly or negligently as to endanger human life or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any machinery in his possession or under his care as is sufficient to guard against any probable danger to human life from such machinery, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 289: Negligent conduct with respect to machinery.\nWhoever does, with any machinery, any act so rashly or negligently as to endanger human life or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any machinery in his possession or under his care as is sufficient to guard against any probable danger to human life from such machinery, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.",
+          "keywords": [
+            "machinery",
+            "negligently",
+            "human",
+            "life",
+            "extend",
+            "negligent",
+            "conduct",
+            "respect",
+            "whoever",
+            "rashly",
+            "negligent conduct",
+            "machinery safety"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "machinery safety"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.42586396952039224
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "machinery safety",
+                "source": "legal_concept",
+                "similarity": 0.8302,
+                "weighted_score": 0.8302
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.9294,
+                "weighted_score": 0.6971
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligently",
+                "source": "keyword",
+                "similarity": 0.9113,
+                "weighted_score": 0.6834
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9087,
+                "weighted_score": 0.6815
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.425864,
+            "score_after_pre_rerank": 0.529208
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S286_BODY",
+          "score": 0.219266,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 286,
+          "citation": "Section 286",
+          "text": "Whoever does, with any poisonous substance, any act in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any person or knowingly or negligently omits to take such order with any poisonous substance in his possession as is sufficient to guard against any probable danger to human life from such poisonous substance, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to fire or combustible matter.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 286: Negligent conduct with respect to poisonous substance.\nWhoever does, with any poisonous substance, any act in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any person or knowingly or negligently omits to take such order with any poisonous substance in his possession as is sufficient to guard against any probable danger to human life from such poisonous substance, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to fire or combustible matter.",
+          "keywords": [
+            "poisonous",
+            "substance",
+            "negligent",
+            "human",
+            "life",
+            "extend",
+            "conduct",
+            "respect",
+            "whoever",
+            "manner",
+            "negligent conduct",
+            "poisonous substance"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "endangering human life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4239590446433275
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "causing death by negligence",
+                "chunk_concept": "endangering human life",
+                "source": "legal_concept",
+                "similarity": 0.8828,
+                "weighted_score": 0.8828
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.9294,
+                "weighted_score": 0.6971
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9087,
+                "weighted_score": 0.6815
+              },
+              {
+                "query_concept": "death",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 0.9064,
+                "weighted_score": 0.6798
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.423959,
+            "score_after_pre_rerank": 0.527646
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S287_BODY",
+          "score": 0.208438,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 287,
+          "citation": "Section 287",
+          "text": "Whoever does, with fire or any combustible matter, any act so rashly or negligently as to endanger human life, or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any fire or any combustible matter in his possession as is sufficient to guard against any probable danger to human life from such fire or combustible matter, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to two thousand rupees, or with both. Negligent conduct with respect to explosive substance.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 287: Negligent conduct with respect to fire or combustible matter.\nWhoever does, with fire or any combustible matter, any act so rashly or negligently as to endanger human life, or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any fire or any combustible matter in his possession as is sufficient to guard against any probable danger to human life from such fire or combustible matter, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to two thousand rupees, or with both. Negligent conduct with respect to explosive substance.",
+          "keywords": [
+            "fire",
+            "combustible",
+            "negligently",
+            "human",
+            "life",
+            "extend",
+            "negligent",
+            "conduct",
+            "respect",
+            "negligent conduct",
+            "fire safety"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "fire safety"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4159699569192915
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "causing death by negligence",
+              "bharatiya nyaya sanhita 2023",
+              "causing",
+              "death",
+              "negligence",
+              "what is the punishment for causing death by negligence"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "fire safety",
+                "source": "legal_concept",
+                "similarity": 0.8273,
+                "weighted_score": 0.8273
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.9294,
+                "weighted_score": 0.6971
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligently",
+                "source": "keyword",
+                "similarity": 0.9113,
+                "weighted_score": 0.6834
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9087,
+                "weighted_score": 0.6815
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.41597,
+            "score_after_pre_rerank": 0.521095
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

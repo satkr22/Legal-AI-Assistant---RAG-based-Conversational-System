@@ -1,0 +1,41 @@
+{
+  "query_id": "Q074",
+  "query": "Can a person be punished for both abetment and the offence committed?",
+  "query_type": "multi_hop",
+  "difficulty": "hard",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "52",
+      "subsection": null,
+      "label": "Section 52",
+      "role": "abettor liable to cumulative punishment for act abetted and act done",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "49",
+      "label": "Section 49",
+      "reason": "general punishment of abetment when act is committed"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 52 provides that if the act for which the abettor is liable is committed in addition to the act abetted, and constitutes a distinct offence, the abettor is liable to punishment for each of the offences.",
+      "Therefore, a person can be punished cumulatively for both abetment and the additional offence committed."
+    ],
+    "optional_points": [
+      "For example, if A instigates B to resist a distress and B, in offering resistance, voluntarily causes grievous hurt to an officer, A is liable for both the abetment of resisting distress and the abetment of grievous hurt."
+    ],
+    "forbidden_points": [
+      "A person can never be punished for both abetment and a separate offence.",
+      "Punishment can only be given for the more serious of the two offences."
+    ]
+  },
+  "notes": "Multi-hop. Section 52 allows cumulative punishment."
+}

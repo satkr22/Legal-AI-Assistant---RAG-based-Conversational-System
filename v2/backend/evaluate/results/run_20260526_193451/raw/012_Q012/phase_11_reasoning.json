@@ -1,0 +1,3230 @@
+[
+  {
+    "query": "Explain abetment under Section 45.",
+    "phase8": {
+      "query": "Explain abetment under Section 45.",
+      "intent": {
+        "primary": "lookup",
+        "secondary": []
+      },
+      "concepts": [
+        "abetment of a thing",
+        "instigation",
+        "conspiracy",
+        "aiding and abetting",
+        "abetment",
+        "criminal liability",
+        "intentional aiding",
+        "commission"
+      ],
+      "targets": [
+        "Section 45"
+      ],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 1.0,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.8,
+        "structure_validity": 1.0,
+        "overall": 0.96
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "Explain abetment under Section 45.",
+          "targets": [
+            "Section 45"
+          ],
+          "concepts": [
+            "abetment of a thing",
+            "instigation",
+            "conspiracy",
+            "aiding and abetting",
+            "abetment",
+            "criminal liability",
+            "intentional aiding",
+            "commission"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S45_EXP1",
+            "score": 1.0,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 45,
+            "citation": "Section 45",
+            "text": "A person who, by wilful misrepresentation, or by wilful concealment of a material fact which he is bound to disclose, voluntarily causes or procures, or attempts to cause or procure, a thing to be done, is said to instigate the doing of that thing.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nA person who, by wilful misrepresentation, or by wilful concealment of a material fact which he is bound to disclose, voluntarily causes or procures, or attempts to cause or procure, a thing to be done, is said to instigate the doing of that thing.",
+            "keywords": [
+              "wilful",
+              "abetment",
+              "misrepresentation",
+              "concealment",
+              "material",
+              "fact",
+              "bound",
+              "disclose",
+              "voluntarily",
+              "wilful misrepresentation",
+              "material fact"
+            ],
+            "legal_concepts": [
+              "abetment of a thing",
+              "instigation"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 2,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "abetment of a thing",
+                "instigation"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7410467267036438,
+              "bm25": 0.623883868251879,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "abetment of a thing",
+                "instigation",
+                "conspiracy",
+                "aiding and abetting",
+                "abetment",
+                "criminal liability",
+                "intentional aiding",
+                "commission"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "abetment of a thing",
+                  "chunk_concept": "abetment of a thing",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "instigation",
+                  "chunk_concept": "instigation",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "abetment",
+                  "chunk_concept": "abetment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "abetment of a thing",
+                  "chunk_concept": "material",
+                  "source": "keyword",
+                  "similarity": 0.871,
+                  "weighted_score": 0.6532
+                },
+                {
+                  "query_concept": "abetment of a thing",
+                  "chunk_concept": "fact",
+                  "source": "keyword",
+                  "similarity": 0.8679,
+                  "weighted_score": 0.6509
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "abetment of a thing",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S45_EXP2",
+            "score": 0.992618,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 45,
+            "citation": "Section 45",
+            "text": "Whoever, either prior to or at the time of the commission of an act, does anything in order to facilitate the commission of that act, and thereby facilitates the commission thereof, is said to aid the doing of that act. Abettor.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nWhoever, either prior to or at the time of the commission of an act, does anything in order to facilitate the commission of that act, and thereby facilitates the commission thereof, is said to aid the doing of that act. Abettor.",
+            "keywords": [
+              "commission",
+              "abetment",
+              "whoever",
+              "either",
+              "prior",
+              "time",
+              "anything",
+              "order",
+              "facilitate",
+              "thereby",
+              "abetment facilitation",
+              "commission facilitation"
+            ],
+            "legal_concepts": [
+              "abetment",
+              "commission",
+              "facilitation"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 2,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "abetment",
+                "commission"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7433366179466248,
+              "bm25": 0.5083842639522541,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "abetment of a thing",
+                "instigation",
+                "conspiracy",
+                "aiding and abetting",
+                "abetment",
+                "criminal liability",
+                "intentional aiding",
+                "commission"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "abetment",
+                  "chunk_concept": "abetment",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "commission",
+                  "chunk_concept": "commission",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "instigation",
+                  "chunk_concept": "facilitation",
+                  "source": "legal_concept",
+                  "similarity": 0.8985,
+                  "weighted_score": 0.8985
+                },
+                {
+                  "query_concept": "abetment",
+                  "chunk_concept": "abetment facilitation",
+                  "source": "keyword",
+                  "similarity": 0.9384,
+                  "weighted_score": 0.7038
+                },
+                {
+                  "query_concept": "commission",
+                  "chunk_concept": "commission facilitation",
+                  "source": "keyword",
+                  "similarity": 0.9269,
+                  "weighted_score": 0.6952
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "abetment",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S45_C",
+            "score": 0.989707,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 45,
+            "citation": "Section 45",
+            "text": "intentionally aids, by any act or illegal omission, the doing of that thing.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nintentionally aids, by any act or illegal omission, the doing of that thing.",
+            "keywords": [
+              "abetment",
+              "intentionally",
+              "aids",
+              "illegal",
+              "omission",
+              "doing",
+              "criminal",
+              "conspiracy",
+              "attempt",
+              "intentional aid"
+            ],
+            "legal_concepts": [
+              "abetment of a thing",
+              "intentional aiding"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 2,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "abetment of a thing",
+                "intentional aiding"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.781346321105957,
+              "bm25": 0.9011050392833015,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "abetment of a thing",
+                "instigation",
+                "conspiracy",
+                "aiding and abetting",
+                "abetment",
+                "criminal liability",
+                "intentional aiding",
+                "commission"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "abetment of a thing",
+                  "chunk_concept": "abetment of a thing",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "intentional aiding",
+                  "chunk_concept": "intentional aiding",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "abetment",
+                  "chunk_concept": "abetment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "conspiracy",
+                  "chunk_concept": "conspiracy",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "intentional aiding",
+                  "chunk_concept": "intentional aid",
+                  "source": "keyword",
+                  "similarity": 0.978,
+                  "weighted_score": 0.7335
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "abetment of a thing",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S45_B",
+            "score": 0.985043,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 45,
+            "citation": "Section 45",
+            "text": "engages with one or more other person or persons in any conspiracy for the doing of that thing, if an act or illegal omission takes place in pursuance of that conspiracy, and in order to the doing of that thing; or",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nengages with one or more other person or persons in any conspiracy for the doing of that thing, if an act or illegal omission takes place in pursuance of that conspiracy, and in order to the doing of that thing; or",
+            "keywords": [
+              "conspiracy",
+              "doing",
+              "abetment",
+              "engages",
+              "illegal",
+              "omission",
+              "takes",
+              "place",
+              "pursuance"
+            ],
+            "legal_concepts": [
+              "abetment",
+              "conspiracy"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 2,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "abetment",
+                "conspiracy"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7752909660339355,
+              "bm25": 0.9086129656135893,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "abetment of a thing",
+                "instigation",
+                "conspiracy",
+                "aiding and abetting",
+                "abetment",
+                "criminal liability",
+                "intentional aiding",
+                "commission"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "abetment",
+                  "chunk_concept": "abetment",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "conspiracy",
+                  "chunk_concept": "conspiracy",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "abetment of a thing",
+                  "chunk_concept": "doing",
+                  "source": "keyword",
+                  "similarity": 0.8998,
+                  "weighted_score": 0.6749
+                },
+                {
+                  "query_concept": "instigation",
+                  "chunk_concept": "pursuance",
+                  "source": "keyword",
+                  "similarity": 0.8873,
+                  "weighted_score": 0.6655
+                },
+                {
+                  "query_concept": "abetment of a thing",
+                  "chunk_concept": "takes",
+                  "source": "keyword",
+                  "similarity": 0.8819,
+                  "weighted_score": 0.6614
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "abetment",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S45_A",
+            "score": 0.963219,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 45,
+            "citation": "Section 45",
+            "text": "instigates any person to do that thing; or",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\ninstigates any person to do that thing; or",
+            "keywords": [
+              "abetment",
+              "instigates",
+              "criminal",
+              "conspiracy",
+              "attempt"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.9825409996266088,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "abetment of a thing",
+                "instigation",
+                "conspiracy",
+                "aiding and abetting",
+                "abetment",
+                "criminal liability",
+                "intentional aiding",
+                "commission"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "conspiracy",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "abetment",
+                  "chunk_concept": "abetment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "conspiracy",
+                  "chunk_concept": "conspiracy",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "instigation",
+                  "chunk_concept": "instigates",
+                  "source": "keyword",
+                  "similarity": 0.9706,
+                  "weighted_score": 0.728
+                },
+                {
+                  "query_concept": "instigation",
+                  "chunk_concept": "attempt",
+                  "source": "keyword",
+                  "similarity": 0.8741,
+                  "weighted_score": 0.6556
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.955
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S45_ILL1",
+            "score": 0.952508,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 45,
+            "citation": "Section 45",
+            "text": "A, a public officer, is authorised by a warrant from a Court to apprehend Z. B, knowing that fact and also that C is not Z, wilfully represents to A that C is Z, and thereby intentionally causes A to apprehend C. Here B abets by instigation the apprehension of C.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nA, a public officer, is authorised by a warrant from a Court to apprehend Z. B, knowing that fact and also that C is not Z, wilfully represents to A that C is Z, and thereby intentionally causes A to apprehend C. Here B abets by instigation the apprehension of C.",
+            "keywords": [
+              "apprehend",
+              "abetment",
+              "public",
+              "officer",
+              "authorised",
+              "warrant",
+              "court",
+              "knowing",
+              "fact",
+              "wilfully",
+              "false representation",
+              "wrong arrest"
+            ],
+            "legal_concepts": [
+              "abetment by instigation",
+              "misidentification"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7911933064460754,
+              "bm25": 0.6874908087185696,
+              "semrank_pre_rerank": 0.9507
+            },
+            "query_scores": {
+              "original": 0.7911933064460754
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "abetment of a thing",
+                "instigation",
+                "conspiracy",
+                "aiding and abetting",
+                "abetment",
+                "criminal liability",
+                "intentional aiding",
+                "commission"
+              ],
+              "score": 0.9507,
+              "best_similarity": 0.9507,
+              "best_concept": "abetment by instigation",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "instigation",
+                  "chunk_concept": "abetment by instigation",
+                  "source": "legal_concept",
+                  "similarity": 0.9507,
+                  "weighted_score": 0.9507
+                },
+                {
+                  "query_concept": "aiding and abetting",
+                  "chunk_concept": "misidentification",
+                  "source": "legal_concept",
+                  "similarity": 0.857,
+                  "weighted_score": 0.857
+                },
+                {
+                  "query_concept": "abetment",
+                  "chunk_concept": "abetment",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "abetment of a thing",
+                  "chunk_concept": "apprehend",
+                  "source": "keyword",
+                  "similarity": 0.8983,
+                  "weighted_score": 0.6737
+                },
+                {
+                  "query_concept": "abetment of a thing",
+                  "chunk_concept": "knowing",
+                  "source": "keyword",
+                  "similarity": 0.895,
+                  "weighted_score": 0.6712
+                }
+              ],
+              "pre_rerank_score": 0.9507,
+              "score_before_pre_rerank": 0.875625,
+              "score_after_pre_rerank": 0.889138
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S45_BODY",
+            "score": 0.950125,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 45,
+            "citation": "Section 45",
+            "text": "A person abets the doing of a thing, who—",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nA person abets the doing of a thing, who—",
+            "keywords": [
+              "abetment",
+              "abets",
+              "doing",
+              "criminal",
+              "conspiracy",
+              "attempt",
+              "body",
+              "encouragement"
+            ],
+            "legal_concepts": [
+              "abetment",
+              "criminal liability"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 2,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "abetment",
+                "criminal liability"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7730794548988342,
+              "bm25": 1.0,
+              "semrank": 0.9999998807907104,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "abetment of a thing",
+                "instigation",
+                "conspiracy",
+                "aiding and abetting",
+                "abetment",
+                "criminal liability",
+                "intentional aiding",
+                "commission"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "abetment",
+                  "chunk_concept": "abetment",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "criminal liability",
+                  "chunk_concept": "criminal liability",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "conspiracy",
+                  "chunk_concept": "conspiracy",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "abetment of a thing",
+                  "chunk_concept": "doing",
+                  "source": "keyword",
+                  "similarity": 0.8998,
+                  "weighted_score": 0.6749
+                },
+                {
+                  "query_concept": "abetment of a thing",
+                  "chunk_concept": "body",
+                  "source": "keyword",
+                  "similarity": 0.8806,
+                  "weighted_score": 0.6605
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "abetment",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__section__BNS_S45",
+            "score": 0.586051,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 45,
+            "citation": "Section 45",
+            "text": "A person abets the doing of a thing, who—\n(a) instigates any person to do that thing; or\n(b) engages with one or more other person or persons in any\nconspiracy for the doing of that thing, if an act or illegal omission\ntakes place in pursuance of that conspiracy, and in order to the doing\nof that thing; or\n(c) intentionally aids, by any act or illegal omission, the doing\nof that thing.\nExplanation 1.—A person who, by wilful misrepresentation, or by\nwilful concealment of a material fact which he is bound to disclose,\nvoluntarily causes or procures, or attempts to cause or procure, a thing to\nbe done, is said to instigate the doing of that thing.\nIllustration.\nA, a public officer, is authorised by a warrant from a Court to\napprehend Z. B, knowing that fact and also that C is not Z, wilfully\nrepresents to A that C is Z, and thereby intentionally causes A to apprehend\nC. Here B abets by instigation the apprehension of C.\nExplanation 2.—Whoever, either prior to or at the time of the\ncommission of an act, does anything in order to facilitate the commission\nof that act, and thereby facilitates the commission thereof, is said to aid\nthe doing of that act.\nAbettor.",
+            "derived_context": "",
+            "keywords": [
+              "abetment",
+              "criminal conspiracy",
+              "attempt"
+            ],
+            "legal_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 4,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "abetment of a thing",
+                "instigation",
+                "conspiracy",
+                "aiding and abetting"
+              ]
+            },
+            "source_scores": {
+              "anchor": 0.7891383067536287
+            },
+            "query_scores": {
+              "anchor": 0.7891383067536287
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S45_ILL1",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__section__BNS_S46",
+            "score": 0.44468,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 46,
+            "citation": "Section 46",
+            "text": "A person abets an offence, who abets either the commission of\nan offence, or the commission of an act which would be an offence, if\ncommitted by a person capable by law of committing an offence with the\nsame intention or knowledge as that of the abettor.\nExplanation 1.—The abetment of the illegal omission of an act may\namount to an offence although the abettor may not himself be bound to do\nthat act.\nExplanation 2.—To constitute the offence of abetment it is not\nnecessary that the act abetted should be committed, or that the effect\nrequisite to constitute the offence should be caused.\nIllustrations.\n(a) A instigates B to murder C. B refuses to do so. A is guilty of\nabetting B to commit murder.\n(b) A instigates B to murder D. B in pursuance of the instigation stabs\nD. D recovers from the wound. A is guilty of instigating B to commit murder.\nExplanation 3.—It is not necessary that the person abetted should be\ncapable by law of committing an offence, or that he should have the same\nguilty intention or knowledge as that of the abettor, or any guilty intention\nor knowledge.\nIllustrations.\n(a) A, with a guilty intention, abets a child or a person of unsound\nmind to commit an act which would be an offence, if committed by a person\ncapable by law of committing an offence, and having the same intention as\nA. Here A, whether the act be committed or not, is guilty of abetting an\noffence.\n(b) A, with the intention of murdering Z, instigates B, a child under\nseven years of age, to do an act which causes Z’s death. B, in consequence\nof the abetment, does the act in the absence of A and thereby causes Z’s\ndeath. Here, though B was not capable by law of committing an offence, A\nis liable to be punished in the same manner as if B had been capable by\nlaw of committing an offence, and had committed murder, and he is\ntherefore subject to the punishment of death.\n(c) A instigates B to set fire to a dwelling-house. B, in consequence\nof his unsoundness of mind, being incapable of knowing the nature of the\nact, or that he is doing what is wrong or contrary to law, sets fire to the\nhouse in consequence of A’s instigation. B has committed no offence, but\nA is guilty of abetting the offence of setting fire to a dwelling-house, and is\nliable to the punishment provided for that offence.\n(d) A, intending to cause a theft to be committed, instigates B to take\nproperty belonging to Z out of Z’s possession. A induces B to believe that\nthe property belongs to A. B takes the property out of Z’s possession, in\ngood faith, believing it to be A’s property. B, acting under this\nmisconception, does not take dishonestly, and therefore does not commit\ntheft. But A is guilty of abetting theft, and is liable to the same punishment\nas if B had committed theft.\nExplanation 4.—The abetment of an offence being an offence, the\nabetment of such an abetment is also an offence.\nIllustration.\nA instigates B to instigate C to murder Z. B accordingly instigates C\nto murder Z, and C commits that offence in consequence of B’s instigation.\nB is liable to be punished for his offence with the punishment for murder;\nand, as A instigated B to commit the offence, A is also liable to the same\npunishment.\nExplanation 5.—It is not necessary to the commission of the offence\nof abetment by conspiracy that the abettor should concert the offence with\nthe person who commits it. It is sufficient if he engages in the conspiracy\nin pursuance of which the offence is committed.\nIllustration.\nA concerts with B a plan for poisoning Z. It is agreed that A shall\nadminister the poison. B then explains the plan to C mentioning that a third\nperson is to administer the poison, but without mentioning A’s name. C\nagrees to procure the poison, and procures and delivers it to B for the\npurpose of its being used in the manner explained. A administers the\npoison; Z dies in consequence. Here, though A and C have not conspired\ntogether, yet C has been engaged in the conspiracy in pursuance of which\nZ has been murdered. C has therefore committed the offence defined in\nthis section and is liable to the punishment for murder.\nAbetment in India of offences outside India.",
+            "derived_context": "",
+            "keywords": [
+              "abettor",
+              "offence",
+              "commission"
+            ],
+            "legal_concepts": [
+              "abetment",
+              "criminal conspiracy",
+              "attempt"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 1,
+              "coverage_ratio": 0.125,
+              "matched_concepts": [
+                "abetment"
+              ]
+            },
+            "source_scores": {
+              "anchor": 0.7340623507335783
+            },
+            "query_scores": {
+              "anchor": 0.7340623507335783
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S46_EXP4",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S46_ILL3_3",
+            "score": 0.437149,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 46,
+            "citation": "Section 46",
+            "text": "A instigates B to instigate C to murder Z. B accordingly instigates C to murder Z, and C commits that offence in consequence of B’s instigation. B is liable to be punished for his offence with the punishment for murder; and, as A instigated B to commit the offence, A is also liable to the same punishment.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 46: Abettor.\nA instigates B to instigate C to murder Z. B accordingly instigates C to murder Z, and C commits that offence in consequence of B’s instigation. B is liable to be punished for his offence with the punishment for murder; and, as A instigated B to commit the offence, A is also liable to the same punishment.",
+            "keywords": [
+              "murder",
+              "offence",
+              "instigates",
+              "liable",
+              "punishment",
+              "instigate",
+              "accordingly",
+              "commits",
+              "consequence",
+              "instigation"
+            ],
+            "legal_concepts": [
+              "abettor",
+              "instigation"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 1,
+              "coverage_ratio": 0.125,
+              "matched_concepts": [
+                "instigation"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6957516670227051,
+              "semrank": 0.9999998807907104,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999998807907104
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "abetment of a thing",
+                "instigation",
+                "conspiracy",
+                "aiding and abetting",
+                "abetment",
+                "criminal liability",
+                "intentional aiding",
+                "commission"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "instigation",
+                  "chunk_concept": "instigation",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "abetment",
+                  "chunk_concept": "abettor",
+                  "source": "legal_concept",
+                  "similarity": 0.8761,
+                  "weighted_score": 0.8761
+                },
+                {
+                  "query_concept": "instigation",
+                  "chunk_concept": "instigates",
+                  "source": "keyword",
+                  "similarity": 0.9706,
+                  "weighted_score": 0.728
+                },
+                {
+                  "query_concept": "instigation",
+                  "chunk_concept": "instigate",
+                  "source": "keyword",
+                  "similarity": 0.9698,
+                  "weighted_score": 0.7273
+                },
+                {
+                  "query_concept": "criminal liability",
+                  "chunk_concept": "liable",
+                  "source": "keyword",
+                  "similarity": 0.9259,
+                  "weighted_score": 0.6944
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "instigation",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S45_EXP1",
+          "score": 1.0,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "A person who, by wilful misrepresentation, or by wilful concealment of a material fact which he is bound to disclose, voluntarily causes or procures, or attempts to cause or procure, a thing to be done, is said to instigate the doing of that thing.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nA person who, by wilful misrepresentation, or by wilful concealment of a material fact which he is bound to disclose, voluntarily causes or procures, or attempts to cause or procure, a thing to be done, is said to instigate the doing of that thing.",
+          "keywords": [
+            "wilful",
+            "abetment",
+            "misrepresentation",
+            "concealment",
+            "material",
+            "fact",
+            "bound",
+            "disclose",
+            "voluntarily",
+            "wilful misrepresentation",
+            "material fact"
+          ],
+          "legal_concepts": [
+            "abetment of a thing",
+            "instigation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "abetment of a thing",
+              "instigation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7410467267036438,
+            "original:bm25": 0.623883868251879,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "abetment of a thing",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "instigation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "material",
+                "source": "keyword",
+                "similarity": 0.871,
+                "weighted_score": 0.6532
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "fact",
+                "source": "keyword",
+                "similarity": 0.8679,
+                "weighted_score": 0.6509
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "abetment of a thing",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S45_EXP2",
+          "score": 0.993947,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "Whoever, either prior to or at the time of the commission of an act, does anything in order to facilitate the commission of that act, and thereby facilitates the commission thereof, is said to aid the doing of that act. Abettor.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nWhoever, either prior to or at the time of the commission of an act, does anything in order to facilitate the commission of that act, and thereby facilitates the commission thereof, is said to aid the doing of that act. Abettor.",
+          "keywords": [
+            "commission",
+            "abetment",
+            "whoever",
+            "either",
+            "prior",
+            "time",
+            "anything",
+            "order",
+            "facilitate",
+            "thereby",
+            "abetment facilitation",
+            "commission facilitation"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "commission",
+            "facilitation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "abetment",
+              "commission"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7433366179466248,
+            "original:bm25": 0.5083842639522541,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9926177613489513
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "commission",
+                "chunk_concept": "commission",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "facilitation",
+                "source": "legal_concept",
+                "similarity": 0.8985,
+                "weighted_score": 0.8985
+              },
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment facilitation",
+                "source": "keyword",
+                "similarity": 0.9384,
+                "weighted_score": 0.7038
+              },
+              {
+                "query_concept": "commission",
+                "chunk_concept": "commission facilitation",
+                "source": "keyword",
+                "similarity": 0.9269,
+                "weighted_score": 0.6952
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "abetment",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.992618,
+            "score_after_pre_rerank": 0.993947
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S45_C",
+          "score": 0.991559,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "intentionally aids, by any act or illegal omission, the doing of that thing.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nintentionally aids, by any act or illegal omission, the doing of that thing.",
+          "keywords": [
+            "abetment",
+            "intentionally",
+            "aids",
+            "illegal",
+            "omission",
+            "doing",
+            "criminal",
+            "conspiracy",
+            "attempt",
+            "intentional aid"
+          ],
+          "legal_concepts": [
+            "abetment of a thing",
+            "intentional aiding"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "abetment of a thing",
+              "intentional aiding"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.781346321105957,
+            "original:bm25": 0.9011050392833015,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9897065766239523
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "abetment of a thing",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "intentional aiding",
+                "chunk_concept": "intentional aiding",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "intentional aiding",
+                "chunk_concept": "intentional aid",
+                "source": "keyword",
+                "similarity": 0.978,
+                "weighted_score": 0.7335
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "abetment of a thing",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.989707,
+            "score_after_pre_rerank": 0.991559
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S45_B",
+          "score": 0.987735,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "engages with one or more other person or persons in any conspiracy for the doing of that thing, if an act or illegal omission takes place in pursuance of that conspiracy, and in order to the doing of that thing; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nengages with one or more other person or persons in any conspiracy for the doing of that thing, if an act or illegal omission takes place in pursuance of that conspiracy, and in order to the doing of that thing; or",
+          "keywords": [
+            "conspiracy",
+            "doing",
+            "abetment",
+            "engages",
+            "illegal",
+            "omission",
+            "takes",
+            "place",
+            "pursuance"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "conspiracy"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "abetment",
+              "conspiracy"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7752909660339355,
+            "original:bm25": 0.9086129656135893,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.985042878707594
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "doing",
+                "source": "keyword",
+                "similarity": 0.8998,
+                "weighted_score": 0.6749
+              },
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "pursuance",
+                "source": "keyword",
+                "similarity": 0.8873,
+                "weighted_score": 0.6655
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "takes",
+                "source": "keyword",
+                "similarity": 0.8819,
+                "weighted_score": 0.6614
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "abetment",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.985043,
+            "score_after_pre_rerank": 0.987735
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S45_BODY",
+          "score": 0.959102,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "A person abets the doing of a thing, who—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nA person abets the doing of a thing, who—",
+          "keywords": [
+            "abetment",
+            "abets",
+            "doing",
+            "criminal",
+            "conspiracy",
+            "attempt",
+            "body",
+            "encouragement"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "criminal liability"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "abetment",
+              "criminal liability"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7730794548988342,
+            "original:bm25": 1.0,
+            "original:semrank": 0.9999998807907104,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.950124931642063
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "criminal liability",
+                "chunk_concept": "criminal liability",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "doing",
+                "source": "keyword",
+                "similarity": 0.8998,
+                "weighted_score": 0.6749
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 0.8806,
+                "weighted_score": 0.6605
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "abetment",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.950125,
+            "score_after_pre_rerank": 0.959102
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S45_ILL1",
+          "score": 0.952183,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "A, a public officer, is authorised by a warrant from a Court to apprehend Z. B, knowing that fact and also that C is not Z, wilfully represents to A that C is Z, and thereby intentionally causes A to apprehend C. Here B abets by instigation the apprehension of C.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nA, a public officer, is authorised by a warrant from a Court to apprehend Z. B, knowing that fact and also that C is not Z, wilfully represents to A that C is Z, and thereby intentionally causes A to apprehend C. Here B abets by instigation the apprehension of C.",
+          "keywords": [
+            "apprehend",
+            "abetment",
+            "public",
+            "officer",
+            "authorised",
+            "warrant",
+            "court",
+            "knowing",
+            "fact",
+            "wilfully",
+            "false representation",
+            "wrong arrest"
+          ],
+          "legal_concepts": [
+            "abetment by instigation",
+            "misidentification"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7911933064460754,
+            "original:bm25": 0.6874908087185696,
+            "original:semrank_pre_rerank": 0.9507,
+            "semrank_pre_rerank": 0.9507
+          },
+          "query_scores": {
+            "original": 0.9525082642715769
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "score": 0.9507,
+            "best_similarity": 0.9507,
+            "best_concept": "abetment by instigation",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "abetment by instigation",
+                "source": "legal_concept",
+                "similarity": 0.9507,
+                "weighted_score": 0.9507
+              },
+              {
+                "query_concept": "aiding and abetting",
+                "chunk_concept": "misidentification",
+                "source": "legal_concept",
+                "similarity": 0.857,
+                "weighted_score": 0.857
+              },
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "apprehend",
+                "source": "keyword",
+                "similarity": 0.8983,
+                "weighted_score": 0.6737
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "knowing",
+                "source": "keyword",
+                "similarity": 0.895,
+                "weighted_score": 0.6712
+              }
+            ],
+            "pre_rerank_score": 0.9507,
+            "score_before_pre_rerank": 0.952508,
+            "score_after_pre_rerank": 0.952183
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S45_A",
+          "score": 0.924839,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "instigates any person to do that thing; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\ninstigates any person to do that thing; or",
+          "keywords": [
+            "abetment",
+            "instigates",
+            "criminal",
+            "conspiracy",
+            "attempt"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.9825409996266088,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.963218506756486
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "conspiracy",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "instigates",
+                "source": "keyword",
+                "similarity": 0.9706,
+                "weighted_score": 0.728
+              },
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "attempt",
+                "source": "keyword",
+                "similarity": 0.8741,
+                "weighted_score": 0.6556
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.963219,
+            "score_after_pre_rerank": 0.924839
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__section__BNS_S45",
+          "score": 0.586051,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "A person abets the doing of a thing, who—\n(a) instigates any person to do that thing; or\n(b) engages with one or more other person or persons in any\nconspiracy for the doing of that thing, if an act or illegal omission\ntakes place in pursuance of that conspiracy, and in order to the doing\nof that thing; or\n(c) intentionally aids, by any act or illegal omission, the doing\nof that thing.\nExplanation 1.—A person who, by wilful misrepresentation, or by\nwilful concealment of a material fact which he is bound to disclose,\nvoluntarily causes or procures, or attempts to cause or procure, a thing to\nbe done, is said to instigate the doing of that thing.\nIllustration.\nA, a public officer, is authorised by a warrant from a Court to\napprehend Z. B, knowing that fact and also that C is not Z, wilfully\nrepresents to A that C is Z, and thereby intentionally causes A to apprehend\nC. Here B abets by instigation the apprehension of C.\nExplanation 2.—Whoever, either prior to or at the time of the\ncommission of an act, does anything in order to facilitate the commission\nof that act, and thereby facilitates the commission thereof, is said to aid\nthe doing of that act.\nAbettor.",
+          "derived_context": "",
+          "keywords": [
+            "abetment",
+            "criminal conspiracy",
+            "attempt"
+          ],
+          "legal_concepts": [
+            "abetment of a thing",
+            "instigation",
+            "conspiracy",
+            "aiding and abetting"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 4,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.7891383067536287
+          },
+          "query_scores": {
+            "original": 0.5860513178491166
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S45_ILL1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S46_ILL3_3",
+          "score": 0.538462,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 46,
+          "citation": "Section 46",
+          "text": "A instigates B to instigate C to murder Z. B accordingly instigates C to murder Z, and C commits that offence in consequence of B’s instigation. B is liable to be punished for his offence with the punishment for murder; and, as A instigated B to commit the offence, A is also liable to the same punishment.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 46: Abettor.\nA instigates B to instigate C to murder Z. B accordingly instigates C to murder Z, and C commits that offence in consequence of B’s instigation. B is liable to be punished for his offence with the punishment for murder; and, as A instigated B to commit the offence, A is also liable to the same punishment.",
+          "keywords": [
+            "murder",
+            "offence",
+            "instigates",
+            "liable",
+            "punishment",
+            "instigate",
+            "accordingly",
+            "commits",
+            "consequence",
+            "instigation"
+          ],
+          "legal_concepts": [
+            "abettor",
+            "instigation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "instigation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6957516670227051,
+            "original:semrank": 0.9999998807907104,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.437149285067302
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "instigation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abettor",
+                "source": "legal_concept",
+                "similarity": 0.8761,
+                "weighted_score": 0.8761
+              },
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "instigates",
+                "source": "keyword",
+                "similarity": 0.9706,
+                "weighted_score": 0.728
+              },
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "instigate",
+                "source": "keyword",
+                "similarity": 0.9698,
+                "weighted_score": 0.7273
+              },
+              {
+                "query_concept": "criminal liability",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 0.9259,
+                "weighted_score": 0.6944
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "instigation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.437149,
+            "score_after_pre_rerank": 0.538462
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__section__BNS_S46",
+          "score": 0.44468,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 46,
+          "citation": "Section 46",
+          "text": "A person abets an offence, who abets either the commission of\nan offence, or the commission of an act which would be an offence, if\ncommitted by a person capable by law of committing an offence with the\nsame intention or knowledge as that of the abettor.\nExplanation 1.—The abetment of the illegal omission of an act may\namount to an offence although the abettor may not himself be bound to do\nthat act.\nExplanation 2.—To constitute the offence of abetment it is not\nnecessary that the act abetted should be committed, or that the effect\nrequisite to constitute the offence should be caused.\nIllustrations.\n(a) A instigates B to murder C. B refuses to do so. A is guilty of\nabetting B to commit murder.\n(b) A instigates B to murder D. B in pursuance of the instigation stabs\nD. D recovers from the wound. A is guilty of instigating B to commit murder.\nExplanation 3.—It is not necessary that the person abetted should be\ncapable by law of committing an offence, or that he should have the same\nguilty intention or knowledge as that of the abettor, or any guilty intention\nor knowledge.\nIllustrations.\n(a) A, with a guilty intention, abets a child or a person of unsound\nmind to commit an act which would be an offence, if committed by a person\ncapable by law of committing an offence, and having the same intention as\nA. Here A, whether the act be committed or not, is guilty of abetting an\noffence.\n(b) A, with the intention of murdering Z, instigates B, a child under\nseven years of age, to do an act which causes Z’s death. B, in consequence\nof the abetment, does the act in the absence of A and thereby causes Z’s\ndeath. Here, though B was not capable by law of committing an offence, A\nis liable to be punished in the same manner as if B had been capable by\nlaw of committing an offence, and had committed murder, and he is\ntherefore subject to the punishment of death.\n(c) A instigates B to set fire to a dwelling-house. B, in consequence\nof his unsoundness of mind, being incapable of knowing the nature of the\nact, or that he is doing what is wrong or contrary to law, sets fire to the\nhouse in consequence of A’s instigation. B has committed no offence, but\nA is guilty of abetting the offence of setting fire to a dwelling-house, and is\nliable to the punishment provided for that offence.\n(d) A, intending to cause a theft to be committed, instigates B to take\nproperty belonging to Z out of Z’s possession. A induces B to believe that\nthe property belongs to A. B takes the property out of Z’s possession, in\ngood faith, believing it to be A’s property. B, acting under this\nmisconception, does not take dishonestly, and therefore does not commit\ntheft. But A is guilty of abetting theft, and is liable to the same punishment\nas if B had committed theft.\nExplanation 4.—The abetment of an offence being an offence, the\nabetment of such an abetment is also an offence.\nIllustration.\nA instigates B to instigate C to murder Z. B accordingly instigates C\nto murder Z, and C commits that offence in consequence of B’s instigation.\nB is liable to be punished for his offence with the punishment for murder;\nand, as A instigated B to commit the offence, A is also liable to the same\npunishment.\nExplanation 5.—It is not necessary to the commission of the offence\nof abetment by conspiracy that the abettor should concert the offence with\nthe person who commits it. It is sufficient if he engages in the conspiracy\nin pursuance of which the offence is committed.\nIllustration.\nA concerts with B a plan for poisoning Z. It is agreed that A shall\nadminister the poison. B then explains the plan to C mentioning that a third\nperson is to administer the poison, but without mentioning A’s name. C\nagrees to procure the poison, and procures and delivers it to B for the\npurpose of its being used in the manner explained. A administers the\npoison; Z dies in consequence. Here, though A and C have not conspired\ntogether, yet C has been engaged in the conspiracy in pursuance of which\nZ has been murdered. C has therefore committed the offence defined in\nthis section and is liable to the punishment for murder.\nAbetment in India of offences outside India.",
+          "derived_context": "",
+          "keywords": [
+            "abettor",
+            "offence",
+            "commission"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "criminal conspiracy",
+            "attempt"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "abetment"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.7340623507335783
+          },
+          "query_scores": {
+            "original": 0.44467967519882057
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S46_EXP4",
+            "rerank"
+          ]
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S45_EXP1",
+          "score": 1.0,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "A person who, by wilful misrepresentation, or by wilful concealment of a material fact which he is bound to disclose, voluntarily causes or procures, or attempts to cause or procure, a thing to be done, is said to instigate the doing of that thing.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nA person who, by wilful misrepresentation, or by wilful concealment of a material fact which he is bound to disclose, voluntarily causes or procures, or attempts to cause or procure, a thing to be done, is said to instigate the doing of that thing.",
+          "keywords": [
+            "wilful",
+            "abetment",
+            "misrepresentation",
+            "concealment",
+            "material",
+            "fact",
+            "bound",
+            "disclose",
+            "voluntarily",
+            "wilful misrepresentation",
+            "material fact"
+          ],
+          "legal_concepts": [
+            "abetment of a thing",
+            "instigation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "abetment of a thing",
+              "instigation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7410467267036438,
+            "original:bm25": 0.623883868251879,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "abetment of a thing",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "instigation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "material",
+                "source": "keyword",
+                "similarity": 0.871,
+                "weighted_score": 0.6532
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "fact",
+                "source": "keyword",
+                "similarity": 0.8679,
+                "weighted_score": 0.6509
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "abetment of a thing",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S45_EXP2",
+          "score": 0.989709,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "Whoever, either prior to or at the time of the commission of an act, does anything in order to facilitate the commission of that act, and thereby facilitates the commission thereof, is said to aid the doing of that act. Abettor.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nWhoever, either prior to or at the time of the commission of an act, does anything in order to facilitate the commission of that act, and thereby facilitates the commission thereof, is said to aid the doing of that act. Abettor.",
+          "keywords": [
+            "commission",
+            "abetment",
+            "whoever",
+            "either",
+            "prior",
+            "time",
+            "anything",
+            "order",
+            "facilitate",
+            "thereby",
+            "abetment facilitation",
+            "commission facilitation"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "commission",
+            "facilitation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "abetment",
+              "commission"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7433366179466248,
+            "original:bm25": 0.5083842639522541,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9926177613489513
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "commission",
+                "chunk_concept": "commission",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "facilitation",
+                "source": "legal_concept",
+                "similarity": 0.8985,
+                "weighted_score": 0.8985
+              },
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment facilitation",
+                "source": "keyword",
+                "similarity": 0.9384,
+                "weighted_score": 0.7038
+              },
+              {
+                "query_concept": "commission",
+                "chunk_concept": "commission facilitation",
+                "source": "keyword",
+                "similarity": 0.9269,
+                "weighted_score": 0.6952
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "abetment",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.992618,
+            "score_after_pre_rerank": 0.993947
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S45_C",
+          "score": 0.985651,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "intentionally aids, by any act or illegal omission, the doing of that thing.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nintentionally aids, by any act or illegal omission, the doing of that thing.",
+          "keywords": [
+            "abetment",
+            "intentionally",
+            "aids",
+            "illegal",
+            "omission",
+            "doing",
+            "criminal",
+            "conspiracy",
+            "attempt",
+            "intentional aid"
+          ],
+          "legal_concepts": [
+            "abetment of a thing",
+            "intentional aiding"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "abetment of a thing",
+              "intentional aiding"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.781346321105957,
+            "original:bm25": 0.9011050392833015,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9897065766239523
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "abetment of a thing",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "intentional aiding",
+                "chunk_concept": "intentional aiding",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "intentional aiding",
+                "chunk_concept": "intentional aid",
+                "source": "keyword",
+                "similarity": 0.978,
+                "weighted_score": 0.7335
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "abetment of a thing",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.989707,
+            "score_after_pre_rerank": 0.991559
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S45_B",
+          "score": 0.97915,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "engages with one or more other person or persons in any conspiracy for the doing of that thing, if an act or illegal omission takes place in pursuance of that conspiracy, and in order to the doing of that thing; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nengages with one or more other person or persons in any conspiracy for the doing of that thing, if an act or illegal omission takes place in pursuance of that conspiracy, and in order to the doing of that thing; or",
+          "keywords": [
+            "conspiracy",
+            "doing",
+            "abetment",
+            "engages",
+            "illegal",
+            "omission",
+            "takes",
+            "place",
+            "pursuance"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "conspiracy"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "abetment",
+              "conspiracy"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7752909660339355,
+            "original:bm25": 0.9086129656135893,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.985042878707594
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "doing",
+                "source": "keyword",
+                "similarity": 0.8998,
+                "weighted_score": 0.6749
+              },
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "pursuance",
+                "source": "keyword",
+                "similarity": 0.8873,
+                "weighted_score": 0.6655
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "takes",
+                "source": "keyword",
+                "similarity": 0.8819,
+                "weighted_score": 0.6614
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "abetment",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.985043,
+            "score_after_pre_rerank": 0.987735
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S45_ILL1",
+          "score": 0.977518,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "A, a public officer, is authorised by a warrant from a Court to apprehend Z. B, knowing that fact and also that C is not Z, wilfully represents to A that C is Z, and thereby intentionally causes A to apprehend C. Here B abets by instigation the apprehension of C.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nA, a public officer, is authorised by a warrant from a Court to apprehend Z. B, knowing that fact and also that C is not Z, wilfully represents to A that C is Z, and thereby intentionally causes A to apprehend C. Here B abets by instigation the apprehension of C.",
+          "keywords": [
+            "apprehend",
+            "abetment",
+            "public",
+            "officer",
+            "authorised",
+            "warrant",
+            "court",
+            "knowing",
+            "fact",
+            "wilfully",
+            "false representation",
+            "wrong arrest"
+          ],
+          "legal_concepts": [
+            "abetment by instigation",
+            "misidentification"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7911933064460754,
+            "original:bm25": 0.6874908087185696,
+            "original:semrank_pre_rerank": 0.9507,
+            "semrank_pre_rerank": 0.9507
+          },
+          "query_scores": {
+            "original": 0.9525082642715769
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "score": 0.9507,
+            "best_similarity": 0.9507,
+            "best_concept": "abetment by instigation",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "abetment by instigation",
+                "source": "legal_concept",
+                "similarity": 0.9507,
+                "weighted_score": 0.9507
+              },
+              {
+                "query_concept": "aiding and abetting",
+                "chunk_concept": "misidentification",
+                "source": "legal_concept",
+                "similarity": 0.857,
+                "weighted_score": 0.857
+              },
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "apprehend",
+                "source": "keyword",
+                "similarity": 0.8983,
+                "weighted_score": 0.6737
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "knowing",
+                "source": "keyword",
+                "similarity": 0.895,
+                "weighted_score": 0.6712
+              }
+            ],
+            "pre_rerank_score": 0.9507,
+            "score_before_pre_rerank": 0.952508,
+            "score_after_pre_rerank": 0.952183
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S45_A",
+          "score": 0.949915,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "instigates any person to do that thing; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\ninstigates any person to do that thing; or",
+          "keywords": [
+            "abetment",
+            "instigates",
+            "criminal",
+            "conspiracy",
+            "attempt"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.9825409996266088,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.963218506756486
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "conspiracy",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "instigates",
+                "source": "keyword",
+                "similarity": 0.9706,
+                "weighted_score": 0.728
+              },
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "attempt",
+                "source": "keyword",
+                "similarity": 0.8741,
+                "weighted_score": 0.6556
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.963219,
+            "score_after_pre_rerank": 0.924839
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S45_BODY",
+          "score": 0.930474,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "A person abets the doing of a thing, who—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 45: Abetment of a thing.\nA person abets the doing of a thing, who—",
+          "keywords": [
+            "abetment",
+            "abets",
+            "doing",
+            "criminal",
+            "conspiracy",
+            "attempt",
+            "body",
+            "encouragement"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "criminal liability"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "abetment",
+              "criminal liability"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7730794548988342,
+            "original:bm25": 1.0,
+            "original:semrank": 0.9999998807907104,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.950124931642063
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abetment",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "criminal liability",
+                "chunk_concept": "criminal liability",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "doing",
+                "source": "keyword",
+                "similarity": 0.8998,
+                "weighted_score": 0.6749
+              },
+              {
+                "query_concept": "abetment of a thing",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 0.8806,
+                "weighted_score": 0.6605
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "abetment",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.950125,
+            "score_after_pre_rerank": 0.959102
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__section__BNS_S45",
+          "score": 0.483062,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 45,
+          "citation": "Section 45",
+          "text": "A person abets the doing of a thing, who—\n(a) instigates any person to do that thing; or\n(b) engages with one or more other person or persons in any\nconspiracy for the doing of that thing, if an act or illegal omission\ntakes place in pursuance of that conspiracy, and in order to the doing\nof that thing; or\n(c) intentionally aids, by any act or illegal omission, the doing\nof that thing.\nExplanation 1.—A person who, by wilful misrepresentation, or by\nwilful concealment of a material fact which he is bound to disclose,\nvoluntarily causes or procures, or attempts to cause or procure, a thing to\nbe done, is said to instigate the doing of that thing.\nIllustration.\nA, a public officer, is authorised by a warrant from a Court to\napprehend Z. B, knowing that fact and also that C is not Z, wilfully\nrepresents to A that C is Z, and thereby intentionally causes A to apprehend\nC. Here B abets by instigation the apprehension of C.\nExplanation 2.—Whoever, either prior to or at the time of the\ncommission of an act, does anything in order to facilitate the commission\nof that act, and thereby facilitates the commission thereof, is said to aid\nthe doing of that act.\nAbettor.",
+          "derived_context": "",
+          "keywords": [
+            "abetment",
+            "criminal conspiracy",
+            "attempt"
+          ],
+          "legal_concepts": [
+            "abetment of a thing",
+            "instigation",
+            "conspiracy",
+            "aiding and abetting"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 4,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.7891383067536287
+          },
+          "query_scores": {
+            "original": 0.5860513178491166
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S45_ILL1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__section__BNS_S46",
+          "score": 0.299295,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 46,
+          "citation": "Section 46",
+          "text": "A person abets an offence, who abets either the commission of\nan offence, or the commission of an act which would be an offence, if\ncommitted by a person capable by law of committing an offence with the\nsame intention or knowledge as that of the abettor.\nExplanation 1.—The abetment of the illegal omission of an act may\namount to an offence although the abettor may not himself be bound to do\nthat act.\nExplanation 2.—To constitute the offence of abetment it is not\nnecessary that the act abetted should be committed, or that the effect\nrequisite to constitute the offence should be caused.\nIllustrations.\n(a) A instigates B to murder C. B refuses to do so. A is guilty of\nabetting B to commit murder.\n(b) A instigates B to murder D. B in pursuance of the instigation stabs\nD. D recovers from the wound. A is guilty of instigating B to commit murder.\nExplanation 3.—It is not necessary that the person abetted should be\ncapable by law of committing an offence, or that he should have the same\nguilty intention or knowledge as that of the abettor, or any guilty intention\nor knowledge.\nIllustrations.\n(a) A, with a guilty intention, abets a child or a person of unsound\nmind to commit an act which would be an offence, if committed by a person\ncapable by law of committing an offence, and having the same intention as\nA. Here A, whether the act be committed or not, is guilty of abetting an\noffence.\n(b) A, with the intention of murdering Z, instigates B, a child under\nseven years of age, to do an act which causes Z’s death. B, in consequence\nof the abetment, does the act in the absence of A and thereby causes Z’s\ndeath. Here, though B was not capable by law of committing an offence, A\nis liable to be punished in the same manner as if B had been capable by\nlaw of committing an offence, and had committed murder, and he is\ntherefore subject to the punishment of death.\n(c) A instigates B to set fire to a dwelling-house. B, in consequence\nof his unsoundness of mind, being incapable of knowing the nature of the\nact, or that he is doing what is wrong or contrary to law, sets fire to the\nhouse in consequence of A’s instigation. B has committed no offence, but\nA is guilty of abetting the offence of setting fire to a dwelling-house, and is\nliable to the punishment provided for that offence.\n(d) A, intending to cause a theft to be committed, instigates B to take\nproperty belonging to Z out of Z’s possession. A induces B to believe that\nthe property belongs to A. B takes the property out of Z’s possession, in\ngood faith, believing it to be A’s property. B, acting under this\nmisconception, does not take dishonestly, and therefore does not commit\ntheft. But A is guilty of abetting theft, and is liable to the same punishment\nas if B had committed theft.\nExplanation 4.—The abetment of an offence being an offence, the\nabetment of such an abetment is also an offence.\nIllustration.\nA instigates B to instigate C to murder Z. B accordingly instigates C\nto murder Z, and C commits that offence in consequence of B’s instigation.\nB is liable to be punished for his offence with the punishment for murder;\nand, as A instigated B to commit the offence, A is also liable to the same\npunishment.\nExplanation 5.—It is not necessary to the commission of the offence\nof abetment by conspiracy that the abettor should concert the offence with\nthe person who commits it. It is sufficient if he engages in the conspiracy\nin pursuance of which the offence is committed.\nIllustration.\nA concerts with B a plan for poisoning Z. It is agreed that A shall\nadminister the poison. B then explains the plan to C mentioning that a third\nperson is to administer the poison, but without mentioning A’s name. C\nagrees to procure the poison, and procures and delivers it to B for the\npurpose of its being used in the manner explained. A administers the\npoison; Z dies in consequence. Here, though A and C have not conspired\ntogether, yet C has been engaged in the conspiracy in pursuance of which\nZ has been murdered. C has therefore committed the offence defined in\nthis section and is liable to the punishment for murder.\nAbetment in India of offences outside India.",
+          "derived_context": "",
+          "keywords": [
+            "abettor",
+            "offence",
+            "commission"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "criminal conspiracy",
+            "attempt"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "abetment"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.7340623507335783
+          },
+          "query_scores": {
+            "original": 0.44467967519882057
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S46_EXP4",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S46_ILL3_3",
+          "score": 0.215385,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 46,
+          "citation": "Section 46",
+          "text": "A instigates B to instigate C to murder Z. B accordingly instigates C to murder Z, and C commits that offence in consequence of B’s instigation. B is liable to be punished for his offence with the punishment for murder; and, as A instigated B to commit the offence, A is also liable to the same punishment.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 46: Abettor.\nA instigates B to instigate C to murder Z. B accordingly instigates C to murder Z, and C commits that offence in consequence of B’s instigation. B is liable to be punished for his offence with the punishment for murder; and, as A instigated B to commit the offence, A is also liable to the same punishment.",
+          "keywords": [
+            "murder",
+            "offence",
+            "instigates",
+            "liable",
+            "punishment",
+            "instigate",
+            "accordingly",
+            "commits",
+            "consequence",
+            "instigation"
+          ],
+          "legal_concepts": [
+            "abettor",
+            "instigation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "instigation"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6957516670227051,
+            "original:semrank": 0.9999998807907104,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.437149285067302
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "abetment of a thing",
+              "instigation",
+              "conspiracy",
+              "aiding and abetting",
+              "abetment",
+              "criminal liability",
+              "intentional aiding",
+              "commission"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "instigation",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "abetment",
+                "chunk_concept": "abettor",
+                "source": "legal_concept",
+                "similarity": 0.8761,
+                "weighted_score": 0.8761
+              },
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "instigates",
+                "source": "keyword",
+                "similarity": 0.9706,
+                "weighted_score": 0.728
+              },
+              {
+                "query_concept": "instigation",
+                "chunk_concept": "instigate",
+                "source": "keyword",
+                "similarity": 0.9698,
+                "weighted_score": 0.7273
+              },
+              {
+                "query_concept": "criminal liability",
+                "chunk_concept": "liable",
+                "source": "keyword",
+                "similarity": 0.9259,
+                "weighted_score": 0.6944
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "instigation",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.437149,
+            "score_after_pre_rerank": 0.538462
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    },
+    "phase11": {
+      "answer_type": "lookup",
+      "support_status": "supported",
+      "confidence": {
+        "score": 0.98,
+        "label": "high"
+      },
+      "final_answer": "Abetment under Section 45 involves intentionally aiding the commission of an act or engaging in conspiracy to commit that act.",
+      "summary_answer": "Abetment under Section 45 involves intentionally aiding the commission of an act or engaging in conspiracy to commit that act.",
+      "detailed_answer": "Section 45 of the Bharatiya Nyaya Sanhita, 2023 defines abetment as occurring when a person intentionally aids the doing of a thing through any act or illegal omission (Section 45(c)). Additionally, it includes engaging in conspiracy with others to commit that act, provided an act or illegal omission occurs in furtherance of that conspiracy (Section 45(b)). This section establishes the framework for understanding how abetment operates in relation to criminal acts.",
+      "citations": [
+        "Section 45 Body, Bharatiya Nyaya Sanhita, 2023",
+        "Section 45(c), Bharatiya Nyaya Sanhita, 2023",
+        "Section 45(b), Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "matched_sections": [
+        "Section 45",
+        "Section 46"
+      ],
+      "missing_sections": [],
+      "missing_from_corpus": [],
+      "selected_chunk_ids": [
+        "chunk__node__BNS_S45_BODY",
+        "chunk__node__BNS_S45_C",
+        "chunk__node__BNS_S45_B"
+      ],
+      "warnings": [],
+      "structured_reasoning": {
+        "base_concept": "",
+        "selected_section": "Section 45",
+        "selection_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "overrides_score_selection": false,
+        "uncertainty": "low",
+        "uncertainty_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "alternative_sections": [
+          "Section 46"
+        ],
+        "sections_analyzed": [
+          {
+            "section": "Section 45",
+            "role": "retrieved_evidence",
+            "condition_summary": "intentionally aids, by any act or illegal omission, the doing of that thing.",
+            "condition_match_score": 0.985651,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "abetment of a thing ~ abetment of a thing",
+              "intentional aiding ~ intentional aiding",
+              "abetment ~ abetment",
+              "conspiracy ~ conspiracy",
+              "intentional aiding ~ intentional aid"
+            ],
+            "raw_retrieval_score": 0.985651,
+            "hit_count": 3,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 46",
+            "role": "retrieved_evidence",
+            "condition_summary": "A person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence with the same intention or knowledge as that of the abettor.",
+            "condition_match_score": 0.299295,
+            "concept_overlap": [],
+            "semantic_matches": [],
+            "raw_retrieval_score": 0.299295,
+            "hit_count": 2,
+            "is_base": true,
+            "note": ""
+          }
+        ]
+      },
+      "validation": {
+        "requested_sections": [
+          "Section 45"
+        ],
+        "present_in_corpus": [
+          "Section 45"
+        ],
+        "retrieved_exact_matches": [
+          "Section 45"
+        ],
+        "missing_from_corpus": [],
+        "intent_alignment": "strong",
+        "intent_notes": [
+          "Lookup intent is anchored by a direct base legal chunk."
+        ],
+        "answer_verified": true,
+        "verification_issues": [],
+        "llm_answer_verified": true,
+        "llm_verification_issues": [],
+        "completeness": "complete",
+        "guardrail_grounding_strength": 1.0,
+        "repaired": false,
+        "fallback_used": false
+      },
+      "evidence": {
+        "primary_chunk_id": "chunk__node__BNS_S45_BODY",
+        "primary_chunk_type": "content",
+        "primary_section": "Section 45",
+        "primary_section_title": "Abetment of a thing.",
+        "related_chunk_ids": [
+          "chunk__node__BNS_S45_C",
+          "chunk__node__BNS_S45_B"
+        ],
+        "top_sections": [
+          {
+            "section": "Section 45",
+            "section_title": "Abetment of a thing.",
+            "hit_count": 3,
+            "best_score": 0.985651,
+            "chunk_types": {
+              "content": 1,
+              "clause": 2
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.25
+          },
+          {
+            "section": "Section 46",
+            "section_title": "Abettor.",
+            "hit_count": 2,
+            "best_score": 0.299295,
+            "chunk_types": {
+              "section": 1,
+              "illustration": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.125
+          }
+        ],
+        "llm_evidence": [
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S45_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": "45",
+            "citation": "Section 45 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "A person abets the doing of a thing, who—"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S45_C",
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": "45",
+            "citation": "Section 45(c), Bharatiya Nyaya Sanhita, 2023",
+            "text": "intentionally aids, by any act or illegal omission, the doing of that thing."
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S45_B",
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": "45",
+            "citation": "Section 45(b), Bharatiya Nyaya Sanhita, 2023",
+            "text": "engages with one or more other person or persons in any conspiracy for the doing of that thing, if an act or illegal omission takes place in pursuance of that conspiracy, and in order to the doing of that thing; or"
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__section__BNS_S46",
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": "46",
+            "citation": "Section 46: Abettor.",
+            "text": "A person abets an offence, who abets either the commission of an offence, or the commission of an act which would be an offence, if committed by a person capable by law of committing an offence with the same intention or knowledge as that of the abettor. Explanation 1.—The abetment of the illegal omission of an act may amount to an offence although the abettor may not himself be bound to do that act. Explanation 2.—To constitute the offence of abetment it is not necessary that the act abetted should be committed, or that the effect requisite to constitute the offence should be caused. Illustrations. (a) A instigates B to murder C. B refuses to do so. A is guilty of abetting B to commit murder. (b) A instigates B to murder D. B in pursuance of the instigation stabs D. D recovers from the wound. A is guilty of instigating B to commit murder. Explanation 3.—It is not necessary that the person abetted should be capable by law of committing an offence, or that he should have the same guilty intention or knowledge as that of the abettor, or any guilty intention or knowledge. Illustrations. (a) A, with a guilty intention, abets a child or a person of unsound mind to commit an act which would be an offence, if committed by a person capable by law of committing an offence, and having the same intention as A. Here A, whether the act be committed or not, is guilty of abetting an offence. (b) A, with the intention of murdering Z, instigates B, a child under seven years of age, to do an act which causes Z’s death. B, in consequence of the abetment, does the act in the absence of A and thereby causes Z’s death. Here, though B was not capable by law of committing an offence, A is liable to be punished in the same manner as if B had been capable by law of committing an offence, and had committed murder, and he is therefore subject to the punishment of death. (c) A instigates B to set fire to a dwelling-house. B, in consequence of his unsoundness of mind, being incapable of knowing the nature of the act, or that he is doing what is wrong or contrary to law, sets fire to the house in consequence of A’s instigation. B has committed no offence, but A is guilty of abetting the offence of setting fire to a dwelling-house, and is liable to the punishment provided for that offence. (d) A, intending to cause a theft to be committed, instigates B to take property belonging to Z out of Z’s possession. A induces B to believe that the property belongs to A. B takes the property out of Z’s possession, in good faith, believing it to be A’s property. B, acting under this misconception, does not take dishonestly, and therefore does not commit theft. But A is guilty of abetting theft, and is liable to the same punishment as if B had committed theft. Explanation 4.—The abetment of an offence being an offence, the abetment of such an abetment is also an offence. Illustration. A instigates B to instigate C to murder Z. B accordingly instigates C to murder Z, and C commits that offence in consequence of B’s instigation. B is liable to be punished for his offence with the punishment for murder; and, as A instigated B to commit the offence, A is also liable to the same punishment. Explanation 5.—It is not necessary to the commission of the offence of abetment by conspiracy that the abettor should concert the offence with the person who commits it. It is sufficient if he engages in the conspiracy in pursuance of which the offence is committed. Illustration. A concerts with B a plan for poisoning Z. It is agreed that A shall administer the poison. B then explains the plan to C mentioning that a third person is to administer the poison, but without mentioning A’s name. C agrees to procure the poison, and procures and delivers it to B for the purpose of its being used in the manner explained. A administers the poison; Z dies in consequence. Here, though A and C have not conspired together, yet C has been engaged in the conspiracy in pursuance of which Z has been murdered. C has therefore committed the offence defined in this section and is liable to the punishment for murder. Abetment in India of offences outside India."
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S46_ILL3_3",
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": "46",
+            "citation": "Section 46 Illustration, Bharatiya Nyaya Sanhita, 2023",
+            "text": "A instigates B to instigate C to murder Z. B accordingly instigates C to murder Z, and C commits that offence in consequence of B’s instigation. B is liable to be punished for his offence with the punishment for murder; and, as A instigated B to commit the offence, A is also liable to the same punishment."
+          }
+        ]
+      },
+      "llm_generation": {
+        "enabled": true,
+        "used": true,
+        "model": "gpt-4o-mini",
+        "reasoning_trace": [
+          "Identified the definition of abetment from Section 45.",
+          "Extracted relevant clauses that describe the actions constituting abetment."
+        ],
+        "caution_notes": [],
+        "error": null,
+        "repaired": false,
+        "fallback_used": false
+      }
+    }
+  }
+]

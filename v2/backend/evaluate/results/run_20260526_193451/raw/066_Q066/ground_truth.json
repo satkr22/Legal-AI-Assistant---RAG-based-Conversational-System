@@ -1,0 +1,76 @@
+{
+  "query_id": "Q066",
+  "query": "Is life imprisonment always for whole life or can it mean fixed years?",
+  "query_type": "multi_hop",
+  "difficulty": "hard",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "6",
+      "subsection": null,
+      "label": "Section 6",
+      "role": "life imprisonment reckoned as twenty years for calculation purposes unless otherwise provided",
+      "required": true,
+      "match_level": "section"
+    },
+    {
+      "act": "BNS",
+      "section": "4",
+      "label": "Section 4",
+      "role": "lists imprisonment for life as a punishment under BNS",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "64",
+      "label": "Section 64",
+      "reason": "example provision that can specify imprisonment for the remainder of natural life"
+    },
+    {
+      "act": "BNS",
+      "section": "65",
+      "label": "Section 65",
+      "reason": "example provision that can specify imprisonment for the remainder of natural life"
+    },
+    {
+      "act": "BNS",
+      "section": "70",
+      "label": "Section 70",
+      "reason": "example provision that can specify imprisonment for the remainder of natural life"
+    },
+    {
+      "act": "BNS",
+      "section": "71",
+      "label": "Section 71",
+      "reason": "example provision for repeat offenders punished with imprisonment for the remainder of natural life"
+    }
+  ],
+  "wrong_references": [
+    {
+      "act": "BNS",
+      "section": "62",
+      "label": "Section 62",
+      "reason": "attempt provision, not the main rule for life imprisonment duration"
+    }
+  ],
+  "answer_key": {
+    "required_points": [
+      "Life imprisonment is not always exactly twenty years or always the whole natural life; the answer depends on the context.",
+      "Section 6 provides that for calculating fractions of terms of punishment, imprisonment for life is reckoned as equivalent to twenty years unless otherwise provided.",
+      "Several provisions expressly specify that imprisonment for life means imprisonment for the remainder of the person's natural life (e.g., Section 71 for repeat sex offenders, Sections 65, 70, and certain others)."
+    ],
+    "optional_points": [
+      "The twenty-year equivalence in Section 6 is only for fraction-calculation purposes, not a cap on actual imprisonment."
+    ],
+    "forbidden_points": [
+      "Life imprisonment always means exactly twenty years.",
+      "Life imprisonment always means the whole natural life in every case.",
+      "Section 62 is the main rule for the meaning of life imprisonment."
+    ]
+  },
+  "notes": "Multi-hop query. Section 6 is the required rule; natural-life provisions such as Sections 64, 65, 70, and 71 are acceptable examples rather than mandatory citations."
+}

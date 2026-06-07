@@ -1,0 +1,75 @@
+{
+  "answer": "According to the Bharatiya Nyaya Sanhita, 2023, wrongful restraint is defined as voluntarily obstructing a person to prevent them from proceeding in any direction they have a right to go (Section 126(1)). In contrast, wrongful confinement occurs when a person is wrongfully restrained in such a manner that they cannot proceed beyond certain circumscribing limits (Section 127(1)). The penalties for wrongful restraint can include simple imprisonment for up to one month or a fine of up to five thousand rupees (Section 126(2)). Wrongful confinement, while not explicitly detailed in the provided evidence, is implied to carry more severe penalties, especially if grievous hurt is caused (Section 125(b)).",
+  "summary_answer": "Wrongful restraint involves preventing a person from proceeding in any direction they have a right to go, while wrongful confinement restricts a person within certain limits.",
+  "detailed_answer": "According to the Bharatiya Nyaya Sanhita, 2023, wrongful restraint is defined as voluntarily obstructing a person to prevent them from proceeding in any direction they have a right to go (Section 126(1)). In contrast, wrongful confinement occurs when a person is wrongfully restrained in such a manner that they cannot proceed beyond certain circumscribing limits (Section 127(1)). The penalties for wrongful restraint can include simple imprisonment for up to one month or a fine of up to five thousand rupees (Section 126(2)). Wrongful confinement, while not explicitly detailed in the provided evidence, is implied to carry more severe penalties, especially if grievous hurt is caused (Section 125(b)).",
+  "final_answer": "Wrongful restraint prevents a person from proceeding in any direction they have a right to go, while wrongful confinement restricts them within certain limits. Penalties for wrongful restraint include up to one month of imprisonment or a fine, while wrongful confinement may carry more severe penalties.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 126(2), Bharatiya Nyaya Sanhita, 2023",
+    "Section 126(1), Bharatiya Nyaya Sanhita, 2023",
+    "Section 127(1), Bharatiya Nyaya Sanhita, 2023",
+    "Section 125(b), Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.8237,
+    "reranker": 0.8364,
+    "citation": 1.0,
+    "reasoning": 0.8639,
+    "evidence_strength": 0.8237,
+    "reasoning_certainty": 0.8639,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.7117,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.72,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.8364,
+        "avg_selected_semrank_score": 0.9925,
+        "avg_selected_concept_coverage": 0.5,
+        "selected_chunk_count": 4,
+        "matched_selected_chunk_count": 4,
+        "selected_semrank_count": 4
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.9678,
+        "ambiguity_gap_score": 0.6,
+        "uncertainty_score": 1.0,
+        "gap": -0.0322,
+        "highest_competing_score": 1.0,
+        "ambiguity_mitigated_by_grounding": true
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.72,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [
+      "Several sections are close in relevance; the answer uses the strongest supported section."
+    ],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S126_N2",
+    "chunk__node__BNS_S126_N1",
+    "chunk__node__BNS_S127_N1",
+    "chunk__node__BNS_S125_B"
+  ]
+}

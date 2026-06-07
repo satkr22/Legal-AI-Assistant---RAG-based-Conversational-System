@@ -1,0 +1,171 @@
+{
+  "query_id": "Q014",
+  "query": "What is rape under Section 63?",
+  "query_type": "direct_section_lookup",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "63"
+  ],
+  "acceptable_sections": [
+    "64"
+  ],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "63",
+    "63",
+    "63",
+    "63",
+    "63"
+  ],
+  "candidate_sections_at_10": [
+    "63",
+    "63",
+    "63",
+    "63",
+    "63",
+    "63",
+    "63",
+    "63",
+    "63",
+    "63"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "63",
+    "63",
+    "63"
+  ],
+  "cited_sections": [
+    "63"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "63"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "63"
+    ],
+    "support_precision_at_k": 1.0,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": []
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "63"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "63"
+    ],
+    "support_precision_at_k": 1.0,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": []
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.3333,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "63"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "63"
+    ],
+    "support_precision_at_k": 1.0,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.0,
+    "required_points_matched": 0,
+    "required_points_total": 2,
+    "answer_completeness_score": 0.0,
+    "soft_answer_score": 0.75,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Section 63 defines rape as a man committing certain sexual acts without a woman's consent or against her will under specified circumstances, including: penetration of penis into vagina, mouth, urethra or anus; insertion of any object into vagina, urethra or anus; manipulation of body parts causing penetration; or applying mouth to intimate parts.",
+        "matched": false,
+        "overlap": 0.4074,
+        "matched_terms": [
+          "acts",
+          "anus",
+          "body",
+          "consent",
+          "her",
+          "manipulation",
+          "penetration",
+          "rape",
+          "urethra",
+          "vagina",
+          "woman"
+        ]
+      },
+      {
+        "point": "Consent is absent where it is given under fear of death, hurt, or misconception of fact, or where the woman is unable to understand the nature and consequences of consent.",
+        "matched": false,
+        "overlap": 0.1538,
+        "matched_terms": [
+          "consent",
+          "woman"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "63"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.8204,
+    "risk_level": "low",
+    "high_confidence_wrong": true,
+    "low_risk_wrong": true
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "low_required_point_coverage"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 0.1048,
+    "phase_9_10": 5.8868,
+    "phase_11": 17.6353,
+    "phase_12_13": 0.0003,
+    "total": 23.6272
+  },
+  "final_answer_preview": "Rape is defined under Section 63 of the Bharatiya Nyaya Sanhita, 2023, as involving acts done without the consent of a woman (Section 63(d)(ii)). It also includes acts performed with or without consent when the woman is under eighteen years of age (Section 63(v)(vi)). Additionally, it encompasses the manipulation of any part of a woman's body to cause penetration into her vagina, urethra, anus, or any part of her body, or making her do so with him or any other person (Section 63(c)).",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/014_Q014"
+}

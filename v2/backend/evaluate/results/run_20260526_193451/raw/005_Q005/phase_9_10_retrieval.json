@@ -1,0 +1,3066 @@
+[
+  {
+    "query": "Explain Section 14 of BNS.",
+    "phase8": {
+      "query": "Explain Section 14 of BNS.",
+      "intent": {
+        "primary": "lookup",
+        "secondary": []
+      },
+      "concepts": [
+        "act_done_by_person_bound",
+        "mistake_of_fact_believing_himself_bound"
+      ],
+      "targets": [
+        "Section 14"
+      ],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 1.0,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.8,
+        "structure_validity": 1.0,
+        "overall": 0.96
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "Explain Section 14 of BNS.",
+          "targets": [
+            "Section 14"
+          ],
+          "concepts": [
+            "act_done_by_person_bound",
+            "mistake_of_fact_believing_himself_bound"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S14_BODY",
+            "score": 0.978386,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 14,
+            "citation": "Section 14",
+            "text": "Nothing is an offence which is done by a person who is, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith believes himself to be, bound by law to do it.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 14: Act done by a person bound, or by mistake of fact believing himself bound, by law.\nNothing is an offence which is done by a person who is, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith believes himself to be, bound by law to do it.",
+            "keywords": [
+              "mistake",
+              "bound",
+              "done",
+              "reason",
+              "fact",
+              "himself",
+              "nothing",
+              "offence",
+              "good",
+              "faith"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7597833275794983,
+              "bm25": 1.0,
+              "semrank_pre_rerank": 0.6998
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "act_done_by_person_bound",
+                "mistake_of_fact_believing_himself_bound",
+                "section 14",
+                "explain",
+                "14",
+                "bns"
+              ],
+              "score": 0.6998,
+              "best_similarity": 0.933,
+              "best_concept": "reason",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "reason",
+                  "source": "keyword",
+                  "similarity": 0.933,
+                  "weighted_score": 0.6998
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "good",
+                  "source": "keyword",
+                  "similarity": 0.905,
+                  "weighted_score": 0.6788
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "fact",
+                  "source": "keyword",
+                  "similarity": 0.8952,
+                  "weighted_score": 0.6714
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "bound",
+                  "source": "keyword",
+                  "similarity": 0.8921,
+                  "weighted_score": 0.6691
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "done",
+                  "source": "keyword",
+                  "similarity": 0.8914,
+                  "weighted_score": 0.6685
+                }
+              ],
+              "pre_rerank_score": 0.6998,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.945964
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S14_ILL1_A",
+            "score": 0.976113,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 14,
+            "citation": "Section 14",
+            "text": "A, a soldier, fires on a mob by the order of his superior officer, in conformity with the commands of the law. A has committed no offence.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 14: Act done by a person bound, or by mistake of fact believing himself bound, by law.\nA, a soldier, fires on a mob by the order of his superior officer, in conformity with the commands of the law. A has committed no offence.",
+            "keywords": [
+              "bound",
+              "soldier",
+              "fires",
+              "order",
+              "superior",
+              "officer",
+              "conformity",
+              "commands",
+              "committed",
+              "offence"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.9060276973918017,
+              "semrank_pre_rerank": 0.6691
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "act_done_by_person_bound",
+                "mistake_of_fact_believing_himself_bound",
+                "section 14",
+                "explain",
+                "14",
+                "bns"
+              ],
+              "score": 0.6691,
+              "best_similarity": 0.8921,
+              "best_concept": "bound",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "bound",
+                  "source": "keyword",
+                  "similarity": 0.8921,
+                  "weighted_score": 0.6691
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "order",
+                  "source": "keyword",
+                  "similarity": 0.8847,
+                  "weighted_score": 0.6635
+                },
+                {
+                  "query_concept": "14",
+                  "chunk_concept": "commands",
+                  "source": "keyword",
+                  "similarity": 0.8836,
+                  "weighted_score": 0.6627
+                },
+                {
+                  "query_concept": "14",
+                  "chunk_concept": "committed",
+                  "source": "keyword",
+                  "similarity": 0.8738,
+                  "weighted_score": 0.6553
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "conformity",
+                  "source": "keyword",
+                  "similarity": 0.8696,
+                  "weighted_score": 0.6522
+                }
+              ],
+              "pre_rerank_score": 0.6691,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.940438
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S14_ILL1_B",
+            "score": 0.958818,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 14,
+            "citation": "Section 14",
+            "text": "A, an officer of a Court, being ordered by that Court to arrest Y, and, after due enquiry, believing Z to be Y, arrests Z. A has committed no offence. Act of Judge when acting judicially.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 14: Act done by a person bound, or by mistake of fact believing himself bound, by law.\nA, an officer of a Court, being ordered by that Court to arrest Y, and, after due enquiry, believing Z to be Y, arrests Z. A has committed no offence. Act of Judge when acting judicially.",
+            "keywords": [
+              "court",
+              "believing",
+              "bound",
+              "officer",
+              "ordered",
+              "arrest",
+              "after",
+              "enquiry",
+              "arrests",
+              "committed"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7935618162155151,
+              "bm25": 0.8903094522705389,
+              "semrank_pre_rerank": 0.6847
+            },
+            "query_scores": {
+              "original": 0.8903094522705389
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "act_done_by_person_bound",
+                "mistake_of_fact_believing_himself_bound",
+                "section 14",
+                "explain",
+                "14",
+                "bns"
+              ],
+              "score": 0.6847,
+              "best_similarity": 0.9129,
+              "best_concept": "enquiry",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "enquiry",
+                  "source": "keyword",
+                  "similarity": 0.9129,
+                  "weighted_score": 0.6847
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "court",
+                  "source": "keyword",
+                  "similarity": 0.9125,
+                  "weighted_score": 0.6844
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "after",
+                  "source": "keyword",
+                  "similarity": 0.9042,
+                  "weighted_score": 0.6782
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "bound",
+                  "source": "keyword",
+                  "similarity": 0.8921,
+                  "weighted_score": 0.6691
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "believing",
+                  "source": "keyword",
+                  "similarity": 0.8783,
+                  "weighted_score": 0.6587
+                }
+              ],
+              "pre_rerank_score": 0.6847,
+              "score_before_pre_rerank": 0.945035,
+              "score_after_pre_rerank": 0.898174
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__section__BNS_S14",
+            "score": 0.893652,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 14,
+            "citation": "Section 14",
+            "text": "Nothing is an offence which is done by a person who is, or who\nby reason of a mistake of fact and not by reason of a mistake of law in good\nfaith believes himself to be, bound by law to do it.\nIllustrations.\n(a) A, a soldier, fires on a mob by the order of his superior officer, in\nconformity with the commands of the law. A has committed no offence.\n(b) A, an officer of a Court, being ordered by that Court to arrest Y,\nand, after due enquiry, believing Z to be Y, arrests Z. A has committed no\noffence.\nAct of Judge when acting judicially.",
+            "derived_context": "",
+            "keywords": [
+              "good_faith",
+              "mistake_of_fact"
+            ],
+            "legal_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 2,
+              "coverage_ratio": 1.0,
+              "matched_concepts": [
+                "act_done_by_person_bound",
+                "mistake_of_fact_believing_himself_bound"
+              ]
+            },
+            "source_scores": {
+              "anchor": 0.8404380000000001
+            },
+            "query_scores": {
+              "anchor": 0.8404380000000001
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S14_ILL1_A",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S17_BODY",
+            "score": 0.744987,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 17,
+            "citation": "Section 17",
+            "text": "Nothing is an offence which is done by any person who is justified by law, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith, believes himself to be justified by law, in doing it.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 17: Act done by a person justified, or by mistake of fact believing himself justified, by law.\nNothing is an offence which is done by any person who is justified by law, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith, believes himself to be justified by law, in doing it.",
+            "keywords": [
+              "justified",
+              "mistake",
+              "done",
+              "reason",
+              "fact",
+              "himself",
+              "nothing",
+              "offence",
+              "good",
+              "faith",
+              "good faith"
+            ],
+            "legal_concepts": [
+              "act done by a person justified by law",
+              "mistake of fact in good faith"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6812954545021057,
+              "bm25": 0.48003362622921253,
+              "semrank_pre_rerank": 0.893
+            },
+            "query_scores": {
+              "original": 0.6812954545021057
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "act_done_by_person_bound",
+                "mistake_of_fact_believing_himself_bound",
+                "section 14",
+                "explain",
+                "14",
+                "bns"
+              ],
+              "score": 0.893,
+              "best_similarity": 0.893,
+              "best_concept": "act done by a person justified by law",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "act_done_by_person_bound",
+                  "chunk_concept": "act done by a person justified by law",
+                  "source": "legal_concept",
+                  "similarity": 0.893,
+                  "weighted_score": 0.893
+                },
+                {
+                  "query_concept": "mistake_of_fact_believing_himself_bound",
+                  "chunk_concept": "mistake of fact in good faith",
+                  "source": "legal_concept",
+                  "similarity": 0.8591,
+                  "weighted_score": 0.8591
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "reason",
+                  "source": "keyword",
+                  "similarity": 0.933,
+                  "weighted_score": 0.6998
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "justified",
+                  "source": "keyword",
+                  "similarity": 0.9161,
+                  "weighted_score": 0.687
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "good",
+                  "source": "keyword",
+                  "similarity": 0.905,
+                  "weighted_score": 0.6788
+                }
+              ],
+              "pre_rerank_score": 0.893,
+              "score_before_pre_rerank": 0.913382,
+              "score_after_pre_rerank": 0.909713
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S17_ILL1",
+            "score": 0.511172,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 17,
+            "citation": "Section 17",
+            "text": "A sees Z commit what appears to A to be a murder. A, in the exercise, to the best of his judgment exerted in good faith, of the power which the law gives to all persons of apprehending murderers in the fact, seizes Z, in order to bring Z before the proper authorities. A has committed no offence, though it may turn out that Z was acting in self-defence. Accident in doing a lawful act.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 17: Act done by a person justified, or by mistake of fact believing himself justified, by law.\nA sees Z commit what appears to A to be a murder. A, in the exercise, to the best of his judgment exerted in good faith, of the power which the law gives to all persons of apprehending murderers in the fact, seizes Z, in order to bring Z before the proper authorities. A has committed no offence, though it may turn out that Z was acting in self-defence. Accident in doing a lawful act.",
+            "keywords": [
+              "fact",
+              "justified",
+              "sees",
+              "commit",
+              "what",
+              "appears",
+              "murder",
+              "exercise",
+              "best",
+              "judgment"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7082408666610718,
+              "bm25": 0.25720591171127827,
+              "semrank_pre_rerank": 0.6893
+            },
+            "query_scores": {
+              "original": 0.7082408666610718
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "act_done_by_person_bound",
+                "mistake_of_fact_believing_himself_bound",
+                "section 14",
+                "explain",
+                "14",
+                "bns"
+              ],
+              "score": 0.6893,
+              "best_similarity": 0.9191,
+              "best_concept": "exercise",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "exercise",
+                  "source": "keyword",
+                  "similarity": 0.9191,
+                  "weighted_score": 0.6893
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "sees",
+                  "source": "keyword",
+                  "similarity": 0.9185,
+                  "weighted_score": 0.6889
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "justified",
+                  "source": "keyword",
+                  "similarity": 0.9161,
+                  "weighted_score": 0.687
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "judgment",
+                  "source": "keyword",
+                  "similarity": 0.8999,
+                  "weighted_score": 0.6749
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "best",
+                  "source": "keyword",
+                  "similarity": 0.8964,
+                  "weighted_score": 0.6723
+                }
+              ],
+              "pre_rerank_score": 0.6893,
+              "score_before_pre_rerank": 0.752329,
+              "score_after_pre_rerank": 0.740984
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S239_BODY",
+            "score": 0.501562,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 239,
+            "citation": "Section 239",
+            "text": "Whoever, knowing or having reason to believe that an offence has been committed, intentionally omits to give any information respecting that offence which he is legally bound to give, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Giving false information respecting an offence committed.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 239: Intentional omission to give information of offence by person bound to inform.\nWhoever, knowing or having reason to believe that an offence has been committed, intentionally omits to give any information respecting that offence which he is legally bound to give, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Giving false information respecting an offence committed.",
+            "keywords": [
+              "offence",
+              "give",
+              "information",
+              "committed",
+              "respecting",
+              "bound",
+              "extend",
+              "false",
+              "whoever",
+              "knowing",
+              "intentional omission",
+              "offence reporting"
+            ],
+            "legal_concepts": [
+              "omission to inform",
+              "offence reporting duty"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6711716651916504,
+              "semrank_pre_rerank": 0.855
+            },
+            "query_scores": {
+              "original": 0.6711716651916504
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "act_done_by_person_bound",
+                "mistake_of_fact_believing_himself_bound",
+                "section 14",
+                "explain",
+                "14",
+                "bns"
+              ],
+              "score": 0.855,
+              "best_similarity": 0.855,
+              "best_concept": "omission to inform",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "omission to inform",
+                  "source": "legal_concept",
+                  "similarity": 0.855,
+                  "weighted_score": 0.855
+                },
+                {
+                  "query_concept": "14",
+                  "chunk_concept": "offence reporting duty",
+                  "source": "legal_concept",
+                  "similarity": 0.8221,
+                  "weighted_score": 0.8221
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "information",
+                  "source": "keyword",
+                  "similarity": 0.9312,
+                  "weighted_score": 0.6984
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "knowing",
+                  "source": "keyword",
+                  "similarity": 0.9224,
+                  "weighted_score": 0.6918
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "extend",
+                  "source": "keyword",
+                  "similarity": 0.9171,
+                  "weighted_score": 0.6878
+                }
+              ],
+              "pre_rerank_score": 0.855,
+              "score_before_pre_rerank": 0.894507,
+              "score_after_pre_rerank": 0.887396
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S236_BODY",
+            "score": 0.427924,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 236,
+            "citation": "Section 236",
+            "text": "Whoever, in any declaration made or subscribed by him, which declaration any Court or any public servant or other person, is bound or authorised by law to receive as evidence of any fact, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, touching any point material to the object for which the declaration is made or used, shall be punished in the same manner as if he gave false evidence. Using as true such declaration knowing it to be false.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 236: False statement made in declaration which is by law receivable as evidence.\nWhoever, in any declaration made or subscribed by him, which declaration any Court or any public servant or other person, is bound or authorised by law to receive as evidence of any fact, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, touching any point material to the object for which the declaration is made or used, shall be punished in the same manner as if he gave false evidence. Using as true such declaration knowing it to be false.",
+            "keywords": [
+              "false",
+              "declaration",
+              "evidence",
+              "made",
+              "public",
+              "statement",
+              "true",
+              "whoever",
+              "subscribed",
+              "court",
+              "false statements",
+              "declarations"
+            ],
+            "legal_concepts": [
+              "false evidence",
+              "declaration as evidence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6720813512802124,
+              "semrank_pre_rerank": 0.8819
+            },
+            "query_scores": {
+              "original": 0.6720813512802124
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "act_done_by_person_bound",
+                "mistake_of_fact_believing_himself_bound",
+                "section 14",
+                "explain",
+                "14",
+                "bns"
+              ],
+              "score": 0.8819,
+              "best_similarity": 0.8819,
+              "best_concept": "declaration as evidence",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "declaration as evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.8819,
+                  "weighted_score": 0.8819
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.8518,
+                  "weighted_score": 0.8518
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "evidence",
+                  "source": "keyword",
+                  "similarity": 0.9222,
+                  "weighted_score": 0.6916
+                },
+                {
+                  "query_concept": "14",
+                  "chunk_concept": "true",
+                  "source": "keyword",
+                  "similarity": 0.9202,
+                  "weighted_score": 0.6901
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "court",
+                  "source": "keyword",
+                  "similarity": 0.9125,
+                  "weighted_score": 0.6844
+                }
+              ],
+              "pre_rerank_score": 0.8819,
+              "score_before_pre_rerank": 0.856646,
+              "score_after_pre_rerank": 0.861192
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S227_BODY",
+            "score": 0.41767,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 227,
+            "citation": "Section 227",
+            "text": "Whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 227: Giving false evidence.\nWhoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence.",
+            "keywords": [
+              "false",
+              "evidence",
+              "bound",
+              "whoever",
+              "legally",
+              "oath",
+              "express",
+              "state",
+              "truth",
+              "false evidence"
+            ],
+            "legal_concepts": [
+              "offence",
+              "evidence",
+              "oath"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6929468512535095,
+              "bm25": 0.05263157894736842,
+              "semrank_pre_rerank": 0.9222
+            },
+            "query_scores": {
+              "original": 0.6929468512535095
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "act_done_by_person_bound",
+                "mistake_of_fact_believing_himself_bound",
+                "section 14",
+                "explain",
+                "14",
+                "bns"
+              ],
+              "score": 0.9222,
+              "best_similarity": 0.9222,
+              "best_concept": "evidence",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.9222,
+                  "weighted_score": 0.9222
+                },
+                {
+                  "query_concept": "14",
+                  "chunk_concept": "oath",
+                  "source": "legal_concept",
+                  "similarity": 0.8628,
+                  "weighted_score": 0.8628
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "legally",
+                  "source": "keyword",
+                  "similarity": 0.9411,
+                  "weighted_score": 0.7058
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "state",
+                  "source": "keyword",
+                  "similarity": 0.91,
+                  "weighted_score": 0.6825
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "truth",
+                  "source": "keyword",
+                  "similarity": 0.9028,
+                  "weighted_score": 0.6771
+                }
+              ],
+              "pre_rerank_score": 0.9222,
+              "score_before_pre_rerank": 0.933209,
+              "score_after_pre_rerank": 0.931227
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S260_A",
+            "score": 0.406025,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 260,
+            "citation": "Section 260",
+            "text": "with imprisonment for life or with imprisonment of either description for a term which may extend to fourteen years, with or without fine, if the person in confinement, or who ought to have been apprehended, is under sentence of death; or",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 260: Intentional omission to apprehend on part of public servant bound to apprehend person\nwith imprisonment for life or with imprisonment of either description for a term which may extend to fourteen years, with or without fine, if the person in confinement, or who ought to have been apprehended, is under sentence of death; or",
+            "keywords": [
+              "imprisonment",
+              "apprehend",
+              "public",
+              "life",
+              "either",
+              "description",
+              "term",
+              "extend",
+              "fourteen",
+              "years",
+              "imprisonment for life",
+              "fourteen-year imprisonment"
+            ],
+            "legal_concepts": [
+              "intentional omission to apprehend",
+              "public servant's duty to apprehend"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 0.8355
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.7376,
+              "query_concepts": [
+                "act_done_by_person_bound",
+                "mistake_of_fact_believing_himself_bound",
+                "section 14",
+                "explain",
+                "14",
+                "bns"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "14",
+                  "chunk_concept": "intentional omission to apprehend",
+                  "source": "legal_concept",
+                  "similarity": 0.8355,
+                  "weighted_score": 0.8355
+                },
+                {
+                  "query_concept": "14",
+                  "chunk_concept": "public servant's duty to apprehend",
+                  "source": "legal_concept",
+                  "similarity": 0.828,
+                  "weighted_score": 0.828
+                },
+                {
+                  "query_concept": "14",
+                  "chunk_concept": "fourteen",
+                  "source": "keyword",
+                  "similarity": 0.9835,
+                  "weighted_score": 0.7376
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "description",
+                  "source": "keyword",
+                  "similarity": 0.9622,
+                  "weighted_score": 0.7216
+                },
+                {
+                  "query_concept": "explain",
+                  "chunk_concept": "term",
+                  "source": "keyword",
+                  "similarity": 0.9415,
+                  "weighted_score": 0.7062
+                }
+              ],
+              "score": 0.8355,
+              "best_similarity": 0.8355,
+              "best_concept": "intentional omission to apprehend",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.8355,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.97039
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S14_BODY",
+          "score": 0.92824,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 14,
+          "citation": "Section 14",
+          "text": "Nothing is an offence which is done by a person who is, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith believes himself to be, bound by law to do it.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 14: Act done by a person bound, or by mistake of fact believing himself bound, by law.\nNothing is an offence which is done by a person who is, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith believes himself to be, bound by law to do it.",
+          "keywords": [
+            "mistake",
+            "bound",
+            "done",
+            "reason",
+            "fact",
+            "himself",
+            "nothing",
+            "offence",
+            "good",
+            "faith"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7597833275794983,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.6998,
+            "semrank_pre_rerank": 0.6998
+          },
+          "query_scores": {
+            "original": 0.9783856
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.6998,
+            "best_similarity": 0.933,
+            "best_concept": "reason",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "good",
+                "source": "keyword",
+                "similarity": 0.905,
+                "weighted_score": 0.6788
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "fact",
+                "source": "keyword",
+                "similarity": 0.8952,
+                "weighted_score": 0.6714
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "bound",
+                "source": "keyword",
+                "similarity": 0.8921,
+                "weighted_score": 0.6691
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "done",
+                "source": "keyword",
+                "similarity": 0.8914,
+                "weighted_score": 0.6685
+              }
+            ],
+            "pre_rerank_score": 0.6998,
+            "score_before_pre_rerank": 0.978386,
+            "score_after_pre_rerank": 0.92824
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S14_ILL1_A",
+          "score": 0.92085,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 14,
+          "citation": "Section 14",
+          "text": "A, a soldier, fires on a mob by the order of his superior officer, in conformity with the commands of the law. A has committed no offence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 14: Act done by a person bound, or by mistake of fact believing himself bound, by law.\nA, a soldier, fires on a mob by the order of his superior officer, in conformity with the commands of the law. A has committed no offence.",
+          "keywords": [
+            "bound",
+            "soldier",
+            "fires",
+            "order",
+            "superior",
+            "officer",
+            "conformity",
+            "commands",
+            "committed",
+            "offence"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.9060276973918017,
+            "original:semrank_pre_rerank": 0.6691,
+            "semrank_pre_rerank": 0.6691
+          },
+          "query_scores": {
+            "original": 0.9761125058391262
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.6691,
+            "best_similarity": 0.8921,
+            "best_concept": "bound",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "explain",
+                "chunk_concept": "bound",
+                "source": "keyword",
+                "similarity": 0.8921,
+                "weighted_score": 0.6691
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "order",
+                "source": "keyword",
+                "similarity": 0.8847,
+                "weighted_score": 0.6635
+              },
+              {
+                "query_concept": "14",
+                "chunk_concept": "commands",
+                "source": "keyword",
+                "similarity": 0.8836,
+                "weighted_score": 0.6627
+              },
+              {
+                "query_concept": "14",
+                "chunk_concept": "committed",
+                "source": "keyword",
+                "similarity": 0.8738,
+                "weighted_score": 0.6553
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "conformity",
+                "source": "keyword",
+                "similarity": 0.8696,
+                "weighted_score": 0.6522
+              }
+            ],
+            "pre_rerank_score": 0.6691,
+            "score_before_pre_rerank": 0.976113,
+            "score_after_pre_rerank": 0.92085
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S14_ILL1_B",
+          "score": 0.909476,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 14,
+          "citation": "Section 14",
+          "text": "A, an officer of a Court, being ordered by that Court to arrest Y, and, after due enquiry, believing Z to be Y, arrests Z. A has committed no offence. Act of Judge when acting judicially.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 14: Act done by a person bound, or by mistake of fact believing himself bound, by law.\nA, an officer of a Court, being ordered by that Court to arrest Y, and, after due enquiry, believing Z to be Y, arrests Z. A has committed no offence. Act of Judge when acting judicially.",
+          "keywords": [
+            "court",
+            "believing",
+            "bound",
+            "officer",
+            "ordered",
+            "arrest",
+            "after",
+            "enquiry",
+            "arrests",
+            "committed"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7935618162155151,
+            "original:bm25": 0.8903094522705389,
+            "original:semrank_pre_rerank": 0.6847,
+            "semrank_pre_rerank": 0.6847
+          },
+          "query_scores": {
+            "original": 0.9588176086935449
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.6847,
+            "best_similarity": 0.9129,
+            "best_concept": "enquiry",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "explain",
+                "chunk_concept": "enquiry",
+                "source": "keyword",
+                "similarity": 0.9129,
+                "weighted_score": 0.6847
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 0.9125,
+                "weighted_score": 0.6844
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "after",
+                "source": "keyword",
+                "similarity": 0.9042,
+                "weighted_score": 0.6782
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "bound",
+                "source": "keyword",
+                "similarity": 0.8921,
+                "weighted_score": 0.6691
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "believing",
+                "source": "keyword",
+                "similarity": 0.8783,
+                "weighted_score": 0.6587
+              }
+            ],
+            "pre_rerank_score": 0.6847,
+            "score_before_pre_rerank": 0.958818,
+            "score_after_pre_rerank": 0.909476
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__section__BNS_S14",
+          "score": 0.893652,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 14,
+          "citation": "Section 14",
+          "text": "Nothing is an offence which is done by a person who is, or who\nby reason of a mistake of fact and not by reason of a mistake of law in good\nfaith believes himself to be, bound by law to do it.\nIllustrations.\n(a) A, a soldier, fires on a mob by the order of his superior officer, in\nconformity with the commands of the law. A has committed no offence.\n(b) A, an officer of a Court, being ordered by that Court to arrest Y,\nand, after due enquiry, believing Z to be Y, arrests Z. A has committed no\noffence.\nAct of Judge when acting judicially.",
+          "derived_context": "",
+          "keywords": [
+            "good_faith",
+            "mistake_of_fact"
+          ],
+          "legal_concepts": [
+            "act_done_by_person_bound",
+            "mistake_of_fact_believing_himself_bound"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 2,
+            "coverage_ratio": 1.0,
+            "matched_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.8404380000000001
+          },
+          "query_scores": {
+            "original": 0.8936518285429238
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S14_ILL1_A",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S17_BODY",
+          "score": 0.771629,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 17,
+          "citation": "Section 17",
+          "text": "Nothing is an offence which is done by any person who is justified by law, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith, believes himself to be justified by law, in doing it.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 17: Act done by a person justified, or by mistake of fact believing himself justified, by law.\nNothing is an offence which is done by any person who is justified by law, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith, believes himself to be justified by law, in doing it.",
+          "keywords": [
+            "justified",
+            "mistake",
+            "done",
+            "reason",
+            "fact",
+            "himself",
+            "nothing",
+            "offence",
+            "good",
+            "faith",
+            "good faith"
+          ],
+          "legal_concepts": [
+            "act done by a person justified by law",
+            "mistake of fact in good faith"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6812954545021057,
+            "original:bm25": 0.48003362622921253,
+            "original:semrank_pre_rerank": 0.893,
+            "semrank_pre_rerank": 0.893
+          },
+          "query_scores": {
+            "original": 0.7449868625113854
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.893,
+            "best_similarity": 0.893,
+            "best_concept": "act done by a person justified by law",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "act_done_by_person_bound",
+                "chunk_concept": "act done by a person justified by law",
+                "source": "legal_concept",
+                "similarity": 0.893,
+                "weighted_score": 0.893
+              },
+              {
+                "query_concept": "mistake_of_fact_believing_himself_bound",
+                "chunk_concept": "mistake of fact in good faith",
+                "source": "legal_concept",
+                "similarity": 0.8591,
+                "weighted_score": 0.8591
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "justified",
+                "source": "keyword",
+                "similarity": 0.9161,
+                "weighted_score": 0.687
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "good",
+                "source": "keyword",
+                "similarity": 0.905,
+                "weighted_score": 0.6788
+              }
+            ],
+            "pre_rerank_score": 0.893,
+            "score_before_pre_rerank": 0.744987,
+            "score_after_pre_rerank": 0.771629
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S239_BODY",
+          "score": 0.565181,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 239,
+          "citation": "Section 239",
+          "text": "Whoever, knowing or having reason to believe that an offence has been committed, intentionally omits to give any information respecting that offence which he is legally bound to give, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Giving false information respecting an offence committed.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 239: Intentional omission to give information of offence by person bound to inform.\nWhoever, knowing or having reason to believe that an offence has been committed, intentionally omits to give any information respecting that offence which he is legally bound to give, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Giving false information respecting an offence committed.",
+          "keywords": [
+            "offence",
+            "give",
+            "information",
+            "committed",
+            "respecting",
+            "bound",
+            "extend",
+            "false",
+            "whoever",
+            "knowing",
+            "intentional omission",
+            "offence reporting"
+          ],
+          "legal_concepts": [
+            "omission to inform",
+            "offence reporting duty"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6711716651916504,
+            "original:semrank_pre_rerank": 0.855,
+            "semrank_pre_rerank": 0.855
+          },
+          "query_scores": {
+            "original": 0.5015619083949548
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.855,
+            "best_similarity": 0.855,
+            "best_concept": "omission to inform",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "explain",
+                "chunk_concept": "omission to inform",
+                "source": "legal_concept",
+                "similarity": 0.855,
+                "weighted_score": 0.855
+              },
+              {
+                "query_concept": "14",
+                "chunk_concept": "offence reporting duty",
+                "source": "legal_concept",
+                "similarity": 0.8221,
+                "weighted_score": 0.8221
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "information",
+                "source": "keyword",
+                "similarity": 0.9312,
+                "weighted_score": 0.6984
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "knowing",
+                "source": "keyword",
+                "similarity": 0.9224,
+                "weighted_score": 0.6918
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.9171,
+                "weighted_score": 0.6878
+              }
+            ],
+            "pre_rerank_score": 0.855,
+            "score_before_pre_rerank": 0.501562,
+            "score_after_pre_rerank": 0.565181
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S17_ILL1",
+          "score": 0.543235,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 17,
+          "citation": "Section 17",
+          "text": "A sees Z commit what appears to A to be a murder. A, in the exercise, to the best of his judgment exerted in good faith, of the power which the law gives to all persons of apprehending murderers in the fact, seizes Z, in order to bring Z before the proper authorities. A has committed no offence, though it may turn out that Z was acting in self-defence. Accident in doing a lawful act.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 17: Act done by a person justified, or by mistake of fact believing himself justified, by law.\nA sees Z commit what appears to A to be a murder. A, in the exercise, to the best of his judgment exerted in good faith, of the power which the law gives to all persons of apprehending murderers in the fact, seizes Z, in order to bring Z before the proper authorities. A has committed no offence, though it may turn out that Z was acting in self-defence. Accident in doing a lawful act.",
+          "keywords": [
+            "fact",
+            "justified",
+            "sees",
+            "commit",
+            "what",
+            "appears",
+            "murder",
+            "exercise",
+            "best",
+            "judgment"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7082408666610718,
+            "original:bm25": 0.25720591171127827,
+            "original:semrank_pre_rerank": 0.6893,
+            "semrank_pre_rerank": 0.6893
+          },
+          "query_scores": {
+            "original": 0.511172331150747
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.6893,
+            "best_similarity": 0.9191,
+            "best_concept": "exercise",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "explain",
+                "chunk_concept": "exercise",
+                "source": "keyword",
+                "similarity": 0.9191,
+                "weighted_score": 0.6893
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "sees",
+                "source": "keyword",
+                "similarity": 0.9185,
+                "weighted_score": 0.6889
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "justified",
+                "source": "keyword",
+                "similarity": 0.9161,
+                "weighted_score": 0.687
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "judgment",
+                "source": "keyword",
+                "similarity": 0.8999,
+                "weighted_score": 0.6749
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "best",
+                "source": "keyword",
+                "similarity": 0.8964,
+                "weighted_score": 0.6723
+              }
+            ],
+            "pre_rerank_score": 0.6893,
+            "score_before_pre_rerank": 0.511172,
+            "score_after_pre_rerank": 0.543235
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S236_BODY",
+          "score": 0.50964,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 236,
+          "citation": "Section 236",
+          "text": "Whoever, in any declaration made or subscribed by him, which declaration any Court or any public servant or other person, is bound or authorised by law to receive as evidence of any fact, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, touching any point material to the object for which the declaration is made or used, shall be punished in the same manner as if he gave false evidence. Using as true such declaration knowing it to be false.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 236: False statement made in declaration which is by law receivable as evidence.\nWhoever, in any declaration made or subscribed by him, which declaration any Court or any public servant or other person, is bound or authorised by law to receive as evidence of any fact, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, touching any point material to the object for which the declaration is made or used, shall be punished in the same manner as if he gave false evidence. Using as true such declaration knowing it to be false.",
+          "keywords": [
+            "false",
+            "declaration",
+            "evidence",
+            "made",
+            "public",
+            "statement",
+            "true",
+            "whoever",
+            "subscribed",
+            "court",
+            "false statements",
+            "declarations"
+          ],
+          "legal_concepts": [
+            "false evidence",
+            "declaration as evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6720813512802124,
+            "original:semrank_pre_rerank": 0.8819,
+            "semrank_pre_rerank": 0.8819
+          },
+          "query_scores": {
+            "original": 0.4279243592531573
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.8819,
+            "best_similarity": 0.8819,
+            "best_concept": "declaration as evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "explain",
+                "chunk_concept": "declaration as evidence",
+                "source": "legal_concept",
+                "similarity": 0.8819,
+                "weighted_score": 0.8819
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "false evidence",
+                "source": "legal_concept",
+                "similarity": 0.8518,
+                "weighted_score": 0.8518
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 0.9222,
+                "weighted_score": 0.6916
+              },
+              {
+                "query_concept": "14",
+                "chunk_concept": "true",
+                "source": "keyword",
+                "similarity": 0.9202,
+                "weighted_score": 0.6901
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 0.9125,
+                "weighted_score": 0.6844
+              }
+            ],
+            "pre_rerank_score": 0.8819,
+            "score_before_pre_rerank": 0.427924,
+            "score_after_pre_rerank": 0.50964
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S227_BODY",
+          "score": 0.508485,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 227,
+          "citation": "Section 227",
+          "text": "Whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 227: Giving false evidence.\nWhoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence.",
+          "keywords": [
+            "false",
+            "evidence",
+            "bound",
+            "whoever",
+            "legally",
+            "oath",
+            "express",
+            "state",
+            "truth",
+            "false evidence"
+          ],
+          "legal_concepts": [
+            "offence",
+            "evidence",
+            "oath"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6929468512535095,
+            "original:bm25": 0.05263157894736842,
+            "original:semrank_pre_rerank": 0.9222,
+            "semrank_pre_rerank": 0.9222
+          },
+          "query_scores": {
+            "original": 0.41767003324423385
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.9222,
+            "best_similarity": 0.9222,
+            "best_concept": "evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "explain",
+                "chunk_concept": "evidence",
+                "source": "legal_concept",
+                "similarity": 0.9222,
+                "weighted_score": 0.9222
+              },
+              {
+                "query_concept": "14",
+                "chunk_concept": "oath",
+                "source": "legal_concept",
+                "similarity": 0.8628,
+                "weighted_score": 0.8628
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.9411,
+                "weighted_score": 0.7058
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "state",
+                "source": "keyword",
+                "similarity": 0.91,
+                "weighted_score": 0.6825
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "truth",
+                "source": "keyword",
+                "similarity": 0.9028,
+                "weighted_score": 0.6771
+              }
+            ],
+            "pre_rerank_score": 0.9222,
+            "score_before_pre_rerank": 0.41767,
+            "score_after_pre_rerank": 0.508485
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S260_A",
+          "score": 0.48333,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 260,
+          "citation": "Section 260",
+          "text": "with imprisonment for life or with imprisonment of either description for a term which may extend to fourteen years, with or without fine, if the person in confinement, or who ought to have been apprehended, is under sentence of death; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 260: Intentional omission to apprehend on part of public servant bound to apprehend person\nwith imprisonment for life or with imprisonment of either description for a term which may extend to fourteen years, with or without fine, if the person in confinement, or who ought to have been apprehended, is under sentence of death; or",
+          "keywords": [
+            "imprisonment",
+            "apprehend",
+            "public",
+            "life",
+            "either",
+            "description",
+            "term",
+            "extend",
+            "fourteen",
+            "years",
+            "imprisonment for life",
+            "fourteen-year imprisonment"
+          ],
+          "legal_concepts": [
+            "intentional omission to apprehend",
+            "public servant's duty to apprehend"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 0.8355,
+            "semrank_pre_rerank": 0.8355
+          },
+          "query_scores": {
+            "original": 0.4060247113631917
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7376,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "14",
+                "chunk_concept": "intentional omission to apprehend",
+                "source": "legal_concept",
+                "similarity": 0.8355,
+                "weighted_score": 0.8355
+              },
+              {
+                "query_concept": "14",
+                "chunk_concept": "public servant's duty to apprehend",
+                "source": "legal_concept",
+                "similarity": 0.828,
+                "weighted_score": 0.828
+              },
+              {
+                "query_concept": "14",
+                "chunk_concept": "fourteen",
+                "source": "keyword",
+                "similarity": 0.9835,
+                "weighted_score": 0.7376
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "description",
+                "source": "keyword",
+                "similarity": 0.9622,
+                "weighted_score": 0.7216
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.9415,
+                "weighted_score": 0.7062
+              }
+            ],
+            "score": 0.8355,
+            "best_similarity": 0.8355,
+            "best_concept": "intentional omission to apprehend",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8355,
+            "score_before_pre_rerank": 0.406025,
+            "score_after_pre_rerank": 0.48333
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S14_BODY",
+          "score": 0.971296,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 14,
+          "citation": "Section 14",
+          "text": "Nothing is an offence which is done by a person who is, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith believes himself to be, bound by law to do it.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 14: Act done by a person bound, or by mistake of fact believing himself bound, by law.\nNothing is an offence which is done by a person who is, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith believes himself to be, bound by law to do it.",
+          "keywords": [
+            "mistake",
+            "bound",
+            "done",
+            "reason",
+            "fact",
+            "himself",
+            "nothing",
+            "offence",
+            "good",
+            "faith"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7597833275794983,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.6998,
+            "semrank_pre_rerank": 0.6998
+          },
+          "query_scores": {
+            "original": 0.9783856
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.6998,
+            "best_similarity": 0.933,
+            "best_concept": "reason",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "good",
+                "source": "keyword",
+                "similarity": 0.905,
+                "weighted_score": 0.6788
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "fact",
+                "source": "keyword",
+                "similarity": 0.8952,
+                "weighted_score": 0.6714
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "bound",
+                "source": "keyword",
+                "similarity": 0.8921,
+                "weighted_score": 0.6691
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "done",
+                "source": "keyword",
+                "similarity": 0.8914,
+                "weighted_score": 0.6685
+              }
+            ],
+            "pre_rerank_score": 0.6998,
+            "score_before_pre_rerank": 0.978386,
+            "score_after_pre_rerank": 0.92824
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S14_ILL1_A",
+          "score": 0.968275,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 14,
+          "citation": "Section 14",
+          "text": "A, a soldier, fires on a mob by the order of his superior officer, in conformity with the commands of the law. A has committed no offence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 14: Act done by a person bound, or by mistake of fact believing himself bound, by law.\nA, a soldier, fires on a mob by the order of his superior officer, in conformity with the commands of the law. A has committed no offence.",
+          "keywords": [
+            "bound",
+            "soldier",
+            "fires",
+            "order",
+            "superior",
+            "officer",
+            "conformity",
+            "commands",
+            "committed",
+            "offence"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.9060276973918017,
+            "original:semrank_pre_rerank": 0.6691,
+            "semrank_pre_rerank": 0.6691
+          },
+          "query_scores": {
+            "original": 0.9761125058391262
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.6691,
+            "best_similarity": 0.8921,
+            "best_concept": "bound",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "explain",
+                "chunk_concept": "bound",
+                "source": "keyword",
+                "similarity": 0.8921,
+                "weighted_score": 0.6691
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "order",
+                "source": "keyword",
+                "similarity": 0.8847,
+                "weighted_score": 0.6635
+              },
+              {
+                "query_concept": "14",
+                "chunk_concept": "commands",
+                "source": "keyword",
+                "similarity": 0.8836,
+                "weighted_score": 0.6627
+              },
+              {
+                "query_concept": "14",
+                "chunk_concept": "committed",
+                "source": "keyword",
+                "similarity": 0.8738,
+                "weighted_score": 0.6553
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "conformity",
+                "source": "keyword",
+                "similarity": 0.8696,
+                "weighted_score": 0.6522
+              }
+            ],
+            "pre_rerank_score": 0.6691,
+            "score_before_pre_rerank": 0.976113,
+            "score_after_pre_rerank": 0.92085
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S14_ILL1_B",
+          "score": 0.963325,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 14,
+          "citation": "Section 14",
+          "text": "A, an officer of a Court, being ordered by that Court to arrest Y, and, after due enquiry, believing Z to be Y, arrests Z. A has committed no offence. Act of Judge when acting judicially.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 14: Act done by a person bound, or by mistake of fact believing himself bound, by law.\nA, an officer of a Court, being ordered by that Court to arrest Y, and, after due enquiry, believing Z to be Y, arrests Z. A has committed no offence. Act of Judge when acting judicially.",
+          "keywords": [
+            "court",
+            "believing",
+            "bound",
+            "officer",
+            "ordered",
+            "arrest",
+            "after",
+            "enquiry",
+            "arrests",
+            "committed"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7935618162155151,
+            "original:bm25": 0.8903094522705389,
+            "original:semrank_pre_rerank": 0.6847,
+            "semrank_pre_rerank": 0.6847
+          },
+          "query_scores": {
+            "original": 0.9588176086935449
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.6847,
+            "best_similarity": 0.9129,
+            "best_concept": "enquiry",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "explain",
+                "chunk_concept": "enquiry",
+                "source": "keyword",
+                "similarity": 0.9129,
+                "weighted_score": 0.6847
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 0.9125,
+                "weighted_score": 0.6844
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "after",
+                "source": "keyword",
+                "similarity": 0.9042,
+                "weighted_score": 0.6782
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "bound",
+                "source": "keyword",
+                "similarity": 0.8921,
+                "weighted_score": 0.6691
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "believing",
+                "source": "keyword",
+                "similarity": 0.8783,
+                "weighted_score": 0.6587
+              }
+            ],
+            "pre_rerank_score": 0.6847,
+            "score_before_pre_rerank": 0.958818,
+            "score_after_pre_rerank": 0.909476
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__section__BNS_S14",
+          "score": 0.913632,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 14,
+          "citation": "Section 14",
+          "text": "Nothing is an offence which is done by a person who is, or who\nby reason of a mistake of fact and not by reason of a mistake of law in good\nfaith believes himself to be, bound by law to do it.\nIllustrations.\n(a) A, a soldier, fires on a mob by the order of his superior officer, in\nconformity with the commands of the law. A has committed no offence.\n(b) A, an officer of a Court, being ordered by that Court to arrest Y,\nand, after due enquiry, believing Z to be Y, arrests Z. A has committed no\noffence.\nAct of Judge when acting judicially.",
+          "derived_context": "",
+          "keywords": [
+            "good_faith",
+            "mistake_of_fact"
+          ],
+          "legal_concepts": [
+            "act_done_by_person_bound",
+            "mistake_of_fact_believing_himself_bound"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 2,
+            "coverage_ratio": 1.0,
+            "matched_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound"
+            ]
+          },
+          "source_scores": {
+            "original:anchor": 0.8404380000000001
+          },
+          "query_scores": {
+            "original": 0.8936518285429238
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S14_ILL1_A",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S17_BODY",
+          "score": 0.683032,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 17,
+          "citation": "Section 17",
+          "text": "Nothing is an offence which is done by any person who is justified by law, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith, believes himself to be justified by law, in doing it.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 17: Act done by a person justified, or by mistake of fact believing himself justified, by law.\nNothing is an offence which is done by any person who is justified by law, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith, believes himself to be justified by law, in doing it.",
+          "keywords": [
+            "justified",
+            "mistake",
+            "done",
+            "reason",
+            "fact",
+            "himself",
+            "nothing",
+            "offence",
+            "good",
+            "faith",
+            "good faith"
+          ],
+          "legal_concepts": [
+            "act done by a person justified by law",
+            "mistake of fact in good faith"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6812954545021057,
+            "original:bm25": 0.48003362622921253,
+            "original:semrank_pre_rerank": 0.893,
+            "semrank_pre_rerank": 0.893
+          },
+          "query_scores": {
+            "original": 0.7449868625113854
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.893,
+            "best_similarity": 0.893,
+            "best_concept": "act done by a person justified by law",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "act_done_by_person_bound",
+                "chunk_concept": "act done by a person justified by law",
+                "source": "legal_concept",
+                "similarity": 0.893,
+                "weighted_score": 0.893
+              },
+              {
+                "query_concept": "mistake_of_fact_believing_himself_bound",
+                "chunk_concept": "mistake of fact in good faith",
+                "source": "legal_concept",
+                "similarity": 0.8591,
+                "weighted_score": 0.8591
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.933,
+                "weighted_score": 0.6998
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "justified",
+                "source": "keyword",
+                "similarity": 0.9161,
+                "weighted_score": 0.687
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "good",
+                "source": "keyword",
+                "similarity": 0.905,
+                "weighted_score": 0.6788
+              }
+            ],
+            "pre_rerank_score": 0.893,
+            "score_before_pre_rerank": 0.744987,
+            "score_after_pre_rerank": 0.771629
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S17_ILL1",
+          "score": 0.420249,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 17,
+          "citation": "Section 17",
+          "text": "A sees Z commit what appears to A to be a murder. A, in the exercise, to the best of his judgment exerted in good faith, of the power which the law gives to all persons of apprehending murderers in the fact, seizes Z, in order to bring Z before the proper authorities. A has committed no offence, though it may turn out that Z was acting in self-defence. Accident in doing a lawful act.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 17: Act done by a person justified, or by mistake of fact believing himself justified, by law.\nA sees Z commit what appears to A to be a murder. A, in the exercise, to the best of his judgment exerted in good faith, of the power which the law gives to all persons of apprehending murderers in the fact, seizes Z, in order to bring Z before the proper authorities. A has committed no offence, though it may turn out that Z was acting in self-defence. Accident in doing a lawful act.",
+          "keywords": [
+            "fact",
+            "justified",
+            "sees",
+            "commit",
+            "what",
+            "appears",
+            "murder",
+            "exercise",
+            "best",
+            "judgment"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7082408666610718,
+            "original:bm25": 0.25720591171127827,
+            "original:semrank_pre_rerank": 0.6893,
+            "semrank_pre_rerank": 0.6893
+          },
+          "query_scores": {
+            "original": 0.511172331150747
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.6893,
+            "best_similarity": 0.9191,
+            "best_concept": "exercise",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "explain",
+                "chunk_concept": "exercise",
+                "source": "keyword",
+                "similarity": 0.9191,
+                "weighted_score": 0.6893
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "sees",
+                "source": "keyword",
+                "similarity": 0.9185,
+                "weighted_score": 0.6889
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "justified",
+                "source": "keyword",
+                "similarity": 0.9161,
+                "weighted_score": 0.687
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "judgment",
+                "source": "keyword",
+                "similarity": 0.8999,
+                "weighted_score": 0.6749
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "best",
+                "source": "keyword",
+                "similarity": 0.8964,
+                "weighted_score": 0.6723
+              }
+            ],
+            "pre_rerank_score": 0.6893,
+            "score_before_pre_rerank": 0.511172,
+            "score_after_pre_rerank": 0.543235
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S239_BODY",
+          "score": 0.358758,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 239,
+          "citation": "Section 239",
+          "text": "Whoever, knowing or having reason to believe that an offence has been committed, intentionally omits to give any information respecting that offence which he is legally bound to give, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Giving false information respecting an offence committed.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 239: Intentional omission to give information of offence by person bound to inform.\nWhoever, knowing or having reason to believe that an offence has been committed, intentionally omits to give any information respecting that offence which he is legally bound to give, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Giving false information respecting an offence committed.",
+          "keywords": [
+            "offence",
+            "give",
+            "information",
+            "committed",
+            "respecting",
+            "bound",
+            "extend",
+            "false",
+            "whoever",
+            "knowing",
+            "intentional omission",
+            "offence reporting"
+          ],
+          "legal_concepts": [
+            "omission to inform",
+            "offence reporting duty"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6711716651916504,
+            "original:semrank_pre_rerank": 0.855,
+            "semrank_pre_rerank": 0.855
+          },
+          "query_scores": {
+            "original": 0.5015619083949548
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.855,
+            "best_similarity": 0.855,
+            "best_concept": "omission to inform",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "explain",
+                "chunk_concept": "omission to inform",
+                "source": "legal_concept",
+                "similarity": 0.855,
+                "weighted_score": 0.855
+              },
+              {
+                "query_concept": "14",
+                "chunk_concept": "offence reporting duty",
+                "source": "legal_concept",
+                "similarity": 0.8221,
+                "weighted_score": 0.8221
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "information",
+                "source": "keyword",
+                "similarity": 0.9312,
+                "weighted_score": 0.6984
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "knowing",
+                "source": "keyword",
+                "similarity": 0.9224,
+                "weighted_score": 0.6918
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.9171,
+                "weighted_score": 0.6878
+              }
+            ],
+            "pre_rerank_score": 0.855,
+            "score_before_pre_rerank": 0.501562,
+            "score_after_pre_rerank": 0.565181
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S236_BODY",
+          "score": 0.271448,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 236,
+          "citation": "Section 236",
+          "text": "Whoever, in any declaration made or subscribed by him, which declaration any Court or any public servant or other person, is bound or authorised by law to receive as evidence of any fact, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, touching any point material to the object for which the declaration is made or used, shall be punished in the same manner as if he gave false evidence. Using as true such declaration knowing it to be false.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 236: False statement made in declaration which is by law receivable as evidence.\nWhoever, in any declaration made or subscribed by him, which declaration any Court or any public servant or other person, is bound or authorised by law to receive as evidence of any fact, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, touching any point material to the object for which the declaration is made or used, shall be punished in the same manner as if he gave false evidence. Using as true such declaration knowing it to be false.",
+          "keywords": [
+            "false",
+            "declaration",
+            "evidence",
+            "made",
+            "public",
+            "statement",
+            "true",
+            "whoever",
+            "subscribed",
+            "court",
+            "false statements",
+            "declarations"
+          ],
+          "legal_concepts": [
+            "false evidence",
+            "declaration as evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6720813512802124,
+            "original:semrank_pre_rerank": 0.8819,
+            "semrank_pre_rerank": 0.8819
+          },
+          "query_scores": {
+            "original": 0.4279243592531573
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.8819,
+            "best_similarity": 0.8819,
+            "best_concept": "declaration as evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "explain",
+                "chunk_concept": "declaration as evidence",
+                "source": "legal_concept",
+                "similarity": 0.8819,
+                "weighted_score": 0.8819
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "false evidence",
+                "source": "legal_concept",
+                "similarity": 0.8518,
+                "weighted_score": 0.8518
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "evidence",
+                "source": "keyword",
+                "similarity": 0.9222,
+                "weighted_score": 0.6916
+              },
+              {
+                "query_concept": "14",
+                "chunk_concept": "true",
+                "source": "keyword",
+                "similarity": 0.9202,
+                "weighted_score": 0.6901
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "court",
+                "source": "keyword",
+                "similarity": 0.9125,
+                "weighted_score": 0.6844
+              }
+            ],
+            "pre_rerank_score": 0.8819,
+            "score_before_pre_rerank": 0.427924,
+            "score_after_pre_rerank": 0.50964
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S227_BODY",
+          "score": 0.231543,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 227,
+          "citation": "Section 227",
+          "text": "Whoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 227: Giving false evidence.\nWhoever, being legally bound by an oath or by an express provision of law to state the truth, or being bound by law to make a declaration upon any subject, makes any statement which is false, and which he either knows or believes to be false or does not believe to be true, is said to give false evidence.",
+          "keywords": [
+            "false",
+            "evidence",
+            "bound",
+            "whoever",
+            "legally",
+            "oath",
+            "express",
+            "state",
+            "truth",
+            "false evidence"
+          ],
+          "legal_concepts": [
+            "offence",
+            "evidence",
+            "oath"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6929468512535095,
+            "original:bm25": 0.05263157894736842,
+            "original:semrank_pre_rerank": 0.9222,
+            "semrank_pre_rerank": 0.9222
+          },
+          "query_scores": {
+            "original": 0.41767003324423385
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "score": 0.9222,
+            "best_similarity": 0.9222,
+            "best_concept": "evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "explain",
+                "chunk_concept": "evidence",
+                "source": "legal_concept",
+                "similarity": 0.9222,
+                "weighted_score": 0.9222
+              },
+              {
+                "query_concept": "14",
+                "chunk_concept": "oath",
+                "source": "legal_concept",
+                "similarity": 0.8628,
+                "weighted_score": 0.8628
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.9411,
+                "weighted_score": 0.7058
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "state",
+                "source": "keyword",
+                "similarity": 0.91,
+                "weighted_score": 0.6825
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "truth",
+                "source": "keyword",
+                "similarity": 0.9028,
+                "weighted_score": 0.6771
+              }
+            ],
+            "pre_rerank_score": 0.9222,
+            "score_before_pre_rerank": 0.41767,
+            "score_after_pre_rerank": 0.508485
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S260_A",
+          "score": 0.193332,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 260,
+          "citation": "Section 260",
+          "text": "with imprisonment for life or with imprisonment of either description for a term which may extend to fourteen years, with or without fine, if the person in confinement, or who ought to have been apprehended, is under sentence of death; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 260: Intentional omission to apprehend on part of public servant bound to apprehend person\nwith imprisonment for life or with imprisonment of either description for a term which may extend to fourteen years, with or without fine, if the person in confinement, or who ought to have been apprehended, is under sentence of death; or",
+          "keywords": [
+            "imprisonment",
+            "apprehend",
+            "public",
+            "life",
+            "either",
+            "description",
+            "term",
+            "extend",
+            "fourteen",
+            "years",
+            "imprisonment for life",
+            "fourteen-year imprisonment"
+          ],
+          "legal_concepts": [
+            "intentional omission to apprehend",
+            "public servant's duty to apprehend"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 0.8355,
+            "semrank_pre_rerank": 0.8355
+          },
+          "query_scores": {
+            "original": 0.4060247113631917
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7376,
+            "query_concepts": [
+              "act_done_by_person_bound",
+              "mistake_of_fact_believing_himself_bound",
+              "section 14",
+              "explain",
+              "14",
+              "bns"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "14",
+                "chunk_concept": "intentional omission to apprehend",
+                "source": "legal_concept",
+                "similarity": 0.8355,
+                "weighted_score": 0.8355
+              },
+              {
+                "query_concept": "14",
+                "chunk_concept": "public servant's duty to apprehend",
+                "source": "legal_concept",
+                "similarity": 0.828,
+                "weighted_score": 0.828
+              },
+              {
+                "query_concept": "14",
+                "chunk_concept": "fourteen",
+                "source": "keyword",
+                "similarity": 0.9835,
+                "weighted_score": 0.7376
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "description",
+                "source": "keyword",
+                "similarity": 0.9622,
+                "weighted_score": 0.7216
+              },
+              {
+                "query_concept": "explain",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.9415,
+                "weighted_score": 0.7062
+              }
+            ],
+            "score": 0.8355,
+            "best_similarity": 0.8355,
+            "best_concept": "intentional omission to apprehend",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8355,
+            "score_before_pre_rerank": 0.406025,
+            "score_after_pre_rerank": 0.48333
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

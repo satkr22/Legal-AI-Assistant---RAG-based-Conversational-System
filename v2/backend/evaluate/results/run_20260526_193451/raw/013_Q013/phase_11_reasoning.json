@@ -1,0 +1,3708 @@
+[
+  {
+    "query": "What is criminal conspiracy under Section 61?",
+    "phase8": {
+      "query": "What is criminal conspiracy under Section 61?",
+      "intent": {
+        "primary": "lookup",
+        "secondary": []
+      },
+      "concepts": [
+        "agreement",
+        "common object",
+        "illegal act",
+        "criminal conspiracy",
+        "agreement to commit an illegal act",
+        "illegal means",
+        "party to a criminal conspiracy",
+        "offence punishable with death or imprisonment for life"
+      ],
+      "targets": [
+        "Section 61"
+      ],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 1.0,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.8,
+        "structure_validity": 1.0,
+        "overall": 0.96
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is criminal conspiracy under Section 61?",
+          "targets": [
+            "Section 61"
+          ],
+          "concepts": [
+            "agreement",
+            "common object",
+            "illegal act",
+            "criminal conspiracy",
+            "agreement to commit an illegal act",
+            "illegal means",
+            "party to a criminal conspiracy",
+            "offence punishable with death or imprisonment for life"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S61_N1",
+            "score": 0.998664,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 61,
+            "citation": "Section 61",
+            "text": "When two or more persons agree with the common object to do, or cause to be done––",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhen two or more persons agree with the common object to do, or cause to be done––",
+            "keywords": [
+              "criminal",
+              "conspiracy",
+              "agree",
+              "common",
+              "object",
+              "cause",
+              "done",
+              "abetment",
+              "attempt",
+              "agreement",
+              "common object"
+            ],
+            "legal_concepts": [
+              "criminal conspiracy"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 1,
+              "coverage_ratio": 0.125,
+              "matched_concepts": [
+                "criminal conspiracy"
+              ]
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.6327707337966301,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "agreement",
+                "common object",
+                "criminal conspiracy",
+                "agreement to commit an illegal act",
+                "illegal means",
+                "party to a criminal conspiracy",
+                "offence punishable with death or imprisonment for life",
+                "section 61"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "criminal conspiracy",
+                  "chunk_concept": "criminal conspiracy",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "agreement",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "common object",
+                  "chunk_concept": "common object",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "agree",
+                  "source": "keyword",
+                  "similarity": 0.9673,
+                  "weighted_score": 0.7255
+                },
+                {
+                  "query_concept": "common object",
+                  "chunk_concept": "common",
+                  "source": "keyword",
+                  "similarity": 0.9546,
+                  "weighted_score": 0.716
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "criminal conspiracy",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S61_N1_A",
+            "score": 0.996824,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 61,
+            "citation": "Section 61",
+            "text": "an illegal act; or",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhen two or more persons agree with the common object to do, or cause to be done––\nan illegal act; or",
+            "keywords": [
+              "criminal",
+              "conspiracy",
+              "illegal",
+              "abetment",
+              "attempt",
+              "illegal agreement",
+              "criminal conspiracy"
+            ],
+            "legal_concepts": [
+              "agreement to commit an illegal act",
+              "criminal conspiracy"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 2,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "agreement to commit an illegal act",
+                "criminal conspiracy"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.8318173885345459,
+              "bm25": 0.8599927581905219,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "agreement",
+                "common object",
+                "criminal conspiracy",
+                "agreement to commit an illegal act",
+                "illegal means",
+                "party to a criminal conspiracy",
+                "offence punishable with death or imprisonment for life",
+                "section 61"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "agreement to commit an illegal act",
+                  "chunk_concept": "agreement to commit an illegal act",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "criminal conspiracy",
+                  "chunk_concept": "criminal conspiracy",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "criminal conspiracy",
+                  "chunk_concept": "conspiracy",
+                  "source": "keyword",
+                  "similarity": 0.9468,
+                  "weighted_score": 0.7101
+                },
+                {
+                  "query_concept": "agreement to commit an illegal act",
+                  "chunk_concept": "illegal agreement",
+                  "source": "keyword",
+                  "similarity": 0.9417,
+                  "weighted_score": 0.7063
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "abetment",
+                  "source": "keyword",
+                  "similarity": 0.8818,
+                  "weighted_score": 0.6614
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "agreement to commit an illegal act",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S61_N1_B",
+            "score": 0.99421,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 61,
+            "citation": "Section 61",
+            "text": "an act which is not illegal by illegal means, such an agreement is designated a criminal conspiracy: Provided that no agreement except an agreement to commit an offence shall amount to a criminal conspiracy unless some act besides the agreement is done by one or more parties to such agreement in pursuance thereof.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhen two or more persons agree with the common object to do, or cause to be done––\nan act which is not illegal by illegal means, such an agreement is designated a criminal conspiracy: Provided that no agreement except an agreement to commit an offence shall amount to a criminal conspiracy unless some act besides the agreement is done by one or more parties to such agreement in pursuance thereof.",
+            "keywords": [
+              "agreement",
+              "criminal",
+              "conspiracy",
+              "illegal",
+              "means",
+              "designated",
+              "provided",
+              "except",
+              "commit",
+              "offence",
+              "criminal conspiracy",
+              "illegal means"
+            ],
+            "legal_concepts": [
+              "criminal conspiracy",
+              "illegal means"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 2,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "criminal conspiracy",
+                "illegal means"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.8321419954299927,
+              "bm25": 1.0,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "agreement",
+                "common object",
+                "criminal conspiracy",
+                "agreement to commit an illegal act",
+                "illegal means",
+                "party to a criminal conspiracy",
+                "offence punishable with death or imprisonment for life",
+                "section 61"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "criminal conspiracy",
+                  "chunk_concept": "criminal conspiracy",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "illegal means",
+                  "chunk_concept": "illegal means",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "agreement",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "criminal conspiracy",
+                  "chunk_concept": "conspiracy",
+                  "source": "keyword",
+                  "similarity": 0.9468,
+                  "weighted_score": 0.7101
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "provided",
+                  "source": "keyword",
+                  "similarity": 0.9113,
+                  "weighted_score": 0.6835
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "criminal conspiracy",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S61_N1_EXP1",
+            "score": 0.976663,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 61,
+            "citation": "Section 61",
+            "text": "It is immaterial whether the illegal act is the ultimate object of such agreement, or is merely incidental to that object.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhen two or more persons agree with the common object to do, or cause to be done––\nIt is immaterial whether the illegal act is the ultimate object of such agreement, or is merely incidental to that object.",
+            "keywords": [
+              "object",
+              "criminal",
+              "conspiracy",
+              "immaterial",
+              "whether",
+              "illegal",
+              "ultimate",
+              "agreement",
+              "merely",
+              "incidental"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.8226791620254517,
+              "bm25": 0.8254483884794841,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.8254483884794841
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "agreement",
+                "common object",
+                "criminal conspiracy",
+                "agreement to commit an illegal act",
+                "illegal means",
+                "party to a criminal conspiracy",
+                "offence punishable with death or imprisonment for life",
+                "section 61"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "agreement",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "agreement",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "criminal conspiracy",
+                  "chunk_concept": "conspiracy",
+                  "source": "keyword",
+                  "similarity": 0.9468,
+                  "weighted_score": 0.7101
+                },
+                {
+                  "query_concept": "common object",
+                  "chunk_concept": "object",
+                  "source": "keyword",
+                  "similarity": 0.9209,
+                  "weighted_score": 0.6907
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "whether",
+                  "source": "keyword",
+                  "similarity": 0.896,
+                  "weighted_score": 0.672
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "ultimate",
+                  "source": "keyword",
+                  "similarity": 0.8934,
+                  "weighted_score": 0.67
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.983728,
+              "score_after_pre_rerank": 0.941657
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S61_N2_A",
+            "score": 0.800497,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 61,
+            "citation": "Section 61",
+            "text": "to commit an offence punishable with death, imprisonment for life or rigorous imprisonment for a term of two years or upwards, shall, where no express provision is made in this Sanhita for the punishment of such a conspiracy, be punished in the same manner as if he had abetted such offence;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhoever is a party to a criminal conspiracy,––\nto commit an offence punishable with death, imprisonment for life or rigorous imprisonment for a term of two years or upwards, shall, where no express provision is made in this Sanhita for the punishment of such a conspiracy, be punished in the same manner as if he had abetted such offence;",
+            "keywords": [
+              "conspiracy",
+              "offence",
+              "imprisonment",
+              "criminal",
+              "commit",
+              "punishable",
+              "death",
+              "life",
+              "rigorous",
+              "term",
+              "criminal conspiracy",
+              "punishable offence"
+            ],
+            "legal_concepts": [
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 2,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "party to a criminal conspiracy",
+                "offence punishable with death or imprisonment for life"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7373124361038208,
+              "bm25": 0.5346132125817075,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "agreement",
+                "common object",
+                "criminal conspiracy",
+                "agreement to commit an illegal act",
+                "illegal means",
+                "party to a criminal conspiracy",
+                "offence punishable with death or imprisonment for life",
+                "section 61"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "offence punishable with death or imprisonment for life",
+                  "chunk_concept": "offence punishable with death or imprisonment for life",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "party to a criminal conspiracy",
+                  "chunk_concept": "party to a criminal conspiracy",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "criminal conspiracy",
+                  "chunk_concept": "criminal conspiracy",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "criminal conspiracy",
+                  "chunk_concept": "conspiracy",
+                  "source": "keyword",
+                  "similarity": 0.9468,
+                  "weighted_score": 0.7101
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "term",
+                  "source": "keyword",
+                  "similarity": 0.9229,
+                  "weighted_score": 0.6922
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "offence punishable with death or imprisonment for life",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S61_N2_B",
+            "score": 0.717578,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 61,
+            "citation": "Section 61",
+            "text": "other than a criminal conspiracy to commit an offence punishable as aforesaid shall be punished with imprisonment of either description for a term not exceeding six months, or with fine or with both. Of attempt Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment. [OF ATTEMPT]",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhoever is a party to a criminal conspiracy,––\nother than a criminal conspiracy to commit an offence punishable as aforesaid shall be punished with imprisonment of either description for a term not exceeding six months, or with fine or with both. Of attempt Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment. [OF ATTEMPT]",
+            "keywords": [
+              "criminal",
+              "conspiracy",
+              "imprisonment",
+              "attempt",
+              "commit",
+              "punishable",
+              "offence",
+              "aforesaid",
+              "punished",
+              "either",
+              "criminal conspiracy",
+              "punishable offense"
+            ],
+            "legal_concepts": [
+              "party to a criminal conspiracy",
+              "imprisonment for a term not exceeding six months"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 1,
+              "coverage_ratio": 0.125,
+              "matched_concepts": [
+                "party to a criminal conspiracy"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7631759643554688,
+              "bm25": 0.5580446847152967,
+              "semrank": 0.9999998807907104,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999998807907104
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "agreement",
+                "common object",
+                "criminal conspiracy",
+                "agreement to commit an illegal act",
+                "illegal means",
+                "party to a criminal conspiracy",
+                "offence punishable with death or imprisonment for life",
+                "section 61"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "party to a criminal conspiracy",
+                  "chunk_concept": "party to a criminal conspiracy",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "offence punishable with death or imprisonment for life",
+                  "chunk_concept": "imprisonment for a term not exceeding six months",
+                  "source": "legal_concept",
+                  "similarity": 0.8314,
+                  "weighted_score": 0.8314
+                },
+                {
+                  "query_concept": "criminal conspiracy",
+                  "chunk_concept": "criminal conspiracy",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "criminal conspiracy",
+                  "chunk_concept": "conspiracy",
+                  "source": "keyword",
+                  "similarity": 0.9468,
+                  "weighted_score": 0.7101
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "aforesaid",
+                  "source": "keyword",
+                  "similarity": 0.912,
+                  "weighted_score": 0.684
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "party to a criminal conspiracy",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S61_N2",
+            "score": 0.617964,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 61,
+            "citation": "Section 61",
+            "text": "Whoever is a party to a criminal conspiracy,––",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhoever is a party to a criminal conspiracy,––",
+            "keywords": [
+              "criminal",
+              "conspiracy",
+              "whoever",
+              "party",
+              "abetment",
+              "attempt"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7791340947151184,
+              "bm25": 0.8044633523145058,
+              "semrank_pre_rerank": 0.7101
+            },
+            "query_scores": {
+              "original": 0.8044633523145058
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "agreement",
+                "common object",
+                "criminal conspiracy",
+                "agreement to commit an illegal act",
+                "illegal means",
+                "party to a criminal conspiracy",
+                "offence punishable with death or imprisonment for life",
+                "section 61"
+              ],
+              "score": 0.7101,
+              "best_similarity": 0.9468,
+              "best_concept": "conspiracy",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "criminal conspiracy",
+                  "chunk_concept": "conspiracy",
+                  "source": "keyword",
+                  "similarity": 0.9468,
+                  "weighted_score": 0.7101
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "abetment",
+                  "source": "keyword",
+                  "similarity": 0.8818,
+                  "weighted_score": 0.6614
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "attempt",
+                  "source": "keyword",
+                  "similarity": 0.8692,
+                  "weighted_score": 0.6519
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "party",
+                  "source": "keyword",
+                  "similarity": 0.8592,
+                  "weighted_score": 0.6444
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "whoever",
+                  "source": "keyword",
+                  "similarity": 0.8229,
+                  "weighted_score": 0.6172
+                }
+              ],
+              "pre_rerank_score": 0.7101,
+              "score_before_pre_rerank": 0.952653,
+              "score_after_pre_rerank": 0.908993
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S46_ILL4_4",
+            "score": 0.400849,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 46,
+            "citation": "Section 46",
+            "text": "A concerts with B a plan for poisoning Z. It is agreed that A shall administer the poison. B then explains the plan to C mentioning that a third person is to administer the poison, but without mentioning A’s name. C agrees to procure the poison, and procures and delivers it to B for the purpose of its being used in the manner explained. A administers the poison; Z dies in consequence. Here, though A and C have not conspired together, yet C has been engaged in the conspiracy in pursuance of which Z has been murdered. C has therefore committed the offence defined in this section and is liable to the punishment for murder. Abetment in India of offences outside India.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 46: Abettor.\nA concerts with B a plan for poisoning Z. It is agreed that A shall administer the poison. B then explains the plan to C mentioning that a third person is to administer the poison, but without mentioning A’s name. C agrees to procure the poison, and procures and delivers it to B for the purpose of its being used in the manner explained. A administers the poison; Z dies in consequence. Here, though A and C have not conspired together, yet C has been engaged in the conspiracy in pursuance of which Z has been murdered. C has therefore committed the offence defined in this section and is liable to the punishment for murder. Abetment in India of offences outside India.",
+            "keywords": [
+              "poison",
+              "plan",
+              "administer",
+              "mentioning",
+              "conspiracy",
+              "abetment",
+              "india",
+              "concerts",
+              "poisoning",
+              "agreed",
+              "abettor",
+              "murder"
+            ],
+            "legal_concepts": [
+              "abetment",
+              "criminal conspiracy",
+              "attempt"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 1,
+              "coverage_ratio": 0.125,
+              "matched_concepts": [
+                "criminal conspiracy"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "agreement",
+                "common object",
+                "criminal conspiracy",
+                "agreement to commit an illegal act",
+                "illegal means",
+                "party to a criminal conspiracy",
+                "offence punishable with death or imprisonment for life",
+                "section 61"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "criminal conspiracy",
+                  "chunk_concept": "criminal conspiracy",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "abetment",
+                  "source": "legal_concept",
+                  "similarity": 0.8818,
+                  "weighted_score": 0.8818
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "attempt",
+                  "source": "legal_concept",
+                  "similarity": 0.8692,
+                  "weighted_score": 0.8692
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "agreed",
+                  "source": "keyword",
+                  "similarity": 0.9478,
+                  "weighted_score": 0.7109
+                },
+                {
+                  "query_concept": "criminal conspiracy",
+                  "chunk_concept": "conspiracy",
+                  "source": "keyword",
+                  "similarity": 0.9468,
+                  "weighted_score": 0.7101
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "criminal conspiracy",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S51_ILL1_B",
+            "score": 0.400259,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 51,
+            "citation": "Section 51",
+            "text": "A instigates B to burn Z’s house, B sets fire to the house and at the same time commits theft of property there. A, though guilty of abetting the burning of the house, is not guilty of abetting the theft; for the theft was a distinct act, and not a probable consequence of the burning.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 51: Liability of abettor when one act abetted and different act done.\nA instigates B to burn Z’s house, B sets fire to the house and at the same time commits theft of property there. A, though guilty of abetting the burning of the house, is not guilty of abetting the theft; for the theft was a distinct act, and not a probable consequence of the burning.",
+            "keywords": [
+              "house",
+              "theft",
+              "guilty",
+              "abetting",
+              "burning",
+              "instigates",
+              "burn",
+              "sets",
+              "fire",
+              "time",
+              "instigation",
+              "separate acts"
+            ],
+            "legal_concepts": [
+              "abetment",
+              "criminal conspiracy",
+              "attempt"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 1,
+              "coverage_ratio": 0.125,
+              "matched_concepts": [
+                "criminal conspiracy"
+              ]
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "agreement",
+                "common object",
+                "criminal conspiracy",
+                "agreement to commit an illegal act",
+                "illegal means",
+                "party to a criminal conspiracy",
+                "offence punishable with death or imprisonment for life",
+                "section 61"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "criminal conspiracy",
+                  "chunk_concept": "criminal conspiracy",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "abetment",
+                  "source": "legal_concept",
+                  "similarity": 0.8818,
+                  "weighted_score": 0.8818
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "attempt",
+                  "source": "legal_concept",
+                  "similarity": 0.8692,
+                  "weighted_score": 0.8692
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "sets",
+                  "source": "keyword",
+                  "similarity": 0.8855,
+                  "weighted_score": 0.6642
+                },
+                {
+                  "query_concept": "illegal means",
+                  "chunk_concept": "theft",
+                  "source": "keyword",
+                  "similarity": 0.8827,
+                  "weighted_score": 0.662
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "criminal conspiracy",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S189_N1_E",
+            "score": 0.400176,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY",
+            "section_number": 189,
+            "citation": "Section 189",
+            "text": "by means of criminal force, or show of criminal force, to compel any person to do what he is not legally bound to do, or to omit to do what he is legally entitled to do.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 11: OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY\nSection 189: Unlawful assembly.\nAn assembly of five or more persons is designated an “unlawful assembly”, if the common object of the persons composing that assembly is—\nby means of criminal force, or show of criminal force, to compel any person to do what he is not legally bound to do, or to omit to do what he is legally entitled to do.",
+            "keywords": [
+              "criminal",
+              "force",
+              "what",
+              "legally",
+              "means",
+              "show",
+              "compel",
+              "bound",
+              "omit",
+              "entitled",
+              "unlawful assembly",
+              "criminal force"
+            ],
+            "legal_concepts": [
+              "common object",
+              "criminal force",
+              "legally bound",
+              "legally entitled"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 8,
+              "matched_count": 1,
+              "coverage_ratio": 0.125,
+              "matched_concepts": [
+                "common object"
+              ]
+            },
+            "source_scores": {
+              "bm25": 0.0625,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "agreement",
+                "common object",
+                "criminal conspiracy",
+                "agreement to commit an illegal act",
+                "illegal means",
+                "party to a criminal conspiracy",
+                "offence punishable with death or imprisonment for life",
+                "section 61"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "common object",
+                  "chunk_concept": "common object",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "legally bound",
+                  "source": "legal_concept",
+                  "similarity": 0.9076,
+                  "weighted_score": 0.9076
+                },
+                {
+                  "query_concept": "criminal conspiracy",
+                  "chunk_concept": "criminal force",
+                  "source": "legal_concept",
+                  "similarity": 0.8713,
+                  "weighted_score": 0.8713
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "legally entitled",
+                  "source": "legal_concept",
+                  "similarity": 0.8712,
+                  "weighted_score": 0.8712
+                },
+                {
+                  "query_concept": "agreement",
+                  "chunk_concept": "legally",
+                  "source": "keyword",
+                  "similarity": 0.9318,
+                  "weighted_score": 0.6988
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "common object",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S61_N1",
+          "score": 0.998905,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 61,
+          "citation": "Section 61",
+          "text": "When two or more persons agree with the common object to do, or cause to be done––",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhen two or more persons agree with the common object to do, or cause to be done––",
+          "keywords": [
+            "criminal",
+            "conspiracy",
+            "agree",
+            "common",
+            "object",
+            "cause",
+            "done",
+            "abetment",
+            "attempt",
+            "agreement",
+            "common object"
+          ],
+          "legal_concepts": [
+            "criminal conspiracy"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "criminal conspiracy"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.6327707337966301,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9986642959656806
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "agreement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "common object",
+                "chunk_concept": "common object",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "agree",
+                "source": "keyword",
+                "similarity": 0.9673,
+                "weighted_score": 0.7255
+              },
+              {
+                "query_concept": "common object",
+                "chunk_concept": "common",
+                "source": "keyword",
+                "similarity": 0.9546,
+                "weighted_score": 0.716
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal conspiracy",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.998664,
+            "score_after_pre_rerank": 0.998905
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S61_N1_A",
+          "score": 0.997396,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 61,
+          "citation": "Section 61",
+          "text": "an illegal act; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhen two or more persons agree with the common object to do, or cause to be done––\nan illegal act; or",
+          "keywords": [
+            "criminal",
+            "conspiracy",
+            "illegal",
+            "abetment",
+            "attempt",
+            "illegal agreement",
+            "criminal conspiracy"
+          ],
+          "legal_concepts": [
+            "agreement to commit an illegal act",
+            "criminal conspiracy"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "agreement to commit an illegal act",
+              "criminal conspiracy"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8318173885345459,
+            "original:bm25": 0.8599927581905219,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9968243869645677
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "agreement to commit an illegal act",
+                "chunk_concept": "agreement to commit an illegal act",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 0.9468,
+                "weighted_score": 0.7101
+              },
+              {
+                "query_concept": "agreement to commit an illegal act",
+                "chunk_concept": "illegal agreement",
+                "source": "keyword",
+                "similarity": 0.9417,
+                "weighted_score": 0.7063
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "abetment",
+                "source": "keyword",
+                "similarity": 0.8818,
+                "weighted_score": 0.6614
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "agreement to commit an illegal act",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.996824,
+            "score_after_pre_rerank": 0.997396
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S61_N1_B",
+          "score": 0.995252,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 61,
+          "citation": "Section 61",
+          "text": "an act which is not illegal by illegal means, such an agreement is designated a criminal conspiracy: Provided that no agreement except an agreement to commit an offence shall amount to a criminal conspiracy unless some act besides the agreement is done by one or more parties to such agreement in pursuance thereof.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhen two or more persons agree with the common object to do, or cause to be done––\nan act which is not illegal by illegal means, such an agreement is designated a criminal conspiracy: Provided that no agreement except an agreement to commit an offence shall amount to a criminal conspiracy unless some act besides the agreement is done by one or more parties to such agreement in pursuance thereof.",
+          "keywords": [
+            "agreement",
+            "criminal",
+            "conspiracy",
+            "illegal",
+            "means",
+            "designated",
+            "provided",
+            "except",
+            "commit",
+            "offence",
+            "criminal conspiracy",
+            "illegal means"
+          ],
+          "legal_concepts": [
+            "criminal conspiracy",
+            "illegal means"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "criminal conspiracy",
+              "illegal means"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8321419954299927,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9942101014888974
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "illegal means",
+                "chunk_concept": "illegal means",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "agreement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 0.9468,
+                "weighted_score": 0.7101
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "provided",
+                "source": "keyword",
+                "similarity": 0.9113,
+                "weighted_score": 0.6835
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal conspiracy",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.99421,
+            "score_after_pre_rerank": 0.995252
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S61_N1_EXP1",
+          "score": 0.935864,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 61,
+          "citation": "Section 61",
+          "text": "It is immaterial whether the illegal act is the ultimate object of such agreement, or is merely incidental to that object.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhen two or more persons agree with the common object to do, or cause to be done––\nIt is immaterial whether the illegal act is the ultimate object of such agreement, or is merely incidental to that object.",
+          "keywords": [
+            "object",
+            "criminal",
+            "conspiracy",
+            "immaterial",
+            "whether",
+            "illegal",
+            "ultimate",
+            "agreement",
+            "merely",
+            "incidental"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.8226791620254517,
+            "original:bm25": 0.8254483884794841,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.9766628223662995
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "agreement",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "agreement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 0.9468,
+                "weighted_score": 0.7101
+              },
+              {
+                "query_concept": "common object",
+                "chunk_concept": "object",
+                "source": "keyword",
+                "similarity": 0.9209,
+                "weighted_score": 0.6907
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "whether",
+                "source": "keyword",
+                "similarity": 0.896,
+                "weighted_score": 0.672
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "ultimate",
+                "source": "keyword",
+                "similarity": 0.8934,
+                "weighted_score": 0.67
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.976663,
+            "score_after_pre_rerank": 0.935864
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S61_N2_A",
+          "score": 0.836407,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 61,
+          "citation": "Section 61",
+          "text": "to commit an offence punishable with death, imprisonment for life or rigorous imprisonment for a term of two years or upwards, shall, where no express provision is made in this Sanhita for the punishment of such a conspiracy, be punished in the same manner as if he had abetted such offence;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhoever is a party to a criminal conspiracy,––\nto commit an offence punishable with death, imprisonment for life or rigorous imprisonment for a term of two years or upwards, shall, where no express provision is made in this Sanhita for the punishment of such a conspiracy, be punished in the same manner as if he had abetted such offence;",
+          "keywords": [
+            "conspiracy",
+            "offence",
+            "imprisonment",
+            "criminal",
+            "commit",
+            "punishable",
+            "death",
+            "life",
+            "rigorous",
+            "term",
+            "criminal conspiracy",
+            "punishable offence"
+          ],
+          "legal_concepts": [
+            "party to a criminal conspiracy",
+            "offence punishable with death or imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7373124361038208,
+            "original:bm25": 0.5346132125817075,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8004968784638602
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence punishable with death or imprisonment for life",
+                "chunk_concept": "offence punishable with death or imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "party to a criminal conspiracy",
+                "chunk_concept": "party to a criminal conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal conspiracy",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 0.9468,
+                "weighted_score": 0.7101
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.9229,
+                "weighted_score": 0.6922
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence punishable with death or imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.800497,
+            "score_after_pre_rerank": 0.836407
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S61_N2_B",
+          "score": 0.768414,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 61,
+          "citation": "Section 61",
+          "text": "other than a criminal conspiracy to commit an offence punishable as aforesaid shall be punished with imprisonment of either description for a term not exceeding six months, or with fine or with both. Of attempt Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment. [OF ATTEMPT]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhoever is a party to a criminal conspiracy,––\nother than a criminal conspiracy to commit an offence punishable as aforesaid shall be punished with imprisonment of either description for a term not exceeding six months, or with fine or with both. Of attempt Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment. [OF ATTEMPT]",
+          "keywords": [
+            "criminal",
+            "conspiracy",
+            "imprisonment",
+            "attempt",
+            "commit",
+            "punishable",
+            "offence",
+            "aforesaid",
+            "punished",
+            "either",
+            "criminal conspiracy",
+            "punishable offense"
+          ],
+          "legal_concepts": [
+            "party to a criminal conspiracy",
+            "imprisonment for a term not exceeding six months"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "party to a criminal conspiracy"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7631759643554688,
+            "original:bm25": 0.5580446847152967,
+            "original:semrank": 0.9999998807907104,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7175775137452938
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "party to a criminal conspiracy",
+                "chunk_concept": "party to a criminal conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "offence punishable with death or imprisonment for life",
+                "chunk_concept": "imprisonment for a term not exceeding six months",
+                "source": "legal_concept",
+                "similarity": 0.8314,
+                "weighted_score": 0.8314
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal conspiracy",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 0.9468,
+                "weighted_score": 0.7101
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "aforesaid",
+                "source": "keyword",
+                "similarity": 0.912,
+                "weighted_score": 0.684
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "party to a criminal conspiracy",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.717578,
+            "score_after_pre_rerank": 0.768414
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S61_N2",
+          "score": 0.634549,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 61,
+          "citation": "Section 61",
+          "text": "Whoever is a party to a criminal conspiracy,––",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhoever is a party to a criminal conspiracy,––",
+          "keywords": [
+            "criminal",
+            "conspiracy",
+            "whoever",
+            "party",
+            "abetment",
+            "attempt"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7791340947151184,
+            "original:bm25": 0.8044633523145058,
+            "original:semrank_pre_rerank": 0.7101,
+            "semrank_pre_rerank": 0.7101
+          },
+          "query_scores": {
+            "original": 0.6179644442996796
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "score": 0.7101,
+            "best_similarity": 0.9468,
+            "best_concept": "conspiracy",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 0.9468,
+                "weighted_score": 0.7101
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "abetment",
+                "source": "keyword",
+                "similarity": 0.8818,
+                "weighted_score": 0.6614
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "attempt",
+                "source": "keyword",
+                "similarity": 0.8692,
+                "weighted_score": 0.6519
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "party",
+                "source": "keyword",
+                "similarity": 0.8592,
+                "weighted_score": 0.6444
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "whoever",
+                "source": "keyword",
+                "similarity": 0.8229,
+                "weighted_score": 0.6172
+              }
+            ],
+            "pre_rerank_score": 0.7101,
+            "score_before_pre_rerank": 0.617964,
+            "score_after_pre_rerank": 0.634549
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S46_ILL4_4",
+          "score": 0.508696,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 46,
+          "citation": "Section 46",
+          "text": "A concerts with B a plan for poisoning Z. It is agreed that A shall administer the poison. B then explains the plan to C mentioning that a third person is to administer the poison, but without mentioning A’s name. C agrees to procure the poison, and procures and delivers it to B for the purpose of its being used in the manner explained. A administers the poison; Z dies in consequence. Here, though A and C have not conspired together, yet C has been engaged in the conspiracy in pursuance of which Z has been murdered. C has therefore committed the offence defined in this section and is liable to the punishment for murder. Abetment in India of offences outside India.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 46: Abettor.\nA concerts with B a plan for poisoning Z. It is agreed that A shall administer the poison. B then explains the plan to C mentioning that a third person is to administer the poison, but without mentioning A’s name. C agrees to procure the poison, and procures and delivers it to B for the purpose of its being used in the manner explained. A administers the poison; Z dies in consequence. Here, though A and C have not conspired together, yet C has been engaged in the conspiracy in pursuance of which Z has been murdered. C has therefore committed the offence defined in this section and is liable to the punishment for murder. Abetment in India of offences outside India.",
+          "keywords": [
+            "poison",
+            "plan",
+            "administer",
+            "mentioning",
+            "conspiracy",
+            "abetment",
+            "india",
+            "concerts",
+            "poisoning",
+            "agreed",
+            "abettor",
+            "murder"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "criminal conspiracy",
+            "attempt"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "criminal conspiracy"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4008486080668854
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "abetment",
+                "source": "legal_concept",
+                "similarity": 0.8818,
+                "weighted_score": 0.8818
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "attempt",
+                "source": "legal_concept",
+                "similarity": 0.8692,
+                "weighted_score": 0.8692
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "agreed",
+                "source": "keyword",
+                "similarity": 0.9478,
+                "weighted_score": 0.7109
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 0.9468,
+                "weighted_score": 0.7101
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal conspiracy",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400849,
+            "score_after_pre_rerank": 0.508696
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S51_ILL1_B",
+          "score": 0.508212,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 51,
+          "citation": "Section 51",
+          "text": "A instigates B to burn Z’s house, B sets fire to the house and at the same time commits theft of property there. A, though guilty of abetting the burning of the house, is not guilty of abetting the theft; for the theft was a distinct act, and not a probable consequence of the burning.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 51: Liability of abettor when one act abetted and different act done.\nA instigates B to burn Z’s house, B sets fire to the house and at the same time commits theft of property there. A, though guilty of abetting the burning of the house, is not guilty of abetting the theft; for the theft was a distinct act, and not a probable consequence of the burning.",
+          "keywords": [
+            "house",
+            "theft",
+            "guilty",
+            "abetting",
+            "burning",
+            "instigates",
+            "burn",
+            "sets",
+            "fire",
+            "time",
+            "instigation",
+            "separate acts"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "criminal conspiracy",
+            "attempt"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "criminal conspiracy"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4002585316829277
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "abetment",
+                "source": "legal_concept",
+                "similarity": 0.8818,
+                "weighted_score": 0.8818
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "attempt",
+                "source": "legal_concept",
+                "similarity": 0.8692,
+                "weighted_score": 0.8692
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "sets",
+                "source": "keyword",
+                "similarity": 0.8855,
+                "weighted_score": 0.6642
+              },
+              {
+                "query_concept": "illegal means",
+                "chunk_concept": "theft",
+                "source": "keyword",
+                "similarity": 0.8827,
+                "weighted_score": 0.662
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal conspiracy",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400259,
+            "score_after_pre_rerank": 0.508212
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S189_N1_E",
+          "score": 0.508145,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY",
+          "section_number": 189,
+          "citation": "Section 189",
+          "text": "by means of criminal force, or show of criminal force, to compel any person to do what he is not legally bound to do, or to omit to do what he is legally entitled to do.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 11: OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY\nSection 189: Unlawful assembly.\nAn assembly of five or more persons is designated an “unlawful assembly”, if the common object of the persons composing that assembly is—\nby means of criminal force, or show of criminal force, to compel any person to do what he is not legally bound to do, or to omit to do what he is legally entitled to do.",
+          "keywords": [
+            "criminal",
+            "force",
+            "what",
+            "legally",
+            "means",
+            "show",
+            "compel",
+            "bound",
+            "omit",
+            "entitled",
+            "unlawful assembly",
+            "criminal force"
+          ],
+          "legal_concepts": [
+            "common object",
+            "criminal force",
+            "legally bound",
+            "legally entitled"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "common object"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.0625,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4001764943550634
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "common object",
+                "chunk_concept": "common object",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "legally bound",
+                "source": "legal_concept",
+                "similarity": 0.9076,
+                "weighted_score": 0.9076
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal force",
+                "source": "legal_concept",
+                "similarity": 0.8713,
+                "weighted_score": 0.8713
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "legally entitled",
+                "source": "legal_concept",
+                "similarity": 0.8712,
+                "weighted_score": 0.8712
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.9318,
+                "weighted_score": 0.6988
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "common object",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400176,
+            "score_after_pre_rerank": 0.508145
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S61_N1",
+          "score": 0.998226,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 61,
+          "citation": "Section 61",
+          "text": "When two or more persons agree with the common object to do, or cause to be done––",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhen two or more persons agree with the common object to do, or cause to be done––",
+          "keywords": [
+            "criminal",
+            "conspiracy",
+            "agree",
+            "common",
+            "object",
+            "cause",
+            "done",
+            "abetment",
+            "attempt",
+            "agreement",
+            "common object"
+          ],
+          "legal_concepts": [
+            "criminal conspiracy"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "criminal conspiracy"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.6327707337966301,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9986642959656806
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "agreement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "common object",
+                "chunk_concept": "common object",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "agree",
+                "source": "keyword",
+                "similarity": 0.9673,
+                "weighted_score": 0.7255
+              },
+              {
+                "query_concept": "common object",
+                "chunk_concept": "common",
+                "source": "keyword",
+                "similarity": 0.9546,
+                "weighted_score": 0.716
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal conspiracy",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.998664,
+            "score_after_pre_rerank": 0.998905
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S61_N1_A",
+          "score": 0.995782,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 61,
+          "citation": "Section 61",
+          "text": "an illegal act; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhen two or more persons agree with the common object to do, or cause to be done––\nan illegal act; or",
+          "keywords": [
+            "criminal",
+            "conspiracy",
+            "illegal",
+            "abetment",
+            "attempt",
+            "illegal agreement",
+            "criminal conspiracy"
+          ],
+          "legal_concepts": [
+            "agreement to commit an illegal act",
+            "criminal conspiracy"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "agreement to commit an illegal act",
+              "criminal conspiracy"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8318173885345459,
+            "original:bm25": 0.8599927581905219,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9968243869645677
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "agreement to commit an illegal act",
+                "chunk_concept": "agreement to commit an illegal act",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 0.9468,
+                "weighted_score": 0.7101
+              },
+              {
+                "query_concept": "agreement to commit an illegal act",
+                "chunk_concept": "illegal agreement",
+                "source": "keyword",
+                "similarity": 0.9417,
+                "weighted_score": 0.7063
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "abetment",
+                "source": "keyword",
+                "similarity": 0.8818,
+                "weighted_score": 0.6614
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "agreement to commit an illegal act",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.996824,
+            "score_after_pre_rerank": 0.997396
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S61_N1_B",
+          "score": 0.992309,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 61,
+          "citation": "Section 61",
+          "text": "an act which is not illegal by illegal means, such an agreement is designated a criminal conspiracy: Provided that no agreement except an agreement to commit an offence shall amount to a criminal conspiracy unless some act besides the agreement is done by one or more parties to such agreement in pursuance thereof.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhen two or more persons agree with the common object to do, or cause to be done––\nan act which is not illegal by illegal means, such an agreement is designated a criminal conspiracy: Provided that no agreement except an agreement to commit an offence shall amount to a criminal conspiracy unless some act besides the agreement is done by one or more parties to such agreement in pursuance thereof.",
+          "keywords": [
+            "agreement",
+            "criminal",
+            "conspiracy",
+            "illegal",
+            "means",
+            "designated",
+            "provided",
+            "except",
+            "commit",
+            "offence",
+            "criminal conspiracy",
+            "illegal means"
+          ],
+          "legal_concepts": [
+            "criminal conspiracy",
+            "illegal means"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "criminal conspiracy",
+              "illegal means"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8321419954299927,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9942101014888974
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "illegal means",
+                "chunk_concept": "illegal means",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "agreement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 0.9468,
+                "weighted_score": 0.7101
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "provided",
+                "source": "keyword",
+                "similarity": 0.9113,
+                "weighted_score": 0.6835
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal conspiracy",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.99421,
+            "score_after_pre_rerank": 0.995252
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S61_N1_EXP1",
+          "score": 0.974345,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 61,
+          "citation": "Section 61",
+          "text": "It is immaterial whether the illegal act is the ultimate object of such agreement, or is merely incidental to that object.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhen two or more persons agree with the common object to do, or cause to be done––\nIt is immaterial whether the illegal act is the ultimate object of such agreement, or is merely incidental to that object.",
+          "keywords": [
+            "object",
+            "criminal",
+            "conspiracy",
+            "immaterial",
+            "whether",
+            "illegal",
+            "ultimate",
+            "agreement",
+            "merely",
+            "incidental"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.8226791620254517,
+            "original:bm25": 0.8254483884794841,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.9766628223662995
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "agreement",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "agreement",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 0.9468,
+                "weighted_score": 0.7101
+              },
+              {
+                "query_concept": "common object",
+                "chunk_concept": "object",
+                "source": "keyword",
+                "similarity": 0.9209,
+                "weighted_score": 0.6907
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "whether",
+                "source": "keyword",
+                "similarity": 0.896,
+                "weighted_score": 0.672
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "ultimate",
+                "source": "keyword",
+                "similarity": 0.8934,
+                "weighted_score": 0.67
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.976663,
+            "score_after_pre_rerank": 0.935864
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S61_N2_A",
+          "score": 0.735001,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 61,
+          "citation": "Section 61",
+          "text": "to commit an offence punishable with death, imprisonment for life or rigorous imprisonment for a term of two years or upwards, shall, where no express provision is made in this Sanhita for the punishment of such a conspiracy, be punished in the same manner as if he had abetted such offence;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhoever is a party to a criminal conspiracy,––\nto commit an offence punishable with death, imprisonment for life or rigorous imprisonment for a term of two years or upwards, shall, where no express provision is made in this Sanhita for the punishment of such a conspiracy, be punished in the same manner as if he had abetted such offence;",
+          "keywords": [
+            "conspiracy",
+            "offence",
+            "imprisonment",
+            "criminal",
+            "commit",
+            "punishable",
+            "death",
+            "life",
+            "rigorous",
+            "term",
+            "criminal conspiracy",
+            "punishable offence"
+          ],
+          "legal_concepts": [
+            "party to a criminal conspiracy",
+            "offence punishable with death or imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 2,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7373124361038208,
+            "original:bm25": 0.5346132125817075,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8004968784638602
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence punishable with death or imprisonment for life",
+                "chunk_concept": "offence punishable with death or imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "party to a criminal conspiracy",
+                "chunk_concept": "party to a criminal conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal conspiracy",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 0.9468,
+                "weighted_score": 0.7101
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.9229,
+                "weighted_score": 0.6922
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence punishable with death or imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.800497,
+            "score_after_pre_rerank": 0.836407
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S61_N2_B",
+          "score": 0.62486,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 61,
+          "citation": "Section 61",
+          "text": "other than a criminal conspiracy to commit an offence punishable as aforesaid shall be punished with imprisonment of either description for a term not exceeding six months, or with fine or with both. Of attempt Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment. [OF ATTEMPT]",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhoever is a party to a criminal conspiracy,––\nother than a criminal conspiracy to commit an offence punishable as aforesaid shall be punished with imprisonment of either description for a term not exceeding six months, or with fine or with both. Of attempt Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment. [OF ATTEMPT]",
+          "keywords": [
+            "criminal",
+            "conspiracy",
+            "imprisonment",
+            "attempt",
+            "commit",
+            "punishable",
+            "offence",
+            "aforesaid",
+            "punished",
+            "either",
+            "criminal conspiracy",
+            "punishable offense"
+          ],
+          "legal_concepts": [
+            "party to a criminal conspiracy",
+            "imprisonment for a term not exceeding six months"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "party to a criminal conspiracy"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7631759643554688,
+            "original:bm25": 0.5580446847152967,
+            "original:semrank": 0.9999998807907104,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7175775137452938
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "party to a criminal conspiracy",
+                "chunk_concept": "party to a criminal conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "offence punishable with death or imprisonment for life",
+                "chunk_concept": "imprisonment for a term not exceeding six months",
+                "source": "legal_concept",
+                "similarity": 0.8314,
+                "weighted_score": 0.8314
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal conspiracy",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 0.9468,
+                "weighted_score": 0.7101
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "aforesaid",
+                "source": "keyword",
+                "similarity": 0.912,
+                "weighted_score": 0.684
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "party to a criminal conspiracy",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.717578,
+            "score_after_pre_rerank": 0.768414
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S61_N2",
+          "score": 0.508085,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 61,
+          "citation": "Section 61",
+          "text": "Whoever is a party to a criminal conspiracy,––",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 61: Criminal conspiracy.\nWhoever is a party to a criminal conspiracy,––",
+          "keywords": [
+            "criminal",
+            "conspiracy",
+            "whoever",
+            "party",
+            "abetment",
+            "attempt"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7791340947151184,
+            "original:bm25": 0.8044633523145058,
+            "original:semrank_pre_rerank": 0.7101,
+            "semrank_pre_rerank": 0.7101
+          },
+          "query_scores": {
+            "original": 0.6179644442996796
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "score": 0.7101,
+            "best_similarity": 0.9468,
+            "best_concept": "conspiracy",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 0.9468,
+                "weighted_score": 0.7101
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "abetment",
+                "source": "keyword",
+                "similarity": 0.8818,
+                "weighted_score": 0.6614
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "attempt",
+                "source": "keyword",
+                "similarity": 0.8692,
+                "weighted_score": 0.6519
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "party",
+                "source": "keyword",
+                "similarity": 0.8592,
+                "weighted_score": 0.6444
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "whoever",
+                "source": "keyword",
+                "similarity": 0.8229,
+                "weighted_score": 0.6172
+              }
+            ],
+            "pre_rerank_score": 0.7101,
+            "score_before_pre_rerank": 0.617964,
+            "score_after_pre_rerank": 0.634549
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S46_ILL4_4",
+          "score": 0.204151,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 46,
+          "citation": "Section 46",
+          "text": "A concerts with B a plan for poisoning Z. It is agreed that A shall administer the poison. B then explains the plan to C mentioning that a third person is to administer the poison, but without mentioning A’s name. C agrees to procure the poison, and procures and delivers it to B for the purpose of its being used in the manner explained. A administers the poison; Z dies in consequence. Here, though A and C have not conspired together, yet C has been engaged in the conspiracy in pursuance of which Z has been murdered. C has therefore committed the offence defined in this section and is liable to the punishment for murder. Abetment in India of offences outside India.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 46: Abettor.\nA concerts with B a plan for poisoning Z. It is agreed that A shall administer the poison. B then explains the plan to C mentioning that a third person is to administer the poison, but without mentioning A’s name. C agrees to procure the poison, and procures and delivers it to B for the purpose of its being used in the manner explained. A administers the poison; Z dies in consequence. Here, though A and C have not conspired together, yet C has been engaged in the conspiracy in pursuance of which Z has been murdered. C has therefore committed the offence defined in this section and is liable to the punishment for murder. Abetment in India of offences outside India.",
+          "keywords": [
+            "poison",
+            "plan",
+            "administer",
+            "mentioning",
+            "conspiracy",
+            "abetment",
+            "india",
+            "concerts",
+            "poisoning",
+            "agreed",
+            "abettor",
+            "murder"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "criminal conspiracy",
+            "attempt"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "criminal conspiracy"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4008486080668854
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "abetment",
+                "source": "legal_concept",
+                "similarity": 0.8818,
+                "weighted_score": 0.8818
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "attempt",
+                "source": "legal_concept",
+                "similarity": 0.8692,
+                "weighted_score": 0.8692
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "agreed",
+                "source": "keyword",
+                "similarity": 0.9478,
+                "weighted_score": 0.7109
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "conspiracy",
+                "source": "keyword",
+                "similarity": 0.9468,
+                "weighted_score": 0.7101
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal conspiracy",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400849,
+            "score_after_pre_rerank": 0.508696
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S51_ILL1_B",
+          "score": 0.203367,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 51,
+          "citation": "Section 51",
+          "text": "A instigates B to burn Z’s house, B sets fire to the house and at the same time commits theft of property there. A, though guilty of abetting the burning of the house, is not guilty of abetting the theft; for the theft was a distinct act, and not a probable consequence of the burning.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 51: Liability of abettor when one act abetted and different act done.\nA instigates B to burn Z’s house, B sets fire to the house and at the same time commits theft of property there. A, though guilty of abetting the burning of the house, is not guilty of abetting the theft; for the theft was a distinct act, and not a probable consequence of the burning.",
+          "keywords": [
+            "house",
+            "theft",
+            "guilty",
+            "abetting",
+            "burning",
+            "instigates",
+            "burn",
+            "sets",
+            "fire",
+            "time",
+            "instigation",
+            "separate acts"
+          ],
+          "legal_concepts": [
+            "abetment",
+            "criminal conspiracy",
+            "attempt"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "criminal conspiracy"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4002585316829277
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal conspiracy",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "abetment",
+                "source": "legal_concept",
+                "similarity": 0.8818,
+                "weighted_score": 0.8818
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "attempt",
+                "source": "legal_concept",
+                "similarity": 0.8692,
+                "weighted_score": 0.8692
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "sets",
+                "source": "keyword",
+                "similarity": 0.8855,
+                "weighted_score": 0.6642
+              },
+              {
+                "query_concept": "illegal means",
+                "chunk_concept": "theft",
+                "source": "keyword",
+                "similarity": 0.8827,
+                "weighted_score": 0.662
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "criminal conspiracy",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400259,
+            "score_after_pre_rerank": 0.508212
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S189_N1_E",
+          "score": 0.203258,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY",
+          "section_number": 189,
+          "citation": "Section 189",
+          "text": "by means of criminal force, or show of criminal force, to compel any person to do what he is not legally bound to do, or to omit to do what he is legally entitled to do.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 11: OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY\nSection 189: Unlawful assembly.\nAn assembly of five or more persons is designated an “unlawful assembly”, if the common object of the persons composing that assembly is—\nby means of criminal force, or show of criminal force, to compel any person to do what he is not legally bound to do, or to omit to do what he is legally entitled to do.",
+          "keywords": [
+            "criminal",
+            "force",
+            "what",
+            "legally",
+            "means",
+            "show",
+            "compel",
+            "bound",
+            "omit",
+            "entitled",
+            "unlawful assembly",
+            "criminal force"
+          ],
+          "legal_concepts": [
+            "common object",
+            "criminal force",
+            "legally bound",
+            "legally entitled"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 8,
+            "matched_count": 1,
+            "coverage_ratio": 0.125,
+            "matched_concepts": [
+              "common object"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.0625,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4001764943550634
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "agreement",
+              "common object",
+              "criminal conspiracy",
+              "agreement to commit an illegal act",
+              "illegal means",
+              "party to a criminal conspiracy",
+              "offence punishable with death or imprisonment for life",
+              "section 61"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "common object",
+                "chunk_concept": "common object",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "legally bound",
+                "source": "legal_concept",
+                "similarity": 0.9076,
+                "weighted_score": 0.9076
+              },
+              {
+                "query_concept": "criminal conspiracy",
+                "chunk_concept": "criminal force",
+                "source": "legal_concept",
+                "similarity": 0.8713,
+                "weighted_score": 0.8713
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "legally entitled",
+                "source": "legal_concept",
+                "similarity": 0.8712,
+                "weighted_score": 0.8712
+              },
+              {
+                "query_concept": "agreement",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.9318,
+                "weighted_score": 0.6988
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "common object",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400176,
+            "score_after_pre_rerank": 0.508145
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    },
+    "phase11": {
+      "answer_type": "lookup",
+      "support_status": "supported",
+      "confidence": {
+        "score": 0.9794,
+        "label": "high"
+      },
+      "final_answer": "Criminal conspiracy under Section 61 involves an agreement between two or more persons to commit an illegal act.",
+      "summary_answer": "Criminal conspiracy under Section 61 involves an agreement between two or more persons to commit an illegal act.",
+      "detailed_answer": "According to Section 61 of the Bharatiya Nyaya Sanhita, 2023, criminal conspiracy is defined as when two or more persons agree with a common objective to do, or cause to be done, an illegal act (Section 61(1)). Furthermore, anyone who is a party to such a conspiracy is liable under this section (Section 61(2)). An illustration provided in Section 46 demonstrates this concept, where individuals A and C are involved in a conspiracy to poison Z, leading to Z's death, thus implicating C in the conspiracy despite not directly conspiring with A.",
+      "citations": [
+        "Section 61(1), Bharatiya Nyaya Sanhita, 2023",
+        "Section 61(2), Bharatiya Nyaya Sanhita, 2023",
+        "Section 46 Illustration, Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "matched_sections": [
+        "Section 61",
+        "Section 46",
+        "Section 51"
+      ],
+      "missing_sections": [],
+      "missing_from_corpus": [],
+      "selected_chunk_ids": [
+        "chunk__node__BNS_S61_N1",
+        "chunk__node__BNS_S61_N2",
+        "chunk__node__BNS_S46_ILL4_4"
+      ],
+      "warnings": [],
+      "structured_reasoning": {
+        "base_concept": "",
+        "selected_section": "Section 61",
+        "selection_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "overrides_score_selection": false,
+        "uncertainty": "low",
+        "uncertainty_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "alternative_sections": [
+          "Section 46",
+          "Section 51"
+        ],
+        "sections_analyzed": [
+          {
+            "section": "Section 61",
+            "role": "retrieved_evidence",
+            "condition_summary": "When two or more persons agree with the common object to do, or cause to be done––",
+            "condition_match_score": 0.998226,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "criminal conspiracy ~ criminal conspiracy",
+              "agreement ~ agreement",
+              "common object ~ common object",
+              "agreement ~ agree",
+              "common object ~ common"
+            ],
+            "raw_retrieval_score": 0.998226,
+            "hit_count": 3,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 46",
+            "role": "retrieved_evidence",
+            "condition_summary": "A concerts with B a plan for poisoning Z.",
+            "condition_match_score": 0.204151,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "criminal conspiracy ~ criminal conspiracy",
+              "agreement ~ abetment",
+              "agreement ~ attempt",
+              "agreement ~ agreed",
+              "criminal conspiracy ~ conspiracy"
+            ],
+            "raw_retrieval_score": 0.204151,
+            "hit_count": 1,
+            "is_base": false,
+            "note": ""
+          },
+          {
+            "section": "Section 51",
+            "role": "retrieved_evidence",
+            "condition_summary": "A instigates B to burn Z’s house, B sets fire to the house and at the same time commits theft of property there.",
+            "condition_match_score": 0.203367,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "criminal conspiracy ~ criminal conspiracy",
+              "agreement ~ abetment",
+              "agreement ~ attempt",
+              "agreement ~ sets",
+              "illegal means ~ theft"
+            ],
+            "raw_retrieval_score": 0.203367,
+            "hit_count": 1,
+            "is_base": false,
+            "note": ""
+          }
+        ]
+      },
+      "validation": {
+        "requested_sections": [
+          "Section 61"
+        ],
+        "present_in_corpus": [
+          "Section 61"
+        ],
+        "retrieved_exact_matches": [
+          "Section 61"
+        ],
+        "missing_from_corpus": [],
+        "intent_alignment": "strong",
+        "intent_notes": [
+          "Lookup intent is anchored by a direct base legal chunk."
+        ],
+        "answer_verified": true,
+        "verification_issues": [],
+        "llm_answer_verified": true,
+        "llm_verification_issues": [],
+        "completeness": "complete",
+        "guardrail_grounding_strength": 1.0,
+        "repaired": false,
+        "fallback_used": false
+      },
+      "evidence": {
+        "primary_chunk_id": "chunk__node__BNS_S61_N1",
+        "primary_chunk_type": "subsection",
+        "primary_section": "Section 61",
+        "primary_section_title": "Criminal conspiracy.",
+        "related_chunk_ids": [
+          "chunk__node__BNS_S61_N2",
+          "chunk__node__BNS_S46_ILL4_4"
+        ],
+        "top_sections": [
+          {
+            "section": "Section 61",
+            "section_title": "Criminal conspiracy.",
+            "hit_count": 3,
+            "best_score": 0.998226,
+            "chunk_types": {
+              "subsection": 2,
+              "clause": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.25
+          },
+          {
+            "section": "Section 46",
+            "section_title": "Abettor.",
+            "hit_count": 1,
+            "best_score": 0.204151,
+            "chunk_types": {
+              "illustration": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.125
+          },
+          {
+            "section": "Section 51",
+            "section_title": "Liability of abettor when one act abetted and different act done.",
+            "hit_count": 1,
+            "best_score": 0.203367,
+            "chunk_types": {
+              "illustration": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.125
+          }
+        ],
+        "llm_evidence": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S61_N1",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": "61",
+            "citation": "Section 61(1), Bharatiya Nyaya Sanhita, 2023",
+            "text": "When two or more persons agree with the common object to do, or cause to be done––"
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S61_N2",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": "61",
+            "citation": "Section 61(2), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever is a party to a criminal conspiracy,––"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S61_N1_A",
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": "61",
+            "citation": "Section 61(1)(a), Bharatiya Nyaya Sanhita, 2023",
+            "text": "an illegal act; or"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S46_ILL4_4",
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": "46",
+            "citation": "Section 46 Illustration, Bharatiya Nyaya Sanhita, 2023",
+            "text": "A concerts with B a plan for poisoning Z. It is agreed that A shall administer the poison. B then explains the plan to C mentioning that a third person is to administer the poison, but without mentioning A’s name. C agrees to procure the poison, and procures and delivers it to B for the purpose of its being used in the manner explained. A administers the poison; Z dies in consequence. Here, though A and C have not conspired together, yet C has been engaged in the conspiracy in pursuance of which Z has been murdered. C has therefore committed the offence defined in this section and is liable to the punishment for murder. Abetment in India of offences outside India."
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S51_ILL1_B",
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": "51",
+            "citation": "Section 51 Illustration(b), Bharatiya Nyaya Sanhita, 2023",
+            "text": "A instigates B to burn Z’s house, B sets fire to the house and at the same time commits theft of property there. A, though guilty of abetting the burning of the house, is not guilty of abetting the theft; for the theft was a distinct act, and not a probable consequence of the burning."
+          }
+        ]
+      },
+      "llm_generation": {
+        "enabled": true,
+        "used": true,
+        "model": "gpt-4o-mini",
+        "reasoning_trace": [],
+        "caution_notes": [],
+        "error": null,
+        "repaired": false,
+        "fallback_used": false
+      }
+    }
+  }
+]

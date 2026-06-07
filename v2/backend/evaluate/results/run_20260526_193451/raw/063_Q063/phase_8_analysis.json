@@ -1,0 +1,77 @@
+{
+  "query": "A person used a fake seal to create a legal-looking document. What offence may apply?",
+  "intent": {
+    "primary": "explanation",
+    "secondary": [
+      "lookup"
+    ]
+  },
+  "concepts": [
+    "fake seal",
+    "legal document",
+    "offence",
+    "punishment"
+  ],
+  "targets": [],
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true
+  },
+  "decomposition": {
+    "needed": true,
+    "sub_queries": [
+      {
+        "query": "What is the offence related to using a fake seal in India?",
+        "intent": {
+          "primary": "explanation",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "fake seal",
+          "offence"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      },
+      {
+        "query": "What are the punishments for creating a legal-looking document with a fake seal?",
+        "intent": {
+          "primary": "explanation",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "punishment",
+          "legal document",
+          "fake seal"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      }
+    ]
+  },
+  "confidence": {
+    "hint_relevance": 0.4244,
+    "llm_consistency": 1.0,
+    "rule_strength": 0.35,
+    "structure_validity": 1.0,
+    "overall": 0.6398
+  }
+}

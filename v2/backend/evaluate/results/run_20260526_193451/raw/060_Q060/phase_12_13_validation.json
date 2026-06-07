@@ -1,0 +1,71 @@
+{
+  "answer": "According to Section 353(1) of the Bharatiya Nyaya Sanhita, 2023, making, publishing, or circulating any false statement or information can constitute an offence. If the statement is made with the intent to harm someone's reputation, it may be classified as defamation. However, if the person spreading the statement has reasonable grounds to believe it is true and acts in good faith, it may not amount to an offence as per Section 353(3) Exception. Additionally, Section 356(1) Explanation 3 indicates that certain forms of imputation, even if expressed ironically, can also be considered defamation. Therefore, if the false statement was made without reasonable belief in its truth and with intent to harm, it could lead to legal consequences.",
+  "summary_answer": "The offence of defamation may apply if someone spreads a false statement to damage your reputation.",
+  "detailed_answer": "According to Section 353(1) of the Bharatiya Nyaya Sanhita, 2023, making, publishing, or circulating any false statement or information can constitute an offence. If the statement is made with the intent to harm someone's reputation, it may be classified as defamation. However, if the person spreading the statement has reasonable grounds to believe it is true and acts in good faith, it may not amount to an offence as per Section 353(3) Exception. Additionally, Section 356(1) Explanation 3 indicates that certain forms of imputation, even if expressed ironically, can also be considered defamation. Therefore, if the false statement was made without reasonable belief in its truth and with intent to harm, it could lead to legal consequences.",
+  "final_answer": "Defamation may apply if a false statement is made with intent to damage reputation, as per Section 353(1) and Section 356(1) Explanation 3 of the Bharatiya Nyaya Sanhita, 2023.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 353(1), Bharatiya Nyaya Sanhita, 2023",
+    "Section 353(3) Exception, Bharatiya Nyaya Sanhita, 2023",
+    "Section 356(1) Explanation 3, Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.6774,
+    "reranker": 0.5793,
+    "citation": 1.0,
+    "reasoning": 1.0,
+    "evidence_strength": 0.6774,
+    "reasoning_certainty": 1.0,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.6774,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.72,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.5793,
+        "avg_selected_semrank_score": 1.0,
+        "avg_selected_concept_coverage": 0.3333,
+        "selected_chunk_count": 3,
+        "matched_selected_chunk_count": 3,
+        "selected_semrank_count": 3
+      },
+      "reasoning": {
+        "selected_condition_match_score": 1.0,
+        "ambiguity_gap_score": 1.0,
+        "uncertainty_score": 1.0,
+        "gap": 0.3955,
+        "highest_competing_score": 0.6045,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.72,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S353_N1",
+    "chunk__node__BNS_S353_N3_ECP1",
+    "chunk__node__BNS_S356_N1_EXP3"
+  ]
+}

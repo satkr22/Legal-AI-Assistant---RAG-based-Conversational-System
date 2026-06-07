@@ -1,0 +1,3576 @@
+[
+  {
+    "query": "What is the punishment for cruelty by husband or relatives?",
+    "phase8": {
+      "query": "What is the punishment for cruelty by husband or relatives?",
+      "intent": {
+        "primary": "legal penalty",
+        "secondary": []
+      },
+      "concepts": [
+        "cruelty",
+        "punishment",
+        "husband",
+        "relatives"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.5399,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.35,
+        "structure_validity": 1.0,
+        "overall": 0.686
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is the punishment for cruelty by husband or relatives?",
+          "targets": [],
+          "concepts": [
+            "cruelty",
+            "punishment",
+            "husband",
+            "relatives"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S85_BODY",
+            "score": 0.997869,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 85,
+            "citation": "Section 85",
+            "text": "Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Cruelty defined.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 85: Husband or relative of husband of a woman subjecting her to cruelty.\nWhoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Cruelty defined.",
+            "keywords": [
+              "husband",
+              "woman",
+              "cruelty",
+              "relative",
+              "whoever",
+              "subjects",
+              "punished",
+              "imprisonment",
+              "term",
+              "extend",
+              "punishable"
+            ],
+            "legal_concepts": [
+              "offence against woman",
+              "subjecting to cruelty"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 1.0,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 0.9704
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9704,
+              "query_concepts": [
+                "cruelty",
+                "husband",
+                "relatives",
+                "what is the punishment for cruelty by husband or relatives"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "subjecting to cruelty",
+                  "source": "legal_concept",
+                  "similarity": 0.9704,
+                  "weighted_score": 0.9704
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "offence against woman",
+                  "source": "legal_concept",
+                  "similarity": 0.8349,
+                  "weighted_score": 0.8349
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "cruelty",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "husband",
+                  "chunk_concept": "husband",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "relative",
+                  "source": "keyword",
+                  "similarity": 0.928,
+                  "weighted_score": 0.696
+                }
+              ],
+              "score": 0.9704,
+              "best_similarity": 0.9704,
+              "best_concept": "subjecting to cruelty",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9704,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.994672
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S84_BODY",
+            "score": 0.791516,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 84,
+            "citation": "Section 84",
+            "text": "Whoever takes or entices away any woman who is and whom he knows or has reason to believe to be the wife of any other man, with intent that she may have illicit intercourse with any person, or conceals or detains with that intent any such woman, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Husband or relative of husband of a woman subjecting her to cruelty.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 84: Enticing or taking away or detaining with criminal intent a married woman.\nWhoever takes or entices away any woman who is and whom he knows or has reason to believe to be the wife of any other man, with intent that she may have illicit intercourse with any person, or conceals or detains with that intent any such woman, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Husband or relative of husband of a woman subjecting her to cruelty.",
+            "keywords": [
+              "woman",
+              "intent",
+              "away",
+              "husband",
+              "whoever",
+              "takes",
+              "entices",
+              "knows",
+              "reason",
+              "believe",
+              "married woman",
+              "criminal intent"
+            ],
+            "legal_concepts": [
+              "enticing a married woman",
+              "criminal intent"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6907957792282104,
+              "bm25": 0.4444897183333493,
+              "semrank": 0.7500000894069672,
+              "semrank_pre_rerank": 0.8534
+            },
+            "query_scores": {
+              "original": 0.7500000894069672
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.75,
+              "query_concepts": [
+                "cruelty",
+                "husband",
+                "relatives",
+                "what is the punishment for cruelty by husband or relatives"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "husband",
+                  "chunk_concept": "enticing a married woman",
+                  "source": "legal_concept",
+                  "similarity": 0.8534,
+                  "weighted_score": 0.8534
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "criminal intent",
+                  "source": "legal_concept",
+                  "similarity": 0.846,
+                  "weighted_score": 0.846
+                },
+                {
+                  "query_concept": "husband",
+                  "chunk_concept": "husband",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "husband",
+                  "chunk_concept": "married woman",
+                  "source": "keyword",
+                  "similarity": 0.8987,
+                  "weighted_score": 0.674
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "knows",
+                  "source": "keyword",
+                  "similarity": 0.8708,
+                  "weighted_score": 0.6531
+                }
+              ],
+              "score": 0.8534,
+              "best_similarity": 0.8534,
+              "best_concept": "enticing a married woman",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.8534,
+              "score_before_pre_rerank": 0.95173,
+              "score_after_pre_rerank": 0.934031
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S80_N1",
+            "score": 0.573017,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 80,
+            "citation": "Section 80",
+            "text": "Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 80: Dowry death.\nWhere the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death.",
+            "keywords": [
+              "death",
+              "husband",
+              "dowry",
+              "woman",
+              "caused",
+              "relative",
+              "burns",
+              "bodily",
+              "injury",
+              "occurs",
+              "dowry death",
+              "cruelty",
+              "harassment"
+            ],
+            "legal_concepts": [
+              "dowry death",
+              "cruelty by husband or relative"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "bm25": 0.5670836897832521,
+              "semrank": 0.9437835216522217,
+              "semrank_pre_rerank": 0.9438
+            },
+            "query_scores": {
+              "original": 0.9437835216522217
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9438,
+              "query_concepts": [
+                "cruelty",
+                "husband",
+                "relatives",
+                "what is the punishment for cruelty by husband or relatives"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "what is the punishment for cruelty by husband or relatives",
+                  "chunk_concept": "cruelty by husband or relative",
+                  "source": "legal_concept",
+                  "similarity": 0.9438,
+                  "weighted_score": 0.9438
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "dowry death",
+                  "source": "legal_concept",
+                  "similarity": 0.8338,
+                  "weighted_score": 0.8338
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "cruelty",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "husband",
+                  "chunk_concept": "husband",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "relative",
+                  "source": "keyword",
+                  "similarity": 0.928,
+                  "weighted_score": 0.696
+                }
+              ],
+              "score": 0.9438,
+              "best_similarity": 0.9438,
+              "best_concept": "cruelty by husband or relative",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9438,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.989884
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S80_N1_EXP1",
+            "score": 0.527671,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 80,
+            "citation": "Section 80",
+            "text": "For the purposes of this sub-section, “dowry” shall have the same meaning as in section 2 of the Dowry Prohibition Act, 1961.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 80: Dowry death.\nWhere the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death.\nFor the purposes of this sub-section, “dowry” shall have the same meaning as in section 2 of the Dowry Prohibition Act, 1961.",
+            "keywords": [
+              "dowry",
+              "purposes",
+              "sub-section",
+              "meaning",
+              "prohibition",
+              "death",
+              "offences",
+              "against",
+              "woman",
+              "child",
+              "dowry death",
+              "cruelty",
+              "harassment"
+            ],
+            "legal_concepts": [
+              "dowry prohibition act, 1961",
+              "section 2 of the dowry prohibition act, 1961"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "bm25": 0.4881075712720398,
+              "semrank": 0.7499999105930328,
+              "semrank_pre_rerank": 0.7566
+            },
+            "query_scores": {
+              "original": 0.7499999105930328
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.75,
+              "query_concepts": [
+                "cruelty",
+                "husband",
+                "relatives",
+                "what is the punishment for cruelty by husband or relatives"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "dowry prohibition act, 1961",
+                  "source": "legal_concept",
+                  "similarity": 0.7566,
+                  "weighted_score": 0.7566
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "cruelty",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "section 2 of the dowry prohibition act, 1961",
+                  "source": "legal_concept",
+                  "similarity": 0.75,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "meaning",
+                  "source": "keyword",
+                  "similarity": 0.8926,
+                  "weighted_score": 0.6695
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "offences",
+                  "source": "keyword",
+                  "similarity": 0.8641,
+                  "weighted_score": 0.6481
+                }
+              ],
+              "score": 0.7566,
+              "best_similarity": 0.7566,
+              "best_concept": "dowry prohibition act, 1961",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.7566,
+              "score_before_pre_rerank": 0.894748,
+              "score_after_pre_rerank": 0.869881
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S86_B",
+            "score": 0.39797,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 86,
+            "citation": "Section 86",
+            "text": "harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand. Kidnapping, abducting or inducing woman to compel her marriage, etc.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 86: Cruelty defined.\nharassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand. Kidnapping, abducting or inducing woman to compel her marriage, etc.",
+            "keywords": [
+              "woman",
+              "harassment",
+              "related",
+              "meet",
+              "demand",
+              "view",
+              "coercing",
+              "unlawful",
+              "property",
+              "valuable",
+              "coercion",
+              "unlawful demand"
+            ],
+            "legal_concepts": [
+              "offence against woman",
+              "cruelty definition"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7213232517242432,
+              "bm25": 0.1124888454683262,
+              "semrank": 0.9934299488777538,
+              "semrank_pre_rerank": 0.9686
+            },
+            "query_scores": {
+              "original": 0.9934299488777538
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9686,
+              "query_concepts": [
+                "cruelty",
+                "husband",
+                "relatives",
+                "what is the punishment for cruelty by husband or relatives"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "cruelty definition",
+                  "source": "legal_concept",
+                  "similarity": 0.9686,
+                  "weighted_score": 0.9686
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "offence against woman",
+                  "source": "legal_concept",
+                  "similarity": 0.8349,
+                  "weighted_score": 0.8349
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "related",
+                  "source": "keyword",
+                  "similarity": 0.9247,
+                  "weighted_score": 0.6935
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "meet",
+                  "source": "keyword",
+                  "similarity": 0.8826,
+                  "weighted_score": 0.662
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "property",
+                  "source": "keyword",
+                  "similarity": 0.8677,
+                  "weighted_score": 0.6508
+                }
+              ],
+              "score": 0.9686,
+              "best_similarity": 0.9686,
+              "best_concept": "cruelty definition",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9686,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.994348
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S3_N3",
+            "score": 0.392827,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "PRELIMINARY",
+            "section_number": 3,
+            "citation": "Section 3",
+            "text": "When property is in the possession of a person’s spouse, clerk or servant, on account of that person, it is in that person’s possession within the meaning of this Sanhita.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 3: General explanations.\nWhen property is in the possession of a person’s spouse, clerk or servant, on account of that person, it is in that person’s possession within the meaning of this Sanhita.",
+            "keywords": [
+              "possession",
+              "property",
+              "spouse",
+              "clerk",
+              "servant",
+              "account",
+              "meaning",
+              "explanations",
+              "preliminary"
+            ],
+            "legal_concepts": [
+              "possession of property",
+              "spousal possession"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.9002376198768616,
+              "semrank_pre_rerank": 0.9002
+            },
+            "query_scores": {
+              "original": 0.9002376198768616
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9002,
+              "query_concepts": [
+                "cruelty",
+                "husband",
+                "relatives",
+                "what is the punishment for cruelty by husband or relatives"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "husband",
+                  "chunk_concept": "spousal possession",
+                  "source": "legal_concept",
+                  "similarity": 0.9002,
+                  "weighted_score": 0.9002
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "possession of property",
+                  "source": "legal_concept",
+                  "similarity": 0.8563,
+                  "weighted_score": 0.8563
+                },
+                {
+                  "query_concept": "husband",
+                  "chunk_concept": "spouse",
+                  "source": "keyword",
+                  "similarity": 0.9402,
+                  "weighted_score": 0.7052
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "preliminary",
+                  "source": "keyword",
+                  "similarity": 0.8981,
+                  "weighted_score": 0.6736
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "meaning",
+                  "source": "keyword",
+                  "similarity": 0.8926,
+                  "weighted_score": 0.6695
+                }
+              ],
+              "score": 0.9002,
+              "best_similarity": 0.9002,
+              "best_concept": "spousal possession",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9002,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.982036
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S86_BODY",
+            "score": 0.376509,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 86,
+            "citation": "Section 86",
+            "text": "For the purposes of section 85, “cruelty” means—",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 86: Cruelty defined.\nFor the purposes of section 85, “cruelty” means—",
+            "keywords": [
+              "cruelty",
+              "purposes",
+              "means",
+              "defined",
+              "offences",
+              "against",
+              "woman",
+              "child",
+              "body"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6813048124313354,
+              "bm25": 0.46142533947152103,
+              "semrank": 0.7499999105930328,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.7499999105930328
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.75,
+              "query_concepts": [
+                "cruelty",
+                "husband",
+                "relatives",
+                "what is the punishment for cruelty by husband or relatives"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "cruelty",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "defined",
+                  "source": "keyword",
+                  "similarity": 0.8852,
+                  "weighted_score": 0.6639
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "means",
+                  "source": "keyword",
+                  "similarity": 0.8787,
+                  "weighted_score": 0.6591
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "offences",
+                  "source": "keyword",
+                  "similarity": 0.8641,
+                  "weighted_score": 0.6481
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "against",
+                  "source": "keyword",
+                  "similarity": 0.8631,
+                  "weighted_score": 0.6473
+                }
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "cruelty",
+              "best_concept_source": "keyword",
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.983194,
+              "score_after_pre_rerank": 0.941219
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S67_BODY",
+            "score": 0.369444,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 67,
+            "citation": "Section 67",
+            "text": "Whoever has sexual intercourse with his own wife, who is living separately, whether under a decree of separation or otherwise, without her consent, shall be punished with imprisonment of either description for a term which shall not be less than two years but which may extend to seven years, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 67: Sexual intercourse by husband upon his wife during separation.\nWhoever has sexual intercourse with his own wife, who is living separately, whether under a decree of separation or otherwise, without her consent, shall be punished with imprisonment of either description for a term which shall not be less than two years but which may extend to seven years, and shall also be liable to fine.",
+            "keywords": [
+              "sexual",
+              "intercourse",
+              "wife",
+              "separation",
+              "years",
+              "whoever",
+              "living",
+              "separately",
+              "whether",
+              "decree",
+              "sexual intercourse",
+              "separated wife"
+            ],
+            "legal_concepts": [
+              "offence against woman",
+              "punishment for adultery"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6835862398147583,
+              "bm25": 0.06666666666666667,
+              "semrank": 0.7000656723976135,
+              "semrank_pre_rerank": 0.8599
+            },
+            "query_scores": {
+              "original": 0.7000656723976135
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.7001,
+              "query_concepts": [
+                "cruelty",
+                "husband",
+                "relatives",
+                "what is the punishment for cruelty by husband or relatives"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "what is the punishment for cruelty by husband or relatives",
+                  "chunk_concept": "punishment for adultery",
+                  "source": "legal_concept",
+                  "similarity": 0.8599,
+                  "weighted_score": 0.8599
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "offence against woman",
+                  "source": "legal_concept",
+                  "similarity": 0.8349,
+                  "weighted_score": 0.8349
+                },
+                {
+                  "query_concept": "husband",
+                  "chunk_concept": "wife",
+                  "source": "keyword",
+                  "similarity": 0.9334,
+                  "weighted_score": 0.7001
+                },
+                {
+                  "query_concept": "husband",
+                  "chunk_concept": "separated wife",
+                  "source": "keyword",
+                  "similarity": 0.8897,
+                  "weighted_score": 0.6673
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "whether",
+                  "source": "keyword",
+                  "similarity": 0.8842,
+                  "weighted_score": 0.6631
+                }
+              ],
+              "score": 0.8599,
+              "best_similarity": 0.8599,
+              "best_concept": "punishment for adultery",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.8599,
+              "score_before_pre_rerank": 0.933729,
+              "score_after_pre_rerank": 0.92044
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S325_BODY",
+            "score": 0.366119,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 325,
+            "citation": "Section 325",
+            "text": "Whoever commits mischief by killing, poisoning, maiming or rendering useless any animal shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both. Mischief by injury, inundation, fire or explosive substance, etc.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 325: Mischief by killing or maiming animal.\nWhoever commits mischief by killing, poisoning, maiming or rendering useless any animal shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both. Mischief by injury, inundation, fire or explosive substance, etc.",
+            "keywords": [
+              "mischief",
+              "killing",
+              "maiming",
+              "animal",
+              "whoever",
+              "commits",
+              "poisoning",
+              "rendering",
+              "useless",
+              "punished",
+              "animal harm"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "punishment for mischief"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.6960352957248688,
+              "semrank_pre_rerank": 0.8556
+            },
+            "query_scores": {
+              "original": 0.6960352957248688
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.696,
+              "query_concepts": [
+                "cruelty",
+                "husband",
+                "relatives",
+                "what is the punishment for cruelty by husband or relatives"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.8556,
+                  "weighted_score": 0.8556
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "punishment for mischief",
+                  "source": "legal_concept",
+                  "similarity": 0.8382,
+                  "weighted_score": 0.8382
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "animal harm",
+                  "source": "keyword",
+                  "similarity": 0.928,
+                  "weighted_score": 0.696
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "animal",
+                  "source": "keyword",
+                  "similarity": 0.8941,
+                  "weighted_score": 0.6706
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "maiming",
+                  "source": "keyword",
+                  "similarity": 0.8805,
+                  "weighted_score": 0.6604
+                }
+              ],
+              "score": 0.8556,
+              "best_similarity": 0.8556,
+              "best_concept": "offence against property",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.8556,
+              "score_before_pre_rerank": 0.927731,
+              "score_after_pre_rerank": 0.914747
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S131_BODY",
+            "score": 0.361717,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 131,
+            "citation": "Section 131",
+            "text": "Whoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nWhoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+            "keywords": [
+              "criminal",
+              "force",
+              "grave",
+              "provocation",
+              "extend",
+              "body",
+              "whoever",
+              "assaults",
+              "uses",
+              "sudden",
+              "assault",
+              "criminal force",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "assault",
+              "criminal force",
+              "punishment for assault"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6881421804428101,
+              "semrank_pre_rerank": 0.8489
+            },
+            "query_scores": {
+              "original": 0.6881421804428101
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "cruelty",
+                "husband",
+                "relatives",
+                "what is the punishment for cruelty by husband or relatives"
+              ],
+              "score": 0.8489,
+              "best_similarity": 0.8489,
+              "best_concept": "assault",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "assault",
+                  "source": "legal_concept",
+                  "similarity": 0.8489,
+                  "weighted_score": 0.8489
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "punishment for assault",
+                  "source": "legal_concept",
+                  "similarity": 0.8478,
+                  "weighted_score": 0.8478
+                },
+                {
+                  "query_concept": "cruelty",
+                  "chunk_concept": "criminal force",
+                  "source": "legal_concept",
+                  "similarity": 0.8137,
+                  "weighted_score": 0.8137
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "uses",
+                  "source": "keyword",
+                  "similarity": 0.8912,
+                  "weighted_score": 0.6684
+                },
+                {
+                  "query_concept": "relatives",
+                  "chunk_concept": "extend",
+                  "source": "keyword",
+                  "similarity": 0.8739,
+                  "weighted_score": 0.6554
+                }
+              ],
+              "pre_rerank_score": 0.8489,
+              "score_before_pre_rerank": 0.916252,
+              "score_after_pre_rerank": 0.904129
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S85_BODY",
+          "score": 0.992924,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 85,
+          "citation": "Section 85",
+          "text": "Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Cruelty defined.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 85: Husband or relative of husband of a woman subjecting her to cruelty.\nWhoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Cruelty defined.",
+          "keywords": [
+            "husband",
+            "woman",
+            "cruelty",
+            "relative",
+            "whoever",
+            "subjects",
+            "punished",
+            "imprisonment",
+            "term",
+            "extend",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "subjecting to cruelty"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 0.9704,
+            "semrank_pre_rerank": 0.9704
+          },
+          "query_scores": {
+            "original": 0.9978688
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9704,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "subjecting to cruelty",
+                "source": "legal_concept",
+                "similarity": 0.9704,
+                "weighted_score": 0.9704
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 0.8349,
+                "weighted_score": 0.8349
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "cruelty",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "husband",
+                "chunk_concept": "husband",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "relative",
+                "source": "keyword",
+                "similarity": 0.928,
+                "weighted_score": 0.696
+              }
+            ],
+            "score": 0.9704,
+            "best_similarity": 0.9704,
+            "best_concept": "subjecting to cruelty",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9704,
+            "score_before_pre_rerank": 0.997869,
+            "score_after_pre_rerank": 0.992924
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S84_BODY",
+          "score": 0.802655,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 84,
+          "citation": "Section 84",
+          "text": "Whoever takes or entices away any woman who is and whom he knows or has reason to believe to be the wife of any other man, with intent that she may have illicit intercourse with any person, or conceals or detains with that intent any such woman, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Husband or relative of husband of a woman subjecting her to cruelty.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 84: Enticing or taking away or detaining with criminal intent a married woman.\nWhoever takes or entices away any woman who is and whom he knows or has reason to believe to be the wife of any other man, with intent that she may have illicit intercourse with any person, or conceals or detains with that intent any such woman, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Husband or relative of husband of a woman subjecting her to cruelty.",
+          "keywords": [
+            "woman",
+            "intent",
+            "away",
+            "husband",
+            "whoever",
+            "takes",
+            "entices",
+            "knows",
+            "reason",
+            "believe",
+            "married woman",
+            "criminal intent"
+          ],
+          "legal_concepts": [
+            "enticing a married woman",
+            "criminal intent"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6907957792282104,
+            "original:bm25": 0.4444897183333493,
+            "original:semrank": 0.7500000894069672,
+            "original:semrank_pre_rerank": 0.8534,
+            "semrank_pre_rerank": 0.8534
+          },
+          "query_scores": {
+            "original": 0.7915162173318036
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "husband",
+                "chunk_concept": "enticing a married woman",
+                "source": "legal_concept",
+                "similarity": 0.8534,
+                "weighted_score": 0.8534
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "criminal intent",
+                "source": "legal_concept",
+                "similarity": 0.846,
+                "weighted_score": 0.846
+              },
+              {
+                "query_concept": "husband",
+                "chunk_concept": "husband",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "husband",
+                "chunk_concept": "married woman",
+                "source": "keyword",
+                "similarity": 0.8987,
+                "weighted_score": 0.674
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "knows",
+                "source": "keyword",
+                "similarity": 0.8708,
+                "weighted_score": 0.6531
+              }
+            ],
+            "score": 0.8534,
+            "best_similarity": 0.8534,
+            "best_concept": "enticing a married woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8534,
+            "score_before_pre_rerank": 0.791516,
+            "score_after_pre_rerank": 0.802655
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S80_N1",
+          "score": 0.639758,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 80,
+          "citation": "Section 80",
+          "text": "Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 80: Dowry death.\nWhere the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death.",
+          "keywords": [
+            "death",
+            "husband",
+            "dowry",
+            "woman",
+            "caused",
+            "relative",
+            "burns",
+            "bodily",
+            "injury",
+            "occurs",
+            "dowry death",
+            "cruelty",
+            "harassment"
+          ],
+          "legal_concepts": [
+            "dowry death",
+            "cruelty by husband or relative"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 0.5670836897832521,
+            "original:semrank": 0.9437835216522217,
+            "original:semrank_pre_rerank": 0.9438,
+            "semrank_pre_rerank": 0.9438
+          },
+          "query_scores": {
+            "original": 0.5730173895524928
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9438,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "what is the punishment for cruelty by husband or relatives",
+                "chunk_concept": "cruelty by husband or relative",
+                "source": "legal_concept",
+                "similarity": 0.9438,
+                "weighted_score": 0.9438
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "dowry death",
+                "source": "legal_concept",
+                "similarity": 0.8338,
+                "weighted_score": 0.8338
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "cruelty",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "husband",
+                "chunk_concept": "husband",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "relative",
+                "source": "keyword",
+                "similarity": 0.928,
+                "weighted_score": 0.696
+              }
+            ],
+            "score": 0.9438,
+            "best_similarity": 0.9438,
+            "best_concept": "cruelty by husband or relative",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9438,
+            "score_before_pre_rerank": 0.573017,
+            "score_after_pre_rerank": 0.639758
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S80_N1_EXP1",
+          "score": 0.568878,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 80,
+          "citation": "Section 80",
+          "text": "For the purposes of this sub-section, “dowry” shall have the same meaning as in section 2 of the Dowry Prohibition Act, 1961.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 80: Dowry death.\nWhere the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death.\nFor the purposes of this sub-section, “dowry” shall have the same meaning as in section 2 of the Dowry Prohibition Act, 1961.",
+          "keywords": [
+            "dowry",
+            "purposes",
+            "sub-section",
+            "meaning",
+            "prohibition",
+            "death",
+            "offences",
+            "against",
+            "woman",
+            "child",
+            "dowry death",
+            "cruelty",
+            "harassment"
+          ],
+          "legal_concepts": [
+            "dowry prohibition act, 1961",
+            "section 2 of the dowry prohibition act, 1961"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 0.4881075712720398,
+            "original:semrank": 0.7499999105930328,
+            "original:semrank_pre_rerank": 0.7566,
+            "semrank_pre_rerank": 0.7566
+          },
+          "query_scores": {
+            "original": 0.5276710974046985
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "dowry prohibition act, 1961",
+                "source": "legal_concept",
+                "similarity": 0.7566,
+                "weighted_score": 0.7566
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "cruelty",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "section 2 of the dowry prohibition act, 1961",
+                "source": "legal_concept",
+                "similarity": 0.75,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "meaning",
+                "source": "keyword",
+                "similarity": 0.8926,
+                "weighted_score": 0.6695
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "offences",
+                "source": "keyword",
+                "similarity": 0.8641,
+                "weighted_score": 0.6481
+              }
+            ],
+            "score": 0.7566,
+            "best_similarity": 0.7566,
+            "best_concept": "dowry prohibition act, 1961",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.7566,
+            "score_before_pre_rerank": 0.527671,
+            "score_after_pre_rerank": 0.568878
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S86_B",
+          "score": 0.500683,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 86,
+          "citation": "Section 86",
+          "text": "harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand. Kidnapping, abducting or inducing woman to compel her marriage, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 86: Cruelty defined.\nharassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand. Kidnapping, abducting or inducing woman to compel her marriage, etc.",
+          "keywords": [
+            "woman",
+            "harassment",
+            "related",
+            "meet",
+            "demand",
+            "view",
+            "coercing",
+            "unlawful",
+            "property",
+            "valuable",
+            "coercion",
+            "unlawful demand"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "cruelty definition"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7213232517242432,
+            "original:bm25": 0.1124888454683262,
+            "original:semrank": 0.9934299488777538,
+            "original:semrank_pre_rerank": 0.9686,
+            "semrank_pre_rerank": 0.9686
+          },
+          "query_scores": {
+            "original": 0.39796956569031616
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9686,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "cruelty definition",
+                "source": "legal_concept",
+                "similarity": 0.9686,
+                "weighted_score": 0.9686
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 0.8349,
+                "weighted_score": 0.8349
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "related",
+                "source": "keyword",
+                "similarity": 0.9247,
+                "weighted_score": 0.6935
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "meet",
+                "source": "keyword",
+                "similarity": 0.8826,
+                "weighted_score": 0.662
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 0.8677,
+                "weighted_score": 0.6508
+              }
+            ],
+            "score": 0.9686,
+            "best_similarity": 0.9686,
+            "best_concept": "cruelty definition",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9686,
+            "score_before_pre_rerank": 0.39797,
+            "score_after_pre_rerank": 0.500683
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S3_N3",
+          "score": 0.484154,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 3,
+          "citation": "Section 3",
+          "text": "When property is in the possession of a person’s spouse, clerk or servant, on account of that person, it is in that person’s possession within the meaning of this Sanhita.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 3: General explanations.\nWhen property is in the possession of a person’s spouse, clerk or servant, on account of that person, it is in that person’s possession within the meaning of this Sanhita.",
+          "keywords": [
+            "possession",
+            "property",
+            "spouse",
+            "clerk",
+            "servant",
+            "account",
+            "meaning",
+            "explanations",
+            "preliminary"
+          ],
+          "legal_concepts": [
+            "possession of property",
+            "spousal possession"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9002376198768616,
+            "original:semrank_pre_rerank": 0.9002,
+            "semrank_pre_rerank": 0.9002
+          },
+          "query_scores": {
+            "original": 0.39282676848391695
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9002,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "husband",
+                "chunk_concept": "spousal possession",
+                "source": "legal_concept",
+                "similarity": 0.9002,
+                "weighted_score": 0.9002
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "possession of property",
+                "source": "legal_concept",
+                "similarity": 0.8563,
+                "weighted_score": 0.8563
+              },
+              {
+                "query_concept": "husband",
+                "chunk_concept": "spouse",
+                "source": "keyword",
+                "similarity": 0.9402,
+                "weighted_score": 0.7052
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.8981,
+                "weighted_score": 0.6736
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "meaning",
+                "source": "keyword",
+                "similarity": 0.8926,
+                "weighted_score": 0.6695
+              }
+            ],
+            "score": 0.9002,
+            "best_similarity": 0.9002,
+            "best_concept": "spousal possession",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9002,
+            "score_before_pre_rerank": 0.392827,
+            "score_after_pre_rerank": 0.484154
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S67_BODY",
+          "score": 0.457726,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 67,
+          "citation": "Section 67",
+          "text": "Whoever has sexual intercourse with his own wife, who is living separately, whether under a decree of separation or otherwise, without her consent, shall be punished with imprisonment of either description for a term which shall not be less than two years but which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 67: Sexual intercourse by husband upon his wife during separation.\nWhoever has sexual intercourse with his own wife, who is living separately, whether under a decree of separation or otherwise, without her consent, shall be punished with imprisonment of either description for a term which shall not be less than two years but which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "sexual",
+            "intercourse",
+            "wife",
+            "separation",
+            "years",
+            "whoever",
+            "living",
+            "separately",
+            "whether",
+            "decree",
+            "sexual intercourse",
+            "separated wife"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "punishment for adultery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6835862398147583,
+            "original:bm25": 0.06666666666666667,
+            "original:semrank": 0.7000656723976135,
+            "original:semrank_pre_rerank": 0.8599,
+            "semrank_pre_rerank": 0.8599
+          },
+          "query_scores": {
+            "original": 0.36944421171952324
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7001,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "what is the punishment for cruelty by husband or relatives",
+                "chunk_concept": "punishment for adultery",
+                "source": "legal_concept",
+                "similarity": 0.8599,
+                "weighted_score": 0.8599
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 0.8349,
+                "weighted_score": 0.8349
+              },
+              {
+                "query_concept": "husband",
+                "chunk_concept": "wife",
+                "source": "keyword",
+                "similarity": 0.9334,
+                "weighted_score": 0.7001
+              },
+              {
+                "query_concept": "husband",
+                "chunk_concept": "separated wife",
+                "source": "keyword",
+                "similarity": 0.8897,
+                "weighted_score": 0.6673
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "whether",
+                "source": "keyword",
+                "similarity": 0.8842,
+                "weighted_score": 0.6631
+              }
+            ],
+            "score": 0.8599,
+            "best_similarity": 0.8599,
+            "best_concept": "punishment for adultery",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8599,
+            "score_before_pre_rerank": 0.369444,
+            "score_after_pre_rerank": 0.457726
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S325_BODY",
+          "score": 0.454226,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 325,
+          "citation": "Section 325",
+          "text": "Whoever commits mischief by killing, poisoning, maiming or rendering useless any animal shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both. Mischief by injury, inundation, fire or explosive substance, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 325: Mischief by killing or maiming animal.\nWhoever commits mischief by killing, poisoning, maiming or rendering useless any animal shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both. Mischief by injury, inundation, fire or explosive substance, etc.",
+          "keywords": [
+            "mischief",
+            "killing",
+            "maiming",
+            "animal",
+            "whoever",
+            "commits",
+            "poisoning",
+            "rendering",
+            "useless",
+            "punished",
+            "animal harm"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishment for mischief"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.6960352957248688,
+            "original:semrank_pre_rerank": 0.8556,
+            "semrank_pre_rerank": 0.8556
+          },
+          "query_scores": {
+            "original": 0.36611911709341893
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.696,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8556,
+                "weighted_score": 0.8556
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "punishment for mischief",
+                "source": "legal_concept",
+                "similarity": 0.8382,
+                "weighted_score": 0.8382
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "animal harm",
+                "source": "keyword",
+                "similarity": 0.928,
+                "weighted_score": 0.696
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "animal",
+                "source": "keyword",
+                "similarity": 0.8941,
+                "weighted_score": 0.6706
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "maiming",
+                "source": "keyword",
+                "similarity": 0.8805,
+                "weighted_score": 0.6604
+              }
+            ],
+            "score": 0.8556,
+            "best_similarity": 0.8556,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8556,
+            "score_before_pre_rerank": 0.366119,
+            "score_after_pre_rerank": 0.454226
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S131_BODY",
+          "score": 0.44941,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 131,
+          "citation": "Section 131",
+          "text": "Whoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nWhoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+          "keywords": [
+            "criminal",
+            "force",
+            "grave",
+            "provocation",
+            "extend",
+            "body",
+            "whoever",
+            "assaults",
+            "uses",
+            "sudden",
+            "assault",
+            "criminal force",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "punishment for assault"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6881421804428101,
+            "original:semrank_pre_rerank": 0.8489,
+            "semrank_pre_rerank": 0.8489
+          },
+          "query_scores": {
+            "original": 0.3617167566298879
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "score": 0.8489,
+            "best_similarity": 0.8489,
+            "best_concept": "assault",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "assault",
+                "source": "legal_concept",
+                "similarity": 0.8489,
+                "weighted_score": 0.8489
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "punishment for assault",
+                "source": "legal_concept",
+                "similarity": 0.8478,
+                "weighted_score": 0.8478
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "criminal force",
+                "source": "legal_concept",
+                "similarity": 0.8137,
+                "weighted_score": 0.8137
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "uses",
+                "source": "keyword",
+                "similarity": 0.8912,
+                "weighted_score": 0.6684
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.8739,
+                "weighted_score": 0.6554
+              }
+            ],
+            "pre_rerank_score": 0.8489,
+            "score_before_pre_rerank": 0.361717,
+            "score_after_pre_rerank": 0.44941
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S86_BODY",
+          "score": 0.443738,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 86,
+          "citation": "Section 86",
+          "text": "For the purposes of section 85, “cruelty” means—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 86: Cruelty defined.\nFor the purposes of section 85, “cruelty” means—",
+          "keywords": [
+            "cruelty",
+            "purposes",
+            "means",
+            "defined",
+            "offences",
+            "against",
+            "woman",
+            "child",
+            "body"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6813048124313354,
+            "original:bm25": 0.46142533947152103,
+            "original:semrank": 0.7499999105930328,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.37650921875247856
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "cruelty",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "defined",
+                "source": "keyword",
+                "similarity": 0.8852,
+                "weighted_score": 0.6639
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "means",
+                "source": "keyword",
+                "similarity": 0.8787,
+                "weighted_score": 0.6591
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "offences",
+                "source": "keyword",
+                "similarity": 0.8641,
+                "weighted_score": 0.6481
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "against",
+                "source": "keyword",
+                "similarity": 0.8631,
+                "weighted_score": 0.6473
+              }
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "cruelty",
+            "best_concept_source": "keyword",
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.376509,
+            "score_after_pre_rerank": 0.443738
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S85_BODY",
+          "score": 0.99717,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 85,
+          "citation": "Section 85",
+          "text": "Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Cruelty defined.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 85: Husband or relative of husband of a woman subjecting her to cruelty.\nWhoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Cruelty defined.",
+          "keywords": [
+            "husband",
+            "woman",
+            "cruelty",
+            "relative",
+            "whoever",
+            "subjects",
+            "punished",
+            "imprisonment",
+            "term",
+            "extend",
+            "punishable"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "subjecting to cruelty"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 0.9704,
+            "semrank_pre_rerank": 0.9704
+          },
+          "query_scores": {
+            "original": 0.9978688
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9704,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "subjecting to cruelty",
+                "source": "legal_concept",
+                "similarity": 0.9704,
+                "weighted_score": 0.9704
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 0.8349,
+                "weighted_score": 0.8349
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "cruelty",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "husband",
+                "chunk_concept": "husband",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "relative",
+                "source": "keyword",
+                "similarity": 0.928,
+                "weighted_score": 0.696
+              }
+            ],
+            "score": 0.9704,
+            "best_similarity": 0.9704,
+            "best_concept": "subjecting to cruelty",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9704,
+            "score_before_pre_rerank": 0.997869,
+            "score_after_pre_rerank": 0.992924
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S84_BODY",
+          "score": 0.738962,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 84,
+          "citation": "Section 84",
+          "text": "Whoever takes or entices away any woman who is and whom he knows or has reason to believe to be the wife of any other man, with intent that she may have illicit intercourse with any person, or conceals or detains with that intent any such woman, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Husband or relative of husband of a woman subjecting her to cruelty.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 84: Enticing or taking away or detaining with criminal intent a married woman.\nWhoever takes or entices away any woman who is and whom he knows or has reason to believe to be the wife of any other man, with intent that she may have illicit intercourse with any person, or conceals or detains with that intent any such woman, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Husband or relative of husband of a woman subjecting her to cruelty.",
+          "keywords": [
+            "woman",
+            "intent",
+            "away",
+            "husband",
+            "whoever",
+            "takes",
+            "entices",
+            "knows",
+            "reason",
+            "believe",
+            "married woman",
+            "criminal intent"
+          ],
+          "legal_concepts": [
+            "enticing a married woman",
+            "criminal intent"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6907957792282104,
+            "original:bm25": 0.4444897183333493,
+            "original:semrank": 0.7500000894069672,
+            "original:semrank_pre_rerank": 0.8534,
+            "semrank_pre_rerank": 0.8534
+          },
+          "query_scores": {
+            "original": 0.7915162173318036
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "husband",
+                "chunk_concept": "enticing a married woman",
+                "source": "legal_concept",
+                "similarity": 0.8534,
+                "weighted_score": 0.8534
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "criminal intent",
+                "source": "legal_concept",
+                "similarity": 0.846,
+                "weighted_score": 0.846
+              },
+              {
+                "query_concept": "husband",
+                "chunk_concept": "husband",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "husband",
+                "chunk_concept": "married woman",
+                "source": "keyword",
+                "similarity": 0.8987,
+                "weighted_score": 0.674
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "knows",
+                "source": "keyword",
+                "similarity": 0.8708,
+                "weighted_score": 0.6531
+              }
+            ],
+            "score": 0.8534,
+            "best_similarity": 0.8534,
+            "best_concept": "enticing a married woman",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8534,
+            "score_before_pre_rerank": 0.791516,
+            "score_after_pre_rerank": 0.802655
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S80_N1",
+          "score": 0.432959,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 80,
+          "citation": "Section 80",
+          "text": "Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 80: Dowry death.\nWhere the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death.",
+          "keywords": [
+            "death",
+            "husband",
+            "dowry",
+            "woman",
+            "caused",
+            "relative",
+            "burns",
+            "bodily",
+            "injury",
+            "occurs",
+            "dowry death",
+            "cruelty",
+            "harassment"
+          ],
+          "legal_concepts": [
+            "dowry death",
+            "cruelty by husband or relative"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 0.5670836897832521,
+            "original:semrank": 0.9437835216522217,
+            "original:semrank_pre_rerank": 0.9438,
+            "semrank_pre_rerank": 0.9438
+          },
+          "query_scores": {
+            "original": 0.5730173895524928
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9438,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "what is the punishment for cruelty by husband or relatives",
+                "chunk_concept": "cruelty by husband or relative",
+                "source": "legal_concept",
+                "similarity": 0.9438,
+                "weighted_score": 0.9438
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "dowry death",
+                "source": "legal_concept",
+                "similarity": 0.8338,
+                "weighted_score": 0.8338
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "cruelty",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "husband",
+                "chunk_concept": "husband",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "relative",
+                "source": "keyword",
+                "similarity": 0.928,
+                "weighted_score": 0.696
+              }
+            ],
+            "score": 0.9438,
+            "best_similarity": 0.9438,
+            "best_concept": "cruelty by husband or relative",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9438,
+            "score_before_pre_rerank": 0.573017,
+            "score_after_pre_rerank": 0.639758
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S80_N1_EXP1",
+          "score": 0.40726,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 80,
+          "citation": "Section 80",
+          "text": "For the purposes of this sub-section, “dowry” shall have the same meaning as in section 2 of the Dowry Prohibition Act, 1961.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 80: Dowry death.\nWhere the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death.\nFor the purposes of this sub-section, “dowry” shall have the same meaning as in section 2 of the Dowry Prohibition Act, 1961.",
+          "keywords": [
+            "dowry",
+            "purposes",
+            "sub-section",
+            "meaning",
+            "prohibition",
+            "death",
+            "offences",
+            "against",
+            "woman",
+            "child",
+            "dowry death",
+            "cruelty",
+            "harassment"
+          ],
+          "legal_concepts": [
+            "dowry prohibition act, 1961",
+            "section 2 of the dowry prohibition act, 1961"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 0.4881075712720398,
+            "original:semrank": 0.7499999105930328,
+            "original:semrank_pre_rerank": 0.7566,
+            "semrank_pre_rerank": 0.7566
+          },
+          "query_scores": {
+            "original": 0.5276710974046985
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "dowry prohibition act, 1961",
+                "source": "legal_concept",
+                "similarity": 0.7566,
+                "weighted_score": 0.7566
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "cruelty",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "section 2 of the dowry prohibition act, 1961",
+                "source": "legal_concept",
+                "similarity": 0.75,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "meaning",
+                "source": "keyword",
+                "similarity": 0.8926,
+                "weighted_score": 0.6695
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "offences",
+                "source": "keyword",
+                "similarity": 0.8641,
+                "weighted_score": 0.6481
+              }
+            ],
+            "score": 0.7566,
+            "best_similarity": 0.7566,
+            "best_concept": "dowry prohibition act, 1961",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.7566,
+            "score_before_pre_rerank": 0.527671,
+            "score_after_pre_rerank": 0.568878
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S86_B",
+          "score": 0.200491,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 86,
+          "citation": "Section 86",
+          "text": "harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand. Kidnapping, abducting or inducing woman to compel her marriage, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 86: Cruelty defined.\nharassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand. Kidnapping, abducting or inducing woman to compel her marriage, etc.",
+          "keywords": [
+            "woman",
+            "harassment",
+            "related",
+            "meet",
+            "demand",
+            "view",
+            "coercing",
+            "unlawful",
+            "property",
+            "valuable",
+            "coercion",
+            "unlawful demand"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "cruelty definition"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7213232517242432,
+            "original:bm25": 0.1124888454683262,
+            "original:semrank": 0.9934299488777538,
+            "original:semrank_pre_rerank": 0.9686,
+            "semrank_pre_rerank": 0.9686
+          },
+          "query_scores": {
+            "original": 0.39796956569031616
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9686,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "cruelty definition",
+                "source": "legal_concept",
+                "similarity": 0.9686,
+                "weighted_score": 0.9686
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 0.8349,
+                "weighted_score": 0.8349
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "related",
+                "source": "keyword",
+                "similarity": 0.9247,
+                "weighted_score": 0.6935
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "meet",
+                "source": "keyword",
+                "similarity": 0.8826,
+                "weighted_score": 0.662
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "property",
+                "source": "keyword",
+                "similarity": 0.8677,
+                "weighted_score": 0.6508
+              }
+            ],
+            "score": 0.9686,
+            "best_similarity": 0.9686,
+            "best_concept": "cruelty definition",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9686,
+            "score_before_pre_rerank": 0.39797,
+            "score_after_pre_rerank": 0.500683
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S3_N3",
+          "score": 0.193662,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "PRELIMINARY",
+          "section_number": 3,
+          "citation": "Section 3",
+          "text": "When property is in the possession of a person’s spouse, clerk or servant, on account of that person, it is in that person’s possession within the meaning of this Sanhita.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 1: PRELIMINARY\nSection 3: General explanations.\nWhen property is in the possession of a person’s spouse, clerk or servant, on account of that person, it is in that person’s possession within the meaning of this Sanhita.",
+          "keywords": [
+            "possession",
+            "property",
+            "spouse",
+            "clerk",
+            "servant",
+            "account",
+            "meaning",
+            "explanations",
+            "preliminary"
+          ],
+          "legal_concepts": [
+            "possession of property",
+            "spousal possession"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9002376198768616,
+            "original:semrank_pre_rerank": 0.9002,
+            "semrank_pre_rerank": 0.9002
+          },
+          "query_scores": {
+            "original": 0.39282676848391695
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9002,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "husband",
+                "chunk_concept": "spousal possession",
+                "source": "legal_concept",
+                "similarity": 0.9002,
+                "weighted_score": 0.9002
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "possession of property",
+                "source": "legal_concept",
+                "similarity": 0.8563,
+                "weighted_score": 0.8563
+              },
+              {
+                "query_concept": "husband",
+                "chunk_concept": "spouse",
+                "source": "keyword",
+                "similarity": 0.9402,
+                "weighted_score": 0.7052
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "preliminary",
+                "source": "keyword",
+                "similarity": 0.8981,
+                "weighted_score": 0.6736
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "meaning",
+                "source": "keyword",
+                "similarity": 0.8926,
+                "weighted_score": 0.6695
+              }
+            ],
+            "score": 0.9002,
+            "best_similarity": 0.9002,
+            "best_concept": "spousal possession",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9002,
+            "score_before_pre_rerank": 0.392827,
+            "score_after_pre_rerank": 0.484154
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S67_BODY",
+          "score": 0.184347,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 67,
+          "citation": "Section 67",
+          "text": "Whoever has sexual intercourse with his own wife, who is living separately, whether under a decree of separation or otherwise, without her consent, shall be punished with imprisonment of either description for a term which shall not be less than two years but which may extend to seven years, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 67: Sexual intercourse by husband upon his wife during separation.\nWhoever has sexual intercourse with his own wife, who is living separately, whether under a decree of separation or otherwise, without her consent, shall be punished with imprisonment of either description for a term which shall not be less than two years but which may extend to seven years, and shall also be liable to fine.",
+          "keywords": [
+            "sexual",
+            "intercourse",
+            "wife",
+            "separation",
+            "years",
+            "whoever",
+            "living",
+            "separately",
+            "whether",
+            "decree",
+            "sexual intercourse",
+            "separated wife"
+          ],
+          "legal_concepts": [
+            "offence against woman",
+            "punishment for adultery"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6835862398147583,
+            "original:bm25": 0.06666666666666667,
+            "original:semrank": 0.7000656723976135,
+            "original:semrank_pre_rerank": 0.8599,
+            "semrank_pre_rerank": 0.8599
+          },
+          "query_scores": {
+            "original": 0.36944421171952324
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.7001,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "what is the punishment for cruelty by husband or relatives",
+                "chunk_concept": "punishment for adultery",
+                "source": "legal_concept",
+                "similarity": 0.8599,
+                "weighted_score": 0.8599
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "offence against woman",
+                "source": "legal_concept",
+                "similarity": 0.8349,
+                "weighted_score": 0.8349
+              },
+              {
+                "query_concept": "husband",
+                "chunk_concept": "wife",
+                "source": "keyword",
+                "similarity": 0.9334,
+                "weighted_score": 0.7001
+              },
+              {
+                "query_concept": "husband",
+                "chunk_concept": "separated wife",
+                "source": "keyword",
+                "similarity": 0.8897,
+                "weighted_score": 0.6673
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "whether",
+                "source": "keyword",
+                "similarity": 0.8842,
+                "weighted_score": 0.6631
+              }
+            ],
+            "score": 0.8599,
+            "best_similarity": 0.8599,
+            "best_concept": "punishment for adultery",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8599,
+            "score_before_pre_rerank": 0.369444,
+            "score_after_pre_rerank": 0.457726
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S325_BODY",
+          "score": 0.181898,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 325,
+          "citation": "Section 325",
+          "text": "Whoever commits mischief by killing, poisoning, maiming or rendering useless any animal shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both. Mischief by injury, inundation, fire or explosive substance, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 325: Mischief by killing or maiming animal.\nWhoever commits mischief by killing, poisoning, maiming or rendering useless any animal shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both. Mischief by injury, inundation, fire or explosive substance, etc.",
+          "keywords": [
+            "mischief",
+            "killing",
+            "maiming",
+            "animal",
+            "whoever",
+            "commits",
+            "poisoning",
+            "rendering",
+            "useless",
+            "punished",
+            "animal harm"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "punishment for mischief"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.6960352957248688,
+            "original:semrank_pre_rerank": 0.8556,
+            "semrank_pre_rerank": 0.8556
+          },
+          "query_scores": {
+            "original": 0.36611911709341893
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.696,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8556,
+                "weighted_score": 0.8556
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "punishment for mischief",
+                "source": "legal_concept",
+                "similarity": 0.8382,
+                "weighted_score": 0.8382
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "animal harm",
+                "source": "keyword",
+                "similarity": 0.928,
+                "weighted_score": 0.696
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "animal",
+                "source": "keyword",
+                "similarity": 0.8941,
+                "weighted_score": 0.6706
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "maiming",
+                "source": "keyword",
+                "similarity": 0.8805,
+                "weighted_score": 0.6604
+              }
+            ],
+            "score": 0.8556,
+            "best_similarity": 0.8556,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.8556,
+            "score_before_pre_rerank": 0.366119,
+            "score_after_pre_rerank": 0.454226
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S131_BODY",
+          "score": 0.179817,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 131,
+          "citation": "Section 131",
+          "text": "Whoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 131: Punishment for assault or criminal force otherwise than on grave provocation.\nWhoever assaults or uses criminal force to any person otherwise than on grave and sudden provocation given by that person, shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to one thousand rupees, or with both.",
+          "keywords": [
+            "criminal",
+            "force",
+            "grave",
+            "provocation",
+            "extend",
+            "body",
+            "whoever",
+            "assaults",
+            "uses",
+            "sudden",
+            "assault",
+            "criminal force",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "assault",
+            "criminal force",
+            "punishment for assault"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6881421804428101,
+            "original:semrank_pre_rerank": 0.8489,
+            "semrank_pre_rerank": 0.8489
+          },
+          "query_scores": {
+            "original": 0.3617167566298879
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "score": 0.8489,
+            "best_similarity": 0.8489,
+            "best_concept": "assault",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "assault",
+                "source": "legal_concept",
+                "similarity": 0.8489,
+                "weighted_score": 0.8489
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "punishment for assault",
+                "source": "legal_concept",
+                "similarity": 0.8478,
+                "weighted_score": 0.8478
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "criminal force",
+                "source": "legal_concept",
+                "similarity": 0.8137,
+                "weighted_score": 0.8137
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "uses",
+                "source": "keyword",
+                "similarity": 0.8912,
+                "weighted_score": 0.6684
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.8739,
+                "weighted_score": 0.6554
+              }
+            ],
+            "pre_rerank_score": 0.8489,
+            "score_before_pre_rerank": 0.361717,
+            "score_after_pre_rerank": 0.44941
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S86_BODY",
+          "score": 0.177504,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 86,
+          "citation": "Section 86",
+          "text": "For the purposes of section 85, “cruelty” means—",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 86: Cruelty defined.\nFor the purposes of section 85, “cruelty” means—",
+          "keywords": [
+            "cruelty",
+            "purposes",
+            "means",
+            "defined",
+            "offences",
+            "against",
+            "woman",
+            "child",
+            "body"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6813048124313354,
+            "original:bm25": 0.46142533947152103,
+            "original:semrank": 0.7499999105930328,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.37650921875247856
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.75,
+            "query_concepts": [
+              "cruelty",
+              "husband",
+              "relatives",
+              "what is the punishment for cruelty by husband or relatives"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "cruelty",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "defined",
+                "source": "keyword",
+                "similarity": 0.8852,
+                "weighted_score": 0.6639
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "means",
+                "source": "keyword",
+                "similarity": 0.8787,
+                "weighted_score": 0.6591
+              },
+              {
+                "query_concept": "cruelty",
+                "chunk_concept": "offences",
+                "source": "keyword",
+                "similarity": 0.8641,
+                "weighted_score": 0.6481
+              },
+              {
+                "query_concept": "relatives",
+                "chunk_concept": "against",
+                "source": "keyword",
+                "similarity": 0.8631,
+                "weighted_score": 0.6473
+              }
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "cruelty",
+            "best_concept_source": "keyword",
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.376509,
+            "score_after_pre_rerank": 0.443738
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    },
+    "phase11": {
+      "answer_type": "legal penalty",
+      "support_status": "supported",
+      "confidence": {
+        "score": 0.979,
+        "label": "high"
+      },
+      "final_answer": "The punishment for cruelty by husband or relatives is imprisonment for up to three years and a fine.",
+      "summary_answer": "The punishment for cruelty by a husband or relatives is imprisonment for a term that may extend to three years and a fine.",
+      "detailed_answer": "According to Section 85 of the Bharatiya Nyaya Sanhita, 2023, any husband or relative of a husband who subjects a woman to cruelty shall face imprisonment for a term that may extend to three years, along with a liability to pay a fine.",
+      "citations": [
+        "Section 85 Body, Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "matched_sections": [
+        "Section 85",
+        "Section 84",
+        "Section 80",
+        "Section 86"
+      ],
+      "missing_sections": [],
+      "missing_from_corpus": [],
+      "selected_chunk_ids": [
+        "chunk__node__BNS_S85_BODY"
+      ],
+      "warnings": [],
+      "structured_reasoning": {
+        "base_concept": "",
+        "selected_section": "Section 85",
+        "selection_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "overrides_score_selection": false,
+        "uncertainty": "low",
+        "uncertainty_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "alternative_sections": [
+          "Section 84",
+          "Section 80",
+          "Section 86"
+        ],
+        "sections_analyzed": [
+          {
+            "section": "Section 85",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine.",
+            "condition_match_score": 0.99717,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "cruelty ~ subjecting to cruelty",
+              "cruelty ~ offence against woman",
+              "cruelty ~ cruelty",
+              "husband ~ husband",
+              "relatives ~ relative"
+            ],
+            "raw_retrieval_score": 0.99717,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 84",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever takes or entices away any woman who is and whom he knows or has reason to believe to be the wife of any other man, with intent that she may have illicit intercourse with any person, or conceals or detains with that intent any such woman, shall be...",
+            "condition_match_score": 0.738962,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "husband ~ enticing a married woman",
+              "cruelty ~ criminal intent",
+              "husband ~ husband",
+              "husband ~ married woman",
+              "relatives ~ knows"
+            ],
+            "raw_retrieval_score": 0.738962,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 80",
+            "role": "retrieved_evidence",
+            "condition_summary": "Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or...",
+            "condition_match_score": 0.432959,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "what is the punishment for cruelty by husband or relatives ~ cruelty by husband or relative",
+              "cruelty ~ dowry death",
+              "cruelty ~ cruelty",
+              "husband ~ husband",
+              "relatives ~ relative"
+            ],
+            "raw_retrieval_score": 0.432959,
+            "hit_count": 2,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 86",
+            "role": "retrieved_evidence",
+            "condition_summary": "harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand.",
+            "condition_match_score": 0.200491,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "cruelty ~ cruelty definition",
+              "cruelty ~ offence against woman",
+              "relatives ~ related",
+              "relatives ~ meet",
+              "relatives ~ property"
+            ],
+            "raw_retrieval_score": 0.200491,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          }
+        ]
+      },
+      "validation": {
+        "requested_sections": [],
+        "present_in_corpus": [],
+        "retrieved_exact_matches": [],
+        "missing_from_corpus": [],
+        "intent_alignment": "strong",
+        "intent_notes": [
+          "Application intent has a direct rule chunk to anchor the answer."
+        ],
+        "answer_verified": true,
+        "verification_issues": [],
+        "llm_answer_verified": true,
+        "llm_verification_issues": [],
+        "completeness": "complete",
+        "guardrail_grounding_strength": 1.0,
+        "repaired": false,
+        "fallback_used": false
+      },
+      "evidence": {
+        "primary_chunk_id": "chunk__node__BNS_S85_BODY",
+        "primary_chunk_type": "content",
+        "primary_section": "Section 85",
+        "primary_section_title": "Husband or relative of husband of a woman subjecting her to cruelty.",
+        "related_chunk_ids": [],
+        "top_sections": [
+          {
+            "section": "Section 85",
+            "section_title": "Husband or relative of husband of a woman subjecting her to cruelty.",
+            "hit_count": 1,
+            "best_score": 0.99717,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.0
+          },
+          {
+            "section": "Section 86",
+            "section_title": "Cruelty defined.",
+            "hit_count": 1,
+            "best_score": 0.200491,
+            "chunk_types": {
+              "clause": 1
+            },
+            "semantic_relevance": 0.9934,
+            "concept_coverage": 0.0
+          },
+          {
+            "section": "Section 80",
+            "section_title": "Dowry death.",
+            "hit_count": 2,
+            "best_score": 0.432959,
+            "chunk_types": {
+              "subsection": 1,
+              "explanation": 1
+            },
+            "semantic_relevance": 0.9438,
+            "concept_coverage": 0.0
+          },
+          {
+            "section": "Section 84",
+            "section_title": "Enticing or taking away or detaining with criminal intent a married woman.",
+            "hit_count": 1,
+            "best_score": 0.738962,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 0.8534,
+            "concept_coverage": 0.0
+          }
+        ],
+        "llm_evidence": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S85_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": "85",
+            "citation": "Section 85 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. Cruelty defined."
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S84_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": "84",
+            "citation": "Section 84 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever takes or entices away any woman who is and whom he knows or has reason to believe to be the wife of any other man, with intent that she may have illicit intercourse with any person, or conceals or detains with that intent any such woman, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Husband or relative of husband of a woman subjecting her to cruelty."
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S80_N1",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": "80",
+            "citation": "Section 80(1), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Where the death of a woman is caused by any burns or bodily injury or occurs otherwise than under normal circumstances within seven years of her marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called “dowry death”, and such husband or relative shall be deemed to have caused her death."
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S80_N1_EXP1",
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": "80",
+            "citation": "Section 80(1) Explanation, Bharatiya Nyaya Sanhita, 2023",
+            "text": "For the purposes of this sub-section, “dowry” shall have the same meaning as in section 2 of the Dowry Prohibition Act, 1961."
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S86_B",
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": "86",
+            "citation": "Section 86(b), Bharatiya Nyaya Sanhita, 2023",
+            "text": "harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand. Kidnapping, abducting or inducing woman to compel her marriage, etc."
+          }
+        ]
+      },
+      "llm_generation": {
+        "enabled": true,
+        "used": true,
+        "model": "gpt-4o-mini",
+        "reasoning_trace": [],
+        "caution_notes": [],
+        "error": null,
+        "repaired": false,
+        "fallback_used": false
+      }
+    }
+  }
+]

@@ -1,0 +1,193 @@
+{
+  "query_id": "Q009",
+  "query": "What does Section 32 say about being forced by threats?",
+  "query_type": "direct_section_lookup",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "32"
+  ],
+  "acceptable_sections": [],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "32",
+    "32",
+    "32",
+    "32",
+    "211"
+  ],
+  "candidate_sections_at_10": [
+    "32",
+    "32",
+    "32",
+    "32",
+    "211",
+    "264",
+    "210",
+    "261",
+    "259",
+    "254"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "32",
+    "32",
+    "32",
+    "211",
+    "264"
+  ],
+  "cited_sections": [
+    "32"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "32"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "32"
+    ],
+    "support_precision_at_k": 0.5,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "211"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "32"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "32"
+    ],
+    "support_precision_at_k": 0.1429,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "211",
+      "264",
+      "210",
+      "261",
+      "259",
+      "254"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "32"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "32"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "211",
+      "264"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.6667,
+    "required_points_matched": 2,
+    "required_points_total": 3,
+    "answer_completeness_score": 0.6667,
+    "soft_answer_score": 0.9167,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 3,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Section 32 provides that except for murder and offences against the State punishable with death, nothing is an offence done by a person compelled by threats that reasonably cause the apprehension that instant death will otherwise be the consequence.",
+        "matched": true,
+        "overlap": 0.7143,
+        "matched_terms": [
+          "apprehension",
+          "cause",
+          "compelled",
+          "death",
+          "instant",
+          "murder",
+          "punishable",
+          "reasonably",
+          "state",
+          "threats"
+        ]
+      },
+      {
+        "point": "The person must not have voluntarily placed himself in the situation by which he became subject to such constraint.",
+        "matched": false,
+        "overlap": 0.4286,
+        "matched_terms": [
+          "placed",
+          "situation",
+          "voluntarily"
+        ]
+      },
+      {
+        "point": "The defence does not apply to murder or offences against the State punishable with death.",
+        "matched": true,
+        "overlap": 0.8333,
+        "matched_terms": [
+          "apply",
+          "death",
+          "murder",
+          "punishable",
+          "state"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "32"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.7698,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": true,
+  "failure_reasons": [],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 0.0724,
+    "phase_9_10": 28.5263,
+    "phase_11": 21.1015,
+    "phase_12_13": 0.0002,
+    "total": 49.7004
+  },
+  "final_answer_preview": "According to Section 32 of the Bharatiya Nyaya Sanhita, 2023, a person who is compelled to act by threats that reasonably cause the apprehension of instant death is not committing an offence, with the exception of murder and offences against the State punishable by death. However, this provision does not apply if the person voluntarily placed themselves in a situation where they could be subjected to such threats. For instance, a person who joins a gang of dacoits knowing their character cannot claim this exception, while a person forced by a gang under threat of instant death to commit an offence may be entitled to this exception.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/009_Q009"
+}

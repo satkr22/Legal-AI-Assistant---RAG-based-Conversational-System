@@ -1,0 +1,223 @@
+{
+  "query_id": "Q063",
+  "query": "A person used a fake seal to create a legal-looking document. What offence may apply?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "341"
+  ],
+  "acceptable_sections": [
+    "336",
+    "338"
+  ],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "341",
+    "335",
+    "340",
+    "341",
+    "340"
+  ],
+  "candidate_sections_at_10": [
+    "341",
+    "335",
+    "340",
+    "341",
+    "340",
+    "335",
+    "348",
+    "258",
+    "2",
+    "184"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "341",
+    "341",
+    "335",
+    "340",
+    "340"
+  ],
+  "cited_sections": [
+    "341",
+    "340"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "341"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "341"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "335",
+      "340",
+      "340"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "341"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "341"
+    ],
+    "support_precision_at_k": 0.1429,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "335",
+      "340",
+      "340",
+      "335",
+      "348",
+      "258",
+      "2",
+      "184"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "341"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "341"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "335",
+      "340",
+      "340"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.5,
+    "required_points_matched": 1,
+    "required_points_total": 2,
+    "answer_completeness_score": 0.5,
+    "soft_answer_score": 0.825,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 1.0,
+    "forbidden_contradiction_skips": [
+      {
+        "point": "Using a fake seal is only a minor infraction.",
+        "sentence": "The act of using a fake seal to create a legal-looking document can fall under several provisions of the Bharatiya Nyaya Sanhita, 2023.",
+        "overlap": 0.6,
+        "threshold": 0.9,
+        "matched_terms": [
+          "fake",
+          "seal",
+          "using"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      },
+      {
+        "point": "Only government officials can commit seal-related forgery offences.",
+        "sentence": "Specifically, Section 341(1) addresses the making or counterfeiting of any seal with the intent to commit forgery, which is punishable with imprisonment for life or up to seven years, along with a fine.",
+        "overlap": 0.5,
+        "threshold": 0.9,
+        "matched_terms": [
+          "commit",
+          "forgery",
+          "seal"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      }
+    ],
+    "required_point_details": [
+      {
+        "point": "Section 341 provides that whoever makes or counterfeits any seal, plate or other instrument for making an impression intending it for committing forgery punishable under Section 338, or possesses such instrument knowing it to be counterfeit, shall be punished with imprisonment for life or imprisonment up to seven years, and also fine.",
+        "matched": false,
+        "overlap": 0.4167,
+        "matched_terms": [
+          "341",
+          "fine",
+          "forgery",
+          "imprisonment",
+          "life",
+          "making",
+          "punishable",
+          "seal",
+          "seven",
+          "years"
+        ]
+      },
+      {
+        "point": "Using a fake seal to create a legal-looking document also constitutes forgery under Section 336.",
+        "matched": true,
+        "overlap": 0.7778,
+        "matched_terms": [
+          "create",
+          "document",
+          "fake",
+          "forgery",
+          "looking",
+          "seal",
+          "using"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 0.5,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "341"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [
+      "340"
+    ],
+    "faithfulness": 1.0,
+    "claims": 2,
+    "supported_claims": 2,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "low_required_point_coverage"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 8.4675,
+    "phase_9_10": 17.3431,
+    "phase_11": 13.7208,
+    "phase_12_13": 0.0004,
+    "total": 39.5317
+  },
+  "final_answer_preview": "The act of using a fake seal to create a legal-looking document can fall under several provisions of the Bharatiya Nyaya Sanhita, 2023. Specifically, Section 341(1) addresses the making or counterfeiting of any seal with the intent to commit forgery, which is punishable with imprisonment for life or up to seven years, along with a fine. Additionally, Section 340(2) states that using a forged document as genuine is punishable in the same manner as if the document were forged. Therefore, both the act of counterfeiting the seal and the subsequent use of the forged document could lead to serious legal consequences.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/063_Q063"
+}

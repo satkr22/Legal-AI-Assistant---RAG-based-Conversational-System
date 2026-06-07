@@ -1,0 +1,3586 @@
+[
+  {
+    "query": "What is consent under fear or misconception?",
+    "phase8": {
+      "query": "What is consent under fear or misconception?",
+      "intent": {
+        "primary": "definition",
+        "secondary": []
+      },
+      "concepts": [
+        "valid consent",
+        "fear or misconception"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.6983,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.25,
+        "structure_validity": 1.0,
+        "overall": 0.7293
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is consent under fear or misconception?",
+          "targets": [],
+          "concepts": [
+            "valid consent",
+            "fear or misconception"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S28_B",
+            "score": 1.0,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 28,
+            "citation": "Section 28",
+            "text": "if the consent is given by a person who, from unsoundness of mind, or intoxication, is unable to understand the nature and consequence of that to which he gives his consent; or",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 28: Consent known to be given under fear or misconception.\nif the consent is given by a person who, from unsoundness of mind, or intoxication, is unable to understand the nature and consequence of that to which he gives his consent; or",
+            "keywords": [
+              "consent",
+              "given",
+              "unsoundness",
+              "mind",
+              "intoxication",
+              "unable",
+              "understand",
+              "nature",
+              "consequence",
+              "gives",
+              "invalid_consent",
+              "unsound_mind"
+            ],
+            "legal_concepts": [
+              "consent",
+              "fear",
+              "misconception"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7953667640686035,
+              "bm25": 0.6842651643057779,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "valid consent",
+                "fear or misconception",
+                "consent",
+                "under",
+                "fear",
+                "misconception"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "consent",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "fear",
+                  "chunk_concept": "fear",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "misconception",
+                  "chunk_concept": "misconception",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "given",
+                  "source": "keyword",
+                  "similarity": 0.9215,
+                  "weighted_score": 0.6912
+                },
+                {
+                  "query_concept": "valid consent",
+                  "chunk_concept": "invalid_consent",
+                  "source": "keyword",
+                  "similarity": 0.9064,
+                  "weighted_score": 0.6798
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "consent",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S28_A",
+            "score": 0.990553,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 28,
+            "citation": "Section 28",
+            "text": "if the consent is given by a person under fear of injury, or under a misconception of fact, and if the person doing the act knows, or has reason to believe, that the consent was given in consequence of such fear or misconception; or",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 28: Consent known to be given under fear or misconception.\nif the consent is given by a person under fear of injury, or under a misconception of fact, and if the person doing the act knows, or has reason to believe, that the consent was given in consequence of such fear or misconception; or",
+            "keywords": [
+              "consent",
+              "given",
+              "fear",
+              "misconception",
+              "injury",
+              "fact",
+              "doing",
+              "knows",
+              "reason",
+              "believe"
+            ],
+            "legal_concepts": [
+              "consent",
+              "fear",
+              "misconception"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 1.0,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "valid consent",
+                "fear or misconception",
+                "consent",
+                "under",
+                "fear",
+                "misconception"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "consent",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "fear",
+                  "chunk_concept": "fear",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "misconception",
+                  "chunk_concept": "misconception",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "given",
+                  "source": "keyword",
+                  "similarity": 0.9215,
+                  "weighted_score": 0.6912
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "doing",
+                  "source": "keyword",
+                  "similarity": 0.8995,
+                  "weighted_score": 0.6746
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "consent",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S28_BODY",
+            "score": 0.944009,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 28,
+            "citation": "Section 28",
+            "text": "A consent is not such a consent as is intended by any section of this Sanhita,–",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 28: Consent known to be given under fear or misconception.\nA consent is not such a consent as is intended by any section of this Sanhita,–",
+            "keywords": [
+              "consent",
+              "intended",
+              "known",
+              "given",
+              "fear",
+              "misconception",
+              "exceptions",
+              "body"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7992540597915649,
+              "bm25": 0.7874638642717733,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.7992540597915649
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "valid consent",
+                "fear or misconception",
+                "consent",
+                "under",
+                "fear",
+                "misconception"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "consent",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "consent",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "fear",
+                  "chunk_concept": "fear",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "misconception",
+                  "chunk_concept": "misconception",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "given",
+                  "source": "keyword",
+                  "similarity": 0.9215,
+                  "weighted_score": 0.6912
+                },
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "body",
+                  "source": "keyword",
+                  "similarity": 0.8937,
+                  "weighted_score": 0.6703
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.955
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S28_C",
+            "score": 0.868847,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 28,
+            "citation": "Section 28",
+            "text": "unless the contrary appears from the context, if the consent is given by a person who is under twelve years of age. Exclusion of acts which are offences independently of harm caused.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 28: Consent known to be given under fear or misconception.\nunless the contrary appears from the context, if the consent is given by a person who is under twelve years of age. Exclusion of acts which are offences independently of harm caused.",
+            "keywords": [
+              "consent",
+              "given",
+              "contrary",
+              "appears",
+              "context",
+              "twelve",
+              "years",
+              "exclusion",
+              "acts",
+              "offences"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7683471441268921,
+              "bm25": 0.6426923512363912,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.7683471441268921
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "conditional_clause_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "valid consent",
+                "fear or misconception",
+                "consent",
+                "under",
+                "fear",
+                "misconception"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "consent",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "consent",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "given",
+                  "source": "keyword",
+                  "similarity": 0.9215,
+                  "weighted_score": 0.6912
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "context",
+                  "source": "keyword",
+                  "similarity": 0.8937,
+                  "weighted_score": 0.6703
+                },
+                {
+                  "query_concept": "misconception",
+                  "chunk_concept": "contrary",
+                  "source": "keyword",
+                  "similarity": 0.89,
+                  "weighted_score": 0.6675
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "twelve",
+                  "source": "keyword",
+                  "similarity": 0.887,
+                  "weighted_score": 0.6652
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.784867,
+              "score_after_pre_rerank": 0.778591
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S27_ILL1",
+            "score": 0.842408,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 27,
+            "citation": "Section 27",
+            "text": "A, in good faith, for his child’s benefit without his child’s consent, has his child cut for the stone by a surgeon knowing it to be likely that the operation will cause the child’s death, but not intending to cause the child’s death. A is within the exception, in as much as his object was the cure of the child. Consent known to be given under fear or misconception.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 27: Act done in good faith for benefit of child or person of unsound mind, by, or by consent of\nA, in good faith, for his child’s benefit without his child’s consent, has his child cut for the stone by a surgeon knowing it to be likely that the operation will cause the child’s death, but not intending to cause the child’s death. A is within the exception, in as much as his object was the cure of the child. Consent known to be given under fear or misconception.",
+            "keywords": [
+              "child",
+              "consent",
+              "good",
+              "faith",
+              "benefit",
+              "cause",
+              "death",
+              "stone",
+              "surgeon",
+              "knowing"
+            ],
+            "legal_concepts": [],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6819628477096558,
+              "bm25": 0.4177682631500457,
+              "semrank_pre_rerank": 0.75
+            },
+            "query_scores": {
+              "original": 0.6819628477096558
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "valid consent",
+                "fear or misconception",
+                "consent",
+                "under",
+                "fear",
+                "misconception"
+              ],
+              "score": 0.75,
+              "best_similarity": 1.0,
+              "best_concept": "consent",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "consent",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "misconception",
+                  "chunk_concept": "knowing",
+                  "source": "keyword",
+                  "similarity": 0.9076,
+                  "weighted_score": 0.6807
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "good",
+                  "source": "keyword",
+                  "similarity": 0.8926,
+                  "weighted_score": 0.6694
+                },
+                {
+                  "query_concept": "misconception",
+                  "chunk_concept": "cause",
+                  "source": "keyword",
+                  "similarity": 0.8763,
+                  "weighted_score": 0.6572
+                },
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "benefit",
+                  "source": "keyword",
+                  "similarity": 0.8728,
+                  "weighted_score": 0.6546
+                }
+              ],
+              "pre_rerank_score": 0.75,
+              "score_before_pre_rerank": 0.731456,
+              "score_after_pre_rerank": 0.734794
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S129_BODY",
+            "score": 0.40085,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 129,
+            "citation": "Section 129",
+            "text": "Whoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nWhoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+            "keywords": [
+              "force",
+              "cause",
+              "criminal",
+              "body",
+              "whoever",
+              "intentionally",
+              "uses",
+              "consent",
+              "order",
+              "committing",
+              "criminal force",
+              "intentional force"
+            ],
+            "legal_concepts": [
+              "use of force",
+              "consent",
+              "offence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "bm25": 0.07692307692307693,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "valid consent",
+                "fear or misconception",
+                "consent",
+                "under",
+                "fear",
+                "misconception"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "consent",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "use of force",
+                  "source": "legal_concept",
+                  "similarity": 0.853,
+                  "weighted_score": 0.853
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "uses",
+                  "source": "keyword",
+                  "similarity": 0.9207,
+                  "weighted_score": 0.6905
+                },
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "body",
+                  "source": "keyword",
+                  "similarity": 0.8937,
+                  "weighted_score": 0.6703
+                },
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "committing",
+                  "source": "keyword",
+                  "similarity": 0.8932,
+                  "weighted_score": 0.6699
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "consent",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S63_EXP2",
+            "score": 0.400759,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 63,
+            "citation": "Section 63",
+            "text": "Consent means an unequivocal voluntary agreement when the woman by words, gestures or any form of verbal or non-verbal communication, communicates willingness to participate in the specific sexual act: Provided that a woman who does not physically resist to the act of penetration shall not by the reason only of that fact, be regarded as consenting to the sexual activity.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\nConsent means an unequivocal voluntary agreement when the woman by words, gestures or any form of verbal or non-verbal communication, communicates willingness to participate in the specific sexual act: Provided that a woman who does not physically resist to the act of penetration shall not by the reason only of that fact, be regarded as consenting to the sexual activity.",
+            "keywords": [
+              "woman",
+              "sexual",
+              "consent",
+              "means",
+              "unequivocal",
+              "voluntary",
+              "agreement",
+              "words",
+              "gestures",
+              "form"
+            ],
+            "legal_concepts": [
+              "consent",
+              "unequivocal voluntary agreement"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6621823906898499,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "valid consent",
+                "fear or misconception",
+                "consent",
+                "under",
+                "fear",
+                "misconception"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "consent",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "unequivocal voluntary agreement",
+                  "source": "legal_concept",
+                  "similarity": 0.8583,
+                  "weighted_score": 0.8583
+                },
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "agreement",
+                  "source": "keyword",
+                  "similarity": 0.9134,
+                  "weighted_score": 0.685
+                },
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "voluntary",
+                  "source": "keyword",
+                  "similarity": 0.9064,
+                  "weighted_score": 0.6798
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "words",
+                  "source": "keyword",
+                  "similarity": 0.9034,
+                  "weighted_score": 0.6776
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "consent",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S63_D_IV",
+            "score": 0.400121,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 63,
+            "citation": "Section 63",
+            "text": "with her consent, when the man knows that he is not her husband and that her consent is given because she believes that he is another man to whom she is or believes herself to be lawfully married;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\napplies his mouth to the vagina, anus, urethra of a woman or makes her to do so with him or any other person, under the circumstances falling under any of the following seven descriptions:—\nwith her consent, when the man knows that he is not her husband and that her consent is given because she believes that he is another man to whom she is or believes herself to be lawfully married;",
+            "keywords": [
+              "consent",
+              "believes",
+              "knows",
+              "husband",
+              "given",
+              "because",
+              "herself",
+              "lawfully",
+              "married",
+              "rape",
+              "oral sex"
+            ],
+            "legal_concepts": [
+              "rape",
+              "consent"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "valid consent",
+                "fear or misconception",
+                "consent",
+                "under",
+                "fear",
+                "misconception"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "consent",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "rape",
+                  "source": "legal_concept",
+                  "similarity": 0.8703,
+                  "weighted_score": 0.8703
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "given",
+                  "source": "keyword",
+                  "similarity": 0.9215,
+                  "weighted_score": 0.6912
+                },
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "lawfully",
+                  "source": "keyword",
+                  "similarity": 0.9043,
+                  "weighted_score": 0.6782
+                },
+                {
+                  "query_concept": "misconception",
+                  "chunk_concept": "knows",
+                  "source": "keyword",
+                  "similarity": 0.888,
+                  "weighted_score": 0.666
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "consent",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S63_V",
+            "score": 0.400066,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 63,
+            "citation": "Section 63",
+            "text": "with her consent when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent;",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\nwith her consent when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent;",
+            "keywords": [
+              "consent",
+              "time",
+              "giving",
+              "reason",
+              "unsoundness",
+              "mind",
+              "intoxication",
+              "administration",
+              "personally",
+              "through",
+              "rape"
+            ],
+            "legal_concepts": [
+              "offence",
+              "consent",
+              "unsoundness of mind"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6464731693267822,
+              "bm25": 0.05263157894736842,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "valid consent",
+                "fear or misconception",
+                "consent",
+                "under",
+                "fear",
+                "misconception"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "consent",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "fear",
+                  "chunk_concept": "unsoundness of mind",
+                  "source": "legal_concept",
+                  "similarity": 0.8509,
+                  "weighted_score": 0.8509
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "through",
+                  "source": "keyword",
+                  "similarity": 0.8997,
+                  "weighted_score": 0.6748
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "administration",
+                  "source": "keyword",
+                  "similarity": 0.8953,
+                  "weighted_score": 0.6715
+                },
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "reason",
+                  "source": "keyword",
+                  "similarity": 0.8922,
+                  "weighted_score": 0.6691
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "consent",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S303_N1_EXP5",
+            "score": 0.400065,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 303,
+            "citation": "Section 303",
+            "text": "The consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nThe consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied.",
+            "keywords": [
+              "express",
+              "implied",
+              "either",
+              "consent",
+              "mentioned",
+              "given",
+              "possession",
+              "having",
+              "purpose",
+              "authority",
+              "dishonest"
+            ],
+            "legal_concepts": [
+              "theft",
+              "movable property",
+              "possession",
+              "consent"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 2,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "valid consent",
+                "fear or misconception",
+                "consent",
+                "under",
+                "fear",
+                "misconception"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "consent",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "possession",
+                  "source": "legal_concept",
+                  "similarity": 0.8757,
+                  "weighted_score": 0.8757
+                },
+                {
+                  "query_concept": "consent",
+                  "chunk_concept": "theft",
+                  "source": "legal_concept",
+                  "similarity": 0.8735,
+                  "weighted_score": 0.8735
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "movable property",
+                  "source": "legal_concept",
+                  "similarity": 0.8162,
+                  "weighted_score": 0.8162
+                },
+                {
+                  "query_concept": "under",
+                  "chunk_concept": "given",
+                  "source": "keyword",
+                  "similarity": 0.9215,
+                  "weighted_score": 0.6912
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "consent",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S28_B",
+          "score": 1.0,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 28,
+          "citation": "Section 28",
+          "text": "if the consent is given by a person who, from unsoundness of mind, or intoxication, is unable to understand the nature and consequence of that to which he gives his consent; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 28: Consent known to be given under fear or misconception.\nif the consent is given by a person who, from unsoundness of mind, or intoxication, is unable to understand the nature and consequence of that to which he gives his consent; or",
+          "keywords": [
+            "consent",
+            "given",
+            "unsoundness",
+            "mind",
+            "intoxication",
+            "unable",
+            "understand",
+            "nature",
+            "consequence",
+            "gives",
+            "invalid_consent",
+            "unsound_mind"
+          ],
+          "legal_concepts": [
+            "consent",
+            "fear",
+            "misconception"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7953667640686035,
+            "original:bm25": 0.6842651643057779,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "fear",
+                "chunk_concept": "fear",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "misconception",
+                "chunk_concept": "misconception",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9215,
+                "weighted_score": 0.6912
+              },
+              {
+                "query_concept": "valid consent",
+                "chunk_concept": "invalid_consent",
+                "source": "keyword",
+                "similarity": 0.9064,
+                "weighted_score": 0.6798
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S28_A",
+          "score": 0.992253,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 28,
+          "citation": "Section 28",
+          "text": "if the consent is given by a person under fear of injury, or under a misconception of fact, and if the person doing the act knows, or has reason to believe, that the consent was given in consequence of such fear or misconception; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 28: Consent known to be given under fear or misconception.\nif the consent is given by a person under fear of injury, or under a misconception of fact, and if the person doing the act knows, or has reason to believe, that the consent was given in consequence of such fear or misconception; or",
+          "keywords": [
+            "consent",
+            "given",
+            "fear",
+            "misconception",
+            "injury",
+            "fact",
+            "doing",
+            "knows",
+            "reason",
+            "believe"
+          ],
+          "legal_concepts": [
+            "consent",
+            "fear",
+            "misconception"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9905526743372431
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "fear",
+                "chunk_concept": "fear",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "misconception",
+                "chunk_concept": "misconception",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9215,
+                "weighted_score": 0.6912
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "doing",
+                "source": "keyword",
+                "similarity": 0.8995,
+                "weighted_score": 0.6746
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.990553,
+            "score_after_pre_rerank": 0.992253
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S28_BODY",
+          "score": 0.909087,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 28,
+          "citation": "Section 28",
+          "text": "A consent is not such a consent as is intended by any section of this Sanhita,–",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 28: Consent known to be given under fear or misconception.\nA consent is not such a consent as is intended by any section of this Sanhita,–",
+          "keywords": [
+            "consent",
+            "intended",
+            "known",
+            "given",
+            "fear",
+            "misconception",
+            "exceptions",
+            "body"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7992540597915649,
+            "original:bm25": 0.7874638642717733,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.9440089999976842
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "fear",
+                "chunk_concept": "fear",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "misconception",
+                "chunk_concept": "misconception",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9215,
+                "weighted_score": 0.6912
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 0.8937,
+                "weighted_score": 0.6703
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.944009,
+            "score_after_pre_rerank": 0.909087
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S28_C",
+          "score": 0.847454,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 28,
+          "citation": "Section 28",
+          "text": "unless the contrary appears from the context, if the consent is given by a person who is under twelve years of age. Exclusion of acts which are offences independently of harm caused.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 28: Consent known to be given under fear or misconception.\nunless the contrary appears from the context, if the consent is given by a person who is under twelve years of age. Exclusion of acts which are offences independently of harm caused.",
+          "keywords": [
+            "consent",
+            "given",
+            "contrary",
+            "appears",
+            "context",
+            "twelve",
+            "years",
+            "exclusion",
+            "acts",
+            "offences"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7683471441268921,
+            "original:bm25": 0.6426923512363912,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.8688467613535511
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "conditional_clause_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9215,
+                "weighted_score": 0.6912
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "context",
+                "source": "keyword",
+                "similarity": 0.8937,
+                "weighted_score": 0.6703
+              },
+              {
+                "query_concept": "misconception",
+                "chunk_concept": "contrary",
+                "source": "keyword",
+                "similarity": 0.89,
+                "weighted_score": 0.6675
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "twelve",
+                "source": "keyword",
+                "similarity": 0.887,
+                "weighted_score": 0.6652
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.868847,
+            "score_after_pre_rerank": 0.847454
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S27_ILL1",
+          "score": 0.825774,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 27,
+          "citation": "Section 27",
+          "text": "A, in good faith, for his child’s benefit without his child’s consent, has his child cut for the stone by a surgeon knowing it to be likely that the operation will cause the child’s death, but not intending to cause the child’s death. A is within the exception, in as much as his object was the cure of the child. Consent known to be given under fear or misconception.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 27: Act done in good faith for benefit of child or person of unsound mind, by, or by consent of\nA, in good faith, for his child’s benefit without his child’s consent, has his child cut for the stone by a surgeon knowing it to be likely that the operation will cause the child’s death, but not intending to cause the child’s death. A is within the exception, in as much as his object was the cure of the child. Consent known to be given under fear or misconception.",
+          "keywords": [
+            "child",
+            "consent",
+            "good",
+            "faith",
+            "benefit",
+            "cause",
+            "death",
+            "stone",
+            "surgeon",
+            "knowing"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6819628477096558,
+            "original:bm25": 0.4177682631500457,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.8424078245317104
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "misconception",
+                "chunk_concept": "knowing",
+                "source": "keyword",
+                "similarity": 0.9076,
+                "weighted_score": 0.6807
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "good",
+                "source": "keyword",
+                "similarity": 0.8926,
+                "weighted_score": 0.6694
+              },
+              {
+                "query_concept": "misconception",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.8763,
+                "weighted_score": 0.6572
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "benefit",
+                "source": "keyword",
+                "similarity": 0.8728,
+                "weighted_score": 0.6546
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.842408,
+            "score_after_pre_rerank": 0.825774
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S129_BODY",
+          "score": 0.508697,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 129,
+          "citation": "Section 129",
+          "text": "Whoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nWhoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+          "keywords": [
+            "force",
+            "cause",
+            "criminal",
+            "body",
+            "whoever",
+            "intentionally",
+            "uses",
+            "consent",
+            "order",
+            "committing",
+            "criminal force",
+            "intentional force"
+          ],
+          "legal_concepts": [
+            "use of force",
+            "consent",
+            "offence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 0.07692307692307693,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.400849756190323
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "use of force",
+                "source": "legal_concept",
+                "similarity": 0.853,
+                "weighted_score": 0.853
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "uses",
+                "source": "keyword",
+                "similarity": 0.9207,
+                "weighted_score": 0.6905
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 0.8937,
+                "weighted_score": 0.6703
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "committing",
+                "source": "keyword",
+                "similarity": 0.8932,
+                "weighted_score": 0.6699
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.40085,
+            "score_after_pre_rerank": 0.508697
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S63_EXP2",
+          "score": 0.508622,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 63,
+          "citation": "Section 63",
+          "text": "Consent means an unequivocal voluntary agreement when the woman by words, gestures or any form of verbal or non-verbal communication, communicates willingness to participate in the specific sexual act: Provided that a woman who does not physically resist to the act of penetration shall not by the reason only of that fact, be regarded as consenting to the sexual activity.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\nConsent means an unequivocal voluntary agreement when the woman by words, gestures or any form of verbal or non-verbal communication, communicates willingness to participate in the specific sexual act: Provided that a woman who does not physically resist to the act of penetration shall not by the reason only of that fact, be regarded as consenting to the sexual activity.",
+          "keywords": [
+            "woman",
+            "sexual",
+            "consent",
+            "means",
+            "unequivocal",
+            "voluntary",
+            "agreement",
+            "words",
+            "gestures",
+            "form"
+          ],
+          "legal_concepts": [
+            "consent",
+            "unequivocal voluntary agreement"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6621823906898499,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4007585113522698
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "unequivocal voluntary agreement",
+                "source": "legal_concept",
+                "similarity": 0.8583,
+                "weighted_score": 0.8583
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "agreement",
+                "source": "keyword",
+                "similarity": 0.9134,
+                "weighted_score": 0.685
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "voluntary",
+                "source": "keyword",
+                "similarity": 0.9064,
+                "weighted_score": 0.6798
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "words",
+                "source": "keyword",
+                "similarity": 0.9034,
+                "weighted_score": 0.6776
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400759,
+            "score_after_pre_rerank": 0.508622
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S63_D_IV",
+          "score": 0.508099,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 63,
+          "citation": "Section 63",
+          "text": "with her consent, when the man knows that he is not her husband and that her consent is given because she believes that he is another man to whom she is or believes herself to be lawfully married;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\napplies his mouth to the vagina, anus, urethra of a woman or makes her to do so with him or any other person, under the circumstances falling under any of the following seven descriptions:—\nwith her consent, when the man knows that he is not her husband and that her consent is given because she believes that he is another man to whom she is or believes herself to be lawfully married;",
+          "keywords": [
+            "consent",
+            "believes",
+            "knows",
+            "husband",
+            "given",
+            "because",
+            "herself",
+            "lawfully",
+            "married",
+            "rape",
+            "oral sex"
+          ],
+          "legal_concepts": [
+            "rape",
+            "consent"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40012073118733404
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "rape",
+                "source": "legal_concept",
+                "similarity": 0.8703,
+                "weighted_score": 0.8703
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9215,
+                "weighted_score": 0.6912
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "lawfully",
+                "source": "keyword",
+                "similarity": 0.9043,
+                "weighted_score": 0.6782
+              },
+              {
+                "query_concept": "misconception",
+                "chunk_concept": "knows",
+                "source": "keyword",
+                "similarity": 0.888,
+                "weighted_score": 0.666
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400121,
+            "score_after_pre_rerank": 0.508099
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S63_V",
+          "score": 0.508054,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 63,
+          "citation": "Section 63",
+          "text": "with her consent when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\nwith her consent when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent;",
+          "keywords": [
+            "consent",
+            "time",
+            "giving",
+            "reason",
+            "unsoundness",
+            "mind",
+            "intoxication",
+            "administration",
+            "personally",
+            "through",
+            "rape"
+          ],
+          "legal_concepts": [
+            "offence",
+            "consent",
+            "unsoundness of mind"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6464731693267822,
+            "original:bm25": 0.05263157894736842,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40006590127183317
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "fear",
+                "chunk_concept": "unsoundness of mind",
+                "source": "legal_concept",
+                "similarity": 0.8509,
+                "weighted_score": 0.8509
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "through",
+                "source": "keyword",
+                "similarity": 0.8997,
+                "weighted_score": 0.6748
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "administration",
+                "source": "keyword",
+                "similarity": 0.8953,
+                "weighted_score": 0.6715
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.8922,
+                "weighted_score": 0.6691
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400066,
+            "score_after_pre_rerank": 0.508054
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S303_N1_EXP5",
+          "score": 0.508053,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "The consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nThe consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied.",
+          "keywords": [
+            "express",
+            "implied",
+            "either",
+            "consent",
+            "mentioned",
+            "given",
+            "possession",
+            "having",
+            "purpose",
+            "authority",
+            "dishonest"
+          ],
+          "legal_concepts": [
+            "theft",
+            "movable property",
+            "possession",
+            "consent"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000646717286178
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "possession",
+                "source": "legal_concept",
+                "similarity": 0.8757,
+                "weighted_score": 0.8757
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 0.8735,
+                "weighted_score": 0.8735
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "movable property",
+                "source": "legal_concept",
+                "similarity": 0.8162,
+                "weighted_score": 0.8162
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9215,
+                "weighted_score": 0.6912
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400065,
+            "score_after_pre_rerank": 0.508053
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S28_B",
+          "score": 1.0,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 28,
+          "citation": "Section 28",
+          "text": "if the consent is given by a person who, from unsoundness of mind, or intoxication, is unable to understand the nature and consequence of that to which he gives his consent; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 28: Consent known to be given under fear or misconception.\nif the consent is given by a person who, from unsoundness of mind, or intoxication, is unable to understand the nature and consequence of that to which he gives his consent; or",
+          "keywords": [
+            "consent",
+            "given",
+            "unsoundness",
+            "mind",
+            "intoxication",
+            "unable",
+            "understand",
+            "nature",
+            "consequence",
+            "gives",
+            "invalid_consent",
+            "unsound_mind"
+          ],
+          "legal_concepts": [
+            "consent",
+            "fear",
+            "misconception"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7953667640686035,
+            "original:bm25": 0.6842651643057779,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "fear",
+                "chunk_concept": "fear",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "misconception",
+                "chunk_concept": "misconception",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9215,
+                "weighted_score": 0.6912
+              },
+              {
+                "query_concept": "valid consent",
+                "chunk_concept": "invalid_consent",
+                "source": "keyword",
+                "similarity": 0.9064,
+                "weighted_score": 0.6798
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S28_A",
+          "score": 0.987453,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 28,
+          "citation": "Section 28",
+          "text": "if the consent is given by a person under fear of injury, or under a misconception of fact, and if the person doing the act knows, or has reason to believe, that the consent was given in consequence of such fear or misconception; or",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 28: Consent known to be given under fear or misconception.\nif the consent is given by a person under fear of injury, or under a misconception of fact, and if the person doing the act knows, or has reason to believe, that the consent was given in consequence of such fear or misconception; or",
+          "keywords": [
+            "consent",
+            "given",
+            "fear",
+            "misconception",
+            "injury",
+            "fact",
+            "doing",
+            "knows",
+            "reason",
+            "believe"
+          ],
+          "legal_concepts": [
+            "consent",
+            "fear",
+            "misconception"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9905526743372431
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "fear",
+                "chunk_concept": "fear",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "misconception",
+                "chunk_concept": "misconception",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9215,
+                "weighted_score": 0.6912
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "doing",
+                "source": "keyword",
+                "similarity": 0.8995,
+                "weighted_score": 0.6746
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.990553,
+            "score_after_pre_rerank": 0.992253
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S28_BODY",
+          "score": 0.92564,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 28,
+          "citation": "Section 28",
+          "text": "A consent is not such a consent as is intended by any section of this Sanhita,–",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 28: Consent known to be given under fear or misconception.\nA consent is not such a consent as is intended by any section of this Sanhita,–",
+          "keywords": [
+            "consent",
+            "intended",
+            "known",
+            "given",
+            "fear",
+            "misconception",
+            "exceptions",
+            "body"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7992540597915649,
+            "original:bm25": 0.7874638642717733,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.9440089999976842
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "fear",
+                "chunk_concept": "fear",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "misconception",
+                "chunk_concept": "misconception",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9215,
+                "weighted_score": 0.6912
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 0.8937,
+                "weighted_score": 0.6703
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.944009,
+            "score_after_pre_rerank": 0.909087
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S28_C",
+          "score": 0.896388,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 28,
+          "citation": "Section 28",
+          "text": "unless the contrary appears from the context, if the consent is given by a person who is under twelve years of age. Exclusion of acts which are offences independently of harm caused.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 28: Consent known to be given under fear or misconception.\nunless the contrary appears from the context, if the consent is given by a person who is under twelve years of age. Exclusion of acts which are offences independently of harm caused.",
+          "keywords": [
+            "consent",
+            "given",
+            "contrary",
+            "appears",
+            "context",
+            "twelve",
+            "years",
+            "exclusion",
+            "acts",
+            "offences"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7683471441268921,
+            "original:bm25": 0.6426923512363912,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.8688467613535511
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "conditional_clause_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9215,
+                "weighted_score": 0.6912
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "context",
+                "source": "keyword",
+                "similarity": 0.8937,
+                "weighted_score": 0.6703
+              },
+              {
+                "query_concept": "misconception",
+                "chunk_concept": "contrary",
+                "source": "keyword",
+                "similarity": 0.89,
+                "weighted_score": 0.6675
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "twelve",
+                "source": "keyword",
+                "similarity": 0.887,
+                "weighted_score": 0.6652
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.868847,
+            "score_after_pre_rerank": 0.847454
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S27_ILL1",
+          "score": 0.878794,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 27,
+          "citation": "Section 27",
+          "text": "A, in good faith, for his child’s benefit without his child’s consent, has his child cut for the stone by a surgeon knowing it to be likely that the operation will cause the child’s death, but not intending to cause the child’s death. A is within the exception, in as much as his object was the cure of the child. Consent known to be given under fear or misconception.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 27: Act done in good faith for benefit of child or person of unsound mind, by, or by consent of\nA, in good faith, for his child’s benefit without his child’s consent, has his child cut for the stone by a surgeon knowing it to be likely that the operation will cause the child’s death, but not intending to cause the child’s death. A is within the exception, in as much as his object was the cure of the child. Consent known to be given under fear or misconception.",
+          "keywords": [
+            "child",
+            "consent",
+            "good",
+            "faith",
+            "benefit",
+            "cause",
+            "death",
+            "stone",
+            "surgeon",
+            "knowing"
+          ],
+          "legal_concepts": [],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6819628477096558,
+            "original:bm25": 0.4177682631500457,
+            "original:semrank_pre_rerank": 0.75,
+            "semrank_pre_rerank": 0.75
+          },
+          "query_scores": {
+            "original": 0.8424078245317104
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "score": 0.75,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "misconception",
+                "chunk_concept": "knowing",
+                "source": "keyword",
+                "similarity": 0.9076,
+                "weighted_score": 0.6807
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "good",
+                "source": "keyword",
+                "similarity": 0.8926,
+                "weighted_score": 0.6694
+              },
+              {
+                "query_concept": "misconception",
+                "chunk_concept": "cause",
+                "source": "keyword",
+                "similarity": 0.8763,
+                "weighted_score": 0.6572
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "benefit",
+                "source": "keyword",
+                "similarity": 0.8728,
+                "weighted_score": 0.6546
+              }
+            ],
+            "pre_rerank_score": 0.75,
+            "score_before_pre_rerank": 0.842408,
+            "score_after_pre_rerank": 0.825774
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S129_BODY",
+          "score": 0.204264,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 129,
+          "citation": "Section 129",
+          "text": "Whoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 129: Criminal force.\nWhoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other.",
+          "keywords": [
+            "force",
+            "cause",
+            "criminal",
+            "body",
+            "whoever",
+            "intentionally",
+            "uses",
+            "consent",
+            "order",
+            "committing",
+            "criminal force",
+            "intentional force"
+          ],
+          "legal_concepts": [
+            "use of force",
+            "consent",
+            "offence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:bm25": 0.07692307692307693,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.400849756190323
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "use of force",
+                "source": "legal_concept",
+                "similarity": 0.853,
+                "weighted_score": 0.853
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "uses",
+                "source": "keyword",
+                "similarity": 0.9207,
+                "weighted_score": 0.6905
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "body",
+                "source": "keyword",
+                "similarity": 0.8937,
+                "weighted_score": 0.6703
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "committing",
+                "source": "keyword",
+                "similarity": 0.8932,
+                "weighted_score": 0.6699
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.40085,
+            "score_after_pre_rerank": 0.508697
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S63_EXP2",
+          "score": 0.204143,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 63,
+          "citation": "Section 63",
+          "text": "Consent means an unequivocal voluntary agreement when the woman by words, gestures or any form of verbal or non-verbal communication, communicates willingness to participate in the specific sexual act: Provided that a woman who does not physically resist to the act of penetration shall not by the reason only of that fact, be regarded as consenting to the sexual activity.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\nConsent means an unequivocal voluntary agreement when the woman by words, gestures or any form of verbal or non-verbal communication, communicates willingness to participate in the specific sexual act: Provided that a woman who does not physically resist to the act of penetration shall not by the reason only of that fact, be regarded as consenting to the sexual activity.",
+          "keywords": [
+            "woman",
+            "sexual",
+            "consent",
+            "means",
+            "unequivocal",
+            "voluntary",
+            "agreement",
+            "words",
+            "gestures",
+            "form"
+          ],
+          "legal_concepts": [
+            "consent",
+            "unequivocal voluntary agreement"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6621823906898499,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4007585113522698
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "unequivocal voluntary agreement",
+                "source": "legal_concept",
+                "similarity": 0.8583,
+                "weighted_score": 0.8583
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "agreement",
+                "source": "keyword",
+                "similarity": 0.9134,
+                "weighted_score": 0.685
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "voluntary",
+                "source": "keyword",
+                "similarity": 0.9064,
+                "weighted_score": 0.6798
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "words",
+                "source": "keyword",
+                "similarity": 0.9034,
+                "weighted_score": 0.6776
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400759,
+            "score_after_pre_rerank": 0.508622
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S63_D_IV",
+          "score": 0.203296,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 63,
+          "citation": "Section 63",
+          "text": "with her consent, when the man knows that he is not her husband and that her consent is given because she believes that he is another man to whom she is or believes herself to be lawfully married;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\napplies his mouth to the vagina, anus, urethra of a woman or makes her to do so with him or any other person, under the circumstances falling under any of the following seven descriptions:—\nwith her consent, when the man knows that he is not her husband and that her consent is given because she believes that he is another man to whom she is or believes herself to be lawfully married;",
+          "keywords": [
+            "consent",
+            "believes",
+            "knows",
+            "husband",
+            "given",
+            "because",
+            "herself",
+            "lawfully",
+            "married",
+            "rape",
+            "oral sex"
+          ],
+          "legal_concepts": [
+            "rape",
+            "consent"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40012073118733404
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "rape",
+                "source": "legal_concept",
+                "similarity": 0.8703,
+                "weighted_score": 0.8703
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9215,
+                "weighted_score": 0.6912
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "lawfully",
+                "source": "keyword",
+                "similarity": 0.9043,
+                "weighted_score": 0.6782
+              },
+              {
+                "query_concept": "misconception",
+                "chunk_concept": "knows",
+                "source": "keyword",
+                "similarity": 0.888,
+                "weighted_score": 0.666
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400121,
+            "score_after_pre_rerank": 0.508099
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S63_V",
+          "score": 0.203223,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 63,
+          "citation": "Section 63",
+          "text": "with her consent when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent;",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 63: Rape.\nwith her consent when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent;",
+          "keywords": [
+            "consent",
+            "time",
+            "giving",
+            "reason",
+            "unsoundness",
+            "mind",
+            "intoxication",
+            "administration",
+            "personally",
+            "through",
+            "rape"
+          ],
+          "legal_concepts": [
+            "offence",
+            "consent",
+            "unsoundness of mind"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6464731693267822,
+            "original:bm25": 0.05263157894736842,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40006590127183317
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "fear",
+                "chunk_concept": "unsoundness of mind",
+                "source": "legal_concept",
+                "similarity": 0.8509,
+                "weighted_score": 0.8509
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "through",
+                "source": "keyword",
+                "similarity": 0.8997,
+                "weighted_score": 0.6748
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "administration",
+                "source": "keyword",
+                "similarity": 0.8953,
+                "weighted_score": 0.6715
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "reason",
+                "source": "keyword",
+                "similarity": 0.8922,
+                "weighted_score": 0.6691
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400066,
+            "score_after_pre_rerank": 0.508054
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S303_N1_EXP5",
+          "score": 0.203221,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 303,
+          "citation": "Section 303",
+          "text": "The consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 303: Theft.\nWhoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.\nThe consent mentioned in this section may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied.",
+          "keywords": [
+            "express",
+            "implied",
+            "either",
+            "consent",
+            "mentioned",
+            "given",
+            "possession",
+            "having",
+            "purpose",
+            "authority",
+            "dishonest"
+          ],
+          "legal_concepts": [
+            "theft",
+            "movable property",
+            "possession",
+            "consent"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 2,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4000646717286178
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "valid consent",
+              "fear or misconception",
+              "consent",
+              "under",
+              "fear",
+              "misconception"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "consent",
+                "chunk_concept": "consent",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "possession",
+                "source": "legal_concept",
+                "similarity": 0.8757,
+                "weighted_score": 0.8757
+              },
+              {
+                "query_concept": "consent",
+                "chunk_concept": "theft",
+                "source": "legal_concept",
+                "similarity": 0.8735,
+                "weighted_score": 0.8735
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "movable property",
+                "source": "legal_concept",
+                "similarity": 0.8162,
+                "weighted_score": 0.8162
+              },
+              {
+                "query_concept": "under",
+                "chunk_concept": "given",
+                "source": "keyword",
+                "similarity": 0.9215,
+                "weighted_score": 0.6912
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "consent",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.400065,
+            "score_after_pre_rerank": 0.508053
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    },
+    "phase11": {
+      "answer_type": "definition",
+      "support_status": "supported",
+      "confidence": {
+        "score": 0.98,
+        "label": "high"
+      },
+      "final_answer": "Consent under fear or misconception is not valid consent as per the Bharatiya Nyaya Sanhita.",
+      "summary_answer": "Consent under fear or misconception is not valid consent as per the Bharatiya Nyaya Sanhita.",
+      "detailed_answer": "Consent given under fear or misconception is not considered valid consent according to the Bharatiya Nyaya Sanhita. Specifically, Section 27 Illustration indicates that consent known to be given under fear or misconception does not meet the legal requirements for valid consent. Additionally, Section 28(b) states that consent is invalid if given by a person who is unable to understand the nature and consequences of the act due to unsoundness of mind or intoxication.",
+      "citations": [
+        "Section 27 Illustration, Bharatiya Nyaya Sanhita, 2023",
+        "Section 28(b), Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "matched_sections": [
+        "Section 28",
+        "Section 27",
+        "Section 129",
+        "Section 63"
+      ],
+      "missing_sections": [],
+      "missing_from_corpus": [],
+      "selected_chunk_ids": [
+        "chunk__node__BNS_S27_ILL1",
+        "chunk__node__BNS_S28_B"
+      ],
+      "warnings": [],
+      "structured_reasoning": {
+        "base_concept": "",
+        "selected_section": "Section 27",
+        "selection_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "overrides_score_selection": false,
+        "uncertainty": "low",
+        "uncertainty_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "alternative_sections": [
+          "Section 28",
+          "Section 129",
+          "Section 63"
+        ],
+        "sections_analyzed": [
+          {
+            "section": "Section 28",
+            "role": "retrieved_evidence",
+            "condition_summary": "if the consent is given by a person who, from unsoundness of mind, or intoxication, is unable to understand the nature and consequence of that to which he gives his consent; or",
+            "condition_match_score": 1.0,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "consent ~ consent",
+              "fear ~ fear",
+              "misconception ~ misconception",
+              "under ~ given",
+              "valid consent ~ invalid_consent"
+            ],
+            "raw_retrieval_score": 1.0,
+            "hit_count": 2,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 27",
+            "role": "retrieved_evidence",
+            "condition_summary": "A, in good faith, for his child’s benefit without his child’s consent, has his child cut for the stone by a surgeon knowing it to be likely that the operation will cause the child’s death, but not intending to cause the child’s death.",
+            "condition_match_score": 0.878794,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "consent ~ consent",
+              "misconception ~ knowing",
+              "under ~ good",
+              "misconception ~ cause",
+              "consent ~ benefit"
+            ],
+            "raw_retrieval_score": 0.878794,
+            "hit_count": 1,
+            "is_base": false,
+            "note": ""
+          },
+          {
+            "section": "Section 129",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or...",
+            "condition_match_score": 0.204264,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "consent ~ consent",
+              "consent ~ use of force",
+              "under ~ uses",
+              "consent ~ body",
+              "consent ~ committing"
+            ],
+            "raw_retrieval_score": 0.204264,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 63",
+            "role": "retrieved_evidence",
+            "condition_summary": "Consent means an unequivocal voluntary agreement when the woman by words, gestures or any form of verbal or non-verbal communication, communicates willingness to participate in the specific sexual act: Provided that a woman who does not physically resist to...",
+            "condition_match_score": 0.204143,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "consent ~ consent",
+              "consent ~ unequivocal voluntary agreement",
+              "consent ~ agreement",
+              "consent ~ voluntary",
+              "under ~ words"
+            ],
+            "raw_retrieval_score": 0.204143,
+            "hit_count": 1,
+            "is_base": false,
+            "note": ""
+          }
+        ]
+      },
+      "validation": {
+        "requested_sections": [],
+        "present_in_corpus": [],
+        "retrieved_exact_matches": [],
+        "missing_from_corpus": [],
+        "intent_alignment": "strong",
+        "intent_notes": [
+          "Lookup intent is anchored by a direct base legal chunk."
+        ],
+        "answer_verified": true,
+        "verification_issues": [],
+        "llm_answer_verified": true,
+        "llm_verification_issues": [],
+        "completeness": "complete",
+        "guardrail_grounding_strength": 1.0,
+        "repaired": false,
+        "fallback_used": false
+      },
+      "evidence": {
+        "primary_chunk_id": "chunk__node__BNS_S27_ILL1",
+        "primary_chunk_type": "content",
+        "primary_section": "Section 27",
+        "primary_section_title": "Consent known to be given under fear or misconception.",
+        "related_chunk_ids": [
+          "chunk__node__BNS_S28_B"
+        ],
+        "top_sections": [
+          {
+            "section": "Section 28",
+            "section_title": "Consent known to be given under fear or misconception.",
+            "hit_count": 2,
+            "best_score": 1.0,
+            "chunk_types": {
+              "content": 1,
+              "clause": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.0
+          },
+          {
+            "section": "Section 27",
+            "section_title": "Act done in good faith for benefit of child or person of unsound mind, by, or by consent of",
+            "hit_count": 1,
+            "best_score": 0.878794,
+            "chunk_types": {
+              "illustration": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.0
+          },
+          {
+            "section": "Section 129",
+            "section_title": "Criminal force.",
+            "hit_count": 1,
+            "best_score": 0.204264,
+            "chunk_types": {
+              "content": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.0
+          },
+          {
+            "section": "Section 63",
+            "section_title": "Rape.",
+            "hit_count": 1,
+            "best_score": 0.204143,
+            "chunk_types": {
+              "explanation": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.0
+          }
+        ],
+        "llm_evidence": [
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S28_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": "28",
+            "citation": "Section 28 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "A consent is not such a consent as is intended by any section of this Sanhita,–"
+          },
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S28_B",
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": "28",
+            "citation": "Section 28(b), Bharatiya Nyaya Sanhita, 2023",
+            "text": "if the consent is given by a person who, from unsoundness of mind, or intoxication, is unable to understand the nature and consequence of that to which he gives his consent; or"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S27_ILL1",
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": "27",
+            "citation": "Section 27 Illustration, Bharatiya Nyaya Sanhita, 2023",
+            "text": "A, in good faith, for his child’s benefit without his child’s consent, has his child cut for the stone by a surgeon knowing it to be likely that the operation will cause the child’s death, but not intending to cause the child’s death. A is within the exception, in as much as his object was the cure of the child. Consent known to be given under fear or misconception."
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S129_BODY",
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": "129",
+            "citation": "Section 129 Body, Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever intentionally uses force to any person, without that person’s consent, in order to the committing of any offence, or intending by the use of such force to cause, or knowing it to be likely that by the use of such force he will cause injury, fear or annoyance to the person to whom the force is used, is said to use criminal force to that other."
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S63_EXP2",
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": "63",
+            "citation": "Section 63 Explanation 2, Bharatiya Nyaya Sanhita, 2023",
+            "text": "Consent means an unequivocal voluntary agreement when the woman by words, gestures or any form of verbal or non-verbal communication, communicates willingness to participate in the specific sexual act: Provided that a woman who does not physically resist to the act of penetration shall not by the reason only of that fact, be regarded as consenting to the sexual activity."
+          }
+        ]
+      },
+      "llm_generation": {
+        "enabled": true,
+        "used": true,
+        "model": "gpt-4o-mini",
+        "reasoning_trace": [
+          "Identified that consent under fear or misconception is addressed in Section 27 Illustration.",
+          "Confirmed that Section 28(b) provides further context on invalid consent due to incapacity.",
+          "Concluded that both sections support the definition of consent under fear or misconception as invalid."
+        ],
+        "caution_notes": [],
+        "error": null,
+        "repaired": false,
+        "fallback_used": false
+      }
+    }
+  }
+]

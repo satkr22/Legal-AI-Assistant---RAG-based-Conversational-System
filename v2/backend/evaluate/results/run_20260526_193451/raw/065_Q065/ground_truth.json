@@ -1,0 +1,41 @@
+{
+  "query_id": "Q065",
+  "query": "A person negligently spread a dangerous infection. What offence may apply?",
+  "query_type": "factual_scenario",
+  "difficulty": "easy",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "271",
+      "subsection": null,
+      "label": "Section 271",
+      "role": "negligent act likely to spread infection of dangerous disease",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "272",
+      "label": "Section 272",
+      "reason": "malignant act spreading infection - applicable if done maliciously"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 271 provides that whoever unlawfully or negligently does any act which is, and which they know or have reason to believe to be, likely to spread the infection of any disease dangerous to life, shall be punished with imprisonment up to six months, or fine, or both.",
+      "The act must be negligent and the person must know or have reason to believe it is likely to spread dangerous disease."
+    ],
+    "optional_points": [
+      "If the act is done malignantly (intentionally), Section 272 applies with enhanced punishment of imprisonment up to two years."
+    ],
+    "forbidden_points": [
+      "Negligent spreading of disease is not an offence under BNS.",
+      "The punishment is always imprisonment for two years."
+    ]
+  },
+  "notes": "Scenario query. Section 271 for negligent spreading; Section 272 if malignant."
+}

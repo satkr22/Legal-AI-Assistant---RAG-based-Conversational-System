@@ -1,0 +1,75 @@
+{
+  "query": "I injured someone while trying to stop a theft. Can private defence apply?",
+  "intent": {
+    "primary": "legal exception",
+    "secondary": []
+  },
+  "concepts": [
+    "right of private defence",
+    "theft",
+    "injury",
+    "offence"
+  ],
+  "targets": [],
+  "query_features": {
+    "is_multi_hop": true,
+    "requires_reasoning": true
+  },
+  "decomposition": {
+    "needed": true,
+    "sub_queries": [
+      {
+        "query": "What is the right of private defence in the context of theft?",
+        "intent": {
+          "primary": "legal exception",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "right of private defence",
+          "theft"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      },
+      {
+        "query": "Under what circumstances can private defence apply to causing injury?",
+        "intent": {
+          "primary": "legal exception",
+          "secondary": []
+        },
+        "targets": [],
+        "concepts": [
+          "private defence",
+          "injury",
+          "offence"
+        ],
+        "query_features": {
+          "is_multi_hop": false,
+          "requires_reasoning": false
+        },
+        "decomposition": {
+          "needed": false,
+          "sub_queries": []
+        },
+        "method": "llm_subquery",
+        "notes": []
+      }
+    ]
+  },
+  "confidence": {
+    "hint_relevance": 0.399,
+    "llm_consistency": 1.0,
+    "rule_strength": 0.35,
+    "structure_validity": 1.0,
+    "overall": 0.6296
+  }
+}

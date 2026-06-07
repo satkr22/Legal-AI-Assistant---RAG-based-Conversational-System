@@ -1,0 +1,67 @@
+{
+  "answer": "Section 20 states that nothing is an offence which is done by a child under seven years of age.",
+  "summary_answer": "Section 20 states that nothing is an offence committed by a child under seven years of age.",
+  "detailed_answer": "According to Section 20 of the Bharatiya Nyaya Sanhita, 2023, any act done by a child under the age of seven years is not considered an offence. Additionally, it mentions that acts committed by children above seven and under twelve years of age may be considered based on their maturity of understanding.",
+  "final_answer": "Section 20 states that nothing is an offence which is done by a child under seven years of age.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 20 Body, Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 1.0,
+    "reranker": 1.0,
+    "citation": 1.0,
+    "reasoning": 0.925,
+    "evidence_strength": 1.0,
+    "reasoning_certainty": 0.925,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.925,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.925,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 1.0,
+        "avg_selected_semrank_score": 1.0,
+        "avg_selected_concept_coverage": 1.0,
+        "selected_chunk_count": 1,
+        "matched_selected_chunk_count": 1,
+        "selected_semrank_count": 1
+      },
+      "reasoning": {
+        "selected_condition_match_score": 1.0,
+        "ambiguity_gap_score": 0.75,
+        "uncertainty_score": 1.0,
+        "gap": 0.0982,
+        "highest_competing_score": 0.9018,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.925,
+    "label": "high",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "low",
+  "risk_reason": "Evidence, citations, and reasoning are aligned well enough for the final answer view.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S20_BODY"
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "query_id": "Q066",
+  "query": "Is life imprisonment always for whole life or can it mean fixed years?",
+  "query_type": "multi_hop",
+  "difficulty": "hard",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "4",
+    "6"
+  ],
+  "acceptable_sections": [
+    "64",
+    "65",
+    "70",
+    "71"
+  ],
+  "wrong_sections": [
+    "62"
+  ],
+  "retrieved_sections_at_k": [
+    "6",
+    "6",
+    "4",
+    "13",
+    "62"
+  ],
+  "candidate_sections_at_10": [
+    "6",
+    "6",
+    "4",
+    "13",
+    "62",
+    "55",
+    "71",
+    "104",
+    "150",
+    "105"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "6",
+    "6",
+    "4",
+    "13",
+    "62"
+  ],
+  "cited_sections": [
+    "6",
+    "13"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.4,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "4",
+      "6"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "4",
+      "6"
+    ],
+    "support_precision_at_k": 0.5,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "13",
+      "62"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.2222,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "4",
+      "6"
+    ],
+    "acceptable_hits": [
+      "71"
+    ],
+    "required_or_acceptable_hits": [
+      "4",
+      "6",
+      "71"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "13",
+      "62",
+      "55",
+      "104",
+      "150",
+      "105"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.4,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "4",
+      "6"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "4",
+      "6"
+    ],
+    "support_precision_at_k": 0.5,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "13",
+      "62"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.6667,
+    "required_points_matched": 2,
+    "required_points_total": 3,
+    "answer_completeness_score": 0.6667,
+    "soft_answer_score": 0.6917,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 3,
+    "forbidden_contradiction_skipped_rate": 1.3333,
+    "forbidden_contradiction_skips": [
+      {
+        "point": "Life imprisonment always means exactly twenty years.",
+        "sentence": "According to Section 6 of the Bharatiya Nyaya Sanhita, 2023, imprisonment for life is reckoned as equivalent to imprisonment for twenty years unless otherwise provided.",
+        "overlap": 0.6667,
+        "threshold": 0.9,
+        "matched_terms": [
+          "imprisonment",
+          "life",
+          "twenty",
+          "years"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      },
+      {
+        "point": "Life imprisonment always means exactly twenty years.",
+        "sentence": "This indicates that life imprisonment does not always mean a whole life term and can indeed refer to a fixed number of years.",
+        "overlap": 0.6667,
+        "threshold": 0.9,
+        "matched_terms": [
+          "always",
+          "imprisonment",
+          "life",
+          "years"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      },
+      {
+        "point": "Life imprisonment always means exactly twenty years.",
+        "sentence": "Additionally, Section 13 mentions that for certain offences, subsequent convictions can lead to life imprisonment or a term that may extend to ten years, further supporting the notion that life imprisonment can have variable interpretations.",
+        "overlap": 0.5,
+        "threshold": 0.9,
+        "matched_terms": [
+          "imprisonment",
+          "life",
+          "years"
+        ],
+        "reason": "forbidden point is absolute imprisonment claim, but answer sentence gives alternatives or limits"
+      },
+      {
+        "point": "Life imprisonment always means the whole natural life in every case.",
+        "sentence": "This indicates that life imprisonment does not always mean a whole life term and can indeed refer to a fixed number of years.",
+        "overlap": 0.5714,
+        "threshold": 0.9,
+        "matched_terms": [
+          "always",
+          "imprisonment",
+          "life",
+          "whole"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      }
+    ],
+    "required_point_details": [
+      {
+        "point": "Life imprisonment is not always exactly twenty years or always the whole natural life; the answer depends on the context.",
+        "matched": true,
+        "overlap": 0.6,
+        "matched_terms": [
+          "always",
+          "imprisonment",
+          "life",
+          "twenty",
+          "whole",
+          "years"
+        ]
+      },
+      {
+        "point": "Section 6 provides that for calculating fractions of terms of punishment, imprisonment for life is reckoned as equivalent to twenty years unless otherwise provided.",
+        "matched": true,
+        "overlap": 0.6667,
+        "matched_terms": [
+          "equivalent",
+          "imprisonment",
+          "life",
+          "otherwise",
+          "reckoned",
+          "twenty",
+          "unless",
+          "years"
+        ]
+      },
+      {
+        "point": "Several provisions expressly specify that imprisonment for life means imprisonment for the remainder of the person's natural life (e.g., Section 71 for repeat sex offenders, Sections 65, 70, and certain others).",
+        "matched": false,
+        "overlap": 0.2143,
+        "matched_terms": [
+          "certain",
+          "imprisonment",
+          "life"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 0.5,
+    "citation_recall": 0.5,
+    "correct_cited_sections": [
+      "6"
+    ],
+    "missing_required_sections": [
+      "4"
+    ],
+    "extra_cited_sections": [
+      "13"
+    ],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "missing_required_citation",
+    "wrong_reference_retrieved"
+  ],
+  "wrong_references": {
+    "retrieved": [
+      "62"
+    ],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 7.9584,
+    "phase_9_10": 10.0951,
+    "phase_11": 20.6855,
+    "phase_12_13": 0.0002,
+    "total": 38.7391
+  },
+  "final_answer_preview": "According to Section 6 of the Bharatiya Nyaya Sanhita, 2023, imprisonment for life is reckoned as equivalent to imprisonment for twenty years unless otherwise provided. This indicates that life imprisonment does not always mean a whole life term and can indeed refer to a fixed number of years. Additionally, Section 13 mentions that for certain offences, subsequent convictions can lead to life imprisonment or a term that may extend to ten years, further supporting the notion that life imprisonment can have variable interpretations.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/066_Q066"
+}

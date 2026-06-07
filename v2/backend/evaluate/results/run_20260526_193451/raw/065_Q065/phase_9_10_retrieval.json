@@ -1,0 +1,3501 @@
+[
+  {
+    "query": "A person negligently spread a dangerous infection. What offence may apply?",
+    "phase8": {
+      "query": "A person negligently spread a dangerous infection. What offence may apply?",
+      "intent": {
+        "primary": "lookup",
+        "secondary": []
+      },
+      "concepts": [
+        "offence against public health",
+        "negligence",
+        "punishment for negligence"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.5172,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.35,
+        "structure_validity": 1.0,
+        "overall": 0.6769
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "A person negligently spread a dangerous infection. What offence may apply?",
+          "targets": [],
+          "concepts": [
+            "offence against public health",
+            "negligence",
+            "punishment for negligence"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S271_BODY",
+            "score": 1.0,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+            "section_number": 271,
+            "citation": "Section 271",
+            "text": "Whoever unlawfully or negligently does any act which is, and which he knows or has reason to believe to be, likely to spread the infection of any disease dangerous to life, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine, or with both. Malignant act likely to spread infection of disease dangerous to life.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 271: Negligent act likely to spread infection of disease dangerous to life.\nWhoever unlawfully or negligently does any act which is, and which he knows or has reason to believe to be, likely to spread the infection of any disease dangerous to life, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine, or with both. Malignant act likely to spread infection of disease dangerous to life.",
+            "keywords": [
+              "likely",
+              "spread",
+              "infection",
+              "disease",
+              "dangerous",
+              "life",
+              "whoever",
+              "unlawfully",
+              "negligently",
+              "knows",
+              "negligent act"
+            ],
+            "legal_concepts": [
+              "offence against public health",
+              "punishment for negligence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 2,
+              "coverage_ratio": 0.6667,
+              "matched_concepts": [
+                "offence against public health",
+                "punishment for negligence"
+              ]
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 1.0,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "offence against public health",
+                "negligence",
+                "punishment for negligence",
+                "negligently",
+                "spread",
+                "dangerous",
+                "infection",
+                "may"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "offence against public health",
+                  "chunk_concept": "offence against public health",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "punishment for negligence",
+                  "chunk_concept": "punishment for negligence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "dangerous",
+                  "chunk_concept": "dangerous",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "infection",
+                  "chunk_concept": "infection",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "negligently",
+                  "chunk_concept": "negligently",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "offence against public health",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S270_BODY",
+            "score": 0.921277,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+            "section_number": 270,
+            "citation": "Section 270",
+            "text": "A person is guilty of a public nuisance who does any act or is guilty of an illegal omission which causes any common injury, danger or annoyance to the public or to the people in general who dwell or occupy property in the vicinity, or which must necessarily cause injury, obstruction, danger or annoyance to persons who may have occasion to use any public right but a common nuisance is not excused on the ground that it causes some convenience or advantage. Negligent act likely to spread infection of disease dangerous to life.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 270: Public nuisance.\nA person is guilty of a public nuisance who does any act or is guilty of an illegal omission which causes any common injury, danger or annoyance to the public or to the people in general who dwell or occupy property in the vicinity, or which must necessarily cause injury, obstruction, danger or annoyance to persons who may have occasion to use any public right but a common nuisance is not excused on the ground that it causes some convenience or advantage. Negligent act likely to spread infection of disease dangerous to life.",
+            "keywords": [
+              "public",
+              "nuisance",
+              "guilty",
+              "causes",
+              "common",
+              "injury",
+              "danger",
+              "annoyance",
+              "convenience",
+              "illegal",
+              "public nuisance",
+              "common injury"
+            ],
+            "legal_concepts": [
+              "public nuisance",
+              "common injury"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7031916379928589,
+              "bm25": 0.3392024426888523,
+              "semrank_pre_rerank": 0.8387
+            },
+            "query_scores": {
+              "original": 0.7031916379928589
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "offence against public health",
+                "negligence",
+                "punishment for negligence",
+                "negligently",
+                "spread",
+                "dangerous",
+                "infection",
+                "may"
+              ],
+              "score": 0.8387,
+              "best_similarity": 0.8387,
+              "best_concept": "common injury",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "common injury",
+                  "source": "legal_concept",
+                  "similarity": 0.8387,
+                  "weighted_score": 0.8387
+                },
+                {
+                  "query_concept": "offence against public health",
+                  "chunk_concept": "public nuisance",
+                  "source": "legal_concept",
+                  "similarity": 0.8286,
+                  "weighted_score": 0.8286
+                },
+                {
+                  "query_concept": "dangerous",
+                  "chunk_concept": "danger",
+                  "source": "keyword",
+                  "similarity": 0.9598,
+                  "weighted_score": 0.7199
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "causes",
+                  "source": "keyword",
+                  "similarity": 0.9041,
+                  "weighted_score": 0.678
+                },
+                {
+                  "query_concept": "may",
+                  "chunk_concept": "common",
+                  "source": "keyword",
+                  "similarity": 0.8925,
+                  "weighted_score": 0.6694
+                }
+              ],
+              "pre_rerank_score": 0.8387,
+              "score_before_pre_rerank": 0.890285,
+              "score_after_pre_rerank": 0.880999
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S272_BODY",
+            "score": 0.859249,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+            "section_number": 272,
+            "citation": "Section 272",
+            "text": "Whoever malignantly does any act which is, and which he knows or has reason to believe to be, likely to spread the infection of any disease dangerous to life, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Disobedience to quarantine rule.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 272: Malignant act likely to spread infection of disease dangerous to life.\nWhoever malignantly does any act which is, and which he knows or has reason to believe to be, likely to spread the infection of any disease dangerous to life, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Disobedience to quarantine rule.",
+            "keywords": [
+              "likely",
+              "spread",
+              "infection",
+              "disease",
+              "dangerous",
+              "life",
+              "whoever",
+              "malignantly",
+              "knows",
+              "reason",
+              "malignant act"
+            ],
+            "legal_concepts": [
+              "offence against public health",
+              "punishment for disobedience"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "offence against public health"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6945868134498596,
+              "bm25": 0.6992123081112068,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "offence against public health",
+                "negligence",
+                "punishment for negligence",
+                "negligently",
+                "spread",
+                "dangerous",
+                "infection",
+                "may"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "offence against public health",
+                  "chunk_concept": "offence against public health",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "punishment for negligence",
+                  "chunk_concept": "punishment for disobedience",
+                  "source": "legal_concept",
+                  "similarity": 0.8832,
+                  "weighted_score": 0.8832
+                },
+                {
+                  "query_concept": "dangerous",
+                  "chunk_concept": "dangerous",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "infection",
+                  "chunk_concept": "infection",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "spread",
+                  "chunk_concept": "spread",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "offence against public health",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S286_BODY",
+            "score": 0.417874,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+            "section_number": 286,
+            "citation": "Section 286",
+            "text": "Whoever does, with any poisonous substance, any act in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any person or knowingly or negligently omits to take such order with any poisonous substance in his possession as is sufficient to guard against any probable danger to human life from such poisonous substance, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to fire or combustible matter.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 286: Negligent conduct with respect to poisonous substance.\nWhoever does, with any poisonous substance, any act in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any person or knowingly or negligently omits to take such order with any poisonous substance in his possession as is sufficient to guard against any probable danger to human life from such poisonous substance, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to fire or combustible matter.",
+            "keywords": [
+              "poisonous",
+              "substance",
+              "negligent",
+              "human",
+              "life",
+              "extend",
+              "conduct",
+              "respect",
+              "whoever",
+              "manner",
+              "negligent conduct",
+              "poisonous substance"
+            ],
+            "legal_concepts": [
+              "negligence",
+              "endangering human life"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "negligence"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6771793365478516,
+              "semrank": 0.9999999403953552,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999999403953552
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "offence against public health",
+                "negligence",
+                "punishment for negligence",
+                "negligently",
+                "spread",
+                "dangerous",
+                "infection",
+                "may"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "dangerous",
+                  "chunk_concept": "endangering human life",
+                  "source": "legal_concept",
+                  "similarity": 0.9055,
+                  "weighted_score": 0.9055
+                },
+                {
+                  "query_concept": "negligently",
+                  "chunk_concept": "negligent",
+                  "source": "keyword",
+                  "similarity": 0.967,
+                  "weighted_score": 0.7252
+                },
+                {
+                  "query_concept": "negligently",
+                  "chunk_concept": "negligent conduct",
+                  "source": "keyword",
+                  "similarity": 0.9401,
+                  "weighted_score": 0.7051
+                },
+                {
+                  "query_concept": "may",
+                  "chunk_concept": "extend",
+                  "source": "keyword",
+                  "similarity": 0.8941,
+                  "weighted_score": 0.6706
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "negligence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S287_BODY",
+            "score": 0.410322,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+            "section_number": 287,
+            "citation": "Section 287",
+            "text": "Whoever does, with fire or any combustible matter, any act so rashly or negligently as to endanger human life, or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any fire or any combustible matter in his possession as is sufficient to guard against any probable danger to human life from such fire or combustible matter, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to two thousand rupees, or with both. Negligent conduct with respect to explosive substance.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 287: Negligent conduct with respect to fire or combustible matter.\nWhoever does, with fire or any combustible matter, any act so rashly or negligently as to endanger human life, or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any fire or any combustible matter in his possession as is sufficient to guard against any probable danger to human life from such fire or combustible matter, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to two thousand rupees, or with both. Negligent conduct with respect to explosive substance.",
+            "keywords": [
+              "fire",
+              "combustible",
+              "negligently",
+              "human",
+              "life",
+              "extend",
+              "negligent",
+              "conduct",
+              "respect",
+              "negligent conduct",
+              "fire safety"
+            ],
+            "legal_concepts": [
+              "negligence",
+              "fire safety"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "negligence"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.651801586151123,
+              "semrank": 0.9999999403953552,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999999403953552
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "offence against public health",
+                "negligence",
+                "punishment for negligence",
+                "negligently",
+                "spread",
+                "dangerous",
+                "infection",
+                "may"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "dangerous",
+                  "chunk_concept": "fire safety",
+                  "source": "legal_concept",
+                  "similarity": 0.8395,
+                  "weighted_score": 0.8395
+                },
+                {
+                  "query_concept": "negligently",
+                  "chunk_concept": "negligently",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "negligently",
+                  "chunk_concept": "negligent",
+                  "source": "keyword",
+                  "similarity": 0.967,
+                  "weighted_score": 0.7252
+                },
+                {
+                  "query_concept": "negligently",
+                  "chunk_concept": "negligent conduct",
+                  "source": "keyword",
+                  "similarity": 0.9401,
+                  "weighted_score": 0.7051
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "negligence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S285_BODY",
+            "score": 0.406078,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+            "section_number": 285,
+            "citation": "Section 285",
+            "text": "Whoever, by doing any act, or by omitting to take order with any property in his possession or under his charge, causes danger, obstruction or injury to any person in any public way or public line of navigation, shall be punished with fine which may extend to five thousand rupees. Negligent conduct with respect to poisonous substance.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 285: Danger or obstruction in public way or line of navigation.\nWhoever, by doing any act, or by omitting to take order with any property in his possession or under his charge, causes danger, obstruction or injury to any person in any public way or public line of navigation, shall be punished with fine which may extend to five thousand rupees. Negligent conduct with respect to poisonous substance.",
+            "keywords": [
+              "public",
+              "danger",
+              "obstruction",
+              "line",
+              "navigation",
+              "whoever",
+              "doing",
+              "omitting",
+              "take",
+              "order",
+              "public safety",
+              "obstruction of navigation"
+            ],
+            "legal_concepts": [
+              "danger",
+              "obstruction",
+              "public way",
+              "line of navigation"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.9598091840744019,
+              "semrank_pre_rerank": 0.9598
+            },
+            "query_scores": {
+              "original": 0.9598091840744019
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9598,
+              "query_concepts": [
+                "offence against public health",
+                "negligence",
+                "punishment for negligence",
+                "negligently",
+                "spread",
+                "dangerous",
+                "infection",
+                "may"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "dangerous",
+                  "chunk_concept": "danger",
+                  "source": "legal_concept",
+                  "similarity": 0.9598,
+                  "weighted_score": 0.9598
+                },
+                {
+                  "query_concept": "may",
+                  "chunk_concept": "line of navigation",
+                  "source": "legal_concept",
+                  "similarity": 0.8469,
+                  "weighted_score": 0.8469
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "obstruction",
+                  "source": "legal_concept",
+                  "similarity": 0.84,
+                  "weighted_score": 0.84
+                },
+                {
+                  "query_concept": "may",
+                  "chunk_concept": "public way",
+                  "source": "legal_concept",
+                  "similarity": 0.8398,
+                  "weighted_score": 0.8398
+                },
+                {
+                  "query_concept": "may",
+                  "chunk_concept": "take",
+                  "source": "keyword",
+                  "similarity": 0.9037,
+                  "weighted_score": 0.6778
+                }
+              ],
+              "score": 0.9598,
+              "best_similarity": 0.9598,
+              "best_concept": "danger",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9598,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.992764
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S289_BODY",
+            "score": 0.403889,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+            "section_number": 289,
+            "citation": "Section 289",
+            "text": "Whoever does, with any machinery, any act so rashly or negligently as to endanger human life or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any machinery in his possession or under his care as is sufficient to guard against any probable danger to human life from such machinery, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 289: Negligent conduct with respect to machinery.\nWhoever does, with any machinery, any act so rashly or negligently as to endanger human life or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any machinery in his possession or under his care as is sufficient to guard against any probable danger to human life from such machinery, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.",
+            "keywords": [
+              "machinery",
+              "negligently",
+              "human",
+              "life",
+              "extend",
+              "negligent",
+              "conduct",
+              "respect",
+              "whoever",
+              "rashly",
+              "negligent conduct",
+              "machinery safety"
+            ],
+            "legal_concepts": [
+              "negligence",
+              "machinery safety"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "negligence"
+              ]
+            },
+            "source_scores": {
+              "bm25": 0.05,
+              "semrank": 0.9999999403953552,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999999403953552
+            },
+            "reasons": [
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "offence against public health",
+                "negligence",
+                "punishment for negligence",
+                "negligently",
+                "spread",
+                "dangerous",
+                "infection",
+                "may"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "dangerous",
+                  "chunk_concept": "machinery safety",
+                  "source": "legal_concept",
+                  "similarity": 0.8427,
+                  "weighted_score": 0.8427
+                },
+                {
+                  "query_concept": "negligently",
+                  "chunk_concept": "negligently",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "negligently",
+                  "chunk_concept": "negligent",
+                  "source": "keyword",
+                  "similarity": 0.967,
+                  "weighted_score": 0.7252
+                },
+                {
+                  "query_concept": "negligently",
+                  "chunk_concept": "negligent conduct",
+                  "source": "keyword",
+                  "similarity": 0.9401,
+                  "weighted_score": 0.7051
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "negligence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S291_BODY",
+            "score": 0.402748,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+            "section_number": 291,
+            "citation": "Section 291",
+            "text": "Whoever knowingly or negligently omits to take such measures with any animal in his possession as is sufficient to guard against any probable danger to human life, or any probable danger of grievous hurt from such animal, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Punishment for public nuisance in cases not otherwise provided for.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 291: Negligent conduct with respect to animal.\nWhoever knowingly or negligently omits to take such measures with any animal in his possession as is sufficient to guard against any probable danger to human life, or any probable danger of grievous hurt from such animal, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Punishment for public nuisance in cases not otherwise provided for.",
+            "keywords": [
+              "animal",
+              "probable",
+              "danger",
+              "extend",
+              "public",
+              "whoever",
+              "knowingly",
+              "negligently",
+              "omits",
+              "take",
+              "negligent conduct",
+              "animal safety"
+            ],
+            "legal_concepts": [
+              "negligence",
+              "animal welfare"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "negligence"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.6655873656272888,
+              "bm25": 0.2,
+              "semrank": 0.9999999403953552,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999999403953552
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "offence against public health",
+                "negligence",
+                "punishment for negligence",
+                "negligently",
+                "spread",
+                "dangerous",
+                "infection",
+                "may"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "may",
+                  "chunk_concept": "animal welfare",
+                  "source": "legal_concept",
+                  "similarity": 0.8077,
+                  "weighted_score": 0.8077
+                },
+                {
+                  "query_concept": "negligently",
+                  "chunk_concept": "negligently",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "dangerous",
+                  "chunk_concept": "danger",
+                  "source": "keyword",
+                  "similarity": 0.9598,
+                  "weighted_score": 0.7199
+                },
+                {
+                  "query_concept": "negligently",
+                  "chunk_concept": "negligent conduct",
+                  "source": "keyword",
+                  "similarity": 0.9401,
+                  "weighted_score": 0.7051
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "negligence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S284_BODY",
+            "score": 0.402543,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+            "section_number": 284,
+            "citation": "Section 284",
+            "text": "Whoever knowingly or negligently conveys, or causes to be conveyed for hire, any person by water in any vessel, when that vessel is in such a state or so loaded as to endanger the life of that person, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Danger or obstruction in public way or line of navigation.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 284: Conveying person by water for hire in unsafe or overloaded vessel.\nWhoever knowingly or negligently conveys, or causes to be conveyed for hire, any person by water in any vessel, when that vessel is in such a state or so loaded as to endanger the life of that person, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Danger or obstruction in public way or line of navigation.",
+            "keywords": [
+              "vessel",
+              "hire",
+              "water",
+              "extend",
+              "public",
+              "whoever",
+              "knowingly",
+              "negligently",
+              "conveys",
+              "causes",
+              "unsafe vessel",
+              "overloaded vessel"
+            ],
+            "legal_concepts": [
+              "offence against public health and safety"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.9573818445205688,
+              "semrank_pre_rerank": 0.9574
+            },
+            "query_scores": {
+              "original": 0.9573818445205688
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9574,
+              "query_concepts": [
+                "offence against public health",
+                "negligence",
+                "punishment for negligence",
+                "negligently",
+                "spread",
+                "dangerous",
+                "infection",
+                "may"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "offence against public health",
+                  "chunk_concept": "offence against public health and safety",
+                  "source": "legal_concept",
+                  "similarity": 0.9574,
+                  "weighted_score": 0.9574
+                },
+                {
+                  "query_concept": "negligently",
+                  "chunk_concept": "negligently",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "causes",
+                  "source": "keyword",
+                  "similarity": 0.9041,
+                  "weighted_score": 0.678
+                },
+                {
+                  "query_concept": "negligently",
+                  "chunk_concept": "knowingly",
+                  "source": "keyword",
+                  "similarity": 0.899,
+                  "weighted_score": 0.6742
+                },
+                {
+                  "query_concept": "may",
+                  "chunk_concept": "extend",
+                  "source": "keyword",
+                  "similarity": 0.8941,
+                  "weighted_score": 0.6706
+                }
+              ],
+              "score": 0.9574,
+              "best_similarity": 0.9574,
+              "best_concept": "offence against public health and safety",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9574,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.992332
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S290_BODY",
+            "score": 0.401967,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+            "section_number": 290,
+            "citation": "Section 290",
+            "text": "Whoever, in pulling down, repairing or constructing any building, knowingly or negligently omits to take such measures with that building as is sufficient to guard against any probable danger to human life from the fall of that building, or of any part thereof, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to animal.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 290: Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.\nWhoever, in pulling down, repairing or constructing any building, knowingly or negligently omits to take such measures with that building as is sufficient to guard against any probable danger to human life from the fall of that building, or of any part thereof, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to animal.",
+            "keywords": [
+              "building",
+              "pulling",
+              "down",
+              "repairing",
+              "constructing",
+              "extend",
+              "negligent",
+              "conduct",
+              "respect",
+              "whoever",
+              "negligent conduct",
+              "building safety"
+            ],
+            "legal_concepts": [
+              "negligence",
+              "building construction"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "negligence"
+              ]
+            },
+            "source_scores": {
+              "semrank": 0.9999999403953552,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999999403953552
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "offence against public health",
+                "negligence",
+                "punishment for negligence",
+                "negligently",
+                "spread",
+                "dangerous",
+                "infection",
+                "may"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "negligence",
+                  "chunk_concept": "negligence",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "may",
+                  "chunk_concept": "building construction",
+                  "source": "legal_concept",
+                  "similarity": 0.823,
+                  "weighted_score": 0.823
+                },
+                {
+                  "query_concept": "negligently",
+                  "chunk_concept": "negligent",
+                  "source": "keyword",
+                  "similarity": 0.967,
+                  "weighted_score": 0.7252
+                },
+                {
+                  "query_concept": "negligently",
+                  "chunk_concept": "negligent conduct",
+                  "source": "keyword",
+                  "similarity": 0.9401,
+                  "weighted_score": 0.7051
+                },
+                {
+                  "query_concept": "may",
+                  "chunk_concept": "extend",
+                  "source": "keyword",
+                  "similarity": 0.8941,
+                  "weighted_score": 0.6706
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "negligence",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S271_BODY",
+          "score": 1.0,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 271,
+          "citation": "Section 271",
+          "text": "Whoever unlawfully or negligently does any act which is, and which he knows or has reason to believe to be, likely to spread the infection of any disease dangerous to life, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine, or with both. Malignant act likely to spread infection of disease dangerous to life.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 271: Negligent act likely to spread infection of disease dangerous to life.\nWhoever unlawfully or negligently does any act which is, and which he knows or has reason to believe to be, likely to spread the infection of any disease dangerous to life, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine, or with both. Malignant act likely to spread infection of disease dangerous to life.",
+          "keywords": [
+            "likely",
+            "spread",
+            "infection",
+            "disease",
+            "dangerous",
+            "life",
+            "whoever",
+            "unlawfully",
+            "negligently",
+            "knows",
+            "negligent act"
+          ],
+          "legal_concepts": [
+            "offence against public health",
+            "punishment for negligence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "offence against public health",
+              "punishment for negligence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against public health",
+                "chunk_concept": "offence against public health",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "punishment for negligence",
+                "chunk_concept": "punishment for negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "dangerous",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "infection",
+                "chunk_concept": "infection",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligently",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against public health",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S270_BODY",
+          "score": 0.906413,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 270,
+          "citation": "Section 270",
+          "text": "A person is guilty of a public nuisance who does any act or is guilty of an illegal omission which causes any common injury, danger or annoyance to the public or to the people in general who dwell or occupy property in the vicinity, or which must necessarily cause injury, obstruction, danger or annoyance to persons who may have occasion to use any public right but a common nuisance is not excused on the ground that it causes some convenience or advantage. Negligent act likely to spread infection of disease dangerous to life.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 270: Public nuisance.\nA person is guilty of a public nuisance who does any act or is guilty of an illegal omission which causes any common injury, danger or annoyance to the public or to the people in general who dwell or occupy property in the vicinity, or which must necessarily cause injury, obstruction, danger or annoyance to persons who may have occasion to use any public right but a common nuisance is not excused on the ground that it causes some convenience or advantage. Negligent act likely to spread infection of disease dangerous to life.",
+          "keywords": [
+            "public",
+            "nuisance",
+            "guilty",
+            "causes",
+            "common",
+            "injury",
+            "danger",
+            "annoyance",
+            "convenience",
+            "illegal",
+            "public nuisance",
+            "common injury"
+          ],
+          "legal_concepts": [
+            "public nuisance",
+            "common injury"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7031916379928589,
+            "original:bm25": 0.3392024426888523,
+            "original:semrank_pre_rerank": 0.8387,
+            "semrank_pre_rerank": 0.8387
+          },
+          "query_scores": {
+            "original": 0.921277144227898
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "score": 0.8387,
+            "best_similarity": 0.8387,
+            "best_concept": "common injury",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "common injury",
+                "source": "legal_concept",
+                "similarity": 0.8387,
+                "weighted_score": 0.8387
+              },
+              {
+                "query_concept": "offence against public health",
+                "chunk_concept": "public nuisance",
+                "source": "legal_concept",
+                "similarity": 0.8286,
+                "weighted_score": 0.8286
+              },
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "danger",
+                "source": "keyword",
+                "similarity": 0.9598,
+                "weighted_score": 0.7199
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "causes",
+                "source": "keyword",
+                "similarity": 0.9041,
+                "weighted_score": 0.678
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "common",
+                "source": "keyword",
+                "similarity": 0.8925,
+                "weighted_score": 0.6694
+              }
+            ],
+            "pre_rerank_score": 0.8387,
+            "score_before_pre_rerank": 0.921277,
+            "score_after_pre_rerank": 0.906413
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S272_BODY",
+          "score": 0.884584,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 272,
+          "citation": "Section 272",
+          "text": "Whoever malignantly does any act which is, and which he knows or has reason to believe to be, likely to spread the infection of any disease dangerous to life, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Disobedience to quarantine rule.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 272: Malignant act likely to spread infection of disease dangerous to life.\nWhoever malignantly does any act which is, and which he knows or has reason to believe to be, likely to spread the infection of any disease dangerous to life, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Disobedience to quarantine rule.",
+          "keywords": [
+            "likely",
+            "spread",
+            "infection",
+            "disease",
+            "dangerous",
+            "life",
+            "whoever",
+            "malignantly",
+            "knows",
+            "reason",
+            "malignant act"
+          ],
+          "legal_concepts": [
+            "offence against public health",
+            "punishment for disobedience"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "offence against public health"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6945868134498596,
+            "original:bm25": 0.6992123081112068,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8592492344182662
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against public health",
+                "chunk_concept": "offence against public health",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "punishment for negligence",
+                "chunk_concept": "punishment for disobedience",
+                "source": "legal_concept",
+                "similarity": 0.8832,
+                "weighted_score": 0.8832
+              },
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "dangerous",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "infection",
+                "chunk_concept": "infection",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "spread",
+                "chunk_concept": "spread",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against public health",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.859249,
+            "score_after_pre_rerank": 0.884584
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S286_BODY",
+          "score": 0.522656,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 286,
+          "citation": "Section 286",
+          "text": "Whoever does, with any poisonous substance, any act in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any person or knowingly or negligently omits to take such order with any poisonous substance in his possession as is sufficient to guard against any probable danger to human life from such poisonous substance, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to fire or combustible matter.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 286: Negligent conduct with respect to poisonous substance.\nWhoever does, with any poisonous substance, any act in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any person or knowingly or negligently omits to take such order with any poisonous substance in his possession as is sufficient to guard against any probable danger to human life from such poisonous substance, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to fire or combustible matter.",
+          "keywords": [
+            "poisonous",
+            "substance",
+            "negligent",
+            "human",
+            "life",
+            "extend",
+            "conduct",
+            "respect",
+            "whoever",
+            "manner",
+            "negligent conduct",
+            "poisonous substance"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "endangering human life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "negligence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6771793365478516,
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.41787367128549613
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "endangering human life",
+                "source": "legal_concept",
+                "similarity": 0.9055,
+                "weighted_score": 0.9055
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.967,
+                "weighted_score": 0.7252
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9401,
+                "weighted_score": 0.7051
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.8941,
+                "weighted_score": 0.6706
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.417874,
+            "score_after_pre_rerank": 0.522656
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S287_BODY",
+          "score": 0.516464,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 287,
+          "citation": "Section 287",
+          "text": "Whoever does, with fire or any combustible matter, any act so rashly or negligently as to endanger human life, or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any fire or any combustible matter in his possession as is sufficient to guard against any probable danger to human life from such fire or combustible matter, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to two thousand rupees, or with both. Negligent conduct with respect to explosive substance.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 287: Negligent conduct with respect to fire or combustible matter.\nWhoever does, with fire or any combustible matter, any act so rashly or negligently as to endanger human life, or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any fire or any combustible matter in his possession as is sufficient to guard against any probable danger to human life from such fire or combustible matter, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to two thousand rupees, or with both. Negligent conduct with respect to explosive substance.",
+          "keywords": [
+            "fire",
+            "combustible",
+            "negligently",
+            "human",
+            "life",
+            "extend",
+            "negligent",
+            "conduct",
+            "respect",
+            "negligent conduct",
+            "fire safety"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "fire safety"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "negligence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.651801586151123,
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.41032161297703307
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "fire safety",
+                "source": "legal_concept",
+                "similarity": 0.8395,
+                "weighted_score": 0.8395
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligently",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.967,
+                "weighted_score": 0.7252
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9401,
+                "weighted_score": 0.7051
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.410322,
+            "score_after_pre_rerank": 0.516464
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S289_BODY",
+          "score": 0.511189,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 289,
+          "citation": "Section 289",
+          "text": "Whoever does, with any machinery, any act so rashly or negligently as to endanger human life or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any machinery in his possession or under his care as is sufficient to guard against any probable danger to human life from such machinery, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 289: Negligent conduct with respect to machinery.\nWhoever does, with any machinery, any act so rashly or negligently as to endanger human life or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any machinery in his possession or under his care as is sufficient to guard against any probable danger to human life from such machinery, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.",
+          "keywords": [
+            "machinery",
+            "negligently",
+            "human",
+            "life",
+            "extend",
+            "negligent",
+            "conduct",
+            "respect",
+            "whoever",
+            "rashly",
+            "negligent conduct",
+            "machinery safety"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "machinery safety"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "negligence"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.05,
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40388872428180594
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "machinery safety",
+                "source": "legal_concept",
+                "similarity": 0.8427,
+                "weighted_score": 0.8427
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligently",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.967,
+                "weighted_score": 0.7252
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9401,
+                "weighted_score": 0.7051
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.403889,
+            "score_after_pre_rerank": 0.511189
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S291_BODY",
+          "score": 0.510253,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 291,
+          "citation": "Section 291",
+          "text": "Whoever knowingly or negligently omits to take such measures with any animal in his possession as is sufficient to guard against any probable danger to human life, or any probable danger of grievous hurt from such animal, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Punishment for public nuisance in cases not otherwise provided for.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 291: Negligent conduct with respect to animal.\nWhoever knowingly or negligently omits to take such measures with any animal in his possession as is sufficient to guard against any probable danger to human life, or any probable danger of grievous hurt from such animal, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Punishment for public nuisance in cases not otherwise provided for.",
+          "keywords": [
+            "animal",
+            "probable",
+            "danger",
+            "extend",
+            "public",
+            "whoever",
+            "knowingly",
+            "negligently",
+            "omits",
+            "take",
+            "negligent conduct",
+            "animal safety"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "animal welfare"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "negligence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6655873656272888,
+            "original:bm25": 0.2,
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4027478839046412
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "animal welfare",
+                "source": "legal_concept",
+                "similarity": 0.8077,
+                "weighted_score": 0.8077
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligently",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "danger",
+                "source": "keyword",
+                "similarity": 0.9598,
+                "weighted_score": 0.7199
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9401,
+                "weighted_score": 0.7051
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.402748,
+            "score_after_pre_rerank": 0.510253
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S290_BODY",
+          "score": 0.509613,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 290,
+          "citation": "Section 290",
+          "text": "Whoever, in pulling down, repairing or constructing any building, knowingly or negligently omits to take such measures with that building as is sufficient to guard against any probable danger to human life from the fall of that building, or of any part thereof, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to animal.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 290: Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.\nWhoever, in pulling down, repairing or constructing any building, knowingly or negligently omits to take such measures with that building as is sufficient to guard against any probable danger to human life from the fall of that building, or of any part thereof, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to animal.",
+          "keywords": [
+            "building",
+            "pulling",
+            "down",
+            "repairing",
+            "constructing",
+            "extend",
+            "negligent",
+            "conduct",
+            "respect",
+            "whoever",
+            "negligent conduct",
+            "building safety"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "building construction"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "negligence"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4019672717293788
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "building construction",
+                "source": "legal_concept",
+                "similarity": 0.823,
+                "weighted_score": 0.823
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.967,
+                "weighted_score": 0.7252
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9401,
+                "weighted_score": 0.7051
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.8941,
+                "weighted_score": 0.6706
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.401967,
+            "score_after_pre_rerank": 0.509613
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S285_BODY",
+          "score": 0.505748,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 285,
+          "citation": "Section 285",
+          "text": "Whoever, by doing any act, or by omitting to take order with any property in his possession or under his charge, causes danger, obstruction or injury to any person in any public way or public line of navigation, shall be punished with fine which may extend to five thousand rupees. Negligent conduct with respect to poisonous substance.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 285: Danger or obstruction in public way or line of navigation.\nWhoever, by doing any act, or by omitting to take order with any property in his possession or under his charge, causes danger, obstruction or injury to any person in any public way or public line of navigation, shall be punished with fine which may extend to five thousand rupees. Negligent conduct with respect to poisonous substance.",
+          "keywords": [
+            "public",
+            "danger",
+            "obstruction",
+            "line",
+            "navigation",
+            "whoever",
+            "doing",
+            "omitting",
+            "take",
+            "order",
+            "public safety",
+            "obstruction of navigation"
+          ],
+          "legal_concepts": [
+            "danger",
+            "obstruction",
+            "public way",
+            "line of navigation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9598091840744019,
+            "original:semrank_pre_rerank": 0.9598,
+            "semrank_pre_rerank": 0.9598
+          },
+          "query_scores": {
+            "original": 0.40607786500106663
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9598,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "danger",
+                "source": "legal_concept",
+                "similarity": 0.9598,
+                "weighted_score": 0.9598
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "line of navigation",
+                "source": "legal_concept",
+                "similarity": 0.8469,
+                "weighted_score": 0.8469
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "obstruction",
+                "source": "legal_concept",
+                "similarity": 0.84,
+                "weighted_score": 0.84
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "public way",
+                "source": "legal_concept",
+                "similarity": 0.8398,
+                "weighted_score": 0.8398
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "take",
+                "source": "keyword",
+                "similarity": 0.9037,
+                "weighted_score": 0.6778
+              }
+            ],
+            "score": 0.9598,
+            "best_similarity": 0.9598,
+            "best_concept": "danger",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9598,
+            "score_before_pre_rerank": 0.406078,
+            "score_after_pre_rerank": 0.505748
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S284_BODY",
+          "score": 0.502417,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 284,
+          "citation": "Section 284",
+          "text": "Whoever knowingly or negligently conveys, or causes to be conveyed for hire, any person by water in any vessel, when that vessel is in such a state or so loaded as to endanger the life of that person, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Danger or obstruction in public way or line of navigation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 284: Conveying person by water for hire in unsafe or overloaded vessel.\nWhoever knowingly or negligently conveys, or causes to be conveyed for hire, any person by water in any vessel, when that vessel is in such a state or so loaded as to endanger the life of that person, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Danger or obstruction in public way or line of navigation.",
+          "keywords": [
+            "vessel",
+            "hire",
+            "water",
+            "extend",
+            "public",
+            "whoever",
+            "knowingly",
+            "negligently",
+            "conveys",
+            "causes",
+            "unsafe vessel",
+            "overloaded vessel"
+          ],
+          "legal_concepts": [
+            "offence against public health and safety"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9573818445205688,
+            "original:semrank_pre_rerank": 0.9574,
+            "semrank_pre_rerank": 0.9574
+          },
+          "query_scores": {
+            "original": 0.4025430980371581
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9574,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against public health",
+                "chunk_concept": "offence against public health and safety",
+                "source": "legal_concept",
+                "similarity": 0.9574,
+                "weighted_score": 0.9574
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligently",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "causes",
+                "source": "keyword",
+                "similarity": 0.9041,
+                "weighted_score": 0.678
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "knowingly",
+                "source": "keyword",
+                "similarity": 0.899,
+                "weighted_score": 0.6742
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.8941,
+                "weighted_score": 0.6706
+              }
+            ],
+            "score": 0.9574,
+            "best_similarity": 0.9574,
+            "best_concept": "offence against public health and safety",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9574,
+            "score_before_pre_rerank": 0.402543,
+            "score_after_pre_rerank": 0.502417
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S271_BODY",
+          "score": 1.0,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 271,
+          "citation": "Section 271",
+          "text": "Whoever unlawfully or negligently does any act which is, and which he knows or has reason to believe to be, likely to spread the infection of any disease dangerous to life, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine, or with both. Malignant act likely to spread infection of disease dangerous to life.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 271: Negligent act likely to spread infection of disease dangerous to life.\nWhoever unlawfully or negligently does any act which is, and which he knows or has reason to believe to be, likely to spread the infection of any disease dangerous to life, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine, or with both. Malignant act likely to spread infection of disease dangerous to life.",
+          "keywords": [
+            "likely",
+            "spread",
+            "infection",
+            "disease",
+            "dangerous",
+            "life",
+            "whoever",
+            "unlawfully",
+            "negligently",
+            "knows",
+            "negligent act"
+          ],
+          "legal_concepts": [
+            "offence against public health",
+            "punishment for negligence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 2,
+            "coverage_ratio": 0.6667,
+            "matched_concepts": [
+              "offence against public health",
+              "punishment for negligence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against public health",
+                "chunk_concept": "offence against public health",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "punishment for negligence",
+                "chunk_concept": "punishment for negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "dangerous",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "infection",
+                "chunk_concept": "infection",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligently",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against public health",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S270_BODY",
+          "score": 0.93134,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 270,
+          "citation": "Section 270",
+          "text": "A person is guilty of a public nuisance who does any act or is guilty of an illegal omission which causes any common injury, danger or annoyance to the public or to the people in general who dwell or occupy property in the vicinity, or which must necessarily cause injury, obstruction, danger or annoyance to persons who may have occasion to use any public right but a common nuisance is not excused on the ground that it causes some convenience or advantage. Negligent act likely to spread infection of disease dangerous to life.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 270: Public nuisance.\nA person is guilty of a public nuisance who does any act or is guilty of an illegal omission which causes any common injury, danger or annoyance to the public or to the people in general who dwell or occupy property in the vicinity, or which must necessarily cause injury, obstruction, danger or annoyance to persons who may have occasion to use any public right but a common nuisance is not excused on the ground that it causes some convenience or advantage. Negligent act likely to spread infection of disease dangerous to life.",
+          "keywords": [
+            "public",
+            "nuisance",
+            "guilty",
+            "causes",
+            "common",
+            "injury",
+            "danger",
+            "annoyance",
+            "convenience",
+            "illegal",
+            "public nuisance",
+            "common injury"
+          ],
+          "legal_concepts": [
+            "public nuisance",
+            "common injury"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7031916379928589,
+            "original:bm25": 0.3392024426888523,
+            "original:semrank_pre_rerank": 0.8387,
+            "semrank_pre_rerank": 0.8387
+          },
+          "query_scores": {
+            "original": 0.921277144227898
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "score": 0.8387,
+            "best_similarity": 0.8387,
+            "best_concept": "common injury",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "common injury",
+                "source": "legal_concept",
+                "similarity": 0.8387,
+                "weighted_score": 0.8387
+              },
+              {
+                "query_concept": "offence against public health",
+                "chunk_concept": "public nuisance",
+                "source": "legal_concept",
+                "similarity": 0.8286,
+                "weighted_score": 0.8286
+              },
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "danger",
+                "source": "keyword",
+                "similarity": 0.9598,
+                "weighted_score": 0.7199
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "causes",
+                "source": "keyword",
+                "similarity": 0.9041,
+                "weighted_score": 0.678
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "common",
+                "source": "keyword",
+                "similarity": 0.8925,
+                "weighted_score": 0.6694
+              }
+            ],
+            "pre_rerank_score": 0.8387,
+            "score_before_pre_rerank": 0.921277,
+            "score_after_pre_rerank": 0.906413
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S272_BODY",
+          "score": 0.812621,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 272,
+          "citation": "Section 272",
+          "text": "Whoever malignantly does any act which is, and which he knows or has reason to believe to be, likely to spread the infection of any disease dangerous to life, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Disobedience to quarantine rule.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 272: Malignant act likely to spread infection of disease dangerous to life.\nWhoever malignantly does any act which is, and which he knows or has reason to believe to be, likely to spread the infection of any disease dangerous to life, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. Disobedience to quarantine rule.",
+          "keywords": [
+            "likely",
+            "spread",
+            "infection",
+            "disease",
+            "dangerous",
+            "life",
+            "whoever",
+            "malignantly",
+            "knows",
+            "reason",
+            "malignant act"
+          ],
+          "legal_concepts": [
+            "offence against public health",
+            "punishment for disobedience"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "offence against public health"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6945868134498596,
+            "original:bm25": 0.6992123081112068,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.8592492344182662
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against public health",
+                "chunk_concept": "offence against public health",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "punishment for negligence",
+                "chunk_concept": "punishment for disobedience",
+                "source": "legal_concept",
+                "similarity": 0.8832,
+                "weighted_score": 0.8832
+              },
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "dangerous",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "infection",
+                "chunk_concept": "infection",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "spread",
+                "chunk_concept": "spread",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "offence against public health",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.859249,
+            "score_after_pre_rerank": 0.884584
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S286_BODY",
+          "score": 0.225021,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 286,
+          "citation": "Section 286",
+          "text": "Whoever does, with any poisonous substance, any act in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any person or knowingly or negligently omits to take such order with any poisonous substance in his possession as is sufficient to guard against any probable danger to human life from such poisonous substance, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to fire or combustible matter.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 286: Negligent conduct with respect to poisonous substance.\nWhoever does, with any poisonous substance, any act in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any person or knowingly or negligently omits to take such order with any poisonous substance in his possession as is sufficient to guard against any probable danger to human life from such poisonous substance, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to fire or combustible matter.",
+          "keywords": [
+            "poisonous",
+            "substance",
+            "negligent",
+            "human",
+            "life",
+            "extend",
+            "conduct",
+            "respect",
+            "whoever",
+            "manner",
+            "negligent conduct",
+            "poisonous substance"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "endangering human life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "negligence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6771793365478516,
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.41787367128549613
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "endangering human life",
+                "source": "legal_concept",
+                "similarity": 0.9055,
+                "weighted_score": 0.9055
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.967,
+                "weighted_score": 0.7252
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9401,
+                "weighted_score": 0.7051
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.8941,
+                "weighted_score": 0.6706
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.417874,
+            "score_after_pre_rerank": 0.522656
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S287_BODY",
+          "score": 0.214967,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 287,
+          "citation": "Section 287",
+          "text": "Whoever does, with fire or any combustible matter, any act so rashly or negligently as to endanger human life, or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any fire or any combustible matter in his possession as is sufficient to guard against any probable danger to human life from such fire or combustible matter, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to two thousand rupees, or with both. Negligent conduct with respect to explosive substance.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 287: Negligent conduct with respect to fire or combustible matter.\nWhoever does, with fire or any combustible matter, any act so rashly or negligently as to endanger human life, or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any fire or any combustible matter in his possession as is sufficient to guard against any probable danger to human life from such fire or combustible matter, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to two thousand rupees, or with both. Negligent conduct with respect to explosive substance.",
+          "keywords": [
+            "fire",
+            "combustible",
+            "negligently",
+            "human",
+            "life",
+            "extend",
+            "negligent",
+            "conduct",
+            "respect",
+            "negligent conduct",
+            "fire safety"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "fire safety"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "negligence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.651801586151123,
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.41032161297703307
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "fire safety",
+                "source": "legal_concept",
+                "similarity": 0.8395,
+                "weighted_score": 0.8395
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligently",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.967,
+                "weighted_score": 0.7252
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9401,
+                "weighted_score": 0.7051
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.410322,
+            "score_after_pre_rerank": 0.516464
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S285_BODY",
+          "score": 0.209327,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 285,
+          "citation": "Section 285",
+          "text": "Whoever, by doing any act, or by omitting to take order with any property in his possession or under his charge, causes danger, obstruction or injury to any person in any public way or public line of navigation, shall be punished with fine which may extend to five thousand rupees. Negligent conduct with respect to poisonous substance.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 285: Danger or obstruction in public way or line of navigation.\nWhoever, by doing any act, or by omitting to take order with any property in his possession or under his charge, causes danger, obstruction or injury to any person in any public way or public line of navigation, shall be punished with fine which may extend to five thousand rupees. Negligent conduct with respect to poisonous substance.",
+          "keywords": [
+            "public",
+            "danger",
+            "obstruction",
+            "line",
+            "navigation",
+            "whoever",
+            "doing",
+            "omitting",
+            "take",
+            "order",
+            "public safety",
+            "obstruction of navigation"
+          ],
+          "legal_concepts": [
+            "danger",
+            "obstruction",
+            "public way",
+            "line of navigation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9598091840744019,
+            "original:semrank_pre_rerank": 0.9598,
+            "semrank_pre_rerank": 0.9598
+          },
+          "query_scores": {
+            "original": 0.40607786500106663
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9598,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "danger",
+                "source": "legal_concept",
+                "similarity": 0.9598,
+                "weighted_score": 0.9598
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "line of navigation",
+                "source": "legal_concept",
+                "similarity": 0.8469,
+                "weighted_score": 0.8469
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "obstruction",
+                "source": "legal_concept",
+                "similarity": 0.84,
+                "weighted_score": 0.84
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "public way",
+                "source": "legal_concept",
+                "similarity": 0.8398,
+                "weighted_score": 0.8398
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "take",
+                "source": "keyword",
+                "similarity": 0.9037,
+                "weighted_score": 0.6778
+              }
+            ],
+            "score": 0.9598,
+            "best_similarity": 0.9598,
+            "best_concept": "danger",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9598,
+            "score_before_pre_rerank": 0.406078,
+            "score_after_pre_rerank": 0.505748
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S289_BODY",
+          "score": 0.206403,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 289,
+          "citation": "Section 289",
+          "text": "Whoever does, with any machinery, any act so rashly or negligently as to endanger human life or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any machinery in his possession or under his care as is sufficient to guard against any probable danger to human life from such machinery, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 289: Negligent conduct with respect to machinery.\nWhoever does, with any machinery, any act so rashly or negligently as to endanger human life or to be likely to cause hurt or injury to any other person or knowingly or negligently omits to take such order with any machinery in his possession or under his care as is sufficient to guard against any probable danger to human life from such machinery, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.",
+          "keywords": [
+            "machinery",
+            "negligently",
+            "human",
+            "life",
+            "extend",
+            "negligent",
+            "conduct",
+            "respect",
+            "whoever",
+            "rashly",
+            "negligent conduct",
+            "machinery safety"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "machinery safety"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "negligence"
+            ]
+          },
+          "source_scores": {
+            "original:bm25": 0.05,
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.40388872428180594
+          },
+          "reasons": [
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "machinery safety",
+                "source": "legal_concept",
+                "similarity": 0.8427,
+                "weighted_score": 0.8427
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligently",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.967,
+                "weighted_score": 0.7252
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9401,
+                "weighted_score": 0.7051
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.403889,
+            "score_after_pre_rerank": 0.511189
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S291_BODY",
+          "score": 0.204884,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 291,
+          "citation": "Section 291",
+          "text": "Whoever knowingly or negligently omits to take such measures with any animal in his possession as is sufficient to guard against any probable danger to human life, or any probable danger of grievous hurt from such animal, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Punishment for public nuisance in cases not otherwise provided for.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 291: Negligent conduct with respect to animal.\nWhoever knowingly or negligently omits to take such measures with any animal in his possession as is sufficient to guard against any probable danger to human life, or any probable danger of grievous hurt from such animal, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Punishment for public nuisance in cases not otherwise provided for.",
+          "keywords": [
+            "animal",
+            "probable",
+            "danger",
+            "extend",
+            "public",
+            "whoever",
+            "knowingly",
+            "negligently",
+            "omits",
+            "take",
+            "negligent conduct",
+            "animal safety"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "animal welfare"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "negligence"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.6655873656272888,
+            "original:bm25": 0.2,
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4027478839046412
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "animal welfare",
+                "source": "legal_concept",
+                "similarity": 0.8077,
+                "weighted_score": 0.8077
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligently",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "dangerous",
+                "chunk_concept": "danger",
+                "source": "keyword",
+                "similarity": 0.9598,
+                "weighted_score": 0.7199
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9401,
+                "weighted_score": 0.7051
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.402748,
+            "score_after_pre_rerank": 0.510253
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S284_BODY",
+          "score": 0.204622,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 284,
+          "citation": "Section 284",
+          "text": "Whoever knowingly or negligently conveys, or causes to be conveyed for hire, any person by water in any vessel, when that vessel is in such a state or so loaded as to endanger the life of that person, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Danger or obstruction in public way or line of navigation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 284: Conveying person by water for hire in unsafe or overloaded vessel.\nWhoever knowingly or negligently conveys, or causes to be conveyed for hire, any person by water in any vessel, when that vessel is in such a state or so loaded as to endanger the life of that person, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Danger or obstruction in public way or line of navigation.",
+          "keywords": [
+            "vessel",
+            "hire",
+            "water",
+            "extend",
+            "public",
+            "whoever",
+            "knowingly",
+            "negligently",
+            "conveys",
+            "causes",
+            "unsafe vessel",
+            "overloaded vessel"
+          ],
+          "legal_concepts": [
+            "offence against public health and safety"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.9573818445205688,
+            "original:semrank_pre_rerank": 0.9574,
+            "semrank_pre_rerank": 0.9574
+          },
+          "query_scores": {
+            "original": 0.4025430980371581
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9574,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "offence against public health",
+                "chunk_concept": "offence against public health and safety",
+                "source": "legal_concept",
+                "similarity": 0.9574,
+                "weighted_score": 0.9574
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligently",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "causes",
+                "source": "keyword",
+                "similarity": 0.9041,
+                "weighted_score": 0.678
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "knowingly",
+                "source": "keyword",
+                "similarity": 0.899,
+                "weighted_score": 0.6742
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.8941,
+                "weighted_score": 0.6706
+              }
+            ],
+            "score": 0.9574,
+            "best_similarity": 0.9574,
+            "best_concept": "offence against public health and safety",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9574,
+            "score_before_pre_rerank": 0.402543,
+            "score_after_pre_rerank": 0.502417
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S290_BODY",
+          "score": 0.203845,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,",
+          "section_number": 290,
+          "citation": "Section 290",
+          "text": "Whoever, in pulling down, repairing or constructing any building, knowingly or negligently omits to take such measures with that building as is sufficient to guard against any probable danger to human life from the fall of that building, or of any part thereof, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to animal.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 15: OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE,\nSection 290: Negligent conduct with respect to pulling down, repairing or constructing buildings, etc.\nWhoever, in pulling down, repairing or constructing any building, knowingly or negligently omits to take such measures with that building as is sufficient to guard against any probable danger to human life from the fall of that building, or of any part thereof, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five thousand rupees, or with both. Negligent conduct with respect to animal.",
+          "keywords": [
+            "building",
+            "pulling",
+            "down",
+            "repairing",
+            "constructing",
+            "extend",
+            "negligent",
+            "conduct",
+            "respect",
+            "whoever",
+            "negligent conduct",
+            "building safety"
+          ],
+          "legal_concepts": [
+            "negligence",
+            "building construction"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "negligence"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4019672717293788
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "offence against public health",
+              "negligence",
+              "punishment for negligence",
+              "negligently",
+              "spread",
+              "dangerous",
+              "infection",
+              "may"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "negligence",
+                "chunk_concept": "negligence",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "building construction",
+                "source": "legal_concept",
+                "similarity": 0.823,
+                "weighted_score": 0.823
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent",
+                "source": "keyword",
+                "similarity": 0.967,
+                "weighted_score": 0.7252
+              },
+              {
+                "query_concept": "negligently",
+                "chunk_concept": "negligent conduct",
+                "source": "keyword",
+                "similarity": 0.9401,
+                "weighted_score": 0.7051
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "extend",
+                "source": "keyword",
+                "similarity": 0.8941,
+                "weighted_score": 0.6706
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "negligence",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.401967,
+            "score_after_pre_rerank": 0.509613
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

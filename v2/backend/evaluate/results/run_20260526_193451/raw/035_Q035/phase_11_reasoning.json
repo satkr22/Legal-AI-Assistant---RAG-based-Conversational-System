@@ -1,0 +1,3397 @@
+[
+  {
+    "query": "What is the punishment for gang rape?",
+    "phase8": {
+      "query": "What is the punishment for gang rape?",
+      "intent": {
+        "primary": "legal penalty",
+        "secondary": []
+      },
+      "concepts": [
+        "gang rape",
+        "punishment",
+        "imprisonment for life",
+        "death penalty"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.8656,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.25,
+        "structure_validity": 1.0,
+        "overall": 0.7962
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "What is the punishment for gang rape?",
+          "targets": [],
+          "concepts": [
+            "gang rape",
+            "punishment",
+            "imprisonment for life",
+            "death penalty"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S70_N2",
+            "score": 1.0,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 70,
+            "citation": "Section 70",
+            "text": "Where a woman under eighteen years of age is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine, or with death: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim. Punishment for repeat offenders.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 70: Gang rape.\nWhere a woman under eighteen years of age is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine, or with death: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim. Punishment for repeat offenders.",
+            "keywords": [
+              "fine",
+              "woman",
+              "rape",
+              "imprisonment",
+              "life",
+              "provided",
+              "victim",
+              "eighteen",
+              "years",
+              "raped",
+              "gang rape",
+              "minor victim"
+            ],
+            "legal_concepts": [
+              "rape",
+              "imprisonment for life",
+              "fine"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 1,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "imprisonment for life"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.8146443367004395,
+              "bm25": 1.0,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "gang rape",
+                "imprisonment for life",
+                "death penalty",
+                "gang",
+                "rape"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "imprisonment for life",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "rape",
+                  "chunk_concept": "rape",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "gang",
+                  "chunk_concept": "fine",
+                  "source": "legal_concept",
+                  "similarity": 0.843,
+                  "weighted_score": 0.843
+                },
+                {
+                  "query_concept": "gang rape",
+                  "chunk_concept": "gang rape",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "rape",
+                  "chunk_concept": "raped",
+                  "source": "keyword",
+                  "similarity": 0.9709,
+                  "weighted_score": 0.7282
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "imprisonment for life",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S70_N1",
+            "score": 0.998236,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 70,
+            "citation": "Section 70",
+            "text": "Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 70: Gang rape.\nWhere a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim.",
+            "keywords": [
+              "imprisonment",
+              "fine",
+              "woman",
+              "rape",
+              "life",
+              "provided",
+              "victim",
+              "raped",
+              "constituting",
+              "group",
+              "gang rape",
+              "multiple perpetrators"
+            ],
+            "legal_concepts": [
+              "rape",
+              "rigorous imprisonment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "bm25": 0.4594454841159807,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "gang rape",
+                "imprisonment for life",
+                "death penalty",
+                "gang",
+                "rape"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "rape",
+                  "chunk_concept": "rape",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "rigorous imprisonment",
+                  "source": "legal_concept",
+                  "similarity": 0.9039,
+                  "weighted_score": 0.9039
+                },
+                {
+                  "query_concept": "gang rape",
+                  "chunk_concept": "gang rape",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "rape",
+                  "chunk_concept": "raped",
+                  "source": "keyword",
+                  "similarity": 0.9709,
+                  "weighted_score": 0.7282
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.9388,
+                  "weighted_score": 0.7041
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "rape",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S64_N1",
+            "score": 0.831098,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 64,
+            "citation": "Section 64",
+            "text": "Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 64: Punishment for rape.\nWhoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine.",
+            "keywords": [
+              "rape",
+              "imprisonment",
+              "whoever",
+              "except",
+              "cases",
+              "provided",
+              "sub-section",
+              "commits",
+              "punished",
+              "rigorous",
+              "punishment"
+            ],
+            "legal_concepts": [
+              "offence against woman and child",
+              "punishment for rape"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7684720754623413,
+              "bm25": 0.260896281728171,
+              "semrank_pre_rerank": 0.9515
+            },
+            "query_scores": {
+              "original": 0.7684720754623413
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "conditional_clause_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "gang rape",
+                "imprisonment for life",
+                "death penalty",
+                "gang",
+                "rape"
+              ],
+              "score": 0.9515,
+              "best_similarity": 0.9515,
+              "best_concept": "punishment for rape",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "rape",
+                  "chunk_concept": "punishment for rape",
+                  "source": "legal_concept",
+                  "similarity": 0.9515,
+                  "weighted_score": 0.9515
+                },
+                {
+                  "query_concept": "rape",
+                  "chunk_concept": "offence against woman and child",
+                  "source": "legal_concept",
+                  "similarity": 0.8413,
+                  "weighted_score": 0.8413
+                },
+                {
+                  "query_concept": "rape",
+                  "chunk_concept": "rape",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.9388,
+                  "weighted_score": 0.7041
+                },
+                {
+                  "query_concept": "gang",
+                  "chunk_concept": "provided",
+                  "source": "keyword",
+                  "similarity": 0.861,
+                  "weighted_score": 0.6457
+                }
+              ],
+              "pre_rerank_score": 0.9515,
+              "score_before_pre_rerank": 0.810079,
+              "score_after_pre_rerank": 0.835535
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S65_N2",
+            "score": 0.746664,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 65,
+            "citation": "Section 65",
+            "text": "Whoever, commits rape on a woman under twelve years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine or with death: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim. Punishment for causing death or resulting in persistent vegetative state of victim.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 65: Punishment for rape in certain cases.\nWhoever, commits rape on a woman under twelve years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine or with death: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim. Punishment for causing death or resulting in persistent vegetative state of victim.",
+            "keywords": [
+              "imprisonment",
+              "fine",
+              "victim",
+              "rape",
+              "woman",
+              "years",
+              "life",
+              "death",
+              "provided",
+              "punishment",
+              "child"
+            ],
+            "legal_concepts": [
+              "rape",
+              "punishment",
+              "imprisonment for life"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 2,
+              "coverage_ratio": 0.5,
+              "matched_concepts": [
+                "punishment",
+                "imprisonment for life"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7344158887863159,
+              "bm25": 0.2682892725215371,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "gang rape",
+                "imprisonment for life",
+                "death penalty",
+                "gang",
+                "rape"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "imprisonment for life",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "rape",
+                  "chunk_concept": "rape",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.9388,
+                  "weighted_score": 0.7041
+                },
+                {
+                  "query_concept": "death penalty",
+                  "chunk_concept": "death",
+                  "source": "keyword",
+                  "similarity": 0.8947,
+                  "weighted_score": 0.671
+                },
+                {
+                  "query_concept": "rape",
+                  "chunk_concept": "victim",
+                  "source": "keyword",
+                  "similarity": 0.8808,
+                  "weighted_score": 0.6606
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "imprisonment for life",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__section__BNS_S69",
+            "score": 0.743339,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 69,
+            "citation": "Section 69",
+            "text": "Whoever, by deceitful means or by making promise to marry to\na woman without any intention of fulfilling the same, has sexual intercourse\nwith her, such sexual intercourse not amounting to the offence of rape,\nshall be punished with imprisonment of either description for a term which\nmay extend to ten years and shall also be liable to fine.\nExplanation.—“deceitful means” shall include inducement for, or false\npromise of employment or promotion, or marrying by suppressing identity.\nGang rape.",
+            "derived_context": "",
+            "keywords": [
+              "sexual intercourse",
+              "deceitful means"
+            ],
+            "legal_concepts": [
+              "offence against woman and child",
+              "punishment for deceitful means"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "anchor": 0.9
+            },
+            "query_scores": {
+              "anchor": 0.9
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S69_EXP1",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__node__BNS_S71_BODY",
+            "score": 0.665094,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 71,
+            "citation": "Section 71",
+            "text": "Whoever has been previously convicted of an offence punishable under section 64 or section 65 or section 66 or section 70 and is subsequently convicted of an offence punishable under any of the said sections shall be punished with imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, or with death. Disclosure of identity of victim of certain offences, etc.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 71: Punishment for repeat offenders.\nWhoever has been previously convicted of an offence punishable under section 64 or section 65 or section 66 or section 70 and is subsequently convicted of an offence punishable under any of the said sections shall be punished with imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, or with death. Disclosure of identity of victim of certain offences, etc.",
+            "keywords": [
+              "convicted",
+              "offence",
+              "punishable",
+              "imprisonment",
+              "life",
+              "offences",
+              "whoever",
+              "previously",
+              "subsequently",
+              "said",
+              "repeat offenders",
+              "life imprisonment"
+            ],
+            "legal_concepts": [
+              "punishment for repeat offenders",
+              "imprisonment for life"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 1,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "imprisonment for life"
+              ]
+            },
+            "source_scores": {
+              "semrank": 0.9999999403953552,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999999403953552
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "gang rape",
+                "imprisonment for life",
+                "death penalty",
+                "gang",
+                "rape"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "imprisonment for life",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "punishment for repeat offenders",
+                  "source": "legal_concept",
+                  "similarity": 0.8498,
+                  "weighted_score": 0.8498
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "life imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.9764,
+                  "weighted_score": 0.7323
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.9388,
+                  "weighted_score": 0.7041
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "convicted",
+                  "source": "keyword",
+                  "similarity": 0.8867,
+                  "weighted_score": 0.665
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "imprisonment for life",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S65_N1",
+            "score": 0.646355,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 65,
+            "citation": "Section 65",
+            "text": "Whoever, commits rape on a woman under sixteen years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 65: Punishment for rape in certain cases.\nWhoever, commits rape on a woman under sixteen years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim.",
+            "keywords": [
+              "imprisonment",
+              "fine",
+              "rape",
+              "woman",
+              "years",
+              "life",
+              "provided",
+              "victim",
+              "whoever",
+              "commits"
+            ],
+            "legal_concepts": [
+              "punishment for rape"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.7369438409805298,
+              "semrank_pre_rerank": 0.9515
+            },
+            "query_scores": {
+              "original": 0.7369438409805298
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "gang rape",
+                "imprisonment for life",
+                "death penalty",
+                "gang",
+                "rape"
+              ],
+              "score": 0.9515,
+              "best_similarity": 0.9515,
+              "best_concept": "punishment for rape",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "rape",
+                  "chunk_concept": "punishment for rape",
+                  "source": "legal_concept",
+                  "similarity": 0.9515,
+                  "weighted_score": 0.9515
+                },
+                {
+                  "query_concept": "rape",
+                  "chunk_concept": "rape",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.9388,
+                  "weighted_score": 0.7041
+                },
+                {
+                  "query_concept": "rape",
+                  "chunk_concept": "victim",
+                  "source": "keyword",
+                  "similarity": 0.8808,
+                  "weighted_score": 0.6606
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "life",
+                  "source": "keyword",
+                  "similarity": 0.8766,
+                  "weighted_score": 0.6574
+                }
+              ],
+              "pre_rerank_score": 0.9515,
+              "score_before_pre_rerank": 0.86316,
+              "score_after_pre_rerank": 0.879061
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S64_N2_M",
+            "score": 0.641451,
+            "chunk_type": "clause",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": 64,
+            "citation": "Section 64",
+            "text": "commits rape repeatedly on the same woman, shall be punished with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 64: Punishment for rape.\nWhoever,—\ncommits rape repeatedly on the same woman, shall be punished with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine.",
+            "keywords": [
+              "imprisonment",
+              "rape",
+              "woman",
+              "life",
+              "commits",
+              "repeatedly",
+              "punished",
+              "rigorous",
+              "term",
+              "years",
+              "repeated rape",
+              "severe punishment"
+            ],
+            "legal_concepts": [
+              "rape",
+              "punishment",
+              "imprisonment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 1,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "punishment"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.7766827344894409,
+              "bm25": 0.3477954099993899,
+              "semrank": 1.0,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "gang rape",
+                "imprisonment for life",
+                "death penalty",
+                "gang",
+                "rape"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "rape",
+                  "chunk_concept": "rape",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "imprisonment",
+                  "source": "legal_concept",
+                  "similarity": 0.9388,
+                  "weighted_score": 0.9388
+                },
+                {
+                  "query_concept": "rape",
+                  "chunk_concept": "repeated rape",
+                  "source": "keyword",
+                  "similarity": 0.9341,
+                  "weighted_score": 0.7005
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "life",
+                  "source": "keyword",
+                  "similarity": 0.8766,
+                  "weighted_score": 0.6574
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "severe punishment",
+                  "source": "keyword",
+                  "similarity": 0.876,
+                  "weighted_score": 0.657
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "rape",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S62_BODY",
+            "score": 0.508279,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+            "section_number": 62,
+            "citation": "Section 62",
+            "text": "Whoever attempts to commit an offence punishable by this Sanhita with imprisonment for life or imprisonment, or to cause such an offence to be committed, and in such attempt does any act towards the commission of the offence, shall, where no express provision is made by this Sanhita for the punishment of such attempt, be punished with imprisonment of any description provided for the offence, for a term which may extend to one-half of the imprisonment for life or, as the case may be, one-half of the longest term of imprisonment provided for that offence, or with such fine as is provided for the offence, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 62: Punishment for attempting to commit offences punishable with imprisonment for life or other\nWhoever attempts to commit an offence punishable by this Sanhita with imprisonment for life or imprisonment, or to cause such an offence to be committed, and in such attempt does any act towards the commission of the offence, shall, where no express provision is made by this Sanhita for the punishment of such attempt, be punished with imprisonment of any description provided for the offence, for a term which may extend to one-half of the imprisonment for life or, as the case may be, one-half of the longest term of imprisonment provided for that offence, or with such fine as is provided for the offence, or with both.",
+            "keywords": [
+              "offence",
+              "imprisonment",
+              "life",
+              "attempt",
+              "provided",
+              "commit",
+              "punishable",
+              "punishment",
+              "term",
+              "one-half",
+              "attempting"
+            ],
+            "legal_concepts": [
+              "attempt",
+              "imprisonment for life"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 1,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "imprisonment for life"
+              ]
+            },
+            "source_scores": {
+              "semrank": 0.9999999403953552,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999999403953552
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "gang rape",
+                "imprisonment for life",
+                "death penalty",
+                "gang",
+                "rape"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "imprisonment for life",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "rape",
+                  "chunk_concept": "attempt",
+                  "source": "legal_concept",
+                  "similarity": 0.8248,
+                  "weighted_score": 0.8248
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.9388,
+                  "weighted_score": 0.7041
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "life",
+                  "source": "keyword",
+                  "similarity": 0.8766,
+                  "weighted_score": 0.6574
+                },
+                {
+                  "query_concept": "gang",
+                  "chunk_concept": "term",
+                  "source": "keyword",
+                  "similarity": 0.8647,
+                  "weighted_score": 0.6485
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "imprisonment for life",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S13_BODY",
+            "score": 0.467243,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF PUNISHMENTS",
+            "section_number": 13,
+            "citation": "Section 13",
+            "text": "Whoever, having been convicted by a Court in India, of an offence punishable under Chapter X or Chapter XVII of this Sanhita with imprisonment of either description for a term of three years or upwards, shall be guilty of any offence punishable under either of those Chapters with like imprisonment for the like term, shall be subject for every such subsequent offence to imprisonment for life, or to imprisonment of either description for a term which may extend to ten years. GENERAL EXCEPTIONS Act done by a person bound, or by mistake of fact believing himself bound, by law.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 13: Enhanced punishment for certain offences after previous conviction.\nWhoever, having been convicted by a Court in India, of an offence punishable under Chapter X or Chapter XVII of this Sanhita with imprisonment of either description for a term of three years or upwards, shall be guilty of any offence punishable under either of those Chapters with like imprisonment for the like term, shall be subject for every such subsequent offence to imprisonment for life, or to imprisonment of either description for a term which may extend to ten years. GENERAL EXCEPTIONS Act done by a person bound, or by mistake of fact believing himself bound, by law.",
+            "keywords": [
+              "imprisonment",
+              "offence",
+              "either",
+              "term",
+              "punishable",
+              "description",
+              "years",
+              "like",
+              "bound",
+              "whoever",
+              "enhanced punishment",
+              "previous conviction"
+            ],
+            "legal_concepts": [
+              "punishment for subsequent offence",
+              "imprisonment for life"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 4,
+              "matched_count": 1,
+              "coverage_ratio": 0.25,
+              "matched_concepts": [
+                "imprisonment for life"
+              ]
+            },
+            "source_scores": {
+              "semrank": 0.9999999403953552,
+              "semrank_pre_rerank": 1.0
+            },
+            "query_scores": {
+              "original": 0.9999999403953552
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 1.0,
+              "query_concepts": [
+                "gang rape",
+                "imprisonment for life",
+                "death penalty",
+                "gang",
+                "rape"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "imprisonment for life",
+                  "source": "legal_concept",
+                  "similarity": 1.0,
+                  "weighted_score": 1.0
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "punishment for subsequent offence",
+                  "source": "legal_concept",
+                  "similarity": 0.8673,
+                  "weighted_score": 0.8673
+                },
+                {
+                  "query_concept": "imprisonment for life",
+                  "chunk_concept": "imprisonment",
+                  "source": "keyword",
+                  "similarity": 0.9388,
+                  "weighted_score": 0.7041
+                },
+                {
+                  "query_concept": "gang",
+                  "chunk_concept": "description",
+                  "source": "keyword",
+                  "similarity": 0.8689,
+                  "weighted_score": 0.6517
+                },
+                {
+                  "query_concept": "gang",
+                  "chunk_concept": "term",
+                  "source": "keyword",
+                  "similarity": 0.8647,
+                  "weighted_score": 0.6485
+                }
+              ],
+              "score": 1.0,
+              "best_similarity": 1.0,
+              "best_concept": "imprisonment for life",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 1.0,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 1.0
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S70_N2",
+          "score": 1.0,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 70,
+          "citation": "Section 70",
+          "text": "Where a woman under eighteen years of age is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine, or with death: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim. Punishment for repeat offenders.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 70: Gang rape.\nWhere a woman under eighteen years of age is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine, or with death: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim. Punishment for repeat offenders.",
+          "keywords": [
+            "fine",
+            "woman",
+            "rape",
+            "imprisonment",
+            "life",
+            "provided",
+            "victim",
+            "eighteen",
+            "years",
+            "raped",
+            "gang rape",
+            "minor victim"
+          ],
+          "legal_concepts": [
+            "rape",
+            "imprisonment for life",
+            "fine"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "imprisonment for life"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8146443367004395,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "rape",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "gang",
+                "chunk_concept": "fine",
+                "source": "legal_concept",
+                "similarity": 0.843,
+                "weighted_score": 0.843
+              },
+              {
+                "query_concept": "gang rape",
+                "chunk_concept": "gang rape",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "raped",
+                "source": "keyword",
+                "similarity": 0.9709,
+                "weighted_score": 0.7282
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S70_N1",
+          "score": 0.998554,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 70,
+          "citation": "Section 70",
+          "text": "Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 70: Gang rape.\nWhere a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim.",
+          "keywords": [
+            "imprisonment",
+            "fine",
+            "woman",
+            "rape",
+            "life",
+            "provided",
+            "victim",
+            "raped",
+            "constituting",
+            "group",
+            "gang rape",
+            "multiple perpetrators"
+          ],
+          "legal_concepts": [
+            "rape",
+            "rigorous imprisonment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.4594454841159807,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9982364575670084
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "rape",
+                "chunk_concept": "rape",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "rigorous imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.9039,
+                "weighted_score": 0.9039
+              },
+              {
+                "query_concept": "gang rape",
+                "chunk_concept": "gang rape",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "raped",
+                "source": "keyword",
+                "similarity": 0.9709,
+                "weighted_score": 0.7282
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9388,
+                "weighted_score": 0.7041
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "rape",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.998236,
+            "score_after_pre_rerank": 0.998554
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S64_N1",
+          "score": 0.852771,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 64,
+          "citation": "Section 64",
+          "text": "Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 64: Punishment for rape.\nWhoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine.",
+          "keywords": [
+            "rape",
+            "imprisonment",
+            "whoever",
+            "except",
+            "cases",
+            "provided",
+            "sub-section",
+            "commits",
+            "punished",
+            "rigorous",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against woman and child",
+            "punishment for rape"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7684720754623413,
+            "original:bm25": 0.260896281728171,
+            "original:semrank_pre_rerank": 0.9515,
+            "semrank_pre_rerank": 0.9515
+          },
+          "query_scores": {
+            "original": 0.8310982641722572
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "conditional_clause_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "score": 0.9515,
+            "best_similarity": 0.9515,
+            "best_concept": "punishment for rape",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "rape",
+                "chunk_concept": "punishment for rape",
+                "source": "legal_concept",
+                "similarity": 0.9515,
+                "weighted_score": 0.9515
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "offence against woman and child",
+                "source": "legal_concept",
+                "similarity": 0.8413,
+                "weighted_score": 0.8413
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "rape",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9388,
+                "weighted_score": 0.7041
+              },
+              {
+                "query_concept": "gang",
+                "chunk_concept": "provided",
+                "source": "keyword",
+                "similarity": 0.861,
+                "weighted_score": 0.6457
+              }
+            ],
+            "pre_rerank_score": 0.9515,
+            "score_before_pre_rerank": 0.831098,
+            "score_after_pre_rerank": 0.852771
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S65_N2",
+          "score": 0.792264,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 65,
+          "citation": "Section 65",
+          "text": "Whoever, commits rape on a woman under twelve years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine or with death: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim. Punishment for causing death or resulting in persistent vegetative state of victim.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 65: Punishment for rape in certain cases.\nWhoever, commits rape on a woman under twelve years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine or with death: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim. Punishment for causing death or resulting in persistent vegetative state of victim.",
+          "keywords": [
+            "imprisonment",
+            "fine",
+            "victim",
+            "rape",
+            "woman",
+            "years",
+            "life",
+            "death",
+            "provided",
+            "punishment",
+            "child"
+          ],
+          "legal_concepts": [
+            "rape",
+            "punishment",
+            "imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "punishment",
+              "imprisonment for life"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7344158887863159,
+            "original:bm25": 0.2682892725215371,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7466639071773682
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "rape",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9388,
+                "weighted_score": 0.7041
+              },
+              {
+                "query_concept": "death penalty",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.8947,
+                "weighted_score": 0.671
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "victim",
+                "source": "keyword",
+                "similarity": 0.8808,
+                "weighted_score": 0.6606
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.746664,
+            "score_after_pre_rerank": 0.792264
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__section__BNS_S69",
+          "score": 0.743339,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 69,
+          "citation": "Section 69",
+          "text": "Whoever, by deceitful means or by making promise to marry to\na woman without any intention of fulfilling the same, has sexual intercourse\nwith her, such sexual intercourse not amounting to the offence of rape,\nshall be punished with imprisonment of either description for a term which\nmay extend to ten years and shall also be liable to fine.\nExplanation.—“deceitful means” shall include inducement for, or false\npromise of employment or promotion, or marrying by suppressing identity.\nGang rape.",
+          "derived_context": "",
+          "keywords": [
+            "sexual intercourse",
+            "deceitful means"
+          ],
+          "legal_concepts": [
+            "offence against woman and child",
+            "punishment for deceitful means"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.9
+          },
+          "query_scores": {
+            "original": 0.743339130638167
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S69_EXP1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S71_BODY",
+          "score": 0.725377,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 71,
+          "citation": "Section 71",
+          "text": "Whoever has been previously convicted of an offence punishable under section 64 or section 65 or section 66 or section 70 and is subsequently convicted of an offence punishable under any of the said sections shall be punished with imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, or with death. Disclosure of identity of victim of certain offences, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 71: Punishment for repeat offenders.\nWhoever has been previously convicted of an offence punishable under section 64 or section 65 or section 66 or section 70 and is subsequently convicted of an offence punishable under any of the said sections shall be punished with imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, or with death. Disclosure of identity of victim of certain offences, etc.",
+          "keywords": [
+            "convicted",
+            "offence",
+            "punishable",
+            "imprisonment",
+            "life",
+            "offences",
+            "whoever",
+            "previously",
+            "subsequently",
+            "said",
+            "repeat offenders",
+            "life imprisonment"
+          ],
+          "legal_concepts": [
+            "punishment for repeat offenders",
+            "imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "imprisonment for life"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6650940164680839
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "punishment for repeat offenders",
+                "source": "legal_concept",
+                "similarity": 0.8498,
+                "weighted_score": 0.8498
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "life imprisonment",
+                "source": "keyword",
+                "similarity": 0.9764,
+                "weighted_score": 0.7323
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9388,
+                "weighted_score": 0.7041
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "convicted",
+                "source": "keyword",
+                "similarity": 0.8867,
+                "weighted_score": 0.665
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.665094,
+            "score_after_pre_rerank": 0.725377
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S64_N2_M",
+          "score": 0.70599,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 64,
+          "citation": "Section 64",
+          "text": "commits rape repeatedly on the same woman, shall be punished with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 64: Punishment for rape.\nWhoever,—\ncommits rape repeatedly on the same woman, shall be punished with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine.",
+          "keywords": [
+            "imprisonment",
+            "rape",
+            "woman",
+            "life",
+            "commits",
+            "repeatedly",
+            "punished",
+            "rigorous",
+            "term",
+            "years",
+            "repeated rape",
+            "severe punishment"
+          ],
+          "legal_concepts": [
+            "rape",
+            "punishment",
+            "imprisonment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "punishment"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7766827344894409,
+            "original:bm25": 0.3477954099993899,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6414509163297047
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "rape",
+                "chunk_concept": "rape",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.9388,
+                "weighted_score": 0.9388
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "repeated rape",
+                "source": "keyword",
+                "similarity": 0.9341,
+                "weighted_score": 0.7005
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 0.8766,
+                "weighted_score": 0.6574
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "severe punishment",
+                "source": "keyword",
+                "similarity": 0.876,
+                "weighted_score": 0.657
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "rape",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.641451,
+            "score_after_pre_rerank": 0.70599
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S65_N1",
+          "score": 0.701281,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 65,
+          "citation": "Section 65",
+          "text": "Whoever, commits rape on a woman under sixteen years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 65: Punishment for rape in certain cases.\nWhoever, commits rape on a woman under sixteen years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim.",
+          "keywords": [
+            "imprisonment",
+            "fine",
+            "rape",
+            "woman",
+            "years",
+            "life",
+            "provided",
+            "victim",
+            "whoever",
+            "commits"
+          ],
+          "legal_concepts": [
+            "punishment for rape"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7369438409805298,
+            "original:semrank_pre_rerank": 0.9515,
+            "semrank_pre_rerank": 0.9515
+          },
+          "query_scores": {
+            "original": 0.6463552965956731
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "score": 0.9515,
+            "best_similarity": 0.9515,
+            "best_concept": "punishment for rape",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "rape",
+                "chunk_concept": "punishment for rape",
+                "source": "legal_concept",
+                "similarity": 0.9515,
+                "weighted_score": 0.9515
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "rape",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9388,
+                "weighted_score": 0.7041
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "victim",
+                "source": "keyword",
+                "similarity": 0.8808,
+                "weighted_score": 0.6606
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 0.8766,
+                "weighted_score": 0.6574
+              }
+            ],
+            "pre_rerank_score": 0.9515,
+            "score_before_pre_rerank": 0.646355,
+            "score_after_pre_rerank": 0.701281
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S62_BODY",
+          "score": 0.596788,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 62,
+          "citation": "Section 62",
+          "text": "Whoever attempts to commit an offence punishable by this Sanhita with imprisonment for life or imprisonment, or to cause such an offence to be committed, and in such attempt does any act towards the commission of the offence, shall, where no express provision is made by this Sanhita for the punishment of such attempt, be punished with imprisonment of any description provided for the offence, for a term which may extend to one-half of the imprisonment for life or, as the case may be, one-half of the longest term of imprisonment provided for that offence, or with such fine as is provided for the offence, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 62: Punishment for attempting to commit offences punishable with imprisonment for life or other\nWhoever attempts to commit an offence punishable by this Sanhita with imprisonment for life or imprisonment, or to cause such an offence to be committed, and in such attempt does any act towards the commission of the offence, shall, where no express provision is made by this Sanhita for the punishment of such attempt, be punished with imprisonment of any description provided for the offence, for a term which may extend to one-half of the imprisonment for life or, as the case may be, one-half of the longest term of imprisonment provided for that offence, or with such fine as is provided for the offence, or with both.",
+          "keywords": [
+            "offence",
+            "imprisonment",
+            "life",
+            "attempt",
+            "provided",
+            "commit",
+            "punishable",
+            "punishment",
+            "term",
+            "one-half",
+            "attempting"
+          ],
+          "legal_concepts": [
+            "attempt",
+            "imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "imprisonment for life"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.5082785068496946
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "attempt",
+                "source": "legal_concept",
+                "similarity": 0.8248,
+                "weighted_score": 0.8248
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9388,
+                "weighted_score": 0.7041
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 0.8766,
+                "weighted_score": 0.6574
+              },
+              {
+                "query_concept": "gang",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8647,
+                "weighted_score": 0.6485
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.508279,
+            "score_after_pre_rerank": 0.596788
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S13_BODY",
+          "score": 0.563139,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 13,
+          "citation": "Section 13",
+          "text": "Whoever, having been convicted by a Court in India, of an offence punishable under Chapter X or Chapter XVII of this Sanhita with imprisonment of either description for a term of three years or upwards, shall be guilty of any offence punishable under either of those Chapters with like imprisonment for the like term, shall be subject for every such subsequent offence to imprisonment for life, or to imprisonment of either description for a term which may extend to ten years. GENERAL EXCEPTIONS Act done by a person bound, or by mistake of fact believing himself bound, by law.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 13: Enhanced punishment for certain offences after previous conviction.\nWhoever, having been convicted by a Court in India, of an offence punishable under Chapter X or Chapter XVII of this Sanhita with imprisonment of either description for a term of three years or upwards, shall be guilty of any offence punishable under either of those Chapters with like imprisonment for the like term, shall be subject for every such subsequent offence to imprisonment for life, or to imprisonment of either description for a term which may extend to ten years. GENERAL EXCEPTIONS Act done by a person bound, or by mistake of fact believing himself bound, by law.",
+          "keywords": [
+            "imprisonment",
+            "offence",
+            "either",
+            "term",
+            "punishable",
+            "description",
+            "years",
+            "like",
+            "bound",
+            "whoever",
+            "enhanced punishment",
+            "previous conviction"
+          ],
+          "legal_concepts": [
+            "punishment for subsequent offence",
+            "imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "imprisonment for life"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4672432152398818
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "punishment for subsequent offence",
+                "source": "legal_concept",
+                "similarity": 0.8673,
+                "weighted_score": 0.8673
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9388,
+                "weighted_score": 0.7041
+              },
+              {
+                "query_concept": "gang",
+                "chunk_concept": "description",
+                "source": "keyword",
+                "similarity": 0.8689,
+                "weighted_score": 0.6517
+              },
+              {
+                "query_concept": "gang",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8647,
+                "weighted_score": 0.6485
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.467243,
+            "score_after_pre_rerank": 0.563139
+          }
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S70_N2",
+          "score": 1.0,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 70,
+          "citation": "Section 70",
+          "text": "Where a woman under eighteen years of age is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine, or with death: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim. Punishment for repeat offenders.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 70: Gang rape.\nWhere a woman under eighteen years of age is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine, or with death: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim. Punishment for repeat offenders.",
+          "keywords": [
+            "fine",
+            "woman",
+            "rape",
+            "imprisonment",
+            "life",
+            "provided",
+            "victim",
+            "eighteen",
+            "years",
+            "raped",
+            "gang rape",
+            "minor victim"
+          ],
+          "legal_concepts": [
+            "rape",
+            "imprisonment for life",
+            "fine"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "imprisonment for life"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.8146443367004395,
+            "original:bm25": 1.0,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 1.0
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "rape",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "gang",
+                "chunk_concept": "fine",
+                "source": "legal_concept",
+                "similarity": 0.843,
+                "weighted_score": 0.843
+              },
+              {
+                "query_concept": "gang rape",
+                "chunk_concept": "gang rape",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "raped",
+                "source": "keyword",
+                "similarity": 0.9709,
+                "weighted_score": 0.7282
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 1.0,
+            "score_after_pre_rerank": 1.0
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S70_N1",
+          "score": 0.997435,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 70,
+          "citation": "Section 70",
+          "text": "Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 70: Gang rape.\nWhere a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim.",
+          "keywords": [
+            "imprisonment",
+            "fine",
+            "woman",
+            "rape",
+            "life",
+            "provided",
+            "victim",
+            "raped",
+            "constituting",
+            "group",
+            "gang rape",
+            "multiple perpetrators"
+          ],
+          "legal_concepts": [
+            "rape",
+            "rigorous imprisonment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:bm25": 0.4594454841159807,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.9982364575670084
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "rape",
+                "chunk_concept": "rape",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "rigorous imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.9039,
+                "weighted_score": 0.9039
+              },
+              {
+                "query_concept": "gang rape",
+                "chunk_concept": "gang rape",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "raped",
+                "source": "keyword",
+                "similarity": 0.9709,
+                "weighted_score": 0.7282
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9388,
+                "weighted_score": 0.7041
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "rape",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.998236,
+            "score_after_pre_rerank": 0.998554
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S64_N1",
+          "score": 0.824977,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 64,
+          "citation": "Section 64",
+          "text": "Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 64: Punishment for rape.\nWhoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine.",
+          "keywords": [
+            "rape",
+            "imprisonment",
+            "whoever",
+            "except",
+            "cases",
+            "provided",
+            "sub-section",
+            "commits",
+            "punished",
+            "rigorous",
+            "punishment"
+          ],
+          "legal_concepts": [
+            "offence against woman and child",
+            "punishment for rape"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7684720754623413,
+            "original:bm25": 0.260896281728171,
+            "original:semrank_pre_rerank": 0.9515,
+            "semrank_pre_rerank": 0.9515
+          },
+          "query_scores": {
+            "original": 0.8310982641722572
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "conditional_clause_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "score": 0.9515,
+            "best_similarity": 0.9515,
+            "best_concept": "punishment for rape",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "rape",
+                "chunk_concept": "punishment for rape",
+                "source": "legal_concept",
+                "similarity": 0.9515,
+                "weighted_score": 0.9515
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "offence against woman and child",
+                "source": "legal_concept",
+                "similarity": 0.8413,
+                "weighted_score": 0.8413
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "rape",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9388,
+                "weighted_score": 0.7041
+              },
+              {
+                "query_concept": "gang",
+                "chunk_concept": "provided",
+                "source": "keyword",
+                "similarity": 0.861,
+                "weighted_score": 0.6457
+              }
+            ],
+            "pre_rerank_score": 0.9515,
+            "score_before_pre_rerank": 0.831098,
+            "score_after_pre_rerank": 0.852771
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__section__BNS_S69",
+          "score": 0.653328,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 69,
+          "citation": "Section 69",
+          "text": "Whoever, by deceitful means or by making promise to marry to\na woman without any intention of fulfilling the same, has sexual intercourse\nwith her, such sexual intercourse not amounting to the offence of rape,\nshall be punished with imprisonment of either description for a term which\nmay extend to ten years and shall also be liable to fine.\nExplanation.—“deceitful means” shall include inducement for, or false\npromise of employment or promotion, or marrying by suppressing identity.\nGang rape.",
+          "derived_context": "",
+          "keywords": [
+            "sexual intercourse",
+            "deceitful means"
+          ],
+          "legal_concepts": [
+            "offence against woman and child",
+            "punishment for deceitful means"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.9
+          },
+          "query_scores": {
+            "original": 0.743339130638167
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S69_EXP1",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S65_N2",
+          "score": 0.631594,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 65,
+          "citation": "Section 65",
+          "text": "Whoever, commits rape on a woman under twelve years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine or with death: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim. Punishment for causing death or resulting in persistent vegetative state of victim.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 65: Punishment for rape in certain cases.\nWhoever, commits rape on a woman under twelve years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine or with death: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim. Punishment for causing death or resulting in persistent vegetative state of victim.",
+          "keywords": [
+            "imprisonment",
+            "fine",
+            "victim",
+            "rape",
+            "woman",
+            "years",
+            "life",
+            "death",
+            "provided",
+            "punishment",
+            "child"
+          ],
+          "legal_concepts": [
+            "rape",
+            "punishment",
+            "imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 2,
+            "coverage_ratio": 0.5,
+            "matched_concepts": [
+              "punishment",
+              "imprisonment for life"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7344158887863159,
+            "original:bm25": 0.2682892725215371,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.7466639071773682
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "rape",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9388,
+                "weighted_score": 0.7041
+              },
+              {
+                "query_concept": "death penalty",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.8947,
+                "weighted_score": 0.671
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "victim",
+                "source": "keyword",
+                "similarity": 0.8808,
+                "weighted_score": 0.6606
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.746664,
+            "score_after_pre_rerank": 0.792264
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S65_N1",
+          "score": 0.536713,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 65,
+          "citation": "Section 65",
+          "text": "Whoever, commits rape on a woman under sixteen years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 65: Punishment for rape in certain cases.\nWhoever, commits rape on a woman under sixteen years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim.",
+          "keywords": [
+            "imprisonment",
+            "fine",
+            "rape",
+            "woman",
+            "years",
+            "life",
+            "provided",
+            "victim",
+            "whoever",
+            "commits"
+          ],
+          "legal_concepts": [
+            "punishment for rape"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.7369438409805298,
+            "original:semrank_pre_rerank": 0.9515,
+            "semrank_pre_rerank": 0.9515
+          },
+          "query_scores": {
+            "original": 0.6463552965956731
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "score": 0.9515,
+            "best_similarity": 0.9515,
+            "best_concept": "punishment for rape",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "rape",
+                "chunk_concept": "punishment for rape",
+                "source": "legal_concept",
+                "similarity": 0.9515,
+                "weighted_score": 0.9515
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "rape",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9388,
+                "weighted_score": 0.7041
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "victim",
+                "source": "keyword",
+                "similarity": 0.8808,
+                "weighted_score": 0.6606
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 0.8766,
+                "weighted_score": 0.6574
+              }
+            ],
+            "pre_rerank_score": 0.9515,
+            "score_before_pre_rerank": 0.646355,
+            "score_after_pre_rerank": 0.701281
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S71_BODY",
+          "score": 0.512974,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 71,
+          "citation": "Section 71",
+          "text": "Whoever has been previously convicted of an offence punishable under section 64 or section 65 or section 66 or section 70 and is subsequently convicted of an offence punishable under any of the said sections shall be punished with imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, or with death. Disclosure of identity of victim of certain offences, etc.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 71: Punishment for repeat offenders.\nWhoever has been previously convicted of an offence punishable under section 64 or section 65 or section 66 or section 70 and is subsequently convicted of an offence punishable under any of the said sections shall be punished with imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, or with death. Disclosure of identity of victim of certain offences, etc.",
+          "keywords": [
+            "convicted",
+            "offence",
+            "punishable",
+            "imprisonment",
+            "life",
+            "offences",
+            "whoever",
+            "previously",
+            "subsequently",
+            "said",
+            "repeat offenders",
+            "life imprisonment"
+          ],
+          "legal_concepts": [
+            "punishment for repeat offenders",
+            "imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "imprisonment for life"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6650940164680839
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "punishment for repeat offenders",
+                "source": "legal_concept",
+                "similarity": 0.8498,
+                "weighted_score": 0.8498
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "life imprisonment",
+                "source": "keyword",
+                "similarity": 0.9764,
+                "weighted_score": 0.7323
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9388,
+                "weighted_score": 0.7041
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "convicted",
+                "source": "keyword",
+                "similarity": 0.8867,
+                "weighted_score": 0.665
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.665094,
+            "score_after_pre_rerank": 0.725377
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S64_N2_M",
+          "score": 0.478592,
+          "chunk_type": "clause",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+          "section_number": 64,
+          "citation": "Section 64",
+          "text": "commits rape repeatedly on the same woman, shall be punished with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 5: OF OFFENCES AGAINST WOMAN AND CHILD\nSection 64: Punishment for rape.\nWhoever,—\ncommits rape repeatedly on the same woman, shall be punished with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and shall also be liable to fine.",
+          "keywords": [
+            "imprisonment",
+            "rape",
+            "woman",
+            "life",
+            "commits",
+            "repeatedly",
+            "punished",
+            "rigorous",
+            "term",
+            "years",
+            "repeated rape",
+            "severe punishment"
+          ],
+          "legal_concepts": [
+            "rape",
+            "punishment",
+            "imprisonment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "punishment"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.7766827344894409,
+            "original:bm25": 0.3477954099993899,
+            "original:semrank": 1.0,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.6414509163297047
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "rape",
+                "chunk_concept": "rape",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.9388,
+                "weighted_score": 0.9388
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "repeated rape",
+                "source": "keyword",
+                "similarity": 0.9341,
+                "weighted_score": 0.7005
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 0.8766,
+                "weighted_score": 0.6574
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "severe punishment",
+                "source": "keyword",
+                "similarity": 0.876,
+                "weighted_score": 0.657
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "rape",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.641451,
+            "score_after_pre_rerank": 0.70599
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S62_BODY",
+          "score": 0.28493,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT",
+          "section_number": 62,
+          "citation": "Section 62",
+          "text": "Whoever attempts to commit an offence punishable by this Sanhita with imprisonment for life or imprisonment, or to cause such an offence to be committed, and in such attempt does any act towards the commission of the offence, shall, where no express provision is made by this Sanhita for the punishment of such attempt, be punished with imprisonment of any description provided for the offence, for a term which may extend to one-half of the imprisonment for life or, as the case may be, one-half of the longest term of imprisonment provided for that offence, or with such fine as is provided for the offence, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 4: OF ABETMENT, CRIMINAL CONSPIRACY AND ATTEMPT\nSection 62: Punishment for attempting to commit offences punishable with imprisonment for life or other\nWhoever attempts to commit an offence punishable by this Sanhita with imprisonment for life or imprisonment, or to cause such an offence to be committed, and in such attempt does any act towards the commission of the offence, shall, where no express provision is made by this Sanhita for the punishment of such attempt, be punished with imprisonment of any description provided for the offence, for a term which may extend to one-half of the imprisonment for life or, as the case may be, one-half of the longest term of imprisonment provided for that offence, or with such fine as is provided for the offence, or with both.",
+          "keywords": [
+            "offence",
+            "imprisonment",
+            "life",
+            "attempt",
+            "provided",
+            "commit",
+            "punishable",
+            "punishment",
+            "term",
+            "one-half",
+            "attempting"
+          ],
+          "legal_concepts": [
+            "attempt",
+            "imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "imprisonment for life"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.5082785068496946
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "rape",
+                "chunk_concept": "attempt",
+                "source": "legal_concept",
+                "similarity": 0.8248,
+                "weighted_score": 0.8248
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9388,
+                "weighted_score": 0.7041
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "life",
+                "source": "keyword",
+                "similarity": 0.8766,
+                "weighted_score": 0.6574
+              },
+              {
+                "query_concept": "gang",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8647,
+                "weighted_score": 0.6485
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.508279,
+            "score_after_pre_rerank": 0.596788
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S13_BODY",
+          "score": 0.225256,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF PUNISHMENTS",
+          "section_number": 13,
+          "citation": "Section 13",
+          "text": "Whoever, having been convicted by a Court in India, of an offence punishable under Chapter X or Chapter XVII of this Sanhita with imprisonment of either description for a term of three years or upwards, shall be guilty of any offence punishable under either of those Chapters with like imprisonment for the like term, shall be subject for every such subsequent offence to imprisonment for life, or to imprisonment of either description for a term which may extend to ten years. GENERAL EXCEPTIONS Act done by a person bound, or by mistake of fact believing himself bound, by law.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 2: OF PUNISHMENTS\nSection 13: Enhanced punishment for certain offences after previous conviction.\nWhoever, having been convicted by a Court in India, of an offence punishable under Chapter X or Chapter XVII of this Sanhita with imprisonment of either description for a term of three years or upwards, shall be guilty of any offence punishable under either of those Chapters with like imprisonment for the like term, shall be subject for every such subsequent offence to imprisonment for life, or to imprisonment of either description for a term which may extend to ten years. GENERAL EXCEPTIONS Act done by a person bound, or by mistake of fact believing himself bound, by law.",
+          "keywords": [
+            "imprisonment",
+            "offence",
+            "either",
+            "term",
+            "punishable",
+            "description",
+            "years",
+            "like",
+            "bound",
+            "whoever",
+            "enhanced punishment",
+            "previous conviction"
+          ],
+          "legal_concepts": [
+            "punishment for subsequent offence",
+            "imprisonment for life"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 4,
+            "matched_count": 1,
+            "coverage_ratio": 0.25,
+            "matched_concepts": [
+              "imprisonment for life"
+            ]
+          },
+          "source_scores": {
+            "original:semrank": 0.9999999403953552,
+            "original:semrank_pre_rerank": 1.0,
+            "semrank_pre_rerank": 1.0
+          },
+          "query_scores": {
+            "original": 0.4672432152398818
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 1.0,
+            "query_concepts": [
+              "gang rape",
+              "imprisonment for life",
+              "death penalty",
+              "gang",
+              "rape"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment for life",
+                "source": "legal_concept",
+                "similarity": 1.0,
+                "weighted_score": 1.0
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "punishment for subsequent offence",
+                "source": "legal_concept",
+                "similarity": 0.8673,
+                "weighted_score": 0.8673
+              },
+              {
+                "query_concept": "imprisonment for life",
+                "chunk_concept": "imprisonment",
+                "source": "keyword",
+                "similarity": 0.9388,
+                "weighted_score": 0.7041
+              },
+              {
+                "query_concept": "gang",
+                "chunk_concept": "description",
+                "source": "keyword",
+                "similarity": 0.8689,
+                "weighted_score": 0.6517
+              },
+              {
+                "query_concept": "gang",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.8647,
+                "weighted_score": 0.6485
+              }
+            ],
+            "score": 1.0,
+            "best_similarity": 1.0,
+            "best_concept": "imprisonment for life",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 1.0,
+            "score_before_pre_rerank": 0.467243,
+            "score_after_pre_rerank": 0.563139
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    },
+    "phase11": {
+      "answer_type": "legal penalty",
+      "support_status": "supported",
+      "confidence": {
+        "score": 0.98,
+        "label": "high"
+      },
+      "final_answer": "The punishment for gang rape includes rigorous imprisonment for a minimum of twenty years, life imprisonment, or death, depending on the victim's age.",
+      "summary_answer": "The punishment for gang rape can include imprisonment for life, a minimum of twenty years of rigorous imprisonment, or even death, depending on the age of the victim.",
+      "detailed_answer": "Under the Bharatiya Nyaya Sanhita, 2023, if a woman is raped by one or more persons acting in furtherance of a common intention, the punishment is rigorous imprisonment for a term not less than twenty years, which may extend to life imprisonment (Section 70(1)). If the victim is under eighteen years of age, the punishment is life imprisonment or death (Section 70(2)). Additionally, if the victim is under twelve years of age, the punishment is also life imprisonment or death (Section 65(2)).",
+      "citations": [
+        "Section 70(2), Bharatiya Nyaya Sanhita, 2023",
+        "Section 70(1), Bharatiya Nyaya Sanhita, 2023",
+        "Section 65(2), Bharatiya Nyaya Sanhita, 2023"
+      ],
+      "matched_sections": [
+        "Section 70",
+        "Section 64",
+        "Section 69",
+        "Section 65"
+      ],
+      "missing_sections": [],
+      "missing_from_corpus": [],
+      "selected_chunk_ids": [
+        "chunk__node__BNS_S70_N2",
+        "chunk__node__BNS_S70_N1",
+        "chunk__node__BNS_S65_N2"
+      ],
+      "warnings": [],
+      "structured_reasoning": {
+        "base_concept": "",
+        "selected_section": "Section 70",
+        "selection_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "overrides_score_selection": false,
+        "uncertainty": "low",
+        "uncertainty_reason": "LLM answer passed retrieved-evidence guardrails.",
+        "alternative_sections": [
+          "Section 64",
+          "Section 69",
+          "Section 65"
+        ],
+        "sections_analyzed": [
+          {
+            "section": "Section 70",
+            "role": "retrieved_evidence",
+            "condition_summary": "Where a woman under eighteen years of age is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with...",
+            "condition_match_score": 1.0,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "imprisonment for life ~ imprisonment for life",
+              "rape ~ rape",
+              "gang ~ fine",
+              "gang rape ~ gang rape",
+              "rape ~ raped"
+            ],
+            "raw_retrieval_score": 1.0,
+            "hit_count": 2,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 64",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also...",
+            "condition_match_score": 0.824977,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "rape ~ punishment for rape",
+              "rape ~ offence against woman and child",
+              "rape ~ rape",
+              "imprisonment for life ~ imprisonment",
+              "gang ~ provided"
+            ],
+            "raw_retrieval_score": 0.824977,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 69",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever, by deceitful means or by making promise to marry to a woman without any intention of fulfilling the same, has sexual intercourse with her, such sexual intercourse not amounting to the offence of rape, shall be punished with imprisonment of either...",
+            "condition_match_score": 0.653328,
+            "concept_overlap": [],
+            "semantic_matches": [],
+            "raw_retrieval_score": 0.653328,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          },
+          {
+            "section": "Section 65",
+            "role": "retrieved_evidence",
+            "condition_summary": "Whoever, commits rape on a woman under twelve years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of...",
+            "condition_match_score": 0.631594,
+            "concept_overlap": [],
+            "semantic_matches": [
+              "imprisonment for life ~ imprisonment for life",
+              "rape ~ rape",
+              "imprisonment for life ~ imprisonment",
+              "death penalty ~ death",
+              "rape ~ victim"
+            ],
+            "raw_retrieval_score": 0.631594,
+            "hit_count": 1,
+            "is_base": true,
+            "note": ""
+          }
+        ]
+      },
+      "validation": {
+        "requested_sections": [],
+        "present_in_corpus": [],
+        "retrieved_exact_matches": [],
+        "missing_from_corpus": [],
+        "intent_alignment": "strong",
+        "intent_notes": [
+          "Application intent has a direct rule chunk to anchor the answer."
+        ],
+        "answer_verified": true,
+        "verification_issues": [],
+        "llm_answer_verified": true,
+        "llm_verification_issues": [],
+        "completeness": "complete",
+        "guardrail_grounding_strength": 1.0,
+        "repaired": false,
+        "fallback_used": false
+      },
+      "evidence": {
+        "primary_chunk_id": "chunk__node__BNS_S70_N2",
+        "primary_chunk_type": "subsection",
+        "primary_section": "Section 70",
+        "primary_section_title": "Gang rape.",
+        "related_chunk_ids": [
+          "chunk__node__BNS_S70_N1",
+          "chunk__node__BNS_S65_N2"
+        ],
+        "top_sections": [
+          {
+            "section": "Section 70",
+            "section_title": "Gang rape.",
+            "hit_count": 2,
+            "best_score": 1.0,
+            "chunk_types": {
+              "subsection": 2
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.25
+          },
+          {
+            "section": "Section 65",
+            "section_title": "Punishment for rape in certain cases.",
+            "hit_count": 1,
+            "best_score": 0.631594,
+            "chunk_types": {
+              "subsection": 1
+            },
+            "semantic_relevance": 1.0,
+            "concept_coverage": 0.5
+          },
+          {
+            "section": "Section 64",
+            "section_title": "Punishment for rape.",
+            "hit_count": 1,
+            "best_score": 0.824977,
+            "chunk_types": {
+              "subsection": 1
+            },
+            "semantic_relevance": 0.9515,
+            "concept_coverage": 0.0
+          },
+          {
+            "section": "Section 69",
+            "section_title": "Sexual intercourse by employing deceitful means, etc.",
+            "hit_count": 1,
+            "best_score": 0.653328,
+            "chunk_types": {
+              "section": 1
+            },
+            "semantic_relevance": 0.0,
+            "concept_coverage": 0.0
+          }
+        ],
+        "llm_evidence": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S70_N2",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": "70",
+            "citation": "Section 70(2), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Where a woman under eighteen years of age is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine, or with death: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim. Punishment for repeat offenders."
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S70_N1",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": "70",
+            "citation": "Section 70(1), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person’s natural life, and with fine: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim."
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S64_N1",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": "64",
+            "citation": "Section 64(1), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine."
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__section__BNS_S69",
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": "69",
+            "citation": "Section 69: Sexual intercourse by employing deceitful means, etc.",
+            "text": "Whoever, by deceitful means or by making promise to marry to a woman without any intention of fulfilling the same, has sexual intercourse with her, such sexual intercourse not amounting to the offence of rape, shall be punished with imprisonment of either description for a term which may extend to ten years and shall also be liable to fine. Explanation.—“deceitful means” shall include inducement for, or false promise of employment or promotion, or marrying by suppressing identity. Gang rape."
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S65_N2",
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST WOMAN AND CHILD",
+            "section_number": "65",
+            "citation": "Section 65(2), Bharatiya Nyaya Sanhita, 2023",
+            "text": "Whoever, commits rape on a woman under twelve years of age shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person’s natural life, and with fine or with death: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim. Punishment for causing death or resulting in persistent vegetative state of victim."
+          }
+        ]
+      },
+      "llm_generation": {
+        "enabled": true,
+        "used": true,
+        "model": "gpt-4o-mini",
+        "reasoning_trace": [],
+        "caution_notes": [],
+        "error": null,
+        "repaired": false,
+        "fallback_used": false
+      }
+    }
+  }
+]

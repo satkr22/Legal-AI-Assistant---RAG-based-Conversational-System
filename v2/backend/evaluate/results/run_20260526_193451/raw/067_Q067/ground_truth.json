@@ -1,0 +1,32 @@
+{
+  "query_id": "Q067",
+  "query": "If a crime is committed on an Indian aircraft outside India, does BNS apply?",
+  "query_type": "multi_hop",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "1",
+      "subsection": "5",
+      "label": "Section 1(5)(b)",
+      "role": "BNS applies to any person on any ship or aircraft registered in India wherever it may be",
+      "required": true,
+      "match_level": "subsection"
+    }
+  ],
+  "acceptable_references": [],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Yes. Section 1(5)(b) provides that the provisions of BNS shall also apply to any person on any ship or aircraft registered in India, wherever it may be.",
+      "Therefore, an offence committed on an Indian-registered aircraft outside India falls within the scope of BNS."
+    ],
+    "optional_points": [],
+    "forbidden_points": [
+      "BNS does not apply to offences outside India in any case.",
+      "The aircraft must be within Indian airspace for BNS to apply."
+    ]
+  },
+  "notes": "Multi-hop query requiring Section 1(5)(b)."
+}

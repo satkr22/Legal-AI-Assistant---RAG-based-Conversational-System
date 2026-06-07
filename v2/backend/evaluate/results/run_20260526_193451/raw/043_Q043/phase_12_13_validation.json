@@ -1,0 +1,73 @@
+{
+  "answer": "According to Section 318(2) of the Bharatiya Nyaya Sanhita, 2023, whoever cheats shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both. Furthermore, Section 318(3) states that if the cheating is done with the knowledge that it is likely to cause wrongful loss to a person whose interest the offender was bound to protect, the punishment may extend to five years, or with fine, or with both. Additionally, Section 319(2) specifies that cheating by personation is punishable with imprisonment for a term which may extend to five years, or with fine, or with both.",
+  "summary_answer": "The punishment for cheating can include imprisonment for up to three years or a fine, or both. If the cheating is done with the knowledge of causing wrongful loss, the punishment can extend to five years.",
+  "detailed_answer": "According to Section 318(2) of the Bharatiya Nyaya Sanhita, 2023, whoever cheats shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both. Furthermore, Section 318(3) states that if the cheating is done with the knowledge that it is likely to cause wrongful loss to a person whose interest the offender was bound to protect, the punishment may extend to five years, or with fine, or with both. Additionally, Section 319(2) specifies that cheating by personation is punishable with imprisonment for a term which may extend to five years, or with fine, or with both.",
+  "final_answer": "The punishment for cheating is imprisonment for up to three years or a fine, or both. If the cheating is done with knowledge of causing wrongful loss, the punishment can extend to five years.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 318(2), Bharatiya Nyaya Sanhita, 2023",
+    "Section 318(3), Bharatiya Nyaya Sanhita, 2023",
+    "Section 319(2), Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.8735,
+    "reranker": 0.9659,
+    "citation": 1.0,
+    "reasoning": 0.88,
+    "evidence_strength": 0.8735,
+    "reasoning_certainty": 0.88,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.7687,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.7687,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.9659,
+        "avg_selected_semrank_score": 1.0,
+        "avg_selected_concept_coverage": 0.4444,
+        "selected_chunk_count": 3,
+        "matched_selected_chunk_count": 3,
+        "selected_semrank_count": 3
+      },
+      "reasoning": {
+        "selected_condition_match_score": 1.0,
+        "ambiguity_gap_score": 0.6,
+        "uncertainty_score": 1.0,
+        "gap": 0.0136,
+        "highest_competing_score": 0.9864,
+        "ambiguity_mitigated_by_grounding": true
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.7687,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [
+      "Several sections are close in relevance; the answer uses the strongest supported section."
+    ],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S318_N2",
+    "chunk__node__BNS_S318_N3",
+    "chunk__node__BNS_S319_N2"
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "query_id": "Q086",
+  "query": "Give a simple example of theft under BNS.",
+  "query_type": "illustration",
+  "difficulty": "easy",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "303"
+  ],
+  "acceptable_sections": [],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "303",
+    "303",
+    "303",
+    "303",
+    "303"
+  ],
+  "candidate_sections_at_10": [
+    "303",
+    "303",
+    "303",
+    "303",
+    "303",
+    "303",
+    "303",
+    "303",
+    "303",
+    "314"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "303",
+    "303",
+    "314"
+  ],
+  "cited_sections": [
+    "303"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.2,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "303"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "303"
+    ],
+    "support_precision_at_k": 1.0,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": []
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "303"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "303"
+    ],
+    "support_precision_at_k": 0.5,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "314"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.3333,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "303"
+    ],
+    "acceptable_hits": [],
+    "required_or_acceptable_hits": [
+      "303"
+    ],
+    "support_precision_at_k": 0.5,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "314"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 1.0,
+    "required_points_matched": 2,
+    "required_points_total": 2,
+    "answer_completeness_score": 1.0,
+    "soft_answer_score": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Section 303 provides examples in its illustrations: A, being Z's servant and entrusted with Z's plate, dishonestly runs away with the plate without Z's consent - A has committed theft.",
+        "matched": true,
+        "overlap": 0.5714,
+        "matched_terms": [
+          "303",
+          "away",
+          "committed",
+          "consent",
+          "dishonestly",
+          "examples",
+          "its",
+          "theft"
+        ]
+      },
+      {
+        "point": "The essential elements are: dishonest intention to take, movable property, out of another's possession, without consent.",
+        "matched": true,
+        "overlap": 0.5455,
+        "matched_terms": [
+          "another",
+          "consent",
+          "out",
+          "possession",
+          "property",
+          "take"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "303"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 5,
+    "supported_claims": 5,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": true,
+  "failure_reasons": [],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 5.735,
+    "phase_9_10": 4.2374,
+    "phase_11": 9.7776,
+    "phase_12_13": 0.0002,
+    "total": 19.7502
+  },
+  "final_answer_preview": "Theft under the Bharatiya Nyaya Sanhita (BNS) is defined in Section 303. A clear example is illustrated in the act of cutting down a tree on another person's land with the intent to take it without their consent. As soon as the tree is severed from the earth, the act of theft is committed. This is supported by the explanation provided in Section 303, which states that a person commits theft by moving property out of another's possession without consent, intending to take it dishonestly. Other examples include taking a dog from its owner without consent or inducing it to follow with the intent to take it away.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/086_Q086"
+}

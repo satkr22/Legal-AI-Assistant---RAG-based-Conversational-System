@@ -1,0 +1,71 @@
+{
+  "answer": "Murder, as defined in Section 101 of the Bharatiya Nyaya Sanhita, occurs when a person causes death with the intention of causing death, with the intention of causing bodily injury likely to cause death, or with knowledge that their act is likely to cause death. Culpable homicide, defined in Section 100, encompasses a broader range of actions that result in death but may not involve the same level of intent or knowledge. For instance, culpable homicide can occur if a person causes death without the intention to kill or without knowing that their actions are likely to cause death, especially in cases of provocation or accidents. Thus, while all murders are culpable homicides, not all culpable homicides qualify as murder.",
+  "summary_answer": "Murder is a form of culpable homicide characterized by specific intentions or knowledge regarding the act that causes death, while culpable homicide can occur under circumstances that do not meet the criteria for murder.",
+  "detailed_answer": "Murder, as defined in Section 101 of the Bharatiya Nyaya Sanhita, occurs when a person causes death with the intention of causing death, with the intention of causing bodily injury likely to cause death, or with knowledge that their act is likely to cause death. Culpable homicide, defined in Section 100, encompasses a broader range of actions that result in death but may not involve the same level of intent or knowledge. For instance, culpable homicide can occur if a person causes death without the intention to kill or without knowing that their actions are likely to cause death, especially in cases of provocation or accidents. Thus, while all murders are culpable homicides, not all culpable homicides qualify as murder.",
+  "final_answer": "Murder is a specific type of culpable homicide that involves intent or knowledge of causing death, while culpable homicide can occur under less severe circumstances.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 101: Murder.",
+    "Section 100: Culpable homicide."
+  ],
+  "confidence": {
+    "retrieval": 0.7305,
+    "reranker": 0.8298,
+    "citation": 1.0,
+    "reasoning": 0.9643,
+    "evidence_strength": 0.7305,
+    "reasoning_certainty": 0.9643,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.7044,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.72,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.8298,
+        "avg_selected_semrank_score": 0.8298,
+        "avg_selected_concept_coverage": 0.3333,
+        "selected_chunk_count": 2,
+        "matched_selected_chunk_count": 2,
+        "selected_semrank_count": 0
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.9287,
+        "ambiguity_gap_score": 1.0,
+        "uncertainty_score": 1.0,
+        "gap": 0.1977,
+        "highest_competing_score": 0.7309,
+        "ambiguity_mitigated_by_grounding": false
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.72,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [
+      "Several sections are close in relevance; the answer uses the strongest supported section."
+    ],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__section__BNS_S101",
+    "chunk__section__BNS_S100"
+  ]
+}

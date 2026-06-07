@@ -1,0 +1,224 @@
+{
+  "query_id": "Q075",
+  "query": "Can a person be liable if the abetted act causes a different result than intended?",
+  "query_type": "multi_hop",
+  "difficulty": "hard",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "53"
+  ],
+  "acceptable_sections": [
+    "51"
+  ],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "53",
+    "51",
+    "53",
+    "50",
+    "51"
+  ],
+  "candidate_sections_at_10": [
+    "53",
+    "51",
+    "53",
+    "50",
+    "51",
+    "52",
+    "54",
+    "50",
+    "52",
+    "46"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "53",
+    "53",
+    "51",
+    "50",
+    "51"
+  ],
+  "cited_sections": [
+    "53",
+    "51"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.3333,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "53"
+    ],
+    "acceptable_hits": [
+      "51"
+    ],
+    "required_or_acceptable_hits": [
+      "51",
+      "53"
+    ],
+    "support_precision_at_k": 0.6667,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "50"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.125,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "53"
+    ],
+    "acceptable_hits": [
+      "51"
+    ],
+    "required_or_acceptable_hits": [
+      "51",
+      "53"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "50",
+      "52",
+      "54",
+      "50",
+      "52",
+      "46"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.3333,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 1.0,
+    "required_hits": [
+      "53"
+    ],
+    "acceptable_hits": [
+      "51"
+    ],
+    "required_or_acceptable_hits": [
+      "51",
+      "53"
+    ],
+    "support_precision_at_k": 0.6667,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "50"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 1.0,
+    "required_points_matched": 2,
+    "required_points_total": 2,
+    "answer_completeness_score": 1.0,
+    "soft_answer_score": 1.0,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 1.0,
+    "forbidden_contradiction_skips": [
+      {
+        "point": "An abettor is only liable for the exact result they intended.",
+        "sentence": "According to Section 53 of the Bharatiya Nyaya Sanhita, 2023, an abettor is liable for the effect caused by the act they abetted, even if it differs from the intended effect, as long as they knew that the act was likely to cause that effect.",
+        "overlap": 0.6,
+        "threshold": 0.9,
+        "matched_terms": [
+          "abettor",
+          "intended",
+          "liable"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      },
+      {
+        "point": "An abettor is only liable for the exact result they intended.",
+        "sentence": "Additionally, Section 51 states that if a different act is done as a result of the abetment, the abettor is still liable for that act, provided it was a probable consequence of the abetment and committed under the influence of the instigation.",
+        "overlap": 0.6,
+        "threshold": 0.9,
+        "matched_terms": [
+          "abettor",
+          "liable",
+          "result"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      }
+    ],
+    "required_point_details": [
+      {
+        "point": "Section 53 provides that when an act is abetted with a certain intention and causes a different effect from that intended, the abettor is liable for the effect caused in the same manner as if they had abetted the act with the intention of causing that effect, provided the abettor knew that the act abetted was likely to cause that effect.",
+        "matched": true,
+        "overlap": 0.6316,
+        "matched_terms": [
+          "abetted",
+          "abettor",
+          "act",
+          "cause",
+          "caused",
+          "different",
+          "effect",
+          "intended",
+          "knew",
+          "liable",
+          "likely",
+          "was"
+        ]
+      },
+      {
+        "point": "For example, if A instigates B to cause grievous hurt to Z and Z dies as a result, A is liable for the death if A knew the act was likely to cause death.",
+        "matched": true,
+        "overlap": 0.5385,
+        "matched_terms": [
+          "act",
+          "cause",
+          "knew",
+          "liable",
+          "likely",
+          "result",
+          "was"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "correct_cited_sections": [
+      "51",
+      "53"
+    ],
+    "missing_required_sections": [],
+    "extra_cited_sections": [],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.7614,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": true,
+  "failure_reasons": [],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 9.3566,
+    "phase_9_10": 9.8008,
+    "phase_11": 24.2717,
+    "phase_12_13": 0.0003,
+    "total": 43.4294
+  },
+  "final_answer_preview": "According to Section 53 of the Bharatiya Nyaya Sanhita, 2023, an abettor is liable for the effect caused by the act they abetted, even if it differs from the intended effect, as long as they knew that the act was likely to cause that effect. Additionally, Section 51 states that if a different act is done as a result of the abetment, the abettor is still liable for that act, provided it was a probable consequence of the abetment and committed under the influence of the instigation. Therefore, liability can arise from unintended consequences of an abetted act if the necessary conditions are met.",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/075_Q075"
+}

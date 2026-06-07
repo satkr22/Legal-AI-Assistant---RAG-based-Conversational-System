@@ -1,0 +1,196 @@
+{
+  "query_id": "Q088",
+  "query": "Explain private defence with a simple example.",
+  "query_type": "illustration",
+  "difficulty": "easy",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "34",
+    "36"
+  ],
+  "acceptable_sections": [
+    "35"
+  ],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "44",
+    "35",
+    "37",
+    "37",
+    "36"
+  ],
+  "candidate_sections_at_10": [
+    "44",
+    "35",
+    "37",
+    "37",
+    "36",
+    "44",
+    "40",
+    "101",
+    "41",
+    "42"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "44",
+    "44",
+    "35",
+    "37",
+    "37"
+  ],
+  "cited_sections": [
+    "44"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.25,
+    "recall_at_k": 0.5,
+    "mrr_at_k": 0.2,
+    "required_hits": [
+      "36"
+    ],
+    "acceptable_hits": [
+      "35"
+    ],
+    "required_or_acceptable_hits": [
+      "35",
+      "36"
+    ],
+    "support_precision_at_k": 0.5,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "44",
+      "37",
+      "37"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.1111,
+    "recall_at_k": 0.5,
+    "mrr_at_k": 0.2,
+    "required_hits": [
+      "36"
+    ],
+    "acceptable_hits": [
+      "35"
+    ],
+    "required_or_acceptable_hits": [
+      "35",
+      "36"
+    ],
+    "support_precision_at_k": 0.25,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "44",
+      "37",
+      "37",
+      "44",
+      "40",
+      "101",
+      "41",
+      "42"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "mrr_at_k": 0.0,
+    "required_hits": [],
+    "acceptable_hits": [
+      "35"
+    ],
+    "required_or_acceptable_hits": [
+      "35"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "44",
+      "44",
+      "37",
+      "37"
+    ],
+    "selector_loss": true
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.5,
+    "required_points_matched": 1,
+    "required_points_total": 2,
+    "answer_completeness_score": 0.5,
+    "soft_answer_score": 0.375,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.0,
+    "forbidden_contradiction_skips": [],
+    "required_point_details": [
+      {
+        "point": "Section 34 provides that nothing done in the exercise of the right of private defence is an offence.",
+        "matched": true,
+        "overlap": 0.6,
+        "matched_terms": [
+          "defence",
+          "private",
+          "right"
+        ]
+      },
+      {
+        "point": "Section 36 provides an illustration: Z, a person of unsound mind, attempts to kill A. Z is guilty of no offence. But A has the same right of private defence against Z which A would have if Z were sane.",
+        "matched": false,
+        "overlap": 0.2857,
+        "matched_terms": [
+          "defence",
+          "kill",
+          "private",
+          "right"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "correct_cited_sections": [],
+    "missing_required_sections": [
+      "34",
+      "36"
+    ],
+    "extra_cited_sections": [
+      "44"
+    ],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "missing_required_citation",
+    "low_required_point_coverage"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 5.3936,
+    "phase_9_10": 3.4768,
+    "phase_11": 12.2939,
+    "phase_12_13": 0.0002,
+    "total": 21.1645
+  },
+  "final_answer_preview": "Private defence is a legal right that permits an individual to protect themselves from an assault that poses a reasonable threat of death. For example, if a person (A) is attacked by a mob intending to kill him, and the only way for A to defend himself is to fire at the mob, he may do so even if it risks harming innocent children present. In this scenario, A would not be committing an offence if any children are harmed as a result of his actions, as he was acting in self-defence against a life-threatening situation. This principle is outlined in Section 44 of the Bharatiya Nyaya Sanhita, 2023, which states that the right of private defence extends to situations where there is a risk to innocent persons (chunk__node__BNS_S44_BODY, Section 44 Body, Bharatiya Nyaya Sanhita, 2023).",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/088_Q088"
+}

@@ -1,0 +1,49 @@
+{
+  "query_id": "Q046",
+  "query": "Someone pointed a knife at me and took my phone. What offence is this?",
+  "query_type": "factual_scenario",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "309",
+      "subsection": null,
+      "label": "Section 309",
+      "role": "robbery - theft or extortion using threat of instant hurt",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "303",
+      "label": "Section 303",
+      "reason": "theft is the underlying offence"
+    },
+    {
+      "act": "BNS",
+      "section": "304",
+      "label": "Section 304",
+      "reason": "snatching may be discussed depending on facts"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Taking property by putting a person in fear of instant hurt (pointing a knife) can amount to robbery under Section 309.",
+      "Pointing a knife is legally relevant as it suggests a threat of instant hurt.",
+      "Theft is robbery if the offender causes or attempts to cause fear of instant hurt in order to commit the theft.",
+      "The final classification depends on facts proved."
+    ],
+    "optional_points": [
+      "The answer may mention theft as the underlying offence."
+    ],
+    "forbidden_points": [
+      "This is only simple theft with no robbery issue.",
+      "The punishment is guaranteed without knowing the full facts."
+    ]
+  },
+  "notes": "Scenario query. Should identify robbery per Section 309."
+}

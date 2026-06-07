@@ -1,0 +1,203 @@
+{
+  "query_id": "Q061",
+  "query": "A person gave false evidence in court. What offence is this?",
+  "query_type": "factual_scenario",
+  "difficulty": "easy",
+  "expected_behavior": "answer",
+  "required_sections": [
+    "227"
+  ],
+  "acceptable_sections": [
+    "229"
+  ],
+  "wrong_sections": [],
+  "retrieved_sections_at_k": [
+    "229",
+    "229",
+    "232",
+    "230",
+    "229"
+  ],
+  "candidate_sections_at_10": [
+    "229",
+    "229",
+    "232",
+    "230",
+    "229",
+    "229",
+    "231",
+    "229",
+    "229",
+    "236"
+  ],
+  "prompt_evidence_sections_at_5": [
+    "229",
+    "229",
+    "232",
+    "230",
+    "231"
+  ],
+  "cited_sections": [
+    "229",
+    "230"
+  ],
+  "retrieval": {
+    "precision_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "mrr_at_k": 0.0,
+    "required_hits": [],
+    "acceptable_hits": [
+      "229"
+    ],
+    "required_or_acceptable_hits": [
+      "229"
+    ],
+    "support_precision_at_k": 0.3333,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "232",
+      "230"
+    ]
+  },
+  "candidate_retrieval": {
+    "precision_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "mrr_at_k": 0.0,
+    "required_hits": [],
+    "acceptable_hits": [
+      "229"
+    ],
+    "required_or_acceptable_hits": [
+      "229"
+    ],
+    "support_precision_at_k": 0.2,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "232",
+      "230",
+      "231",
+      "236"
+    ]
+  },
+  "prompt_evidence": {
+    "precision_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "mrr_at_k": 0.0,
+    "required_hits": [],
+    "acceptable_hits": [
+      "229"
+    ],
+    "required_or_acceptable_hits": [
+      "229"
+    ],
+    "support_precision_at_k": 0.25,
+    "any_correct_support_at_k": true,
+    "wrong_or_extra_sections": [
+      "232",
+      "230",
+      "231"
+    ],
+    "selector_loss": false
+  },
+  "answer_quality": {
+    "required_point_coverage": 0.5,
+    "required_points_matched": 1,
+    "required_points_total": 2,
+    "answer_completeness_score": 0.5,
+    "soft_answer_score": 0.425,
+    "forbidden_claim_rate": 0.0,
+    "forbidden_claims_matched": 0,
+    "forbidden_claims_total": 2,
+    "forbidden_contradiction_skipped_rate": 0.5,
+    "forbidden_contradiction_skips": [
+      {
+        "point": "False testimony is only an offence if a conviction results.",
+        "sentence": "Additionally, if false evidence leads to the wrongful conviction and execution of an innocent person, the penalty can be severe, including death or the punishment specified in subsection (1).",
+        "overlap": 0.5,
+        "threshold": 0.9,
+        "matched_terms": [
+          "conviction",
+          "false"
+        ],
+        "reason": "forbidden point is absolute, but answer sentence is conditional or alternative"
+      }
+    ],
+    "required_point_details": [
+      {
+        "point": "Section 227 defines giving false evidence as making a false statement while legally bound by oath or express provision of law to state the truth.",
+        "matched": false,
+        "overlap": 0.1333,
+        "matched_terms": [
+          "evidence",
+          "false"
+        ]
+      },
+      {
+        "point": "Section 229(1) provides that intentionally giving false evidence in any stage of a judicial proceeding is punishable with imprisonment up to seven years and fine up to ten thousand rupees.",
+        "matched": true,
+        "overlap": 0.6875,
+        "matched_terms": [
+          "229",
+          "evidence",
+          "false",
+          "fine",
+          "imprisonment",
+          "intentionally",
+          "judicial",
+          "proceeding",
+          "seven",
+          "stage",
+          "years"
+        ]
+      }
+    ],
+    "forbidden_claim_details": []
+  },
+  "grounding": {
+    "citation_precision": 0.5,
+    "citation_recall": 0.0,
+    "correct_cited_sections": [
+      "229"
+    ],
+    "missing_required_sections": [
+      "227"
+    ],
+    "extra_cited_sections": [
+      "230"
+    ],
+    "faithfulness": 1.0,
+    "claims": 3,
+    "supported_claims": 3,
+    "unsupported_claims": 0
+  },
+  "safety": {
+    "hallucination_rate": 0.0,
+    "out_of_scope_handling_ok": null,
+    "unsafe_behavior_ok": null,
+    "expected_behavior_ok": true
+  },
+  "ux": {
+    "confidence_score": 0.72,
+    "risk_level": "medium",
+    "high_confidence_wrong": false,
+    "low_risk_wrong": false
+  },
+  "answer_correct": false,
+  "failure_reasons": [
+    "missing_required_citation",
+    "low_required_point_coverage"
+  ],
+  "wrong_references": {
+    "retrieved": [],
+    "cited": []
+  },
+  "timings": {
+    "phase_8": 3.1902,
+    "phase_9_10": 6.3303,
+    "phase_11": 13.7978,
+    "phase_12_13": 0.0008,
+    "total": 23.3192
+  },
+  "final_answer_preview": "A person who intentionally gives false evidence in any stage of a judicial proceeding is committing an offence under Section 229(1) of the Bharatiya Nyaya Sanhita, 2023, which can result in imprisonment for up to seven years and a fine. If the false evidence is given in a case other than specified in subsection (1), it falls under Section 229(2), which carries a punishment of up to three years of imprisonment and a fine. Additionally, if false evidence leads to the wrongful conviction and execution of an innocent person, the penalty can be severe, including death or the punishment specified in subsection (1).",
+  "raw_output_dir": "/home/usatkr/u_ml/projects/RAG_v2/backend/evaluate/results/run_20260526_193451/raw/061_Q061"
+}

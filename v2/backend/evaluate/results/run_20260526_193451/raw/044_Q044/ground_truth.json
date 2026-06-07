@@ -1,0 +1,41 @@
+{
+  "query_id": "Q044",
+  "query": "What is the punishment for false evidence?",
+  "query_type": "punishment",
+  "difficulty": "medium",
+  "expected_behavior": "answer",
+  "gold_references": [
+    {
+      "act": "BNS",
+      "section": "229",
+      "subsection": null,
+      "label": "Section 229",
+      "role": "punishment for giving or fabricating false evidence",
+      "required": true,
+      "match_level": "section"
+    }
+  ],
+  "acceptable_references": [
+    {
+      "act": "BNS",
+      "section": "230",
+      "label": "Section 230",
+      "reason": "provides enhanced punishment for false evidence intending to procure capital conviction"
+    }
+  ],
+  "wrong_references": [],
+  "answer_key": {
+    "required_points": [
+      "Section 229(1) provides that whoever intentionally gives false evidence in any stage of a judicial proceeding, or fabricates false evidence for use in a judicial proceeding, shall be punished with imprisonment of either description up to seven years, and fine up to ten thousand rupees.",
+      "Section 229(2) provides that giving or fabricating false evidence in a non-judicial proceeding is punishable with imprisonment up to three years and fine up to five thousand rupees."
+    ],
+    "optional_points": [
+      "Section 230 provides for enhanced punishment of imprisonment for life or up to ten years where false evidence is given intending to procure conviction for a capital offence."
+    ],
+    "forbidden_points": [
+      "All false evidence is punishable with a fixed seven-year sentence.",
+      "False evidence in non-judicial proceedings is not an offence."
+    ]
+  },
+  "notes": "Punishment query. Section 229 with two tiers."
+}

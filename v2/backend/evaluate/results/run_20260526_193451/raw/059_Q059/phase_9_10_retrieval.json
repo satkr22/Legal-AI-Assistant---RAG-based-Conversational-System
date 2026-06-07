@@ -1,0 +1,3150 @@
+[
+  {
+    "query": "Someone threatened to kill me unless I paid money. What offence may apply?",
+    "phase8": {
+      "query": "Someone threatened to kill me unless I paid money. What offence may apply?",
+      "intent": {
+        "primary": "case application",
+        "secondary": [
+          "lookup"
+        ]
+      },
+      "concepts": [
+        "threat",
+        "offence",
+        "punishment"
+      ],
+      "targets": [],
+      "query_features": {
+        "is_multi_hop": false,
+        "requires_reasoning": false
+      },
+      "decomposition": {
+        "needed": false,
+        "sub_queries": []
+      },
+      "confidence": {
+        "hint_relevance": 0.4244,
+        "llm_consistency": 1.0,
+        "rule_strength": 0.35,
+        "structure_validity": 1.0,
+        "overall": 0.6398
+      }
+    },
+    "retrieval": {
+      "variants": [
+        {
+          "name": "original",
+          "source": "original",
+          "weight": 1.0,
+          "query": "Someone threatened to kill me unless I paid money. What offence may apply?",
+          "targets": [],
+          "concepts": [
+            "threat",
+            "offence",
+            "punishment"
+          ]
+        }
+      ],
+      "per_query_results": {
+        "original": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk__node__BNS_S140_N2",
+            "score": 0.906474,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 140,
+            "citation": "Section 140",
+            "text": "Whoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 140: Kidnapping or abducting in order to murder or for ransom, etc.\nWhoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine.",
+            "keywords": [
+              "death",
+              "hurt",
+              "kidnapping",
+              "order",
+              "ransom",
+              "whoever",
+              "kidnaps",
+              "abducts",
+              "keeps",
+              "detention",
+              "abduction",
+              "murder"
+            ],
+            "legal_concepts": [
+              "punishment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 1,
+              "coverage_ratio": 0.3333,
+              "matched_concepts": [
+                "punishment"
+              ]
+            },
+            "source_scores": {
+              "faiss": 0.697333574295044,
+              "semrank_pre_rerank": 0.687
+            },
+            "query_scores": {
+              "original": 0.697333574295044
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "threat",
+                "threatened",
+                "kill",
+                "unless",
+                "paid",
+                "money",
+                "may",
+                "apply"
+              ],
+              "score": 0.687,
+              "best_similarity": 0.9161,
+              "best_concept": "murder",
+              "best_concept_source": "keyword",
+              "matched_concepts": [
+                {
+                  "query_concept": "kill",
+                  "chunk_concept": "murder",
+                  "source": "keyword",
+                  "similarity": 0.9161,
+                  "weighted_score": 0.687
+                },
+                {
+                  "query_concept": "kill",
+                  "chunk_concept": "death",
+                  "source": "keyword",
+                  "similarity": 0.9101,
+                  "weighted_score": 0.6826
+                },
+                {
+                  "query_concept": "threatened",
+                  "chunk_concept": "abducts",
+                  "source": "keyword",
+                  "similarity": 0.8918,
+                  "weighted_score": 0.6688
+                },
+                {
+                  "query_concept": "threatened",
+                  "chunk_concept": "abduction",
+                  "source": "keyword",
+                  "similarity": 0.8904,
+                  "weighted_score": 0.6678
+                },
+                {
+                  "query_concept": "threatened",
+                  "chunk_concept": "kidnaps",
+                  "source": "keyword",
+                  "similarity": 0.8817,
+                  "weighted_score": 0.6613
+                }
+              ],
+              "pre_rerank_score": 0.687,
+              "score_before_pre_rerank": 0.783566,
+              "score_after_pre_rerank": 0.766184
+            }
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk__node__BNS_S32_BODY",
+            "score": 0.672289,
+            "chunk_type": "content",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 32,
+            "citation": "Section 32",
+            "text": "Except murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person will otherwise be the consequence: Provided that the person doing the act did not of his own accord, or from a reasonable apprehension of harm to himself short of instant death, place himself in the situation by which he became subject to such constraint.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 32: Act to which a person is compelled by threats.\nExcept murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person will otherwise be the consequence: Provided that the person doing the act did not of his own accord, or from a reasonable apprehension of harm to himself short of instant death, place himself in the situation by which he became subject to such constraint.",
+            "keywords": [
+              "death",
+              "compelled",
+              "threats",
+              "doing",
+              "apprehension",
+              "instant",
+              "himself",
+              "except",
+              "murder",
+              "offences",
+              "instant death"
+            ],
+            "legal_concepts": [
+              "act of compulsion",
+              "threats causing apprehension of instant death"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 1.0,
+              "semrank_pre_rerank": 0.8609
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "content_type_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "threat",
+                "threatened",
+                "kill",
+                "unless",
+                "paid",
+                "money",
+                "may",
+                "apply"
+              ],
+              "score": 0.8609,
+              "best_similarity": 0.8609,
+              "best_concept": "threats causing apprehension of instant death",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "threats causing apprehension of instant death",
+                  "source": "legal_concept",
+                  "similarity": 0.8609,
+                  "weighted_score": 0.8609
+                },
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "act of compulsion",
+                  "source": "legal_concept",
+                  "similarity": 0.8427,
+                  "weighted_score": 0.8427
+                },
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "threats",
+                  "source": "keyword",
+                  "similarity": 0.983,
+                  "weighted_score": 0.7373
+                },
+                {
+                  "query_concept": "kill",
+                  "chunk_concept": "murder",
+                  "source": "keyword",
+                  "similarity": 0.9161,
+                  "weighted_score": 0.687
+                },
+                {
+                  "query_concept": "apply",
+                  "chunk_concept": "doing",
+                  "source": "keyword",
+                  "similarity": 0.9153,
+                  "weighted_score": 0.6865
+                }
+              ],
+              "pre_rerank_score": 0.8609,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.974962
+            }
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk__node__BNS_S351_N3",
+            "score": 0.6231,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+            "section_number": 351,
+            "citation": "Section 351",
+            "text": "Whoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 351: Criminal intimidation.\nWhoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+            "keywords": [
+              "criminal",
+              "intimidation",
+              "cause",
+              "imprisonment",
+              "offence",
+              "death",
+              "term",
+              "extend",
+              "seven",
+              "years",
+              "criminal intimidation"
+            ],
+            "legal_concepts": [
+              "offence of criminal intimidation"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6818395853042603,
+              "semrank_pre_rerank": 0.8678
+            },
+            "query_scores": {
+              "original": 0.6818395853042603
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "threat",
+                "threatened",
+                "kill",
+                "unless",
+                "paid",
+                "money",
+                "may",
+                "apply"
+              ],
+              "score": 0.8678,
+              "best_similarity": 0.8678,
+              "best_concept": "offence of criminal intimidation",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "offence of criminal intimidation",
+                  "source": "legal_concept",
+                  "similarity": 0.8678,
+                  "weighted_score": 0.8678
+                },
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "intimidation",
+                  "source": "keyword",
+                  "similarity": 0.9378,
+                  "weighted_score": 0.7034
+                },
+                {
+                  "query_concept": "may",
+                  "chunk_concept": "term",
+                  "source": "keyword",
+                  "similarity": 0.9201,
+                  "weighted_score": 0.6901
+                },
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "criminal intimidation",
+                  "source": "keyword",
+                  "similarity": 0.9101,
+                  "weighted_score": 0.6826
+                },
+                {
+                  "query_concept": "kill",
+                  "chunk_concept": "death",
+                  "source": "keyword",
+                  "similarity": 0.9101,
+                  "weighted_score": 0.6826
+                }
+              ],
+              "pre_rerank_score": 0.8678,
+              "score_before_pre_rerank": 0.827763,
+              "score_after_pre_rerank": 0.83497
+            }
+          },
+          {
+            "rank": 4,
+            "chunk_id": "chunk__node__BNS_S308_N1_ILL1_A",
+            "score": 0.490687,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+            "section_number": 308,
+            "citation": "Section 308",
+            "text": "A threatens to publish a defamatory libel concerning Z unless Z gives him money. He thus induces Z to give him money. A has committed extortion.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 308: Extortion.\nWhoever intentionally puts any person in fear of any injury to that person, or to any other, and thereby dishonestly induces the person so put in fear to deliver to any person any property, or valuable security or anything signed or sealed which may be converted into a valuable security, commits extortion.\nA threatens to publish a defamatory libel concerning Z unless Z gives him money. He thus induces Z to give him money. A has committed extortion.",
+            "keywords": [
+              "money",
+              "extortion",
+              "threatens",
+              "publish",
+              "defamatory",
+              "libel",
+              "concerning",
+              "gives",
+              "thus",
+              "induces",
+              "threats",
+              "fear",
+              "injury",
+              "property"
+            ],
+            "legal_concepts": [
+              "offence against property",
+              "intentional act"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6794995665550232,
+              "bm25": 1.0,
+              "semrank_pre_rerank": 0.8528
+            },
+            "query_scores": {
+              "original": 1.0
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "threat",
+                "threatened",
+                "kill",
+                "unless",
+                "paid",
+                "money",
+                "may",
+                "apply"
+              ],
+              "score": 0.8528,
+              "best_similarity": 0.8528,
+              "best_concept": "offence against property",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "threatened",
+                  "chunk_concept": "offence against property",
+                  "source": "legal_concept",
+                  "similarity": 0.8528,
+                  "weighted_score": 0.8528
+                },
+                {
+                  "query_concept": "apply",
+                  "chunk_concept": "intentional act",
+                  "source": "legal_concept",
+                  "similarity": 0.8335,
+                  "weighted_score": 0.8335
+                },
+                {
+                  "query_concept": "money",
+                  "chunk_concept": "money",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "threats",
+                  "source": "keyword",
+                  "similarity": 0.983,
+                  "weighted_score": 0.7373
+                },
+                {
+                  "query_concept": "threatened",
+                  "chunk_concept": "threatens",
+                  "source": "keyword",
+                  "similarity": 0.9727,
+                  "weighted_score": 0.7295
+                }
+              ],
+              "pre_rerank_score": 0.8528,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.973504
+            }
+          },
+          {
+            "rank": 5,
+            "chunk_id": "chunk__node__BNS_S351_N1",
+            "score": 0.480625,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+            "section_number": 351,
+            "citation": "Section 351",
+            "text": "Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 351: Criminal intimidation.\nWhoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation.",
+            "keywords": [
+              "criminal",
+              "intimidation",
+              "means",
+              "reputation",
+              "cause",
+              "legally",
+              "whoever",
+              "threatens",
+              "injury",
+              "property",
+              "criminal intimidation",
+              "threats"
+            ],
+            "legal_concepts": [
+              "criminal intimidation",
+              "threats"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.983005166053772,
+              "semrank_pre_rerank": 0.983
+            },
+            "query_scores": {
+              "original": 0.983005166053772
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.983,
+              "query_concepts": [
+                "threat",
+                "threatened",
+                "kill",
+                "unless",
+                "paid",
+                "money",
+                "may",
+                "apply"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "threats",
+                  "source": "legal_concept",
+                  "similarity": 0.983,
+                  "weighted_score": 0.983
+                },
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "criminal intimidation",
+                  "source": "legal_concept",
+                  "similarity": 0.9101,
+                  "weighted_score": 0.9101
+                },
+                {
+                  "query_concept": "threatened",
+                  "chunk_concept": "threatens",
+                  "source": "keyword",
+                  "similarity": 0.9727,
+                  "weighted_score": 0.7295
+                },
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "intimidation",
+                  "source": "keyword",
+                  "similarity": 0.9378,
+                  "weighted_score": 0.7034
+                },
+                {
+                  "query_concept": "apply",
+                  "chunk_concept": "legally",
+                  "source": "keyword",
+                  "similarity": 0.9319,
+                  "weighted_score": 0.699
+                }
+              ],
+              "score": 0.983,
+              "best_similarity": 0.983,
+              "best_concept": "threats",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.983,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.99694
+            }
+          },
+          {
+            "rank": 6,
+            "chunk_id": "chunk__section__BNS_S32",
+            "score": 0.479937,
+            "chunk_type": "section",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "GENERAL EXCEPTIONS",
+            "section_number": 32,
+            "citation": "Section 32",
+            "text": "Except murder, and offences against the State punishable with\ndeath, nothing is an offence which is done by a person who is compelled to\ndo it by threats, which, at the time of doing it, reasonably cause the\napprehension that instant death to that person will otherwise be the\nconsequence:\nProvided that the person doing the act did not of his own accord, or\nfrom a reasonable apprehension of harm to himself short of instant death,\nplace himself in the situation by which he became subject to such\nconstraint.\nExplanation 1.—A person who, of his own accord, or by reason of a\nthreat of being beaten, joins a gang of dacoits, knowing their character, is\nnot entitled to the benefit of this exception, on the ground of his having\nbeen compelled by his associates to do anything that is an offence by law.\nExplanation 2.—A person seized by a gang of dacoits, and forced, by\nthreat of instant death, to do a thing which is an offence by law; for\nexample, a smith compelled to take his tools and to force the door of a\nhouse for the dacoits to enter and plunder it, is entitled to the benefit of\nthis exception.\nAct causing slight harm.",
+            "derived_context": "",
+            "keywords": [
+              "compelled_by_threats",
+              "instant_death"
+            ],
+            "legal_concepts": [
+              "duress",
+              "imminence_of_harm"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "anchor": 0.7679263373716176
+            },
+            "query_scores": {
+              "anchor": 0.7679263373716176
+            },
+            "reasons": [
+              "anchor_of:chunk__node__BNS_S32_EXP2",
+              "rerank"
+            ]
+          },
+          {
+            "rank": 7,
+            "chunk_id": "chunk__node__BNS_S351_N1_EXP1",
+            "score": 0.472891,
+            "chunk_type": "explanation",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+            "section_number": 351,
+            "citation": "Section 351",
+            "text": "A threat to injure the reputation of any deceased person in whom the person threatened is interested, is within this section.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 351: Criminal intimidation.\nWhoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation.\nA threat to injure the reputation of any deceased person in whom the person threatened is interested, is within this section.",
+            "keywords": [
+              "criminal",
+              "intimidation",
+              "threat",
+              "injure",
+              "reputation",
+              "deceased",
+              "threatened",
+              "interested",
+              "insult",
+              "annoyance",
+              "criminal intimidation",
+              "threats"
+            ],
+            "legal_concepts": [
+              "criminal intimidation",
+              "intimidation by threat"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6816527247428894,
+              "bm25": 0.7365378545727334,
+              "semrank": 0.9574066400527954,
+              "semrank_pre_rerank": 0.9574
+            },
+            "query_scores": {
+              "original": 0.9574066400527954
+            },
+            "reasons": [
+              "faiss:original",
+              "bm25:original",
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.9574,
+              "query_concepts": [
+                "threat",
+                "threatened",
+                "kill",
+                "unless",
+                "paid",
+                "money",
+                "may",
+                "apply"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "intimidation by threat",
+                  "source": "legal_concept",
+                  "similarity": 0.9574,
+                  "weighted_score": 0.9574
+                },
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "criminal intimidation",
+                  "source": "legal_concept",
+                  "similarity": 0.9101,
+                  "weighted_score": 0.9101
+                },
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "threat",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "threatened",
+                  "chunk_concept": "threatened",
+                  "source": "keyword",
+                  "similarity": 1.0,
+                  "weighted_score": 0.75
+                },
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "threats",
+                  "source": "keyword",
+                  "similarity": 0.983,
+                  "weighted_score": 0.7373
+                }
+              ],
+              "score": 0.9574,
+              "best_similarity": 0.9574,
+              "best_concept": "intimidation by threat",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.9574,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.992332
+            }
+          },
+          {
+            "rank": 8,
+            "chunk_id": "chunk__node__BNS_S232_N1",
+            "score": 0.463794,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+            "section_number": 232,
+            "citation": "Section 232",
+            "text": "Whoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 232: Threatening any person to give false evidence.\nWhoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+            "keywords": [
+              "false",
+              "evidence",
+              "reputation",
+              "give",
+              "whoever",
+              "threatens",
+              "injury",
+              "property",
+              "interested",
+              "intent",
+              "false evidence",
+              "threats"
+            ],
+            "legal_concepts": [
+              "offence against public justice",
+              "false evidence"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.6910422444343567,
+              "semrank_pre_rerank": 0.841
+            },
+            "query_scores": {
+              "original": 0.6910422444343567
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "threat",
+                "threatened",
+                "kill",
+                "unless",
+                "paid",
+                "money",
+                "may",
+                "apply"
+              ],
+              "score": 0.841,
+              "best_similarity": 0.841,
+              "best_concept": "false evidence",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "false evidence",
+                  "source": "legal_concept",
+                  "similarity": 0.841,
+                  "weighted_score": 0.841
+                },
+                {
+                  "query_concept": "may",
+                  "chunk_concept": "offence against public justice",
+                  "source": "legal_concept",
+                  "similarity": 0.812,
+                  "weighted_score": 0.812
+                },
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "threats",
+                  "source": "keyword",
+                  "similarity": 0.983,
+                  "weighted_score": 0.7373
+                },
+                {
+                  "query_concept": "threatened",
+                  "chunk_concept": "threatens",
+                  "source": "keyword",
+                  "similarity": 0.9727,
+                  "weighted_score": 0.7295
+                },
+                {
+                  "query_concept": "apply",
+                  "chunk_concept": "give",
+                  "source": "keyword",
+                  "similarity": 0.9061,
+                  "weighted_score": 0.6796
+                }
+              ],
+              "pre_rerank_score": 0.841,
+              "score_before_pre_rerank": 0.835435,
+              "score_after_pre_rerank": 0.836437
+            }
+          },
+          {
+            "rank": 9,
+            "chunk_id": "chunk__node__BNS_S351_N1_ILL1",
+            "score": 0.447301,
+            "chunk_type": "illustration",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+            "section_number": 351,
+            "citation": "Section 351",
+            "text": "A, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B’s house. A is guilty of criminal intimidation.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 351: Criminal intimidation.\nWhoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation.\nA, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B’s house. A is guilty of criminal intimidation.",
+            "keywords": [
+              "criminal",
+              "intimidation",
+              "purpose",
+              "inducing",
+              "resist",
+              "prosecuting",
+              "civil",
+              "suit",
+              "threatens",
+              "burn",
+              "criminal intimidation",
+              "threats"
+            ],
+            "legal_concepts": [
+              "criminal intimidation",
+              "threats"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "semrank": 0.983005166053772,
+              "semrank_pre_rerank": 0.983
+            },
+            "query_scores": {
+              "original": 0.983005166053772
+            },
+            "reasons": [
+              "semrank_retrieval:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "illustration_type_penalty",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "source": "retrieval",
+              "retrieval_score": 0.983,
+              "query_concepts": [
+                "threat",
+                "threatened",
+                "kill",
+                "unless",
+                "paid",
+                "money",
+                "may",
+                "apply"
+              ],
+              "matched_concepts": [
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "threats",
+                  "source": "legal_concept",
+                  "similarity": 0.983,
+                  "weighted_score": 0.983
+                },
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "criminal intimidation",
+                  "source": "legal_concept",
+                  "similarity": 0.9101,
+                  "weighted_score": 0.9101
+                },
+                {
+                  "query_concept": "threatened",
+                  "chunk_concept": "threatens",
+                  "source": "keyword",
+                  "similarity": 0.9727,
+                  "weighted_score": 0.7295
+                },
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "intimidation",
+                  "source": "keyword",
+                  "similarity": 0.9378,
+                  "weighted_score": 0.7034
+                },
+                {
+                  "query_concept": "apply",
+                  "chunk_concept": "purpose",
+                  "source": "keyword",
+                  "similarity": 0.8993,
+                  "weighted_score": 0.6745
+                }
+              ],
+              "score": 0.983,
+              "best_similarity": 0.983,
+              "best_concept": "threats",
+              "best_concept_source": "legal_concept",
+              "pre_rerank_score": 0.983,
+              "score_before_pre_rerank": 1.0,
+              "score_after_pre_rerank": 0.99694
+            }
+          },
+          {
+            "rank": 10,
+            "chunk_id": "chunk__node__BNS_S109_N1",
+            "score": 0.437218,
+            "chunk_type": "subsection",
+            "act": "Bharatiya Nyaya Sanhita, 2023",
+            "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+            "section_number": 109,
+            "citation": "Section 109",
+            "text": "Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned.",
+            "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 109: Attempt to murder.\nWhoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned.",
+            "keywords": [
+              "caused",
+              "murder",
+              "imprisonment",
+              "either",
+              "liable",
+              "whoever",
+              "intention",
+              "knowledge",
+              "circumstances",
+              "death",
+              "attempted murder"
+            ],
+            "legal_concepts": [
+              "murder",
+              "attempt",
+              "imprisonment"
+            ],
+            "concept_coverage": {
+              "query_concepts_total": 3,
+              "matched_count": 0,
+              "coverage_ratio": 0.0,
+              "matched_concepts": []
+            },
+            "source_scores": {
+              "faiss": 0.680777370929718,
+              "semrank_pre_rerank": 0.9161
+            },
+            "query_scores": {
+              "original": 0.680777370929718
+            },
+            "reasons": [
+              "faiss:original",
+              "semrank_strong_match",
+              "general_clause_boost",
+              "semrank_pre_rerank",
+              "semrank_concept_match",
+              "rerank"
+            ],
+            "semrank": {
+              "enabled": true,
+              "query_concepts": [
+                "threat",
+                "threatened",
+                "kill",
+                "unless",
+                "paid",
+                "money",
+                "may",
+                "apply"
+              ],
+              "score": 0.9161,
+              "best_similarity": 0.9161,
+              "best_concept": "murder",
+              "best_concept_source": "legal_concept",
+              "matched_concepts": [
+                {
+                  "query_concept": "kill",
+                  "chunk_concept": "murder",
+                  "source": "legal_concept",
+                  "similarity": 0.9161,
+                  "weighted_score": 0.9161
+                },
+                {
+                  "query_concept": "threatened",
+                  "chunk_concept": "attempt",
+                  "source": "legal_concept",
+                  "similarity": 0.8914,
+                  "weighted_score": 0.8914
+                },
+                {
+                  "query_concept": "threat",
+                  "chunk_concept": "imprisonment",
+                  "source": "legal_concept",
+                  "similarity": 0.8419,
+                  "weighted_score": 0.8419
+                },
+                {
+                  "query_concept": "kill",
+                  "chunk_concept": "death",
+                  "source": "keyword",
+                  "similarity": 0.9101,
+                  "weighted_score": 0.6826
+                },
+                {
+                  "query_concept": "may",
+                  "chunk_concept": "knowledge",
+                  "source": "keyword",
+                  "similarity": 0.8924,
+                  "weighted_score": 0.6693
+                }
+              ],
+              "pre_rerank_score": 0.9161,
+              "score_before_pre_rerank": 0.832688,
+              "score_after_pre_rerank": 0.847702
+            }
+          }
+        ]
+      },
+      "results_without_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S140_N2",
+          "score": 0.866968,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 140,
+          "citation": "Section 140",
+          "text": "Whoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 140: Kidnapping or abducting in order to murder or for ransom, etc.\nWhoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine.",
+          "keywords": [
+            "death",
+            "hurt",
+            "kidnapping",
+            "order",
+            "ransom",
+            "whoever",
+            "kidnaps",
+            "abducts",
+            "keeps",
+            "detention",
+            "abduction",
+            "murder"
+          ],
+          "legal_concepts": [
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "punishment"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.697333574295044,
+            "original:semrank_pre_rerank": 0.687,
+            "semrank_pre_rerank": 0.687
+          },
+          "query_scores": {
+            "original": 0.9064735968622971
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "score": 0.687,
+            "best_similarity": 0.9161,
+            "best_concept": "murder",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "kill",
+                "chunk_concept": "murder",
+                "source": "keyword",
+                "similarity": 0.9161,
+                "weighted_score": 0.687
+              },
+              {
+                "query_concept": "kill",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.9101,
+                "weighted_score": 0.6826
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "abducts",
+                "source": "keyword",
+                "similarity": 0.8918,
+                "weighted_score": 0.6688
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "abduction",
+                "source": "keyword",
+                "similarity": 0.8904,
+                "weighted_score": 0.6678
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "kidnaps",
+                "source": "keyword",
+                "similarity": 0.8817,
+                "weighted_score": 0.6613
+              }
+            ],
+            "pre_rerank_score": 0.687,
+            "score_before_pre_rerank": 0.906474,
+            "score_after_pre_rerank": 0.866968
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S32_BODY",
+          "score": 0.706239,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 32,
+          "citation": "Section 32",
+          "text": "Except murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person will otherwise be the consequence: Provided that the person doing the act did not of his own accord, or from a reasonable apprehension of harm to himself short of instant death, place himself in the situation by which he became subject to such constraint.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 32: Act to which a person is compelled by threats.\nExcept murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person will otherwise be the consequence: Provided that the person doing the act did not of his own accord, or from a reasonable apprehension of harm to himself short of instant death, place himself in the situation by which he became subject to such constraint.",
+          "keywords": [
+            "death",
+            "compelled",
+            "threats",
+            "doing",
+            "apprehension",
+            "instant",
+            "himself",
+            "except",
+            "murder",
+            "offences",
+            "instant death"
+          ],
+          "legal_concepts": [
+            "act of compulsion",
+            "threats causing apprehension of instant death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:semrank_pre_rerank": 0.8609,
+            "semrank_pre_rerank": 0.8609
+          },
+          "query_scores": {
+            "original": 0.6722889274374073
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "score": 0.8609,
+            "best_similarity": 0.8609,
+            "best_concept": "threats causing apprehension of instant death",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threats causing apprehension of instant death",
+                "source": "legal_concept",
+                "similarity": 0.8609,
+                "weighted_score": 0.8609
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "act of compulsion",
+                "source": "legal_concept",
+                "similarity": 0.8427,
+                "weighted_score": 0.8427
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threats",
+                "source": "keyword",
+                "similarity": 0.983,
+                "weighted_score": 0.7373
+              },
+              {
+                "query_concept": "kill",
+                "chunk_concept": "murder",
+                "source": "keyword",
+                "similarity": 0.9161,
+                "weighted_score": 0.687
+              },
+              {
+                "query_concept": "apply",
+                "chunk_concept": "doing",
+                "source": "keyword",
+                "similarity": 0.9153,
+                "weighted_score": 0.6865
+              }
+            ],
+            "pre_rerank_score": 0.8609,
+            "score_before_pre_rerank": 0.672289,
+            "score_after_pre_rerank": 0.706239
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S351_N3",
+          "score": 0.667146,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 351,
+          "citation": "Section 351",
+          "text": "Whoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 351: Criminal intimidation.\nWhoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "keywords": [
+            "criminal",
+            "intimidation",
+            "cause",
+            "imprisonment",
+            "offence",
+            "death",
+            "term",
+            "extend",
+            "seven",
+            "years",
+            "criminal intimidation"
+          ],
+          "legal_concepts": [
+            "offence of criminal intimidation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6818395853042603,
+            "original:semrank_pre_rerank": 0.8678,
+            "semrank_pre_rerank": 0.8678
+          },
+          "query_scores": {
+            "original": 0.6231002023445706
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "score": 0.8678,
+            "best_similarity": 0.8678,
+            "best_concept": "offence of criminal intimidation",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "threat",
+                "chunk_concept": "offence of criminal intimidation",
+                "source": "legal_concept",
+                "similarity": 0.8678,
+                "weighted_score": 0.8678
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "intimidation",
+                "source": "keyword",
+                "similarity": 0.9378,
+                "weighted_score": 0.7034
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.9201,
+                "weighted_score": 0.6901
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "criminal intimidation",
+                "source": "keyword",
+                "similarity": 0.9101,
+                "weighted_score": 0.6826
+              },
+              {
+                "query_concept": "kill",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.9101,
+                "weighted_score": 0.6826
+              }
+            ],
+            "pre_rerank_score": 0.8678,
+            "score_before_pre_rerank": 0.6231,
+            "score_after_pre_rerank": 0.667146
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__node__BNS_S351_N1",
+          "score": 0.571052,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 351,
+          "citation": "Section 351",
+          "text": "Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 351: Criminal intimidation.\nWhoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation.",
+          "keywords": [
+            "criminal",
+            "intimidation",
+            "means",
+            "reputation",
+            "cause",
+            "legally",
+            "whoever",
+            "threatens",
+            "injury",
+            "property",
+            "criminal intimidation",
+            "threats"
+          ],
+          "legal_concepts": [
+            "criminal intimidation",
+            "threats"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.983005166053772,
+            "original:semrank_pre_rerank": 0.983,
+            "semrank_pre_rerank": 0.983
+          },
+          "query_scores": {
+            "original": 0.4806245063747922
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.983,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threats",
+                "source": "legal_concept",
+                "similarity": 0.983,
+                "weighted_score": 0.983
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "criminal intimidation",
+                "source": "legal_concept",
+                "similarity": 0.9101,
+                "weighted_score": 0.9101
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "threatens",
+                "source": "keyword",
+                "similarity": 0.9727,
+                "weighted_score": 0.7295
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "intimidation",
+                "source": "keyword",
+                "similarity": 0.9378,
+                "weighted_score": 0.7034
+              },
+              {
+                "query_concept": "apply",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.9319,
+                "weighted_score": 0.699
+              }
+            ],
+            "score": 0.983,
+            "best_similarity": 0.983,
+            "best_concept": "threats",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.983,
+            "score_before_pre_rerank": 0.480625,
+            "score_after_pre_rerank": 0.571052
+          }
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S351_N1_EXP1",
+          "score": 0.560103,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 351,
+          "citation": "Section 351",
+          "text": "A threat to injure the reputation of any deceased person in whom the person threatened is interested, is within this section.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 351: Criminal intimidation.\nWhoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation.\nA threat to injure the reputation of any deceased person in whom the person threatened is interested, is within this section.",
+          "keywords": [
+            "criminal",
+            "intimidation",
+            "threat",
+            "injure",
+            "reputation",
+            "deceased",
+            "threatened",
+            "interested",
+            "insult",
+            "annoyance",
+            "criminal intimidation",
+            "threats"
+          ],
+          "legal_concepts": [
+            "criminal intimidation",
+            "intimidation by threat"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6816527247428894,
+            "original:bm25": 0.7365378545727334,
+            "original:semrank": 0.9574066400527954,
+            "original:semrank_pre_rerank": 0.9574,
+            "semrank_pre_rerank": 0.9574
+          },
+          "query_scores": {
+            "original": 0.4728913947099445
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9574,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "threat",
+                "chunk_concept": "intimidation by threat",
+                "source": "legal_concept",
+                "similarity": 0.9574,
+                "weighted_score": 0.9574
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "criminal intimidation",
+                "source": "legal_concept",
+                "similarity": 0.9101,
+                "weighted_score": 0.9101
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threat",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "threatened",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threats",
+                "source": "keyword",
+                "similarity": 0.983,
+                "weighted_score": 0.7373
+              }
+            ],
+            "score": 0.9574,
+            "best_similarity": 0.9574,
+            "best_concept": "intimidation by threat",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9574,
+            "score_before_pre_rerank": 0.472891,
+            "score_after_pre_rerank": 0.560103
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S308_N1_ILL1_A",
+          "score": 0.555867,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 308,
+          "citation": "Section 308",
+          "text": "A threatens to publish a defamatory libel concerning Z unless Z gives him money. He thus induces Z to give him money. A has committed extortion.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 308: Extortion.\nWhoever intentionally puts any person in fear of any injury to that person, or to any other, and thereby dishonestly induces the person so put in fear to deliver to any person any property, or valuable security or anything signed or sealed which may be converted into a valuable security, commits extortion.\nA threatens to publish a defamatory libel concerning Z unless Z gives him money. He thus induces Z to give him money. A has committed extortion.",
+          "keywords": [
+            "money",
+            "extortion",
+            "threatens",
+            "publish",
+            "defamatory",
+            "libel",
+            "concerning",
+            "gives",
+            "thus",
+            "induces",
+            "threats",
+            "fear",
+            "injury",
+            "property"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "intentional act"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6794995665550232,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.8528,
+            "semrank_pre_rerank": 0.8528
+          },
+          "query_scores": {
+            "original": 0.49068658589584413
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "score": 0.8528,
+            "best_similarity": 0.8528,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8528,
+                "weighted_score": 0.8528
+              },
+              {
+                "query_concept": "apply",
+                "chunk_concept": "intentional act",
+                "source": "legal_concept",
+                "similarity": 0.8335,
+                "weighted_score": 0.8335
+              },
+              {
+                "query_concept": "money",
+                "chunk_concept": "money",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threats",
+                "source": "keyword",
+                "similarity": 0.983,
+                "weighted_score": 0.7373
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "threatens",
+                "source": "keyword",
+                "similarity": 0.9727,
+                "weighted_score": 0.7295
+              }
+            ],
+            "pre_rerank_score": 0.8528,
+            "score_before_pre_rerank": 0.490687,
+            "score_after_pre_rerank": 0.555867
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S351_N1_ILL1",
+          "score": 0.543727,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 351,
+          "citation": "Section 351",
+          "text": "A, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B’s house. A is guilty of criminal intimidation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 351: Criminal intimidation.\nWhoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation.\nA, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B’s house. A is guilty of criminal intimidation.",
+          "keywords": [
+            "criminal",
+            "intimidation",
+            "purpose",
+            "inducing",
+            "resist",
+            "prosecuting",
+            "civil",
+            "suit",
+            "threatens",
+            "burn",
+            "criminal intimidation",
+            "threats"
+          ],
+          "legal_concepts": [
+            "criminal intimidation",
+            "threats"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.983005166053772,
+            "original:semrank_pre_rerank": 0.983,
+            "semrank_pre_rerank": 0.983
+          },
+          "query_scores": {
+            "original": 0.44730109722328154
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.983,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threats",
+                "source": "legal_concept",
+                "similarity": 0.983,
+                "weighted_score": 0.983
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "criminal intimidation",
+                "source": "legal_concept",
+                "similarity": 0.9101,
+                "weighted_score": 0.9101
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "threatens",
+                "source": "keyword",
+                "similarity": 0.9727,
+                "weighted_score": 0.7295
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "intimidation",
+                "source": "keyword",
+                "similarity": 0.9378,
+                "weighted_score": 0.7034
+              },
+              {
+                "query_concept": "apply",
+                "chunk_concept": "purpose",
+                "source": "keyword",
+                "similarity": 0.8993,
+                "weighted_score": 0.6745
+              }
+            ],
+            "score": 0.983,
+            "best_similarity": 0.983,
+            "best_concept": "threats",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.983,
+            "score_before_pre_rerank": 0.447301,
+            "score_after_pre_rerank": 0.543727
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S232_N1",
+          "score": 0.531691,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 232,
+          "citation": "Section 232",
+          "text": "Whoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 232: Threatening any person to give false evidence.\nWhoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "keywords": [
+            "false",
+            "evidence",
+            "reputation",
+            "give",
+            "whoever",
+            "threatens",
+            "injury",
+            "property",
+            "interested",
+            "intent",
+            "false evidence",
+            "threats"
+          ],
+          "legal_concepts": [
+            "offence against public justice",
+            "false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6910422444343567,
+            "original:semrank_pre_rerank": 0.841,
+            "semrank_pre_rerank": 0.841
+          },
+          "query_scores": {
+            "original": 0.46379428663595845
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "score": 0.841,
+            "best_similarity": 0.841,
+            "best_concept": "false evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "threat",
+                "chunk_concept": "false evidence",
+                "source": "legal_concept",
+                "similarity": 0.841,
+                "weighted_score": 0.841
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "offence against public justice",
+                "source": "legal_concept",
+                "similarity": 0.812,
+                "weighted_score": 0.812
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threats",
+                "source": "keyword",
+                "similarity": 0.983,
+                "weighted_score": 0.7373
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "threatens",
+                "source": "keyword",
+                "similarity": 0.9727,
+                "weighted_score": 0.7295
+              },
+              {
+                "query_concept": "apply",
+                "chunk_concept": "give",
+                "source": "keyword",
+                "similarity": 0.9061,
+                "weighted_score": 0.6796
+              }
+            ],
+            "pre_rerank_score": 0.841,
+            "score_before_pre_rerank": 0.463794,
+            "score_after_pre_rerank": 0.531691
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S109_N1",
+          "score": 0.523417,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 109,
+          "citation": "Section 109",
+          "text": "Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 109: Attempt to murder.\nWhoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned.",
+          "keywords": [
+            "caused",
+            "murder",
+            "imprisonment",
+            "either",
+            "liable",
+            "whoever",
+            "intention",
+            "knowledge",
+            "circumstances",
+            "death",
+            "attempted murder"
+          ],
+          "legal_concepts": [
+            "murder",
+            "attempt",
+            "imprisonment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.680777370929718,
+            "original:semrank_pre_rerank": 0.9161,
+            "semrank_pre_rerank": 0.9161
+          },
+          "query_scores": {
+            "original": 0.43721828617500436
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "score": 0.9161,
+            "best_similarity": 0.9161,
+            "best_concept": "murder",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "kill",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 0.9161,
+                "weighted_score": 0.9161
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "attempt",
+                "source": "legal_concept",
+                "similarity": 0.8914,
+                "weighted_score": 0.8914
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.8419,
+                "weighted_score": 0.8419
+              },
+              {
+                "query_concept": "kill",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.9101,
+                "weighted_score": 0.6826
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "knowledge",
+                "source": "keyword",
+                "similarity": 0.8924,
+                "weighted_score": 0.6693
+              }
+            ],
+            "pre_rerank_score": 0.9161,
+            "score_before_pre_rerank": 0.437218,
+            "score_after_pre_rerank": 0.523417
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__section__BNS_S32",
+          "score": 0.479937,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 32,
+          "citation": "Section 32",
+          "text": "Except murder, and offences against the State punishable with\ndeath, nothing is an offence which is done by a person who is compelled to\ndo it by threats, which, at the time of doing it, reasonably cause the\napprehension that instant death to that person will otherwise be the\nconsequence:\nProvided that the person doing the act did not of his own accord, or\nfrom a reasonable apprehension of harm to himself short of instant death,\nplace himself in the situation by which he became subject to such\nconstraint.\nExplanation 1.—A person who, of his own accord, or by reason of a\nthreat of being beaten, joins a gang of dacoits, knowing their character, is\nnot entitled to the benefit of this exception, on the ground of his having\nbeen compelled by his associates to do anything that is an offence by law.\nExplanation 2.—A person seized by a gang of dacoits, and forced, by\nthreat of instant death, to do a thing which is an offence by law; for\nexample, a smith compelled to take his tools and to force the door of a\nhouse for the dacoits to enter and plunder it, is entitled to the benefit of\nthis exception.\nAct causing slight harm.",
+          "derived_context": "",
+          "keywords": [
+            "compelled_by_threats",
+            "instant_death"
+          ],
+          "legal_concepts": [
+            "duress",
+            "imminence_of_harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.7679263373716176
+          },
+          "query_scores": {
+            "original": 0.4799368693244955
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S32_EXP2",
+            "rerank"
+          ]
+        }
+      ],
+      "results_with_global_rerank": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk__node__BNS_S140_N2",
+          "score": 0.946787,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 140,
+          "citation": "Section 140",
+          "text": "Whoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 140: Kidnapping or abducting in order to murder or for ransom, etc.\nWhoever kidnaps or abducts any person or keeps a person in detention after such kidnapping or abduction, and threatens to cause death or hurt to such person, or by his conduct gives rise to a reasonable apprehension that such person may be put to death or hurt, or causes hurt or death to such person in order to compel the Government or any foreign State or international inter-governmental organisation or any other person to do or abstain from doing any act or to pay a ransom, shall be punishable with death, or imprisonment for life, and shall also be liable to fine.",
+          "keywords": [
+            "death",
+            "hurt",
+            "kidnapping",
+            "order",
+            "ransom",
+            "whoever",
+            "kidnaps",
+            "abducts",
+            "keeps",
+            "detention",
+            "abduction",
+            "murder"
+          ],
+          "legal_concepts": [
+            "punishment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 1,
+            "coverage_ratio": 0.3333,
+            "matched_concepts": [
+              "punishment"
+            ]
+          },
+          "source_scores": {
+            "original:faiss": 0.697333574295044,
+            "original:semrank_pre_rerank": 0.687,
+            "semrank_pre_rerank": 0.687
+          },
+          "query_scores": {
+            "original": 0.9064735968622971
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "score": 0.687,
+            "best_similarity": 0.9161,
+            "best_concept": "murder",
+            "best_concept_source": "keyword",
+            "matched_concepts": [
+              {
+                "query_concept": "kill",
+                "chunk_concept": "murder",
+                "source": "keyword",
+                "similarity": 0.9161,
+                "weighted_score": 0.687
+              },
+              {
+                "query_concept": "kill",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.9101,
+                "weighted_score": 0.6826
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "abducts",
+                "source": "keyword",
+                "similarity": 0.8918,
+                "weighted_score": 0.6688
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "abduction",
+                "source": "keyword",
+                "similarity": 0.8904,
+                "weighted_score": 0.6678
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "kidnaps",
+                "source": "keyword",
+                "similarity": 0.8817,
+                "weighted_score": 0.6613
+              }
+            ],
+            "pre_rerank_score": 0.687,
+            "score_before_pre_rerank": 0.906474,
+            "score_after_pre_rerank": 0.866968
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk__node__BNS_S32_BODY",
+          "score": 0.536846,
+          "chunk_type": "content",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 32,
+          "citation": "Section 32",
+          "text": "Except murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person will otherwise be the consequence: Provided that the person doing the act did not of his own accord, or from a reasonable apprehension of harm to himself short of instant death, place himself in the situation by which he became subject to such constraint.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 3: GENERAL EXCEPTIONS\nSection 32: Act to which a person is compelled by threats.\nExcept murder, and offences against the State punishable with death, nothing is an offence which is done by a person who is compelled to do it by threats, which, at the time of doing it, reasonably cause the apprehension that instant death to that person will otherwise be the consequence: Provided that the person doing the act did not of his own accord, or from a reasonable apprehension of harm to himself short of instant death, place himself in the situation by which he became subject to such constraint.",
+          "keywords": [
+            "death",
+            "compelled",
+            "threats",
+            "doing",
+            "apprehension",
+            "instant",
+            "himself",
+            "except",
+            "murder",
+            "offences",
+            "instant death"
+          ],
+          "legal_concepts": [
+            "act of compulsion",
+            "threats causing apprehension of instant death"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 1.0,
+            "original:semrank_pre_rerank": 0.8609,
+            "semrank_pre_rerank": 0.8609
+          },
+          "query_scores": {
+            "original": 0.6722889274374073
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "content_type_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "score": 0.8609,
+            "best_similarity": 0.8609,
+            "best_concept": "threats causing apprehension of instant death",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threats causing apprehension of instant death",
+                "source": "legal_concept",
+                "similarity": 0.8609,
+                "weighted_score": 0.8609
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "act of compulsion",
+                "source": "legal_concept",
+                "similarity": 0.8427,
+                "weighted_score": 0.8427
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threats",
+                "source": "keyword",
+                "similarity": 0.983,
+                "weighted_score": 0.7373
+              },
+              {
+                "query_concept": "kill",
+                "chunk_concept": "murder",
+                "source": "keyword",
+                "similarity": 0.9161,
+                "weighted_score": 0.687
+              },
+              {
+                "query_concept": "apply",
+                "chunk_concept": "doing",
+                "source": "keyword",
+                "similarity": 0.9153,
+                "weighted_score": 0.6865
+              }
+            ],
+            "pre_rerank_score": 0.8609,
+            "score_before_pre_rerank": 0.672289,
+            "score_after_pre_rerank": 0.706239
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk__node__BNS_S351_N3",
+          "score": 0.528616,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 351,
+          "citation": "Section 351",
+          "text": "Whoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 351: Criminal intimidation.\nWhoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "keywords": [
+            "criminal",
+            "intimidation",
+            "cause",
+            "imprisonment",
+            "offence",
+            "death",
+            "term",
+            "extend",
+            "seven",
+            "years",
+            "criminal intimidation"
+          ],
+          "legal_concepts": [
+            "offence of criminal intimidation"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6818395853042603,
+            "original:semrank_pre_rerank": 0.8678,
+            "semrank_pre_rerank": 0.8678
+          },
+          "query_scores": {
+            "original": 0.6231002023445706
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "score": 0.8678,
+            "best_similarity": 0.8678,
+            "best_concept": "offence of criminal intimidation",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "threat",
+                "chunk_concept": "offence of criminal intimidation",
+                "source": "legal_concept",
+                "similarity": 0.8678,
+                "weighted_score": 0.8678
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "intimidation",
+                "source": "keyword",
+                "similarity": 0.9378,
+                "weighted_score": 0.7034
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "term",
+                "source": "keyword",
+                "similarity": 0.9201,
+                "weighted_score": 0.6901
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "criminal intimidation",
+                "source": "keyword",
+                "similarity": 0.9101,
+                "weighted_score": 0.6826
+              },
+              {
+                "query_concept": "kill",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.9101,
+                "weighted_score": 0.6826
+              }
+            ],
+            "pre_rerank_score": 0.8678,
+            "score_before_pre_rerank": 0.6231,
+            "score_after_pre_rerank": 0.667146
+          }
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk__section__BNS_S32",
+          "score": 0.327148,
+          "chunk_type": "section",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "GENERAL EXCEPTIONS",
+          "section_number": 32,
+          "citation": "Section 32",
+          "text": "Except murder, and offences against the State punishable with\ndeath, nothing is an offence which is done by a person who is compelled to\ndo it by threats, which, at the time of doing it, reasonably cause the\napprehension that instant death to that person will otherwise be the\nconsequence:\nProvided that the person doing the act did not of his own accord, or\nfrom a reasonable apprehension of harm to himself short of instant death,\nplace himself in the situation by which he became subject to such\nconstraint.\nExplanation 1.—A person who, of his own accord, or by reason of a\nthreat of being beaten, joins a gang of dacoits, knowing their character, is\nnot entitled to the benefit of this exception, on the ground of his having\nbeen compelled by his associates to do anything that is an offence by law.\nExplanation 2.—A person seized by a gang of dacoits, and forced, by\nthreat of instant death, to do a thing which is an offence by law; for\nexample, a smith compelled to take his tools and to force the door of a\nhouse for the dacoits to enter and plunder it, is entitled to the benefit of\nthis exception.\nAct causing slight harm.",
+          "derived_context": "",
+          "keywords": [
+            "compelled_by_threats",
+            "instant_death"
+          ],
+          "legal_concepts": [
+            "duress",
+            "imminence_of_harm"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:anchor": 0.7679263373716176
+          },
+          "query_scores": {
+            "original": 0.4799368693244955
+          },
+          "reasons": [
+            "anchor_of:chunk__node__BNS_S32_EXP2",
+            "rerank"
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk__node__BNS_S232_N1",
+          "score": 0.300473,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "section_number": 232,
+          "citation": "Section 232",
+          "text": "Whoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 14: OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE\nSection 232: Threatening any person to give false evidence.\nWhoever threatens another with any injury to his person, reputation or property or to the person or reputation of any one in whom that person is interested, with intent to cause that person to give false evidence shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "keywords": [
+            "false",
+            "evidence",
+            "reputation",
+            "give",
+            "whoever",
+            "threatens",
+            "injury",
+            "property",
+            "interested",
+            "intent",
+            "false evidence",
+            "threats"
+          ],
+          "legal_concepts": [
+            "offence against public justice",
+            "false evidence"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6910422444343567,
+            "original:semrank_pre_rerank": 0.841,
+            "semrank_pre_rerank": 0.841
+          },
+          "query_scores": {
+            "original": 0.46379428663595845
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "score": 0.841,
+            "best_similarity": 0.841,
+            "best_concept": "false evidence",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "threat",
+                "chunk_concept": "false evidence",
+                "source": "legal_concept",
+                "similarity": 0.841,
+                "weighted_score": 0.841
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "offence against public justice",
+                "source": "legal_concept",
+                "similarity": 0.812,
+                "weighted_score": 0.812
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threats",
+                "source": "keyword",
+                "similarity": 0.983,
+                "weighted_score": 0.7373
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "threatens",
+                "source": "keyword",
+                "similarity": 0.9727,
+                "weighted_score": 0.7295
+              },
+              {
+                "query_concept": "apply",
+                "chunk_concept": "give",
+                "source": "keyword",
+                "similarity": 0.9061,
+                "weighted_score": 0.6796
+              }
+            ],
+            "pre_rerank_score": 0.841,
+            "score_before_pre_rerank": 0.463794,
+            "score_after_pre_rerank": 0.531691
+          }
+        },
+        {
+          "rank": 6,
+          "chunk_id": "chunk__node__BNS_S308_N1_ILL1_A",
+          "score": 0.279749,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AGAINST PROPERTY",
+          "section_number": 308,
+          "citation": "Section 308",
+          "text": "A threatens to publish a defamatory libel concerning Z unless Z gives him money. He thus induces Z to give him money. A has committed extortion.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 17: OF OFFENCES AGAINST PROPERTY\nSection 308: Extortion.\nWhoever intentionally puts any person in fear of any injury to that person, or to any other, and thereby dishonestly induces the person so put in fear to deliver to any person any property, or valuable security or anything signed or sealed which may be converted into a valuable security, commits extortion.\nA threatens to publish a defamatory libel concerning Z unless Z gives him money. He thus induces Z to give him money. A has committed extortion.",
+          "keywords": [
+            "money",
+            "extortion",
+            "threatens",
+            "publish",
+            "defamatory",
+            "libel",
+            "concerning",
+            "gives",
+            "thus",
+            "induces",
+            "threats",
+            "fear",
+            "injury",
+            "property"
+          ],
+          "legal_concepts": [
+            "offence against property",
+            "intentional act"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6794995665550232,
+            "original:bm25": 1.0,
+            "original:semrank_pre_rerank": 0.8528,
+            "semrank_pre_rerank": 0.8528
+          },
+          "query_scores": {
+            "original": 0.49068658589584413
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "score": 0.8528,
+            "best_similarity": 0.8528,
+            "best_concept": "offence against property",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "offence against property",
+                "source": "legal_concept",
+                "similarity": 0.8528,
+                "weighted_score": 0.8528
+              },
+              {
+                "query_concept": "apply",
+                "chunk_concept": "intentional act",
+                "source": "legal_concept",
+                "similarity": 0.8335,
+                "weighted_score": 0.8335
+              },
+              {
+                "query_concept": "money",
+                "chunk_concept": "money",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threats",
+                "source": "keyword",
+                "similarity": 0.983,
+                "weighted_score": 0.7373
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "threatens",
+                "source": "keyword",
+                "similarity": 0.9727,
+                "weighted_score": 0.7295
+              }
+            ],
+            "pre_rerank_score": 0.8528,
+            "score_before_pre_rerank": 0.490687,
+            "score_after_pre_rerank": 0.555867
+          }
+        },
+        {
+          "rank": 7,
+          "chunk_id": "chunk__node__BNS_S351_N1",
+          "score": 0.264677,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 351,
+          "citation": "Section 351",
+          "text": "Whoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 351: Criminal intimidation.\nWhoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation.",
+          "keywords": [
+            "criminal",
+            "intimidation",
+            "means",
+            "reputation",
+            "cause",
+            "legally",
+            "whoever",
+            "threatens",
+            "injury",
+            "property",
+            "criminal intimidation",
+            "threats"
+          ],
+          "legal_concepts": [
+            "criminal intimidation",
+            "threats"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.983005166053772,
+            "original:semrank_pre_rerank": 0.983,
+            "semrank_pre_rerank": 0.983
+          },
+          "query_scores": {
+            "original": 0.4806245063747922
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.983,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threats",
+                "source": "legal_concept",
+                "similarity": 0.983,
+                "weighted_score": 0.983
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "criminal intimidation",
+                "source": "legal_concept",
+                "similarity": 0.9101,
+                "weighted_score": 0.9101
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "threatens",
+                "source": "keyword",
+                "similarity": 0.9727,
+                "weighted_score": 0.7295
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "intimidation",
+                "source": "keyword",
+                "similarity": 0.9378,
+                "weighted_score": 0.7034
+              },
+              {
+                "query_concept": "apply",
+                "chunk_concept": "legally",
+                "source": "keyword",
+                "similarity": 0.9319,
+                "weighted_score": 0.699
+              }
+            ],
+            "score": 0.983,
+            "best_similarity": 0.983,
+            "best_concept": "threats",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.983,
+            "score_before_pre_rerank": 0.480625,
+            "score_after_pre_rerank": 0.571052
+          }
+        },
+        {
+          "rank": 8,
+          "chunk_id": "chunk__node__BNS_S109_N1",
+          "score": 0.263345,
+          "chunk_type": "subsection",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF OFFENCES AFFECTING THE HUMAN BODY",
+          "section_number": 109,
+          "citation": "Section 109",
+          "text": "Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 6: OF OFFENCES AFFECTING THE HUMAN BODY\nSection 109: Attempt to murder.\nWhoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned.",
+          "keywords": [
+            "caused",
+            "murder",
+            "imprisonment",
+            "either",
+            "liable",
+            "whoever",
+            "intention",
+            "knowledge",
+            "circumstances",
+            "death",
+            "attempted murder"
+          ],
+          "legal_concepts": [
+            "murder",
+            "attempt",
+            "imprisonment"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.680777370929718,
+            "original:semrank_pre_rerank": 0.9161,
+            "semrank_pre_rerank": 0.9161
+          },
+          "query_scores": {
+            "original": 0.43721828617500436
+          },
+          "reasons": [
+            "faiss:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "score": 0.9161,
+            "best_similarity": 0.9161,
+            "best_concept": "murder",
+            "best_concept_source": "legal_concept",
+            "matched_concepts": [
+              {
+                "query_concept": "kill",
+                "chunk_concept": "murder",
+                "source": "legal_concept",
+                "similarity": 0.9161,
+                "weighted_score": 0.9161
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "attempt",
+                "source": "legal_concept",
+                "similarity": 0.8914,
+                "weighted_score": 0.8914
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "imprisonment",
+                "source": "legal_concept",
+                "similarity": 0.8419,
+                "weighted_score": 0.8419
+              },
+              {
+                "query_concept": "kill",
+                "chunk_concept": "death",
+                "source": "keyword",
+                "similarity": 0.9101,
+                "weighted_score": 0.6826
+              },
+              {
+                "query_concept": "may",
+                "chunk_concept": "knowledge",
+                "source": "keyword",
+                "similarity": 0.8924,
+                "weighted_score": 0.6693
+              }
+            ],
+            "pre_rerank_score": 0.9161,
+            "score_before_pre_rerank": 0.437218,
+            "score_after_pre_rerank": 0.523417
+          }
+        },
+        {
+          "rank": 9,
+          "chunk_id": "chunk__node__BNS_S351_N1_EXP1",
+          "score": 0.253889,
+          "chunk_type": "explanation",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 351,
+          "citation": "Section 351",
+          "text": "A threat to injure the reputation of any deceased person in whom the person threatened is interested, is within this section.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 351: Criminal intimidation.\nWhoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation.\nA threat to injure the reputation of any deceased person in whom the person threatened is interested, is within this section.",
+          "keywords": [
+            "criminal",
+            "intimidation",
+            "threat",
+            "injure",
+            "reputation",
+            "deceased",
+            "threatened",
+            "interested",
+            "insult",
+            "annoyance",
+            "criminal intimidation",
+            "threats"
+          ],
+          "legal_concepts": [
+            "criminal intimidation",
+            "intimidation by threat"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:faiss": 0.6816527247428894,
+            "original:bm25": 0.7365378545727334,
+            "original:semrank": 0.9574066400527954,
+            "original:semrank_pre_rerank": 0.9574,
+            "semrank_pre_rerank": 0.9574
+          },
+          "query_scores": {
+            "original": 0.4728913947099445
+          },
+          "reasons": [
+            "faiss:original",
+            "bm25:original",
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.9574,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "threat",
+                "chunk_concept": "intimidation by threat",
+                "source": "legal_concept",
+                "similarity": 0.9574,
+                "weighted_score": 0.9574
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "criminal intimidation",
+                "source": "legal_concept",
+                "similarity": 0.9101,
+                "weighted_score": 0.9101
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threat",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "threatened",
+                "source": "keyword",
+                "similarity": 1.0,
+                "weighted_score": 0.75
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threats",
+                "source": "keyword",
+                "similarity": 0.983,
+                "weighted_score": 0.7373
+              }
+            ],
+            "score": 0.9574,
+            "best_similarity": 0.9574,
+            "best_concept": "intimidation by threat",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.9574,
+            "score_before_pre_rerank": 0.472891,
+            "score_after_pre_rerank": 0.560103
+          }
+        },
+        {
+          "rank": 10,
+          "chunk_id": "chunk__node__BNS_S351_N1_ILL1",
+          "score": 0.217491,
+          "chunk_type": "illustration",
+          "act": "Bharatiya Nyaya Sanhita, 2023",
+          "chapter_title": "OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.",
+          "section_number": 351,
+          "citation": "Section 351",
+          "text": "A, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B’s house. A is guilty of criminal intimidation.",
+          "derived_context": "Act: Bharatiya Nyaya Sanhita, 2023\nChapter 19: OF CRIMINAL INTIMIDATION, INSULT, ANNOYANCE, DEFAMATION, ETC.\nSection 351: Criminal intimidation.\nWhoever threatens another by any means, with any injury to his person, reputation or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation.\nA, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B’s house. A is guilty of criminal intimidation.",
+          "keywords": [
+            "criminal",
+            "intimidation",
+            "purpose",
+            "inducing",
+            "resist",
+            "prosecuting",
+            "civil",
+            "suit",
+            "threatens",
+            "burn",
+            "criminal intimidation",
+            "threats"
+          ],
+          "legal_concepts": [
+            "criminal intimidation",
+            "threats"
+          ],
+          "concept_coverage": {
+            "query_concepts_total": 3,
+            "matched_count": 0,
+            "coverage_ratio": 0.0,
+            "matched_concepts": []
+          },
+          "source_scores": {
+            "original:semrank": 0.983005166053772,
+            "original:semrank_pre_rerank": 0.983,
+            "semrank_pre_rerank": 0.983
+          },
+          "query_scores": {
+            "original": 0.44730109722328154
+          },
+          "reasons": [
+            "semrank_retrieval:original",
+            "semrank_strong_match",
+            "general_clause_boost",
+            "illustration_type_penalty",
+            "semrank_pre_rerank",
+            "semrank_concept_match",
+            "rerank"
+          ],
+          "semrank": {
+            "enabled": true,
+            "source": "retrieval",
+            "retrieval_score": 0.983,
+            "query_concepts": [
+              "threat",
+              "threatened",
+              "kill",
+              "unless",
+              "paid",
+              "money",
+              "may",
+              "apply"
+            ],
+            "matched_concepts": [
+              {
+                "query_concept": "threat",
+                "chunk_concept": "threats",
+                "source": "legal_concept",
+                "similarity": 0.983,
+                "weighted_score": 0.983
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "criminal intimidation",
+                "source": "legal_concept",
+                "similarity": 0.9101,
+                "weighted_score": 0.9101
+              },
+              {
+                "query_concept": "threatened",
+                "chunk_concept": "threatens",
+                "source": "keyword",
+                "similarity": 0.9727,
+                "weighted_score": 0.7295
+              },
+              {
+                "query_concept": "threat",
+                "chunk_concept": "intimidation",
+                "source": "keyword",
+                "similarity": 0.9378,
+                "weighted_score": 0.7034
+              },
+              {
+                "query_concept": "apply",
+                "chunk_concept": "purpose",
+                "source": "keyword",
+                "similarity": 0.8993,
+                "weighted_score": 0.6745
+              }
+            ],
+            "score": 0.983,
+            "best_similarity": 0.983,
+            "best_concept": "threats",
+            "best_concept_source": "legal_concept",
+            "pre_rerank_score": 0.983,
+            "score_before_pre_rerank": 0.447301,
+            "score_after_pre_rerank": 0.543727
+          }
+        }
+      ],
+      "settings": {
+        "graph_enabled": true,
+        "rerank_enabled": true,
+        "semrank_enabled": true,
+        "semrank_top_k": 20,
+        "semrank_weight": 0.18,
+        "semrank_strong_sim": 0.72,
+        "semrank_min_sim": 0.62,
+        "subquery_preserve_top_n": 1,
+        "subquery_preserve_min_score": 0.62,
+        "max_chunks_per_section": 2,
+        "final_k": 10
+      }
+    }
+  }
+]

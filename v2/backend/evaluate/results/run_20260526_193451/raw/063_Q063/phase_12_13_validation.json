@@ -1,0 +1,71 @@
+{
+  "answer": "The act of using a fake seal to create a legal-looking document can fall under several provisions of the Bharatiya Nyaya Sanhita, 2023. Specifically, Section 341(1) addresses the making or counterfeiting of any seal with the intent to commit forgery, which is punishable with imprisonment for life or up to seven years, along with a fine. Additionally, Section 340(2) states that using a forged document as genuine is punishable in the same manner as if the document were forged. Therefore, both the act of counterfeiting the seal and the subsequent use of the forged document could lead to serious legal consequences.",
+  "summary_answer": "The offence that may apply is the making or counterfeiting of a seal with the intent to commit forgery, punishable under Section 341 of the Bharatiya Nyaya Sanhita, 2023.",
+  "detailed_answer": "The act of using a fake seal to create a legal-looking document can fall under several provisions of the Bharatiya Nyaya Sanhita, 2023. Specifically, Section 341(1) addresses the making or counterfeiting of any seal with the intent to commit forgery, which is punishable with imprisonment for life or up to seven years, along with a fine. Additionally, Section 340(2) states that using a forged document as genuine is punishable in the same manner as if the document were forged. Therefore, both the act of counterfeiting the seal and the subsequent use of the forged document could lead to serious legal consequences.",
+  "final_answer": "The offence may include making or counterfeiting a seal with intent to commit forgery under Section 341(1) and using a forged document as genuine under Section 340(2) of the Bharatiya Nyaya Sanhita, 2023.",
+  "display_answer_type": "detailed",
+  "citations": [
+    "Section 341(1), Bharatiya Nyaya Sanhita, 2023",
+    "Section 340(2), Bharatiya Nyaya Sanhita, 2023"
+  ],
+  "confidence": {
+    "retrieval": 0.7414,
+    "reranker": 0.939,
+    "citation": 1.0,
+    "reasoning": 0.8663,
+    "evidence_strength": 0.7414,
+    "reasoning_certainty": 0.8663,
+    "grounding_certainty": 1.0,
+    "raw_score": 0.6423,
+    "confidence_floor": 0.72,
+    "floor_adjusted_score": 0.72,
+    "applied_caps": [],
+    "components": {
+      "evidence": {
+        "avg_selected_chunk_score": 0.939,
+        "avg_selected_semrank_score": 0.9111,
+        "avg_selected_concept_coverage": 0.0,
+        "selected_chunk_count": 2,
+        "matched_selected_chunk_count": 2,
+        "selected_semrank_count": 2
+      },
+      "reasoning": {
+        "selected_condition_match_score": 0.9727,
+        "ambiguity_gap_score": 0.6,
+        "uncertainty_score": 1.0,
+        "gap": 0.0183,
+        "highest_competing_score": 0.9544,
+        "ambiguity_mitigated_by_grounding": true
+      },
+      "grounding": {
+        "guardrail_grounding_strength": 1.0
+      }
+    },
+    "score": 0.72,
+    "label": "medium",
+    "formula": "min((0.45*avg_selected_chunk_score + 0.35*avg_selected_semrank_score + 0.20*avg_selected_concept_coverage) * (0.50*selected_condition_match_score + 0.30*ambiguity_gap_score + 0.20*uncertainty_score) * grounding_certainty, applicable_caps)",
+    "terms": {
+      "evidence_strength": "Average selected chunk retrieval score, SemRank score, and concept coverage.",
+      "reasoning_certainty": "Selected condition match, ambiguity gap, and structured reasoning uncertainty.",
+      "grounding_certainty": "Phase 11 retrieved-evidence guardrail grounding strength.",
+      "confidence_floor": "Minimum score for verified, complete, grounded answers when no safety caps apply.",
+      "applied_caps": "Validation caps that prevent confidence from exceeding known safety limits."
+    },
+    "explanation": "Confidence is calculated from selected evidence, reasoning certainty, and grounding certainty, then capped by validation safety conditions."
+  },
+  "risk_level": "medium",
+  "risk_reason": "The answer is grounded, but confidence is not high enough to treat it as low risk.",
+  "validation": {
+    "answer_verified": true,
+    "completeness": "complete",
+    "warnings": [
+      "Several sections are close in relevance; the answer uses the strongest supported section."
+    ],
+    "verification_issues": [],
+    "should_show": true
+  },
+  "selected_chunk_ids": [
+    "chunk__node__BNS_S341_N1",
+    "chunk__node__BNS_S340_N2"
+  ]
+}
