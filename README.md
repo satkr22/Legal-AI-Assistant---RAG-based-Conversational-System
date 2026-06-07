@@ -88,6 +88,8 @@ Output includes:
 
 ![Response View](./v2/screenshots/pipeline.png)
 
+---
+
 ## Tech Stack
 
 Frontend:
