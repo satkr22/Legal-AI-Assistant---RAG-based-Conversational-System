@@ -104,16 +104,16 @@ Authentication:
 ```
 Legal_Assistant_v1/
 │
-├── v*/
+└── v*/
     ├── frontend/
     │   ├── assets/        
     │   ├── node_modules/             
     │   ├── app.js            
     │   ├── index.html           
     │   ├── style.css           
-    │   ├── package.json           
+    │   └── package.json           
     │
-    ├── backend/               
+    └── backend/               
         ├── data/        
         ├── embedding/             
         ├── ingestion/            
