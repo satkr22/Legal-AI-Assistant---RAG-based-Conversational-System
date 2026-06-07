@@ -102,7 +102,7 @@ Authentication:
 
 ## Project Structure
 ```
-Legal_Assistant_v1/
+Legal-AI-Assistant---RAG-based-Conversational-System/
 │
 └── v*/
     ├── frontend/
