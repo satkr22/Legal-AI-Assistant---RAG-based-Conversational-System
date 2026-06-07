@@ -185,4 +185,5 @@ uvicorn app:app --reload
 ## Author
 
 Satyam Kumar
+
 Email: satkr22@gmail.com
