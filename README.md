@@ -104,27 +104,28 @@ Authentication:
 ```
 Legal_Assistant_v1/
 │
-├── frontend/
-│   ├── assets/        
-│   ├── node_modules/             
-│   ├── app.js            
-│   ├── index.html           
-│   ├── style.css           
-│   ├── package.json           
-│
-├── backend/               
-    ├── data/        
-    ├── embedding/             
-    ├── ingestion/            
-    ├── query_analysis/             
-    ├── validation/            
-    ├── reasoning/             
-    ├── retrieval/            
-    ├── supabase/             
-    ├── .env            
-    ├── .gitignore                  
-    ├── app.py            
-    └── main.py              
+├── v*/
+    ├── frontend/
+    │   ├── assets/        
+    │   ├── node_modules/             
+    │   ├── app.js            
+    │   ├── index.html           
+    │   ├── style.css           
+    │   ├── package.json           
+    │
+    ├── backend/               
+        ├── data/        
+        ├── embedding/             
+        ├── ingestion/            
+        ├── query_analysis/             
+        ├── validation/            
+        ├── reasoning/             
+        ├── retrieval/            
+        ├── supabase/             
+        ├── .env            
+        ├── .gitignore                  
+        ├── app.py            
+        └── main.py              
 ```    
 ---
 
@@ -138,7 +139,7 @@ cd Legal-AI-Assistant---RAG-based-Conversational-System
 
 Frontend setup:
 ```
-cd frontend  
+cd v2/frontend  
 python -m http.server 5173
 ```
 App runs at:
@@ -147,7 +148,7 @@ http://localhost:5173
 
 Backend setup:
 ```
-cd backend
+cd v2/backend
 uvicorn app:app --reload
 ```
 ---
