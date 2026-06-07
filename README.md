@@ -38,21 +38,21 @@ The system is designed to present answers in a transparent format, including evi
 
 ### Login/Signup Interface
 
-![Login/Signup UI](./screenshots/login__signup.png)
+![Login/Signup UI](./v2/screenshots/login__signup.png)
 
 
 
 ### Main Chat Interface
 
-![Chat UI](./screenshots/chat_ui.png)
+![Chat UI](./v2/screenshots/chat_ui.png)
 
 ### Response Structure
 
-![Response View](./screenshots/response_view.png)
+![Response View](./v2/screenshots/response_view.png)
 
 ### Citations Panel
 
-![Citations](./screenshots/citations.png)
+![Citations](./v2/screenshots/citations.png)
 
 ---
 
